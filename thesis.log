@@ -1,0 +1,92 @@
+This is e-pTeX, Version 3.1415926-p3.2-110415-2.3 (sjis) (Web2C 2011) (format=platex 2011.12.20)  29 JAN 2013 02:31
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**thesis
+(./thesis.tex
+pLaTeX2e <2006/11/10> (based on LaTeX2e <2011/06/27> patch level 0)
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, af
+rikaans, arabic, basque, bulgarian, catalan, pinyin, croatian, czech, danish, d
+utch, ukenglish, usenglishmax, esperanto, estonian, farsi, finnish, french, gal
+ician, german, ngerman, swissgerman, hungarian, icelandic, indonesian, interlin
+gua, irish, italian, kurmanji, latin, latvian, lithuanian, mongolian, mongolian
+lmc, bokmal, nynorsk, polish, portuguese, romanian, russian, serbian, serbianc,
+ slovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian
+, welsh, ancientgreek, ibycus, monogreek, greek, coptic, loaded.
+(./iscs-thesis.cls
+Document Class: iscs-thesis 2009/03/11 v1.3a Dept of IS/CS thesis class
+\bindoffset=\skip41
+\c@part=\count81
+\c@chapter=\count82
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
+\eabstractbox=\box41
+\jabstractbox=\box42
+\c@figure=\count88
+\c@table=\count89
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\bibindent=\dimen118
+) (./thesis.aux)
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 15.
+ [1
+
+] [2]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 27.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 27.
+ (./thesis.toc
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
+)
+\tf@toc=\write3
+\openout3 = `thesis.toc'.
+
+ [3
+
+
+] (./thesis.bbl
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+) [1
+
+
+] (./thesis.aux) ) 
+Here is how much of TeX's memory you used:
+ 407 strings out of 494159
+ 4609 string characters out of 3162859
+ 56556 words of memory out of 3000000
+ 3882 multiletter control sequences out of 15000+200000
+ 11659 words of font info for 47 fonts, out of 3000000 for 9000
+ 745 hyphenation exceptions out of 8191
+ 21i,4n,20p,678b,243s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on thesis.dvi (4 pages, 3828 bytes).
