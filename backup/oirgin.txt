@@ -1,0 +1,40 @@
+\documentclass[senior,final,11pt]{iscs-thesis}
+% 論文の種類とフォントサイズをオプションに
+%-------------------
+\etitle{Combining Motion Information\\ with Appearance Information\\ and Utilizing of Mutual Information\\ Encoded Among Image Features of the Same Object\\ for Better Detection Performance}
+\jtitle{運動情報を外観情報との結びつけおよび\\同一物体の画像特徴によりエンコードされた相互情報の利用\\ーー検出性能の向上のため}
+%
+\eauthor{Zhipeng Wang}
+\jauthor{王志鵬}
+\esupervisor{Katsushi Ikeuchi}
+\jsupervisor{池内　克史}
+\supervisortitle{Professor} % Professor, etc.
+\date{February 05, 2013}
+%-------------------
+\begin{document}
+\begin{eabstract}
+Object detection is a fundamental perceptual skill in human, and plays an important role in the machine vision area. There are two main categories of detection methods: methods using the sliding-window schema and methods based on Hough transforms. Among the methods, recent research improves detection performance by proposing better representative model, better classifiers, and better solution space search methods. We, in our work, propose four methods, of which two make use of motion information by combining it effectively and efficiently with appearance information, and two make use of the mutual information encoded among the image features of the same object.
+\end{eabstract}
+\begin{jabstract}
+物体検出は人間の中の基本の知覚能力で、マシン?ビジョン?エリアに重要な役割を果たします。2つの主なカテゴリーの検知方法があります:
+スライディングウィンドウを使用する方法、およびハフ変換に基づいた方法。最近の研究は、提案する、よりよい代表的なモデル、よりよいクラシファイヤーおよびよりよい解空間探索方法によって検出性能を改善します。私たちは4つの方法を提案します。2つの方法が運動情報を外観情報との結び。2つの方法が同一物体の画像特徴によりエンコードされた相互情報の利用。
+\end{jabstract}
+\maketitle
+
+
+
+\frontmatter %% 前付け
+\tableofcontents % 目次
+%\listoffigures % 図目次
+%\listoftables % 表目次
+%\lstlistoflistings % ソースコード目次
+%-------------------
+\mainmatter %% 本文
+
+
+
+%-------------------
+\bibliographystyle{plain} % 参考文献
+\bibliography{myref} %
+%-------------------
+\end{document}

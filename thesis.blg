@@ -1,48 +1,71 @@
 This is BibTeX, Version 0.99d (Web2C 2011)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: chaps/eabstract.aux
+A level-1 auxiliary file: chaps/jabstract.aux
+A level-1 auxiliary file: chaps/1.aux
+A level-1 auxiliary file: chaps/2.aux
+A level-1 auxiliary file: chaps/3.aux
+A level-1 auxiliary file: chaps/4.aux
+A level-1 auxiliary file: chaps/5.aux
+A level-1 auxiliary file: chaps/6.aux
 The style file: plain.bst
-I found no \citation commands---while reading file thesis.aux
-Database file #1: myref.bib
-You've used 0 entries,
+A level-1 auxiliary file: chaps/thanks.aux
+Database file #1: chaps/egbib.bib
+Warning--string name "cvpr10" is undefined
+--line 1829 of file chaps/egbib.bib
+A bad cross reference---entry "ac31"
+refers to entry "DBLP:conf/cvpr/2008", which doesn't exist
+A bad cross reference---entry "ac30"
+refers to entry "DBLP:conf/cvpr/2007", which doesn't exist
+A bad cross reference---entry "ac32"
+refers to entry "DBLP:conf/cvpr/2008", which doesn't exist
+A bad cross reference---entry "ac33"
+refers to entry "DBLP:conf/cvpr/1999", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/cvpr/2007"
+Warning--I didn't find a database entry for "DBLP:conf/cvpr/2008"
+Warning--I didn't find a database entry for "DBLP:conf/cvpr/1999"
+Warning--empty booktitle in ac34
+Warning--empty institution in ij2
+You've used 43 entries,
             2118 wiz_defined-function locations,
-            497 strings with 3990 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            719 strings with 9224 characters,
+and the built_in function-call counts, 18299 in all, are:
+= -- 1793
+> -- 709
+< -- 27
++ -- 279
+- -- 232
+* -- 1107
+:= -- 2664
+add.period$ -- 130
+call.type$ -- 43
+change.case$ -- 244
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 45
+duplicate$ -- 861
+empty$ -- 1571
+format.name$ -- 232
+if$ -- 4192
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 43
+missing$ -- 42
+newline$ -- 218
+num.names$ -- 90
+pop$ -- 332
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 200
 quote$ -- 0
-skip$ -- 1
+skip$ -- 737
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 1272
+swap$ -- 367
+text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+type$ -- 172
+warning$ -- 2
+while$ -- 154
+width$ -- 45
+write$ -- 468
+(There were 4 error messages)
