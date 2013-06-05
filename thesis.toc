@@ -16,15 +16,15 @@
 \contentsline {chapter}{\numberline {4}Grouping of object parts by motion for detection}{11}
 \contentsline {section}{\numberline {4.1}Introduction}{11}
 \contentsline {section}{\numberline {4.2}Related Work}{13}
-\contentsline {section}{\numberline {4.3}Common Fate Hough Transform}{13}
+\contentsline {section}{\numberline {4.3}Common Fate Hough Transform}{14}
 \contentsline {subsection}{\numberline {4.3.1}Common Fate Weights}{14}
 \contentsline {subsection}{\numberline {4.3.2}Motion Grouping}{16}
-\contentsline {subsection}{\numberline {4.3.3}Codebook}{16}
+\contentsline {subsection}{\numberline {4.3.3}Codebook}{17}
 \contentsline {section}{\numberline {4.4}Detection}{17}
-\contentsline {section}{\numberline {4.5}Experimental Results}{19}
-\contentsline {subsection}{\numberline {4.5.1} Campus-scene Detection }{19}
+\contentsline {section}{\numberline {4.5}Experimental Results}{18}
+\contentsline {subsection}{\numberline {4.5.1} Campus-scene Detection }{18}
 \contentsline {subsection}{\numberline {4.5.2}Wild-scene Detection}{20}
-\contentsline {section}{\numberline {4.6}Conclusion}{22}
+\contentsline {section}{\numberline {4.6}Conclusion}{21}
 \contentsline {chapter}{\numberline {5}Pyramid Match Score for Detection}{23}
 \contentsline {section}{\numberline {5.1}Pyramid Match}{23}
 \contentsline {section}{\numberline {5.2}Pyramid Match Score}{23}

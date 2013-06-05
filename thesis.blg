@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012/W32TeX)
+This is BibTeX, Version 0.99d (Web2C 2011)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: chaps/eabstract.aux
@@ -12,8 +12,6 @@ A level-1 auxiliary file: chaps/6.aux
 The style file: plain.bst
 A level-1 auxiliary file: chaps/thanks.aux
 Database file #1: chaps/egbib.bib
-Warning--string name "cvpr10" is undefined
---line 1829 of file chaps/egbib.bib
 A bad cross reference---entry "ac31"
 refers to entry "DBLP:conf/cvpr/2008", which doesn't exist
 A bad cross reference---entry "ac30"
@@ -25,47 +23,46 @@ refers to entry "DBLP:conf/cvpr/1999", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/cvpr/2007"
 Warning--I didn't find a database entry for "DBLP:conf/cvpr/2008"
 Warning--I didn't find a database entry for "DBLP:conf/cvpr/1999"
-Warning--empty booktitle in ac34
 Warning--empty institution in ij2
-You've used 43 entries,
+You've used 44 entries,
             2118 wiz_defined-function locations,
-            719 strings with 9224 characters,
-and the built_in function-call counts, 18299 in all, are:
-= -- 1793
-> -- 709
-< -- 27
-+ -- 279
-- -- 232
-* -- 1107
-:= -- 2664
-add.period$ -- 130
-call.type$ -- 43
-change.case$ -- 244
+            726 strings with 9363 characters,
+and the built_in function-call counts, 18716 in all, are:
+= -- 1838
+> -- 716
+< -- 28
++ -- 282
+- -- 234
+* -- 1125
+:= -- 2716
+add.period$ -- 133
+call.type$ -- 44
+change.case$ -- 248
 chr.to.int$ -- 0
 cite$ -- 45
-duplicate$ -- 861
-empty$ -- 1571
-format.name$ -- 232
-if$ -- 4192
+duplicate$ -- 880
+empty$ -- 1611
+format.name$ -- 234
+if$ -- 4296
 int.to.chr$ -- 0
-int.to.str$ -- 43
+int.to.str$ -- 44
 missing$ -- 42
-newline$ -- 218
-num.names$ -- 90
-pop$ -- 332
+newline$ -- 223
+num.names$ -- 92
+pop$ -- 341
 preamble$ -- 1
-purify$ -- 200
+purify$ -- 203
 quote$ -- 0
-skip$ -- 737
+skip$ -- 759
 stack$ -- 0
-substring$ -- 1272
-swap$ -- 367
-text.length$ -- 27
+substring$ -- 1313
+swap$ -- 380
+text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 172
-warning$ -- 2
-while$ -- 154
-width$ -- 45
-write$ -- 468
+type$ -- 176
+warning$ -- 1
+while$ -- 158
+width$ -- 46
+write$ -- 479
 (There were 4 error messages)

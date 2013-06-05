@@ -1,0 +1,11 @@
+\chapter{Introduction}
+Detecting objects of interest from a complex scene is a basic perceptual skill in human beings and other animals.
+While in the area of computer science, object detection~\cite{dod} is a computer technology that deals with detecting instances of semantic objects of a certain class (such as humans, buildings, or cars) in digital images and videos. And successful object detection
+methods play fundamental roles in a lot of application areas, which include video surveillance, driving assistance, image retrieval, etc.
+ 
+
+
+In computer vision, lots of researchers focus on object detection from images. 
+
+
+

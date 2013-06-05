@@ -1,0 +1,13 @@
+\begin{eabstract}
+Object detection is a fundamental perceptual skill in human, and plays an important role in machine vision area. Successful object detection can help with video surveillance, driving assistance, etc.  
+
+Most state-of-the-art detection methods belong to two main categories: methods using the sliding-window schema and methods based on Hough transforms. Recent researcher improve detection performance by proposing better representative models, better classifiers, or more efficient method for exploring solution space.
+
+
+In our work, we try to improve the performance of object detection methods from a different aspect. We explore the information which are not made fully use of by previous methods. And our efforts are two-fold: 1) utilizing of motion information by combining it effectively and efficiently with appearance information, and 2) utilizing of mutual information encoded among the image features of the same object. 
+
+Firstly, we propose a very efficient method for detection by combining motion information and appearance information. 
+
+
+
+\end{eabstract}

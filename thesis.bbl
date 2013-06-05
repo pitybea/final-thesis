@@ -164,7 +164,7 @@ B.~Ommer and J.~Malik.
 \bibitem{ac34}
 O.~Russakovsky and A.Y. Ng.
 \newblock A steiner tree approach to efficient object detection.
-\newblock pages 1070--1077, 2010.
+\newblock In {\em CVPR}, pages 1070--1077, 2010.
 
 \bibitem{ac29}
 Henry Schneiderman and Takeo Kanade.
@@ -194,15 +194,19 @@ Paul~A. Viola and Michael~J. Jones.
 
 \bibitem{wang1}
 Z.~Wang, M.~Kagesawa, S.~Ono, A.~Banno, and K.~Ikeuchi.
-\newblock Global 3d modeling and its evaluation for large-scale highway tunnel
-  using laser range sensor.
-\newblock In {\em ITS World Congress}, 2012.
+\newblock Emergency light detection in tunnel environment: An efficient method.
+\newblock In {\em ACPR}, pages 628 -- 632, 2010.
 
 \bibitem{ac13}
 M.~Wertheimer.
 \newblock Laws of organization in perceptual forms (partial translation).
 \newblock In W.~B. Ellis, editor, {\em A Sourcebook of Gestalt Psychology},
   pages 71--88. Harcourt, Brace, 1938.
+
+\bibitem{dod}
+Wikipedia.
+\newblock Object detection.
+\newblock [Online; accessed 22-May-2013].
 
 \bibitem{ac23}
 C.~Wojek, S.~Roth, K.~Schindler, and B.~Schiele.
