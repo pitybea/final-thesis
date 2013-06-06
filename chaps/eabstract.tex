@@ -1,17 +1,15 @@
 \begin{eabstract}
+
 \normalsize{
-Object detection is a fundamental perceptual skill in human, and plays an important role in machine vision area. Successful object detection can help with video surveillance, driving assistance, etc.  
+Object detection is a fundamental perceptual skill in human, and plays an important role in machine vision area. Effective object detection methods can help with video surveillance, driving assistance, etc. Researchers improve performance of detection methods mainly by proposing better representative models, better classifiers, or more efficient methods for  solution space exploring.
 
-Most state-of-the-art detection methods belong to two main categories: methods using the sliding-window schema and methods based on Hough transforms. Recent researcher improve detection performance by proposing better representative models, better classifiers, or more efficient methods for  solution space exploring.
+In this work, the performance of detection methods is improved from a different aspect. The work explores the information which are not made fully use of by previous methods. And the efforts are two-fold: 1) utilizing of motion information by combining it   with appearance information, and 2) utilizing of mutual information encoded among the image features of the same object.
 
+The first detection method is developed for real-time applications. In a hierarchical way, this method makes time-consuming steps in its pipeline deal with fewer instances, and combines motion information with appearance information very efficiently. This method gives promising detection results in real time, and gives 100\% detection rate and 0\% false alarm rate in one of the experiments.
 
-In our work, we try to improve the performance of object detection methods from a different aspect. We explore the information which are not made fully use of by previous methods. And our efforts are two-fold: 1) utilizing of motion information by combining it effectively and efficiently with appearance information, and 2) utilizing of mutual information encoded among the image features of the same object. 
+While the performance of the first method in complex scene is not promising, the second method is proposed. This method extends the Implicit Shape Model~\cite{lb1} to incorporate motion information, and outperforms the state-of-the-art method on two datasets. This method also performs well in distinguishing near objects and similar different-class objects.
 
-The first detection method we proposed makes use of motion and appearance information very efficiently. In a hierarchical way, this method makes time-consuming steps in its pipeline deal with fewer instances. This method gives promising detection results in real time, and gives 100\% detection rate and 0\% false alarm rate in one of the experiments. 
-
-To make a unified framework for combining motion information, we propose the second method, which is grouping object parts by motion for detection. This method extends methods based on Hough transforms to incorporate motion information, and outperform the state-of-the-art method on two datasets. This method also performs well in distinguishing near objects and similar different-class objects.
-
-To improve the efficiency of methods based on Hough transforms, and also to use the mutual information encoded among the image features of the same object, we then propose the third method, Pyramid Matching Score for detection. The method makes use of Pyramid Matching during training and matching for efficiency, and in the procedure of this method, the mutual information encoded among the image features are also made use of, which improves detection performance.}
+To improve the efficiency of the second method, the third method is proposed, which is Pyramid Matching Score for detection. The method does pyramid matching during training and matching for efficiency, and makes use of the mutual information encoded among the image features of the same object, which improves detection performance.}
 \newpage
 \end{eabstract}
 

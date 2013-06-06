@@ -15,6 +15,11 @@ H.~Bay, T.~Tuytelaars, and L.~Van~Gool.
 \newblock Surf: Speeded up robust features.
 \newblock In {\em ECCV}, pages 404--417, 2006.
 
+\bibitem{dlearn}
+Yoshua Bengio.
+\newblock Learning deep architectures for ai.
+\newblock {\em Foundations and Trends in Machine Learning}, 2(1):1--127, 2009.
+
 \bibitem{my9}
 G.J. Brostow and R.~Cipolla.
 \newblock Unsupervised bayesian detection of independent motion in crowds.
@@ -37,6 +42,11 @@ P.~Davidson, J.~Hautamaki, and J.~Collin.
   car navigation system.
 \newblock In {\em International Conference on Integrated Navigation Systems},
   2008.
+
+\bibitem{face}
+Nikolay Degtyarev and Oleg Seredin.
+\newblock Comparative testing of face detection algorithms.
+\newblock In {\em ICISP}, pages 200--209, 2010.
 
 \bibitem{ac31}
 Pedro~F. Felzenszwalb, David~A. McAllester, and Deva Ramanan.
@@ -80,6 +90,11 @@ C.~Huang, B.~Wu, and R.~Nevatia.
   responses.
 \newblock In {\em ECCV}, pages II: 788--801, 2008.
 
+\bibitem{bgf}
+Herv\'e J\'egou, Matthijs Douze, and Cordelia Schmid.
+\newblock Improving bag-of-features for large scale image search.
+\newblock {\em IJCV}, 87(3):316--336, feb 2010.
+
 \bibitem{ha}
 H.~W. Kuhn.
 \newblock The hungarian method for the assignment problem.
@@ -90,6 +105,12 @@ C.H. Lampert, M.B. Blaschko, and T.~Hofmann.
 \newblock Beyond sliding windows: Object localization by efficient subwindow
   search.
 \newblock In {\em CVPR}, pages 1--8, 2008.
+
+\bibitem{bab}
+Christoph~H. Lampert, Matthew~B. Blaschko, and Thomas Hofmann.
+\newblock Efficient subwindow search: A branch and bound framework for object
+  localization.
+\newblock {\em PAMI}, 31(12):2129--2142, 2009.
 
 \bibitem{ac27}
 A.~Lehmann, B.~Leibe, and L.J. Van~Gool.
@@ -140,6 +161,12 @@ K.~Mikolajczyk, B.~Leibe, and B.~Schiele.
 \newblock Multiple object class detection with a generative model.
 \newblock In {\em CVPR}, pages I: 26--36, 2006.
 
+\bibitem{o17}
+K.~Mikolajczyk, T.~Tuytelaars, C.~Schmid, A.~Zisserman, J.~Matas,
+  F.~Schaffalitzky, T.~Kadir, and L.~Van~Gool.
+\newblock A comparison of affine region detectors.
+\newblock {\em IJCV}, 65(1-2):43--72, 2005.
+
 \bibitem{ac19}
 S.~Mohottala, S.~Ono, M.~Kagesawa, and K.~Ikeuchi.
 \newblock Fusion of a camera and a laser range sensor for vehicle recognition.
@@ -175,6 +202,12 @@ Henry Schneiderman and Takeo Kanade.
 Chris Stauffer and W.~Eric~L. Grimson.
 \newblock Adaptive background mixture models for real-time tracking.
 \newblock In {\em CVPR}, pages 2246--2252, 1999.
+
+\bibitem{hdp}
+Y.~W. Teh, M.~I. Jordan, M.~J. Beal, and D.~M. Blei.
+\newblock Hierarchical dirichlet process.
+\newblock {\em Journal of the American Statistical Association}, pages
+  1566--1581, 2006.
 
 \bibitem{ij2}
 C.~Tomasi and T.~Kanade.

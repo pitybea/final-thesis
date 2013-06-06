@@ -1,4 +1,4 @@
-\documentclass[senior,final,11pt]{iscs-thesis}
+\documentclass[doctor,final,12pt]{iscs-thesis}
 % 論文の種類とフォントサイズをオプションに
 %-------------------
 
@@ -33,7 +33,7 @@
 
 
 \include{chaps/eabstract}
-\newpage
+
 \include{chaps/jabstract}
 
 \maketitle
