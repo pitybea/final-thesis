@@ -1,0 +1,39 @@
+\chapter{Background and Related Work}
+
+\section{Vision in human and computer}
+The computational power of human is not any more competitive to computers, especially nowadays, when computational ability can be conveniently accessed from the cloud.
+Still when talking about the performance of visual recognition and detection under general situations, human are champion. In computer vision area, besides bar scanners and optical character recognition, object detection is a rare subject with some breakthroughs, face detection methods can be employed in real daily applications.
+
+So what stops the object detection methods of computers from performing as good as human? 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcc}
+     \hline
+     \hline
+                               &	Computer & Human \\
+    Quality of sensors         &	* &   \\
+    Computational ability      &	* &	  \\
+    Representative model       &	  & * \\
+    Decision procedure         &      & *	  \\    
+    Information fusion mechanism & & *           \\
+    Training quality           &      & *	   \\
+   \hline
+\end{tabular}
+\caption[Power comparison between computer and human]{Comparison between computer and human.}\label{c2tb:tb1}
+\end{table}
+
+When compared with human, computer will win at almost every aspect of hardware,as shown in \ref{c2tb:tb1}. Especially, for computational ability, \cite{bpw} believes human brain has a raw computational power between $10^13$ and $10^16$ operations per second, and modern computers can perform much better. As for representative model, there is no obvious evidence, human is doing better than computer. However the author believe human shall perform better than computer in the aspects of software, which then explains why human perform better in multiple visual tasks. And only do the vision researchers also believe so, they develop new so many detection methods. And the functional division are generally based on computer, while in human, they might work together.
+
+Human babies are taken good care of, and trained to perform very simple visual tasks for months with large amount of examples, which make training quality solid. The performance of new born babies also lead the author to consider about to what degree are the visual abilities decided by genes. If the training procedure has taken as long as millions of years, are there possibility for computer to win in future?
+
+The success of voice recognition and the successful deployment in industry~\cite{siri} encourage vision researchers.  Computational power can be used to make up with the short slab of training. For example, training one model for one hour with thousand of computers is feasible when parrel training is available. Also, the resent deep learning~\cite{dlearn} methods try to fusion representative model with decision procedure to act more like what human might do.
+
+The methods proposed in this methods explore the information which can be further made use, i.e., fusion of temporal and visual information, and the mutual information of different parts of the same object. 
+
+\section{General detection methods}
+
+
+
+\section{Very related work}
+

@@ -156,6 +156,11 @@ Subhransu Maji, Alexander~C. Berg, and Jitendra Malik.
   efficient.
 \newblock In {\em CVPR}, 2008.
 
+\bibitem{bpw}
+R.~C. Merkle.
+\newblock Energy limits to the computational power of the human brain.
+\newblock {\em Foresight Update}, No. 6, 1989.
+
 \bibitem{ac21}
 K.~Mikolajczyk, B.~Leibe, and B.~Schiele.
 \newblock Multiple object class detection with a generative model.
@@ -239,6 +244,11 @@ M.~Wertheimer.
 \bibitem{dod}
 Wikipedia.
 \newblock Object detection.
+\newblock [Online; accessed 22-May-2013].
+
+\bibitem{siri}
+Wikipedia.
+\newblock Siri.
 \newblock [Online; accessed 22-May-2013].
 
 \bibitem{ac23}

@@ -12,7 +12,7 @@ A level-1 auxiliary file: chaps/6.aux
 The style file: plain.bst
 A level-1 auxiliary file: chaps/thanks.aux
 Database file #1: chaps/egbib.bib
-Repeated entry---line 1981 of file chaps/egbib.bib
+Repeated entry---line 1993 of file chaps/egbib.bib
  : @article{hdp
  :             ,
 I'm skipping whatever remains of this entry
@@ -31,45 +31,45 @@ Warning--I didn't find a database entry for "DBLP:conf/cvpr/2008"
 Warning--I didn't find a database entry for "DBLP:conf/cvpr/1999"
 Warning--I didn't find a database entry for "DBLP:conf/icisp/2010"
 Warning--empty institution in ij2
-You've used 50 entries,
+You've used 52 entries,
             2118 wiz_defined-function locations,
-            762 strings with 10255 characters,
-and the built_in function-call counts, 21171 in all, are:
-= -- 2077
-> -- 838
+            770 strings with 10363 characters,
+and the built_in function-call counts, 21581 in all, are:
+= -- 2116
+> -- 852
 < -- 30
-+ -- 331
-- -- 276
-* -- 1313
-:= -- 3108
-add.period$ -- 151
-call.type$ -- 50
-change.case$ -- 287
++ -- 337
+- -- 280
+* -- 1327
+:= -- 3181
+add.period$ -- 157
+call.type$ -- 52
+change.case$ -- 295
 chr.to.int$ -- 0
-cite$ -- 51
-duplicate$ -- 969
-empty$ -- 1793
-format.name$ -- 276
-if$ -- 4820
+cite$ -- 53
+duplicate$ -- 986
+empty$ -- 1832
+format.name$ -- 280
+if$ -- 4906
 int.to.chr$ -- 0
-int.to.str$ -- 50
-missing$ -- 48
-newline$ -- 253
-num.names$ -- 104
-pop$ -- 375
+int.to.str$ -- 52
+missing$ -- 49
+newline$ -- 263
+num.names$ -- 108
+pop$ -- 388
 preamble$ -- 1
-purify$ -- 236
+purify$ -- 242
 quote$ -- 0
-skip$ -- 830
+skip$ -- 844
 stack$ -- 0
-substring$ -- 1490
-swap$ -- 407
+substring$ -- 1500
+swap$ -- 409
 text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 200
+type$ -- 208
 warning$ -- 1
-while$ -- 179
-width$ -- 52
-write$ -- 545
+while$ -- 183
+width$ -- 54
+write$ -- 565
 (There were 6 error messages)

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.3-110825-2.4 (sjis) (TeX Live 2012/W32TeX) (format=platex 2013.5.8)  6 JUN 2013 13:17
+This is e-pTeX, Version 3.1415926-p3.3-110825-2.4 (sjis) (TeX Live 2012/W32TeX) (format=platex 2013.5.8)  6 JUN 2013 16:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -353,12 +353,12 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
 (e:/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (e:/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -401,11 +401,17 @@ Chapter 1.
 
  (./chaps/2.tex
 Chapter 2.
-) [4
+[4
 
 
 
 ]
+Overfull \hbox (6.32379pt too wide) in paragraph at lines 32--33
+[]\OT1/ptm/m/n/14.4 The meth-ods pro-posed in this meth-ods ex-plore the in-for
+-ma-tion which
+ []
+
+) [5]
 \openout2 = `chaps/3.aux'.
 
  (./chaps/3.tex
@@ -414,7 +420,7 @@ LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
-[5
+[6
 
 
 
@@ -422,12 +428,12 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <14.4> not available
 File: 17Orgimg00039.jpg Graphic file (type eps)
  <17Orgimg00039.jpg>
 File: 17veriTrjimg00039.jpg Graphic file (type eps)
- <17veriTrjimg00039.jpg> [6] [7]
+ <17veriTrjimg00039.jpg> [7] [8]
 File: 17Kptimg00039.jpg Graphic file (type eps)
  <17Kptimg00039.jpg>
 File: 8Kptimg00028.jpg Graphic file (type eps)
 
-<8Kptimg00028.jpg> [8]
+<8Kptimg00028.jpg> [9]
 Overfull \hbox (2.78145pt too wide) in paragraph at lines 107--108
 []\OT1/ptm/m/n/14.4 For ver-i-fi-ca-tion, the in-ten-sity his-togram of each ke
 y-point's sur-round-
@@ -441,7 +447,7 @@ File: 17Rgsimgwl00039.jpg Graphic file (type eps)
  <17Rgsimgwl00039.jpg>
 File: 8Rgsimgwl00028.jpg Graphic file (type eps)
 
-<8Rgsimgwl00028.jpg> [9] [10]
+<8Rgsimgwl00028.jpg> [10] [11]
 File: 17Rgsimg00039.jpg Graphic file (type eps)
  <17Rgsimg00039.jpg>
 File: 8Rgsimg00028.jpg Graphic file (type eps)
@@ -453,14 +459,14 @@ Overfull \hbox (19.98495pt too wide) in paragraph at lines 151--152
 /m/it/14.4 ; :::; n\OMS/cmsy/m/n/14.4 g$\OT1/ptm/m/n/14.4 ,
  []
 
-[11]
+[12]
 Overfull \hbox (0.10132pt too wide) in paragraph at lines 171--173
 \OT1/ptm/m/n/14.4 tained in $\OML/cmm/m/it/14.4 T[]$ \OT1/ptm/m/n/14.4 and $\OM
 L/cmm/m/it/14.4 n[]$\OT1/ptm/m/n/14.4 . While Hun-gar-ian al-go-rithm [[]] give
 s near-optimal
  []
 
-[12] [13]
+[13] [14]
 File: 17veriTrjimg00039.jpg Graphic file (type eps)
  <17veriTrjimg00039.jpg>
 File: 8veriTrjimg00028.jpg Graphic file (type eps)
@@ -469,7 +475,7 @@ File: 19veriTrjimg00041.jpg Graphic file (type eps)
 
 <19veriTrjimg00041.jpg>
 File: 3veriTrjimg00023.jpg Graphic file (type eps)
- <3veriTrjimg00023.jpg> [14]) [15]
+ <3veriTrjimg00023.jpg> [15]) [16]
 \openout2 = `chaps/4.aux'.
 
  (./chaps/4.tex
@@ -486,7 +492,7 @@ Overfull \hbox (1.7627pt too wide) in paragraph at lines 15--21
   |   []   |   []   |   []
  []
 
-[16
+[17
 
 
 
@@ -496,7 +502,7 @@ Overfull \hbox (1.74805pt too wide) in paragraph at lines 36--37
 sing, and
  []
 
-[17]
+[18]
 File: PEssR.jpg Graphic file (type eps)
  <PEssR.jpg>
 File: a56.jpg Graphic file (type eps)
@@ -526,20 +532,20 @@ Overfull \hbox (17.95975pt too wide) in paragraph at lines 67--68
 i-lar different-
  []
 
-[18] [19]
+[19] [20]
 Overfull \hbox (5.3196pt too wide) in paragraph at lines 79--80
 \OT1/ptm/m/n/14.4 book noise [[]], and meth-ods which in-te-grate tem-po-ral in
 -for-ma-tion [[]]. 
  []
 
-[20]
+[21]
 Overfull \hbox (0.485pt too wide) in paragraph at lines 121--122
 []\OT1/ptm/m/n/14.4 Here, a uni-form weight is as-sumed for each ob-ject part, 
 and $\OML/cmm/m/it/14.4 w\OT1/cmr/m/n/14.4 (\OT1/cmr/bx/n/14.4 e[]\OT1/cmr/m/n/
 14.4 ) =
  []
 
-[21] [22]
+[22] [23]
 File: a56.jpg Graphic file (type eps)
  <a56.jpg>
 File: voteimg00056.jpg Graphic file (type eps)
@@ -548,13 +554,13 @@ File: selectVimg00056_9.jpg Graphic file (type eps)
  <selectVimg00056_9.jpg>
 File: selectedvotesimg00056.jpg Graphic file (type eps)
 
-<selectedvotesimg00056.jpg> [23]
+<selectedvotesimg00056.jpg> [24]
 Overfull \hbox (19.08122pt too wide) in paragraph at lines 221--222
 []\OT1/ptm/m/n/14.4 Before group-ing the tra-jec-to-ries, the static points are
  ex-cluded. |   []
  []
 
-[24] [25]
+[25] [26]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -578,7 +584,7 @@ Overfull \hbox (16.99434pt too wide) in paragraph at lines 396--397
 me size is 720$\OMS/cmsy/m/n/14.4 ^^B$\OT1/ptm/m/n/14.4 576.
  []
 
-[26]
+[27]
 File: a16.jpg Graphic file (type eps)
  <a16.jpg>
 File: a26.jpg Graphic file (type eps)
@@ -593,7 +599,7 @@ File: cm2.eps Graphic file (type eps)
  <cm2.eps>
 File: cm1.eps Graphic file (type eps)
  <cm1.eps>
-[27]
+[28]
 File: 016.jpg Graphic file (type eps)
  <016.jpg>
 File: 026.jpg Graphic file (type eps)
@@ -636,7 +642,7 @@ File: 3.jpg Graphic file (type eps)
 File: 2.jpg Graphic file (type eps)
  <2.jpg>
 File: 4.jpg Graphic file (type eps)
- <4.jpg> [28] [29]
+ <4.jpg> [29] [30]
 Overfull \hbox (5.8756pt too wide) in paragraph at lines 486--487
 []\OT1/ptm/b/n/14.4 Implementation set-tings \OT1/ptm/m/n/14.4 Most im-ple-men-
 ta-tion set-tings are the same
@@ -649,7 +655,7 @@ File: leo2.jpg Graphic file (type eps)
 File: leo3.jpg Graphic file (type eps)
  <leo3.jpg>
 File: ti1.jpg Graphic file (type eps)
- <ti1.jpg>) [30] [31] [32]
+ <ti1.jpg>) [31] [32] [33]
 \openout2 = `chaps/5.aux'.
 
  (./chaps/5.tex
@@ -662,23 +668,23 @@ Overfull \hbox (0.19319pt too wide) in paragraph at lines 6--10
 :; []\OMS/cmsy/m/n/14.4 g$
  []
 
-[33
+[34
 
 
 
-]) [34]
+]) [35]
 \openout2 = `chaps/6.aux'.
 
  (./chaps/6.tex
 Chapter 6.
-) [35
+) [36
 
 
 
-] (./thesis.bbl [36
+] (./thesis.bbl [37
 
 
-] [37] [38]) [39]
+] [38] [39]) [40]
 \openout2 = `chaps/thanks.aux'.
 
  (./chaps/thanks.tex) (./thesis.aux
@@ -690,12 +696,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3451 strings out of 494052
- 41485 string characters out of 3160345
- 113359 words of memory out of 3000000
- 6704 multiletter control sequences out of 15000+200000
+ 3454 strings out of 494052
+ 41506 string characters out of 3160345
+ 113382 words of memory out of 3000000
+ 6707 multiletter control sequences out of 15000+200000
  18066 words of font info for 66 fonts, out of 3000000 for 9000
  745 hyphenation exceptions out of 8191
  27i,22n,35p,1406b,742s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on thesis.dvi (47 pages, 142288 bytes).
+Output written on thesis.dvi (48 pages, 147500 bytes).

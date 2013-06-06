@@ -1,32 +1,35 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {chapter}{\numberline {2}Background and Related Work}{4}
-\contentsline {chapter}{\numberline {3}Efficient Detection by Combining of Appearance and Temporal Information }{5}
-\contentsline {section}{\numberline {3.1}Introduction}{5}
-\contentsline {section}{\numberline {3.2}Related Work}{7}
-\contentsline {section}{\numberline {3.3}Emergency Telephone Indicator Detection}{8}
-\contentsline {subsection}{\numberline {3.3.1}Keypoint Detection}{8}
-\contentsline {subsection}{\numberline {3.3.2}Keypoint Verification}{9}
-\contentsline {subsection}{\numberline {3.3.3}Keypoint Clustering}{10}
-\contentsline {subsection}{\numberline {3.3.4}Keypoint Cluster Verification by Appearance}{10}
-\contentsline {subsection}{\numberline {3.3.5}Keypoint Cluster Tracking}{11}
-\contentsline {subsection}{\numberline {3.3.6}Keypoint Cluster Verification by Motion}{12}
-\contentsline {subsection}{\numberline {3.3.7}Object Detection}{13}
-\contentsline {section}{\numberline {3.4}Experimental Results}{13}
-\contentsline {section}{\numberline {3.5}Conclusion}{15}
-\contentsline {chapter}{\numberline {4}Grouping of object parts by motion for detection}{16}
-\contentsline {section}{\numberline {4.1}Introduction}{16}
-\contentsline {section}{\numberline {4.2}Related Work}{18}
-\contentsline {section}{\numberline {4.3}Common Fate Hough Transform}{20}
-\contentsline {subsection}{\numberline {4.3.1}Common Fate Weights}{21}
-\contentsline {subsection}{\numberline {4.3.2}Motion Grouping}{23}
-\contentsline {subsection}{\numberline {4.3.3}Codebook}{24}
-\contentsline {section}{\numberline {4.4}Detection}{25}
-\contentsline {section}{\numberline {4.5}Experimental Results}{26}
-\contentsline {subsection}{\numberline {4.5.1} Campus-scene Detection }{26}
-\contentsline {subsection}{\numberline {4.5.2}Wild-scene Detection}{28}
-\contentsline {section}{\numberline {4.6}Conclusion}{30}
-\contentsline {chapter}{\numberline {5}Pyramid Match Score for Detection}{33}
-\contentsline {section}{\numberline {5.1}Pyramid Match}{33}
-\contentsline {section}{\numberline {5.2}Pyramid Match Score}{34}
-\contentsline {chapter}{\numberline {6}Conclusion and outlook}{35}
-\contentsline {chapter}{References}{36}
+\contentsline {section}{\numberline {2.1}Vision in human and computer}{4}
+\contentsline {section}{\numberline {2.2}General detection methods}{5}
+\contentsline {section}{\numberline {2.3}Very related work}{5}
+\contentsline {chapter}{\numberline {3}Efficient Detection by Combining of Appearance and Temporal Information }{6}
+\contentsline {section}{\numberline {3.1}Introduction}{6}
+\contentsline {section}{\numberline {3.2}Related Work}{8}
+\contentsline {section}{\numberline {3.3}Emergency Telephone Indicator Detection}{9}
+\contentsline {subsection}{\numberline {3.3.1}Keypoint Detection}{9}
+\contentsline {subsection}{\numberline {3.3.2}Keypoint Verification}{10}
+\contentsline {subsection}{\numberline {3.3.3}Keypoint Clustering}{11}
+\contentsline {subsection}{\numberline {3.3.4}Keypoint Cluster Verification by Appearance}{11}
+\contentsline {subsection}{\numberline {3.3.5}Keypoint Cluster Tracking}{12}
+\contentsline {subsection}{\numberline {3.3.6}Keypoint Cluster Verification by Motion}{13}
+\contentsline {subsection}{\numberline {3.3.7}Object Detection}{14}
+\contentsline {section}{\numberline {3.4}Experimental Results}{14}
+\contentsline {section}{\numberline {3.5}Conclusion}{16}
+\contentsline {chapter}{\numberline {4}Grouping of object parts by motion for detection}{17}
+\contentsline {section}{\numberline {4.1}Introduction}{17}
+\contentsline {section}{\numberline {4.2}Related Work}{19}
+\contentsline {section}{\numberline {4.3}Common Fate Hough Transform}{21}
+\contentsline {subsection}{\numberline {4.3.1}Common Fate Weights}{22}
+\contentsline {subsection}{\numberline {4.3.2}Motion Grouping}{24}
+\contentsline {subsection}{\numberline {4.3.3}Codebook}{25}
+\contentsline {section}{\numberline {4.4}Detection}{26}
+\contentsline {section}{\numberline {4.5}Experimental Results}{27}
+\contentsline {subsection}{\numberline {4.5.1} Campus-scene Detection }{27}
+\contentsline {subsection}{\numberline {4.5.2}Wild-scene Detection}{29}
+\contentsline {section}{\numberline {4.6}Conclusion}{31}
+\contentsline {chapter}{\numberline {5}Pyramid Match Score for Detection}{34}
+\contentsline {section}{\numberline {5.1}Pyramid Match}{34}
+\contentsline {section}{\numberline {5.2}Pyramid Match Score}{35}
+\contentsline {chapter}{\numberline {6}Conclusion and outlook}{36}
+\contentsline {chapter}{References}{37}
