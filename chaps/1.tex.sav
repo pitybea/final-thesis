@@ -1,0 +1,11 @@
+\chapter{Introduction}
+Detecting objects of interest from a complex scene is a basic perceptual skill in human beings and other animals.
+While in the area of computer science, object detection~\cite{dod} is a computer technology that deals with detecting instances of semantic objects of a certain class (such as humans, buildings, or cars) in digital images and videos. And successful object detection
+methods play fundamental roles in a lot of application areas, which include video surveillance, driving assistance, image retrieval, etc.
+ 
+Most modern detection methods fall into two categories. Some~\cite{ij4,ac31,ac30,ac4,ac32,ac29,ac28,ac1} follow the sliding-window schema, and they detect objects by consider whether each of the sub-images contains an instance of the target object. Classifiers are usually employed by these methods. The other methods~\cite{ac9,ac2,ac3,ac22,lb1,ac5,ac10,ac21,ac18} infer object centers based on local image features in a bottom-up manner.
+
+In computer vision, lots of researchers focus on object detection from images.  
+
+
+

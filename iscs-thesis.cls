@@ -142,7 +142,7 @@
 
                        %--------- 12pt
 \renewcommand\normalsize{%
-   \@setfontsize\normalsize\@xivpt{14.5}%
+   \@setfontsize\normalsize\@xiipt{14.5}%
    \abovedisplayskip 12\p@ \@plus3\p@ \@minus7\p@
    \abovedisplayshortskip \z@ \@plus3\p@
    \belowdisplayshortskip 6.5\p@ \@plus3.5\p@ \@minus3\p@

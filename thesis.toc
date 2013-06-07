@@ -2,38 +2,41 @@
 \contentsline {chapter}{\numberline {2}Background and Related Work}{4}
 \contentsline {section}{\numberline {2.1}Vision in Human and Computer}{4}
 \contentsline {section}{\numberline {2.2}Basics of Detection Methods}{5}
-\contentsline {subsection}{\numberline {2.2.1}Image Features}{6}
+\contentsline {subsection}{\numberline {2.2.1}Image Features}{5}
 \contentsline {subsection}{\numberline {2.2.2}Decision Procedure}{6}
 \contentsline {subsection}{\numberline {2.2.3}Solution Space Explore}{7}
-\contentsline {section}{\numberline {2.3}Advances in Object Detection}{8}
-\contentsline {chapter}{\numberline {3}Efficient Detection by Combining of Appearance and Temporal Information }{10}
-\contentsline {section}{\numberline {3.1}Introduction}{10}
-\contentsline {section}{\numberline {3.2}Application background}{10}
-\contentsline {section}{\numberline {3.3}Related Work}{12}
-\contentsline {section}{\numberline {3.4}Detection Pipeline}{13}
-\contentsline {subsection}{\numberline {3.4.1}Keypoint Detection}{13}
-\contentsline {subsection}{\numberline {3.4.2}Keypoint Verification}{14}
-\contentsline {subsection}{\numberline {3.4.3}Keypoint Clustering}{15}
-\contentsline {subsection}{\numberline {3.4.4}Keypoint Cluster Verification by Appearance}{16}
-\contentsline {subsection}{\numberline {3.4.5}Keypoint Cluster Tracking}{17}
-\contentsline {subsection}{\numberline {3.4.6}Keypoint Cluster Verification by Motion}{18}
-\contentsline {subsection}{\numberline {3.4.7}Object Detection}{19}
-\contentsline {section}{\numberline {3.5}Experimental Results}{19}
-\contentsline {section}{\numberline {3.6}Conclusion}{21}
-\contentsline {chapter}{\numberline {4}Grouping of object parts by motion for detection}{22}
-\contentsline {section}{\numberline {4.1}Introduction}{22}
-\contentsline {section}{\numberline {4.2}Related Work}{24}
-\contentsline {section}{\numberline {4.3}Common Fate Hough Transform}{26}
-\contentsline {subsection}{\numberline {4.3.1}Common Fate Weights}{28}
-\contentsline {subsection}{\numberline {4.3.2}Motion Grouping}{29}
-\contentsline {subsection}{\numberline {4.3.3}Codebook}{31}
-\contentsline {section}{\numberline {4.4}Detection}{32}
-\contentsline {section}{\numberline {4.5}Experimental Results}{33}
-\contentsline {subsection}{\numberline {4.5.1} Campus-scene Detection }{33}
-\contentsline {subsection}{\numberline {4.5.2}Wild-scene Detection}{35}
-\contentsline {section}{\numberline {4.6}Conclusion}{37}
-\contentsline {chapter}{\numberline {5}Pyramid Match Score for Detection}{40}
-\contentsline {section}{\numberline {5.1}Pyramid Match}{40}
-\contentsline {section}{\numberline {5.2}Pyramid Match Score}{41}
-\contentsline {chapter}{\numberline {6}Conclusion and outlook}{42}
-\contentsline {chapter}{References}{43}
+\contentsline {section}{\numberline {2.3}Advances in Object Detection}{7}
+\contentsline {chapter}{\numberline {3}Efficient Detection by Combining of Appearance and Temporal Information }{9}
+\contentsline {section}{\numberline {3.1}Introduction}{9}
+\contentsline {section}{\numberline {3.2}Related Work}{11}
+\contentsline {section}{\numberline {3.3}Application background}{11}
+\contentsline {section}{\numberline {3.4}Detection Pipeline}{12}
+\contentsline {subsection}{\numberline {3.4.1}Keypoint Detection}{12}
+\contentsline {subsection}{\numberline {3.4.2}Keypoint Verification}{13}
+\contentsline {subsection}{\numberline {3.4.3}Keypoint Clustering}{14}
+\contentsline {subsection}{\numberline {3.4.4}Keypoint Cluster Verification by Appearance}{15}
+\contentsline {subsection}{\numberline {3.4.5}Keypoint Cluster Tracking}{15}
+\contentsline {subsection}{\numberline {3.4.6}Keypoint Cluster Verification by Motion}{16}
+\contentsline {subsection}{\numberline {3.4.7}Object Detection}{17}
+\contentsline {section}{\numberline {3.5}Experimental Results}{17}
+\contentsline {subsection}{\numberline {3.5.1}First Experiment}{17}
+\contentsline {subsection}{\numberline {3.5.2}Second Experiment}{17}
+\contentsline {section}{\numberline {3.6}Experimental results on data collected by ordinary cameras}{19}
+\contentsline {section}{\numberline {3.7}Conclusion}{19}
+\contentsline {chapter}{\numberline {4}Grouping of object parts by motion for detection}{20}
+\contentsline {section}{\numberline {4.1}Introduction}{20}
+\contentsline {section}{\numberline {4.2}Related Work}{23}
+\contentsline {section}{\numberline {4.3}Common Fate Hough Transform}{23}
+\contentsline {subsection}{\numberline {4.3.1}Common Fate Weights}{24}
+\contentsline {subsection}{\numberline {4.3.2}Motion Grouping}{26}
+\contentsline {subsection}{\numberline {4.3.3}Codebook}{28}
+\contentsline {section}{\numberline {4.4}Detection}{29}
+\contentsline {section}{\numberline {4.5}Experimental Results}{30}
+\contentsline {subsection}{\numberline {4.5.1} Campus-scene Detection }{30}
+\contentsline {subsection}{\numberline {4.5.2}Wild-scene Detection}{32}
+\contentsline {section}{\numberline {4.6}Conclusion}{34}
+\contentsline {chapter}{\numberline {5}Pyramid Match Score for Detection}{38}
+\contentsline {section}{\numberline {5.1}Pyramid Match}{38}
+\contentsline {section}{\numberline {5.2}Pyramid Match Score}{39}
+\contentsline {chapter}{\numberline {6}Conclusion and outlook}{40}
+\contentsline {chapter}{References}{41}

@@ -1,17 +1,35 @@
 \chapter{Efficient Detection by Combining of Appearance and Temporal Information }
+\label{chp3}
 
-\section{Application background}
-% no \IEEEPARstart
-Positioning of automobiles acts a fundamental role in autonomous driving, and it is also of great importance for driving assistance, vehicle navigation, etc. When GPS sensors function properly, it is usually easy for an automobile to estimate the position of  itself. While in tunnel environment, for most of the time, there is no GPS signals available. A new positioning system which functions properly in tunnel environment is very necessary~\cite{nig}. We have tackled this issue as a part of automated driving system in a NEDO project, "Development of Energy-saving ITS Technologies".
+\section{Introduction}
 
-In most tunnels which appear on express ways in Japan, there are lots of signs which appear at equal intervals. We focus on the emergency telephone indicators, which appear every 200 meters in tunnels. The absolute coordinates of the emergency telephone indicators can be obtained by the method of~\cite{xue}. While travelling in tunnels, if the emergency telephone indicators can be sensed, and the distance from the automobile to the indicators can be estimated, then the absolute position of the automobile can be inferred. Detection methods i.e.~\cite{ac23} based on ordinary cameras fail due to darkness. Here we use infrared cameras, which are usually equipped by recent intelligent vehicles, and which are suitable in dark environment. Moreover, far-infrared stereo system is developping in our automated driving system. Inspired by a previous work~\cite{wang1}, we propose an approach to detecting emergency telephone indicators by using infrared cameras.
+From time to time, efficient detection methods under limited computational power are very applicable in various areas, such as driving assistance using embedded sensors. Here, a method pursuing efficiency and real-time detection is proposed.
+The proposed detection method makes use of both
+appearance and motion information of the target objects. By well optimizing of the detecting pipeline, the
+method works in real time, and gives 100\% detection rate and 0\% false alarm rate in one experiment of data collected by infrared camera.
 
-Detection performance and efficiency are the two important aspects of our method.
+As always, detection performance and efficiency are the two important aspects of this method. Challenges come from the need to distinguish noisy objects as shown in Figure~\ref{fig:first} and the real-time requirement. In experiments, besides the target object a lot of noisy objects also exist. Some of the noisy objects cannot even by distinguished from the target objects by only appearance.  The clutter property of the sensed data makes the detection challenging. The proposed method meets this challenge by making use of both appearance and temporal information of the target objects. There are two main steps in the method.
 
-In tunnel environment, besides the target objects, a lot of noisy objects also appear, e.g. ordinary lights, other vehicles, and other vehicles' shadows. And some of the noisy objects cannot even be distinguished from the target objects by appearance , as shown in Figure \ref{fig:first}. The clutter property of the sensed data makes the detection challenging.
-Our method meets this challenge by making use of both appearance and temporal information of the target objects. There are two main steps in the method. The first step deals with keypoints, and  it takes original data as input, and outputs keypoint clusters as detection hypotheses. In this step, keypoints are detected, verified and then clustered. To detect keypoints, all points on each frame are uniformly sampled and filtered with pre-set intensity thresholds.  Then the keypoints are verified by a simple keypoint appearance model   built by \emph{k}-means. At the end of the first step, the keypoints are clustered based on the Euclidean distance. The second step takes the keypoint clusters as input, and verifies them by appearance and temporal information, and outputs the ones pass verifications as detection results. In the second step, the keypoint clusters are labeled based on appearance by an adaboost machine, which is trained using intensity histograms of keypoint clusters from target objects and keypoint clusters from noisy objects. The keypoint clusters are also tracked by temporal association through frames. Motion information encoded in the trajectories are used to further verify the keypoint clusters. Finally, the keypoint clusters which pass both appearance and temporal verifications are decided as emergency telephone indicators.
+The first step deals with keypoints, and  it takes original data as input, and outputs keypoint clusters as detection hypotheses. In this step, keypoints are detected, verified and then clustered. To detect keypoints, all points on each frame are uniformly sampled and filtered with pre-set intensity thresholds.  Then the keypoints are verified by a simple keypoint appearance model   powered by \emph{k}-means. At the end of the first step, the keypoints are clustered based on the Euclidean distance. 
+
+The second step takes the keypoint clusters as input, and verifies them by appearance and temporal information, and outputs the ones pass verifications as detection results. In the second step, the keypoint clusters are labeled based on appearance by an adaboost machine, which is trained using intensity histograms of keypoint clusters from target objects and keypoint clusters from noisy objects. The keypoint clusters are also tracked by temporal association through frames. Motion information encoded in the trajectories are used to further verify the keypoint clusters. Finally, the keypoint clusters which pass both appearance and temporal verifications are decided as emergency telephone indicators.
 
 This pipeline is designed also with consideration of the requirement for efficiency.  The method deals with the large amount information contained on one frame following a hierarchical manner. The later one step is, the more time-consuming it is  and the fewer instances it deals with. From an image containing $10^5$ pixels, $10^4$ points go through keypoint detection step of testing by intensity thresholds. Then in average, $10^3$ keypoints are detected, and verified, leaving about $10^2$ to be clustered. Afterwards, fewer than $10$ keypoint clusters are left, which are dealt with by the very time-consuming steps of generating image features and tracking.
+
+The advantage of the method is its ability to give promising detection results from cluttered data in real time. Besides, the method is also a successful attempt to combine bottom-up and classification methods, and a successful attempt to combine both appearance and temporal information.
+
+
+Firstly, the method is proposed with application scenario of data collected by infrared cameras, then it is also extended to corporate with data collected by ordinary cameras.
+This chapter is organized as follows: section \ref{rw} reviews related work, section \ref{pip} proposes pipeline of the method, section \ref{ex} gives experimental results, and section \ref{conc} concludes.
+
+
+
+
+
+ 
+
+
+
 
 
 
@@ -20,10 +38,10 @@ This pipeline is designed also with consideration of the requirement for efficie
 \begin{figure}
 \centering
 \subfigure[]{
-\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{17Orgimg00039.jpg}
+\includegraphics[width=0.44\textwidth,bb=0 0 640 480]{17Orgimg00039.jpg}
 \label{fig:first:a}}
 \subfigure[]{
-\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{17veriTrjimg00039.jpg}
+\includegraphics[width=0.44\textwidth,bb=0 0 640 480]{17veriTrjimg00039.jpg}
 \label{fig:first:b}}
 \caption[short title]{Original data and detection results. In (a), the red arrow points to the target object: emergency telephone indicator, and the green arrows point to noisy objects. In (b), red rectangles mark detection hypotheses labeled as positive using appearance information, and green rectangles mark negative ones. Yellow trajectories mark detection hypotheses labeled as positive using temporal information, and white trajectories mark negative ones.}
 \label{fig:first}
@@ -35,29 +53,39 @@ This pipeline is designed also with consideration of the requirement for efficie
 
 
 
-The advantage of the method is its ability to give promising detection results from cluttered data in real time. Besides, the method is also a successful attempt to combine bottom-up and classification methods, and a successful attempt to combine both appearance and temporal information.
 
-The paper is organized as follows: section 2 reviews related work, section 3 proposes pipeline of the method, section 4 gives experimental results, and section 5 concludes.
 
 \section{Related Work}
-
+\label{rw}
 
 Most modern detection methods fall into two categories. Some~\cite{ij4,ac31,ac30,ac4,ac32,ac29,ac28,ac1} follow the sliding-window schema, and they detect objects by consider whether each of the sub-images contains an instance of the target object. Classifiers are usually employed by these methods. The other methods~\cite{ac9,ac2,ac3,ac22,lb1,ac5,ac10,ac21,ac18} infer object centers based on local image features in a bottom-up manner. The proposed method makes advantages of both frameworks. Following the bottom-up manner, keypoints are detected, verified, and clustered. After these steps, the keypoint clusters are considered as detection hypotheses. Then following the sliding-window schema, the keypoint clusters are verified by their appearance and temporal information using discriminative methods.
 
-Previous methods~\cite{ac34} also consider the combination of the two frameworks. Detection hypotheses are gained using Hough transform and then verified by support vector machines in~\cite{ac10,ac25}. The methods in~\cite{ac6,ac7}, use randomized decision trees for both decisions whether local features belonging to foreground objects or not and decisions of their Hough votes. The method proposed in~\cite{ac27} describes both frameworks in the same manner. While giving state-of-the-art detection performance, they can't meet the requirement for efficiency as our method does.
+Previous methods~\cite{ac34} also consider the combination of the two frameworks. Detection hypotheses are gained using Hough transform and then verified by support vector machines in~\cite{ac10,ac25}. The methods in~\cite{ac6,ac7}, use randomized decision trees for both decisions whether local features belonging to foreground objects or not and decisions of their Hough votes. The method proposed in~\cite{ac27} describes both frameworks in the same manner. While giving state-of-the-art detection performance, they can't meet the requirement for efficiency as this method does.
 
-Our work is also related to feature grouping methods~\cite{ac25}, methods detecting using trajectories~\cite{my9,ac24}, tracking methods~\cite{my7,my10}, and methods integrating appearance and temporal information~\cite{ac23}.
+ This work is also related to feature grouping methods~\cite{ac25}, methods detecting using trajectories~\cite{my9,ac24}, tracking methods~\cite{my7,my10}, and methods integrating appearance and temporal information~\cite{ac23}.
 
-Especially, compared with the method proposed in~\cite{wang1}, our method employs a more effective classifying machine by setting biased weights for positive and negative training examples, and far over-perform the method.
 
-\section{Emergency Telephone Indicator Detection}
+\section{Application background}
+% no \IEEEPARstart
+When developing the method, potential applications are within consideration. The method aims to perform detection in real time, and serve as a useful unit in positioning automobiles in tunnel environment.
+
+Positioning of automobiles acts an important role in autonomous driving, and it is also of great importance for driving assistance, vehicle navigation, etc. When GPS sensors function properly, it is usually easy for an automobile to estimate the position of  itself. While in tunnel environment, for most of the time, there is no GPS signals available. A new positioning system which functions properly in tunnel environment is very necessary~\cite{nig}.
+
+In most tunnels which appear on express ways in Japan, there are lots of signs which appear at equal intervals. Attention can be focused on the emergency telephone indicators, which appear every 200 meters in tunnels. The absolute coordinates of the emergency telephone indicators can be obtained by the method of~\cite{xue}. While travelling in tunnels, if the emergency telephone indicators can be sensed, and the distance from the automobile to the indicators can be estimated, then the absolute position of the automobile can be inferred. Detection methods i.e.~\cite{ac23} based on ordinary cameras fail due to darkness. In our experiments we used infrared cameras, which are usually equipped by recent intelligent vehicles, and which are suitable in dark environment.  In tunnel environment, besides the target objects, a lot of noisy objects also appear, e.g. ordinary lights, other vehicles, and other vehicles' shadows. 
+
+\begin{comment}
+Especially, compared with the method proposed in~\cite{wang1}, this method employs a more effective classifying machine by setting biased weights for positive and negative training examples, and far over-perform the method.
+Inspired by a previous work~\cite{wang1}, the proposed method can be turned to a  approach to detecting emergency telephone indicators by using infrared cameras.
+\end{comment}
+\section{Detection Pipeline}
+\lable{pip}
 The method can be considered as a two-step method. The first step deals with keypoints. It
 takes original data as input, and outputs keypoint clusters as detection hypotheses. The second
 step takes these keypoint clusters as input, verifies them by their appearance and motion
 information, and outputs the ones which pass verifications as detection results.
 
 \subsection{Keypoint Detection}
-In data collected using ordinary cameras, keypoints~\cite{o2,o12} invariant to rotations, affine changes, and illumination changes are preferable. In our case, keypoint detection intends to provide hypotheses for emergency telephone indicators. Thus intensity is of great importance. Our method employs a simple yet useful method to detect keypoints. Firstly, points are uniformly sampled with width step 6, and height step 7 (the length of emergency telephone indicator is larger than its width). In this manner the magnitude of instances is reduced by nearly two orders. Then the points pass the test which verifies the points by setting intensity thresholds are considered as keypoints.
+In data collected using ordinary cameras, keypoints~\cite{o2,o12} invariant to rotations, affine changes, and illumination changes are preferable. In the case of using data collected by infrared cameras, keypoint detection intends to provide hypotheses for target objects, i.e. emergency telephone indicators. Thus intensity is of great importance. This method employs a simple yet useful method to detect keypoints. Firstly, points are uniformly sampled with width step 6, and height step 7 (the length of emergency telephone indicator is larger than its width). In this manner the magnitude of instances is reduced by nearly two orders. Then the points pass the test which verifies the points by setting intensity thresholds are considered as keypoints.
 Here Gaussian distribution is assumed for the intensities of the points.
 
 
@@ -148,7 +176,7 @@ In this step, to emphasize the Adaboost machine's performance on the positive tr
 \subsection{Keypoint Cluster Tracking}
 Not all noisy detection hypotheses can be excluded by using appearance, as shown in Figure \ref{fig:fif}. To distinguish keypoint clusters belonging to other vehicles and their shadows, the keypoint clusters are tracked through frames to generate trajectories.
 
-In our case of keypoint cluster tracking, the problem is relatively simple, since no occlusion occurs. To keep the method on-line and maintain efficiency, a pool of trajectories are kept, $\tau=\{T_{\bf{g}}^i,i=1,2,...,n\}$, and new detection hypotheses act as detection responses, $\nu=\{n_{\bf{g}}^i,i=1,2,...m\}$, in tracking. The problem of tracking is modeled as finding best data association hypothesis, $H^*$, between the trajectory set and detection response set as,
+In this case of keypoint cluster tracking, the problem is relatively simple, since no occlusion occurs. To keep the method on-line and maintain efficiency, a pool of trajectories are kept, $\tau=\{T_{\bf{g}}^i,i=1,2,...,n\}$, and new detection hypotheses act as detection responses, $\nu=\{n_{\bf{g}}^i,i=1,2,...m\}$, in tracking. The problem of tracking is modeled as finding best data association hypothesis, $H^*$, between the trajectory set and detection response set as,
 \begin{equation}
 \begin{aligned}
 {H^*} &= \mathop {\arg \max }\limits_{H \in \eta
@@ -187,7 +215,8 @@ Each trajectory not only connects the detection responses, but also connects the
 
 
 \section{Experimental Results}
-We test our method on detection performance and efficiency.
+\label{exp}
+We test this method on detection performance and efficiency.
 
 \textbf{Data} To collect data, we mount  an infrared camera on top of the experimental vehicle, and then  take several tours of the Awagatake tunnel. About 7,000 frames are collected for each tour. The frame size is $640\times 480$, the intensity range is [0,255], and the frame rate is 30 frames per second.
 
@@ -199,7 +228,7 @@ The approximate sub-images of the emergency telephone indicators are manually ma
 
 For keypoint clustering, the threshold to split the mst is set to 40, which is half the largest height of the emergency telephone indicators.
 
-The Adaboost machine to distinguish other vehicles and their shadows is trained by intensity histograms of positive keypoint clusters and negative keypoint clusters. We manually mark  positive  and  negative keypoint clusters. If the Adaboost machine is trained by averagely weighted training examples, its correct rate on the training examples is overall 84\%. When trained using our bias weighted training examples, its correct rate on the positive training examples is 94\%, and 77\% on the negative training examples.
+The Adaboost machine to distinguish other vehicles and their shadows is trained by intensity histograms of positive keypoint clusters and negative keypoint clusters. We manually mark  positive  and  negative keypoint clusters. If the Adaboost machine is trained by averagely weighted training examples, its correct rate on the training examples is overall 84\%. When trained using this bias weighted training examples, its correct rate on the positive training examples is 94\%, and 77\% on the negative training examples.
 
 During keypoint cluster tracking, whether a detection response can be linked to a trajectory or not is constrained by position and scale changes. Here scale change limit is set to 4. When the trajectories are fitted as lines, the linear model is also used in associating new detection responses.
 
@@ -245,9 +274,10 @@ More detection results are shown in Figure \ref{fig:sixs}.
 \caption{Detection rate and false alarm rate.}\label{tb:tb2}
 \end{table}
 
-The detection rate and false alarm rate of~\cite{wang1} are 90\% and 19\%, while evaluated on a much smaller dataset. We outperforms~\cite{wang1}, because our sensed images are much clearer, and also because our more effective training of the Adaboost machine.
+The detection rate and false alarm rate of~\cite{wang1} are 90\% and 19\%, while evaluated on a much smaller dataset. We outperforms~\cite{wang1}, because this sensed images are much clearer, and also because this more effective training of the Adaboost machine.
 
 The results on the trajectories of decisions are also evaluated. The method correctly detects all the 22 emergency telephone indicators with no false alarms. The detection rate is 100\%, and the false alarm rate is 0\%.
 
 \section{Conclusion}
+\label{conc}
 We propose an object detection method to detect emergency telephone indicators in tunnel environment. The method makes use of appearance and motion information of the target objects in a hierarchical manner. With careful optimization of detection pipeline, the method gives promising results in real time. Based on the detection results, a positioning system in tunnel environment can be expected.
