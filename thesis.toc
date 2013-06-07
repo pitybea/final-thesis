@@ -17,26 +17,27 @@
 \contentsline {subsection}{\numberline {3.4.4}Keypoint Cluster Verification by Appearance}{15}
 \contentsline {subsection}{\numberline {3.4.5}Keypoint Cluster Tracking}{15}
 \contentsline {subsection}{\numberline {3.4.6}Keypoint Cluster Verification by Motion}{16}
-\contentsline {subsection}{\numberline {3.4.7}Object Detection}{17}
-\contentsline {section}{\numberline {3.5}Experimental Results}{17}
-\contentsline {subsection}{\numberline {3.5.1}First Experiment}{17}
-\contentsline {subsection}{\numberline {3.5.2}Second Experiment}{17}
-\contentsline {section}{\numberline {3.6}Experimental results on data collected by ordinary cameras}{19}
-\contentsline {section}{\numberline {3.7}Conclusion}{19}
-\contentsline {chapter}{\numberline {4}Grouping of object parts by motion for detection}{20}
-\contentsline {section}{\numberline {4.1}Introduction}{20}
-\contentsline {section}{\numberline {4.2}Related Work}{23}
-\contentsline {section}{\numberline {4.3}Common Fate Hough Transform}{23}
-\contentsline {subsection}{\numberline {4.3.1}Common Fate Weights}{24}
-\contentsline {subsection}{\numberline {4.3.2}Motion Grouping}{26}
-\contentsline {subsection}{\numberline {4.3.3}Codebook}{28}
-\contentsline {section}{\numberline {4.4}Detection}{29}
-\contentsline {section}{\numberline {4.5}Experimental Results}{30}
-\contentsline {subsection}{\numberline {4.5.1} Campus-scene Detection }{30}
-\contentsline {subsection}{\numberline {4.5.2}Wild-scene Detection}{32}
-\contentsline {section}{\numberline {4.6}Conclusion}{34}
-\contentsline {chapter}{\numberline {5}Pyramid Match Score for Detection}{38}
-\contentsline {section}{\numberline {5.1}Pyramid Match}{38}
-\contentsline {section}{\numberline {5.2}Pyramid Match Score}{39}
-\contentsline {chapter}{\numberline {6}Conclusion and outlook}{40}
-\contentsline {chapter}{References}{41}
+\contentsline {subsection}{\numberline {3.4.7}Pipeline Summary}{17}
+\contentsline {subsection}{\numberline {3.4.8}Object Detection}{17}
+\contentsline {section}{\numberline {3.5}Experimental Results}{18}
+\contentsline {subsection}{\numberline {3.5.1}First Experiment}{18}
+\contentsline {subsection}{\numberline {3.5.2}Second Experiment}{18}
+\contentsline {section}{\numberline {3.6}Experimental results on data collected by ordinary cameras}{20}
+\contentsline {section}{\numberline {3.7}Conclusion}{20}
+\contentsline {chapter}{\numberline {4}Grouping of object parts by motion for detection}{21}
+\contentsline {section}{\numberline {4.1}Introduction}{21}
+\contentsline {section}{\numberline {4.2}Related Work}{24}
+\contentsline {section}{\numberline {4.3}Common Fate Hough Transform}{24}
+\contentsline {subsection}{\numberline {4.3.1}Common Fate Weights}{25}
+\contentsline {subsection}{\numberline {4.3.2}Motion Grouping}{27}
+\contentsline {subsection}{\numberline {4.3.3}Codebook}{29}
+\contentsline {section}{\numberline {4.4}Detection}{30}
+\contentsline {section}{\numberline {4.5}Experimental Results}{31}
+\contentsline {subsection}{\numberline {4.5.1} Campus-scene Detection }{31}
+\contentsline {subsection}{\numberline {4.5.2}Wild-scene Detection}{33}
+\contentsline {section}{\numberline {4.6}Conclusion}{35}
+\contentsline {chapter}{\numberline {5}Pyramid Match Score for Detection}{39}
+\contentsline {section}{\numberline {5.1}Pyramid Match}{39}
+\contentsline {section}{\numberline {5.2}Pyramid Match Score}{40}
+\contentsline {chapter}{\numberline {6}Conclusion and outlook}{41}
+\contentsline {chapter}{References}{42}
