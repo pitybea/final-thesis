@@ -1,5 +1,16 @@
 \begin{thebibliography}{10}
 
+\bibitem{bgm}
+Hagai Attias.
+\newblock A variational bayesian framework for graphical models.
+\newblock In {\em NISP}, pages 209--215. MIT Press, 2000.
+
+\bibitem{bisearch}
+Baidu.
+\newblock {baidu image search}.
+\newblock \url{http://stu.baidu.com}.
+\newblock [Online; accessed 22-May-2013].
+
 \bibitem{ac17}
 D.H. Ballard.
 \newblock Generalizing the hough transform to detect arbitrary shapes.
@@ -19,6 +30,11 @@ H.~Bay, T.~Tuytelaars, and L.~Van~Gool.
 Yoshua Bengio.
 \newblock Learning deep architectures for ai.
 \newblock {\em Foundations and Trends in Machine Learning}, 2(1):1--127, 2009.
+
+\bibitem{lda}
+D.~M. Blei, A.~Y. Ng, and M.~I. Jordan.
+\newblock Latent dirichlet allocation.
+\newblock {\em Journal of Machine Learning Research}, 3:993--1022, 2003.
 
 \bibitem{my9}
 G.J. Brostow and R.~Cipolla.
@@ -63,6 +79,11 @@ R.~Fergus, P.~Perona, and A.~Zisserman.
 \newblock Object class recognition by unsupervised scale-invariant learning.
 \newblock In {\em CVPR}, pages II: 264--271, 2003.
 
+\bibitem{dp}
+T.~S. Ferguson.
+\newblock A bayesian analysis of some nonparametric problems.
+\newblock {\em Annals of Statistics}, 1:209--230, 1973.
+
 \bibitem{ac30}
 Vittorio Ferrari, Fr{\'e}d{\'e}ric Jurie, and Cordelia Schmid.
 \newblock Accurate object detection with deformable shape models learnt from
@@ -89,6 +110,12 @@ C.~Huang, B.~Wu, and R.~Nevatia.
 \newblock Robust object tracking by hierarchical association of detection
   responses.
 \newblock In {\em ECCV}, pages II: 788--801, 2008.
+
+\bibitem{ij15}
+R.~Isukapalli and R.~Greiner.
+\newblock Use of off-line dynamic programming for efficient image
+  interpretation.
+\newblock In {\em IJCAI}, pages 1319--1325, 2003.
 
 \bibitem{bgf}
 Herv\'e J\'egou, Matthijs Douze, and Cordelia Schmid.
@@ -156,6 +183,17 @@ Subhransu Maji, Alexander~C. Berg, and Jitendra Malik.
   efficient.
 \newblock In {\em CVPR}, 2008.
 
+\bibitem{o14}
+J.~Matas, O.~Chum, U.~Martin, and T.~Pajdla.
+\newblock Robust wide baseline stereo from maximally stable extremal regions.
+\newblock In {\em BMVC}, pages 384--393, 2002.
+
+\bibitem{stickb}
+E.W. Meeds, D.A. Ross, R.S. Zemel, and S.T. Roweis.
+\newblock Learning stick-figure models using nonparametric bayesian priors over
+  trees.
+\newblock In {\em CVPR}, pages 1--8, 2008.
+
 \bibitem{bpw}
 R.~C. Merkle.
 \newblock Energy limits to the computational power of the human brain.
@@ -165,6 +203,11 @@ R.~C. Merkle.
 K.~Mikolajczyk, B.~Leibe, and B.~Schiele.
 \newblock Multiple object class detection with a generative model.
 \newblock In {\em CVPR}, pages I: 26--36, 2006.
+
+\bibitem{o15}
+K.~Mikolajczyk and C.~Schmid.
+\newblock Scale \& affine invariant interest point detectors.
+\newblock {\em IJCV}, 60(1):63--86, 2004.
 
 \bibitem{o17}
 K.~Mikolajczyk, T.~Tuytelaars, C.~Schmid, A.~Zisserman, J.~Matas,
@@ -193,6 +236,18 @@ B.~Ommer and J.~Malik.
 \newblock Multi-scale object detection by clustering lines.
 \newblock In {\em ICCV}, pages 484--491, 2009.
 
+\bibitem{tlsurvey}
+Sinno~Jialin Pan and Qiang Yang.
+\newblock A survey on transfer learning.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  22(10):1345--1359, 2010.
+
+\bibitem{gprocess}
+Carl~Edward Rasmussen and Christopher K.~I. Williams.
+\newblock {\em Gaussian Processes for Machine Learning (Adaptive Computation
+  and Machine Learning)}.
+\newblock The MIT Press, 2005.
+
 \bibitem{ac34}
 O.~Russakovsky and A.Y. Ng.
 \newblock A steiner tree approach to efficient object detection.
@@ -219,6 +274,12 @@ C.~Tomasi and T.~Kanade.
 \newblock Detection and tracking of point features.
 \newblock Technical report, Carnegie Mellon University, April 1991.
 
+\bibitem{ij6}
+O.~Tuzel, F.~Porikli, and P.~Meer.
+\newblock Region covariance: A fast descriptor for detection and
+  classification.
+\newblock In {\em ECCV}, pages 589--600, 2006.
+
 \bibitem{regionc}
 O.~Tuzel, F.M. Porikli, and P.~Meer.
 \newblock Region covariance: A fast descriptor for detection and
@@ -243,12 +304,14 @@ M.~Wertheimer.
 
 \bibitem{dod}
 Wikipedia.
-\newblock Object detection.
+\newblock {Object Detection}.
+\newblock \url{http://en.wikipedia.org/wiki/Object_detection}.
 \newblock [Online; accessed 22-May-2013].
 
 \bibitem{siri}
 Wikipedia.
-\newblock Siri.
+\newblock {Siri}.
+\newblock \url{ http://en.wikipedia.org/wiki/Siri_(software)}.
 \newblock [Online; accessed 22-May-2013].
 
 \bibitem{ac23}

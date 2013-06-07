@@ -1,40 +1,40 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces short title}}{7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{7}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Keypoint detection. }}{10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{10}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{10}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Keypoint verification and clustering. Red circles mark keypoints which pass the verification, while blue marks failed ones. Rectangles mark keypoint clustering results. }}{11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{11}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{11}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{11}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{11}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Keypoint cluster verification by appearance. Red rectangles: positive detection hypotheses, and green: negative detection hypotheses.}}{12}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Detection results.}}{15}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces short title}}{9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{9}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Keypoint detection. }}{12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{12}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Keypoint verification and clustering. Red circles mark keypoints which pass the verification, while blue marks failed ones. Rectangles mark keypoint clustering results. }}{13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{13}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{13}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{13}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Keypoint cluster verification by appearance. Red rectangles: positive detection hypotheses, and green: negative detection hypotheses.}}{14}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Detection results.}}{17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Merit of the proposed method. (a) Original image. (b) Motion \sout {group}{\color {red}grouping} results. {\color {red}Some parts are enlarged to show details.} (c) Original Hough image. (d) Hough image formed using our method. The grids in (c) and (d) correspond to the grids in(a).}}{20}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{20}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{20}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{20}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{20}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Effect of the proposed weight. (a) Motion groups, different colors mark different motion groups. (b) Voted centers given by the 7 best matched codes. (c) Voted centers with the highest defined weights. (d) Voted centers with weights higher than a threshold.}}{24}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{24}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{24}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{24}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{24}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces (a) Training images. Note some keypoints fall on the background. (b) The manner how a 9$\times $9 image patch is used to generate six region covariances, and red rectangles indicate the pixels used for each covariance.}}{28}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{28}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{28}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Motion grouping results.}}{28}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces (a) Precision-recall curves (red: the proposed method, blue: the benchmark method). (b) Confusion matrices (upper: the proposed method, down: the benchmark method).}}{29}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{29}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{29}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Results. Red rectangles and blue rectangles mark correctly detected pedestrians and bicycle riders. Yellow rectangles mark missed detections. White rectangles mark correctly detected but not correctly labeled objects. Green rectangles mark false alarms. Black rectangles mark static objects, which are beyond the verification for the method.}}{29}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Effect of the proposed weight assignment. Red circles are voted center for leopards, while blue ones are voted centers for tigers. On the top are the motion grouping results. In the middle are the voted centers according to the best matched codes. On the bottom are the voted centers voted by votes with highest weights.}}{30}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Example Hough images. On the top are the original images. In the middle are the Hough images formed by votes with uniform priors. On the bottom are the Hough images formed by votes with the proposed weights. Red indicates leopards, and blue indicates tigers. Note for the two leopards, there is no peak corresponding to the right one on the benchmark Hough image. For the three leopards, there is also no peak corresponding to the leopard in behind on the benchmark Hough image.}}{30}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Results. Red crosses mark the centers for leopards and blue crosses mark the centers for tigers.}}{31}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Merit of the proposed method. (a) Original image. (b) Motion \sout {group}{\color {red}grouping} results. {\color {red}Some parts are enlarged to show details.} (c) Original Hough image. (d) Hough image formed using our method. The grids in (c) and (d) correspond to the grids in(a).}}{22}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{22}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{22}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{22}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{22}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Effect of the proposed weight. (a) Motion groups, different colors mark different motion groups. (b) Voted centers given by the 7 best matched codes. (c) Voted centers with the highest defined weights. (d) Voted centers with weights higher than a threshold.}}{26}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{26}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{26}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{26}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{26}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces (a) Training images. Note some keypoints fall on the background. (b) The manner how a 9$\times $9 image patch is used to generate six region covariances, and red rectangles indicate the pixels used for each covariance.}}{30}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{30}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{30}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Motion grouping results.}}{30}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces (a) Precision-recall curves (red: the proposed method, blue: the benchmark method). (b) Confusion matrices (upper: the proposed method, down: the benchmark method).}}{31}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{31}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{31}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Results. Red rectangles and blue rectangles mark correctly detected pedestrians and bicycle riders. Yellow rectangles mark missed detections. White rectangles mark correctly detected but not correctly labeled objects. Green rectangles mark false alarms. Black rectangles mark static objects, which are beyond the verification for the method.}}{31}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Effect of the proposed weight assignment. Red circles are voted center for leopards, while blue ones are voted centers for tigers. On the top are the motion grouping results. In the middle are the voted centers according to the best matched codes. On the bottom are the voted centers voted by votes with highest weights.}}{32}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Example Hough images. On the top are the original images. In the middle are the Hough images formed by votes with uniform priors. On the bottom are the Hough images formed by votes with the proposed weights. Red indicates leopards, and blue indicates tigers. Note for the two leopards, there is no peak corresponding to the right one on the benchmark Hough image. For the three leopards, there is also no peak corresponding to the leopard in behind on the benchmark Hough image.}}{32}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Results. Red crosses mark the centers for leopards and blue crosses mark the centers for tigers.}}{33}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

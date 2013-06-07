@@ -1,10 +1,15 @@
 \chapter{Background and Related Work}
 
 \section{Vision in human and computer}
-The computational power of human is not any more competitive to computers, especially nowadays, when computational ability can be conveniently accessed from the cloud.
-Still when talking about the performance of visual recognition and detection under general situations, human are champion. In computer vision area, besides bar scanners and optical character recognition, object detection is a rare subject with some breakthroughs, face detection methods can be employed in real daily applications.
 
-So what stops the object detection methods of computers from performing as good as human? 
+Everyday, new technologies emerge, which make everyday life more and more convenient, and advance human culture, of which, the appearance of text searching engines~\cite{google} is  an important one. Searching images or other multi-media date similar to the way we search text is even more attractive, especially . 
+
+Artificial intelligence is one area that can expect new breakthroughs.  
+
+The computational power of human is not any more competitive to computers, especially nowadays, when computational ability can be conveniently accessed from the cloud.
+Still when talking about the performance of visual recognition and detection under general situations, human are champion. In computer vision area, besides bar scanners and optical character recognition, few detection methods are employed in real-world applications, though face detection methods are employed in ordinary cameras.
+
+So what stops the object detection methods of computers from performing as good as human do?
 
 \begin{table}[h]
 \centering
@@ -15,7 +20,7 @@ So what stops the object detection methods of computers from performing as good 
     Quality of sensors         &	* &   \\
     Computational ability      &	* &	  \\
     Representative model       &	  & * \\
-    Decision procedure         &      & *	  \\    
+    Decision procedure         &      & *	  \\
     Information fusion mechanism & & *           \\
     Training quality           &      & *	   \\
    \hline
@@ -23,19 +28,32 @@ So what stops the object detection methods of computers from performing as good 
 \caption[Power comparison between computer and human]{Comparison between computer and human.}\label{c2tb:tb1}
 \end{table}
 
-When compared with human, computer will win at almost every aspect of hardware,as shown in \ref{c2tb:tb1}. Especially, for computational ability, \cite{bpw} believes human brain has a raw computational power between $10^13$ and $10^16$ operations per second, and modern computers can perform much better. As for representative model, there is no obvious evidence, human is doing better than computer. However the author believe human shall perform better than computer in the aspects of software, which then explains why human perform better in multiple visual tasks. And only do the vision researchers also believe so, they develop  so many new detection methods. And the  dividing of functionalities  are generally based on computer, while in human, two or more of them might work together.
+When compared with human, computer will win at almost every aspect of hardware, as shown in \ref{c2tb:tb1}. Especially, for computational ability, \cite{bpw} believes human brain has a raw computational power between $10^{13}$ and $10^{16}$ operations per second, and modern computers can perform much better. As for representative model, there is no obvious evidence, human is doing better than computer. However the author believe human shall perform better than computer in the aspects of software, which then explains why human perform better in multiple visual tasks. And only when the vision researchers also believe so, do they develop  so many new detection methods. And the  dividing of functionalities  are generally based on computer, while in human, two or more of them might work together. 
 
 Human babies are taken good care of, and trained to perform very simple visual tasks for months with large amount of examples, which makes the training quality very solid. The performance of new born babies also lead to considerations about to what degree are the visual abilities decided by genes. If the training procedure has taken as long as millions of years, are there possibilities for computer to win in future?
 
-The success of voice recognition and the successful deployment in industry~\cite{siri} encourage vision researchers.  Computational power can be used to make up with the short slab of training. For example, training one model for one hour with thousand of computers is feasible when parrel training is available. Also, the resent deep learning~\cite{dlearn} methods try to fusion representative model with decision procedure to act more like what human might do.
+The success of voice recognition and the successful deployment in industry~\cite{siri} encourage vision researchers.  Computational power can be used to make up with the short slab of training. For example, training one model for one hour with thousand of computers is feasible when parrel training is available. Also, the resent deep learning~\cite{dlearn} methods try to fusion representative model with decision procedure to act more like what human might do. These new achievements are expected to fill up the gap between human and computer in aspects of representative model, decision procedure, and training quality.
 
-The methods proposed in this methods explore the information which can be further made use of, i.e., fusion of temporal and visual information, and the mutual information of different parts of the same object.
+While the methods proposed in this methods explore the information which can be further made use of, i.e., fusion of temporal and visual information, and the mutual information of different parts of the same object. The efforts here shall belong to decision procedure, and information fusion mechanism. 
+
 
 \section{Basics of detection methods}
 
-In the previous section, the possible reason why human perform better in detection is discussed. The main limits of computer are of software. Based on this, researchers present new detection methods or methods for supporting detection, which includes: 1) new image feature or new representative model, 2) new decision procedures, and 3) better searching techniques in solution space.
+In the previous section, the possible reason why human perform better in detection is discussed. The main limits of computer are of software. Based on this, researchers present new detection methods or new methods for supporting detection, which includes: 1) new image feature or new representative model, 2) new decision procedures, or 3) better searching techniques in solution space.
 
-Image features are very important. Simple features include features in the form of keypoints, image patches, edges or textures. 
+Image features are very important. Simple image features include features in the form of keypoints, image patches, edges,  silhouette, or textures. There are also frameworks for combining multiple different image features or information from multiple channels~\cite{regionc}, and these belong to image features at middle level. At a even higher level, image features are organized in patterns, and these are actually representative models. For example, modeling human body as a stick model~\cite{stickb}.
+
+The invariance under illumination, scale, and rotation are basic requirement for image features, while some keypoint features~\cite{ij2,o12,surf} and wavelet features~\cite{o14,o15,o2} fulfill this requirement. Image features which encode global positional information perform well in human detection, i.e., Histograms of Oriented
+Gradients~\cite{ij4}. Differentials at different orders are also descriptive features~\cite{ij6}.
+
+Generally, robustness and computational efficiency are the two main pursues in proposing image features. Based or image features, how decisions are made are also of great importance. Discriminative and generative methods are the two main categories.
+Support vector machine, and boosting methods belong to discriminative methods. Gaussion processes~\cite{gprocess}, Dirichlet models~\cite{lda,dp,hdp}, and Bayesian graphical models~\cite{bgm} usually belong to generative methods. The difference between discriminative and generative models lay in how they use training examples to estimate parameters of the model, and how the model is used to make decisions.
+
+One very promising method for decision making is deep learning~\cite{dlearn}. This can be considered as a special form of neural network. One of its very attractive property is it can take raw data as input and output decision results, like, object label. It deals with extraction of image feature, feature selection, and decision based on features in a unified one under the same framework. Also it can share knowledge from other domain like~\cite{tlsurvey}. 
+
+The core of machine learning methods is still the model. Training data are used to estimate  parameters of the model, and the model is then used to make decisions on the testing data. The model of deep learning is a multi-layer network. The later one layer is, usually it has less nodes, and the information it deals with is more abstract. The earlier layers of deep-architecture networks act as feature extraction module. The first layer defines rules of how to make abstraction on the raw data. And these layers can be trained using a very large amount of data besides domain-specific data. This is why deep learning methods can make use of information from other domains. Another aspect which separate deep learning methods from traditional neural networks is during the training procedure. 
+
+
 
 \section{Very related work}
 
