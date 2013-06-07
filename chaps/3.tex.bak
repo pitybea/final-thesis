@@ -1,0 +1,253 @@
+\chapter{Efficient Detection by Combining of Appearance and Temporal Information }
+
+\section{Application background}
+% no \IEEEPARstart
+Positioning of automobiles acts a fundamental role in autonomous driving, and it is also of great importance for driving assistance, vehicle navigation, etc. When GPS sensors function properly, it is usually easy for an automobile to estimate the position of  itself. While in tunnel environment, for most of the time, there is no GPS signals available. A new positioning system which functions properly in tunnel environment is very necessary~\cite{nig}. We have tackled this issue as a part of automated driving system in a NEDO project, "Development of Energy-saving ITS Technologies".
+
+In most tunnels which appear on express ways in Japan, there are lots of signs which appear at equal intervals. We focus on the emergency telephone indicators, which appear every 200 meters in tunnels. The absolute coordinates of the emergency telephone indicators can be obtained by the method of~\cite{xue}. While travelling in tunnels, if the emergency telephone indicators can be sensed, and the distance from the automobile to the indicators can be estimated, then the absolute position of the automobile can be inferred. Detection methods i.e.~\cite{ac23} based on ordinary cameras fail due to darkness. Here we use infrared cameras, which are usually equipped by recent intelligent vehicles, and which are suitable in dark environment. Moreover, far-infrared stereo system is developping in our automated driving system. Inspired by a previous work~\cite{wang1}, we propose an approach to detecting emergency telephone indicators by using infrared cameras.
+
+Detection performance and efficiency are the two important aspects of our method.
+
+In tunnel environment, besides the target objects, a lot of noisy objects also appear, e.g. ordinary lights, other vehicles, and other vehicles' shadows. And some of the noisy objects cannot even be distinguished from the target objects by appearance , as shown in Figure \ref{fig:first}. The clutter property of the sensed data makes the detection challenging.
+Our method meets this challenge by making use of both appearance and temporal information of the target objects. There are two main steps in the method. The first step deals with keypoints, and  it takes original data as input, and outputs keypoint clusters as detection hypotheses. In this step, keypoints are detected, verified and then clustered. To detect keypoints, all points on each frame are uniformly sampled and filtered with pre-set intensity thresholds.  Then the keypoints are verified by a simple keypoint appearance model   built by \emph{k}-means. At the end of the first step, the keypoints are clustered based on the Euclidean distance. The second step takes the keypoint clusters as input, and verifies them by appearance and temporal information, and outputs the ones pass verifications as detection results. In the second step, the keypoint clusters are labeled based on appearance by an adaboost machine, which is trained using intensity histograms of keypoint clusters from target objects and keypoint clusters from noisy objects. The keypoint clusters are also tracked by temporal association through frames. Motion information encoded in the trajectories are used to further verify the keypoint clusters. Finally, the keypoint clusters which pass both appearance and temporal verifications are decided as emergency telephone indicators.
+
+This pipeline is designed also with consideration of the requirement for efficiency.  The method deals with the large amount information contained on one frame following a hierarchical manner. The later one step is, the more time-consuming it is  and the fewer instances it deals with. From an image containing $10^5$ pixels, $10^4$ points go through keypoint detection step of testing by intensity thresholds. Then in average, $10^3$ keypoints are detected, and verified, leaving about $10^2$ to be clustered. Afterwards, fewer than $10$ keypoint clusters are left, which are dealt with by the very time-consuming steps of generating image features and tracking.
+
+
+
+
+
+\begin{figure}
+\centering
+\subfigure[]{
+\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{17Orgimg00039.jpg}
+\label{fig:first:a}}
+\subfigure[]{
+\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{17veriTrjimg00039.jpg}
+\label{fig:first:b}}
+\caption[short title]{Original data and detection results. In (a), the red arrow points to the target object: emergency telephone indicator, and the green arrows point to noisy objects. In (b), red rectangles mark detection hypotheses labeled as positive using appearance information, and green rectangles mark negative ones. Yellow trajectories mark detection hypotheses labeled as positive using temporal information, and white trajectories mark negative ones.}
+\label{fig:first}
+\end{figure}
+
+
+
+
+
+
+
+The advantage of the method is its ability to give promising detection results from cluttered data in real time. Besides, the method is also a successful attempt to combine bottom-up and classification methods, and a successful attempt to combine both appearance and temporal information.
+
+The paper is organized as follows: section 2 reviews related work, section 3 proposes pipeline of the method, section 4 gives experimental results, and section 5 concludes.
+
+\section{Related Work}
+
+
+Most modern detection methods fall into two categories. Some~\cite{ij4,ac31,ac30,ac4,ac32,ac29,ac28,ac1} follow the sliding-window schema, and they detect objects by consider whether each of the sub-images contains an instance of the target object. Classifiers are usually employed by these methods. The other methods~\cite{ac9,ac2,ac3,ac22,lb1,ac5,ac10,ac21,ac18} infer object centers based on local image features in a bottom-up manner. The proposed method makes advantages of both frameworks. Following the bottom-up manner, keypoints are detected, verified, and clustered. After these steps, the keypoint clusters are considered as detection hypotheses. Then following the sliding-window schema, the keypoint clusters are verified by their appearance and temporal information using discriminative methods.
+
+Previous methods~\cite{ac34} also consider the combination of the two frameworks. Detection hypotheses are gained using Hough transform and then verified by support vector machines in~\cite{ac10,ac25}. The methods in~\cite{ac6,ac7}, use randomized decision trees for both decisions whether local features belonging to foreground objects or not and decisions of their Hough votes. The method proposed in~\cite{ac27} describes both frameworks in the same manner. While giving state-of-the-art detection performance, they can't meet the requirement for efficiency as our method does.
+
+Our work is also related to feature grouping methods~\cite{ac25}, methods detecting using trajectories~\cite{my9,ac24}, tracking methods~\cite{my7,my10}, and methods integrating appearance and temporal information~\cite{ac23}.
+
+Especially, compared with the method proposed in~\cite{wang1}, our method employs a more effective classifying machine by setting biased weights for positive and negative training examples, and far over-perform the method.
+
+\section{Emergency Telephone Indicator Detection}
+The method can be considered as a two-step method. The first step deals with keypoints. It
+takes original data as input, and outputs keypoint clusters as detection hypotheses. The second
+step takes these keypoint clusters as input, verifies them by their appearance and motion
+information, and outputs the ones which pass verifications as detection results.
+
+\subsection{Keypoint Detection}
+In data collected using ordinary cameras, keypoints~\cite{o2,o12} invariant to rotations, affine changes, and illumination changes are preferable. In our case, keypoint detection intends to provide hypotheses for emergency telephone indicators. Thus intensity is of great importance. Our method employs a simple yet useful method to detect keypoints. Firstly, points are uniformly sampled with width step 6, and height step 7 (the length of emergency telephone indicator is larger than its width). In this manner the magnitude of instances is reduced by nearly two orders. Then the points pass the test which verifies the points by setting intensity thresholds are considered as keypoints.
+Here Gaussian distribution is assumed for the intensities of the points.
+
+
+let$\{\bf{x}\}$ denote all the sampled points, $I_{\bf{x}}$ the intensity of each point, \begin{comment}$I_{\bf{x}}\sim{\mathcal{N}(\mu_{I_{\bf{x}}},{\sigma_{I_{\bf{x}}}}^2)}$,
+\end{comment}
+and $l_{\bf{x}}$ the label. If the point is considered as belonging to emergency telephone indicators, $l_{\bf{x}}=1$, otherwise, $l_{\bf{x}}=0$. By setting lower threshold, $I^{th1}_{\bf{x}}$,  and higher threshold, $I^{th2}_{\bf{x}}$, the probability that points belongs to emergency telephone indicators based on their falling into this interval is given by,
+\begin{equation}
+P(l_{\bf{x}}=1|I^{th1}_{\bf{x}}{\leq}I_x{\leq}{I^{th2}_{\bf{x}}})=
+\frac
+{P(l_{\bf{x}}=1,I^{th1}_{\bf{x}}{\leq}I_x{\leq}{I^{th2}_{\bf{x}}})} {P(I^{th1}_{\bf{x}}{\leq}I_x{\leq}{I^{th2}_{\bf{x}}})}\;.
+\label{eq1}
+\end{equation}
+
+At this step,  that as few points belonging to the emergency telephone indicators as possible are excluded is also considered. The probability of ont point falling into the defined interval based on its belonging to emergency telephone indicators is given by,
+\begin{equation}
+P(I^{th1}_{\bf{x}}{\leq}I_x{\leq}{I^{th2}_{\bf{x}}}|l_{\bf{x}}=1)=
+\frac
+{P(l_{\bf{x}}=1,I^{th1}_{\bf{x}}{\leq}I_x{\leq}{I^{th2}_{\bf{x}}})} {P(l_{\bf{x}}=1)}\;.
+\label{eq1.1}
+\end{equation}
+
+And points of which the intensities fall in the pre-set thresholds are detected as keypoints.
+\begin{figure}
+\centering
+\subfigure[]{
+\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{17Kptimg00039.jpg}
+\label{fig:sec:a}}
+\subfigure[]{
+\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{8Kptimg00028.jpg}
+\label{fig:sec:b}}
+\caption{Keypoint detection. }
+\label{fig:sec}
+\end{figure}
+\subsection{Keypoint Verification}
+As shown in Figure \ref{fig:sec:b}, the detected keypoints don't just belong to emergency telephone indicators, but also belong to background. And for training, keypoints belonging to emergency telephone indicators are considered as positive ones, otherwise negative.
+
+To verify the keypoints, the appearance of the sub-image around each keypoint is used. Intensity histograms are used to describe the appearance. Noisy keypoints not only come from the wall of the tunnel, but also from ordinary lights, other vehicles, and other vehicles' shadows. Thus robust linear classifiers are not suitable for the verification. Here, a general model in the form of a simple mixture is used. The \emph{k}-means method is used to cluster the intensity histograms, $\{A_{\bf{x}},l_{\bf{x}}=1\}$, of the positive keypoints, and, $\{A_{\bf{x}},l_{\bf{x}}=0\}$,  of
+the negative keypoints.
+
+Let $\{C_1^i,i=1,2,...,n_1\}$ denote the intensity histogram centers of the positive keypoints, and $\{C_0^i,i=1,2,...,n_2\}$ the negative. For each $C_1$, the average Euclidean distance between $\{C_0^i,i=1,2,...,n_2\}$ is calculated as,
+\begin{equation}
+Eu(C_1^i)={\frac 1 n_2}\sum\limits^{n_2}_{j=1}Euclid(C_1^i,C_0^j)\;.
+\label{eq2}
+\end{equation}
+Here, $Euclid(\cdot)$ calculates the Euclidean distance, and $Eu(\cdot)$ is a evaluation function of the positive feature centers. The positive feature centers are ranked by $Eu(\cdot)$, and the 10 positive feature centers with largest $Eu(\cdot)$ are chosen and used for verification.
+
+For verification, the intensity histogram of each keypoint's surrounding sub-image is extracted. Then the Euclidean distance between the extracted intensity histogram and its nearest positive feature center is calculated. If this distance exceeds a threshold, $D^{th}_{A_{\bf{x}}}$, it is considered as negative, else it is considered as positive. Here, for simplicity, unlike~\cite{ac33}, the same threshold is used for all components of the mixture.
+
+\begin{figure}
+\centering
+\subfigure[]{
+\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{17VeriKptimg00039.jpg}
+\label{fig:thir:a}}
+\subfigure[]{
+\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{8VeriKptimg00028.jpg}
+\label{fig:thir:b}}
+\subfigure[]{
+\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{17Rgsimgwl00039.jpg}
+\label{fig:thir:c}}
+\subfigure[]{
+\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{8Rgsimgwl00028.jpg}
+\label{fig:thir:d}}
+\caption{Keypoint verification and clustering. Red circles mark keypoints which pass the verification, while blue marks failed ones. Rectangles mark keypoint clustering results. }
+\label{fig:thir}
+\end{figure}
+\subsection{Keypoint Clustering}
+After the keypoint verification step, on some frames, the result is pretty good, while on other frames, appearance of the keypoints is not enough for decisions of whether the keypoints belonging to emergency telephone indicators or not. Here generation of keypoint trajectories is not feasible, since nearby keypoints are similar in appearance and  the time complexity of associating such a large number of keypoints along time dimension is high. So the keypoints are clustered, and then data association in time dimension only need to deal with a small number of keypoint clusters.
+
+To cluster the keypoints, a minimum spanning tree (mst) is built using the pairwise Euclidean distance between two keypoints. And the mst is split by cutting edges larger a threshold. This results in a grouping results of the keypoints, denoted by, $\gamma=\{\bf{g}\}$.
+
+
+\subsection{Keypoint Cluster Verification by Appearance}
+
+For each keypoint cluster, the smallest bounding rectangle is considered as detection hypothesis, as shown in Figure \ref{fig:thir:c} and Figure \ref{fig:thir:d}. There are two main sources of noise. Ordinary lights are the first, and other vehicles with their shadows are the second. The global appearance of ordinary lights is different from that of the emergency telephone indicators. As ordinary lights get further from the infrared camera, the intensity of its corresponding sub-image in the collected data gets lower. At a certain distance, the intensity of the ordinary  lights is almost the same with emergency telephone indicators'. And for ordinary lights of which the intensity is higher than the emergency telephone indicators', the transition regions from them to tunnel walls will have similar intensity with the emergency telephone indicators.
+This means though locally the emergency telephone indicators share the same appearance with ordinary lights, they can still be distinguished globally by appearance. As for other vehicles and their shadows, the intensity range of them is very close to the emergency telephone indicators', and they can hardly be distinguished just by appearance.
+
+
+
+At this step, the keypoint clusters are verified by their appearance, aiming at excluding keypoint clusters belonging to the ordinary lights. An Adaboost machine is trained using intensity histograms of the emergency telephone indicators and ordinary lights. The appearance of other vehicles is close to the emergency telephone indicators', and they are not used for training the machine. For training of the machine, labeled 32-dimensional intensity histograms are firstly normalized. Then each weak classifier of the machine makes decision on one dimension of the intensity histograms. After this step, each keypoint cluster is either labeled as positive or negative.
+
+In this step, to emphasize the Adaboost machine's performance on the positive training examples, we set the initial weights of the positive training examples 7 times as large as the weights of the negative training examples.  Since in practice, whether each keypoint cluster is a target object or not is decided by both appearance and motion information. And the difficulties of exclude noisy objects can be left to the later steps.
+\begin{figure}[b]
+\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{17Rgsimg00039.jpg}
+\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{8Rgsimg00028.jpg}
+\caption{Keypoint cluster verification by appearance. Red rectangles: positive detection hypotheses, and green: negative detection hypotheses.}
+\label{fig:fif}
+\end{figure}
+\subsection{Keypoint Cluster Tracking}
+Not all noisy detection hypotheses can be excluded by using appearance, as shown in Figure \ref{fig:fif}. To distinguish keypoint clusters belonging to other vehicles and their shadows, the keypoint clusters are tracked through frames to generate trajectories.
+
+In our case of keypoint cluster tracking, the problem is relatively simple, since no occlusion occurs. To keep the method on-line and maintain efficiency, a pool of trajectories are kept, $\tau=\{T_{\bf{g}}^i,i=1,2,...,n\}$, and new detection hypotheses act as detection responses, $\nu=\{n_{\bf{g}}^i,i=1,2,...m\}$, in tracking. The problem of tracking is modeled as finding best data association hypothesis, $H^*$, between the trajectory set and detection response set as,
+\begin{equation}
+\begin{aligned}
+{H^*} &= \mathop {\arg \max }\limits_{H \in \eta
+} (P(H|\tau,\nu )) \\
+&= \mathop {\arg \max }\limits_{H \in \eta }
+(\prod\limits_{(T_{\bf{g}}^i,n_{\bf{g}}^j) \in H} {P_{link}(n_{\bf{g}}^j|T_{\bf{g}}^i)} ) \;.
+\end{aligned}
+\label{eq3}
+\end{equation}
+Let $u_{ij}=1 \mbox{ or } 0$ indicates $n_{\bf{g}}^j$ is linked to $T_{\bf{g}}^i$ or not, and assuming each trajectory can link once and each detection response can only be linked once, the problem can be modeled as,
+\[
+\begin{aligned}
+&\arg \max\limits_{u_{ij}} \sum\limits_{i = 1}^n \sum\limits_{j = 1}^m u_{ij} \ln P_{link}(n_{\bf{g}}^j|T_{\bf{g}}^i)\\
+&
+\begin{aligned}
+    s.t.:\mbox{ }&u_{ij}=0\mbox{ or }u_{ij}=1,\forall\;i,\forall\;j;\\
+    &\sum\limits_{i = 1}^n {u_{ij}} \leq 1\;; \sum\limits_{j = 1}^m {u_{ij}}\leq 1\;.
+\end{aligned}
+\end{aligned}
+\]
+Here, $P_{link}(n_{\bf{g}}^j|T_{\bf{g}}^i)$ is defined by the appearance difference, the scale difference, and the time gap between the last detection response contained in $T_{\bf{g}}^i$ and $n_{\bf{g}}^j$. While Hungarian algorithm~\cite{ha} gives near-optimal solution, we follow a very simple manner for the solution by finding the best matched pairs and excluding them until no matching pairs can be found.
+
+\subsection{Keypoint Cluster Verification by Motion}
+As shown in Figure \ref{fig:sixs}, the trajectories from keypoint clusters belonging to emergency telephone indicators are different from other objects'. In this step, the temporal information encoded in the trajectories are used to further verify the keypoint clusters. A linear model is used to fit each trajectory, and the significance of the fitting is the criteria for decisions. Let $(x^i_{\bf{g}},y^i_{\bf{g}})$ denote the coordinate of the $i$th element belonging to a trajectory. The linear assumption is that $y^i_{\bf{g}}=a_0+a_1{x^i_{\bf{g}}}$. The significance of the fitting is defined as,
+\begin{equation}
+r =| \frac{{\sum\limits_i {\left( {{x^i_{\bf{g}}} -  {\bar x_{\bf{g}}}} \right)\left( {{y^i_{\bf{g}}} -  {\bar y_{\bf{g}}}} \right)} }}{{{{\left[ {\sum\limits_i {{{\left( {{x^i_{\bf{g}}} -  {\bar x_{\bf{g}}}} \right)}^2} \cdot \sum\limits_i {{{\left( {{y^i_{\bf{g}}} -  {\bar y_{\bf{g}}}} \right)}^2}} } } \right]}^{1/2}}}}|\;.
+\label{eq4}
+\end{equation}
+And $r$ is used to decide the trajectories of the keypoint clusters as belonging to emergency telephone indicators or not.
+\subsection{Object Detection}
+For each keypoint cluster on the current frame, there exists label given by the Adaboost machine according to its appearance, and the significance of fitting its trajectory as a straight line.  For each keypoint cluster, it is considered as an emergency telephone indicator if and only if its label given by the Adaboost machine is positive, its trajectory is longer than $l^{th}$, and the significance of fitting its trajectory into a straight line is larger than $r^{th}$.
+
+Each trajectory not only connects the detection responses, but also connects the decisions for each detection responses made by their appearance and motion patterns. The target objects and noisy objects actually appear in successive frames, and even if we make a wrong decision on one frame, we can expect to recover from this mistake based on the results on other frames. The final results is based on the trajectories of decisions. When one trajectory ends, if more than 80\% of the decisions it connects are positive, then this trajectory is considered as positive.
+
+
+
+
+\section{Experimental Results}
+We test our method on detection performance and efficiency.
+
+\textbf{Data} To collect data, we mount  an infrared camera on top of the experimental vehicle, and then  take several tours of the Awagatake tunnel. About 7,000 frames are collected for each tour. The frame size is $640\times 480$, the intensity range is [0,255], and the frame rate is 30 frames per second.
+
+\textbf{Implementation Settings} All models are trained using data from the same tour, while evaluated on data from another tour.
+
+To set intensity thresholds for keypoint detection, Gaussian distribution is assumed for the points belonging to emergency telephone indicators. Following the $3\sigma$ principle, $I^{th1}_{\bf{x}}$ is set to 160 and $I^{th2}_{\bf{x}}$, 190.
+
+The approximate sub-images of the emergency telephone indicators are manually marked, and used for training the mixture model of keypoint verification. The detected keypoints falling into the sub-image are marked as positive, and otherwise negative. Note this model and the training is not very accurate, since more accurate marking means more manual efforts. About 30,000 intensity histograms of the positive keypoints are sampled, and about 3,000,000 of the negative. When using of $k$-means for clustering the positive intensity histograms, $k$ is set to 40, and 400 for negative. The $k$ values over-segment both feature sets. The threshold to verify keypoints, $D^{th}_{A_{\bf{x}}}$ is set to 0.14 for the normalized histograms.
+
+For keypoint clustering, the threshold to split the mst is set to 40, which is half the largest height of the emergency telephone indicators.
+
+The Adaboost machine to distinguish other vehicles and their shadows is trained by intensity histograms of positive keypoint clusters and negative keypoint clusters. We manually mark  positive  and  negative keypoint clusters. If the Adaboost machine is trained by averagely weighted training examples, its correct rate on the training examples is overall 84\%. When trained using our bias weighted training examples, its correct rate on the positive training examples is 94\%, and 77\% on the negative training examples.
+
+During keypoint cluster tracking, whether a detection response can be linked to a trajectory or not is constrained by position and scale changes. Here scale change limit is set to 4. When the trajectories are fitted as lines, the linear model is also used in associating new detection responses.
+
+
+
+\begin{figure}
+{
+\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{17veriTrjimg00039.jpg}
+}
+{
+\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{8veriTrjimg00028.jpg}
+}\\
+{
+\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{19veriTrjimg00041.jpg}
+}
+{
+\includegraphics[width=0.22\textwidth,bb=0 0 640 480]{3veriTrjimg00023.jpg}
+}
+\caption{Detection results.}
+\label{fig:sixs}
+\end{figure}
+
+\textbf{Detection Results}
+
+On an ordinary desktop computer with Intel Core2 Quad 2.6GHz processors, the method deals with real data at a frame rate of 41 frames per second, and this fulfills real-time requirements.
+
+
+The detection rate and false alarm rate are evaluated on the keypoint clusters, as shown in TABLE \ref{tb:tb2}.
+More detection results are shown in Figure \ref{fig:sixs}.
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+     \hline
+     \hline
+    total number &	472 + 3304  \\
+    correctly labeled &	468   \\
+    miss detections &	4 &	  \\
+    false alarms &	22    \\
+    detection rate &	99.2\% &	  \\
+    false alarm rate &	0.7\% &	   \\
+   \hline
+\end{tabular}
+\caption{Detection rate and false alarm rate.}\label{tb:tb2}
+\end{table}
+
+The detection rate and false alarm rate of~\cite{wang1} are 90\% and 19\%, while evaluated on a much smaller dataset. We outperforms~\cite{wang1}, because our sensed images are much clearer, and also because our more effective training of the Adaboost machine.
+
+The results on the trajectories of decisions are also evaluated. The method correctly detects all the 22 emergency telephone indicators with no false alarms. The detection rate is 100\%, and the false alarm rate is 0\%.
+
+\section{Conclusion}
+We propose an object detection method to detect emergency telephone indicators in tunnel environment. The method makes use of appearance and motion information of the target objects in a hierarchical manner. With careful optimization of detection pipeline, the method gives promising results in real time. Based on the detection results, a positioning system in tunnel environment can be expected.

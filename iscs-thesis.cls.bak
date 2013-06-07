@@ -59,18 +59,11 @@
 \DeclareOption{a4paper}
    {\setlength\paperheight {297mm}%
     \setlength\paperwidth  {210mm}}
-\DeclareOption{b4paper}
-   {\setlength\paperheight {364mm}%
-    \setlength\paperwidth  {257mm}}
-\DeclareOption{letterpaper}
-   {\setlength\paperheight {11in}%
-    \setlength\paperwidth  {8.5in}}
-\DeclareOption{legalpaper}
-   {\setlength\paperheight {14in}%
-    \setlength\paperwidth  {8.5in}}
+
 \DeclareOption{10pt}{\renewcommand\@ptsize{0}}
 \DeclareOption{11pt}{\renewcommand\@ptsize{1}}
 \DeclareOption{12pt}{\renewcommand\@ptsize{2}}
+
 \DeclareOption{oneside}{\@twosidefalse \@mparswitchfalse}
 \DeclareOption{twoside}{\@twosidetrue  \@mparswitchtrue}
 \DeclareOption{draft}{\setlength\overfullrule{5pt}}
@@ -81,6 +74,7 @@
 \DeclareOption{twocolumn}{\@twocolumntrue}
 \DeclareOption{leqno}{\input{leqno.clo}}
 \DeclareOption{fleqn}{\input{fleqn.clo}}
+
 \DeclareOption{openbib}{%
   \AtEndOfPackage{%
    \renewcommand\@openbib@code{%
@@ -97,6 +91,7 @@
   {\@seniorthesisfalse \@masterthesistrue \@doctorthesisfalse}
 \DeclareOption{doctor}%
   {\@seniorthesisfalse \@masterthesisfalse \@doctorthesistrue}
+
 \DeclareOption{interim}{\ist@interimtrue}
 \DeclareOption{gradiss}{\ist@gradisstrue}
 \DeclareOption{sloppy}{\ist@sloppytrue}
@@ -107,7 +102,9 @@
 \DeclareOption{longline}{\ist@longlinetrue}
 \DeclareOption{counttitlepage}{\ist@counttitlepagetrue}
 \DeclareOption{nocounttitlepage}{\ist@counttitlepagefalse}
+
 \ist@bindoffsettrue
+
 \DeclareOption{nobindoffset}{\ist@bindoffsetfalse}
 \DeclareOption{prodigal}{% now invalid
   \ist@fatalerror{You should not be prodigal in today's world!}}
@@ -121,12 +118,15 @@
       None of `senior', `master', or `doctor'\MessageBreak
       is specified as option}
 \fi\fi\fi
+
 \newif\ifist@carepage
 \if@twoside \ist@carepagetrue \fi
 \if@openright \ist@carepagetrue \fi
 \newcommand\ist@engine{e}
+
 \@ifundefined{inhibitglue}{}{\renewcommand\ist@engine{p}}
 \@ifundefined{jendlinetype}{}{\renewcommand\ist@engine{j}}
+
 \if e\ist@engine \ist@englishtrue \fi
 \newcommand\switchinterim[2]{%
   \ifist@interim #1\else #2\fi
@@ -139,91 +139,8 @@
 }\newcommand\noblankaftertp{%
   \ist@blankaftertpfalse
 }
-\if0\@ptsize\relax            %--------- 10pt
-\renewcommand\normalsize{%
-   \@setfontsize\normalsize\@xpt\@xiipt
-   \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
-   \abovedisplayshortskip \z@ \@plus3\p@
-   \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
-   \belowdisplayskip \abovedisplayskip
-   \let\@listi\@listI}
-\normalsize
-\newcommand\small{%
-   \@setfontsize\small\@ixpt{11}%
-   \abovedisplayskip 8.5\p@ \@plus3\p@ \@minus4\p@
-   \abovedisplayshortskip \z@ \@plus2\p@
-   \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
-   \def\@listi{\leftmargin\leftmargini
-               \topsep 4\p@ \@plus2\p@ \@minus2\p@
-               \parsep 2\p@ \@plus\p@ \@minus\p@
-               \itemsep \parsep}%
-   \belowdisplayskip \abovedisplayskip
-}
-\newcommand\footnotesize{%
-   \@setfontsize\footnotesize\@viiipt{9.5}%
-   \abovedisplayskip 6\p@ \@plus2\p@ \@minus4\p@
-   \abovedisplayshortskip \z@ \@plus\p@
-   \belowdisplayshortskip 3\p@ \@plus\p@ \@minus2\p@
-   \def\@listi{\leftmargin\leftmargini
-               \topsep 3\p@ \@plus\p@ \@minus\p@
-               \parsep 2\p@ \@plus\p@ \@minus\p@
-               \itemsep \parsep}%
-   \belowdisplayskip \abovedisplayskip
-}
-\newcommand\scriptsize{\@setfontsize\scriptsize\@viipt\@viiipt}
-\newcommand\tiny{\@setfontsize\tiny\@vpt\@vipt}
-\newcommand\large{\@setfontsize\large\@xiipt{14}}
-\newcommand\Large{\@setfontsize\Large\@xivpt{18}}
-\newcommand\LARGE{\@setfontsize\LARGE\@xviipt{22}}
-\newcommand\huge{\@setfontsize\huge\@xxpt{25}}
-\newcommand\Huge{\@setfontsize\Huge\@xxvpt{30}}
-\setlength\textwidth{360\p@}
-\setlength\topskip{10\p@}
-\setlength\marginparsep{11\p@}
-\setlength\marginparpush{5\p@}
-\else\if1\@ptsize\relax       %--------- 11pt
-\renewcommand\normalsize{%
-   \@setfontsize\normalsize\@xipt{13.6}%
-   \abovedisplayskip 11\p@ \@plus3\p@ \@minus6\p@
-   \abovedisplayshortskip \z@ \@plus3\p@
-   \belowdisplayshortskip 6.5\p@ \@plus3.5\p@ \@minus3\p@
-   \belowdisplayskip \abovedisplayskip
-   \let\@listi\@listI}
-\normalsize
-\newcommand\small{%
-   \@setfontsize\small\@xpt\@xiipt
-   \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
-   \abovedisplayshortskip \z@ \@plus3\p@
-   \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
-   \def\@listi{\leftmargin\leftmargini
-               \topsep 6\p@ \@plus2\p@ \@minus2\p@
-               \parsep 3\p@ \@plus2\p@ \@minus\p@
-               \itemsep \parsep}%
-   \belowdisplayskip \abovedisplayskip
-}
-\newcommand\footnotesize{%
-   \@setfontsize\footnotesize\@ixpt{11}%
-   \abovedisplayskip 8\p@ \@plus2\p@ \@minus4\p@
-   \abovedisplayshortskip \z@ \@plus\p@
-   \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
-   \def\@listi{\leftmargin\leftmargini
-               \topsep 4\p@ \@plus2\p@ \@minus2\p@
-               \parsep 2\p@ \@plus\p@ \@minus\p@
-               \itemsep \parsep}%
-   \belowdisplayskip \abovedisplayskip
-}
-\newcommand\scriptsize{\@setfontsize\scriptsize\@viiipt{9.5}}
-\newcommand\tiny{\@setfontsize\tiny\@vipt\@viipt}
-\newcommand\large{\@setfontsize\large\@xiipt{14}}
-\newcommand\Large{\@setfontsize\Large\@xivpt{18}}
-\newcommand\LARGE{\@setfontsize\LARGE\@xviipt{22}}
-\newcommand\huge{\@setfontsize\huge\@xxpt{25}}
-\newcommand\Huge{\@setfontsize\Huge\@xxvpt{30}}
-\setlength\textwidth{384\p@}
-\setlength\topskip{11\p@}
-\setlength\marginparsep{10\p@}
-\setlength\marginparpush{5\p@}
-\else                         %--------- 12pt
+
+                       %--------- 12pt
 \renewcommand\normalsize{%
    \@setfontsize\normalsize\@xiipt{14.5}%
    \abovedisplayskip 12\p@ \@plus3\p@ \@minus7\p@
@@ -232,6 +149,7 @@
    \belowdisplayskip \abovedisplayskip
    \let\@listi\@listI}
 \normalsize
+
 \newcommand\small{%
    \@setfontsize\small\@xipt{13.6}%
    \abovedisplayskip 11\p@ \@plus3\p@ \@minus6\p@
@@ -243,6 +161,7 @@
                \itemsep \parsep}%
    \belowdisplayskip \abovedisplayskip
 }
+
 \newcommand\footnotesize{%
    \@setfontsize\footnotesize\@xpt\@xiipt
    \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
@@ -254,6 +173,7 @@
                \itemsep \parsep}%
    \belowdisplayskip \abovedisplayskip
 }
+
 \newcommand\scriptsize{\@setfontsize\scriptsize\@viiipt{9.5}}
 \newcommand\tiny{\@setfontsize\tiny\@vipt\@viipt}
 \newcommand\large{\@setfontsize\large\@xivpt{18}}
@@ -265,7 +185,9 @@
 \setlength\topskip{12\p@}
 \setlength\marginparsep{10\p@}
 \setlength\marginparpush{7\p@}
-\fi\fi                        %---------
+
+
+                        %---------
 \newcommand\isttitlesize{\@setfontsize\isttitlesize\@xivpt{25.2}}
 \if p\ist@engine\relax
 \DeclareFontShape{JY1}{mc}{m}{it}{<->ssub*mc/m/n}{}
@@ -298,11 +220,11 @@
 \else
   \setlength{\bindoffset}{0pt}
 \fi
-\setlength\lineskip{1\p@}
+\setlength\lineskip{4\p@}
 \setlength\normallineskip{1\p@}
 \renewcommand\baselinestretch{}
 
-\setlength\parskip{10\p@ \@plus \p@}
+\setlength\parskip{9\p@ \@plus \p@}
 \if@twocolumn
   \setlength\parindent{1em}
 \else
@@ -1252,7 +1174,7 @@
  \newcommand\einterimname{An Interim Report (Abstract)}
  \newcommand\jthesisname{\ist@j@senior}
  \newcommand\jinterimname{\ist@j@interim}
- \newcommand\thesisgrade{PhD}
+ \newcommand\thesisgrade{Bachelor}
  \newcommand\ist@whatscience{Information Science}
 \else \if@masterthesis
  \newcommand\ethesisname{A Master Thesis}

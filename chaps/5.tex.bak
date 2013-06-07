@@ -1,0 +1,31 @@
+\chapter{Pyramid Match Score for Detection}
+\section{Pyramid Match}
+
+The Pyramid Match method is designed to find the best one-one match between two point(feature) sets in a heuristic manner.
+
+Given two point sets, ${S_1} = \{ {u_1},{u_2},...,{u_m}\} $
+ and ${S_2} = \{ {v_1},{v_2},...,{v_n}\} $
+, there exists a best one-one match ${\pi}^*$ that minimizes the sum of $L1$
+-distances between matched pairs,
+
+\[
+{\pi ^*} = \arg \mathop {\min }\limits_\pi  \sum\limits_{{u_i} \in {S_1}} {||{u_i} - {v_{\pi (i)}}|{|_1}} \ .
+\]
+Here $m<n$, and $\pi$ maps each feature $u_i$ in $S_1$ to a unique feature ${{v_{\pi (i)}}}
+$ in $S_2$.
+
+The best match exists, and be found by simple brute-force methods. In special cases, the Hungarian algorithm is also applicable.
+
+Sub-optimal solution can be found by heuristic methods. A very intuitionistic method is to find matched pairs of nearest distance, exclude corresponding points from both point sets, and repeat until no pair can be found.
+
+The methods mentioned above are not efficient enough. The Pyramid Match method is straightforward. Divide the space into very fine grids, and exclude all pairs of points, each of which exists in the same grid. Then divide the space into coarser grids, and continue to exclude matched pairs of points until no pair can be found.
+
+However, in order to know the sum of distances between matched pairs, the distance between two matched points still needs to be calculated. In order to avoid such calculations, the "distance" is directly assigned by how fine the grids are when the two points are considered as match.
+
+The Pyramid Match method is very efficient.
+
+\section{Pyramid Match Score}
+
+The Pyramid Match Score measures the confidence about one rectangle contains an object of a given type. One "point" set contains all the image features contained in the rectangle to be measured, the other "point" set is a "super template". The template is trained by inserting all features from training images.
+
+When SIFT is used, PCA is used to do dimension reduction. And the position information of each feature can be used by adding them as two extra dimensions of the feature. 

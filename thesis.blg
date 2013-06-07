@@ -12,10 +12,12 @@ A level-1 auxiliary file: chaps/6.aux
 The style file: plain.bst
 A level-1 auxiliary file: chaps/thanks.aux
 Database file #1: chaps/egbib.bib
-Repeated entry---line 2037 of file chaps/egbib.bib
+Repeated entry---line 2049 of file chaps/egbib.bib
  : @article{hdp
  :             ,
 I'm skipping whatever remains of this entry
+Warning--string name "cvpr" is undefined
+--line 2319 of file chaps/egbib.bib
 A bad cross reference---entry "ac31"
 refers to entry "DBLP:conf/cvpr/2008", which doesn't exist
 A bad cross reference---entry "ac32"
@@ -26,52 +28,51 @@ A bad cross reference---entry "ij15"
 refers to entry "DBLP:conf/ijcai/2003", which doesn't exist
 A bad cross reference---entry "ac33"
 refers to entry "DBLP:conf/cvpr/1999", which doesn't exist
-Warning--I didn't find a database entry for "drl1"
-Warning--I didn't find a database entry for "drl2"
 Warning--I didn't find a database entry for "DBLP:conf/ijcai/2003"
 Warning--I didn't find a database entry for "DBLP:conf/cvpr/2008"
 Warning--I didn't find a database entry for "DBLP:conf/cvpr/1999"
 Warning--I didn't find a database entry for "DBLP:conf/icisp/2010"
 Warning--empty institution in ij2
-You've used 63 entries,
+Warning--empty booktitle in drl1
+You've used 72 entries,
             2118 wiz_defined-function locations,
-            831 strings with 11779 characters,
-and the built_in function-call counts, 25709 in all, are:
-= -- 2535
-> -- 1007
-< -- 35
-+ -- 401
-- -- 330
-* -- 1578
-:= -- 3813
-add.period$ -- 194
-call.type$ -- 63
-change.case$ -- 352
+            864 strings with 12684 characters,
+and the built_in function-call counts, 29079 in all, are:
+= -- 2849
+> -- 1174
+< -- 38
++ -- 467
+- -- 386
+* -- 1800
+:= -- 4342
+add.period$ -- 221
+call.type$ -- 72
+change.case$ -- 407
 chr.to.int$ -- 0
-cite$ -- 64
-duplicate$ -- 1162
-empty$ -- 2185
-format.name$ -- 330
-if$ -- 5825
+cite$ -- 74
+duplicate$ -- 1308
+empty$ -- 2468
+format.name$ -- 386
+if$ -- 6559
 int.to.chr$ -- 0
-int.to.str$ -- 63
-missing$ -- 60
-newline$ -- 321
-num.names$ -- 130
-pop$ -- 460
+int.to.str$ -- 72
+missing$ -- 69
+newline$ -- 366
+num.names$ -- 148
+pop$ -- 537
 preamble$ -- 1
-purify$ -- 289
+purify$ -- 335
 quote$ -- 0
-skip$ -- 981
+skip$ -- 1083
 stack$ -- 0
-substring$ -- 1797
-swap$ -- 468
-text.length$ -- 35
+substring$ -- 1971
+swap$ -- 509
+text.length$ -- 38
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 250
-warning$ -- 1
-while$ -- 224
-width$ -- 65
-write$ -- 690
+type$ -- 286
+warning$ -- 2
+while$ -- 252
+width$ -- 74
+write$ -- 785
 (There were 6 error messages)

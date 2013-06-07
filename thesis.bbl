@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{wiao}
+B.~Alexe, T.~Deselaers, and V.~Ferrari.
+\newblock What is an object?
+\newblock In {\em CVPR}, June 2010.
+
 \bibitem{bgm}
 Hagai Attias.
 \newblock A variational bayesian framework for graphical models.
@@ -25,6 +30,11 @@ O.~Barinova, V.~Lempitsky, and P.~Kohli.
 H.~Bay, T.~Tuytelaars, and L.~Van~Gool.
 \newblock Surf: Speeded up robust features.
 \newblock In {\em ECCV}, pages 404--417, 2006.
+
+\bibitem{scontext}
+S.~Belongie, J.~Malik, and J.~Puzicha.
+\newblock Shape matching and object recognition using shape contexts.
+\newblock {\em PAMI}, 24(4):509--522, April 2002.
 
 \bibitem{dlearn}
 Yoshua Bengio.
@@ -58,6 +68,13 @@ P.~Davidson, J.~Hautamaki, and J.~Collin.
   car navigation system.
 \newblock In {\em International Conference on Integrated Navigation Systems},
   2008.
+
+\bibitem{408}
+Thomas Dean, Mark Ruzon, Mark Segal, Jon Shlens, Sudheendra Vijayanarasimhan,
+  and Jay Yagnik.
+\newblock Fast, accurate detection of 100,000 object classes on a single
+  machine.
+\newblock In {\em CVPR}, Washington, DC, USA, 2013.
 
 \bibitem{face}
 Nikolay Degtyarev and Oleg Seredin.
@@ -121,6 +138,11 @@ R.~Isukapalli and R.~Greiner.
 Herv\'e J\'egou, Matthijs Douze, and Cordelia Schmid.
 \newblock Improving bag-of-features for large scale image search.
 \newblock {\em IJCV}, 87(3):316--336, feb 2010.
+
+\bibitem{ac222}
+H.~Jiang and S.X. Yu.
+\newblock Linear solution to scale and rotation invariant object matching.
+\newblock In {\em CVPR}, pages 2474--2481, 2009.
 
 \bibitem{ha}
 H.~W. Kuhn.
@@ -226,6 +248,12 @@ K.~Ohba and K.~Ikeuchi.
   stable verification of partially occluded objects.
 \newblock {\em PAMI}, 19(9):1043--1047, September 1997.
 
+\bibitem{lbp}
+Timo Ojala, Matti Pietik{\"a}inen, and David Harwood.
+\newblock A comparative study of texture measures with classification based on
+  featured distributions.
+\newblock {\em Pattern Recognition}, 29(1):51--59, 1996.
+
 \bibitem{ac7}
 R.~Okada.
 \newblock Discriminative generalized hough transform for object dectection.
@@ -242,11 +270,26 @@ Sinno~Jialin Pan and Qiang Yang.
 \newblock {\em IEEE Transactions on Knowledge and Data Engineering},
   22(10):1345--1359, 2010.
 
+\bibitem{spm}
+Hamed Pirsiavash and Deva Ramanan.
+\newblock Steerable part models.
+\newblock In {\em CVPR}, 2012.
+
+\bibitem{ciod}
+E.~Rahtu, J.~Kannala, and M.~B. Blaschko.
+\newblock Learning a category independent object detection cascade.
+\newblock In {\em ICCV}, 2011.
+
 \bibitem{gprocess}
 Carl~Edward Rasmussen and Christopher K.~I. Williams.
 \newblock {\em Gaussian Processes for Machine Learning (Adaptive Computation
   and Machine Learning)}.
 \newblock The MIT Press, 2005.
+
+\bibitem{ac20}
+H.~Rowley, S.~Baluja, and T.~Kanade.
+\newblock Rotation invariant neural network-based face detection.
+\newblock In {\em CVPR}, pages 38--44, 1998.
 
 \bibitem{ac34}
 O.~Russakovsky and A.Y. Ng.
@@ -341,5 +384,10 @@ P.~Yarlagadda, A.~Monroy, and B.~Ommer.
 T.~Yeh, J.J. Lee, and T.J. Darrell.
 \newblock Fast concurrent object localization and recognition.
 \newblock In {\em CVPR}, pages 280--287, 2009.
+
+\bibitem{drl1}
+T.~Yeh, J.J. Lee, and T.J. Darrell.
+\newblock Fast concurrent object localization and recognition.
+\newblock pages 280--287, 2009.
 
 \end{thebibliography}

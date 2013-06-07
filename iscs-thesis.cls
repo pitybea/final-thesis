@@ -181,8 +181,8 @@
 \newcommand\LARGE{\@setfontsize\LARGE\@xxpt{25}}
 \newcommand\huge{\@setfontsize\huge\@xxvpt{30}}
 \let\Huge=\huge
-\setlength\textwidth{408\p@}
-\setlength\topskip{12\p@}
+\setlength\textwidth{400\p@}
+\setlength\topskip{15\p@}
 \setlength\marginparsep{10\p@}
 \setlength\marginparpush{7\p@}
 
@@ -220,7 +220,7 @@
 \else
   \setlength{\bindoffset}{0pt}
 \fi
-\setlength\lineskip{4\p@}
+\setlength\lineskip{8\p@}
 \setlength\normallineskip{1\p@}
 \renewcommand\baselinestretch{}
 
@@ -251,7 +251,7 @@
   \setlength\textwidth\@tempdima
 \fi\fi\fi
 \@settopoint\textwidth
-\setlength\@tempdima{.833333\paperheight}
+\setlength\@tempdima{.8\paperheight}
 \divide\@tempdima\baselineskip
 \@tempcnta=\@tempdima
 \setlength\textheight{\@tempcnta\baselineskip}
@@ -293,7 +293,7 @@
 \@settopoint\evensidemargin
 \setlength\@tempdima{\paperheight}
 \addtolength\@tempdima{-\textheight}
-\setlength\topmargin{.4\@tempdima}
+\setlength\topmargin{.5\@tempdima}
 \addtolength\topmargin{-1in}
 \addtolength\topmargin{-\headheight}
 \addtolength\topmargin{-\headsep}

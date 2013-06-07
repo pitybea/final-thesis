@@ -44,16 +44,16 @@ In videos, motion information is also available by simple tracking of object par
 \begin{figure}
 \centering
 \subfigure[]{
-\includegraphics[width=0.45\textwidth,bb=0 0 600 480]{PEssR.jpg}
+\includegraphics[width=0.48\textwidth,bb=0 0 600 480]{PEssR.jpg}
 \label{fig:compa:a}}
 \subfigure[]{
-\includegraphics[width=0.45\textwidth,bb=0 0 720 576]{a56.jpg}
+\includegraphics[width=0.48\textwidth,bb=0 0 720 576]{a56.jpg}
 \label{fig:compa:b}}
 \subfigure[]{
-\includegraphics[width=0.45\textwidth,bb=0 0 600 480]{Untitled-6.jpg}
+\includegraphics[width=0.48\textwidth,bb=0 0 600 480]{Untitled-6.jpg}
 \label{fig:compa:c}}
 \subfigure[]{
-\includegraphics[width=0.45\textwidth,bb=0 0 600 480]{Untitled-4.jpg}
+\includegraphics[width=0.48\textwidth,bb=0 0 600 480]{Untitled-4.jpg}
 \label{fig:compa:d}
 }
 \caption{Merit of the proposed method. (a) Original image. (b) Motion \sout{group}{\color{red}grouping} results. {\color{red}Some parts are enlarged to show details.} (c) Original Hough image. (d) Hough image formed using our method. The grids in (c) and (d) correspond to the grids in(a).}

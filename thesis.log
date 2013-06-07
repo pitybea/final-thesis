@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.2-110415-2.3 (sjis) (Web2C 2011) (format=platex 2011.12.20)  7 JUN 2013 13:47
+This is e-pTeX, Version 3.1415926-p3.2-110415-2.3 (sjis) (Web2C 2011) (format=platex 2011.12.20)  7 JUN 2013 17:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -322,12 +322,6 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-
-Overfull \hbox (3.17358pt too wide) in paragraph at lines 8--9
-\OT1/ptm/m/n/14.4 with ap-pear-ance in-for-ma-tion very ef-fi-ciently. This met
-hod gives promis-
- []
-
 )
 \openout2 = `chaps/jabstract.aux'.
 
@@ -337,7 +331,7 @@ hod gives promis-
 
 
 
-] [2] [3]
+] [2] [3] [4]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <20.74> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <20.74> not available
@@ -360,36 +354,53 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (h:/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [4
+) [5
 
 
 ])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [5] (./thesis.lof
-[6
+ [6] (./thesis.lof
+Overfull \hbox (4.95377pt too wide) in paragraph at lines 10--10
+ \OT1/ptm/m/n/14.4 key-points which pass the ver-i-fi-ca-tion, while blue marks
+ 
+ []
+
+[7
 
 ]
-Overfull \hbox (1.2451pt too wide) in paragraph at lines 37--37
- \OT1/ptm/m/n/14.4 im-ages formed by votes with the pro-posed weights. Red 
+Overfull \hbox (23.8037pt too wide) in paragraph at lines 37--37
+ \OT1/ptm/m/n/14.4 Hough im-ages formed by votes with the pro-posed weights. 
  []
 
 )
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [7] (./thesis.lot)
+ [8] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [8
+ [9
 
 ]
 \openout2 = `chaps/1.aux'.
 
  (./chaps/1.tex
 Chapter 1.
+
+Overfull \hbox (2.67378pt too wide) in paragraph at lines 6--7
+[]\OT1/ptm/m/n/14.4 Most mod-ern de-tec-tion meth-ods fall into two cat-e-gorie
+s. Some [[],
+ []
+
+
+Overfull \hbox (6.79626pt too wide) in paragraph at lines 9--10
+\OT1/ptm/m/n/14.4 propos-ing bet-ter search-ing tech-niques for ex-plor-ing so-
+lu-tion space [[]]. 
+ []
+
 [1
 
 
@@ -403,117 +414,117 @@ Chapter 2.
 
 
 
-] [5]
-Overfull \hbox (3.8328pt too wide) in paragraph at lines 53--54
-[]\OT1/ptm/m/n/14.4 One very promis-ing method for de-ci-sion mak-ing is deep l
-earn-ing [[]].
+]
+Overfull \hbox (1.38101pt too wide) in paragraph at lines 45--46
+\OT1/ptm/m/n/14.4 ple dif-fer-ent im-age fea-tures or in-for-ma-tion from mul-t
+i-ple chan-nels [[],
  []
 
-[6]
-
-LaTeX Warning: Citation `drl1' on page 7 undefined on input line 61.
-
-
-LaTeX Warning: Citation `drl2' on page 7 undefined on input line 61.
-
-
-Overfull \hbox (6.126pt too wide) in paragraph at lines 61--62
-\OT1/ptm/m/n/14.4 These meth-ods em-ploy branch-and-bound mech-a-nisms dur-ing 
-the search
+[5]
+Overfull \hbox (0.64317pt too wide) in paragraph at lines 53--55
+[]\OT1/ptm/m/n/14.4 Discriminative and gen-er-a-tive meth-ods are the two main 
+cat-e-gories
  []
 
-) [7]
+[6] [7] [8]) [9]
 \openout2 = `chaps/3.aux'.
 
  (./chaps/3.tex
 Chapter 3.
-LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 12.
-LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
-[8
+[10
 
 
 
 ]
+LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 23.
+LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 23.
 File: 17Orgimg00039.jpg Graphic file (type eps)
  <17Orgimg00039.jpg>
 File: 17veriTrjimg00039.jpg Graphic file (type eps)
- <17veriTrjimg00039.jpg> [9] [10]
+ <17veriTrjimg00039.jpg> [11] [12]
+Overfull \hbox (7.54144pt too wide) in paragraph at lines 62--63
+[]\OT1/ptm/m/n/14.4 Especially, com-pared with the method pro-posed in [[]], th
+is method
+ []
+
+
+Overfull \hbox (4.27527pt too wide) in paragraph at lines 62--63
+\OT1/ptm/m/n/14.4 em-ploys a more ef-fec-tive clas-si-fy-ing ma-chine by set-ti
+ng bi-ased weights
+ []
+
+[13]
 File: 17Kptimg00039.jpg Graphic file (type eps)
  <17Kptimg00039.jpg>
 File: 8Kptimg00028.jpg Graphic file (type eps)
-
-<8Kptimg00028.jpg> [11]
-Overfull \hbox (2.78145pt too wide) in paragraph at lines 107--108
-[]\OT1/ptm/m/n/14.4 For ver-i-fi-ca-tion, the in-ten-sity his-togram of each ke
-y-point's sur-round-
- []
-
+ <8Kptimg00028.jpg> [14]
 File: 17VeriKptimg00039.jpg Graphic file (type eps)
-<17VeriKptimg00039.jpg>
+ <17VeriKptimg00039.jpg>
 File: 8VeriKptimg00028.jpg Graphic file (type eps)
- <8VeriKptimg00028.jpg>
+
+<8VeriKptimg00028.jpg>
 File: 17Rgsimgwl00039.jpg Graphic file (type eps)
  <17Rgsimgwl00039.jpg>
 File: 8Rgsimgwl00028.jpg Graphic file (type eps)
-
-<8Rgsimgwl00028.jpg> [12] [13]
+ <8Rgsimgwl00028.jpg> [15]
 File: 17Rgsimg00039.jpg Graphic file (type eps)
- <17Rgsimg00039.jpg>
+
+<17Rgsimg00039.jpg>
 File: 8Rgsimg00028.jpg Graphic file (type eps)
- <8Rgsimg00028.jpg>
-Overfull \hbox (19.98495pt too wide) in paragraph at lines 151--152
-\OT1/ptm/m/n/14.4 main-tain ef-fi-ciency, a pool of tra-jec-to-ries are kept, $
-\OML/cmm/m/it/14.4 ^^\ \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 f\OML/cmm/m/it/14
-.4 T[]; i \OT1/cmr/m/n/14.4 = 1\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 2\OML/cmm
-/m/it/14.4 ; :::; n\OMS/cmsy/m/n/14.4 g$\OT1/ptm/m/n/14.4 ,
+ <8Rgsimg00028.jpg> [16] [17] [18] [19]
+Overfull \hbox (1.5076pt too wide) in paragraph at lines 213--214
+[]\OT1/ptm/m/n/14.4 The Ad-aboost ma-chine to dis-tin-guish other ve-hi-cles an
+d their shad-
  []
 
-[14]
-Overfull \hbox (0.10132pt too wide) in paragraph at lines 171--173
-\OT1/ptm/m/n/14.4 tained in $\OML/cmm/m/it/14.4 T[]$ \OT1/ptm/m/n/14.4 and $\OM
-L/cmm/m/it/14.4 n[]$\OT1/ptm/m/n/14.4 . While Hun-gar-ian al-go-rithm [[]] give
-s near-optimal
- []
-
-[15] [16]
 File: 17veriTrjimg00039.jpg Graphic file (type eps)
- <17veriTrjimg00039.jpg>
+<17veriTrjimg00039.jpg>
 File: 8veriTrjimg00028.jpg Graphic file (type eps)
  <8veriTrjimg00028.jpg>
 File: 19veriTrjimg00041.jpg Graphic file (type eps)
-
-<19veriTrjimg00041.jpg>
+ <19veriTrjimg00041.jpg>
 File: 3veriTrjimg00023.jpg Graphic file (type eps)
- <3veriTrjimg00023.jpg> [17]) [18]
+
+<3veriTrjimg00023.jpg>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20]) [21]
 \openout2 = `chaps/4.aux'.
 
  (./chaps/4.tex
 Chapter 4.
 
-Overfull \hbox (9.8112pt too wide) in paragraph at lines 15--21
+Overfull \hbox (17.8112pt too wide) in paragraph at lines 15--21
 |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
   |   []   |   []   |   []
  []
 
 
-Overfull \hbox (1.7627pt too wide) in paragraph at lines 15--21
+Overfull \hbox (9.7627pt too wide) in paragraph at lines 15--21
 |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
   |   []   |   []   |   []
  []
 
-[19
+
+Overfull \hbox (3.81526pt too wide) in paragraph at lines 25--27
+\OT1/ptm/m/n/14.4 cat-e-gories: sliding-window meth-ods and Hough trans-form ba
+sed meth-
+ []
+
+[22
 
 
 
 ]
-Overfull \hbox (1.74805pt too wide) in paragraph at lines 36--37
-|   [][]\OT1/ptm/m/n/14.4 non-maximum[] sup-pres-sion is needed for post-proces
-sing, and
+Overfull \hbox (1.27602pt too wide) in paragraph at lines 34--35
+[]\OT1/ptm/m/n/14.4 A typ-i-cal Hough trans-form based method con-tains two ste
+ps: train-
  []
 
-[20]
+[23]
 File: PEssR.jpg Graphic file (type eps)
  <PEssR.jpg>
 File: a56.jpg Graphic file (type eps)
@@ -523,13 +534,7 @@ File: Untitled-6.jpg Graphic file (type eps)
 File: Untitled-4.jpg Graphic file (type eps)
  <Untitled-4.jpg>
 
-LaTeX Warning: Float too large for page by 74.20114pt on input line 61.
-
-
-Overfull \hbox (5.27582pt too wide) in paragraph at lines 65--66
-\OT1/ptm/m/n/14.4 form frame-work through as-sign-ing dif-fer-ent weights to ea
-ch ob-ject part's
- []
+LaTeX Warning: Float too large for page by 87.91208pt on input line 61.
 
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 67.
 (h:/texlive/2011/texmf-dist/tex/latex/psnfss/omsptm.fd
@@ -537,26 +542,14 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <14.4> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
-
-Overfull \hbox (17.95975pt too wide) in paragraph at lines 67--68
-\OT1/ptm/m/n/14.4 of ob-jects makes the task chal-leng-ing: near ob-jects, sim-
-i-lar different-
- []
-
-[21] [22]
-Overfull \hbox (5.3196pt too wide) in paragraph at lines 79--80
-\OT1/ptm/m/n/14.4 book noise [[]], and meth-ods which in-te-grate tem-po-ral in
--for-ma-tion [[]]. 
- []
-
-[23]
-Overfull \hbox (0.485pt too wide) in paragraph at lines 121--122
+ [24] [25] [26]
+Overfull \hbox (8.485pt too wide) in paragraph at lines 121--122
 []\OT1/ptm/m/n/14.4 Here, a uni-form weight is as-sumed for each ob-ject part, 
 and $\OML/cmm/m/it/14.4 w\OT1/cmr/m/n/14.4 (\OT1/cmr/bx/n/14.4 e[]\OT1/cmr/m/n/
 14.4 ) =
  []
 
-[24] [25]
+[27] [28]
 File: a56.jpg Graphic file (type eps)
  <a56.jpg>
 File: voteimg00056.jpg Graphic file (type eps)
@@ -565,13 +558,24 @@ File: selectVimg00056_9.jpg Graphic file (type eps)
  <selectVimg00056_9.jpg>
 File: selectedvotesimg00056.jpg Graphic file (type eps)
 
-<selectedvotesimg00056.jpg> [26]
-Overfull \hbox (19.08122pt too wide) in paragraph at lines 221--222
-[]\OT1/ptm/m/n/14.4 Before group-ing the tra-jec-to-ries, the static points are
- ex-cluded. |   []
+<selectedvotesimg00056.jpg>
+Overfull \hbox (1.03543pt too wide) in paragraph at lines 203--204
+\OT1/ptm/m/n/14.4 frames be-fore and af-ter the cur-rent frame to gen-er-ate tr
+a-jec-to-ries. Then
  []
 
-[27] [28]
+[29] [30]
+Overfull \hbox (3.05412pt too wide) in paragraph at lines 230--232
+\OT1/ptm/m/n/14.4 Here, $\OML/cmm/m/it/14.4 ^^U[]$ \OT1/ptm/m/n/14.4 is the gen
+-er-al-ized eigen-value by solv-ing the gen-er-al-ized eigen-
+ []
+
+[31] [32]
+Overfull \hbox (1.03275pt too wide) in paragraph at lines 274--275
+[]\OT1/ptm/m/n/14.4 Following [[]], the op-ti-mal re-sult for the prob-lem is g
+iven by greedy
+ []
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -589,13 +593,7 @@ File: dst4.jpg Graphic file (type eps)
  <dst4.jpg>
 File: dst1.jpg Graphic file (type eps)
 
-<dst1.jpg>
-Overfull \hbox (16.99434pt too wide) in paragraph at lines 396--397
-\OT1/ptm/m/n/14.4 ground ob-jects: pedes-tri-ans and bi-cy-cle rid-ers. The fra
-me size is 720$\OMS/cmsy/m/n/14.4 ^^B$\OT1/ptm/m/n/14.4 576.
- []
-
-[29]
+<dst1.jpg> [33]
 File: a16.jpg Graphic file (type eps)
  <a16.jpg>
 File: a26.jpg Graphic file (type eps)
@@ -609,8 +607,8 @@ File: prf.eps Graphic file (type eps)
 File: cm2.eps Graphic file (type eps)
  <cm2.eps>
 File: cm1.eps Graphic file (type eps)
- <cm1.eps>
-[30]
+
+<cm1.eps> [34]
 File: 016.jpg Graphic file (type eps)
  <016.jpg>
 File: 026.jpg Graphic file (type eps)
@@ -624,26 +622,26 @@ File: 166.jpg Graphic file (type eps)
 File: 251.jpg Graphic file (type eps)
  <251.jpg>
 File: 326.jpg Graphic file (type eps)
- <326.jpg>
-File: 366.jpg Graphic file (type eps)
 
-<366.jpg>
+<326.jpg>
+File: 366.jpg Graphic file (type eps)
+ <366.jpg>
 File: amotionimg00296.jpg Graphic file (type eps)
  <amotionimg00296.jpg>
 File: amotionimg01836.jpg Graphic file (type eps)
  <amotionimg01836.jpg>
 File: selectVimg00296_0.jpg Graphic file (type eps)
- <selectVimg00296_0.jpg>
-File: selectVimg01836_0.jpg Graphic file (type eps)
 
-<selectVimg01836_0.jpg>
+<selectVimg00296_0.jpg>
+File: selectVimg01836_0.jpg Graphic file (type eps)
+ <selectVimg01836_0.jpg>
 File: selectVimg00296_19.jpg Graphic file (type eps)
  <selectVimg00296_19.jpg>
 File: selectVimg01836_19.jpg Graphic file (type eps)
- <selectVimg01836_19.jpg>
-File: PER1.jpg Graphic file (type eps)
 
-<PER1.jpg>
+<selectVimg01836_19.jpg>
+File: PER1.jpg Graphic file (type eps)
+ <PER1.jpg>
 File: PER2.jpg Graphic file (type eps)
  <PER2.jpg>
 File: 1.jpg Graphic file (type eps)
@@ -653,75 +651,69 @@ File: 3.jpg Graphic file (type eps)
 File: 2.jpg Graphic file (type eps)
  <2.jpg>
 File: 4.jpg Graphic file (type eps)
- <4.jpg> [31] [32]
-Overfull \hbox (5.8756pt too wide) in paragraph at lines 486--487
-[]\OT1/ptm/b/n/14.4 Implementation set-tings \OT1/ptm/m/n/14.4 Most im-ple-men-
-ta-tion set-tings are the same
- []
-
+ <4.jpg>
+[35] [36]
 File: leo1.jpg Graphic file (type eps)
-<leo1.jpg>
+ <leo1.jpg>
 File: leo2.jpg Graphic file (type eps)
  <leo2.jpg>
 File: leo3.jpg Graphic file (type eps)
  <leo3.jpg>
 File: ti1.jpg Graphic file (type eps)
- <ti1.jpg>) [33] [34] [35]
+ <ti1.jpg>) [37] [38] [39]
 \openout2 = `chaps/5.aux'.
 
- (./chaps/5.tex
+
+(./chaps/5.tex
 Chapter 5.
 
-Overfull \hbox (0.19319pt too wide) in paragraph at lines 6--10
+Overfull \hbox (8.19319pt too wide) in paragraph at lines 8--12
 []\OT1/ptm/m/n/14.4 Given two point sets, $[] \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n
 /14.4 f[]\OML/cmm/m/it/14.4 ; []; :::; []\OMS/cmsy/m/n/14.4 g$ \OT1/ptm/m/n/14.
 4 and $[] \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 f[]\OML/cmm/m/it/14.4 ; []; ::
 :; []\OMS/cmsy/m/n/14.4 g$
  []
 
-[36
+[40
 
 
 
-]) [37]
+]) [41]
 \openout2 = `chaps/6.aux'.
 
  (./chaps/6.tex
 Chapter 6.
-) [38
+) [42
 
 
 
 ] (./thesis.bbl (I search kanjifont definition file: . . )
 (I search font definition file: . . . . . . . )
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 11.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 16.
 
 (h:/texlive/2011/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [39
+) [43
 
 
-] [40] [41] [42])
-[43]
+] [44] [45] [46]
+[47]) [48]
 \openout2 = `chaps/thanks.aux'.
 
  (./chaps/thanks.tex) (./thesis.aux (./chaps/eabstract.aux)
 (./chaps/jabstract.aux) (./chaps/1.aux) (./chaps/2.aux) (./chaps/3.aux)
 (./chaps/4.aux) (./chaps/5.aux) (./chaps/6.aux) (./chaps/thanks.aux))
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3504 strings out of 494159
- 42485 string characters out of 3162859
- 108190 words of memory out of 3000000
- 6710 multiletter control sequences out of 15000+200000
+ 3518 strings out of 494159
+ 42571 string characters out of 3162859
+ 109287 words of memory out of 3000000
+ 6724 multiletter control sequences out of 15000+200000
  18282 words of font info for 67 fonts, out of 3000000 for 9000
  745 hyphenation exceptions out of 8191
- 27i,22n,35p,1406b,742s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,22n,35p,1407b,742s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on thesis.dvi (51 pages, 159576 bytes).
+Output written on thesis.dvi (57 pages, 167020 bytes).

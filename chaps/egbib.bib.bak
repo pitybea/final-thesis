@@ -668,7 +668,7 @@ pages = {83--97}
 
 
 @article{surf,
- author = {Bay, Herbert and Ess, Andreas and Tuytelaars, Tinne and Van Gool, Luc},
+ author = {Bay, H. and Tuytelaars, T. and Van Gool, L.},
  title = {Speeded-Up Robust Features (SURF)},
  journal = {CVIU},
  issue_date = {June, 2008},
@@ -958,28 +958,23 @@ Understanding Multi-Object Traffic Scenes",
         BOOKTITLE = "International Conference on Integrated Navigation Systems",
         YEAR = "2008",
         BIBSOURCE = ""}
- @misc{ google,
-   author = "google",
-   title = "google",
-   url = "\url{http://www.google.com}",
-   note = "[Online; accessed 22-May-2013]"
- }
+
  @misc{ bisearch,
-   author = "baidu",
-   title = "baidu image search",
-   url = "\url{http://stu.baidu.com}",
+   author = "Baidu",
+   title = {{baidu image search}},
+   howpublished = "\url{http://stu.baidu.com}",
    note = "[Online; accessed 22-May-2013]"
  }
  @misc{ dod,
    author = "Wikipedia",
-   title = "Object Detection",
-   url = "\url{http://en.wikipedia.org/wiki/Object_detection}",
+   title = {{Object Detection}},
+   howpublished = "\url{http://en.wikipedia.org/wiki/Object_detection}",
    note = "[Online; accessed 22-May-2013]"
  }
   @misc{ siri,
    author = "Wikipedia",
-   title = "Siri",
-   url = "\url{
+   title = {{Siri}},
+   howpublished = "\url{
 http://en.wikipedia.org/wiki/Siri_(software)}",
    note = "[Online; accessed 22-May-2013]"
  }
@@ -1052,7 +1047,7 @@ http://en.wikipedia.org/wiki/Siri_(software)}",
         AUTHOR = "Meeds, E.W. and Ross, D.A. and Zemel, R.S. and Roweis, S.T.",
         TITLE = "Learning stick-figure models using nonparametric Bayesian priors over
 trees",
-        BOOKTITLE = CVPR,
+        BOOKTITLE = {CVPR},
         YEAR = "2008",
         PAGES = "1-8",
         BIBSOURCE = "http://www.visionbib.com/bibliography/people923.html#TT120401"}
@@ -1086,4 +1081,48 @@ pages = {1345-1359},
 doi = {http://doi.ieeecomputersociety.org/10.1109/TKDE.2009.191},
 publisher = {IEEE Computer Society},
 address = {Los Alamitos, CA, USA},
+}
+
+@article{lbp,
+  author    = {Timo Ojala and
+               Matti Pietik{\"a}inen and
+               David Harwood},
+  title     = {A comparative study of texture measures with classification
+               based on featured distributions},
+  journal   = {Pattern Recognition},
+  volume    = {29},
+  number    = {1},
+  year      = {1996},
+  pages     = {51-59},
+  ee        = {http://dx.doi.org/10.1016/0031-3203(95)00067-4},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{scontext,
+ author = {Belongie, S. and Malik, J. and Puzicha, J.},
+ title = {Shape Matching and Object Recognition Using Shape Contexts},
+ journal = {PAMI},
+ issue_date = {April 2002},
+ volume = {24},
+ number = {4},
+ month = apr,
+ year = {2002},
+ issn = {0162-8828},
+ pages = {509--522},
+ numpages = {14},
+ url = {http://dx.doi.org/10.1109/34.993558},
+ doi = {10.1109/34.993558},
+ acmid = {628792},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ keywords = {shape, object recognition, digit recognition, correspondence problem, MPEG7, image registration, deformable templates},
+}
+
+@InProceedings{wiao,
+  author = {B. Alexe and T. Deselaers and V. Ferrari},
+  title = {What is an object?},
+  booktitle = {CVPR},
+  year = {2010},
+  month = {June},
+  keywords = {}
 }
