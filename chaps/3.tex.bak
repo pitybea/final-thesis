@@ -62,6 +62,22 @@ Most modern detection methods fall into two categories. Some~\cite{ij4,ac31,ac30
 
 Previous methods~\cite{ac34} also consider the combination of the two frameworks. Detection hypotheses are gained using Hough transform and then verified by support vector machines in~\cite{ac10,ac25}. The methods in~\cite{ac6,ac7}, use randomized decision trees for both decisions whether local features belonging to foreground objects or not and decisions of their Hough votes. The method proposed in~\cite{ac27} describes both frameworks in the same manner. While giving state-of-the-art detection performance, they can't meet the requirement for efficiency as this method does.
 
+This work is also related to data association methods at time dimension. In tracking, the main attention is focused on solving a data
+association problem to explain conflicts in data as well as
+recovering from tracking failures within a low time cost. In
+\cite{ij9}, the joint likelihood maximization is represented by the
+Nash Equilibrium in a game. The main contribution is the time
+complexity of solving a game-theoretic problem is low and make
+trackers compete for the region that is in a conflict. In
+\cite{ij10}, the MAP corresponds to the max flow of a well designed
+graph. The method has the advantage of taking into consideration of
+missed detections on middle frames and the low time cost. In
+\cite{ij11}, the main idea is to firstly connect very faithful
+detection response pairs, then solve the data association problem
+via low-time-complexity Hungarian algorithm, and refine the result
+in a EM manner at the last step. And the main concern of these work
+is solving the high time complexity in the data association problem.
+
  This work is also related to feature grouping methods~\cite{ac25}, methods detecting using trajectories~\cite{my9,ac24}, tracking methods~\cite{my7,my10}, and methods integrating appearance and temporal information~\cite{ac23}.
 
 
@@ -230,22 +246,26 @@ r =| \frac{{\sum\limits_i {\left( {{x^i_{\bf{g}}} -  {\bar x_{\bf{g}}}} \right)\
 \end{equation}
 And the value of $r$ is used to decide the trajectories of the keypoint clusters as belonging to emergency telephone indicators or not.
 
+\subsection{Pipeline Summary}
 \begin{table}[h]
 \centering
-\begin{tabular}{lcc}
+\begin{tabular}{lcccc}
      \hline
      \hline
-                               & Motion/Appearance & Online/offline & Instance number & Discriminative/Generative \\
-    Keypoint Detection         &	 &  &  & \\
-    Keypoint Verification      &	 &	& & \\
-    Keypoint Clustering       &	  & & & \\
-    KC Verification by Appearance         &      & & &	  \\
-    KC Tracking & & *           \\
-    KC Verification by Motion           &      & & &	   \\
+                               & \begin{tabular}{@{}c@{}}Appearance \\ /Motion\end{tabular} & \begin{tabular}{@{}c@{}}Online \\ /Offline\end{tabular} & \begin{tabular}{@{}c@{}}Discriminative \\ /Generative\end{tabular}  \\
+    \hline
+    Keypoint Detection         &	Appearance & Offline &  Generative  \\
+    Keypoint Verification      & Appearance	 & Offline	& Generative \\
+    Keypoint Clustering       &	 Appearance  & Online &  \\
+    KC Verification by Appearance         &  Appearance    & Offline &  Discriminative	  \\
+    KC Tracking                         & Motion & Online &           \\
+    KC Verification by Motion           &  Motion    & Online &  Discriminative	   \\
    \hline
 \end{tabular}
-\caption[Pipeline summary]{Summary of all steps in the pipeline. Here, KC is short for keypoint cluster.}\label{c2tb:tb1}
+\caption[Pipeline summary]{Summary of all steps in the pipeline. Here, KC is short for keypoint cluster.}\label{c3tb:tb1}
 \end{table}
+Before proposing the decision step for detection, Table \ref{c3tb:tb1} summaries the steps in the pipeline from the type and style of the information source, and whether each step belongs to discriminative or generative methods. Generally speaking, motion information and discriminative methods are at later steps. This is because the computational cost is high, while discriminative methods need more information to guarantee performance. Online information are also mainly used in later steps, this is because without information provided by model trained offline, there is no instances to generate online information. Also the computational cost of online information is higher on the run.
+
 
 \subsection{Object Detection}
 For each keypoint cluster on the current frame, there exists label given by the Adaboost machine according to its appearance, and the significance of fitting its trajectory as a straight line.  For each keypoint cluster, it is considered as an target object if and only if its label given by the Adaboost machine is positive, its trajectory is longer than $l^{th}$, and the significance of fitting its trajectory into a straight line is larger than $r^{th}$.
@@ -260,7 +280,22 @@ In this section, this method is tested on detection performance and efficiency. 
 
 \subsection{First Experiment}
 
+For the first experiment, our experimental vehicle on top of which installed infrared cameras take several tours of the Awagatake tunnel. About 4,000 frames are collected for each tour. The frame size is $640\times 480$, the intensity range is [0,255], and the frame rate is 30 frames per second of the camera, and 15 frames per second of the collection program.
 
+\textbf{Implementation Settings} All models are trained using data from one tour, while evaluated on data from another tour. Firstly, all emergency telephone indicators are marked in the form of rectangles on all frames from the training tour.
+
+To set intensity thresholds for keypoint detection, Gaussian distribution is assumed for the points belonging to target objects. With step $W$ set to 3, and $H$ set to 4, keypoints in the marked rectangle are sampled from the frames of the training tour, and used to estimate $I^{th1}_{\bf{x}}$  and $I^{th2}_{\bf{x}}$.  Following the $3\sigma$ principle, $I^{th1}_{\bf{x}}$ is set to 160 and $I^{th2}_{\bf{x}}$, 190.
+
+The keypoints used to set intensity thresholds, together with some keypoints randomly sampled from training data, which are out of the marked rectangles are used to train the mixture model, which is then used in the verification of the keypoints.
+ Note this model and the training is not very accurate, since more accurate marking means more manual efforts. Also, future steps can filter out the false alarms produced by this step.  About 30,000 intensity histograms of the positive keypoints are sampled, and about 3,000,000 of the negative. When using of $k$-means for clustering the positive intensity histograms, $k$ is set to 40, and $k$ set to 400 for negative. The $k$ values over-segment both feature sets. The threshold to verify keypoints, $D^{th}_{A_{\bf{x}}}$ is set to 0.14 for the normalized histograms.
+
+For keypoint clustering, the threshold to split the mst is set to 10, which is half the largest height of the emergency lights sensed by the camera.
+
+The Adaboost machine to distinguish other vehicles and their shadows is trained by intensity histograms of positive keypoint clusters and negative keypoint clusters. We manually mark 466 positive  and 1,421 negative keypoint clusters. The trained Adaboost machine is tested on the training dataset, and the classification rate is 85\%.
+
+During keypoint cluster tracking, whether a detection response can be linked to a trajectory or not is constrained by position and scale changes. Here scale change limit is set to 4. When the trajectories are fitted as lines, the linear model is also used in associating new detection responses.
+
+For emergency light detection, $l^{th}$ is set to 5, $r^{th}$ is set to 0.7, and $R^{th}$ is set to 70\%.
 
 \subsection{Second Experiment}
 
@@ -268,15 +303,15 @@ In this section, this method is tested on detection performance and efficiency. 
 
 \textbf{Data} For the second experiment, an infrared camera is mounted on top of the experimental vehicle, and then  take several tours of the Awagatake tunnel. About 7,000 frames are collected for each tour. The frame size is $640\times 480$, the intensity range is [0,255], and the frame rate is 30 frames per second.
 
-\textbf{Implementation Settings} All models are trained using data from the same tour, while evaluated on data from another tour.
+\textbf{Implementation Settings} The same with experiment one, all models are trained using data from one tour, and evaluated on data on another tour.
 
-To set intensity thresholds for keypoint detection, Gaussian distribution is assumed for the points belonging to emergency telephone indicators. Following the $3\sigma$ principle, $I^{th1}_{\bf{x}}$ is set to 160 and $I^{th2}_{\bf{x}}$, 190.
+To set intensity thresholds for keypoint detection, $I^{th1}_{\bf{x}}$ is set to 160 and $I^{th2}_{\bf{x}}$, 190.
 
-The approximate sub-images of the emergency telephone indicators are manually marked, and used for training the mixture model of keypoint verification. The detected keypoints falling into the sub-image are marked as positive, and otherwise negative. Note this model and the training is not very accurate, since more accurate marking means more manual efforts. About 30,000 intensity histograms of the positive keypoints are sampled, and about 3,000,000 of the negative. When using of $k$-means for clustering the positive intensity histograms, $k$ is set to 40, and 400 for negative. The $k$ values over-segment both feature sets. The threshold to verify keypoints, $D^{th}_{A_{\bf{x}}}$ is set to 0.14 for the normalized histograms.
+The approximate sub-images of the emergency telephone indicators are manually marked for one tour, and used for training the mixture model of keypoint verification. The detected keypoints falling into the sub-image are marked as positive, and otherwise negative. Note this model and the training is not very accurate, since more accurate marking means more manual efforts. About 30,000 intensity histograms of the positive keypoints are sampled, and about 3,000,000 of the negative. When using of $k$-means for clustering the positive intensity histograms, $k$ is set to 40, and 400 for negative. The $k$ values over-segment both feature sets. The threshold to verify keypoints, $D^{th}_{A_{\bf{x}}}$ is set to 0.14 for the normalized histograms.
 
 For keypoint clustering, the threshold to split the mst is set to 40, which is half the largest height of the emergency telephone indicators.
 
-The Adaboost machine to distinguish other vehicles and their shadows is trained by intensity histograms of positive keypoint clusters and negative keypoint clusters. We manually mark  positive  and  negative keypoint clusters. If the Adaboost machine is trained by averagely weighted training examples, its correct rate on the training examples is overall 84\%. When trained using this bias weighted training examples, its correct rate on the positive training examples is 94\%, and 77\% on the negative training examples.
+The Adaboost machine to distinguish other vehicles and their shadows is trained by intensity histograms of positive keypoint clusters and negative keypoint clusters.  If the Adaboost machine is trained by averagely weighted training examples, its correct rate on the training examples is overall 84\%. When trained using this bias weighted training examples, its correct rate on the positive training examples is 94\%, and 77\% on the negative training examples.
 
 During keypoint cluster tracking, whether a detection response can be linked to a trajectory or not is constrained by position and scale changes. Here scale change limit is set to 4. When the trajectories are fitted as lines, the linear model is also used in associating new detection responses.
 

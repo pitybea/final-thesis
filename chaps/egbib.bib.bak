@@ -785,7 +785,13 @@ Stable Verification of Partially Occluded Objects",
         YEAR = "2006",
         PAGES = "I: 26-36",
         BIBSOURCE = "http://www.visionbib.com/bibliography/motion-f721.html#TT71473"}
-
+@inproceedings{ac222,
+        AUTHOR = "Jiang, H. and Yu, S.X.",
+        TITLE = "Linear solution to scale and rotation invariant object matching",
+        BOOKTITLE = "CVPR",
+        YEAR = "2009",
+        PAGES = "2474-2481",
+        BIBSOURCE = "http://www.visionbib.com/bibliography/motion-i783.html#TT81789"}
 @inproceedings{ac22,
         AUTHOR = "Leibe, B. and Cornelis, N. and Cornelis, K. and Van Gool, L.J.",
         TITLE = "Dynamic 3D Scene Analysis from a Moving Vehicle",
@@ -1126,3 +1132,39 @@ address = {Los Alamitos, CA, USA},
   month = {June},
   keywords = {}
 }
+
+@inproceedings{408,
+title = {Fast, Accurate Detection of 100,000 Object Classes on a Single Machine},
+author  = {Thomas Dean and Mark Ruzon and Mark Segal and Jon Shlens and Sudheendra Vijayanarasimhan and Jay Yagnik},
+year  = 2013,
+booktitle = {CVPR},
+address = {Washington, DC, USA}
+}
+@inproceedings{
+    spm,
+    author = "Pirsiavash, Hamed and Ramanan, Deva",
+    booktitle = "CVPR",
+    year = "2012",
+    title = "Steerable Part Models"
+}
+@InProceedings{ciod,
+  author       = "Rahtu, E. and Kannala, J. and Blaschko, M.~B.",
+  title        = "Learning a Category Independent Object Detection Cascade",
+  booktitle    = "ICCV",
+  year         = "2011",
+}
+@InProceedings{r3d,
+  author =	{Koichi Kise and Takahiro Kashiwagi},
+  title =	{1.5 Million Subspaces of a Local Feature Space for 3D Object Recognition},
+  booktitle =	{Proceedings of the 1st Asian Conference on Pattern Recognition},
+  year =	{2011},
+  pages =	{672--676}
+}
+
+@inproceedings{drl1,
+        AUTHOR = "Yeh, T. and Lee, J.J. and Darrell, T.J.",
+        TITLE = "Fast concurrent object localization and recognition",
+        BOOKTITLE = CVPR,
+        YEAR = "2009",
+        PAGES = "280-287",
+        BIBSOURCE = "http://www.visionbib.com/bibliography/active681.html#TT61751"}

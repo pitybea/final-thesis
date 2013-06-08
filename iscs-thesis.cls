@@ -24,6 +24,8 @@
 \ProvidesClass{iscs-thesis}
     [2009/03/11 v1.3a
      Dept of IS/CS thesis class]
+
+\RequirePackage{ifpdf}
 \newcommand\ist@classname{iscs-thesis}
 \newcommand\ist@ahya{%
   You cannot go any further.\MessageBreak
@@ -220,7 +222,7 @@
 \else
   \setlength{\bindoffset}{0pt}
 \fi
-\setlength\lineskip{8\p@}
+\setlength\lineskip{10\p@}
 \setlength\normallineskip{1\p@}
 \renewcommand\baselinestretch{}
 

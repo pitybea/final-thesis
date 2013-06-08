@@ -1,10 +1,11 @@
 \chapter{Background and Related Work}
+\label{chp2}
 
-\section{Vision in human and computer}
+\section{Vision in Human and Computer}
 
 Everyday, new technologies emerge, which make everyday life more and more convenient, and advance human culture, of which, the appearance of text searching engines like google is  an important one. Searching images~\cite{bisearch} or other multi-media data similar to the way we search text is even more attractive, especially for the popularity of smart phones nowadays. There are still technical obstacles for this beautiful outlook. To decide semantic meanings for images is one, and detection performance on images is another.
 
-  
+
 
 The computational power of human is not any more competitive to computers, especially nowadays, when computational ability can be conveniently accessed from the cloud.
 Still when talking about the performance of visual recognition and detection under general situations, human are champion. In computer vision area, besides bar scanners and optical character recognition, few detection methods are employed in real-world applications, though face detection methods are employed in ordinary cameras.
@@ -34,42 +35,60 @@ Human babies are taken good care of, and trained to perform very simple visual t
 
 The success of voice recognition and the successful deployment in industry~\cite{siri} encourage vision researchers.  Computational power can be used to make up with the short slab of training. For example, training one model for one hour with thousands of computers is feasible with parrel training. Also, the resent deep learning~\cite{dlearn} methods try to fusion representative model with decision procedure to act more like what human might do. These new achievements are expected to fill up the gap between human and computer in aspects of representative model, decision procedure, and training quality.
 
-While the methods proposed in this methods explore the information which can be further made use of, i.e., fusion of temporal and visual information, and the mutual information of different parts of the same object. The efforts here shall belong to decision procedure, and information fusion mechanism. 
+While the methods proposed in this methods explore the information which can be further made use of, i.e., fusion of temporal and visual information, and the mutual information of different parts of the same object. The efforts here shall belong to decision procedure, and information fusion mechanism.
 
 
-\section{Basics of detection methods}
+\section{Basics of Detection Methods}
 
 In the previous section, the possible reason why human perform better in detection is discussed. The main limits of computer are of software. Based on this, researchers present new detection methods or new methods for supporting detection, which includes: 1) new image feature or new representative model, 2) new decision procedures, or 3) better searching techniques in solution space.
-\subsection{Image features}
+\subsection{Image Features}
 Image features are very important. Simple image features include features in the form of keypoints, image patches, edges,  silhouette, shape~\cite{scontext}, or textures. There are also frameworks for combining multiple different image features or information from multiple channels~\cite{regionc,bgf,lbp}, and these belong to image features at middle level. At a even higher level, image features are organized in patterns, and these are actually representative models. For example, modeling human body as a stick model~\cite{stickb}.
 
 The invariance under illumination, scale, and rotation are basic requirement for image features, while some keypoint features~\cite{ij2,o12,o14,o15,o2} fulfill this requirement. Image features which encode global positional information perform well in human detection, i.e., Histograms of Oriented
 Gradients~\cite{ij4}. Differentials at different orders are also descriptive features~\cite{ij6}.
 
-\subsection{Decision procedure}
+\subsection{Decision Procedure}
 Generally, robustness and computational efficiency are the two main pursues in proposing image features. Based or image features, how decisions are made are also of great importance. Dimension reduction methods like principle component analysis, and feature selection methods can be considered as a glue layer between representative models and decision making procedure, which enhance both robustness and processing efficiency.
 
 Discriminative and generative methods are the two main categories for decision making.
 Support vector machine, and boosting methods belong to discriminative methods. Gaussion processes~\cite{gprocess}, Dirichlet models~\cite{lda,dp,hdp}, and Bayesian graphical models~\cite{bgm} usually belong to generative methods. The difference between discriminative and generative models lay in how they use training examples to estimate parameters of the model, and how the model is used to make decisions.
 
-One very promising method for decision making is deep learning~\cite{dlearn}. This can be considered as a special form of neural network. One of its very attractive property is it can take raw data as input and output decision results, like, object label. It deals with extraction of image feature, feature selection, and decision based on features in a unified one under the same framework. Also it can share knowledge from other domain like~\cite{tlsurvey}. 
+One very promising method for decision making is deep learning~\cite{dlearn}. This can be considered as a special form of neural network. One of its very attractive property is it can take raw data as input and output decision results, like, object label. It deals with extraction of image feature, feature selection, and decision based on features in a unified one under the same framework. Also it can share knowledge from other domain like~\cite{tlsurvey}.
 
-The core of machine learning methods is still the model. Training data are used to estimate  parameters of the model, and the model is then used to make decisions on the testing data. The model of deep learning is a multi-layer network. The later one layer is, usually it has less nodes, and the information it deals with is more abstract. 
+The core of machine learning methods is still the model. Training data are used to estimate  parameters of the model, and the model is then used to make decisions on the testing data. The model of deep learning is a multi-layer network. The later one layer is, usually it has less nodes, and the information it deals with is more abstract.
 
 The earlier layers of deep-architecture networks act as feature extraction module. The first layer defines rules of how to make abstraction on the raw data. And these layers can be trained using  data from other domains. This is why deep learning methods can make use not only domain-specific information. Another aspect which separate deep learning methods from traditional neural networks is during the training procedure. While traditional neural networks are trained as a whole, which include the parameters for lots of parameters, and the requirement for extremely large amount of data is fierce. The training procedure for deep learning methods is layer-wised. There is a merit for evaluate the training quality for each layer. And after one layer is trained, the output can be used to train the next layer. This means that, each time only a few parameters need to be estimated, which is more robust and efficient, and avoid the requirement for very large amount of data. When the number of layers increase, the abstraction level of the original data enhance, and decisions are easier.
-\subsection{Solution space explore}
-Besides proposing representative models, and decision procedures, research interest on how the solution space from the decision making procedure can be explored is also important. The methods following the sliding-window schema need to consider each differently scaled sub-image of a target image, to answer wether this sub-image contains an object of interest or not, this amount is extremely large, and even enumerate all the sub-windows is computationally infeasible.
+\subsection{Solution Space Explore}
+Besides proposing representative models, and decision procedures, there are also work~\cite{408,spm,ciod} focusing on how the solution space from the decision making procedure can be explored. The methods following the sliding-window schema need to consider each differently scaled sub-image of a target image, to answer wether this sub-image contains an object of interest or not, this amount is extremely large, and even enumerate all the sub-windows is computationally infeasible.
 
-Currently the start-of-the-art method~\cite{ij15} and its variants\cite{drl1,drl2} for sliding window search work very efficiently, and give best detection hypothesis in polynomial time in experiments. There are variants\cite{ac27} which share the same strategy for methods based on Hough transforms. These methods employ branch-and-bound mechanisms during the search for the best detection hypothesis. While map-and-reduce is popular is distributed computations, the underline philosophy is very similar. 
+Currently method of ~\cite{ij15} and its variants\cite{drl1} for sliding window search work very efficiently, and give best detection hypothesis in polynomial time in experiments. There are variants\cite{ac27} which share the same strategy for methods based on Hough transforms. These methods employ branch-and-bound mechanisms during the search for the best detection hypothesis. While map-and-reduce is popular is distributed computations, the underline philosophy is very similar.
 
 Take the testing process of linear support vector machine as an example. When a sub-image is described as a bag of features, each feature will contribute to a specific dimension on the final descriptive vector.
-And when use this vector by support vector machine for decisions, it is simple linear add-up of the decisions of each single feature. So decision score for each image feature can be calculated. Thus the upper-bound and low-bound for all sub-images contained in a certain rectangle can be estimated, which can be used to filter out lots of rectangles definitely do not contain the best solution. This filtering out is the core for efficiency. 
+And when use this vector by support vector machine for decisions, it is simple linear add-up of the decisions of each single feature. So decision score for each image feature can be calculated. Thus the upper-bound and low-bound for all sub-images contained in a certain rectangle can be estimated, which can be used to filter out lots of rectangles definitely do not contain the best solution. This filtering out is the core for efficiency.
 
-\section{Advances in object detection}
+\section{Advances in Object Detection}
 
 Three methods will be proposed in the thesis, methods very related to each method will be further reviewed in the corresponding chapter. Here we review some recent advances in object detection.
 
-Detection is drawing a log of attention~\cite{ij4,ac31,ac30,ac4,ac32,ac29,ac28,ac1,ac9,ac2,ac3,ac22,lb1,ac5,ac10,ac21,ac18}, and it will continue to. 
+Detection is drawing a log of attention~\cite{ij4,ac31,ac30,ac4,ac32,ac29,ac28,ac1,ac9,ac2,ac3,ac22,lb1,ac5,ac10,ac21,ac18}, and it will continue to. While some methods are unique and very heuristic.
 
-Instead of proposing application-specific methods, \cite{wiao}.
+Instead of proposing class-specific methods, \cite{wiao} try to how like a sub-image contains an object of any class. In the method objects are defined by very general properties, which include having closed boundary, being different from surroundings, and sometimes being unique and salient in the image. By combining saliency detection methods, color contrast, edge detection, image segmentation methods in Bayesian framework, they give convincing performance in general-purpose object detection.
+
+Bag of image features~\cite{bgf} is an important advance for object detection. Before the method, potential objects are described using feature extracted from raw pixels, while the method describes objects using object components. In the work following, \cite{ij13} added a biased sampling component for describe each object. Instead of described by one group of features, the objects are described by several groups of features, and then decisions are made using multi-label multi-class classification.
+
+Some pioneer work also consider about recognizing objects in 3D space. The method proposed in ~\cite{r3d}, tracks keypoints of the same object, and generate feature accordingly, which will include 3D information of the object, and feed this feature to decision step, which makes the results very appealing.
+
+Still, one of the challenging subjects in object detection is rotation-aware detection. Lots of object detection methods ignore scale and rotation changes by using of scale- and rotation-invariant image features, i.e. sift.
+The primary  direction of the sift feature is used by ~\cite{ac21} for locally estimate the rotation angle of object. This method heavily rely on the sift feature.
+Object is represented by a graph with features as nodes in ~\cite{ac222}, and scale- and rotation-invariant object match is made by the matching of two graphs. Instead of being a general method for object detection, this method is mainly used for object matching.
+Most rotation-aware methods follow ~\cite{ac20}. This method firstly trains a neural network for rotation estimation. According to the rotation estimation result, the tested sub-image is rotated to a normalized angle and then fed into other classifiers for verification of object hypothesis. Still efficient methods to robustly deal with object rotation in the detection procedure are preferred.
+
+
+
+
+\begin{comment}
+(a) a well-de?ned closed boundary
+in space; (b) a different appearance from their surroundings [23, 25]; (c) sometimes it is unique within the image
+and stands out as salient
+\end{comment}
 

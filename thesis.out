@@ -1,0 +1,43 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Background and Related Work}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Vision in Human and Computer}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Basics of Detection Methods}{chapter.2}% 4
+\BOOKMARK [2][-]{subsection.2.2.1}{Image Features}{section.2.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.2}{Decision Procedure}{section.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.3}{Solution Space Explore}{section.2.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Advances in Object Detection}{chapter.2}% 8
+\BOOKMARK [0][-]{chapter.3}{Efficient Detection by Combining of Appearance and Temporal Information }{}% 9
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{Related Work}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.3}{Application background}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.4}{Detection Pipeline}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.4.1}{Keypoint Detection}{section.3.4}% 14
+\BOOKMARK [2][-]{subsection.3.4.2}{Keypoint Verification}{section.3.4}% 15
+\BOOKMARK [2][-]{subsection.3.4.3}{Keypoint Clustering}{section.3.4}% 16
+\BOOKMARK [2][-]{subsection.3.4.4}{Keypoint Cluster Verification by Appearance}{section.3.4}% 17
+\BOOKMARK [2][-]{subsection.3.4.5}{Keypoint Cluster Tracking}{section.3.4}% 18
+\BOOKMARK [2][-]{subsection.3.4.6}{Keypoint Cluster Verification by Motion}{section.3.4}% 19
+\BOOKMARK [2][-]{subsection.3.4.7}{Pipeline Summary}{section.3.4}% 20
+\BOOKMARK [2][-]{subsection.3.4.8}{Object Detection}{section.3.4}% 21
+\BOOKMARK [1][-]{section.3.5}{Experimental Results}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.5.1}{First Experiment}{section.3.5}% 23
+\BOOKMARK [2][-]{subsection.3.5.2}{Second Experiment}{section.3.5}% 24
+\BOOKMARK [1][-]{section.3.6}{Experimental results on data collected by ordinary cameras}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.7}{Conclusion}{chapter.3}% 26
+\BOOKMARK [0][-]{chapter.4}{Grouping of object parts by motion for detection}{}% 27
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.2}{Related Work}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.3}{Common Fate Hough Transform}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.3.1}{Common Fate Weights}{section.4.3}% 31
+\BOOKMARK [2][-]{subsection.4.3.2}{Motion Grouping}{section.4.3}% 32
+\BOOKMARK [2][-]{subsection.4.3.3}{Codebook}{section.4.3}% 33
+\BOOKMARK [1][-]{section.4.4}{Detection}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.5}{Experimental Results}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.5.1}{ Campus-scene Detection }{section.4.5}% 36
+\BOOKMARK [2][-]{subsection.4.5.2}{Wild-scene Detection}{section.4.5}% 37
+\BOOKMARK [1][-]{section.4.6}{Conclusion}{chapter.4}% 38
+\BOOKMARK [0][-]{chapter.5}{Pyramid Match Score for Detection}{}% 39
+\BOOKMARK [1][-]{section.5.1}{Pyramid Match}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.2}{Pyramid Match Score}{chapter.5}% 41
+\BOOKMARK [0][-]{chapter.6}{Conclusion and outlook}{}% 42
+\BOOKMARK [0][-]{chapter*.7}{References}{}% 43

@@ -12,12 +12,12 @@ The sliding-window methods consider all sub-images by using classifiers to decid
 The Hough transform based methods, represented by the ISM~\cite{lb1}, start by detection of object parts, and object hypotheses are given by summing up all the votes voted by the object parts.
 \end{comment}
 
-\sout{In ITS areas, detection methods using cameras can be used for navigation, safe driving, surveillance, and sustaining results from other sensors. These methods can be used to detect pedestrians, bicycle riders, and automobiles, and here we focus on techniques from the area of computer vision for detection of such objects.}
-{\color{red}In ITS areas, detection methods using cameras can be used for navigation, safe driving, surveillance, and sustaining results from other sensors. In traditional ITS applications, vehicles are main targets. Currently pedestrians are also considered as important subjects of ITS applications, and bicycles also become very popular for environmental and economical reasons. In Japan, the number of traffic accidents among bicycles and pedestrians is very large. Thus we tackle an issue of detecting freely moving bicycle riders and pedestrians from the data collected by a camera which keeps them under surveillance from the top. These situations can be observed in parks, university campuses, station squares, tourist spots, etc.  Here we focus on techniques from the area of computer vision for detection under surveillance scenarios.
-\begin{comment}
-Here we focus on techniques from the area of computer vision for detection of pedestrians and bicycle riders under surveillance scenarios.
-\end{comment}
-}
+Why the method proposed in the previous chapter fails to work well in complex scenario, why performs good to detect simple objects is that.
+
+Effective video-based detection methods are of great importance, and this chapter proposes a method to localize and label objects. The method is able to detect pedestrians and bicycle riders in complex scene. The method is inspired by the common fate principle, which is a mechanism of visual perception in human beings, and which states  tokens moving or functioning in a similar manner tend to be  perceived
+as one unit. Our method embeds the principle in an Implicit Shape Model (ISM). In our method, keypoint-based
+object parts are firstly detected and then grouped by their motion patterns. Based on the grouping results, when the object parts vote for object centers and labels, each of the votes belonging to the same object part is assigned a weight according to its consistence with the votes of other object parts in the same motion group. Afterwards, the peaks which correspond to detection hypotheses on the Hough image formed by summing up all weighted votes become easier to find. Thus our method  performs better in both position and label estimations. Experiments show the effectiveness of our method in terms of detection accuracy.
+
 
 
 
@@ -73,10 +73,52 @@ The remaining paper is organized as follows. Section 2 reviews related work. Sec
 
 \section{Related Work}
 
-Our work is most related to object detection methods~\cite{ac9,ac22,lb1,ac5,ac10,ac21} based on the Hough transform framework. Recently, such methods make a lot of \sout{process}{\color{red}progress}. The ISM~\cite{lb1,ac5} is extended  by notifying correspondences between the object parts and the hypotheses~\cite{ac9} for the detection of multiple near objects. While in~\sout{\cite{ac10}}{\color{red}\cite{ac6,ac10,ac7}} the Hough transform is placed in a discriminative framework for object detection in a way that the codes are assigned different weights by the co-occurrence frequency of their appearance and offset to the object center.
+ This method is most related to object detection methods~\cite{ac9,ac22,lb1,ac5,ac10,ac21} based on the Hough transform framework. Recently, such methods make a lot of \sout{process}{\color{red}progress}. The ISM~\cite{lb1,ac5} is extended  by notifying correspondences between the object parts and the hypotheses~\cite{ac9} for the detection of multiple near objects. While in~\sout{\cite{ac10}}{\color{red}\cite{ac6,ac10,ac7}} the Hough transform is placed in a discriminative framework for object detection in a way that the codes are assigned different weights by the co-occurrence frequency of their appearance and offset to the object center.
+ 
 Two Hough transform methods consider the grouping of object parts~\cite{ac26,ac25}. The method in~\cite{ac26} deals with scale change. Instead of estimating the scale by local features trained from different scaled examples, the votes are considered as voting lines. By considering the difference of the voted centers, local features are firstly grouped and then vote more consistently for the object center. In~\cite{ac25}, the grouping of object parts, the correspondence between object parts and object, and the decisions on detection hypotheses are optimized in the same energy function. For this method, the problem is that the grouping results don't have meaning or correspond to and real entities.
 
+The work is also related to keypoint clustering methods. In \cite{mc}, SIFT~\cite{o12} is
+used as key point, color histogram as appearance feature, region covariance~\cite{ij6}
+as texture feature, and $(x,y)$ coordinate as spatial feature. Then
+for one pair key points, a pairwise similarity is calculated based
+on the generated features. Each point is projected into a new space
+capturing the pairwise distance by a spectral embedding process. The
+final result is given by a simple $k$-means clustering in the new
+projected spaces of the key points. This is a typical
+appearance based key point clustering. In \cite{my9}, Harris
+corner~\cite{ij2} is extracted as key point and motion information is
+gained by using KLT tracker~\cite{ij3} to trace out the extracted key
+points on a serial of frames. Two pairwise motion similarity
+measures are defined on the generated trajectory set, both of which
+relate to the $(x_t,y_t)$ coordinate, where $t$ is the frame index.
+One is defined by the largest Euclid distance between every point
+pair. The other captures the changing quantity between two
+trajectories by calculating the variance of the Euclid distance
+among all pairwise point distances. The clustering procedure is made
+up by making pairwise decisions on whether to merge to smaller
+clusters in a Minimal Description Language manner.
+
+This work also share features with methods try to couple detection with other problem, and then solve them together.
+In \cite{my7}, a very general \emph{Minimum Description Length}(MDL) framework for
+coupling tracking and detection is given. And \cite{ij10} re-detects
+detection responses missed in the detection procedure from tracking results. In
+\cite{ij14}, region semantic label associated with geometry
+information is estimated in the same energy framework whose
+parameters are learned together. Besides semantic and geometric information,
+other information is also estimated in the same framework. The
+advantage of the method is given by that the learned parameters well
+encoded the relationship between different information. In
+\cite{ij15},  a interpretation policy is used to specify when to
+apply which imaging operator, to which portion of the image during
+every stage of interpretation. The interpretation policy is defined
+using a dynamic programming schema with considering the cost and the
+gained information of the operator.
+
 The work is also related to object detection methods by trajectories~\cite{my9,ac24}, methods weighting features~\cite{ij13}, methods dealing with codebook noise~\cite{ac19}, and methods which integrate temporal information~\cite{ac23}.
+
+
+\section{Application Background}
+In ITS areas, detection methods using cameras can be used for navigation, safe driving, surveillance, and sustaining results from other sensors. In traditional ITS applications, vehicles are main targets. Currently pedestrians are also considered as important subjects of ITS applications, and bicycles also become very popular for environmental and economical reasons. In Japan, the number of traffic accidents among bicycles and pedestrians is very large. Thus the method proposed in this chapter can be used for detecting freely moving bicycle riders and pedestrians from the data collected by a camera which keeps them under surveillance from the top. These situations can be observed in parks, university campuses, station squares, tourist spots, etc.  Here, the techniques from the area of computer vision for detection under surveillance scenarios is focused on.
 
 \section{Common Fate Hough Transform}
 Probabilistic standpoints are very appealing, because of inference easiness. However, as pointed in~\cite{ac27}, placing the ISM in a probabilistic framework is not satisfactory. Especially, describing weights of the votes as priors does not make sense.
@@ -371,14 +413,14 @@ In experiments, improvement of the method is verified in terms of detection accu
 \begin{figure}
 \centering
 \subfigure[]{
-\begin{minipage}[b]{0.2\textwidth}
+\begin{minipage}[b]{0.47\textwidth}
 \includegraphics[width=1.0\textwidth,bb=0 0 165 125]{samples.jpg}
 \end{minipage}
 \label{fig:train:a}
 }
 \subfigure[]{
 {
-\begin{minipage}[b]{0.2\textwidth}
+\begin{minipage}[b]{0.47\textwidth}
 \includegraphics[width=0.3\textwidth,bb=0 0 149 149]{dst6.jpg}
 \includegraphics[width=0.3\textwidth,bb=0 0 149 149]{dst3.jpg}
 \includegraphics[width=0.3\textwidth,bb=0 0 149 149]{dst5.jpg}  \\
@@ -421,13 +463,21 @@ To form the Hough image, 35 best matched codes are chosen from the codebook for 
 \label{fig:pr:a}}
 \subfigure[]{
 \begin{minipage}[b]{0.47\textwidth}
-\includegraphics[width=\textwidth,bb=0 0 230 115]{cm2.eps}\\
-\includegraphics[width=\textwidth,bb=0 0 230 115]{cm1.eps}
+\includegraphics{cm2.eps}\\
+\includegraphics{cm1.eps}
 \end{minipage}
 \label{fig:pr:b}}
 \caption{(a) Precision-recall curves (red: the proposed method, blue: the benchmark method). (b) Confusion matrices (upper: the proposed method, down: the benchmark method).}
 \label{fig:pr}
 \end{figure}
+
+
+
+\begin{comment}
+[width=1\textwidth,bb=0 0 480 425]
+[width=\textwidth,bb=0 0 230 115]
+[width=\textwidth,bb=0 0 230 115]
+\end{comment}
 
 The precision-recall curves are shown in Figure~\ref{fig:pr:a}. An object is considered as correctly detected only if the distance from the ground truth to it is less than 10 pixels. In Figure~\ref{fig:pr:a}, the correctly positioned but wrongly labeled objects are considered as true positives, aiming at verifying the positioning ability of the proposed method.
 

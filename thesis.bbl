@@ -81,6 +81,11 @@ Nikolay Degtyarev and Oleg Seredin.
 \newblock Comparative testing of face detection algorithms.
 \newblock In {\em ICISP}, pages 200--209, 2010.
 
+\bibitem{mc}
+F.J. Estrada, P.~Fua, V.~Lepetit, and S.~Susstrunk.
+\newblock Appearance-based keypoint clustering.
+\newblock In {\em CVPR}, pages 1279--1286, 2009.
+
 \bibitem{ac31}
 Pedro~F. Felzenszwalb, David~A. McAllester, and Deva Ramanan.
 \newblock A discriminatively trained, multiscale, deformable part model.
@@ -112,6 +117,12 @@ J.~Gall and V.~Lempitsky.
 \newblock Class-specific hough forests for object detection.
 \newblock In {\em CVPR}, pages 1022--1029, 2009.
 
+\bibitem{ij14}
+S.~Gould, R.~Fulton, and D.~Koller.
+\newblock Decomposing a scene into geometric and semantically consistent
+  regions.
+\newblock In {\em ICCV}, 2009.
+
 \bibitem{ac8}
 C.H. Gu, J.J. Lim, P.~Arbelaez, and J.~Malik.
 \newblock Recognition using regions.
@@ -128,6 +139,12 @@ C.~Huang, B.~Wu, and R.~Nevatia.
   responses.
 \newblock In {\em ECCV}, pages II: 788--801, 2008.
 
+\bibitem{ij11}
+Chang Huang, Bo~Wu, and R.~Nevatia.
+\newblock Robust object tracking by hierarchical association of detection
+  responses.
+\newblock In {\em ECCV}, pages 788--801, 2008.
+
 \bibitem{ij15}
 R.~Isukapalli and R.~Greiner.
 \newblock Use of off-line dynamic programming for efficient image
@@ -143,6 +160,12 @@ Herv\'e J\'egou, Matthijs Douze, and Cordelia Schmid.
 H.~Jiang and S.X. Yu.
 \newblock Linear solution to scale and rotation invariant object matching.
 \newblock In {\em CVPR}, pages 2474--2481, 2009.
+
+\bibitem{r3d}
+Koichi Kise and Takahiro Kashiwagi.
+\newblock 1.5 million subspaces of a local feature space for 3d object
+  recognition.
+\newblock In {\em ACPR}, pages 672--676, 2011.
 
 \bibitem{ha}
 H.~W. Kuhn.
@@ -193,6 +216,12 @@ B.~Leibe, K.~Schindler, and L.J. Van~Gool.
 D.~G. Lowe.
 \newblock Distinctive image features from scale-invariant keypoints.
 \newblock {\em IJCV}, 60:91--110, 2004.
+
+\bibitem{ij3}
+B.~D. Lucas and T.~Kanade.
+\newblock An iterative image registration technique with an application to
+  stereo vision.
+\newblock In {\em IJCAI}, pages 674--679, 1981.
 
 \bibitem{ac10}
 S.~Maji and J.~Malik.
@@ -375,6 +404,11 @@ L.~Yang, N.~Zheng, M.~Chen, Y.~Yang, and J.~Yang.
   segmentation.
 \newblock In {\em ACCV}, 2009.
 
+\bibitem{ij9}
+M.~Yang, T.~Yu, and Y.~Wu.
+\newblock Game-theoretic multiple target tracking.
+\newblock In {\em ICCV}, pages 1--8, 2007.
+
 \bibitem{ac25}
 P.~Yarlagadda, A.~Monroy, and B.~Ommer.
 \newblock Voting by grouping dependent parts.
@@ -389,5 +423,11 @@ T.~Yeh, J.J. Lee, and T.J. Darrell.
 T.~Yeh, J.J. Lee, and T.J. Darrell.
 \newblock Fast concurrent object localization and recognition.
 \newblock pages 280--287, 2009.
+
+\bibitem{ij10}
+Li~Zhang, Yuan Li, and R.~Nevatia.
+\newblock Global data association for multi-object tracking using network
+  flows.
+\newblock In {\em CVPR}, pages 1--8, 2008.
 
 \end{thebibliography}

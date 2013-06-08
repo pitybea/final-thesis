@@ -76,8 +76,11 @@ Instead of proposing class-specific methods, \cite{wiao} try to how like a sub-i
 
 Bag of image features~\cite{bgf} is an important advance for object detection. Before the method, potential objects are described using feature extracted from raw pixels, while the method describes objects using object components. In the work following, \cite{ij13} added a biased sampling component for describe each object. Instead of described by one group of features, the objects are described by several groups of features, and then decisions are made using multi-label multi-class classification.
 
-One of the challenging subjects in object detection is rotation-aware detection. Lots of object detection methods ignore scale and rotation changes by using of scale- and rotation-invariant image features, i.e. sift.
+Some pioneer work also consider about recognizing objects in 3D space. The method proposed in ~\cite{r3d}, tracks keypoints of the same object, and generate feature accordingly, which will include 3D information of the object, and feed this feature to decision step, which makes the results very appealing.
 
+
+
+Still, one of the challenging subjects in object detection is rotation-aware detection. Lots of object detection methods ignore scale and rotation changes by using of scale- and rotation-invariant image features, i.e. sift.
 The primary  direction of the sift feature is used by ~\cite{ac21} for locally estimate the rotation angle of object. This method heavily rely on the sift feature.
 Object is represented by a graph with features as nodes in ~\cite{ac222}, and scale- and rotation-invariant object match is made by the matching of two graphs. Instead of being a general method for object detection, this method is mainly used for object matching.
 Most rotation-aware methods follow ~\cite{ac20}. This method firstly trains a neural network for rotation estimation. According to the rotation estimation result, the tested sub-image is rotated to a normalized angle and then fed into other classifiers for verification of object hypothesis. Still efficient methods to robustly deal with object rotation in the detection procedure are preferred.
