@@ -1,7 +1,7 @@
-\documentclass[doctor,final,12pt]{iscs-thesis}
-% 論文の種類とフォントサイズをオプションに
-%-------------------
+%input macros (i.e. write your own macros file called MacroFile1.tex)
+%\include{Macros/MacroFile1}
 
+ \documentclass[oneside,12pt]{Classes/CUEDthesisPSnPDF}
 \usepackage{graphicx}
 \usepackage{times}
 \usepackage{epsfig}
@@ -14,43 +14,73 @@
 \usepackage{algorithm}
 \usepackage{algorithmic}
 \usepackage{authblk}
-\usepackage{abstract}
 \usepackage{comment}
 \usepackage[normalem]{ulem}
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{epstopdf}
 
+\ifpdf
+    \pdfinfo { /Title  (CUED PhD and MPhil Thesis Classes)
+               /Creator (TeX)
+               /Producer (pdfTeX)
+               /Author (Harish Bhanderi harish.bhanderi@cantab.net)l
+               /CreationDate (D:20030101000000)  %format D:YYYYMMDDhhmmss
+               /ModDate (D:20030815213532)
+               /Subject (Writing a PhD thesis in LaTeX)
+               /Keywords (PhD, Thesis)}
+    \pdfcatalog { /PageMode (/UseOutlines)
+                  /OpenAction (fitbh)  }
+\fi
 
+\title{Writing a PhD Thesis\\[1ex]
+        in \LaTeXe}
 
-
-\etitle{Combining Motion Information\\ with Appearance Information\\ and Utilizing of Mutual Information\\ Encoded Among Image Features \\ of the Same Object\\ for Better Detection Performance}
-\jtitle{運動情報を外観情報との結びつけおよび\\同一物体の画像特徴によりエンコードされた相互情報の利用\\ーー検出性能の向上のため}
+\ifpdf
+  \author{\href{mailto:harish.bhanderi@cantab.net}{Harish Bhanderi}}
+  \collegeordept{\href{http://www.eng.cam.ac.uk}{Department of Engineering}}
+  \university{\href{http://www.cam.ac.uk}{University of Cambridge}}
+% insert below the file name that contains the crest in-place of 'UnivShield'
+  \crest{\includegraphics[width=30mm]{UnivShield}}
+\else
+  \author{Harish Bhanderi}
+  \collegeordept{Department of Engineering}
+  \university{University of Cambridge}
+% insert below the file name that contains the crest in-place of 'UnivShield'
+  \crest{\includegraphics[bb = 0 0 292 336, width=30mm]{UnivShield}}
+\fi
 %
-\eauthor{Zhipeng Wang}
-\jauthor{王志鵬}
-\esupervisor{Katsushi Ikeuchi}
-\jsupervisor{池内　克史}
-\supervisortitle{Professor} % Professor, etc.
-\date{February 05, 2013}
-%-------------------
+% insert below the file name that contains the crest in-place of 'UnivShield'
+% \crest{\IncludeGraphicsW{UnivShield}{40mm}{14 14 73 81}}
+%
+%\renewcommand{\submittedtext}{change the default text here if needed}
+\degree{Doctor of Philosophy}
+\degreedate{Yet to be decided}
+
+% turn of those nasty overfull and underfull hboxes
+\hbadness=10000
+\hfuzz=50pt
+
+% Put all the style files you want in the directory StyleFiles and usepackage like this:
+\usepackage{StyleFiles/watermark}
+
+% Comment out the next line to get single spacing
+\onehalfspacing
+
 \begin{document}
 
 
-\include{chaps/eabstract}
-
-\include{chaps/jabstract}
-
+\maketitle
 \maketitle
 
 
 
-\frontmatter %% 前付け
-\tableofcontents % 目次
-\listoffigures % 図目次
-\listoftables % 表目次
-%\lstlistoflistings % ソースコード目次
+\frontmatter
+\tableofcontents
+\listoffigures
+\listoftables
 %-------------------
-\mainmatter %% 本文
+\mainmatter
 \include{chaps/1}
 \include{chaps/2}
 \include{chaps/3}
@@ -60,8 +90,8 @@
 
 
 %-------------------
-\bibliographystyle{plain} % 参考文献
-\bibliography{chaps/egbib} %
+\bibliographystyle{plain}
+\bibliography{chaps/egbib}
 \include{chaps/thanks}
-%-------------------
+
 \end{document}

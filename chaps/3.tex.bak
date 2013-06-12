@@ -503,15 +503,17 @@ The results on the trajectories of decisions are also evaluated. We one trajecto
 
 \begin{figure}
 {
-\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{kptkms.pdf}
+  \includegraphics{kptkms.eps}
 }
 \caption[Evaluation of keypoint verification]{Evaluation of keypoint verification.}
 \label{ord:one}
 \end{figure}
 
+The method is extended ar the first step to deal with data collected by ordinary cameras. 
+
 \section{Conclusion}
 \label{conc}
- This chapter proposes an object detection method, which perform well in simple scenarios by combining appearance and motion information in a very efficient way. The method makes use of appearance and motion information of the target objects in a hierarchical manner. With careful optimization of detection pipeline, the method gives promising results in real time.
+ This chapter proposes an object detection method, which performs well in simple scenarios by combining appearance and motion information in a very efficient way. The method makes use of appearance and motion information of the target objects in a hierarchical manner. With careful optimization of detection pipeline, the method gives promising results in real time.
 
   Also one main idea of the method is not to consider objects as something only with specific appearance patterns, but as something with both
  specific appearance and motion patterns. Another reason for the performance during the second experiment, is that make dangerous decisions later, when more information are available. While using both appearance and motion information results in a detection rate of about 99\%, combing all the information connected by a trajectory results in a detection rate of 100\%.

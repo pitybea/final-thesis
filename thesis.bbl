@@ -383,7 +383,7 @@ Wikipedia.
 \bibitem{siri}
 Wikipedia.
 \newblock {Siri}.
-\newblock \url{ http://en.wikipedia.org/wiki/Siri_(software)}.
+\newblock \url{http://en.wikipedia.org/wiki/Siri_(software)}.
 \newblock [Online; accessed 22-May-2013].
 
 \bibitem{ac23}
@@ -422,7 +422,7 @@ T.~Yeh, J.J. Lee, and T.J. Darrell.
 \bibitem{drl1}
 T.~Yeh, J.J. Lee, and T.J. Darrell.
 \newblock Fast concurrent object localization and recognition.
-\newblock pages 280--287, 2009.
+\newblock In {\em CVPR}, pages 280--287, 2009.
 
 \bibitem{ij10}
 Li~Zhang, Yuan Li, and R.~Nevatia.

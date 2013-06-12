@@ -369,16 +369,16 @@ Following~\cite{ac9}, the optimal result for the problem is given by greedy maxi
 \begin{figure*}
 \centering
 \subfigure[]{
-\includegraphics[width=0.22\textwidth,bb=0 0 720 576]{a56.jpg}
+\includegraphics[width=0.47\textwidth,bb=0 0 720 576]{a56.jpg}
 \label{fig:compa:a}}
 \subfigure[]{
-\includegraphics[width=0.22\textwidth,bb=0 0 720 576]{voteimg00056.jpg}
+\includegraphics[width=0.47\textwidth,bb=0 0 720 576]{voteimg00056.jpg}
 \label{fig:compa:b}}
 \subfigure[]{
-\includegraphics[width=0.22\textwidth,bb=0 0 720 576]{selectVimg00056_9.jpg}
+\includegraphics[width=0.47\textwidth,bb=0 0 720 576]{selectVimg00056_9.jpg}
 \label{fig:compa:c}}
 \subfigure[]{
-\includegraphics[width=0.22\textwidth,bb=0 0 720 576]{selectedvotesimg00056.jpg}
+\includegraphics[width=0.47\textwidth,bb=0 0 720 576]{selectedvotesimg00056.jpg}
 \label{fig:compa:c}}
 \caption[Effect of the proposed weight]{Effect of the proposed weight. The motion grouping results are given in (a), and different motion groups are marked with different colors. The object centers voted according to the 7 best matched codes are given in (b). Red circles are centers of pedestrians while blue circles are centers of bicycle riders. The voted centers given in (c) are the voted centers of the 7 votes with the highest defined priors from 35 votes. The object centers in (d) are voted by votes with priors higher than 0.1.}
 \label{fig:compa}
@@ -445,7 +445,7 @@ In experiments, improvement of the method is verified in terms of detection accu
 
 \begin{figure}
 \centering
-\includegraphics[width=0.47\textwidth,bb=0 20 766 637]{inf1.jpg}
+\includegraphics[width=0.47\textwidth,bb=0 10 766 637]{inf1.jpg}
 \includegraphics[width=0.47\textwidth,bb=0 20 766 637]{inf2.jpg}
 \includegraphics[width=0.47\textwidth,bb=0 20 766 637]{inf3.jpg}
 \includegraphics[width=0.47\textwidth,bb=0 20 766 637]{inf4.jpg}
