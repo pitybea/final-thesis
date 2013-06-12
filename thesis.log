@@ -1,21 +1,24 @@
-This is e-pTeX, Version 3.1415926-p3.2-110415-2.3 (sjis) (Web2C 2011) (format=platex 2011.12.20)  8 JUN 2013 19:48
+This is e-pTeX, Version 3.1415926-p3.3-110825-2.4 (sjis) (TeX Live 2012/W32TeX) (format=platex 2013.5.8)  12 JUN 2013 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis
 (./thesis.tex
 pLaTeX2e <2006/11/10> (based on LaTeX2e <2011/06/27> patch level 0)
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, af
-rikaans, arabic, basque, bulgarian, catalan, pinyin, croatian, czech, danish, d
-utch, ukenglish, usenglishmax, esperanto, estonian, farsi, finnish, french, gal
-ician, german, ngerman, swissgerman, hungarian, icelandic, indonesian, interlin
-gua, irish, italian, kurmanji, latin, latvian, lithuanian, mongolian, mongolian
-lmc, bokmal, nynorsk, polish, portuguese, romanian, russian, serbian, serbianc,
- slovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian
-, welsh, ancientgreek, ibycus, monogreek, greek, coptic, loaded.
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ piedmontese, polish, portuguese, romanian, romansh, russian, sanskrit, serbian
+, serbianc, slovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, u
+ppersorbian, welsh, loaded.
 (./iscs-thesis.cls
 Document Class: iscs-thesis 2009/03/11 v1.3a Dept of IS/CS thesis class
-(h:/texlive/2011/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(e:/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is not detected.
 )
@@ -35,73 +38,73 @@ Package ifpdf Info: pdfTeX in PDF mode is not detected.
 \belowcaptionskip=\skip43
 \bibindent=\dimen118
 )
-(h:/texlive/2011/texmf-dist/tex/latex/graphics/graphicx.sty
+(e:/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(h:/texlive/2011/texmf-dist/tex/latex/graphics/keyval.sty
+(e:/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(h:/texlive/2011/texmf-dist/tex/latex/graphics/graphics.sty
+(e:/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(h:/texlive/2011/texmf-dist/tex/latex/graphics/trig.sty
+(e:/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(h:/texlive/2011/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(e:/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: dvips.def on input line 91.
 
-(h:/texlive/2011/texmf-dist/tex/latex/graphics/dvips.def
+(e:/texlive/texmf-dist/tex/latex/graphics/dvips.def
 File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen119
 \Gin@req@width=\dimen120
 )
-(h:/texlive/2011/texmf-dist/tex/latex/psnfss/times.sty
+(e:/texlive/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-(h:/texlive/2011/texmf-dist/tex/latex/graphics/epsfig.sty
+(e:/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfxsize=\dimen121
 \epsfysize=\dimen122
 )
-(h:/texlive/2011/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+(e:/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-(h:/texlive/2011/texmf-dist/tex/latex/amsmath/amstext.sty
+(e:/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(h:/texlive/2011/texmf-dist/tex/latex/amsmath/amsgen.sty
+(e:/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen123
 ))
-(h:/texlive/2011/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(e:/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen124
 )
-(h:/texlive/2011/texmf-dist/tex/latex/amsmath/amsopn.sty
+(e:/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count90
-LaTeX Info: Redefining \frac on input line 211.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count91
 \leftroot@=\count92
-LaTeX Info: Redefining \overline on input line 307.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count93
 \DOTSCASE@=\count94
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box43
 \strutbox@=\box44
 \big@size=\dimen125
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count95
 \c@MaxMatrixCols=\count96
 \dotsspace@=\muskip10
@@ -122,20 +125,20 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \multlinegap=\skip45
 \multlinetaggap=\skip46
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
-(h:/texlive/2011/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2009/06/22 v3.00
+(e:/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(h:/texlive/2011/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+(e:/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(h:/texlive/2011/texmf-dist/tex/latex/subfigure/subfigure.sty
+(e:/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip47
 \subfigcapskip=\skip48
@@ -151,25 +154,25 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(h:/texlive/2011/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+(e:/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip51
 \subfig@bottom=\skip52
 )
-(h:/texlive/2011/texmf-dist/tex/latex/graphics/color.sty
+(e:/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(h:/texlive/2011/texmf-dist/tex/latex/latexconfig/color.cfg
+(e:/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: dvips.def on input line 130.
 
-(h:/texlive/2011/texmf-dist/tex/latex/graphics/dvipsnam.def
+(e:/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-(h:/texlive/2011/texmf-dist/tex/latex/xcolor/xcolor.sty
+(e:/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(h:/texlive/2011/texmf-dist/tex/latex/latexconfig/color.cfg
+(e:/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Package option `usenames' ignored on input line 216.
@@ -184,14 +187,14 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 
-(h:/texlive/2011/texmf-dist/tex/latex/graphics/dvipsnam.def
+(e:/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-(h:/texlive/2011/texmf-dist/tex/latex/algorithms/algorithm.sty
+(e:/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-(h:/texlive/2011/texmf-dist/tex/latex/float/float.sty
+(e:/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count106
 \float@exts=\toks21
@@ -199,13 +202,13 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks22
 \@floatcapt=\box46
 )
-(h:/texlive/2011/texmf-dist/tex/latex/base/ifthen.sty
+(e:/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks23
 \c@algorithm=\count107
 )
-(h:/texlive/2011/texmf-dist/tex/latex/algorithms/algorithmic.sty
+(e:/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@unique=\count108
 \c@ALC@line=\count109
@@ -214,7 +217,7 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \ALC@tlm=\skip53
 \algorithmicindent=\skip54
 )
-(h:/texlive/2011/texmf-dist/tex/latex/preprint/authblk.sty
+(e:/texlive/texmf-dist/tex/latex/preprint/authblk.sty
 Package: authblk 2009/11/18 1.3 (PWD)
 \affilsep=\skip55
 \@affilsep=\skip56
@@ -222,31 +225,22 @@ Package: authblk 2009/11/18 1.3 (PWD)
 \c@authors=\count113
 \c@affil=\count114
 )
-(h:/texlive/2011/texmf-dist/tex/latex/abstract/abstract.sty
-Package: abstract 2009/06/08 v1.2a configurable abstracts
-\abstitleskip=\skip57
-\absleftindent=\skip58
-\absrightindent=\skip59
-\absparindent=\skip60
-\absparsep=\skip61
-)
-(h:/texlive/2011/texmf-dist/tex/latex/comment/comment.sty
+(e:/texlive/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
 
-Excluding comment 'comment')
-(h:/texlive/2011/texmf-dist/tex/generic/ulem/ulem.sty
+Excluding comment 'comment') (e:/texlive/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box47
 \UL@hyphenbox=\box48
-\UL@skip=\skip62
+\UL@skip=\skip57
 \UL@hook=\toks24
 \UL@height=\dimen134
 \UL@pe=\count115
 \UL@pixel=\dimen135
 \ULC@box=\box49
-Package: ulem 2011/03/18
+Package: ulem 2012/05/18
 \ULdepth=\dimen136
 )
-(h:/texlive/2011/texmf-dist/tex/latex/url/url.sty
+(e:/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 ) (./thesis.aux
@@ -358,27 +352,27 @@ LaTeX Warning: Label `fig:compa' multiply defined.
 ) (./chaps/5.aux) (./chaps/6.aux) (./chaps/thanks.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 36.
- (h:/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 35.
+ (e:/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \openout2 = `chaps/eabstract.aux'.
@@ -402,11 +396,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 
 ] [2] [3] [4]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 48.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 48.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
  (./thesis.toc
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
@@ -416,13 +410,13 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
-(h:/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+(e:/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
-(h:/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+(e:/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [5
 
 
@@ -569,16 +563,28 @@ File: 00veriTrjimg00032.jpg Graphic file (type eps)
  <00veriTrjimg00032.jpg>
 File: 06veriTrjimg00032.jpg Graphic file (type eps)
  <06veriTrjimg00032.jpg>
-[24] [25]) [26]
+File: kptkms.eps Graphic file (type eps)
+
+<kptkms.eps>
+Overfull \hbox (112.91624pt too wide) in paragraph at lines 506--508
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 506--508
+
+ []
+
+[24] [25] [26]) [27]
 \openout2 = `chaps/4.aux'.
 
  (./chaps/4.tex
 Chapter 4.
-[27
+[28
 
 
 
-] [28]
+] [29]
 File: PEssR.jpg Graphic file (type eps)
  <PEssR.jpg>
 File: a56.jpg Graphic file (type eps)
@@ -589,22 +595,22 @@ File: Untitled-4.jpg Graphic file (type eps)
  <Untitled-4.jpg>
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 68.
 
-(h:/texlive/2011/texmf-dist/tex/latex/psnfss/omsptm.fd
+(e:/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
- [29] [30] [31] [32]
-[33]
+ [30] [31] [32] [33] [34]
 File: a56.jpg Graphic file (type eps)
- <a56.jpg>
+
+<a56.jpg>
 File: voteimg00056.jpg Graphic file (type eps)
  <voteimg00056.jpg>
 File: selectVimg00056_9.jpg Graphic file (type eps)
  <selectVimg00056_9.jpg>
 File: selectedvotesimg00056.jpg Graphic file (type eps)
 
-<selectedvotesimg00056.jpg> [34] [35] [36]
+<selectedvotesimg00056.jpg> [35] [36] [37]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -640,7 +646,7 @@ File: dst4.jpg Graphic file (type eps)
 
 <dst4.jpg>
 File: dst1.jpg Graphic file (type eps)
- <dst1.jpg> [37] [38] [39]
+ <dst1.jpg> [38] [39] [40]
 File: a16.jpg Graphic file (type eps)
  <a16.jpg>
 File: a26.jpg Graphic file (type eps)
@@ -682,7 +688,7 @@ Overfull \hbox (38.847pt too wide) in paragraph at lines 477--477
 [][] 
  []
 
-[40] [41]
+[41] [42]
 File: 016.jpg Graphic file (type eps)
  <016.jpg>
 File: 026.jpg Graphic file (type eps)
@@ -728,7 +734,7 @@ File: 3.jpg Graphic file (type eps)
 File: 2.jpg Graphic file (type eps)
  <2.jpg>
 File: 4.jpg Graphic file (type eps)
- <4.jpg> [42] [43]
+ <4.jpg> [43] [44]
 File: leo1.jpg Graphic file (type eps)
  <leo1.jpg>
 File: leo2.jpg Graphic file (type eps)
@@ -737,21 +743,21 @@ File: leo2.jpg Graphic file (type eps)
 File: leo3.jpg Graphic file (type eps)
  <leo3.jpg>
 File: ti1.jpg Graphic file (type eps)
- <ti1.jpg>) [44] [45] [46]
+ <ti1.jpg>) [45] [46] [47]
 \openout2 = `chaps/5.aux'.
 
  (./chaps/5.tex
 Chapter 5.
-[47
+[48
 
 
 
-]) [48]
+]) [49]
 \openout2 = `chaps/6.aux'.
 
  (./chaps/6.tex
 Chapter 6.
-) [49
+) [50
 
 
 
@@ -759,18 +765,18 @@ Chapter 6.
 (I search font definition file: . . . . . . . )
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 16.
 
-(h:/texlive/2011/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+(e:/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [50
+) [51
 
 
-] [51] [52] [53]
+] [52] [53] [54]
 Underfull \hbox (badness 7151) in paragraph at lines 384--388
 []\OT1/ptm/m/n/12 Wikipedia.  Siri.  $\OT1/pcr/m/n/12 http : / / en . wikipedia
  . org / wiki / Siri _
  []
 
-[54]) [55]
+[55]) [56]
 \openout2 = `chaps/thanks.aux'.
 
  (./chaps/thanks.tex) (./thesis.aux (./chaps/eabstract.aux)
@@ -781,12 +787,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3646 strings out of 494159
- 44213 string characters out of 3162859
- 107856 words of memory out of 3000000
- 6812 multiletter control sequences out of 15000+200000
+ 3604 strings out of 494052
+ 43136 string characters out of 3160345
+ 111630 words of memory out of 3000000
+ 6807 multiletter control sequences out of 15000+200000
  21357 words of font info for 76 fonts, out of 3000000 for 9000
  745 hyphenation exceptions out of 8191
  27i,22n,35p,1399b,723s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on thesis.dvi (64 pages, 185228 bytes).
+Output written on thesis.dvi (65 pages, 186044 bytes).

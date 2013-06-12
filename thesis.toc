@@ -27,21 +27,21 @@
 \contentsline {subsection}{\numberline {3.5.2}Second Experiment}{22}
 \contentsline {section}{\numberline {3.6}Experimental results on data collected by ordinary cameras}{26}
 \contentsline {section}{\numberline {3.7}Conclusion}{26}
-\contentsline {chapter}{\numberline {4}Grouping of object parts by motion for detection}{27}
-\contentsline {section}{\numberline {4.1}Introduction}{27}
-\contentsline {section}{\numberline {4.2}Related Work}{30}
-\contentsline {section}{\numberline {4.3}Application Background}{31}
-\contentsline {section}{\numberline {4.4}Common Fate Hough Transform}{31}
-\contentsline {subsection}{\numberline {4.4.1}Common Fate Weights}{33}
-\contentsline {subsection}{\numberline {4.4.2}Motion Grouping}{34}
-\contentsline {subsection}{\numberline {4.4.3}Codebook}{36}
-\contentsline {section}{\numberline {4.5}Detection}{36}
-\contentsline {section}{\numberline {4.6}Experimental Results}{37}
-\contentsline {subsection}{\numberline {4.6.1} Campus-scene Detection }{39}
-\contentsline {subsection}{\numberline {4.6.2}Wild-scene Detection}{42}
-\contentsline {section}{\numberline {4.7}Conclusion}{45}
-\contentsline {chapter}{\numberline {5}Pyramid Match Score for Detection}{47}
-\contentsline {section}{\numberline {5.1}Pyramid Match}{47}
-\contentsline {section}{\numberline {5.2}Pyramid Match Score}{48}
-\contentsline {chapter}{\numberline {6}Conclusion and outlook}{49}
-\contentsline {chapter}{References}{50}
+\contentsline {chapter}{\numberline {4}Grouping of object parts by motion for detection}{28}
+\contentsline {section}{\numberline {4.1}Introduction}{28}
+\contentsline {section}{\numberline {4.2}Related Work}{31}
+\contentsline {section}{\numberline {4.3}Application Background}{32}
+\contentsline {section}{\numberline {4.4}Common Fate Hough Transform}{32}
+\contentsline {subsection}{\numberline {4.4.1}Common Fate Weights}{34}
+\contentsline {subsection}{\numberline {4.4.2}Motion Grouping}{35}
+\contentsline {subsection}{\numberline {4.4.3}Codebook}{37}
+\contentsline {section}{\numberline {4.5}Detection}{37}
+\contentsline {section}{\numberline {4.6}Experimental Results}{38}
+\contentsline {subsection}{\numberline {4.6.1} Campus-scene Detection }{40}
+\contentsline {subsection}{\numberline {4.6.2}Wild-scene Detection}{43}
+\contentsline {section}{\numberline {4.7}Conclusion}{46}
+\contentsline {chapter}{\numberline {5}Pyramid Match Score for Detection}{48}
+\contentsline {section}{\numberline {5.1}Pyramid Match}{48}
+\contentsline {section}{\numberline {5.2}Pyramid Match Score}{49}
+\contentsline {chapter}{\numberline {6}Conclusion and outlook}{50}
+\contentsline {chapter}{References}{51}

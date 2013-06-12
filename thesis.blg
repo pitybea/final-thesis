@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (Web2C 2011)
+This is BibTeX, Version 0.99d (TeX Live 2012/W32TeX)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: chaps/eabstract.aux
@@ -18,28 +18,14 @@ Repeated entry---line 2049 of file chaps/egbib.bib
 I'm skipping whatever remains of this entry
 Warning--string name "cvpr" is undefined
 --line 2333 of file chaps/egbib.bib
-A bad cross reference---entry "ac31"
-refers to entry "DBLP:conf/cvpr/2008", which doesn't exist
-A bad cross reference---entry "ac32"
-refers to entry "DBLP:conf/cvpr/2008", which doesn't exist
-A bad cross reference---entry "face"
-refers to entry "DBLP:conf/icisp/2010", which doesn't exist
-A bad cross reference---entry "ij15"
-refers to entry "DBLP:conf/ijcai/2003", which doesn't exist
 A bad cross reference---entry "ij11"
 refers to entry "conf/eccv/2008-2", which doesn't exist
-A bad cross reference---entry "ac33"
-refers to entry "DBLP:conf/cvpr/1999", which doesn't exist
 Warning--I didn't find a database entry for "conf/eccv/2008-2"
-Warning--I didn't find a database entry for "DBLP:conf/ijcai/2003"
-Warning--I didn't find a database entry for "DBLP:conf/cvpr/2008"
-Warning--I didn't find a database entry for "DBLP:conf/cvpr/1999"
-Warning--I didn't find a database entry for "DBLP:conf/icisp/2010"
 Warning--empty institution in ij2
 Warning--empty booktitle in drl1
 You've used 79 entries,
             2118 wiz_defined-function locations,
-            890 strings with 13447 characters,
+            882 strings with 13291 characters,
 and the built_in function-call counts, 32081 in all, are:
 = -- 3136
 > -- 1295
@@ -78,4 +64,4 @@ warning$ -- 2
 while$ -- 279
 width$ -- 81
 write$ -- 861
-(There were 7 error messages)
+(There were 2 error messages)

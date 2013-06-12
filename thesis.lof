@@ -29,38 +29,39 @@
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Keypoint cluster tracking}}{23}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Detection results}}{23}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Detection results}}{25}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Evaluation of keypoint verification}}{26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Merit of the proposed method}}{29}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{29}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{29}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{29}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{29}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Effect of the proposed weight}}{35}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{35}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{35}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{35}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{35}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Effect of the proposed weight}}{38}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{38}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{38}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{38}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{38}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Example Hough images}}{38}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{38}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{38}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{38}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{38}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Images for training}}{39}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Merit of the proposed method}}{30}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{30}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{30}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{30}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{30}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Effect of the proposed weight}}{36}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{36}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{36}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{36}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{36}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Effect of the proposed weight}}{39}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{39}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{39}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Motion grouping results}}{40}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Inference procedure}}{41}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Comparisons with benchmark method}}{42}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{42}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{42}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Detection results}}{43}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Effect of the proposed weight assignment}}{44}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Example Hough images}}{45}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Detection results}}{46}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{39}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{39}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Example Hough images}}{39}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{39}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{39}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{39}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{39}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Images for training}}{40}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{40}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{40}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Motion grouping results}}{41}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Inference procedure}}{42}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Comparisons with benchmark method}}{43}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Detection results}}{44}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Effect of the proposed weight assignment}}{45}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Example Hough images}}{46}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Detection results}}{47}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,15 +1,15 @@
 \begin{eabstract}
 
-Object detection is a fundamental perceptual skill in human, and plays an important role in machine vision area. Successful object detection can help with video surveillance, driving assistance, etc. Researchers improve performance of detection methods mainly by proposing better representative models, better classifiers, or more efficient methods for  solution space exploring.
 
+Object detection is a fundamental perceptual skill in human, and plays an important role in machine vision area. Effective object detection methods can help with video surveillance, driving assistance, etc. Researchers improve performance of detection methods mainly by proposing better representative models, better classifiers, or more efficient methods for  solution space exploring.
 
-In this work, the performance of detection methods is improved from a different aspect. The work explores the information which are not made fully use of by previous methods. And the efforts are two-fold: 1) utilizing of motion information by combining it   with appearance information, and 2) utilizing of mutual information encoded among the image features of the same object.
+In this work, the performance of detection methods is improved from a different aspect. The work explores the information which are not made fully use of by previous methods. And the efforts are two-fold: 1) utilizing of motion information by combining it   with appearance information, and 2) utilizing of mutual information encoded among the image features of the same object. Three detection methods are proposed accordingly.
 
-The first detection method is developed for real-time applications. In a hierarchical way, this method makes time-consuming steps in the pipeline deal with fewer instances, and combines motion information with appearance information very efficiently. This method gives promising detection results in real time, and gives 100\% detection rate and 0\% false alarm rate in one of the experiments. 
+The first detection method is developed for real-time applications. In a hierarchical way, this method makes time-consuming steps in its pipeline deal with fewer instances, and combines motion information with appearance information very efficiently. This method gives promising detection results in real time, and gives 100\% detection rate and 0\% false alarm rate in one of the experiments.
 
-While the performance of the first method in complex scene is not promising, the second method is proposed. This method extends methods based on Hough transforms to incorporate motion information, and outperforms the state-of-the-art method on two datasets. This method also performs well in distinguishing near objects and similar different-class objects.
+Since the performance of the first method in complex scene is not promising, the second method is proposed. This method extends the Implicit Shape Model~\cite{lb1} to incorporate motion information, and outperforms the state-of-the-art method on two datasets. This method also performs well in distinguishing near objects and similar different-class objects.
 
-To improve the efficiency of of the second method, the third method is proposed, which is Pyramid Matching Score for detection. The method does pyramid matching during training and matching for efficiency, and makes use of the mutual information encoded among the image features of the same object, which improves detection performance.
+To improve the efficiency of the second method, the third method is proposed, which is Pyramid Matching Score for detection. The method does pyramid matching during training and matching for efficiency, and makes use of the mutual information encoded among the image features of the same object, which improves detection performance.
 \newpage
 \end{eabstract}
 

@@ -1156,7 +1156,7 @@ address = {Washington, DC, USA}
 @InProceedings{r3d,
   author =	{Koichi Kise and Takahiro Kashiwagi},
   title =	{1.5 Million Subspaces of a Local Feature Space for 3D Object Recognition},
-  booktitle =	{Proceedings of the 1st Asian Conference on Pattern Recognition},
+  booktitle =	{ACPR},
   year =	{2011},
   pages =	{672--676}
 }

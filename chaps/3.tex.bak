@@ -270,7 +270,7 @@ Before proposing the decision step for detection, Table \ref{c3tb:tb1} summaries
 \subsection{Object Detection}
 For each keypoint cluster on the current frame, there exists label given by the Adaboost machine according to its appearance, and the significance of fitting its trajectory as a straight line.  For each keypoint cluster, it is considered as an target object if and only if its label given by the Adaboost machine is positive, its trajectory is longer than $l^{th}$, and the significance of fitting its trajectory into a straight line is larger than $r^{th}$.
 
-Each trajectory not only connects the detection responses, but also connects the decisions for each detection responses made by their appearance and motion patterns. The target objects and noisy objects actually appear in successive frames, and even if we make a wrong decision on one frame, we can expect to recover from this mistake based on the results on other frames. The final results is based on the trajectories of decisions. When one trajectory ends, if more than 80\% of the decisions it connects are positive, then this trajectory is considered as positive.
+Each trajectory not only connects the detection responses, but also connects the decisions for each detection responses made by their appearance and motion patterns. The target objects and noisy objects actually appear in successive frames, and even if we make a wrong decision on one frame, we can expect to recover from this mistake based on the results on other frames. The final results is based on the trajectories of decisions. When one trajectory ends, if most of the decisions it connects are positive, then this trajectory is considered as positive.
 
 
 
@@ -280,38 +280,145 @@ In this section, this method is tested on detection performance and efficiency. 
 
 \subsection{First Experiment}
 
-For the first experiment, our experimental vehicle on top of which installed infrared cameras take several tours of the Awagatake tunnel. About 4,000 frames are collected for each tour. The frame size is $640\times 480$, the intensity range is [0,255], and the frame rate is 30 frames per second of the camera, and 15 frames per second of the collection program.
+\subsubsection{Data} For the first experiment, our experimental vehicle on top of which installed infrared cameras take several tours of the Awagatake tunnel. About 4,000 frames are collected for each tour. The frame size is $640\times 480$, the intensity range is [0,255], and the frame rate is 30 frames per second of the camera, and 15 frames per second of the collection program.
 
-\textbf{Implementation Settings} All models are trained using data from one tour, while evaluated on data from another tour. Firstly, all emergency telephone indicators are marked in the form of rectangles on all frames from the training tour.
+\subsubsection{Implementation Settings} All models are trained using data from one tour, while evaluated on data from another tour. Firstly, all emergency telephone indicators are marked in the form of rectangles on all frames from the training tour.
 
-To set intensity thresholds for keypoint detection, Gaussian distribution is assumed for the points belonging to target objects. With step $W$ set to 3, and $H$ set to 4, keypoints in the marked rectangle are sampled from the frames of the training tour, and used to estimate $I^{th1}_{\bf{x}}$  and $I^{th2}_{\bf{x}}$.  Following the $3\sigma$ principle, $I^{th1}_{\bf{x}}$ is set to 160 and $I^{th2}_{\bf{x}}$, 190.
+\begin{figure}
+\centering
+\subfigure[]{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{siftimg00469.jpg}
+\label{fig:sec:a}}
+\subfigure[]{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{Kptimg00469.jpg}
+\label{fig:sec:b}}
+\caption[Keypoint detection comparison]{Keypoint detection. In (a), keypoint detection method in~\cite{o12} is used, and in (b), the keypoints are detected using the proposed method. And the proposed keypoint detection is more suitable for detecting keypoints belonging to emergency telephone indicators.}
+\label{ex1:va}
+\end{figure}
+
+To set intensity thresholds for keypoint detection, Gaussian distribution is assumed for the points belonging to target objects. Width step $W$ set to 3, and $H$ set to 4. Keypoints in the marked rectangle are sampled from the frames of the training tour, and used to estimate $I^{th1}_{\bf{x}}$  and $I^{th2}_{\bf{x}}$.  Following the $3\sigma$ principle, $I^{th1}_{\bf{x}}$ is set to 160 and $I^{th2}_{\bf{x}}$, 190. In Figure \ref{ex1:va}, we also compare the keypoint detection results with the results using SIFT.
 
 The keypoints used to set intensity thresholds, together with some keypoints randomly sampled from training data, which are out of the marked rectangles are used to train the mixture model, which is then used in the verification of the keypoints.
  Note this model and the training is not very accurate, since more accurate marking means more manual efforts. Also, future steps can filter out the false alarms produced by this step.  About 30,000 intensity histograms of the positive keypoints are sampled, and about 3,000,000 of the negative. When using of $k$-means for clustering the positive intensity histograms, $k$ is set to 40, and $k$ set to 400 for negative. The $k$ values over-segment both feature sets. The threshold to verify keypoints, $D^{th}_{A_{\bf{x}}}$ is set to 0.14 for the normalized histograms.
 
+
 For keypoint clustering, the threshold to split the mst is set to 10, which is half the largest height of the emergency lights sensed by the camera.
 
-The Adaboost machine to distinguish other vehicles and their shadows is trained by intensity histograms of positive keypoint clusters and negative keypoint clusters. We manually mark 466 positive  and 1,421 negative keypoint clusters. The trained Adaboost machine is tested on the training dataset, and the classification rate is 85\%.
+\begin{figure}
+\includegraphics[width=0.94\textwidth,bb=0 0 1367 651]{untitled.jpg}
+\caption[Positive and negative training examples.]{Dimension reduction of intensity histograms manually marked as positive and negative, which have 2 dimensions by principle component analysis. Blue circles: positive, and red: negative.}
+\label{ex1:v}
+\end{figure}
+
+ The Adaboost machine to distinguish other vehicles and their shadows is trained by intensity histograms of positive keypoint clusters and negative keypoint clusters. We manually mark 466 positive  and 1,421 negative keypoint clusters. And in Figure \ref{ex1:v}, show the image features of positive and negative training examples for the Adaboost machine, which are reduced to two dimensional by PCA. The trained Adaboost machine is tested on the training dataset, and the classification rate is 85\%.
 
 During keypoint cluster tracking, whether a detection response can be linked to a trajectory or not is constrained by position and scale changes. Here scale change limit is set to 4. When the trajectories are fitted as lines, the linear model is also used in associating new detection responses.
 
-For emergency light detection, $l^{th}$ is set to 5, $r^{th}$ is set to 0.7, and $R^{th}$ is set to 70\%.
+
+In this experiment, $l^{th}$ is set to 5, $r^{th}$ is set to 0.7, and $R^{th}$ is set to 70\%. As the figures in the section for pipeline are all from the second experiment, here the results of each step of the data from the first experiment are also given. In Figure \ref{ex1:first}, the original data and sample detection results are given. In Figure \ref{ex1:thir}, the results from keypoint verification and clustering are given. In Figure \ref{ex1:four}, the results from keypoint cluster verification by appearance information are given. In Figure \ref{ex1:five}, the results from keypoint cluster tracking are given. And at last, in Figure \ref{ex1:sixs}, the final detection results are given.
+
+\begin{figure}
+\centering
+\subfigure[]{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{Orgimg00634.jpg}
+\label{ex1:first:a}}
+\subfigure[]{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{veriRegTrjimg00634.jpg}
+\label{ex1:first:b}}
+\caption[Original data and detection results]{Original data and detection results. Red arrow points to the target object in \ref{ex1:first:a}.}
+\label{ex1:first}
+\end{figure}
+
+\begin{figure}
+\centering
+\subfigure[]{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{VeriKptimg00469.jpg}
+\label{fig:thir:a}}
+\subfigure[]{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{VeriKptimg01080.jpg}
+\label{fig:thir:b}}
+\subfigure[]{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{Rgsimg00469.jpg}
+\label{fig:thir:c}}
+\subfigure[]{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{Rgsimg01080.jpg}
+\label{fig:thir:d}}
+\caption[Keypoint verification and clustering]{Keypoint verification and clustering. }
+\label{ex1:thir}
+\end{figure}
+
+\begin{figure}[b]
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{VeriRgsimg00634.jpg}
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{VeriRgsimg01075.jpg}
+\caption[Keypoint cluster verification by appearance]{Keypoint cluster verification by appearance. Red rectangles: positive detection hypotheses, and green: negative detection hypotheses.}
+\label{ex1:four}
+\end{figure}
+
+\begin{figure}
+{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{Trjimg00469.jpg}
+}
+{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{Trjimg01080.jpg}
+}
+\caption[Keypoint cluster tracking]{Keypoint cluster tracking.}
+\label{ex1:five}
+\end{figure}
+
+\begin{figure}
+{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{veriRegTrjimg00626.jpg}
+}
+{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{veriRegTrjimg00634.jpg}
+}\\
+{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{veriRegTrjimg01072.jpg}
+}
+{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{veriRegTrjimg01080.jpg}
+}
+\caption[Detection results]{Detection results.}
+\label{ex1:sixs}
+\end{figure}
+
+\subsubsection{Detection Results} On a laptop with Intel Core2 Duo 2.8GHz processors, the method deals with real data at a frame rate of 34 frames per second, and this fulfills real-time requirements.
+
+The detection rate and false alarm rate is evaluated on 250 frames, as shown in Table \ref{ex1:tb2}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+     \hline
+     \hline
+    total number &	113   \\
+    correctly labeled &	102   \\
+    miss detections &	11 &	  \\
+    false alarms &	21    \\
+    detection rate &	90\% &	  \\
+    false alarm rate &	19\% &	   \\
+   \hline
+\end{tabular}
+\caption{Detection rate and false alarm rate.}\label{ex1:tb2}
+\end{table}
 
 \subsection{Second Experiment}
 
 
 
-\textbf{Data} For the second experiment, an infrared camera is mounted on top of the experimental vehicle, and then  take several tours of the Awagatake tunnel. About 7,000 frames are collected for each tour. The frame size is $640\times 480$, the intensity range is [0,255], and the frame rate is 30 frames per second.
+\textbf{Data} The results of the first experiment is not satisfactory, and then the second experiment is carried out. A better far infrared camera is used, and also the zoom of the camera is adjusted for better images. Then with the new camera mounted on top, the experimental vehicle took several tours of the Awagatake tunnel. About 7,000 frames are collected for each tour. The frame size is $640\times 480$, the intensity range is [0,255], and the frame rate is 30 frames per second of the camera, also of the data collection program which is provided by the camera maker.
 
 \textbf{Implementation Settings} The same with experiment one, all models are trained using data from one tour, and evaluated on data on another tour.
 
-To set intensity thresholds for keypoint detection, $I^{th1}_{\bf{x}}$ is set to 160 and $I^{th2}_{\bf{x}}$, 190.
+About intensity thresholds for keypoint detection, $I^{th1}_{\bf{x}}$ is set to 160 and $I^{th2}_{\bf{x}}$, 190. According to the sensed emergency telephone indicator, width step $W$ set to 3, and $H$ set to 4.
 
-The approximate sub-images of the emergency telephone indicators are manually marked for one tour, and used for training the mixture model of keypoint verification. The detected keypoints falling into the sub-image are marked as positive, and otherwise negative. Note this model and the training is not very accurate, since more accurate marking means more manual efforts. About 30,000 intensity histograms of the positive keypoints are sampled, and about 3,000,000 of the negative. When using of $k$-means for clustering the positive intensity histograms, $k$ is set to 40, and 400 for negative. The $k$ values over-segment both feature sets. The threshold to verify keypoints, $D^{th}_{A_{\bf{x}}}$ is set to 0.14 for the normalized histograms.
+Instead of training a new mixture model for keypoint verification, the older one from experiment one is used, since the performance of this step is not critical.
 
-For keypoint clustering, the threshold to split the mst is set to 40, which is half the largest height of the emergency telephone indicators.
+For keypoint clustering, the threshold to split the mst is set to 40, which is half the largest height of the emergency telephone indicators sensed with new camera and experimental settings.
 
-The Adaboost machine to distinguish other vehicles and their shadows is trained by intensity histograms of positive keypoint clusters and negative keypoint clusters.  If the Adaboost machine is trained by averagely weighted training examples, its correct rate on the training examples is overall 84\%. When trained using this bias weighted training examples, its correct rate on the positive training examples is 94\%, and 77\% on the negative training examples.
+The Adaboost machine to distinguish other vehicles and their shadows is trained by intensity histograms of positive keypoint clusters and negative keypoint clusters.  If the Adaboost machine is trained by averagely weighted training examples as in experiment one, its correct rate on the training examples is overall 84\%. When trained using bias weighted training examples, which means the initial weight of the positive training examples are here $7$ times as large as those of the positive training examples, its correct rate on the positive training examples is 94\%, and 77\% on the negative training examples.
+
+The main difference between experiment one, and experiment two in the pipeline lays here. The same weights are assigned to positive and negative training examples during training the Adaboost machine, while biased weights are assigned here. This will results in an Adaboost machine which gives better performance on target objects, and perform worse on noisy objects. The produced false alarms can be later filtered out by more powerful step which uses motion information.
 
 During keypoint cluster tracking, whether a detection response can be linked to a trajectory or not is constrained by position and scale changes. Here scale change limit is set to 4. When the trajectories are fitted as lines, the linear model is also used in associating new detection responses.
 
@@ -329,8 +436,21 @@ During keypoint cluster tracking, whether a detection response can be linked to 
 }
 {
 \includegraphics[width=0.47\textwidth,bb=0 0 640 480]{3veriTrjimg00023.jpg}
+}\\
+{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{04veriTrjimg00039.jpg}
 }
-\caption{Detection results.}
+{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{02veriTrjimg00046.jpg}
+}\\
+{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{00veriTrjimg00032.jpg}
+}
+{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{06veriTrjimg00032.jpg}
+}
+
+\caption[Detection results]{Detection results.}
 \label{fig:sixs}
 \end{figure}
 
@@ -339,30 +459,61 @@ During keypoint cluster tracking, whether a detection response can be linked to 
 On an ordinary desktop computer with Intel Core2 Quad 2.6GHz processors, the method deals with real data at a frame rate of 41 frames per second, and this fulfills real-time requirements.
 
 
-The detection rate and false alarm rate are evaluated on the keypoint clusters, as shown in TABLE \ref{tb:tb2}.
+The detection rate and false alarm rate are evaluated on the keypoint clusters, as shown in Table \ref{tb:tb2}.
 More detection results are shown in Figure \ref{fig:sixs}.
 \begin{table}[h]
 \centering
 \begin{tabular}{lll}
      \hline
      \hline
-    total number &	472 + 3304  \\
+    total number &	472  \\
     correctly labeled &	468   \\
     miss detections &	4 &	  \\
     false alarms &	22    \\
     detection rate &	99.2\% &	  \\
-    false alarm rate &	0.7\% &	   \\
+    false alarm rate &	4.4\% &	   \\
    \hline
 \end{tabular}
 \caption{Detection rate and false alarm rate.}\label{tb:tb2}
 \end{table}
 
-The detection rate and false alarm rate of~\cite{wang1} are 90\% and 19\%, while evaluated on a much smaller dataset. We outperforms~\cite{wang1}, because this sensed images are much clearer, and also because this more effective training of the Adaboost machine.
+The detection rate and false alarm rate of the first experiment~\cite{wang1} are 90\% and 19\%, while evaluated on a much smaller dataset. Here the results are better than the first experiment, because this sensed images are much clearer, and also because this more effective training of the Adaboost machine. And in the second experiment, the efficiency results in better computer.
 
-The results on the trajectories of decisions are also evaluated. The method correctly detects all the 22 emergency telephone indicators with no false alarms. The detection rate is 100\%, and the false alarm rate is 0\%.
+The results on the trajectories of decisions are also evaluated. We one trajectory disappears, if its length is larger than 15, and over 80\% of the decisions it connects are positive, it is considered as positive. The method correctly detects all the 22 emergency telephone indicators with no false alarms. The detection rate is 100\%, and the false alarm rate is 0\%, as shown in Table \ref{tb:tb3}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+     \hline
+     \hline
+    total number & 22  \\
+    correctly labeled &	22   \\
+    miss detections &	0 &	  \\
+    false alarms &	0    \\
+    detection rate &	100\% &	  \\
+    false alarm rate &	0\% &	   \\
+   \hline
+\end{tabular}
+\caption[Final detection rate and false alarm rate]{Final detection rate and false alarm rate.}\label{tb:tb3}
+\end{table}
+
 \section{Experimental results on data collected by ordinary cameras}
 \label{ord}
 
+
+\begin{figure}
+{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{kptkms.pdf}
+}
+\caption[Evaluation of keypoint verification]{Evaluation of keypoint verification.}
+\label{ord:one}
+\end{figure}
+
 \section{Conclusion}
 \label{conc}
-We propose an object detection method to detect emergency telephone indicators in tunnel environment. The method makes use of appearance and motion information of the target objects in a hierarchical manner. With careful optimization of detection pipeline, the method gives promising results in real time. Based on the detection results, a positioning system in tunnel environment can be expected.
+ This chapter proposes an object detection method, which perform well in simple scenarios by combining appearance and motion information in a very efficient way. The method makes use of appearance and motion information of the target objects in a hierarchical manner. With careful optimization of detection pipeline, the method gives promising results in real time.
+
+  Also one main idea of the method is not to consider objects as something only with specific appearance patterns, but as something with both
+ specific appearance and motion patterns. Another reason for the performance during the second experiment, is that make dangerous decisions later, when more information are available. While using both appearance and motion information results in a detection rate of about 99\%, combing all the information connected by a trajectory results in a detection rate of 100\%.
+
+ Though its performance under complex scenarios is not promising, it can still be used as a unit in  positioning systems in tunnel environment.

@@ -13,7 +13,7 @@ The Hough transform based methods, represented by the ISM~\cite{lb1}, start by d
 \end{comment}
 
 The reason why the method proposed in the previous chapter fails to work well in complex scenario, while performs well in detecting simple objects is that its model is too simple. Objects, especially pedestrians are actually structured, and different part will have different appearance.
-Effective video-based detection methods are of great importance, and this chapter proposes a method to localize and label objects in complex scenarios. 
+Effective video-based detection methods are of great importance, and this chapter proposes a method to localize and label objects in complex scenarios.
 
 The method is able to detect pedestrians and bicycle riders in complex scene. The method is inspired by the common fate principle, which is a mechanism of visual perception in human beings, and which states  tokens moving or functioning in a similar manner tend to be  perceived
 as one unit. This method embeds the principle in an Implicit Shape Model (ISM). In this method, keypoint-based
@@ -76,7 +76,7 @@ The remaining chapter is organized as follows. Section \ref{rw4} reviews related
 \label{rw4}
 
  This method is most related to object detection methods~\cite{ac9,ac22,lb1,ac5,ac10,ac21} based on the Hough transform framework. Recently, such methods make a lot of progress. The ISM~\cite{lb1,ac5} is extended  by notifying correspondences between the object parts and the hypotheses~\cite{ac9} for the detection of multiple near objects. While in~\cite{ac6,ac10,ac7} the Hough transform is placed in a discriminative framework for object detection in a way that the codes are assigned different weights by the co-occurrence frequency of their appearance and offset to the object center.
- 
+
 Two Hough transform methods consider the grouping of object parts~\cite{ac26,ac25}. The method in~\cite{ac26} deals with scale change. Instead of estimating the scale by local features trained from different scaled examples, the votes are considered as voting lines. By considering the difference of the voted centers, local features are firstly grouped and then vote more consistently for the object center. In~\cite{ac25}, the grouping of object parts, the correspondence between object parts and object, and the decisions on detection hypotheses are optimized in the same energy function. For this method, the problem is that the grouping results don't have meaning or correspond to and real entities.
 
 The work is also related to keypoint clustering methods. In \cite{mc}, SIFT~\cite{o12} is
@@ -322,7 +322,7 @@ Following~\cite{ac9}, the optimal result for the problem is given by greedy maxi
     \label{alg:gm}
      Let $\varepsilon$ be the set of object parts, $C_{th}$ be the low confidence threshold to accept detection responses, and $\hat{\bf{h}}$ be the local maxima of $\bf{h}$
 
-     
+
 
     \begin{algorithmic}[1]
 
@@ -445,14 +445,14 @@ In experiments, improvement of the method is verified in terms of detection accu
 
 \begin{figure}
 \centering
-\includegraphics[width=0.47\textwidth,bb=0 0 766 637]{inf1.jpg}
-\includegraphics[width=0.47\textwidth,bb=0 0 766 637]{inf2.jpg}
-\includegraphics[width=0.47\textwidth,bb=0 0 766 637]{inf3.jpg}
-\includegraphics[width=0.47\textwidth,bb=0 0 766 637]{inf4.jpg}
-\includegraphics[width=0.47\textwidth,bb=0 0 766 637]{inf5.jpg}
-\includegraphics[width=0.47\textwidth,bb=0 0 766 637]{inf6.jpg}
-\includegraphics[width=0.47\textwidth,bb=0 0 766 637]{inf7.jpg}
-\includegraphics[width=0.47\textwidth,bb=0 0 766 637]{inf8.jpg}
+\includegraphics[width=0.47\textwidth,bb=0 10 766 637]{inf1.jpg}
+\includegraphics[width=0.47\textwidth,bb=0 20 766 637]{inf2.jpg}
+\includegraphics[width=0.47\textwidth,bb=0 20 766 637]{inf3.jpg}
+\includegraphics[width=0.47\textwidth,bb=0 20 766 637]{inf4.jpg}
+\includegraphics[width=0.47\textwidth,bb=0 20 766 637]{inf5.jpg}
+\includegraphics[width=0.47\textwidth,bb=0 20 766 637]{inf6.jpg}
+\includegraphics[width=0.47\textwidth,bb=0 20 766 637]{inf7.jpg}
+\includegraphics[width=0.47\textwidth,bb=0 20 766 637]{inf8.jpg}
 \caption[Inference procedure]{Inference procedure.}
 \label{fig:inf}
 \end{figure}

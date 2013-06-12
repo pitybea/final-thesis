@@ -20,12 +20,7 @@
 \usepackage{url}
 \usepackage{graphicx}
 
-\ifpdf
-  \usepackage[pdftex]{hyperref}
-\else
-  \usepackage[dvipdfm]{hyperref}
-  \AtBeginDvi{\special{pdf:tounicode GBK-EUC-UCS2}}
-\fi
+
 
 
 \etitle{Combining Motion Information\\ with Appearance Information\\ and Utilizing of Mutual Information\\ Encoded Among Image Features \\ of the Same Object\\ for Better Detection Performance}

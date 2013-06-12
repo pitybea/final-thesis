@@ -315,7 +315,7 @@ For keypoint clustering, the threshold to split the mst is set to 10, which is h
 During keypoint cluster tracking, whether a detection response can be linked to a trajectory or not is constrained by position and scale changes. Here scale change limit is set to 4. When the trajectories are fitted as lines, the linear model is also used in associating new detection responses.
 
 
-In this experiment, $l^{th}$ is set to 5, $r^{th}$ is set to 0.7, and $R^{th}$ is set to 70\%. As the figures in the section for pipeline are all from the second experiment, here the results of each step of the data from the first experiment are also given. In Figure \ref{ex1:first}, the original data and sample detection results are given. In Figure \ref{ex1:thir}, the results from keypoint verification and clustering are given. In Figure \ref{ex1:four}, the results from keypoint cluster verification by appearance information are given. In Figure \ref{ex1:five}, the results from keypoint cluster tracking are given. And at last, in Figure \ref{ex1:sixs}, the final detection results are given. 
+In this experiment, $l^{th}$ is set to 5, $r^{th}$ is set to 0.7, and $R^{th}$ is set to 70\%. As the figures in the section for pipeline are all from the second experiment, here the results of each step of the data from the first experiment are also given. In Figure \ref{ex1:first}, the original data and sample detection results are given. In Figure \ref{ex1:thir}, the results from keypoint verification and clustering are given. In Figure \ref{ex1:four}, the results from keypoint cluster verification by appearance information are given. In Figure \ref{ex1:five}, the results from keypoint cluster tracking are given. And at last, in Figure \ref{ex1:sixs}, the final detection results are given.
 
 \begin{figure}
 \centering
@@ -412,7 +412,7 @@ The detection rate and false alarm rate is evaluated on 250 frames, as shown in 
 
 About intensity thresholds for keypoint detection, $I^{th1}_{\bf{x}}$ is set to 160 and $I^{th2}_{\bf{x}}$, 190. According to the sensed emergency telephone indicator, width step $W$ set to 3, and $H$ set to 4.
 
-Instead of training a new mixture model for keypoint verification, the older one from experiment one is used, since the performance of this step is not critical. 
+Instead of training a new mixture model for keypoint verification, the older one from experiment one is used, since the performance of this step is not critical.
 
 For keypoint clustering, the threshold to split the mst is set to 40, which is half the largest height of the emergency telephone indicators sensed with new camera and experimental settings.
 
@@ -477,7 +477,7 @@ More detection results are shown in Figure \ref{fig:sixs}.
 \caption{Detection rate and false alarm rate.}\label{tb:tb2}
 \end{table}
 
-The detection rate and false alarm rate of the first experiment~\cite{wang1} are 90\% and 19\%, while evaluated on a much smaller dataset. Here the results are better than the first experiment, because this sensed images are much clearer, and also because this more effective training of the Adaboost machine. And in the second experiment, the efficiency results in better computer. 
+The detection rate and false alarm rate of the first experiment~\cite{wang1} are 90\% and 19\%, while evaluated on a much smaller dataset. Here the results are better than the first experiment, because this sensed images are much clearer, and also because this more effective training of the Adaboost machine. And in the second experiment, the efficiency results in better computer.
 
 The results on the trajectories of decisions are also evaluated. We one trajectory disappears, if its length is larger than 15, and over 80\% of the decisions it connects are positive, it is considered as positive. The method correctly detects all the 22 emergency telephone indicators with no false alarms. The detection rate is 100\%, and the false alarm rate is 0\%, as shown in Table \ref{tb:tb3}.
 
@@ -500,11 +500,22 @@ The results on the trajectories of decisions are also evaluated. We one trajecto
 \section{Experimental results on data collected by ordinary cameras}
 \label{ord}
 
+
+\begin{figure}
+{
+  \includegraphics{kptkms.eps}
+}
+\caption[Evaluation of keypoint verification]{Evaluation of keypoint verification.}
+\label{ord:one}
+\end{figure}
+
+The method is extended ar the first step to deal with data collected by ordinary cameras. 
+
 \section{Conclusion}
 \label{conc}
- This chapter proposes an object detection method, which perform well in simple scenarios by combining appearance and motion information in a very efficient way. The method makes use of appearance and motion information of the target objects in a hierarchical manner. With careful optimization of detection pipeline, the method gives promising results in real time.
-  
+ This chapter proposes an object detection method, which performs well in simple scenarios by combining appearance and motion information in a very efficient way. The method makes use of appearance and motion information of the target objects in a hierarchical manner. With careful optimization of detection pipeline, the method gives promising results in real time.
+
   Also one main idea of the method is not to consider objects as something only with specific appearance patterns, but as something with both
- specific appearance and motion patterns. Another reason for the performance during the second experiment, is that make dangerous decisions later, when more information are available. While using both appearance and motion information results in a detection rate of about 99\%, combing all the information connected by a trajectory results in a detection rate of 100\%. 
- 
+ specific appearance and motion patterns. Another reason for the performance during the second experiment, is that make dangerous decisions later, when more information are available. While using both appearance and motion information results in a detection rate of about 99\%, combing all the information connected by a trajectory results in a detection rate of 100\%.
+
  Though its performance under complex scenarios is not promising, it can still be used as a unit in  positioning systems in tunnel environment.
