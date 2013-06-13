@@ -1145,49 +1145,8 @@ address = {Washington, DC, USA}
         PAGES = "280-287",
         BIBSOURCE = "http://www.visionbib.com/bibliography/active681.html#TT61751"}
 
-Authors: 	Svetlana Lazebnik 	University of Illinois
-	Cordelia Schmid 	INRIA Rhone-Alpes Montbonnot, France
-	Jean Ponce 	Ecole Normale Sup└rieure Paris, France
-Published in:
-， Proceeding
-CVPR '06 Proceedings of the 2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition - Volume 2
-Pages 2169-2178
-IEEE Computer Society Washington, DC, USA ?2006
-table of contents ISBN:0-7695-2597-0 doi>10.1109/CVPR.2006.68
 	
-Beyond Bags of Features: Spatial Pyramid Matching for Recognizing Natural Scene Categories 	2006 Article
-Bibliometrics Data  Bibliometrics
-， Downloads (6 Weeks): 0
-， Downloads (12 Months): 0
-， Downloads (cumulative): 0
-， Citation Count: 545
 
-
-	
-Tools and Resources
-
-    Save to Binder
-    Export Formats:
-        BibTeX
-        EndNote
-        ACM Ref
-
-Publisher Site Publisher Site
-
-Share:
-Share on email Share on facebook Share on google_plusone_share Share on twitter Share on researchgate Share on reddit | More Sharing Services
-Tags: computer vision object recognition performance
-feedback Feedback | Switch to single page view (no tabs)
-Abstract	Authors	References	Cited By	Index Terms	Publication	Reviews	Comments	Table of Contents
-This paper presents a method for recognizing scene categories based on approximate global geometric correspondence. This technique works by partitioning the image into increasingly fine sub-regions and computing histograms of local features found inside each sub-region. The resulting "spatial pyramid" is a simple and computationally efficient extension of an orderless bag-of-features image representation, and it shows significantly improved performance on challenging scene categorization tasks. Specifically, our proposed method exceeds the state of the art on the Caltech-101 database and achieves high accuracy on a large database of fifteen natural scene categories. The spatial pyramid framework also offers insights into the success of several recently proposed image descriptions, including Torralba's "gist" and Lowe's SIFT descriptors.
-
-Powered by The ACM Guide to Computing Literature
-
-The ACM Digital Library is published by the Association for Computing Machinery. Copyright ? 2013 ACM, Inc.
-Terms of Usage   Privacy Policy   Code of Ethics   Contact Us
-
-Useful downloads: Adobe Acrobat    QuickTime    Windows Media Player    Real Player
-BibTeX | BibTeX (beta) | EndNote | ACM Ref
 
 @inproceedings{spmk,
  author = {Lazebnik, Svetlana and Schmid, Cordelia and Ponce, Jean},
@@ -1200,4 +1159,69 @@ BibTeX | BibTeX (beta) | EndNote | ACM Ref
 
  publisher = {IEEE Computer Society},
  address = {Washington, DC, USA},
+}
+
+
+@book{kmts,
+ author = {Shawe-Taylor, John and Cristianini, Nello},
+ title = {Kernel Methods for Pattern Analysis},
+ year = {2004},
+ isbn = {0521813972},
+ publisher = {Cambridge University Press},
+ address = {New York, NY, USA},
+}
+
+@INPROCEEDINGS{uspl,
+    author = {R. Fergus and P. Perona and A. Zisserman},
+    title = {Object class recognition by unsupervised scale-invariant learning},
+    booktitle = {CVPR},
+    year = {2003},
+    pages = {264--271}
+}
+
+
+@article{lbt1,
+ author = {Liu, Ce and Yuen, Jenny and Torralba, Antonio},
+ title = {Nonparametric Scene Parsing via Label Transfer},
+ journal = {PAMI},
+ issue_date = {December 2011},
+ volume = {33},
+ number = {12},
+ month = dec,
+ year = {2011},
+ issn = {0162-8828},
+ pages = {2368--2382},
+ numpages = {15},
+ url = {http://dx.doi.org/10.1109/TPAMI.2011.131},
+ doi = {10.1109/TPAMI.2011.131},
+ acmid = {2068581},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ keywords = {Object recognition, scene parsing, label transfer, SIFT flow, Markov random fields.},
+}
+
+
+@INPROCEEDINGS{pmk,
+    author = {Kristen Grauman and Trevor Darrell},
+    title = {The pyramid match kernel: Discriminative classification with sets of image features},
+    booktitle = {ICCV},
+    year = {2005},
+    pages = {1458--1465}
+}
+
+@article{Agarwal:2004:LDO:1024873.1025086,
+ author = {Agarwal, Shivani and Awan, Aatif and Roth, Dan},
+ title = {Learning to Detect Objects in Images via a Sparse, Part-Based Representation},
+ journal = {PAMI},
+ issue_date = {November 2004},
+ volume = {26},
+ number = {11},
+ month = nov,
+ year = {2004},
+ issn = {0162-8828},
+ pages = {1475--1490},
+
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ keywords = {Index Terms- Object detection, Index Terms- Object detection, image representation, machine learning, evaluation/methodology., evaluation/methodology., image representation, machine learning},
 }
