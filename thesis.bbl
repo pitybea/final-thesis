@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{cds}
+Shivani Agarwal, Aatif Awan, and Dan Roth.
+\newblock Learning to detect objects in images via a sparse, part-based
+  representation.
+\newblock {\em PAMI}, 26(11):1475--1490, November 2004.
+
 \bibitem{wiao}
 B.~Alexe, T.~Deselaers, and V.~Ferrari.
 \newblock What is an object?
