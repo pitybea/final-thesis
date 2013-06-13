@@ -13,6 +13,7 @@ The Hough transform based methods, represented by the ISM~\cite{lb1}, start by d
 \end{comment}
 
 The reason why the method proposed in the previous chapter fails to work well in complex scenario, while performs well in detecting simple objects is that its model is too simple. Objects, especially pedestrians are actually structured, and different part will have different appearance.
+
 Effective video-based detection methods are of great importance, and this chapter proposes a method to localize and label objects in complex scenarios.
 
 The method is able to detect pedestrians and bicycle riders in complex scene. The method is inspired by the common fate principle, which is a mechanism of visual perception in human beings, and which states  tokens moving or functioning in a similar manner tend to be  perceived
@@ -366,23 +367,7 @@ Following~\cite{ac9}, the optimal result for the problem is given by greedy maxi
 \end{algorithm}
 
 
-\begin{figure*}
-\centering
-\subfigure[]{
-\includegraphics[width=0.47\textwidth,bb=0 0 720 576]{a56.jpg}
-\label{fig:compa:a}}
-\subfigure[]{
-\includegraphics[width=0.47\textwidth,bb=0 0 720 576]{voteimg00056.jpg}
-\label{fig:compa:b}}
-\subfigure[]{
-\includegraphics[width=0.47\textwidth,bb=0 0 720 576]{selectVimg00056_9.jpg}
-\label{fig:compa:c}}
-\subfigure[]{
-\includegraphics[width=0.47\textwidth,bb=0 0 720 576]{selectedvotesimg00056.jpg}
-\label{fig:compa:c}}
-\caption[Effect of the proposed weight]{Effect of the proposed weight. The motion grouping results are given in (a), and different motion groups are marked with different colors. The object centers voted according to the 7 best matched codes are given in (b). Red circles are centers of pedestrians while blue circles are centers of bicycle riders. The voted centers given in (c) are the voted centers of the 7 votes with the highest defined priors from 35 votes. The object centers in (d) are voted by votes with weights higher than 0.1.}
-\label{fig:compa}
-\end{figure*}
+
 
 \begin{figure*}
 \centering
@@ -562,7 +547,7 @@ The confusion matrices are given in Figure~\ref{fig:pr:b}. For clarity of the co
 \caption[Detection results]{Results. Red crosses mark the centers for leopards and blue crosses mark the centers for tigers.}
 \label{fig:bgdr}
 \end{figure}
-\section{Conclusion}
+\section{Chapter Conclusion}
 \label{sum4}
 The computational ability of human beings is limited, while the ability to detect is far beyond machines. Thus, it is very possible that this detection ability benefits from multiple perceptual mechanisms. By using one of these mechanisms, we propose a detection method. By embedding motion grouping results into the voting schema of hough transform, the method is capable to distinguish near objects' positions, to distinguish similar objects' labels, and to maintain detection rate with a noisy codebook. The success of this method further demonstrate the advancement of perceptual mechanisms in human beings. And the success of this method will help with detection methods in ITS areas.
 % conference papers do not normally have an appendix

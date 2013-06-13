@@ -1,7 +1,7 @@
 \select@language {english}
 \contentsline {chapter}{Contents}{i}{chapter*.1}
-\contentsline {chapter}{List of Figures}{iii}{chapter*.2}
-\contentsline {chapter}{List of Tables}{v}{chapter*.3}
+\contentsline {chapter}{List of Figures}{iv}{chapter*.2}
+\contentsline {chapter}{List of Tables}{vi}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Background and Related Work}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}Vision in Human and Computer}{4}{section.2.1}
@@ -23,29 +23,34 @@
 \contentsline {subsection}{\numberline {3.4.6}Keypoint Cluster Verification by Motion}{20}{subsection.3.4.6}
 \contentsline {subsection}{\numberline {3.4.7}Pipeline Summary}{20}{subsection.3.4.7}
 \contentsline {subsection}{\numberline {3.4.8}Object Detection}{21}{subsection.3.4.8}
-\contentsline {section}{\numberline {3.5}Experimental Results}{21}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}First Experiment}{21}{subsection.3.5.1}
-\contentsline {subsubsection}{Data}{21}{section*.4}
-\contentsline {subsubsection}{Implementation Settings}{22}{section*.5}
-\contentsline {subsubsection}{Detection Results}{23}{section*.6}
-\contentsline {subsection}{\numberline {3.5.2}Second Experiment}{23}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Experimental results on data collected by ordinary cameras}{25}{section.3.6}
-\contentsline {section}{\numberline {3.7}Conclusion}{26}{section.3.7}
-\contentsline {chapter}{\numberline {4}Grouping of object parts by motion for detection}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}Related Work}{37}{section.4.2}
-\contentsline {section}{\numberline {4.3}Application Background}{39}{section.4.3}
-\contentsline {section}{\numberline {4.4}Common Fate Hough Transform}{39}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Common Fate Weights}{40}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Motion Grouping}{42}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Codebook}{44}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Detection}{45}{section.4.5}
-\contentsline {section}{\numberline {4.6}Experimental Results}{46}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1} Campus-scene Detection }{49}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Wild-scene Detection}{53}{subsection.4.6.2}
-\contentsline {section}{\numberline {4.7}Conclusion}{58}{section.4.7}
-\contentsline {chapter}{\numberline {5}Pyramid Match Score for Detection}{59}{chapter.5}
-\contentsline {section}{\numberline {5.1}Pyramid Match}{59}{section.5.1}
-\contentsline {section}{\numberline {5.2}Pyramid Match Score}{60}{section.5.2}
-\contentsline {chapter}{\numberline {6}Conclusion and outlook}{61}{chapter.6}
-\contentsline {chapter}{Bibliography}{62}{chapter*.7}
+\contentsline {section}{\numberline {3.5}Experimental Results}{23}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}First Experiment}{23}{subsection.3.5.1}
+\contentsline {subsubsection}{Data}{23}{section*.4}
+\contentsline {subsubsection}{Implementation Settings}{23}{section*.5}
+\contentsline {subsubsection}{Detection Results}{25}{section*.6}
+\contentsline {subsection}{\numberline {3.5.2}Second Experiment}{27}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Experimental results on data collected by ordinary cameras}{32}{section.3.6}
+\contentsline {section}{\numberline {3.7}Chapter Conclusion}{34}{section.3.7}
+\contentsline {chapter}{\numberline {4}Grouping of object parts by motion for detection}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{35}{section.4.1}
+\contentsline {section}{\numberline {4.2}Related Work}{39}{section.4.2}
+\contentsline {section}{\numberline {4.3}Application Background}{41}{section.4.3}
+\contentsline {section}{\numberline {4.4}Common Fate Hough Transform}{41}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Common Fate Weights}{42}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Motion Grouping}{44}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Codebook}{46}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Detection}{47}{section.4.5}
+\contentsline {section}{\numberline {4.6}Experimental Results}{50}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1} Campus-scene Detection }{50}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Wild-scene Detection}{55}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}Chapter Conclusion}{60}{section.4.7}
+\contentsline {chapter}{\numberline {5}Pyramid Matching Score for Detection}{61}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{61}{section.5.1}
+\contentsline {section}{\numberline {5.2}Related Work}{62}{section.5.2}
+\contentsline {section}{\numberline {5.3}Detection}{62}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Pyramid Matching}{62}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Pyramid Matching Score}{63}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Experimental Results}{63}{section.5.4}
+\contentsline {section}{\numberline {5.5}Chapter Conclusion}{63}{section.5.5}
+\contentsline {chapter}{\numberline {6}Conclusion and outlook}{64}{chapter.6}
+\contentsline {chapter}{Bibliography}{65}{chapter*.7}

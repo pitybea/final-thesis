@@ -31,6 +31,11 @@ H.~Bay, T.~Tuytelaars, and L.~Van~Gool.
 \newblock Surf: Speeded up robust features.
 \newblock In {\em ECCV}, pages 404--417, 2006.
 
+\bibitem{surf}
+H.~Bay, T.~Tuytelaars, and L.~Van~Gool.
+\newblock Speeded-up robust features (surf).
+\newblock {\em CVIU}, 110(3):346--359, June 2008.
+
 \bibitem{scontext}
 S.~Belongie, J.~Malik, and J.~Puzicha.
 \newblock Shape matching and object recognition using shape contexts.
@@ -101,6 +106,11 @@ R.~Fergus, P.~Perona, and A.~Zisserman.
 \newblock Object class recognition by unsupervised scale-invariant learning.
 \newblock In {\em CVPR}, pages II: 264--271, 2003.
 
+\bibitem{uspl}
+R.~Fergus, P.~Perona, and A.~Zisserman.
+\newblock Object class recognition by unsupervised scale-invariant learning.
+\newblock In {\em CVPR}, pages 264--271, 2003.
+
 \bibitem{dp}
 T.~S. Ferguson.
 \newblock A bayesian analysis of some nonparametric problems.
@@ -122,6 +132,12 @@ S.~Gould, R.~Fulton, and D.~Koller.
 \newblock Decomposing a scene into geometric and semantically consistent
   regions.
 \newblock In {\em ICCV}, 2009.
+
+\bibitem{pmk}
+Kristen Grauman and Trevor Darrell.
+\newblock The pyramid match kernel: Discriminative classification with sets of
+  image features.
+\newblock In {\em ICCV}, pages 1458--1465, 2005.
 
 \bibitem{ac8}
 C.H. Gu, J.J. Lim, P.~Arbelaez, and J.~Malik.
@@ -184,6 +200,13 @@ Christoph~H. Lampert, Matthew~B. Blaschko, and Thomas Hofmann.
   localization.
 \newblock {\em PAMI}, 31(12):2129--2142, 2009.
 
+\bibitem{spmk}
+Svetlana Lazebnik, Cordelia Schmid, and Jean Ponce.
+\newblock Beyond bags of features: Spatial pyramid matching for recognizing
+  natural scene categories.
+\newblock In {\em CVPR}, pages 2169--2178, Washington, DC, USA, 2006. IEEE
+  Computer Society.
+
 \bibitem{ac27}
 A.~Lehmann, B.~Leibe, and L.J. Van~Gool.
 \newblock Fast prism: Branch and bound hough transform for object class
@@ -211,6 +234,11 @@ B.~Leibe, K.~Schindler, and L.J. Van~Gool.
 \newblock Coupled detection and trajectory estimation for multi-object
   tracking.
 \newblock In {\em ICCV}, pages 1--8, 2007.
+
+\bibitem{lbt1}
+Ce~Liu, Jenny Yuen, and Antonio Torralba.
+\newblock Nonparametric scene parsing via label transfer.
+\newblock {\em PAMI}, 33(12):2368--2382, December 2011.
 
 \bibitem{o12}
 D.~G. Lowe.
@@ -329,6 +357,11 @@ O.~Russakovsky and A.Y. Ng.
 Henry Schneiderman and Takeo Kanade.
 \newblock Object detection using the statistics of parts.
 \newblock {\em IJCV}, 56(3):151--177, 2004.
+
+\bibitem{kmts}
+John Shawe-Taylor and Nello Cristianini.
+\newblock {\em Kernel Methods for Pattern Analysis}.
+\newblock Cambridge University Press, New York, NY, USA, 2004.
 
 \bibitem{ac33}
 Chris Stauffer and W.~Eric~L. Grimson.

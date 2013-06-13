@@ -45,7 +45,6 @@ Detection",
     Title = {Detection and segmentation of moving objects in highly dynamic scenes},
     booktitle = {CVPR},
     Pages = {1--8},
-
     Year = {2007}
 }
 
@@ -84,15 +83,10 @@ Temporal Integration",
     abstract = {We consider tracking as a binary classification problem, where an ensemble of weak classifiers is trained online to distinguish between the object and the background. The ensemble of weak classifiers is combined into a strong classifier using AdaBoost. The strong classifier is then used to label pixels in the next frame as either belonging to the object or the background, giving a confidence map. The peak of the map and, hence, the new position of the object, is found using mean shift. Temporal coherence is maintained by updating the ensemble with new weak classifiers that are trained online during tracking. We show a realization of this method and demonstrate it on several video sequences},
     author = {Avidan, S.},
     booktitle = {PAMI},
-    citeulike-article-id = {1744044},
-    citeulike-linkout-0 = {http://dx.doi.org/10.1109/TPAMI.2007.35},
-    citeulike-linkout-1 = {http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4042701},
     doi = {10.1109/TPAMI.2007.35},
     journal = {PAMI},
     number = {2},
     pages = {261--271},
-    posted-at = {2008-10-03 21:47:09},
-    priority = {2},
     title = {Ensemble Tracking},
     url = {http://dx.doi.org/10.1109/TPAMI.2007.35},
     volume = {29},
@@ -103,13 +97,8 @@ Temporal Integration",
     abstract = {In this paper, we present a system that integrates fully automatic scene geometry estimation, 2D object detection, 3D localization, trajectory estimation, and tracking for dynamic scene interpretation from a moving vehicle. Our sole input are two video streams from a calibrated stereo rig on top of a car. From these streams, we estimate structure-from-motion (SfM) and scene geometry in real-time. In parallel, we perform multi-view/multi-category object recognition to detect cars and pedestrians in both camera images. Using the SfM self-localization, 2D object detections are converted to 3D observations, which are accumulated in a world coordinate frame. A subsequent tracking module analyzes the resulting 3D observations to find physically plausible spacetime trajectories. Finally, a global optimization criterion takes object-object interactions into account to arrive at accurate 3D localization and trajectory estimates for both cars and pedestrians. We demonstrate the performance of our integrated system on challenging real-world data showing car passages through crowded city areas.},
     author = {Leibe, B. and Cornelis, N. and Cornelis, K. and Van Gool, L.},
     booktitle = {CVPR},
-
-
-    journal = {Computer Vision and Pattern Recognition, 2007. CVPR '07. IEEE Conference on},
     keywords = {detection, geometry, global-optimization, tracking},
     pages = {1--8},
-    posted-at = {2009-05-11 10:22:29},
-    priority = {3},
     title = {Dynamic 3D Scene Analysis from a Moving Vehicle},
     url = {http://dx.doi.org/10.1109/CVPR.2007.383146},
     year = {2007}
@@ -118,10 +107,7 @@ Temporal Integration",
 @inproceedings{bb23,
     author = {Bray, M. and Kohli, P. and Torr, P.},
     booktitle = {ECCV},
-    citeulike-article-id = {1403677},
     pages = {642--655},
-    posted-at = {2008-10-09 13:28:27},
-    priority = {2},
     title = {PoseCut: Simultaneous Segmentation and 3D Pose Estimation of Humans Using Dynamic Graph-Cuts.},
     year = {2006}
 }
@@ -281,17 +267,13 @@ Segmentation",
         MONTH = "May",
         PAGES = "259-289",
         BIBSOURCE = "http://www.visionbib.com/bibliography/match541.html#TT50243"}
+
 @techreport{ij2,
     address = {Carnegie Mellon University},
     author = {Tomasi, C. and Kanade, T.},
-    citeulike-article-id = {1649193},
-    citeulike-linkout-0 = {http://www.google.com/search?q=KLT+Detection+and+tracking+of+point},
-    citeulike-linkout-1 = {http://www.ces.clemson.edu/~stb/klt/tomasi-kanade-techreport-1991.pdf},
     howpublished = {Tech. Report CMU-CS-91-132},
     keywords = {detection, feature, interest-point, klt, thesis, tracking},
     month = {April},
-    posted-at = {2007-09-12 21:17:56},
-    priority = {0},
     title = {Detection and tracking of point features},
     url = {http://www.google.com/search?q=KLT+Detection+and+tracking+of+point},
     year = {1991}
@@ -501,7 +483,6 @@ ISSN={1063-6919}, }
         title = {Robust Object Tracking by Hierarchical Association of Detection Responses.},
         author = {Chang Huang and Bo Wu and R. Nevatia},
         booktitle = {ECCV},
-        crossref = {conf/eccv/2008-2},
         pages = {788-801},
         year = "2008",
         url = {http://dblp.uni-trier.de/db/conf/eccv/eccv2008-2.html#HuangWN08},
@@ -556,17 +537,7 @@ ISSN={1063-6919}, }
     pages = {518--529}
 }
 
-@article{hdp,
-        AUTHOR = "Y. W. Teh and M. I. Jordan and M. J. Beal and D. M. Blei.",
-        TITLE = "Hierarchical Dirichlet Process",
 
-        journal = {Journal of the American Statistical Association},
-
-        YEAR = "2006",
-
-
-        PAGES = "1566-1581",
-       }
 
 @Article{ha,
 author = {H. W. Kuhn},
@@ -980,9 +951,9 @@ Understanding Multi-Object Traffic Scenes",
   @misc{ siri,
    author = "Wikipedia",
    title = {{Siri}},
-   howpublished = "\url{
-http://en.wikipedia.org/wiki/Siri_(software)}",
+   howpublished = "\url{http://en.wikipedia.org/wiki/Siri_(software)}",
    note = "[Online; accessed 22-May-2013]"
+
  }
  @inproceedings{face,
   author    = {Nikolay Degtyarev and
@@ -1022,13 +993,18 @@ http://en.wikipedia.org/wiki/Siri_(software)}",
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
-@ARTICLE{hdp,
-    author = {Yee Whye Teh and Michael I. Jordan and Matthew J. Beal and David M. Blei},
-    title = {Hierarchical Dirichlet processes},
-    journal = {Journal of the American Statistical Association},
-    year = {2004},
-    volume = {101}
-}
+@article{hdp,
+        AUTHOR = "Y. W. Teh and M. I. Jordan and M. J. Beal and D. M. Blei.",
+        TITLE = "Hierarchical Dirichlet Process",
+
+        journal = {Journal of the American Statistical Association},
+
+        YEAR = "2006",
+
+
+        PAGES = "1566-1581",
+       }
+
 
 @article{dlearn,
   author    = {Yoshua Bengio},
@@ -1168,3 +1144,60 @@ address = {Washington, DC, USA}
         YEAR = "2009",
         PAGES = "280-287",
         BIBSOURCE = "http://www.visionbib.com/bibliography/active681.html#TT61751"}
+
+Authors: 	Svetlana Lazebnik 	University of Illinois
+	Cordelia Schmid 	INRIA Rhone-Alpes Montbonnot, France
+	Jean Ponce 	Ecole Normale Sup└rieure Paris, France
+Published in:
+， Proceeding
+CVPR '06 Proceedings of the 2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition - Volume 2
+Pages 2169-2178
+IEEE Computer Society Washington, DC, USA ?2006
+table of contents ISBN:0-7695-2597-0 doi>10.1109/CVPR.2006.68
+	
+Beyond Bags of Features: Spatial Pyramid Matching for Recognizing Natural Scene Categories 	2006 Article
+Bibliometrics Data  Bibliometrics
+， Downloads (6 Weeks): 0
+， Downloads (12 Months): 0
+， Downloads (cumulative): 0
+， Citation Count: 545
+
+
+	
+Tools and Resources
+
+    Save to Binder
+    Export Formats:
+        BibTeX
+        EndNote
+        ACM Ref
+
+Publisher Site Publisher Site
+
+Share:
+Share on email Share on facebook Share on google_plusone_share Share on twitter Share on researchgate Share on reddit | More Sharing Services
+Tags: computer vision object recognition performance
+feedback Feedback | Switch to single page view (no tabs)
+Abstract	Authors	References	Cited By	Index Terms	Publication	Reviews	Comments	Table of Contents
+This paper presents a method for recognizing scene categories based on approximate global geometric correspondence. This technique works by partitioning the image into increasingly fine sub-regions and computing histograms of local features found inside each sub-region. The resulting "spatial pyramid" is a simple and computationally efficient extension of an orderless bag-of-features image representation, and it shows significantly improved performance on challenging scene categorization tasks. Specifically, our proposed method exceeds the state of the art on the Caltech-101 database and achieves high accuracy on a large database of fifteen natural scene categories. The spatial pyramid framework also offers insights into the success of several recently proposed image descriptions, including Torralba's "gist" and Lowe's SIFT descriptors.
+
+Powered by The ACM Guide to Computing Literature
+
+The ACM Digital Library is published by the Association for Computing Machinery. Copyright ? 2013 ACM, Inc.
+Terms of Usage   Privacy Policy   Code of Ethics   Contact Us
+
+Useful downloads: Adobe Acrobat    QuickTime    Windows Media Player    Real Player
+BibTeX | BibTeX (beta) | EndNote | ACM Ref
+
+@inproceedings{spmk,
+ author = {Lazebnik, Svetlana and Schmid, Cordelia and Ponce, Jean},
+ title = {Beyond Bags of Features: Spatial Pyramid Matching for Recognizing Natural Scene Categories},
+ booktitle = {CVPR},
+
+ year = {2006},
+
+ pages = {2169--2178},
+
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+}

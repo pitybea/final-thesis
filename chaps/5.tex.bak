@@ -1,5 +1,16 @@
 \chapter{Pyramid Match Score for Detection}
-\section{Pyramid Match}
+\label{chp5}
+
+\section{Introduction}
+
+\section{Background}
+\label{back5}
+\section{Related Work}
+\label{rw5}
+\section{Detection}
+\label{dt5}
+
+\subsection{Pyramid Match}
 
 The Pyramid Match method is designed to find the best one-one match between two point(feature) sets in a heuristic manner.
 
@@ -24,8 +35,14 @@ However, in order to know the sum of distances between matched pairs, the distan
 
 The Pyramid Match method is very efficient.
 
-\section{Pyramid Match Score}
+\subsection{Pyramid Match Score}
 
 The Pyramid Match Score measures the confidence about one rectangle contains an object of a given type. One "point" set contains all the image features contained in the rectangle to be measured, the other "point" set is a "super template". The template is trained by inserting all features from training images.
 
-When SIFT is used, PCA is used to do dimension reduction. And the position information of each feature can be used by adding them as two extra dimensions of the feature. 
+When SIFT is used, PCA is used to do dimension reduction. And the position information of each feature can be used by adding them as two extra dimensions of the feature.
+
+\section{Experimental Results}
+\label{exp5}
+
+\section{Conclusion}
+\label{conc5}
