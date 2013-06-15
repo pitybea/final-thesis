@@ -333,6 +333,12 @@ Sinno~Jialin Pan and Qiang Yang.
 \newblock {\em IEEE Transactions on Knowledge and Data Engineering},
   22(10):1345--1359, 2010.
 
+\bibitem{voc}
+PASCAL.
+\newblock {Visual Object Classes Challenge 2010 }.
+\newblock \url{http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2010}.
+\newblock [Online; accessed 22-May-2013].
+
 \bibitem{spm}
 Hamed Pirsiavash and Deva Ramanan.
 \newblock Steerable part models.
@@ -368,6 +374,17 @@ Henry Schneiderman and Takeo Kanade.
 John Shawe-Taylor and Nello Cristianini.
 \newblock {\em Kernel Methods for Pattern Analysis}.
 \newblock Cambridge University Press, New York, NY, USA, 2004.
+
+\bibitem{lss}
+Eli Shechtman and Michal Irani.
+\newblock Matching local self-similarities across images and videos.
+\newblock In {\em CVPR}, June 2007.
+
+\bibitem{knct}
+J.~Shotton, A.~Fitzgibbon, M.~Cook, T.~Sharp, M.~Finocchio, R.~Moore,
+  A.~Kipman, and A.~Blake.
+\newblock Real-time human pose recognition in parts from single depth images.
+\newblock In {\em CVPR}, pages 1297--1304, 2011.
 
 \bibitem{ac33}
 Chris Stauffer and W.~Eric~L. Grimson.

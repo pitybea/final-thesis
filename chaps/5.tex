@@ -7,7 +7,7 @@ The results of chapter \ref{chp4} is promising on the two experimental datasets,
 
 Detection methods still mainly follow the sliding-window schema or have similar structure with Hough transforms. While the focus of the later is to infer about object status by use each online feature as query against a well-trained codebook. These methods fail to consider target objects as a whole at the beginning. The problem of sliding-window is that it often ignores positional information when also following bag of features~\cite{bgf}. In the method of \cite{spmk}, positional information is considered in the kernel function. Here the kernel function\cite{kmts} is used in classifiers, which are usually support vector machines.
 
-The method proposed here consider object as a whole during detection. 
+The method proposed here consider object as a whole during detection.
 
 
 This Chapter is organized as follows. Section \ref{rw5} reviews most related work. Section \ref{dt5} propose the training and detecting procedure. Section \ref{exp5} gives experimental results. Section \ref{conc5} concludes this chapter.
@@ -82,7 +82,6 @@ Sliding-window schema is employed to check with the defined Pyramid Matching Sco
 \includegraphics[scale=0.75]{test-31_good.jpg}
 \includegraphics[scale=0.75]{test-3_good.jpg}
 \includegraphics[scale=0.75]{test-5_good.jpg}
-\includegraphics[scale=0.75]{test-8_good.jpg}
 
 
 \caption[Detection Results on UIUC cars]{Detection results on UIUC cars~\cite{cds}. Yellow color marks ground truths, while blue marks detections.}

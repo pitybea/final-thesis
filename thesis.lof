@@ -2,65 +2,65 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Target objects and detection results}}{12}{figure.3.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{12}{figure.3.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{12}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Keypoint detection}}{15}{figure.3.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{15}{figure.3.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{15}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Keypoint verification and clustering}}{17}{figure.3.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{17}{figure.3.3}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{17}{figure.3.3}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{17}{figure.3.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{17}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Keypoint cluster verification by appearance}}{22}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Keypoint detection comparison}}{24}{figure.3.5}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{24}{figure.3.5}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{24}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Positive and negative training examples.}}{25}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Original data and detection results}}{26}{figure.3.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{26}{figure.3.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{26}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Keypoint verification and clustering}}{26}{figure.3.8}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{26}{figure.3.8}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{26}{figure.3.8}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{26}{figure.3.8}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{26}{figure.3.8}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Target objects and detection results}}{13}{figure.3.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{13}{figure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{13}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Keypoint detection}}{16}{figure.3.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{16}{figure.3.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{16}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Keypoint verification and clustering}}{18}{figure.3.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{18}{figure.3.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{18}{figure.3.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{18}{figure.3.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{18}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Keypoint cluster verification by appearance}}{21}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Keypoint detection comparison}}{25}{figure.3.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{25}{figure.3.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{25}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Positive and negative training examples.}}{26}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Original data and detection results}}{27}{figure.3.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{27}{figure.3.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{27}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Keypoint verification and clustering}}{28}{figure.3.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{28}{figure.3.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{28}{figure.3.8}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{28}{figure.3.8}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{28}{figure.3.8}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Keypoint cluster verification by appearance}}{29}{figure.3.9}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Keypoint cluster tracking}}{29}{figure.3.10}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Detection results}}{30}{figure.3.11}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Detection results}}{31}{figure.3.12}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Keypoint verification}}{33}{figure.3.13}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Evaluation of keypoint verification}}{33}{figure.3.14}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Detection results}}{33}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Keypoint verification}}{35}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Evaluation of keypoint verification}}{36}{figure.3.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Merit of the proposed method}}{38}{figure.4.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{38}{figure.4.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{38}{figure.4.1}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{38}{figure.4.1}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{38}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Effect of the proposed weight}}{45}{figure.4.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{45}{figure.4.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{45}{figure.4.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{45}{figure.4.2}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{45}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Example Hough images}}{49}{figure.4.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{49}{figure.4.3}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{49}{figure.4.3}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{49}{figure.4.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{49}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Images for training}}{51}{figure.4.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{51}{figure.4.4}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{51}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Motion grouping results}}{52}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Inference procedure}}{53}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparisons with benchmark method}}{54}{figure.4.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{54}{figure.4.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{54}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Detection results}}{56}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Effect of the proposed weight assignment}}{57}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Example Hough images}}{58}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{59}{figure.4.11}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Merit of the proposed method}}{41}{figure.4.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{41}{figure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{41}{figure.4.1}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{41}{figure.4.1}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{41}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Effect of the proposed weight}}{48}{figure.4.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{48}{figure.4.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{48}{figure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{48}{figure.4.2}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{48}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Example Hough images}}{53}{figure.4.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{53}{figure.4.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{53}{figure.4.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{53}{figure.4.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{53}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Images for training}}{55}{figure.4.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{55}{figure.4.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{55}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Motion grouping results}}{55}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Inference procedure}}{56}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparisons with benchmark method}}{57}{figure.4.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{57}{figure.4.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{57}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Detection results}}{58}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Effect of the proposed weight assignment}}{60}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Example Hough images}}{61}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{62}{figure.4.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Detection Results on UIUC cars}}{64}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Result evaluation}}{65}{figure.5.2}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Detection Results on UIUC cars}}{67}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Result evaluation}}{68}{figure.5.2}
 \addvspace {10\p@ }

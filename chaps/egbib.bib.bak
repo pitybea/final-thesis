@@ -1209,7 +1209,7 @@ address = {Washington, DC, USA}
     pages = {1458--1465}
 }
 
-@article{Agarwal:2004:LDO:1024873.1025086,
+@article{cds,
  author = {Agarwal, Shivani and Awan, Aatif and Roth, Dan},
  title = {Learning to Detect Objects in Images via a Sparse, Part-Based Representation},
  journal = {PAMI},
@@ -1224,4 +1224,12 @@ address = {Washington, DC, USA}
  publisher = {IEEE Computer Society},
  address = {Washington, DC, USA},
  keywords = {Index Terms- Object detection, Index Terms- Object detection, image representation, machine learning, evaluation/methodology., evaluation/methodology., image representation, machine learning},
+}
+
+@INPROCEEDINGS{knct,
+   author = {J. Shotton and A. Fitzgibbon and M. Cook and T. Sharp and M. Finocchio and R. Moore and A. Kipman and A. Blake},
+    title = {Real-time human pose recognition in parts from single depth images},
+    booktitle = {CVPR},
+    pages = {1297-1304},
+    year = {2011}
 }
