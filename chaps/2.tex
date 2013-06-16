@@ -53,8 +53,8 @@ When talking about the abstraction level of computer vision, the area of text mi
 Together with lots of researchers in computer vision, the author of this thesis believe achievements in abstraction of a higher level will help with the results in low abstraction levels. Something which can only be proven by time is that if the computer vision problems of low abstraction levels draw too much attention, it will not benefit the area.
 
 
-Taking the problems of multi-class detection as example, routines of different types will be discussed. One routine is to explore detection of object from multiple, even 100,000~\cite{408}, classes at the same time. This kind of routine has been followed a lot by researchers, especially those encouraged by some recent competitions on visual tasks, e.g., VOC2010~\cite{voc}. Significant amount of engineering efforts are needed to win this kind of competitions. Another routine which might not be able to win in such competitions is that
-development of mechanisms of high abstraction level for single-class detection and mechanisms to separate objects from different classes. To the best of the author's knowledge, few recent researchers follow the later routine. The problem with the first routine is that, methods will be so limited to the training dataset, and mechanisms at higher levels which are very valuable are not easy to explore. The author's approval towards competitions like VOC2010 is very limited.
+Taking the problems of multi-class detection as example, routines of different types will be discussed. One routine is to explore detection of object from multiple, even 100,000~\cite{408}, classes at the same time. This kind of routine has been followed a lot by researchers, especially those encouraged by some recent competitions on visual tasks, e.g., VOC2012~\cite{voc}. Significant amount of engineering efforts are needed to win this kind of competitions. Another routine which might not be able to win in such competitions is that
+development of mechanisms of high abstraction level for single-class detection and mechanisms to separate objects from different classes. To the best of the author's knowledge, few recent researchers follow the later routine. The problem with the first routine is that, methods will be so limited to the training dataset, and mechanisms at higher levels which are very valuable are not easy to explore. The author's approval towards competitions like VOC2012 is very limited.
 
 Actually, perceptual mechanisms in human are consistent with the above arguments. Recall how human are capable detecting previously unseen objects, while they acquire knowledge of target objects through textual descriptions.
 
@@ -67,7 +67,7 @@ Image features are very important. Simple image features include features in the
 The invariance under illumination, scale, and rotation are basic requirement for image features, while some keypoint features~\cite{ij2,o12,o14,o15,o2} fulfill this requirement. Image features which encode global positional information perform well in human detection, i.e., Histograms of Oriented
 Gradients~\cite{ij4}. Differentials at different orders can also be used as descriptive features~\cite{ij6}.
 
- 
+
 
 \subsection{Decision Procedure}
 Generally, robustness and computational efficiency are the two main pursues in proposing image features. Based or image features, how decisions are made are also of great importance. Dimension reduction methods like principle component analysis, and feature selection methods can be considered as a glue layer between representative models and decision making procedure, which enhance both robustness and processing efficiency.
