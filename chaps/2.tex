@@ -30,27 +30,27 @@ So what stops the object detection methods of computers from performing as good 
 \end{table}
 
 When compared with human, computer will win at almost every aspect of hardware, as shown in \ref{c2tb:tb1}. Besides visual sensors, new sensors are continuously developed for computers, and computers have so many choices for sensors of very high quality. What is worth mentioning is how Microsoft's Kinect advances pose recognition~\cite{knct}. Especially, for computational ability, \cite{bpw} believes human brain has a raw computational power between $10^{13}$ and $10^{16}$ operations per second, and modern computers can perform much better.
- 
- As for representative model, there is no obvious evidence which proves human is doing better than computer. However the author believe human shall perform better than computer in the aspects of software, which then explains why human perform better in multiple visual tasks. And only when the vision researchers also believe so, do they develop  so many new detection methods. And the  dividing of functionalities  are generally based on computer, while in human, two or more of them might work together.
+
+ As for representative model, there is no obvious evidence which proves human is doing better than computer. While representations of human has long been working as inspirations and benchmarks for those of computer~\cite{rbm}. However the author believe human shall perform better than computer in the aspects of software, which then explains why human perform better in multiple visual tasks. And only when the vision researchers also believe so, do they develop  so many new detection methods. And the  dividing of functionalities  are generally based on computer, while in human, two or more of them might work together.
 
 Human babies are taken good care of, and trained to perform very simple visual tasks for months with large amount of examples, which makes the training quality very solid. The performance of new born babies also lead to considerations about to what degree are the visual abilities decided by genes. If the training procedure has taken as long as millions of years, are there possibilities for computer to win in future?
 
-The success of voice recognition and the successful deployment in industry~\cite{siri} encourage vision researchers. Also new sensors advance recognition performance, such as Kinect, which can hopefully fill the gap of representative models' quality between computers and human. Object recognition methods based on 2D images with 3D model~\cite{r3d} also makes it more possible for computer to share same representative models.  Computational power can be used to make up with the short slab of training. For example, training one model for one hour with thousands of computers is feasible with parrel training. The resent deep learning~\cite{dlearn} methods try to fusion representative model with decision procedure to act more like what human might do. These new achievements are expected to fill up the gap between human and computer in aspects of representative model, decision procedure, and training quality.
+The success of auditory speech recognition and the successful deployment in industry~\cite{siri} encourage vision researchers. Also new sensors advance recognition performance, such as Kinect, which can hopefully fill the gap of representative models' quality between computers and human. Object recognition methods based on 2D images with 3D model~\cite{r3d} also makes it more possible for computer to share same representative models.  Computational power can be used to make up with the short slab of training. For example, training one model for relative small amount of time with thousands of computers~\cite{dnnnn} is feasible with parrel training. The resent deep learning~\cite{dlearn} methods try to fusion representative model with decision procedure to act more like what human might do. These new achievements are expected to fill up the gap between human and computer in aspects of representative model, decision procedure, and training quality.
 
 
 
 While the methods proposed in this methods explore the information which can be further made use of, i.e., fusion of temporal and visual information, and the mutual information of different parts of the same object. The efforts here shall belong to decision procedure, and information fusion mechanism.
 
 \section{Artificial Intelligence}
-AI (Artificial Intelligence) includes a very wide range of topics, of which, computer vision is comparably difficult. 
+AI (Artificial Intelligence) includes a very wide range of topics, of which, computer vision is comparably difficult.
 
-The author of this thesis is positive about computer can outperform humans in visual tasks for the reasons in the previous section. Then if we move towards the correct direction, one step forward will lead to one step nearer, and vice versa. 
+The author of this thesis is positive about computer can outperform humans in visual tasks for the reasons in the previous section. Then if we move towards the correct direction, one step forward will lead to one step nearer, and vice versa.
 
 Needless to say, the core of Artificial Intelligence is operations at high abstraction levels.
 
-When talking about the abstraction level of computer vision, the area of text mining can be used as benchmark, though such comparisons will not be fair. Texts themselves are at a higher abstraction level than images. And the achievements in text understanding will remind the researchers of computer vision about the unsatisfactory results of turning images to semantic labels. 
+When talking about the abstraction level of computer vision, the area of text mining can be used as benchmark, though such comparisons will not be fair. Texts themselves are at a higher abstraction level than images. And the achievements in text understanding will remind the researchers of computer vision about the unsatisfactory results of turning images to semantic labels.
 
-Together with most of researchers in computer vision, the author of this thesis believe achievements in abstraction of a higher level will help with the results in low abstraction levels. Something which can only be proven by time is that if the computer vision problems of low abstraction levels draw too much attention, it will not benefit the area.
+Together with lots of researchers in computer vision, the author of this thesis believe achievements in abstraction of a higher level will help with the results in low abstraction levels. Something which can only be proven by time is that if the computer vision problems of low abstraction levels draw too much attention, it will not benefit the area.
 
 
 Taking the problems of multi-class detection as example, routines of different types will be discussed. One routine is to explore detection of object from multiple, even 100,000~\cite{408}, classes at the same time. This kind of routine has been followed a lot by researchers, especially those encouraged by some recent competitions on visual tasks, e.g., VOC2010~\cite{voc}. Significant amount of engineering efforts are needed to win this kind of competitions. Another routine which might not be able to win in such competitions is that
@@ -62,10 +62,12 @@ Actually, perceptual mechanisms in human are consistent with the above arguments
 
 In the previous section, the possible reason why human perform better in detection is discussed. The main limits of computer are of software. Based on this, researchers present new detection methods or new methods for supporting detection, which includes: 1) new image feature or new representative model, 2) new decision procedures, or 3) better searching techniques in solution space.
 \subsection{Image Features}
-Image features are very important. Simple image features include features in the form of keypoints, image patches, edges,  silhouette, shape~\cite{scontext}, or textures. There are also frameworks for combining multiple different image features or information from multiple channels~\cite{regionc,bgf,lbp,lss}, and these belong to image features at middle level. At a even higher level, image features can be  organized in patterns. For example, modeling human body as a stick model~\cite{stickb}.
+Image features are very important. Simple image features include features in the form of keypoints, image patches, edges,  silhouette, shape~\cite{scontext}, or textures. There are also frameworks for combining multiple different image features or information from multiple channels~\cite{regionc,bgf,lbp,lss}, and these belong to image features at middle level~\cite{midf}. At a even higher level, image features can be  organized in patterns. For example, modeling human body as a stick model~\cite{stickb}.
 
 The invariance under illumination, scale, and rotation are basic requirement for image features, while some keypoint features~\cite{ij2,o12,o14,o15,o2} fulfill this requirement. Image features which encode global positional information perform well in human detection, i.e., Histograms of Oriented
 Gradients~\cite{ij4}. Differentials at different orders can also be used as descriptive features~\cite{ij6}.
+
+ 
 
 \subsection{Decision Procedure}
 Generally, robustness and computational efficiency are the two main pursues in proposing image features. Based or image features, how decisions are made are also of great importance. Dimension reduction methods like principle component analysis, and feature selection methods can be considered as a glue layer between representative models and decision making procedure, which enhance both robustness and processing efficiency.
@@ -78,6 +80,8 @@ One very promising method for decision making is deep learning~\cite{dlearn}. Th
 The core of machine learning methods is still the model. Training data are used to estimate  parameters of the model, and the model is then used to make decisions on the testing data. The model of deep learning is a multi-layer network. The later one layer is, usually it has less nodes, and the information it deals with is more abstract.
 
 The earlier layers of deep-architecture networks act as feature extraction module. The first layer defines rules of how to make abstraction on the raw data. And these layers can be trained using  data from other domains. This is why deep learning methods can make use not only domain-specific information. Another aspect which separate deep learning methods from traditional neural networks is during the training procedure. While traditional neural networks are trained as a whole, which include the parameters for lots of parameters, and the requirement for extremely large amount of data is fierce. The training procedure for deep learning methods is layer-wised. There is a merit for evaluate the training quality for each layer. And after one layer is trained, the output can be used to train the next layer. This means that, each time only a few parameters need to be estimated, which is more robust and efficient, and avoid the requirement for very large amount of data. When the number of layers increase, the abstraction level of the original data enhance, and decisions are easier.
+
+
 \subsection{Solution Space Explore}
 Besides proposing representative models, and decision procedures, there are also work~\cite{408,spm,ciod} focusing on how the solution space from the decision making procedure can be explored. The methods following the sliding-window schema need to consider each differently scaled sub-image of a target image, to answer wether this sub-image contains an object of interest or not, this amount is extremely large, and even enumerate all the sub-windows is computationally infeasible.
 
@@ -98,6 +102,7 @@ Bag of image features~\cite{bgf} is an important advance for object detection. B
 
 Some pioneer work also consider about recognizing objects in 3D space. The method proposed in ~\cite{r3d}, tracks keypoints of the same object, and generate feature accordingly, which will include 3D information of the object, and feed this feature to decision step, which makes the results very appealing.
 
+Also excellent performance of deep learning inspired new methods to reconsider about object detection. The discover of invariants and learning of a detector from unlabeled data are explored by \cite{dnnnn}.
 
 
 Still, one of the challenging subjects in object detection is rotation-aware detection. Lots of object detection methods ignore scale and rotation changes by using of scale- and rotation-invariant image features, i.e. sift.

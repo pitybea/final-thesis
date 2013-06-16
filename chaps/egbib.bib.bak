@@ -1233,3 +1233,37 @@ address = {Washington, DC, USA}
     pages = {1297-1304},
     year = {2011}
 }
+@misc{ voc,
+   author = " PASCAL",
+   title = {{Visual Object Classes Challenge 2010 }},
+   howpublished = "\url{http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2010}",
+   note = "[Online; accessed 22-May-2013]"
+ }
+
+
+ @inproceedings{lss,
+  author    = {Eli Shechtman and Michal Irani},
+  title     = {Matching Local Self-Similarities across Images and Videos},
+  booktitle = {CVPR},
+  month     = {June},
+  year      = {2007},
+  ee        = {www.wisdom.weizmann.ac.il/~vision/SelfSimilarities.html},
+  }
+
+  @inproceedings{dnnnn,
+  author    = {Quoc V. Le and
+               Marc'Aurelio Ranzato and
+               Rajat Monga and
+               Matthieu Devin and
+               Greg Corrado and
+               Kai Chen and
+               Jeffrey Dean and
+               Andrew Y. Ng},
+  title     = {Building high-level features using large scale unsupervised
+               learning},
+  booktitle = {ICML},
+  year      = {2012},
+  ee        = {http://icml.cc/discuss/2012/73.html},
+  crossref  = {DBLP:conf/icml/2012},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}

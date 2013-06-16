@@ -547,7 +547,7 @@ The confusion matrices are given in Figure~\ref{fig:pr:b}. For clarity of the co
 \caption[Detection results]{Results. Red crosses mark the centers for leopards and blue crosses mark the centers for tigers.}
 \label{fig:bgdr}
 \end{figure}
-\section{Conclusion}
+\section{Chapter Conclusion}
 \label{sum4}
 The computational ability of human beings is limited, while the ability to detect is far beyond machines. Thus, it is very possible that this detection ability benefits from multiple perceptual mechanisms. By using one of these mechanisms, we propose a detection method. By embedding motion grouping results into the voting schema of hough transform, the method is capable to distinguish near objects' positions, to distinguish similar objects' labels, and to maintain detection rate with a noisy codebook. The success of this method further demonstrate the advancement of perceptual mechanisms in human beings. And the success of this method will help with detection methods in ITS areas.
 % conference papers do not normally have an appendix

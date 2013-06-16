@@ -67,6 +67,13 @@ T.~Brox and J.~Malik.
 \newblock Object segmentation by long term analysis of point trajectories.
 \newblock In {\em ECCV}, pages V: 282--295, 2010.
 
+\bibitem{rbm}
+Charles~F. Cadieu, Ha~Hong, Dan Yamins, Nicolas Pinto, Najib~J. Majaj, and
+  James~J. DiCarlo.
+\newblock The neural representation benchmark and its evaluation on brain and
+  machine.
+\newblock {\em CoRR}, abs/1301.3530, 2013.
+
 \bibitem{ij4}
 N.~Dalal and B.~Triggs.
 \newblock Histograms of oriented gradients for human detection.
@@ -213,6 +220,12 @@ Svetlana Lazebnik, Cordelia Schmid, and Jean Ponce.
 \newblock In {\em CVPR}, pages 2169--2178, Washington, DC, USA, 2006. IEEE
   Computer Society.
 
+\bibitem{dnnnn}
+Quoc~V. Le, Marc'Aurelio Ranzato, Rajat Monga, Matthieu Devin, Greg Corrado,
+  Kai Chen, Jeffrey Dean, and Andrew~Y. Ng.
+\newblock Building high-level features using large scale unsupervised learning.
+\newblock In {\em ICML}, 2012.
+
 \bibitem{ac27}
 A.~Lehmann, B.~Leibe, and L.J. Van~Gool.
 \newblock Fast prism: Branch and bound hough transform for object class
@@ -339,6 +352,12 @@ PASCAL.
 \newblock \url{http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2010}.
 \newblock [Online; accessed 22-May-2013].
 
+\bibitem{midf}
+Nicolas Pinto, David Doukhan, James~J. DiCarlo, and David~D. Cox.
+\newblock A high-throughput screening approach to discovering good forms of
+  biologically inspired visual representation.
+\newblock {\em PLoS Computational Biology}, 5(11), 2009.
+
 \bibitem{spm}
 Hamed Pirsiavash and Deva Ramanan.
 \newblock Steerable part models.
@@ -385,6 +404,11 @@ J.~Shotton, A.~Fitzgibbon, M.~Cook, T.~Sharp, M.~Finocchio, R.~Moore,
   A.~Kipman, and A.~Blake.
 \newblock Real-time human pose recognition in parts from single depth images.
 \newblock In {\em CVPR}, pages 1297--1304, 2011.
+
+\bibitem{cfm}
+Lawrence~C. Sincich and Jonathan~C. Horton.
+\newblock {THE CIRCUITRY OF V1 AND V2: Integration of Color, Form, and Motion}.
+\newblock {\em Annual Review of Neuroscience}, 28(1):303--326, 2005.
 
 \bibitem{ac33}
 Chris Stauffer and W.~Eric~L. Grimson.

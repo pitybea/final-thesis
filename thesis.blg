@@ -8,5 +8,8 @@ A level-1 auxiliary file: chaps/6.aux
 The style file: plain.bst
 A level-1 auxiliary file: chaps/thanks.aux
 Database file #1: chaps/egbib.bib
+A bad cross reference---entry "dnnnn"
+refers to entry "DBLP:conf/icml/2012", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/icml/2012"
 Warning--empty institution in ij2
-(There was 1 warning)
+(There was 1 error message)
