@@ -11,5 +11,7 @@ Database file #1: chaps/egbib.bib
 A bad cross reference---entry "dnnnn"
 refers to entry "DBLP:conf/icml/2012", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/icml/2012"
+Warning--to sort, need author or key in spen
+Warning--empty author in spen
 Warning--empty institution in ij2
 (There was 1 error message)

@@ -7,7 +7,7 @@ The results of chapter \ref{chp4} is promising on the two experimental datasets,
 
 Detection methods still mainly follow the sliding-window schema or have similar structure with Hough transforms. While the focus of the later is to infer about object status by use each online feature as query against a well-trained codebook. These methods fail to consider target objects as a whole at the beginning. The problem of sliding-window is that it often ignores positional information when also following bag of features~\cite{bgf}. In the method of \cite{spmk}, positional information is considered in the kernel function. Here the kernel function\cite{kmts} is used in classifiers, which are usually support vector machines.
 
-The method proposed here consider object as a whole during detection. 
+The method proposed here consider object as a whole during detection.
 
 
 This Chapter is organized as follows. Section \ref{rw5} reviews most related work. Section \ref{dt5} propose the training and detecting procedure. Section \ref{exp5} gives experimental results. Section \ref{conc5} concludes this chapter.
@@ -68,23 +68,38 @@ Sliding-window schema is employed to check with the defined Pyramid Matching Sco
 
 \begin{figure}
 \centering
-\subfigure[]{
-\includegraphics[width=0.47\textwidth,bb=0 0 600 480]{PEssR.jpg}
-\label{fig:compa:a}}
-\subfigure[]{
-\includegraphics[width=0.47\textwidth,bb=0 0 720 576]{a56.jpg}
-\label{fig:compa:b}}
-\subfigure[]{
-\includegraphics[width=0.47\textwidth,bb=0 0 600 480]{Untitled-6.jpg}
-\label{fig:compa:c}}
-\subfigure[]{
-\includegraphics[width=0.47\textwidth,bb=0 0 600 480]{Untitled-4.jpg}
-\label{fig:compa:d}
-}
-\caption[Detection Results on UIUC cars]{Detection results on UIUC cars.}
+
+\includegraphics[scale=0.75]{test-0_good.jpg}
+\includegraphics[scale=0.75]{test-10_good.jpg}
+\includegraphics[scale=0.75]{test-14_good.jpg}
+\includegraphics[scale=0.75]{test-16_good.jpg}
+\includegraphics[scale=0.75]{test-20_good.jpg}
+\includegraphics[scale=0.75]{test-21_good.jpg}
+\includegraphics[scale=0.75]{test-22_good.jpg}
+\includegraphics[scale=0.75]{test-24_good.jpg}
+\includegraphics[scale=0.75]{test-29_good.jpg}
+\includegraphics[scale=0.75]{test-2_good.jpg}
+\includegraphics[scale=0.75]{test-31_good.jpg}
+\includegraphics[scale=0.75]{test-3_good.jpg}
+\includegraphics[scale=0.75]{test-5_good.jpg}
+
+
+\caption[Detection Results on UIUC cars]{Detection results on UIUC cars~\cite{cds}. Yellow color marks ground truths, while blue marks detections.}
 \label{fig:c5r}
 \end{figure}
 
+In Figure \ref{fig:c5r}, are some good results on UIUC cars. And new experiments will be added.
+\begin{figure}
+\centering
+
+\includegraphics[width=1\textwidth,bb=0 0 480 425]{pms.eps}
+
+
+\caption[Result evaluation]{Results evaluation on UIUC cars with different implementation parameters.}
+\label{fig:c52}
+\end{figure}
+
+In Figure \ref{fig:c52}, evaluations are given.
 
 \section{Chapter Conclusion}
 \label{conc5}

@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{spen}
+{Emergence of simple-cell receptive field properties by learning a sparse code
+  for natural images.}
+\newblock {\em Nature}, 381(6583):607--609, June 1996.
+
 \bibitem{cds}
 Shivani Agarwal, Aatif Awan, and Dan Roth.
 \newblock Learning to detect objects in images via a sparse, part-based
@@ -348,8 +353,8 @@ Sinno~Jialin Pan and Qiang Yang.
 
 \bibitem{voc}
 PASCAL.
-\newblock {Visual Object Classes Challenge 2010 }.
-\newblock \url{http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2010}.
+\newblock {Visual Object Classes Challenge 2012 }.
+\newblock \url{http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2012}.
 \newblock [Online; accessed 22-May-2013].
 
 \bibitem{midf}

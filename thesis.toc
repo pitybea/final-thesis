@@ -51,7 +51,7 @@
 \contentsline {subsection}{\numberline {5.2.1}Pyramid Matching}{66}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Pyramid Matching Score}{67}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}Detection}{67}{section.5.3}
-\contentsline {section}{\numberline {5.4}Experimental Results}{69}{section.5.4}
-\contentsline {section}{\numberline {5.5}Chapter Conclusion}{69}{section.5.5}
-\contentsline {chapter}{\numberline {6}Conclusion and outlook}{70}{chapter.6}
-\contentsline {chapter}{Bibliography}{71}{chapter*.7}
+\contentsline {section}{\numberline {5.4}Experimental Results}{68}{section.5.4}
+\contentsline {section}{\numberline {5.5}Chapter Conclusion}{71}{section.5.5}
+\contentsline {chapter}{\numberline {6}Conclusion and outlook}{72}{chapter.6}
+\contentsline {chapter}{Bibliography}{73}{chapter*.7}
