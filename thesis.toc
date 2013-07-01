@@ -32,7 +32,7 @@
 \contentsline {subsection}{\numberline {3.5.2}Second Experiment}{32}{subsection.3.5.2}
 \contentsline {section}{\numberline {3.6}Experimental results on data collected by ordinary cameras}{35}{section.3.6}
 \contentsline {section}{\numberline {3.7}Chapter Conclusion}{38}{section.3.7}
-\contentsline {chapter}{\numberline {4}Grouping of object parts by motion for detection}{39}{chapter.4}
+\contentsline {chapter}{\numberline {4}Grouping of Object Parts by Motion for Detection}{39}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{39}{section.4.1}
 \contentsline {section}{\numberline {4.2}Related Work}{43}{section.4.2}
 \contentsline {section}{\numberline {4.3}Application Background}{45}{section.4.3}
@@ -48,9 +48,9 @@
 \contentsline {chapter}{\numberline {5}Pyramid Matching Score for Detection}{65}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{65}{section.5.1}
 \contentsline {section}{\numberline {5.2}Related Work}{66}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Pyramid Matching}{66}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Pyramid Matching Score}{67}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Detection}{67}{section.5.3}
+\contentsline {subsection}{\numberline {5.2.1}Pyramid Matching}{67}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Pyramid Matching Score}{68}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Detection}{68}{section.5.3}
 \contentsline {section}{\numberline {5.4}Experimental Results}{68}{section.5.4}
 \contentsline {section}{\numberline {5.5}Chapter Conclusion}{71}{section.5.5}
 \contentsline {chapter}{\numberline {6}Conclusion and outlook}{72}{chapter.6}

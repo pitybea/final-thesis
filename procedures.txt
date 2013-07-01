@@ -1,0 +1,5 @@
+sc.bat 
+%to compile cover which includes cover page and abstract
+use winedt to generate thesis.pdf
+use advanced pdf tools to open and change thesis.pdf
+add cover.pdf to thesis.pdf

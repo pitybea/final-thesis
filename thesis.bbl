@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{spen}
 {Emergence of simple-cell receptive field properties by learning a sparse code
@@ -109,6 +109,16 @@ F.J. Estrada, P.~Fua, V.~Lepetit, and S.~Susstrunk.
 \newblock Appearance-based keypoint clustering.
 \newblock In {\em CVPR}, pages 1279--1286, 2009.
 
+\bibitem{dpm1}
+Pedro~F. Felzenszwalb, Ross~B. Girshick, David McAllester, and Deva Ramanan.
+\newblock Object detection with discriminatively trained part-based models.
+\newblock {\em PAMI}, 32(9):1627--1645, 2010.
+
+\bibitem{dpm2}
+Pedro~F. Felzenszwalb, Ross~B. Girshick, and David~A. McAllester.
+\newblock Cascade object detection with deformable part models.
+\newblock In {\em CVPR}, pages 2241--2248, 2010.
+
 \bibitem{ac31}
 Pedro~F. Felzenszwalb, David~A. McAllester, and Deva Ramanan.
 \newblock A discriminatively trained, multiscale, deformable part model.
@@ -144,6 +154,11 @@ Vittorio Ferrari, Fr{\'e}d{\'e}ric Jurie, and Cordelia Schmid.
 J.~Gall and V.~Lempitsky.
 \newblock Class-specific hough forests for object detection.
 \newblock In {\em CVPR}, pages 1022--1029, 2009.
+
+\bibitem{lsh}
+A.~Gionis, P.~Indyk, and R.~Motwani.
+\newblock Similarity search in high dimensions via hashing.
+\newblock In {\em VLDB}, pages 518--529, 1999.
 
 \bibitem{ij14}
 S.~Gould, R.~Fulton, and D.~Koller.
@@ -264,6 +279,12 @@ Ce~Liu, Jenny Yuen, and Antonio Torralba.
 \newblock Nonparametric scene parsing via label transfer.
 \newblock {\em PAMI}, 33(12):2368--2382, December 2011.
 
+\bibitem{mvdpm}
+Roberto~Javier L{\'o}pez-Sastre, Tinne Tuytelaars, and Silvio Savarese.
+\newblock Deformable part models revisited: A performance evaluation for object
+  category pose estimation.
+\newblock In {\em ICCV Workshops}, pages 1052--1059, 2011.
+
 \bibitem{o12}
 D.~G. Lowe.
 \newblock Distinctive image features from scale-invariant keypoints.
@@ -357,6 +378,11 @@ PASCAL.
 \newblock \url{http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2012}.
 \newblock [Online; accessed 22-May-2013].
 
+\bibitem{dpm3}
+M.~Pedersoli, A.~Vedaldi, and J.~Gonz{\`a}lez.
+\newblock A coarse-to-fine approach for fast deformable object detection.
+\newblock In {\em CVPR}, 2011.
+
 \bibitem{midf}
 Nicolas Pinto, David Doukhan, James~J. DiCarlo, and David~D. Cox.
 \newblock A high-throughput screening approach to discovering good forms of
@@ -414,6 +440,12 @@ J.~Shotton, A.~Fitzgibbon, M.~Cook, T.~Sharp, M.~Finocchio, R.~Moore,
 Lawrence~C. Sincich and Jonathan~C. Horton.
 \newblock {THE CIRCUITRY OF V1 AND V2: Integration of Color, Form, and Motion}.
 \newblock {\em Annual Review of Neuroscience}, 28(1):303--326, 2005.
+
+\bibitem{spltm}
+Hyun~Oh Song, Stefan Zickler, Tim Althoff, Ross Girshick, Mario Fritz,
+  Christopher Geyer, Pedro Felzenszwalb, and Trevor Darrell.
+\newblock Sparselet models for efficient multiclass object detection.
+\newblock In {\em ECCV}, 2012 2012.
 
 \bibitem{ac33}
 Chris Stauffer and W.~Eric~L. Grimson.
@@ -514,5 +546,10 @@ Li~Zhang, Yuan Li, and R.~Nevatia.
 \newblock Global data association for multi-object tracking using network
   flows.
 \newblock In {\em CVPR}, pages 1--8, 2008.
+
+\bibitem{hdpm}
+Long~(Leo) Zhu, Yuanhao Chen, Alan Yuille, and William Freeman.
+\newblock Latent hierarchical structural learning for object detection.
+\newblock {\em CVPR}, 0:1062--1069, 2010.
 
 \end{thebibliography}

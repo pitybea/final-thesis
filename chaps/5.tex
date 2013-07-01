@@ -5,7 +5,11 @@
 
 The results of chapter \ref{chp4} is promising on the two experimental datasets, however, the efficiency is not good. Besides, theories which explain Hough transform-based methods are not satisfactory. In this chapter, a detection method is proposed. It will fill up the gap between theory and practise for Hough transform, work efficiently, and make use of the mutual information encoded in image features of the same object.
 
-Detection methods still mainly follow the sliding-window schema or have similar structure with Hough transforms. While the focus of the later is to infer about object status by use each online feature as query against a well-trained codebook. These methods fail to consider target objects as a whole at the beginning. The problem of sliding-window is that it often ignores positional information when also following bag of features~\cite{bgf}. In the method of \cite{spmk}, positional information is considered in the kernel function. Here the kernel function\cite{kmts} is used in classifiers, which are usually support vector machines.
+Detection methods still mainly follow the sliding-window schema or share similar structures with Hough transforms. While the focus of the later is to infer about object status by use each online feature as query against a well-trained codebook. These methods fail to consider target objects as a whole at the beginning. The problem of sliding-window is that it often ignores positional information when also following bag of features~\cite{bgf}. In the method of \cite{spmk}, positional information is considered in the kernel function. Here the kernel function\cite{kmts} is used in classifiers, which are usually support vector machines.
+
+Deformable part model~\cite{ac30,ac31,dpm1,dpm2}, which will be referred as DPM for short, is currently employed by most state-of-the-art methods which consider  appearance information of object parts together with the relative positional information between object parts. A root template is used to detect object as a whole, and HOG feature is usually used. When an object is detected, all possible object parts are detected accordingly. Finally, the confidence is given by the confidence of the root object, the sum of confidence of the object parts, and the cost to deploy the object parts within the root object. Latent SVM is employed in the methods for optimization while using representation of complex information. Some methods motivated by DPM try to improve DPM by providing better solution searching strategies~\cite{dpm3}.  Two recent methods~\cite{spm,spltm} try to find sparse basis of object parts to reduce the number of parameters need estimating. For efficiency, the method in~\cite{408} replace the dot operator of DPM with start-of-the-art hashing method~\cite{lsh}. There also exists hierarchical extend of DPM~\cite{hdpm}, and multi-view extend of DPM~\cite{mvdpm}.
+
+Advantages of DPM include that it only need to encode the object parts in positive training examples, and that the some of its invariants can give promising results in real time. Still DPM heavily rely of the latent SVM, which is trained in an  expectation¨Cmaximization manner stops it from adopting new training examples. While nowadays, training examples often come sequentially. A very flexible model, which will evolve with training examples is preferred. These evolvements include object part number evolving, evolving of the appearance models of object parts, and evolving of the relative positions of object parts.
 
 The method proposed here consider object as a whole during detection.
 
@@ -18,11 +22,15 @@ The bag-of-feature~\cite{bgf} schema successfully improves detection performance
 
 In the method proposed in ~\cite{ac222}, each object is modeled as a graph, when match each object with another, constrains are made not only between the two objects, but also between different features of the same object. The relationship between elements of the same object is important. However, the inefficiency of this method prevents it from directly being used for object detection, while its performance on matching the same object under different views is promising.
 
-The method in \cite{lbt1} instead of building some parametric or non-parametric model, directly maps the labels of similar images in the training images to the current image. In this manner, the descriptive ability of model can be left alone, which in return makes the method robust. However, this kind of methods heavily rely on the manually marked labels in the training dataset, while such labels are very expensive in human power and computation.
+The method in~\cite{lbt1} instead of building some parametric or non-parametric model, directly maps the labels of similar images in the training images to the current image. In this manner, the descriptive ability of model can be left alone, which in return makes the method robust. However, this kind of methods heavily rely on the manually marked labels in the training dataset, while such labels are very expensive in human power and computation.
 
-The method is also related to efforts trying to encode images~\cite{spen}
+The method in~\cite{ac3} considers both appearance model of object parts, and the relative distance changes between object parts. While giving promising results, there are too many parameters in the model, and training is troublesome when limited training images are available.
 
-The pyramid matching score method is most related to methods using \cite{pmk} or \cite{kmts} as kernel functions, methods employ Hough transforms, and also the methods proposing efficient solution space searching techniques~\cite{bab}.
+
+
+
+
+The pyramid matching score method is most related to methods using \cite{pmk} or \cite{kmts} as kernel functions, methods employ Hough transforms, and also the methods proposing efficient solution space searching techniques~\cite{bab}. The method is also related to efforts trying to encode images~\cite{spen}.
 
 
 

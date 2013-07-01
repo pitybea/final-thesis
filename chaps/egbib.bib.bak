@@ -1235,8 +1235,8 @@ address = {Washington, DC, USA}
 }
 @misc{ voc,
    author = " PASCAL",
-   title = {{Visual Object Classes Challenge 2010 }},
-   howpublished = "\url{http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2010}",
+   title = {{Visual Object Classes Challenge 2012 }},
+   howpublished = "\url{http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2012}",
    note = "[Online; accessed 22-May-2013]"
  }
 
@@ -1266,4 +1266,87 @@ address = {Washington, DC, USA}
   ee        = {http://icml.cc/discuss/2012/73.html},
   crossref  = {DBLP:conf/icml/2012},
   bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{midf,
+  author    = {Nicolas Pinto and
+               David Doukhan and
+               James J. DiCarlo and
+               David D. Cox},
+  title     = {A High-Throughput Screening Approach to Discovering Good
+               Forms of Biologically Inspired Visual Representation},
+  journal   = {PLoS Computational Biology},
+  volume    = {5},
+  number    = {11},
+  year      = {2009},
+  ee        = {http://dx.doi.org/10.1371/journal.pcbi.1000579},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{rbm,
+  author    = {Charles F. Cadieu and
+               Ha Hong and
+               Dan Yamins and
+               Nicolas Pinto and
+               Najib J. Majaj and
+               James J. DiCarlo},
+  title     = {The Neural Representation Benchmark and its Evaluation on
+               Brain and Machine},
+  journal   = {CoRR},
+  volume    = {abs/1301.3530},
+  year      = {2013},
+  ee        = {http://arxiv.org/abs/1301.3530},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{cfm,
+    address = {Beckman Vision Center, University of California-San Francisco, San Francisco, CA 94143, USA. sincichl@vision.ucsf.edu},
+    author = {Sincich, Lawrence C. and Horton, Jonathan C.},
+
+    journal = {Annual Review of Neuroscience},
+    keywords = {color, review, visual},
+    number = {1},
+    pages = {303--326},
+    pmid = {16022598},
+    posted-at = {2010-01-17 14:04:03},
+    priority = {2},
+    title = {{THE CIRCUITRY OF V1 AND V2: Integration of Color, Form, and Motion}},
+
+    volume = {28},
+    year = {2005}
+}
+
+@article{spen,
+
+    day = {13},
+    doi = {10.1038/381607a0},
+    issn = {0028-0836},
+    journal = {Nature},
+    keywords = {computational-neuroscience, prototype-learning},
+    month = jun,
+    number = {6583},
+    pages = {607--609},
+    pmid = {8637596},
+    posted-at = {2009-11-10 05:24:54},
+    priority = {2},
+    publisher = {Nature Publishing Group},
+    title = {{Emergence of simple-cell receptive field properties by learning a sparse code for natural images.}},
+    url = {http://dx.doi.org/10.1038/381607a0},
+    volume = {381},
+    year = {1996}
+}
+
+
+@article{dpm1,
+author = {Pedro F. Felzenszwalb and Ross B. Girshick and David McAllester and Deva Ramanan},
+title = {Object Detection with Discriminatively Trained Part-Based Models},
+journal ={PAMI},
+volume = {32},
+number = {9},
+issn = {0162-8828},
+year = {2010},
+pages = {1627-1645},
+doi = {http://doi.ieeecomputersociety.org/10.1109/TPAMI.2009.167},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
 }
