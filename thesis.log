@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.16)  5 AUG 2013 15:13
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.16)  6 AUG 2013 16:25
 entering extended mode
 **thesis.tex
 (F:\thesis\thesis.tex
@@ -660,7 +660,7 @@ l.75 \maketitle
 h the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.23 ...nt Cluster Tracking}{23}{subsection.3.4.5}
+l.23 ...nt Cluster Tracking}{22}{subsection.3.4.5}
                                                    [1
 
 
@@ -701,7 +701,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 l.39 
      ] [6]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
  [7] [8] [9]) [10] [11] (F:\thesis\chaps/3.tex
 Chapter 3.
 [12
@@ -2119,10 +2119,15 @@ Package rerunfilecheck Warning: File `thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: 53E19436EEAAA49FB63222580B901B5B;13780
-(rerunfilecheck)             After:  18E79092FEA4A9D61F1B2F36F7BE932F;3874.
-Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 7F38E644C753B6FEFB30337638CCC494;8680.
+(rerunfilecheck)             Before: 0AD19A5C903105B0822C7261A4454DFD;13796
+(rerunfilecheck)             After:  E446D65DF08AB9F3BD8CF0E5B9AE4B96;3876.
+
+Package rerunfilecheck Warning: File `thesis.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `thesis.brf':
+(rerunfilecheck)             Before: F2DAF2DB72213F4A42134C8F89FF7E1D;8662
+(rerunfilecheck)             After:  7F38E644C753B6FEFB30337638CCC494;8680.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2130,7 +2135,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  10139 strings out of 495354
  136873 string characters out of 3183859
- 229982 words of memory out of 3000000
+ 229984 words of memory out of 3000000
  12611 multiletter control sequences out of 15000+200000
  35577 words of font info for 88 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -2149,9 +2154,9 @@ lic/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6
 onts/type1/urw/courier/ucrr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.
 pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (93 pages, 11515073 bytes).
+Output written on thesis.pdf (93 pages, 11515112 bytes).
 PDF statistics:
- 1659 PDF objects out of 1728 (max. 8388607)
+ 1660 PDF objects out of 1728 (max. 8388607)
  337 named destinations out of 1000 (max. 500000)
  945 words of extra memory for PDF output out of 10000 (max. 10000000)
 
