@@ -61,6 +61,9 @@
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Example Hough images}}{62}{figure.4.10}
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{63}{figure.4.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Detection Results on UIUC cars}}{69}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Result evaluation}}{70}{figure.5.2}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Best one-one match.}}{69}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Pyramid matching procedure.}}{70}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Visual-spatial space dividing.}}{72}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Detection Results on UIUC cars}}{74}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Result evaluation}}{75}{figure.5.5}
 \addvspace {10\p@ }

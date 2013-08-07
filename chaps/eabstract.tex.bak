@@ -7,9 +7,9 @@ In this work, the performance of detection methods is improved from a different 
 
 The first detection method is developed for real-time applications. In a hierarchical way, this method makes time-consuming steps in its pipeline deal with fewer instances, and combines motion information with appearance information very efficiently. This method gives promising detection results in real time, and gives 100\% detection rate and 0\% false alarm rate in one of the experiments.
 
-Since the performance of the first method in complex scene is not promising, the second method is proposed. This method extends the Implicit Shape Model~\cite{lb1} to incorporate motion information, and outperforms the state-of-the-art method on two datasets. This method also performs well in distinguishing near objects and similar different-class objects.
+Since the performance of the first method in complex scene is not promising, the second method is proposed. This method extends the Implicit Shape Model to incorporate motion information, and outperforms the state-of-the-art method on two datasets. This method also performs well in distinguishing near objects and similar different-class objects.
 
-To improve the efficiency of the second method, the third method is proposed, which is Pyramid Matching Score for detection. The method does pyramid matching during training and matching for efficiency, and makes use of the mutual information encoded among the image features of the same object, which improves detection performance.
+To improve the efficiency of the second method, the third method is proposed, which is pyramid match score for detection. The method does pyramid matching during training and matching for efficiency, and makes use of the mutual information encoded among the image features of the same object, which improves detection performance.
 \end{eabstract}
 
 

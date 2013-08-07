@@ -45,13 +45,13 @@
 \contentsline {subsection}{\numberline {4.6.1} Campus-scene Detection }{55}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}Wild-scene Detection}{60}{subsection.4.6.2}
 \contentsline {section}{\numberline {4.7}Chapter Conclusion}{64}{section.4.7}
-\contentsline {chapter}{\numberline {5}Pyramid Matching Score for Detection}{65}{chapter.5}
+\contentsline {chapter}{\numberline {5}Pyramid Match Score for Detection}{65}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{65}{section.5.1}
-\contentsline {section}{\numberline {5.2}Related Work}{66}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Pyramid Matching}{67}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Pyramid Matching Score}{68}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Detection}{68}{section.5.3}
-\contentsline {section}{\numberline {5.4}Experimental Results}{68}{section.5.4}
-\contentsline {section}{\numberline {5.5}Chapter Conclusion}{71}{section.5.5}
-\contentsline {chapter}{\numberline {6}Conclusion and outlook}{72}{chapter.6}
-\contentsline {chapter}{Bibliography}{73}{chapter*.7}
+\contentsline {section}{\numberline {5.2}Related Work}{67}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Pyramid Matching}{69}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Pyramid Match Score for Detection}{71}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Detection}{73}{section.5.3}
+\contentsline {section}{\numberline {5.4}Experimental Results}{73}{section.5.4}
+\contentsline {section}{\numberline {5.5}Chapter Conclusion}{76}{section.5.5}
+\contentsline {chapter}{\numberline {6}Conclusion and outlook}{77}{chapter.6}
+\contentsline {chapter}{Bibliography}{78}{chapter*.7}

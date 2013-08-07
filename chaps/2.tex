@@ -103,8 +103,8 @@ Some pioneer work also consider about recognizing objects in 3D space. The metho
 Also excellent performance of deep learning inspired new methods to reconsider about object detection. The discover of invariants and learning of a detector from unlabeled data are explored by~\cite{dnnnn}.
 
 
-Still, one of the challenging subjects in object detection is rotation-aware detection. Lots of object detection methods ignore scale and rotation changes by using of scale- and rotation-invariant image features, i.e. sift.
-The primary  direction of the sift feature is used by~\cite{ac21} for locally estimate the rotation angle of object. This method heavily rely on the sift feature.
+Still, one of the challenging subjects in object detection is rotation-aware detection. Lots of object detection methods ignore scale and rotation changes by using of scale- and rotation-invariant image features, i.e. SIFT.
+The primary  direction of the SIFT feature is used by~\cite{ac21} for locally estimate the rotation angle of object. This method heavily rely on the SIFT feature.
 Object is represented by a graph with features as nodes in~\cite{ac222}, and scale- and rotation-invariant object match is made by the matching of two graphs. Instead of being a general method for object detection, this method is mainly used for object matching.
 Most rotation-aware methods follow~\cite{ac20}. This method firstly trains a neural network for rotation estimation. According to the rotation estimation result, the tested sub-image is rotated to a normalized angle and then fed into other classifiers for verification of object hypothesis. Still efficient methods to robustly deal with object rotation in the detection procedure are preferred.
 

@@ -1,23 +1,23 @@
 \chapter{Background and Related Work}
 \label{chp2}
 
-\section{Vision in Human and Computer}
+\section{Vision in Humans and Computers}
 
-Everyday, new technologies emerge, which make everyday life more and more convenient, and advance human culture, of which, the emergence of text searching engines like google is  an important one. Searching images~\cite{bisearch} or other multi-media data similar to the way we search text is even more attractive, especially for the popularity of smart phones nowadays. There are still technical obstacles for this beautiful outlook. To decide semantic meanings for images is one, and detection performance on images is another.
+Everyday, new technologies emerge, make everyday life more convenient, and lead advances in human culture. Among these technologies, the emergence of text searching engines like google is a great milestone. Retrieving images~\cite{bisearch} or other multi-media data  in a way similar to retrieving text is even more attractive, especially for the popularity of smart phones nowadays. There are still technical obstacles for this beautiful outlook. To decide semantic meanings for images is one, and detection performance on images is another.
 
 
 
-The computational power of human is not any more competitive to computers, especially nowadays, when computational ability can be conveniently accessed from the cloud.
-Still when talking about the performance of visual recognition and detection under general situations, human are champion. In computer vision area, besides bar scanners and optical character recognition, few detection methods are employed in real-world applications, though face detection methods are employed in ordinary cameras.
+The computational power of humans is not any more competitive to computers, especially nowadays, when computational ability can be conveniently accessed from the cloud.
+Still when talking about the performance of visual recognition and detection under general situations, humans are champion. In computer vision area, besides bar scanners and optical character recognition, few detection methods are employed in real-world applications, except that face detection methods are employed in ordinary cameras.
 
-So what stops the object detection methods of computers from performing as good as human do?
+So what stops the object detection methods of computers from performing as good as those of humans?
 
 \begin{table}[h]
 \centering
 \begin{tabular}{lcc}
      \hline
      \hline
-                               &	Computer & Human \\
+                               &	Computers & Humans \\
     Quality of sensors         &	* &   \\
     Computational ability      &	* &	  \\
     Representative model       &	  & * \\
@@ -26,16 +26,16 @@ So what stops the object detection methods of computers from performing as good 
     Training quality           &      & *	   \\
    \hline
 \end{tabular}
-\caption[Power comparison between computer and human]{Comparison between computer and human.}\label{c2tb:tb1}
+\caption[Power comparison between computers and humans]{Comparison between computers and humans.}\label{c2tb:tb1}
 \end{table}
 
-When compared with human, computer will win at almost every aspect of hardware, as shown in \ref{c2tb:tb1}. Besides visual sensors, new sensors are continuously developed for computers, and computers have so many choices for sensors of very high quality. What is worth mentioning is how Microsoft's Kinect advances pose recognition~\cite{knct}. Especially, for computational ability,~\cite{bpw} believes human brain has a raw computational power between $10^{13}$ and $10^{16}$ operations per second, and modern computers can perform much better.
+When compared with humans, computers will win at almost every aspect of hardware, as shown in \ref{c2tb:tb1}. Besides visual sensors, new sensors are continuously developed for computers, and computers have so many choices for sensors of very high quality. What is worth mentioning is how Microsoft's Kinect advances pose recognition~\cite{knct}. Especially, for computational ability,~\cite{bpw} believes human brain has a raw computational power between $10^{13}$ and $10^{16}$ operations per second, and modern computers can perform much better.
 
- As for representative model, there is no obvious evidence which proves human is doing better than computer. While representations of human has long been working as inspirations and benchmarks for those of computer~\cite{rbm}. However the author believe human shall perform better than computer in the aspects of software, which then explains why human perform better in multiple visual tasks. And only when the vision researchers also believe so, do they develop  so many new detection methods. And the  dividing of functionalities  are generally based on computer, while in human, two or more of them might work together.
+ As for representative model, there is no obvious evidence which proves humans are doing better than computers. While representative models of humans have long been working as inspirations and benchmarks for those of computers~\cite{rbm}. However the author believe humans shall perform better than computers in the aspects of software, which then explains why humans perform better in multiple visual tasks. And only when the vision researchers also believe so, do they develop  so many new detection methods. And the  dividing of functionalities  are generally based on computers, while in humans, two or more of them might work together.
 
-Human babies are taken good care of, and trained to perform very simple visual tasks for months with large amount of examples, which makes the training quality very solid. The performance of new born babies also lead to considerations about to what degree are the visual abilities decided by genes. If the training procedure has taken as long as millions of years, are there possibilities for computer to win in future?
+Human babies are taken good care of, and trained to perform very simple visual tasks for months with large amount of examples, which makes the training quality very solid. The performance of new born babies also lead to considerations about to what degree are the visual abilities decided by genes. If the training procedure has taken as long as millions of years, are there possibilities for computers to win in future?
 
-The success of auditory speech recognition and the successful deployment in industry~\cite{siri} encourage vision researchers. Also new sensors advance recognition performance, such as Kinect, which can hopefully fill the gap of representative models' quality between computers and human. Object recognition methods based on 2D images with 3D model~\cite{r3d} also makes it more possible for computer to share same representative models.  Computational power can be used to make up with the short slab of training. For example, training one model for relative small amount of time with thousands of computers~\cite{dnnnn} is feasible with parrel training. The resent deep learning~\cite{dlearn} methods try to fusion representative model with decision procedure to act more like what human might do. These new achievements are expected to fill up the gap between human and computer in aspects of representative model, decision procedure, and training quality.
+The success of auditory speech recognition and the successful deployment in industry~\cite{siri} encourage vision researchers. Also new sensors advance recognition performance, such as Kinect, which can hopefully fill the gap of representative models' quality between computers and humans. Object recognition methods based on 2D images with 3D model~\cite{r3d} also makes it more possible for computers to share same representative models.  Computational power can be used to make up with the short slab of training. For example, training one model for relative small amount of time with thousands of computers~\cite{dnnnn} is feasible with parrel training. The resent deep learning~\cite{dlearn} methods try to fusion representative model with decision procedure to act more like what humans might do. These new achievements are expected to fill up the gap between humans and computers in aspects of representative model, decision procedure, and training quality.
 
 
 
@@ -44,7 +44,7 @@ While the methods proposed in this thesis explore the information which can be f
 \section{Artificial Intelligence}
 AI (Artificial Intelligence) includes a very wide range of topics, of which, computer vision is comparably difficult.
 
-The author of this thesis is positive about computer can outperform humans in visual tasks for the reasons in the previous section. Then if we move towards the correct direction, one step forward will lead to one step nearer, and vice versa.
+The author of this thesis is positive about computers can outperform humans in visual tasks for the reasons in the previous section. Then if we move towards the correct direction, one step forward will lead to one step nearer, and vice versa.
 
 Needless to say, the core of Artificial Intelligence is operations at high abstraction levels. When talking about the abstraction level of computer vision, the area of text mining can be used as a benchmark, though such comparisons will not be fair. Texts themselves are at a higher abstraction level than images. And the achievements in text understanding will remind the researchers of computer vision about the unsatisfactory results of turning images to semantic labels.
 
@@ -54,11 +54,11 @@ Together with lots of researchers in computer vision, the author of this thesis 
 Taking the problems of multi-class detection as example, routines of different types will be discussed. One routine is to explore detection of object from multiple classes at the same time. This kind of routine has been followed a lot by researchers, especially those encouraged by some recent competitions on visual tasks, e.g., VOC2012~\cite{voc}. Significant amount of engineering efforts are needed to win this kind of competitions. Another routine is that
 development of mechanisms of high abstraction level for single-class detection and mechanisms to separate objects from different classes. The problem with the first routine is that, methods will be so limited to the training dataset, and mechanisms at higher levels which are very valuable are not easy to explore. The author's approval towards competitions like VOC2012 is very limited.
 
-Actually, perceptual mechanisms in human are consistent with the above arguments. Recall how human are capable detecting previously unseen objects, while they acquire knowledge of target objects through textual descriptions.
+Actually, perceptual mechanisms in humans are consistent with the above arguments. Recall how humans are capable detecting previously unseen objects, while they acquire knowledge of target objects through textual descriptions.
 
 \section{Basics of Detection Methods}
 
-In the previous section, the possible reason why human perform better in detection is discussed. The main limits of computer are of software. Based on this, researchers present new detection methods or new methods for supporting detection, which includes: 1) new image feature or new representative model, 2) new decision procedures, or 3) better searching techniques in solution space.
+In the previous section, the possible reason why humans perform better in detection is discussed. The main limits of computers are of software. Based on this, researchers present new detection methods or new methods for supporting detection, which includes: 1) new image feature or new representative model, 2) new decision procedures, or 3) better searching techniques in solution space.
 \subsection{Image Features}
 Image features are very important. Simple image features include features in the form of keypoints, image patches, edges,  silhouette, shape~\cite{scontext}, or textures. There are also frameworks for combining multiple different image features or information from multiple channels~\cite{regionc,bgf,lbp,lss}, and these belong to image features at middle level~\cite{midf}. At a even higher level, image features can be  organized in patterns. For example, modeling human body as a stick model~\cite{stickb}.
 

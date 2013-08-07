@@ -315,7 +315,7 @@ and by assuming one object part belongs to and only belongs to one hypothesis, t
 \]
 
 
-Following~\cite{ac9}, the optimal result for the problem is given by greedy maximization. As described in Algorithm~\ref{alg:gm}, the largest local maximum of all the local maxima is chosen to be the center of a true object and then the object parts belonging to the chosen object center are excluded from the object part set. A new Hough image where new objects are found is formed using the remaining object parts. And this procedure ends when the object part set is empty or the confidence of the chosen object is lower than a threshold.
+Following~\cite{ac9}, the optimal result for the problem is given by greedy maximization. As described in Algorithm \ref{alg:gm}, the largest local maximum of all the local maxima is chosen to be the center of a true object and then the object parts belonging to the chosen object center are excluded from the object part set. A new Hough image where new objects are found is formed using the remaining object parts. And this procedure ends when the object part set is empty or the confidence of the chosen object is lower than a threshold.
 
 \begin{algorithm}[h]
 
@@ -454,7 +454,7 @@ To form the Hough image, 35 best matched codes are chosen from the codebook for 
 \centering
 \subfigure[]{
 \begin{minipage}[b]{0.47\textwidth}
-\includegraphics[width=1\textwidth,bb=0 0 480 425]{prf.eps}
+\includegraphics[width=1\textwidth]{prf.eps}
 \end{minipage}
 \label{fig:pr:a}}
 \subfigure[]{
