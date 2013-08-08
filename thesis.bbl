@@ -1,555 +1,602 @@
-\begin{thebibliography}{100}
+\begin{thebibliography}{}
 
-\bibitem{spen}
-{Emergence of simple-cell receptive field properties by learning a sparse code
-  for natural images.}
-\newblock {\em Nature}, 381(6583):607--609, June 1996.
-
-\bibitem{cds}
-Shivani Agarwal, Aatif Awan, and Dan Roth.
+\bibitem[\protect\citeauthoryear{Agarwal, Awan \& Roth}{Agarwal
+  et~al.}{2004}]{cds}
+Agarwal, S., Awan, A., \& Roth, D. (2004).
 \newblock Learning to detect objects in images via a sparse, part-based
   representation.
-\newblock {\em PAMI}, 26(11):1475--1490, November 2004.
+\newblock {\em PAMI}, {\em 26\/}(11), 1475--1490.
 
-\bibitem{wiao}
-B.~Alexe, T.~Deselaers, and V.~Ferrari.
+\bibitem[\protect\citeauthoryear{Alexe, Deselaers \& Ferrari}{Alexe
+  et~al.}{2010}]{wiao}
+Alexe, B., Deselaers, T., \& Ferrari, V. (2010).
 \newblock What is an object?
-\newblock In {\em CVPR}, June 2010.
+\newblock In {\em CVPR}.
 
-\bibitem{bgm}
-Hagai Attias.
+\bibitem[\protect\citeauthoryear{Attias}{Attias}{2000}]{bgm}
+Attias, H. (2000).
 \newblock A variational bayesian framework for graphical models.
-\newblock In {\em NISP}, pages 209--215. MIT Press, 2000.
+\newblock In {\em NISP}, (pp.\ 209--215). MIT Press.
 
-\bibitem{bisearch}
+\bibitem[\protect\citeauthoryear{Baidu}{Baidu}{}]{bisearch}
 Baidu.
 \newblock {baidu image search}.
 \newblock \url{http://stu.baidu.com}.
 \newblock [Online; accessed 22-May-2013].
 
-\bibitem{ac17}
-D.H. Ballard.
+\bibitem[\protect\citeauthoryear{Ballard}{Ballard}{1981}]{ac17}
+Ballard, D. (1981).
 \newblock Generalizing the hough transform to detect arbitrary shapes.
-\newblock {\em Pattern Recognition}, 13(2):111--122, 1981.
+\newblock {\em Pattern Recognition}, {\em 13\/}(2), 111--122.
 
-\bibitem{ac9}
-O.~Barinova, V.~Lempitsky, and P.~Kohli.
+\bibitem[\protect\citeauthoryear{Barinova, Lempitsky \& Kohli}{Barinova
+  et~al.}{2010}]{ac9}
+Barinova, O., Lempitsky, V., \& Kohli, P. (2010).
 \newblock On detection of multiple object instances using hough transforms.
-\newblock In {\em CVPR}, pages 2233--2240, 2010.
+\newblock In {\em CVPR}, (pp.\ 2233--2240).
 
-\bibitem{o2}
-H.~Bay, T.~Tuytelaars, and L.~Van~Gool.
+\bibitem[\protect\citeauthoryear{Bay, Tuytelaars \& Van~Gool}{Bay
+  et~al.}{2006}]{o2}
+Bay, H., Tuytelaars, T., \& Van~Gool, L. (2006).
 \newblock Surf: Speeded up robust features.
-\newblock In {\em ECCV}, pages 404--417, 2006.
+\newblock In {\em ECCV}, (pp.\ 404--417).
 
-\bibitem{surf}
-H.~Bay, T.~Tuytelaars, and L.~Van~Gool.
+\bibitem[\protect\citeauthoryear{Bay, Tuytelaars \& Van~Gool}{Bay
+  et~al.}{2008}]{surf}
+Bay, H., Tuytelaars, T., \& Van~Gool, L. (2008).
 \newblock Speeded-up robust features (surf).
-\newblock {\em CVIU}, 110(3):346--359, June 2008.
+\newblock {\em CVIU}, {\em 110\/}(3), 346--359.
 
-\bibitem{scontext}
-S.~Belongie, J.~Malik, and J.~Puzicha.
+\bibitem[\protect\citeauthoryear{Belongie, Malik \& Puzicha}{Belongie
+  et~al.}{2002}]{scontext}
+Belongie, S., Malik, J., \& Puzicha, J. (2002).
 \newblock Shape matching and object recognition using shape contexts.
-\newblock {\em PAMI}, 24(4):509--522, April 2002.
+\newblock {\em PAMI}, {\em 24\/}(4), 509--522.
 
-\bibitem{dlearn}
-Yoshua Bengio.
+\bibitem[\protect\citeauthoryear{Bengio}{Bengio}{2009}]{dlearn}
+Bengio, Y. (2009).
 \newblock Learning deep architectures for ai.
-\newblock {\em Foundations and Trends in Machine Learning}, 2(1):1--127, 2009.
+\newblock {\em Foundations and Trends in Machine Learning}, {\em 2\/}(1),
+  1--127.
 
-\bibitem{lda}
-D.~M. Blei, A.~Y. Ng, and M.~I. Jordan.
+\bibitem[\protect\citeauthoryear{Blei, Ng \& Jordan}{Blei et~al.}{2003}]{lda}
+Blei, D.~M., Ng, A.~Y., \& Jordan, M.~I. (2003).
 \newblock Latent dirichlet allocation.
-\newblock {\em Journal of Machine Learning Research}, 3:993--1022, 2003.
+\newblock {\em Journal of Machine Learning Research}, {\em 3}, 993--1022.
 
-\bibitem{my9}
-G.J. Brostow and R.~Cipolla.
+\bibitem[\protect\citeauthoryear{Brostow \& Cipolla}{Brostow \&
+  Cipolla}{2006}]{my9}
+Brostow, G. \& Cipolla, R. (2006).
 \newblock Unsupervised bayesian detection of independent motion in crowds.
-\newblock In {\em CVPR}, pages I: 594--601, 2006.
+\newblock In {\em CVPR}, (pp.\ I: 594--601).
 
-\bibitem{ac24}
-T.~Brox and J.~Malik.
+\bibitem[\protect\citeauthoryear{Brox \& Malik}{Brox \& Malik}{2010}]{ac24}
+Brox, T. \& Malik, J. (2010).
 \newblock Object segmentation by long term analysis of point trajectories.
-\newblock In {\em ECCV}, pages V: 282--295, 2010.
+\newblock In {\em ECCV}, (pp.\ V: 282--295).
 
-\bibitem{rbm}
-Charles~F. Cadieu, Ha~Hong, Dan Yamins, Nicolas Pinto, Najib~J. Majaj, and
-  James~J. DiCarlo.
+\bibitem[\protect\citeauthoryear{Cadieu, Hong, Yamins, Pinto, Majaj \&
+  DiCarlo}{Cadieu et~al.}{2013}]{rbm}
+Cadieu, C.~F., Hong, H., Yamins, D., Pinto, N., Majaj, N.~J., \& DiCarlo, J.~J.
+  (2013).
 \newblock The neural representation benchmark and its evaluation on brain and
   machine.
-\newblock {\em CoRR}, abs/1301.3530, 2013.
+\newblock {\em CoRR}, {\em abs/1301.3530}.
 
-\bibitem{ij4}
-N.~Dalal and B.~Triggs.
+\bibitem[\protect\citeauthoryear{Dalal \& Triggs}{Dalal \& Triggs}{2005}]{ij4}
+Dalal, N. \& Triggs, B. (2005).
 \newblock Histograms of oriented gradients for human detection.
-\newblock In Cordelia Schmid, Stefano Soatto, and Carlo Tomasi, editors, {\em
-  CVPR}, pages 886--893, June 2005.
+\newblock In {\em CVPR}, (pp.\ 886--893).
 
-\bibitem{nig}
-P.~Davidson, J.~Hautamaki, and J.~Collin.
+\bibitem[\protect\citeauthoryear{Davidson, Hautamaki \& Collin}{Davidson
+  et~al.}{2008}]{nig}
+Davidson, P., Hautamaki, J., \& Collin, J. (2008).
 \newblock Using low-cost mems 3d accelerometer and one gyro to assist gps based
   car navigation system.
-\newblock In {\em International Conference on Integrated Navigation Systems},
-  2008.
+\newblock In {\em International Conference on Integrated Navigation Systems}.
 
-\bibitem{408}
-Thomas Dean, Mark Ruzon, Mark Segal, Jon Shlens, Sudheendra Vijayanarasimhan,
-  and Jay Yagnik.
+\bibitem[\protect\citeauthoryear{Dean, Ruzon, Segal, Shlens, Vijayanarasimhan
+  \& Yagnik}{Dean et~al.}{2013}]{408}
+Dean, T., Ruzon, M., Segal, M., Shlens, J., Vijayanarasimhan, S., \& Yagnik, J.
+  (2013).
 \newblock Fast, accurate detection of 100,000 object classes on a single
   machine.
-\newblock In {\em CVPR}, Washington, DC, USA, 2013.
+\newblock In {\em CVPR}.
 
-\bibitem{face}
-Nikolay Degtyarev and Oleg Seredin.
+\bibitem[\protect\citeauthoryear{Degtyarev \& Seredin}{Degtyarev \&
+  Seredin}{2010}]{face}
+Degtyarev, N. \& Seredin, O. (2010).
 \newblock Comparative testing of face detection algorithms.
-\newblock In {\em ICISP}, pages 200--209, 2010.
+\newblock In {\em ICISP}, (pp.\ 200--209).
 
-\bibitem{mc}
-F.J. Estrada, P.~Fua, V.~Lepetit, and S.~Susstrunk.
+\bibitem[\protect\citeauthoryear{Estrada, Fua, Lepetit \& Susstrunk}{Estrada
+  et~al.}{2009}]{mc}
+Estrada, F., Fua, P., Lepetit, V., \& Susstrunk, S. (2009).
 \newblock Appearance-based keypoint clustering.
-\newblock In {\em CVPR}, pages 1279--1286, 2009.
+\newblock In {\em CVPR}, (pp.\ 1279--1286).
 
-\bibitem{dpm1}
-Pedro~F. Felzenszwalb, Ross~B. Girshick, David McAllester, and Deva Ramanan.
-\newblock Object detection with discriminatively trained part-based models.
-\newblock {\em PAMI}, 32(9):1627--1645, 2010.
-
-\bibitem{dpm2}
-Pedro~F. Felzenszwalb, Ross~B. Girshick, and David~A. McAllester.
-\newblock Cascade object detection with deformable part models.
-\newblock In {\em CVPR}, pages 2241--2248, 2010.
-
-\bibitem{ac31}
-Pedro~F. Felzenszwalb, David~A. McAllester, and Deva Ramanan.
-\newblock A discriminatively trained, multiscale, deformable part model.
-\newblock In {\em CVPR}, 2008.
-
-\bibitem{ac2}
-P.F. Felzenszwalb and D.P. Huttenlocher.
+\bibitem[\protect\citeauthoryear{Felzenszwalb \& Huttenlocher}{Felzenszwalb \&
+  Huttenlocher}{2005}]{ac2}
+Felzenszwalb, P. \& Huttenlocher, D. (2005).
 \newblock Pictorial structures for object recognition.
-\newblock {\em IJCV}, 61(1):55--79, January 2005.
+\newblock {\em IJCV}, {\em 61\/}(1), 55--79.
 
-\bibitem{ac3}
-R.~Fergus, P.~Perona, and A.~Zisserman.
+\bibitem[\protect\citeauthoryear{Felzenszwalb, Girshick, McAllester \&
+  Ramanan}{Felzenszwalb et~al.}{2010}]{dpm1}
+Felzenszwalb, P.~F., Girshick, R.~B., McAllester, D., \& Ramanan, D. (2010).
+\newblock Object detection with discriminatively trained part-based models.
+\newblock {\em PAMI}, {\em 32\/}(9), 1627--1645.
+
+\bibitem[\protect\citeauthoryear{Felzenszwalb, Girshick \&
+  McAllester}{Felzenszwalb et~al.}{2010}]{dpm2}
+Felzenszwalb, P.~F., Girshick, R.~B., \& McAllester, D.~A. (2010).
+\newblock Cascade object detection with deformable part models.
+\newblock In {\em CVPR}, (pp.\ 2241--2248).
+
+\bibitem[\protect\citeauthoryear{Felzenszwalb, McAllester \&
+  Ramanan}{Felzenszwalb et~al.}{2008}]{ac31}
+Felzenszwalb, P.~F., McAllester, D.~A., \& Ramanan, D. (2008).
+\newblock A discriminatively trained, multiscale, deformable part model.
+\newblock In {\em CVPR}.
+
+\bibitem[\protect\citeauthoryear{Fergus, Perona \& Zisserman}{Fergus
+  et~al.}{2003}]{ac3}
+Fergus, R., Perona, P., \& Zisserman, A. (2003).
 \newblock Object class recognition by unsupervised scale-invariant learning.
-\newblock In {\em CVPR}, pages II: 264--271, 2003.
+\newblock In {\em CVPR}, (pp.\ II: 264--271).
 
-\bibitem{uspl}
-R.~Fergus, P.~Perona, and A.~Zisserman.
-\newblock Object class recognition by unsupervised scale-invariant learning.
-\newblock In {\em CVPR}, pages 264--271, 2003.
-
-\bibitem{dp}
-T.~S. Ferguson.
+\bibitem[\protect\citeauthoryear{Ferguson}{Ferguson}{1973}]{dp}
+Ferguson, T.~S. (1973).
 \newblock A bayesian analysis of some nonparametric problems.
-\newblock {\em Annals of Statistics}, 1:209--230, 1973.
+\newblock {\em Annals of Statistics}, {\em 1}, 209--230.
 
-\bibitem{ac30}
-Vittorio Ferrari, Fr{\'e}d{\'e}ric Jurie, and Cordelia Schmid.
+\bibitem[\protect\citeauthoryear{Ferrari, Jurie \& Schmid}{Ferrari
+  et~al.}{2007}]{ac30}
+Ferrari, V., Jurie, F., \& Schmid, C. (2007).
 \newblock Accurate object detection with deformable shape models learnt from
   images.
-\newblock In {\em CVPR}, 2007.
+\newblock In {\em CVPR}.
 
-\bibitem{ac6}
-J.~Gall and V.~Lempitsky.
+\bibitem[\protect\citeauthoryear{Gall \& Lempitsky}{Gall \&
+  Lempitsky}{2009}]{ac6}
+Gall, J. \& Lempitsky, V. (2009).
 \newblock Class-specific hough forests for object detection.
-\newblock In {\em CVPR}, pages 1022--1029, 2009.
+\newblock In {\em CVPR}, (pp.\ 1022--1029).
 
-\bibitem{lsh}
-A.~Gionis, P.~Indyk, and R.~Motwani.
+\bibitem[\protect\citeauthoryear{Gionis, Indyk \& Motwani}{Gionis
+  et~al.}{1999}]{lsh}
+Gionis, A., Indyk, P., \& Motwani, R. (1999).
 \newblock Similarity search in high dimensions via hashing.
-\newblock In {\em VLDB}, pages 518--529, 1999.
+\newblock In {\em VLDB}, (pp.\ 518--529).
 
-\bibitem{ij14}
-S.~Gould, R.~Fulton, and D.~Koller.
+\bibitem[\protect\citeauthoryear{Gould, Fulton \& Koller}{Gould
+  et~al.}{2009}]{ij14}
+Gould, S., Fulton, R., \& Koller, D. (2009).
 \newblock Decomposing a scene into geometric and semantically consistent
   regions.
-\newblock In {\em ICCV}, 2009.
+\newblock In {\em ICCV}.
 
-\bibitem{pmk}
-Kristen Grauman and Trevor Darrell.
+\bibitem[\protect\citeauthoryear{Grauman \& Darrell}{Grauman \&
+  Darrell}{2005}]{pmk}
+Grauman, K. \& Darrell, T. (2005).
 \newblock The pyramid match kernel: Discriminative classification with sets of
   image features.
-\newblock In {\em ICCV}, pages 1458--1465, 2005.
+\newblock In {\em ICCV}, (pp.\ 1458--1465).
 
-\bibitem{ac8}
-C.H. Gu, J.J. Lim, P.~Arbelaez, and J.~Malik.
+\bibitem[\protect\citeauthoryear{Gu, Lim, Arbelaez \& Malik}{Gu
+  et~al.}{2009}]{ac8}
+Gu, C., Lim, J., Arbelaez, P., \& Malik, J. (2009).
 \newblock Recognition using regions.
-\newblock In {\em CVPR}, pages 1030--1037, 2009.
+\newblock In {\em CVPR}, (pp.\ 1030--1037).
 
-\bibitem{harris}
-C.~Harris and M.J. Stephens.
+\bibitem[\protect\citeauthoryear{Harris \& Stephens}{Harris \&
+  Stephens}{1988}]{harris}
+Harris, C. \& Stephens, M. (1988).
 \newblock A combined corner and edge detector.
-\newblock In {\em Alvey Vision Conference}, pages 147--152, 1988.
+\newblock In {\em Alvey Vision Conference}, (pp.\ 147--152).
 
-\bibitem{my10}
-C.~Huang, B.~Wu, and R.~Nevatia.
+\bibitem[\protect\citeauthoryear{Huang, Wu \& Nevatia}{Huang
+  et~al.}{2008}]{my10}
+Huang, C., Wu, B., \& Nevatia, R. (2008).
 \newblock Robust object tracking by hierarchical association of detection
   responses.
-\newblock In {\em ECCV}, pages II: 788--801, 2008.
+\newblock In {\em ECCV}, (pp.\ II: 788--801).
 
-\bibitem{ij11}
-Chang Huang, Bo~Wu, and R.~Nevatia.
-\newblock Robust object tracking by hierarchical association of detection
-  responses.
-\newblock In {\em ECCV}, pages 788--801, 2008.
-
-\bibitem{ij15}
-R.~Isukapalli and R.~Greiner.
+\bibitem[\protect\citeauthoryear{Isukapalli \& Greiner}{Isukapalli \&
+  Greiner}{2003}]{ij15}
+Isukapalli, R. \& Greiner, R. (2003).
 \newblock Use of off-line dynamic programming for efficient image
   interpretation.
-\newblock In {\em IJCAI}, pages 1319--1325, 2003.
+\newblock In {\em IJCAI}, (pp.\ 1319--1325).
 
-\bibitem{bgf}
-Herv\'e J\'egou, Matthijs Douze, and Cordelia Schmid.
+\bibitem[\protect\citeauthoryear{J\'egou, Douze \& Schmid}{J\'egou
+  et~al.}{2010}]{bgf}
+J\'egou, H., Douze, M., \& Schmid, C. (2010).
 \newblock Improving bag-of-features for large scale image search.
-\newblock {\em IJCV}, 87(3):316--336, feb 2010.
+\newblock {\em IJCV}, {\em 87\/}(3), 316--336.
 
-\bibitem{ac222}
-H.~Jiang and S.X. Yu.
+\bibitem[\protect\citeauthoryear{Jiang \& Yu}{Jiang \& Yu}{2009}]{ac222}
+Jiang, H. \& Yu, S. (2009).
 \newblock Linear solution to scale and rotation invariant object matching.
-\newblock In {\em CVPR}, pages 2474--2481, 2009.
+\newblock In {\em CVPR}, (pp.\ 2474--2481).
 
-\bibitem{r3d}
-Koichi Kise and Takahiro Kashiwagi.
+\bibitem[\protect\citeauthoryear{Kise \& Kashiwagi}{Kise \&
+  Kashiwagi}{2011}]{r3d}
+Kise, K. \& Kashiwagi, T. (2011).
 \newblock 1.5 million subspaces of a local feature space for 3d object
   recognition.
-\newblock In {\em ACPR}, pages 672--676, 2011.
+\newblock In {\em ACPR}, (pp.\ 672--676).
 
-\bibitem{ha}
-H.~W. Kuhn.
+\bibitem[\protect\citeauthoryear{Kuhn}{Kuhn}{1955}]{ha}
+Kuhn, H.~W. (1955).
 \newblock The hungarian method for the assignment problem.
-\newblock {\em Naval Research Logistics Quarterly}, pages 83--97, 1955.
+\newblock {\em Naval Research Logistics Quarterly}, 83--97.
 
-\bibitem{ac4}
-C.H. Lampert, M.B. Blaschko, and T.~Hofmann.
+\bibitem[\protect\citeauthoryear{Lampert, Blaschko \& Hofmann}{Lampert
+  et~al.}{2008}]{ac4}
+Lampert, C., Blaschko, M., \& Hofmann, T. (2008).
 \newblock Beyond sliding windows: Object localization by efficient subwindow
   search.
-\newblock In {\em CVPR}, pages 1--8, 2008.
+\newblock In {\em CVPR}, (pp.\ 1--8).
 
-\bibitem{bab}
-Christoph~H. Lampert, Matthew~B. Blaschko, and Thomas Hofmann.
+\bibitem[\protect\citeauthoryear{Lampert, Blaschko \& Hofmann}{Lampert
+  et~al.}{2009}]{bab}
+Lampert, C.~H., Blaschko, M.~B., \& Hofmann, T. (2009).
 \newblock Efficient subwindow search: A branch and bound framework for object
   localization.
-\newblock {\em PAMI}, 31(12):2129--2142, 2009.
+\newblock {\em PAMI}, {\em 31\/}(12), 2129--2142.
 
-\bibitem{spmk}
-Svetlana Lazebnik, Cordelia Schmid, and Jean Ponce.
+\bibitem[\protect\citeauthoryear{Lazebnik, Schmid \& Ponce}{Lazebnik
+  et~al.}{2006}]{spmk}
+Lazebnik, S., Schmid, C., \& Ponce, J. (2006).
 \newblock Beyond bags of features: Spatial pyramid matching for recognizing
   natural scene categories.
-\newblock In {\em CVPR}, pages 2169--2178, Washington, DC, USA, 2006. IEEE
-  Computer Society.
+\newblock In {\em CVPR}, (pp.\ 2169--2178).
 
-\bibitem{dnnnn}
-Quoc~V. Le, Marc'Aurelio Ranzato, Rajat Monga, Matthieu Devin, Greg Corrado,
-  Kai Chen, Jeffrey Dean, and Andrew~Y. Ng.
+\bibitem[\protect\citeauthoryear{Le, Ranzato, Monga, Devin, Corrado, Chen, Dean
+  \& Ng}{Le et~al.}{2012}]{dnnnn}
+Le, Q.~V., Ranzato, M., Monga, R., Devin, M., Corrado, G., Chen, K., Dean, J.,
+  \& Ng, A.~Y. (2012).
 \newblock Building high-level features using large scale unsupervised learning.
-\newblock In {\em ICML}, 2012.
+\newblock In {\em ICML}.
 
-\bibitem{ac27}
-A.~Lehmann, B.~Leibe, and L.J. Van~Gool.
+\bibitem[\protect\citeauthoryear{Lehmann, Leibe \& Van~Gool}{Lehmann
+  et~al.}{2011}]{ac27}
+Lehmann, A., Leibe, B., \& Van~Gool, L. (2011).
 \newblock Fast prism: Branch and bound hough transform for object class
   detection.
-\newblock {\em IJCV}, 94(2):175--197, September 2011.
+\newblock {\em IJCV}, {\em 94\/}(2), 175--197.
 
-\bibitem{ac22}
-B.~Leibe, N.~Cornelis, K.~Cornelis, and L.J. Van~Gool.
+\bibitem[\protect\citeauthoryear{Leibe, Cornelis, Cornelis \& Van~Gool}{Leibe
+  et~al.}{2007}]{ac22}
+Leibe, B., Cornelis, N., Cornelis, K., \& Van~Gool, L. (2007).
 \newblock Dynamic 3d scene analysis from a moving vehicle.
-\newblock In {\em CVPR}, pages 1--8, 2007.
+\newblock In {\em CVPR}, (pp.\ 1--8).
 
-\bibitem{lb1}
-B.~Leibe, A.~Leonardis, and B.~Schiele.
+\bibitem[\protect\citeauthoryear{Leibe, Leonardis \& Schiele}{Leibe
+  et~al.}{2008}]{lb1}
+Leibe, B., Leonardis, A., \& Schiele, B. (2008).
 \newblock Robust object detection with interleaved categorization and
   segmentation.
-\newblock {\em IJCV}, 77(1-3):259--289, May 2008.
+\newblock {\em IJCV}, {\em 77\/}(1-3), 259--289.
 
-\bibitem{ac5}
-B.~Leibe and B.~Schiele.
+\bibitem[\protect\citeauthoryear{Leibe \& Schiele}{Leibe \&
+  Schiele}{2003}]{ac5}
+Leibe, B. \& Schiele, B. (2003).
 \newblock Interleaved object categorization and segmentation.
-\newblock In {\em BMVC}, pages 759--768, 2003.
+\newblock In {\em BMVC}, (pp.\ 759--768).
 
-\bibitem{my7}
-B.~Leibe, K.~Schindler, and L.J. Van~Gool.
+\bibitem[\protect\citeauthoryear{Leibe, Schindler \& Van~Gool}{Leibe
+  et~al.}{2007}]{my7}
+Leibe, B., Schindler, K., \& Van~Gool, L. (2007).
 \newblock Coupled detection and trajectory estimation for multi-object
   tracking.
-\newblock In {\em ICCV}, pages 1--8, 2007.
+\newblock In {\em ICCV}, (pp.\ 1--8).
 
-\bibitem{lbt1}
-Ce~Liu, Jenny Yuen, and Antonio Torralba.
+\bibitem[\protect\citeauthoryear{Liu, Yuen \& Torralba}{Liu
+  et~al.}{2011}]{lbt1}
+Liu, C., Yuen, J., \& Torralba, A. (2011).
 \newblock Nonparametric scene parsing via label transfer.
-\newblock {\em PAMI}, 33(12):2368--2382, December 2011.
+\newblock {\em PAMI}, {\em 33\/}(12), 2368--2382.
 
-\bibitem{mvdpm}
-Roberto~Javier L{\'o}pez-Sastre, Tinne Tuytelaars, and Silvio Savarese.
+\bibitem[\protect\citeauthoryear{L{\'o}pez-Sastre, Tuytelaars \&
+  Savarese}{L{\'o}pez-Sastre et~al.}{2011}]{mvdpm}
+L{\'o}pez-Sastre, R.~J., Tuytelaars, T., \& Savarese, S. (2011).
 \newblock Deformable part models revisited: A performance evaluation for object
   category pose estimation.
-\newblock In {\em ICCV Workshops}, pages 1052--1059, 2011.
+\newblock In {\em ICCV Workshops}, (pp.\ 1052--1059).
 
-\bibitem{o12}
-D.~G. Lowe.
+\bibitem[\protect\citeauthoryear{Lowe}{Lowe}{2004}]{o12}
+Lowe, D.~G. (2004).
 \newblock Distinctive image features from scale-invariant keypoints.
-\newblock {\em IJCV}, 60:91--110, 2004.
+\newblock {\em IJCV}, {\em 60}, 91--110.
 
-\bibitem{ij3}
-B.~D. Lucas and T.~Kanade.
+\bibitem[\protect\citeauthoryear{Lucas \& Kanade}{Lucas \& Kanade}{1981}]{ij3}
+Lucas, B.~D. \& Kanade, T. (1981).
 \newblock An iterative image registration technique with an application to
   stereo vision.
-\newblock In {\em IJCAI}, pages 674--679, 1981.
+\newblock In {\em IJCAI}, (pp.\ 674--679).
 
-\bibitem{ac10}
-S.~Maji and J.~Malik.
-\newblock Object detection using a max-margin hough transform.
-\newblock In {\em CVPR}, pages 1038--1045, 2009.
-
-\bibitem{ac32}
-Subhransu Maji, Alexander~C. Berg, and Jitendra Malik.
+\bibitem[\protect\citeauthoryear{Maji, Berg \& Malik}{Maji et~al.}{2008}]{ac32}
+Maji, S., Berg, A.~C., \& Malik, J. (2008).
 \newblock Classification using intersection kernel support vector machines is
   efficient.
-\newblock In {\em CVPR}, 2008.
+\newblock In {\em CVPR}.
 
-\bibitem{o14}
-J.~Matas, O.~Chum, U.~Martin, and T.~Pajdla.
+\bibitem[\protect\citeauthoryear{Maji \& Malik}{Maji \& Malik}{2009}]{ac10}
+Maji, S. \& Malik, J. (2009).
+\newblock Object detection using a max-margin hough transform.
+\newblock In {\em CVPR}, (pp.\ 1038--1045).
+
+\bibitem[\protect\citeauthoryear{Matas, Chum, Martin \& Pajdla}{Matas
+  et~al.}{2002}]{o14}
+Matas, J., Chum, O., Martin, U., \& Pajdla, T. (2002).
 \newblock Robust wide baseline stereo from maximally stable extremal regions.
-\newblock In {\em BMVC}, pages 384--393, 2002.
+\newblock In {\em BMVC}, (pp.\ 384--393).
 
-\bibitem{stickb}
-E.W. Meeds, D.A. Ross, R.S. Zemel, and S.T. Roweis.
+\bibitem[\protect\citeauthoryear{Meeds, Ross, Zemel \& Roweis}{Meeds
+  et~al.}{2008}]{stickb}
+Meeds, E., Ross, D., Zemel, R., \& Roweis, S. (2008).
 \newblock Learning stick-figure models using nonparametric bayesian priors over
   trees.
-\newblock In {\em CVPR}, pages 1--8, 2008.
+\newblock In {\em CVPR}, (pp.\ 1--8).
 
-\bibitem{bpw}
-R.~C. Merkle.
+\bibitem[\protect\citeauthoryear{Merkle}{Merkle}{1989}]{bpw}
+Merkle, R.~C. (1989).
 \newblock Energy limits to the computational power of the human brain.
-\newblock {\em Foresight Update}, No. 6, 1989.
+\newblock {\em Foresight Update}, {\em No. 6}.
 
-\bibitem{ac21}
-K.~Mikolajczyk, B.~Leibe, and B.~Schiele.
+\bibitem[\protect\citeauthoryear{Mikolajczyk, Leibe \& Schiele}{Mikolajczyk
+  et~al.}{2006}]{ac21}
+Mikolajczyk, K., Leibe, B., \& Schiele, B. (2006).
 \newblock Multiple object class detection with a generative model.
-\newblock In {\em CVPR}, pages I: 26--36, 2006.
+\newblock In {\em CVPR}, (pp.\ I: 26--36).
 
-\bibitem{o15}
-K.~Mikolajczyk and C.~Schmid.
+\bibitem[\protect\citeauthoryear{Mikolajczyk \& Schmid}{Mikolajczyk \&
+  Schmid}{2004}]{o15}
+Mikolajczyk, K. \& Schmid, C. (2004).
 \newblock Scale \& affine invariant interest point detectors.
-\newblock {\em IJCV}, 60(1):63--86, 2004.
+\newblock {\em IJCV}, {\em 60\/}(1), 63--86.
 
-\bibitem{o17}
-K.~Mikolajczyk, T.~Tuytelaars, C.~Schmid, A.~Zisserman, J.~Matas,
-  F.~Schaffalitzky, T.~Kadir, and L.~Van~Gool.
+\bibitem[\protect\citeauthoryear{Mikolajczyk, Tuytelaars, Schmid, Zisserman,
+  Matas, Schaffalitzky, Kadir \& Van~Gool}{Mikolajczyk et~al.}{2005}]{o17}
+Mikolajczyk, K., Tuytelaars, T., Schmid, C., Zisserman, A., Matas, J.,
+  Schaffalitzky, F., Kadir, T., \& Van~Gool, L. (2005).
 \newblock A comparison of affine region detectors.
-\newblock {\em IJCV}, 65(1-2):43--72, 2005.
+\newblock {\em IJCV}, {\em 65\/}(1-2), 43--72.
 
-\bibitem{ac19}
-S.~Mohottala, S.~Ono, M.~Kagesawa, and K.~Ikeuchi.
+\bibitem[\protect\citeauthoryear{Mohottala, Ono, Kagesawa \& Ikeuchi}{Mohottala
+  et~al.}{2009}]{ac19}
+Mohottala, S., Ono, S., Kagesawa, M., \& Ikeuchi, K. (2009).
 \newblock Fusion of a camera and a laser range sensor for vehicle recognition.
-\newblock In {\em OTCBVS}, pages 16--23, 2009.
+\newblock In {\em OTCBVS}, (pp.\ 16--23).
 
-\bibitem{ac18}
-K.~Ohba and K.~Ikeuchi.
+\bibitem[\protect\citeauthoryear{Ohba \& Ikeuchi}{Ohba \& Ikeuchi}{1997}]{ac18}
+Ohba, K. \& Ikeuchi, K. (1997).
 \newblock Detectability, uniqueness, and reliability of eigen windows for
   stable verification of partially occluded objects.
-\newblock {\em PAMI}, 19(9):1043--1047, September 1997.
+\newblock {\em PAMI}, {\em 19\/}(9), 1043--1047.
 
-\bibitem{lbp}
-Timo Ojala, Matti Pietik{\"a}inen, and David Harwood.
+\bibitem[\protect\citeauthoryear{Ojala, Pietik{\"a}inen \& Harwood}{Ojala
+  et~al.}{1996}]{lbp}
+Ojala, T., Pietik{\"a}inen, M., \& Harwood, D. (1996).
 \newblock A comparative study of texture measures with classification based on
   featured distributions.
-\newblock {\em Pattern Recognition}, 29(1):51--59, 1996.
+\newblock {\em Pattern Recognition}, {\em 29\/}(1), 51--59.
 
-\bibitem{ac7}
-R.~Okada.
+\bibitem[\protect\citeauthoryear{Okada}{Okada}{2009}]{ac7}
+Okada, R. (2009).
 \newblock Discriminative generalized hough transform for object dectection.
-\newblock In {\em ICCV}, pages 2000--2005, 2009.
+\newblock In {\em ICCV}, (pp.\ 2000--2005).
 
-\bibitem{ac26}
-B.~Ommer and J.~Malik.
+\bibitem[\protect\citeauthoryear{Olshausen \& Field}{Olshausen \&
+  Field}{1996}]{spen}
+Olshausen, B. \& Field, D. (1996).
+\newblock Emergence of simple-cell receptive field properties by learning a
+  sparse code for natural images.
+\newblock {\em Nature}, {\em 381}, 607--609.
+
+\bibitem[\protect\citeauthoryear{Ommer \& Malik}{Ommer \& Malik}{2009}]{ac26}
+Ommer, B. \& Malik, J. (2009).
 \newblock Multi-scale object detection by clustering lines.
-\newblock In {\em ICCV}, pages 484--491, 2009.
+\newblock In {\em ICCV}, (pp.\ 484--491).
 
-\bibitem{tlsurvey}
-Sinno~Jialin Pan and Qiang Yang.
+\bibitem[\protect\citeauthoryear{Ono, Xue, Banno, Oishi \& Ikeuchi}{Ono
+  et~al.}{2012}]{xue}
+Ono, S., Xue, L., Banno, A., Oishi, T., \& Ikeuchi, K. (2012).
+\newblock Global 3d modeling and its evaluation for large-scale highway tunnel
+  using laser range sensor.
+\newblock In {\em ITS World Congress}.
+
+\bibitem[\protect\citeauthoryear{Pan \& Yang}{Pan \& Yang}{2010}]{tlsurvey}
+Pan, S.~J. \& Yang, Q. (2010).
 \newblock A survey on transfer learning.
-\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
-  22(10):1345--1359, 2010.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering}, {\em
+  22\/}(10), 1345--1359.
 
-\bibitem{voc}
+\bibitem[\protect\citeauthoryear{PASCAL}{PASCAL}{}]{voc}
 PASCAL.
-\newblock {Visual Object Classes Challenge 2012 }.
+\newblock {Visual Object Classes Challenge 2012}.
 \newblock \url{http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2012}.
 \newblock [Online; accessed 22-May-2013].
 
-\bibitem{dpm3}
-M.~Pedersoli, A.~Vedaldi, and J.~Gonz{\`a}lez.
+\bibitem[\protect\citeauthoryear{Pedersoli, Vedaldi \& Gonz{\`a}lez}{Pedersoli
+  et~al.}{2011}]{dpm3}
+Pedersoli, M., Vedaldi, A., \& Gonz{\`a}lez, J. (2011).
 \newblock A coarse-to-fine approach for fast deformable object detection.
-\newblock In {\em CVPR}, 2011.
+\newblock In {\em CVPR}.
 
-\bibitem{midf}
-Nicolas Pinto, David Doukhan, James~J. DiCarlo, and David~D. Cox.
+\bibitem[\protect\citeauthoryear{Pinto, Doukhan, DiCarlo \& Cox}{Pinto
+  et~al.}{2009}]{midf}
+Pinto, N., Doukhan, D., DiCarlo, J.~J., \& Cox, D.~D. (2009).
 \newblock A high-throughput screening approach to discovering good forms of
   biologically inspired visual representation.
-\newblock {\em PLoS Computational Biology}, 5(11), 2009.
+\newblock {\em PLoS Computational Biology}, {\em 5\/}(11).
 
-\bibitem{spm}
-Hamed Pirsiavash and Deva Ramanan.
+\bibitem[\protect\citeauthoryear{Pirsiavash \& Ramanan}{Pirsiavash \&
+  Ramanan}{2012}]{spm}
+Pirsiavash, H. \& Ramanan, D. (2012).
 \newblock Steerable part models.
-\newblock In {\em CVPR}, 2012.
+\newblock In {\em CVPR}.
 
-\bibitem{ciod}
-E.~Rahtu, J.~Kannala, and M.~B. Blaschko.
+\bibitem[\protect\citeauthoryear{Rahtu, Kannala \& Blaschko}{Rahtu
+  et~al.}{2011}]{ciod}
+Rahtu, E., Kannala, J., \& Blaschko, M.~B. (2011).
 \newblock Learning a category independent object detection cascade.
-\newblock In {\em ICCV}, 2011.
+\newblock In {\em ICCV}.
 
-\bibitem{gprocess}
-Carl~Edward Rasmussen and Christopher K.~I. Williams.
+\bibitem[\protect\citeauthoryear{Rasmussen \& Williams}{Rasmussen \&
+  Williams}{2005}]{gprocess}
+Rasmussen, C.~E. \& Williams, C. K.~I. (2005).
 \newblock {\em Gaussian Processes for Machine Learning (Adaptive Computation
   and Machine Learning)}.
-\newblock The MIT Press, 2005.
+\newblock The MIT Press.
 
-\bibitem{ac20}
-H.~Rowley, S.~Baluja, and T.~Kanade.
+\bibitem[\protect\citeauthoryear{Rowley, Baluja \& Kanade}{Rowley
+  et~al.}{1998}]{ac20}
+Rowley, H., Baluja, S., \& Kanade, T. (1998).
 \newblock Rotation invariant neural network-based face detection.
-\newblock In {\em CVPR}, pages 38--44, 1998.
+\newblock In {\em CVPR}, (pp.\ 38--44).
 
-\bibitem{ac34}
-O.~Russakovsky and A.Y. Ng.
+\bibitem[\protect\citeauthoryear{Russakovsky \& Ng}{Russakovsky \&
+  Ng}{2010}]{ac34}
+Russakovsky, O. \& Ng, A. (2010).
 \newblock A steiner tree approach to efficient object detection.
-\newblock In {\em CVPR}, pages 1070--1077, 2010.
+\newblock In {\em CVPR}, (pp.\ 1070--1077).
 
-\bibitem{ac29}
-Henry Schneiderman and Takeo Kanade.
+\bibitem[\protect\citeauthoryear{Schneiderman \& Kanade}{Schneiderman \&
+  Kanade}{2004}]{ac29}
+Schneiderman, H. \& Kanade, T. (2004).
 \newblock Object detection using the statistics of parts.
-\newblock {\em IJCV}, 56(3):151--177, 2004.
+\newblock {\em IJCV}, {\em 56\/}(3), 151--177.
 
-\bibitem{kmts}
-John Shawe-Taylor and Nello Cristianini.
+\bibitem[\protect\citeauthoryear{Shawe-Taylor \& Cristianini}{Shawe-Taylor \&
+  Cristianini}{2004}]{kmts}
+Shawe-Taylor, J. \& Cristianini, N. (2004).
 \newblock {\em Kernel Methods for Pattern Analysis}.
-\newblock Cambridge University Press, New York, NY, USA, 2004.
+\newblock New York, NY, USA: Cambridge University Press.
 
-\bibitem{lss}
-Eli Shechtman and Michal Irani.
+\bibitem[\protect\citeauthoryear{Shechtman \& Irani}{Shechtman \&
+  Irani}{2007}]{lss}
+Shechtman, E. \& Irani, M. (2007).
 \newblock Matching local self-similarities across images and videos.
-\newblock In {\em CVPR}, June 2007.
+\newblock In {\em CVPR}.
 
-\bibitem{knct}
-J.~Shotton, A.~Fitzgibbon, M.~Cook, T.~Sharp, M.~Finocchio, R.~Moore,
-  A.~Kipman, and A.~Blake.
+\bibitem[\protect\citeauthoryear{Shotton, Fitzgibbon, Cook, Sharp, Finocchio,
+  Moore, Kipman \& Blake}{Shotton et~al.}{2011}]{knct}
+Shotton, J., Fitzgibbon, A., Cook, M., Sharp, T., Finocchio, M., Moore, R.,
+  Kipman, A., \& Blake, A. (2011).
 \newblock Real-time human pose recognition in parts from single depth images.
-\newblock In {\em CVPR}, pages 1297--1304, 2011.
+\newblock In {\em CVPR}, (pp.\ 1297--1304).
 
-\bibitem{cfm}
-Lawrence~C. Sincich and Jonathan~C. Horton.
+\bibitem[\protect\citeauthoryear{Sincich \& Horton}{Sincich \&
+  Horton}{2005}]{cfm}
+Sincich, L.~C. \& Horton, J.~C. (2005).
 \newblock {THE CIRCUITRY OF V1 AND V2: Integration of Color, Form, and Motion}.
-\newblock {\em Annual Review of Neuroscience}, 28(1):303--326, 2005.
+\newblock {\em Annual Review of Neuroscience}, {\em 28\/}(1), 303--326.
 
-\bibitem{spltm}
-Hyun~Oh Song, Stefan Zickler, Tim Althoff, Ross Girshick, Mario Fritz,
-  Christopher Geyer, Pedro Felzenszwalb, and Trevor Darrell.
+\bibitem[\protect\citeauthoryear{Song, Zickler, Althoff, Girshick, Fritz,
+  Geyer, Felzenszwalb \& Darrell}{Song et~al.}{2012}]{spltm}
+Song, H.~O., Zickler, S., Althoff, T., Girshick, R., Fritz, M., Geyer, C.,
+  Felzenszwalb, P., \& Darrell, T. (2012).
 \newblock Sparselet models for efficient multiclass object detection.
-\newblock In {\em ECCV}, 2012.
+\newblock In {\em ECCV}.
 
-\bibitem{ac33}
-Chris Stauffer and W.~Eric~L. Grimson.
+\bibitem[\protect\citeauthoryear{Stauffer \& Grimson}{Stauffer \&
+  Grimson}{1999}]{ac33}
+Stauffer, C. \& Grimson, W. E.~L. (1999).
 \newblock Adaptive background mixture models for real-time tracking.
-\newblock In {\em CVPR}, pages 2246--2252, 1999.
+\newblock In {\em CVPR}, (pp.\ 2246--2252).
 
-\bibitem{hdp}
-Y.~W. Teh, M.~I. Jordan, M.~J. Beal, and D.~M. Blei.
+\bibitem[\protect\citeauthoryear{Teh, Jordan, Beal \& Blei.}{Teh
+  et~al.}{2006}]{hdp}
+Teh, Y.~W., Jordan, M.~I., Beal, M.~J., \& Blei., D.~M. (2006).
 \newblock Hierarchical dirichlet process.
-\newblock {\em Journal of the American Statistical Association}, pages
-  1566--1581, 2006.
+\newblock {\em Journal of the American Statistical Association}, 1566--1581.
 
-\bibitem{ij2}
-C.~Tomasi and T.~Kanade.
+\bibitem[\protect\citeauthoryear{Tomasi \& Kanade}{Tomasi \&
+  Kanade}{1991}]{ij2}
+Tomasi, C. \& Kanade, T. (1991).
 \newblock Detection and tracking of point features.
-\newblock Technical report, Carnegie Mellon University, April 1991.
+\newblock Technical report, IJCV, Carnegie Mellon University.
 
-\bibitem{ij6}
-O.~Tuzel, F.~Porikli, and P.~Meer.
+\bibitem[\protect\citeauthoryear{Tuzel, Porikli \& Meer}{Tuzel
+  et~al.}{2006}]{regionc}
+Tuzel, O., Porikli, F., \& Meer, P. (2006).
 \newblock Region covariance: A fast descriptor for detection and
   classification.
-\newblock In {\em ECCV}, pages 589--600, 2006.
+\newblock In {\em ECCV}, (pp.\ II: 589--600).
 
-\bibitem{regionc}
-O.~Tuzel, F.M. Porikli, and P.~Meer.
-\newblock Region covariance: A fast descriptor for detection and
-  classification.
-\newblock In {\em ECCV}, pages II: 589--600, 2006.
-
-\bibitem{ac28}
-Paul~A. Viola and Michael~J. Jones.
+\bibitem[\protect\citeauthoryear{Viola \& Jones}{Viola \& Jones}{2004}]{ac28}
+Viola, P.~A. \& Jones, M.~J. (2004).
 \newblock Robust real-time face detection.
-\newblock {\em IJCV}, 57(2):137--154, 2004.
+\newblock {\em IJCV}, {\em 57\/}(2), 137--154.
 
-\bibitem{wang1}
-Z.~Wang, M.~Kagesawa, S.~Ono, A.~Banno, and K.~Ikeuchi.
+\bibitem[\protect\citeauthoryear{Wang, Kagesawa, Ono, Banno \& Ikeuchi}{Wang
+  et~al.}{2010}]{wang1}
+Wang, Z., Kagesawa, M., Ono, S., Banno, A., \& Ikeuchi, K. (2010).
 \newblock Emergency light detection in tunnel environment: An efficient method.
-\newblock In {\em ACPR}, pages 628 -- 632, 2010.
+\newblock In {\em ACPR}, (pp.\ 628 -- 632).
 
-\bibitem{ac13}
-M.~Wertheimer.
+\bibitem[\protect\citeauthoryear{Wertheimer}{Wertheimer}{1938}]{ac13}
+Wertheimer, M. (1938).
 \newblock Laws of organization in perceptual forms (partial translation).
-\newblock In W.~B. Ellis, editor, {\em A Sourcebook of Gestalt Psychology},
-  pages 71--88. Harcourt, Brace, 1938.
+\newblock In Ellis, W.~B. (Ed.), {\em A Sourcebook of Gestalt Psychology},
+  (pp.\ 71--88). Harcourt, Brace.
 
-\bibitem{dod}
+\bibitem[\protect\citeauthoryear{Wikipedia}{Wikipedia}{a}]{dod}
 Wikipedia.
 \newblock {Object Detection}.
 \newblock \url{http://en.wikipedia.org/wiki/Object_detection}.
 \newblock [Online; accessed 22-May-2013].
 
-\bibitem{siri}
+\bibitem[\protect\citeauthoryear{Wikipedia}{Wikipedia}{b}]{siri}
 Wikipedia.
 \newblock {Siri}.
 \newblock \url{http://en.wikipedia.org/wiki/Siri_(software)}.
 \newblock [Online; accessed 22-May-2013].
 
-\bibitem{ac23}
-C.~Wojek, S.~Roth, K.~Schindler, and B.~Schiele.
+\bibitem[\protect\citeauthoryear{Wojek, Roth, Schindler \& Schiele}{Wojek
+  et~al.}{2010}]{ac23}
+Wojek, C., Roth, S., Schindler, K., \& Schiele, B. (2010).
 \newblock Monocular 3d scene modeling and inference: Understanding multi-object
   traffic scenes.
-\newblock In {\em ECCV}, pages IV: 467--481, 2010.
+\newblock In {\em ECCV}, (pp.\ IV: 467--481).
 
-\bibitem{xue}
-L.~Xue, S.~Ono, A.~Banno, T.~Oishi, and K.~Ikeuchi.
-\newblock Global 3d modeling and its evaluation for large-scale highway tunnel
-  using laser range sensor.
-\newblock In {\em ITS World Congress}, 2012.
-
-\bibitem{ij13}
-L.~Yang, N.~Zheng, M.~Chen, Y.~Yang, and J.~Yang.
+\bibitem[\protect\citeauthoryear{Yang, Zheng, Chen, Yang \& Yang}{Yang
+  et~al.}{2009}]{ij13}
+Yang, L., Zheng, N., Chen, M., Yang, Y., \& Yang, J. (2009).
 \newblock Categorization of multiple objects in a scene without semantic
   segmentation.
-\newblock In {\em ACCV}, 2009.
+\newblock In {\em ACCV}.
 
-\bibitem{ij9}
-M.~Yang, T.~Yu, and Y.~Wu.
+\bibitem[\protect\citeauthoryear{Yang, Yu \& Wu}{Yang et~al.}{2007}]{ij9}
+Yang, M., Yu, T., \& Wu, Y. (2007).
 \newblock Game-theoretic multiple target tracking.
-\newblock In {\em ICCV}, pages 1--8, 2007.
+\newblock In {\em ICCV}, (pp.\ 1--8).
 
-\bibitem{ac25}
-P.~Yarlagadda, A.~Monroy, and B.~Ommer.
+\bibitem[\protect\citeauthoryear{Yarlagadda, Monroy \& Ommer}{Yarlagadda
+  et~al.}{2010}]{ac25}
+Yarlagadda, P., Monroy, A., \& Ommer, B. (2010).
 \newblock Voting by grouping dependent parts.
-\newblock In {\em ECCV}, pages V: 197--210, 2010.
+\newblock In {\em ECCV}, (pp.\ V: 197--210).
 
-\bibitem{ac1}
-T.~Yeh, J.J. Lee, and T.J. Darrell.
+\bibitem[\protect\citeauthoryear{Yeh, Lee \& Darrell}{Yeh et~al.}{2009}]{ac1}
+Yeh, T., Lee, J., \& Darrell, T. (2009).
 \newblock Fast concurrent object localization and recognition.
-\newblock In {\em CVPR}, pages 280--287, 2009.
+\newblock In {\em CVPR}, (pp.\ 280--287).
 
-\bibitem{drl1}
-T.~Yeh, J.J. Lee, and T.J. Darrell.
-\newblock Fast concurrent object localization and recognition.
-\newblock In {\em CVPR}, pages 280--287, 2009.
-
-\bibitem{ij10}
-Li~Zhang, Yuan Li, and R.~Nevatia.
+\bibitem[\protect\citeauthoryear{Zhang, Li \& Nevatia}{Zhang
+  et~al.}{2008}]{ij10}
+Zhang, L., Li, Y., \& Nevatia, R. (2008).
 \newblock Global data association for multi-object tracking using network
   flows.
-\newblock In {\em CVPR}, pages 1--8, 2008.
+\newblock In {\em CVPR}, (pp.\ 1--8).
 
-\bibitem{hdpm}
-Long~(Leo) Zhu, Yuanhao Chen, Alan Yuille, and William Freeman.
+\bibitem[\protect\citeauthoryear{Zhu, Chen, Yuille \& Freeman}{Zhu
+  et~al.}{2010}]{hdpm}
+Zhu, L.~L., Chen, Y., Yuille, A., \& Freeman, W. (2010).
 \newblock Latent hierarchical structural learning for object detection.
-\newblock {\em CVPR}, 0:1062--1069, 2010.
+\newblock In {\em CVPR}, (pp.\ 1062--1069).
 
 \end{thebibliography}

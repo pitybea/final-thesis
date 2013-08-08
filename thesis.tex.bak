@@ -1,7 +1,8 @@
 %input macros (i.e. write your own macros file called MacroFile1.tex)
 %\include{Macros/MacroFile1}
 
- \documentclass[oneside,12pt]{Classes/CUEDthesisPSnPDF}
+\documentclass[oneside,12pt]{Classes/CUEDthesisPSnPDF}
+
 \usepackage{graphicx}
 \usepackage{times}
 \usepackage{epsfig}
@@ -20,36 +21,26 @@
 \usepackage{graphicx}
 \usepackage{epstopdf}
 \usepackage[section,subsection,subsubsection]{extraplaceins}
+\numberwithin{algorithm}{chapter}
 
-\ifpdf
-    \pdfinfo { /Title  (CUED PhD and MPhil Thesis Classes)
-               /Creator (TeX)
-               /Producer (pdfTeX)
-               /Author (Harish Bhanderi harish.bhanderi@cantab.net)l
-               /CreationDate (D:20030101000000)  %format D:YYYYMMDDhhmmss
-               /ModDate (D:20030815213532)
-               /Subject (Writing a PhD thesis in LaTeX)
-               /Keywords (PhD, Thesis)}
-    \pdfcatalog { /PageMode (/UseOutlines)
-                  /OpenAction (fitbh)  }
-\fi
+
+
+
+
+
 
 \title{Writing a PhD Thesis\\[1ex]
         in \LaTeXe}
 
-\ifpdf
-  \author{\href{mailto:harish.bhanderi@cantab.net}{Harish Bhanderi}}
-  \collegeordept{\href{http://www.eng.cam.ac.uk}{Department of Engineering}}
-  \university{\href{http://www.cam.ac.uk}{University of Cambridge}}
+
+  \author{ {Harish Bhanderi}}
+  \collegeordept{ {Department of Engineering}}
+  \university{ {University of Cambridge}}
 % insert below the file name that contains the crest in-place of 'UnivShield'
   \crest{\includegraphics[width=30mm]{UnivShield}}
-\else
-  \author{Harish Bhanderi}
-  \collegeordept{Department of Engineering}
-  \university{University of Cambridge}
-% insert below the file name that contains the crest in-place of 'UnivShield'
-  \crest{\includegraphics[bb = 0 0 292 336, width=30mm]{UnivShield}}
-\fi
+
+
+
 %
 % insert below the file name that contains the crest in-place of 'UnivShield'
 % \crest{\IncludeGraphicsW{UnivShield}{40mm}{14 14 73 81}}
@@ -80,6 +71,8 @@
 \tableofcontents
 \listoffigures
 \listoftables
+\listofalgorithms
+\addcontentsline{toc}{chapter}{List of algorithms}
 %-------------------
 \mainmatter
 \include{chaps/1}
@@ -91,7 +84,7 @@
 
 
 %-------------------
-\bibliographystyle{plain}
+\bibliographystyle{apalike}
 \bibliography{chaps/egbib}
 \include{chaps/thanks}
 

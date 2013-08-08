@@ -7,9 +7,9 @@
 
 \begin{comment}
 
-Most state-of-the-art detection methods are based on the sliding-window schema~\cite{ac4,ac1} or the Hough transform~\cite{ac2,ac3,ac18}.
+Most state-of-the-art detection methods are based on the sliding-window schema~\citep{ac4,ac1} or the Hough transform~\citep{ac2,ac3,ac18}.
 The sliding-window methods consider all sub-images by using classifiers to decide whether an object exists or not.
-The Hough transform based methods, represented by the ISM~\cite{lb1}, start by detection of object parts, and object hypotheses are given by summing up all the votes voted by the object parts.
+The Hough transform based methods, represented by the ISM~\citep{lb1}, start by detection of object parts, and object hypotheses are given by summing up all the votes voted by the object parts.
 \end{comment}
 
 The reason why the method proposed in the previous chapter fails to work well in complex scenario, while performs well in detecting simple objects is that its model is too simple. Objects, especially pedestrians are actually structured, and different part will have different appearance.
@@ -25,20 +25,20 @@ object parts are firstly detected and then grouped by their motion patterns. Bas
 
 
 Most state-of-the-art visual
- detection methods fall into two main categories: sliding-window methods and Hough transform based methods. The methods~\cite{ac4,ac1} based on a sliding window schema perform detection in a typical machinery way. In these method, decisions of whether a target object exists or not are made for part of or all the sub-images in a test image. Beside the attractive performance and the extendibility of combining various kernels, these methods are favorable also because they consider each object as a whole during detection. However, they share limited aspects with visual perception in human beings, and the efficiency heavily relies on the size of the test images.
+ detection methods fall into two main categories: sliding-window methods and Hough transform based methods. The methods~\citep{ac4,ac1} based on a sliding window schema perform detection in a typical machinery way. In these method, decisions of whether a target object exists or not are made for part of or all the sub-images in a test image. Beside the attractive performance and the extendibility of combining various kernels, these methods are favorable also because they consider each object as a whole during detection. However, they share limited aspects with visual perception in human beings, and the efficiency heavily relies on the size of the test images.
 
-The other methods~\cite{lb1,ac2,ac3,ac18} detect objects based on the generalized Hough transform~\cite{ac17}. Object parts are detected, and the object parts provides confidence of locations being potential objects' centers. Locations of objects are decided according to the converged confidence. They are favorable for the robustness to partial deformation and easiness of training. To human beings, this kind of methods seems to be more natural. And in this work, we combine a mechanism of visual perception in human with the ISM~\cite{lb1} to demonstrate this natural property.
-
-
+The other methods~\citep{lb1,ac2,ac3,ac18} detect objects based on the generalized Hough transform~\citep{ac17}. Object parts are detected, and the object parts provides confidence of locations being potential objects' centers. Locations of objects are decided according to the converged confidence. They are favorable for the robustness to partial deformation and easiness of training. To human beings, this kind of methods seems to be more natural. And in this work, we combine a mechanism of visual perception in human with the ISM~\citep{lb1} to demonstrate this natural property.
 
 
 
-A typical Hough transform based method contains two steps: training and detection. During training, a codebook of object parts is built from a set of well annotated images. Each code in the codebook contains information about the appearance of the object part, the relative position to the object center, and the class label. Each object part's appearance is given in the form keypoint descriptors~\cite{lb1}, image patches~\cite{ac6,ac7}, or image regions~\cite{ac8}. Each code not only encode one object part's appearance, but also its offset to the  object center and the class label. while during detection, on each test image, object parts are detected. Then every object part is matched against the codebook, and activates several nearest codes in appearance. The offset and class label encoded in each activated code will act as a vote. All the votes from the object parts are added up to form a Hough image. The peaks of the Hough image are considered as detection hypotheses with the height of each peak as the confidence for the corresponding hypothesis.
-
-Two challenging issues for detection methods are how to separate near objects and how to separate similar different-class objects. The target objects, in some ITS applications, are pedestrians, bicycle riders, and automobiles. In the schema of sliding window, usually non-maximum suppression is needed for post-processing, and a mechanism in ~\cite{ac4} works by excluding from the feature pool the features which belong to each successive found detection response. In Hough transform based methods, a similar mechanism is also employed in ~\cite{ac9}, however, this effort is after the forming of Hough image. During the forming of a Hough image, two kinds of votes make detection challenging: (1) votes casted by object parts from near objects make the peaks corresponding to different objects mixed up, and (2) votes casted by similar different-class object parts lead to tough decisions on the class label of the peaks. See Figure~\ref{fig:compa:c}. Before the forming of Hough images, problems also arise from the pollution of training images' background part to the codebook. During training a very clean codebook can be built with foreground marked, which needs manual efforts. Otherwise, large amount of training examples are needed for the effectiveness of the codebook, and this harms efficiency.
 
 
-In videos, motion information is also available by simple tracking of object parts. Thus this chapter proposes a method for detection which utilizes both appearance and motion information. The method is based on the common fate principle~\cite{ac13}. The principle is one of the visual perception principles as theorized by gestalt psychologists, and it states for human beings, tokens moving coherently are perceptually grouped. This provides an intuition to group the object parts by their motion patterns, and let them vote afterwards. In this work, the object parts are represented using keypoint descriptors, which are tracked to generate trajectories. The object parts are grouped by the pairwise similarities of their corresponding trajectories. Having the assumption that object parts in the same motion group  probably belong to the same object, for each object part, we assign higher weights for the votes of this object parts which are more {\lq\lq}agreeable{\rq\rq} within the motion group. This results in votes corresponding to true detection responses are more likely to be assigned higher weights. And on a Hough image formed by summing up these weighted votes, the peaks are easier to find as shown in Figure~\ref{fig:compa:d}.
+A typical Hough transform based method contains two steps: training and detection. During training, a codebook of object parts is built from a set of well annotated images. Each code in the codebook contains information about the appearance of the object part, the relative position to the object center, and the class label. Each object part's appearance is given in the form keypoint descriptors~\citep{lb1}, image patches~\citep{ac6,ac7}, or image regions~\citep{ac8}. Each code not only encode one object part's appearance, but also its offset to the  object center and the class label. while during detection, on each test image, object parts are detected. Then every object part is matched against the codebook, and activates several nearest codes in appearance. The offset and class label encoded in each activated code will act as a vote. All the votes from the object parts are added up to form a Hough image. The peaks of the Hough image are considered as detection hypotheses with the height of each peak as the confidence for the corresponding hypothesis.
+
+Two challenging issues for detection methods are how to separate near objects and how to separate similar different-class objects. The target objects, in some ITS applications, are pedestrians, bicycle riders, and automobiles. In the schema of sliding window, usually non-maximum suppression is needed for post-processing, and a mechanism in ~\citep{ac4} works by excluding from the feature pool the features which belong to each successive found detection response. In Hough transform based methods, a similar mechanism is also employed in ~\citep{ac9}, however, this effort is after the forming of Hough image. During the forming of a Hough image, two kinds of votes make detection challenging: (1) votes casted by object parts from near objects make the peaks corresponding to different objects mixed up, and (2) votes casted by similar different-class object parts lead to tough decisions on the class label of the peaks. See Figure~\ref{fig:compa:c}. Before the forming of Hough images, problems also arise from the pollution of training images' background part to the codebook. During training a very clean codebook can be built with foreground marked, which needs manual efforts. Otherwise, large amount of training examples are needed for the effectiveness of the codebook, and this harms efficiency.
+
+
+In videos, motion information is also available by simple tracking of object parts. Thus this chapter proposes a method for detection which utilizes both appearance and motion information. The method is based on the common fate principle~\citep{ac13}. The principle is one of the visual perception principles as theorized by gestalt psychologists, and it states for human beings, tokens moving coherently are perceptually grouped. This provides an intuition to group the object parts by their motion patterns, and let them vote afterwards. In this work, the object parts are represented using keypoint descriptors, which are tracked to generate trajectories. The object parts are grouped by the pairwise similarities of their corresponding trajectories. Having the assumption that object parts in the same motion group  probably belong to the same object, for each object part, we assign higher weights for the votes of this object parts which are more {\lq\lq}agreeable{\rq\rq} within the motion group. This results in votes corresponding to true detection responses are more likely to be assigned higher weights. And on a Hough image formed by summing up these weighted votes, the peaks are easier to find as shown in Figure~\ref{fig:compa:d}.
 
 
 
@@ -76,21 +76,21 @@ The remaining chapter is organized as follows. Section \ref{rw4} reviews related
 \section{Related Work}
 \label{rw4}
 
- This method is most related to object detection methods~\cite{ac9,ac22,lb1,ac5,ac10,ac21} based on the Hough transform framework. Recently, such methods make a lot of progress. The ISM~\cite{lb1,ac5} is extended  by notifying correspondences between the object parts and the hypotheses~\cite{ac9} for the detection of multiple near objects. While in~\cite{ac6,ac10,ac7} the Hough transform is placed in a discriminative framework for object detection in a way that the codes are assigned different weights by the co-occurrence frequency of their appearance and offset to the object center.
+ This method is most related to object detection methods~\citep{ac9,ac22,lb1,ac5,ac10,ac21} based on the Hough transform framework. Recently, such methods make a lot of progress. The ISM~\citep{lb1,ac5} is extended  by notifying correspondences between the object parts and the hypotheses~\citep{ac9} for the detection of multiple near objects. While in~\citep{ac6,ac10,ac7} the Hough transform is placed in a discriminative framework for object detection in a way that the codes are assigned different weights by the co-occurrence frequency of their appearance and offset to the object center.
 
-Two Hough transform methods consider the grouping of object parts~\cite{ac26,ac25}. The method in~\cite{ac26} deals with scale change. Instead of estimating the scale by local features trained from different scaled examples, the votes are considered as voting lines. By considering the difference of the voted centers, local features are firstly grouped and then vote more consistently for the object center. In~\cite{ac25}, the grouping of object parts, the correspondence between object parts and object, and the decisions on detection hypotheses are optimized in the same energy function. For this method, the problem is that the grouping results don't have meaning or correspond to and real entities.
+Two Hough transform methods consider the grouping of object parts~\citep{ac26,ac25}. The method in~\citep{ac26} deals with scale change. Instead of estimating the scale by local features trained from different scaled examples, the votes are considered as voting lines. By considering the difference of the voted centers, local features are firstly grouped and then vote more consistently for the object center. In~\citep{ac25}, the grouping of object parts, the correspondence between object parts and object, and the decisions on detection hypotheses are optimized in the same energy function. For this method, the problem is that the grouping results don't have meaning or correspond to and real entities.
 
-The work is also related to keypoint clustering methods. In \cite{mc}, SIFT~\cite{o12} is
-used as key point, color histogram as appearance feature, region covariance~\cite{ij6}
+The work is also related to keypoint clustering methods. In \citep{mc}, SIFT~\citep{o12} is
+used as key point, color histogram as appearance feature, region covariance~\citep{regionc}
 as texture feature, and $(x,y)$ coordinate as spatial feature. Then
 for one pair key points, a pairwise similarity is calculated based
 on the generated features. Each point is projected into a new space
 capturing the pairwise distance by a spectral embedding process. The
 final result is given by a simple $k$-means clustering in the new
 projected spaces of the key points. This is a typical
-appearance based key point clustering. In \cite{my9}, Harris
-corner~\cite{ij2} is extracted as key point and motion information is
-gained by using KLT tracker~\cite{ij3} to trace out the extracted key
+appearance based key point clustering. In \citep{my9}, Harris
+corner~\citep{ij2} is extracted as key point and motion information is
+gained by using KLT tracker~\citep{ij3} to trace out the extracted key
 points on a serial of frames. Two pairwise motion similarity
 measures are defined on the generated trajectory set, both of which
 relate to the $(x_t,y_t)$ coordinate, where $t$ is the frame index.
@@ -102,22 +102,22 @@ up by making pairwise decisions on whether to merge to smaller
 clusters in a Minimal Description Language manner.
 
 This work also share features with methods try to couple detection with other problem, and then solve them together.
-In \cite{my7}, a very general \emph{Minimum Description Length}(MDL) framework for
-coupling tracking and detection is given. And \cite{ij10} re-detects
+In \citep{my7}, a very general \emph{Minimum Description Length}(MDL) framework for
+coupling tracking and detection is given. And \citep{ij10} re-detects
 detection responses missed in the detection procedure from tracking results. In
-\cite{ij14}, region semantic label associated with geometry
+\citep{ij14}, region semantic label associated with geometry
 information is estimated in the same energy framework whose
 parameters are learned together. Besides semantic and geometric information,
 other information is also estimated in the same framework. The
 advantage of the method is given by that the learned parameters well
 encoded the relationship between different information. In
-\cite{ij15},  a interpretation policy is used to specify when to
+\citep{ij15},  a interpretation policy is used to specify when to
 apply which imaging operator, to which portion of the image during
 every stage of interpretation. The interpretation policy is defined
 using a dynamic programming schema with considering the cost and the
 gained information of the operator.
 
-The work is also related to object detection methods by trajectories~\cite{my9,ac24}, methods weighting features~\cite{ij13}, methods dealing with codebook noise~\cite{ac19}, and methods which integrate temporal information~\cite{ac23}. Also the mechanisms of visual cortex also supports the proposed method~\cite{cfm}.
+The work is also related to object detection methods by trajectories~\citep{my9,ac24}, methods weighting features~\citep{ij13}, methods dealing with codebook noise~\citep{ac19}, and methods which integrate temporal information~\citep{ac23}. Also the mechanisms of visual cortex also supports the proposed method~\citep{cfm}.
 
 
 \section{Application Background}
@@ -126,7 +126,7 @@ In ITS areas, detection methods using cameras can be used for navigation, safe d
 
 \section{Common Fate Hough Transform}
 \label{pip4}
-Probabilistic standpoints are very appealing, because of inference easiness. However, as pointed in~\cite{ac27}, placing the ISM in a probabilistic framework is not satisfactory. Especially, describing weights of the votes as priors does not make sense.
+Probabilistic standpoints are very appealing, because of inference easiness. However, as pointed in~\citep{ac27}, placing the ISM in a probabilistic framework is not satisfactory. Especially, describing weights of the votes as priors does not make sense.
 Hough transform can be simply considered as transformation from a set of  object parts, $\{\bf{e}\}$,  to a confidence space of object hypotheses, $C({\bf{x}},l)$. And $\bf{x}$ is the coordinate of the object center, while $l$ the label. Terms described as priors of the votes in the ISM are actually weights, and the likelihood terms are actually blurring functions to convert discrete votes into continuous space. Then this section describes how a Hough image for estimation of object centers and labels is formed from object parts observed on an image.
 
 
@@ -249,8 +249,8 @@ The grouping result $\gamma=\{\bf{g}\}$, can be replaced by grouping results bas
 \subsection{Motion Grouping}
 In this subsection how to group the object parts by their motion patterns is introduced. Basically, the object parts are tracked, and clustered by their motion patterns. The object parts are tracked through frames before and after the current frame to generate trajectories. Then the object parts are grouped by their corresponding trajectories' pairwise motion similarity.
 
-The object parts in this method are in the form of keypoint descriptors. The Harris Corner~\cite{harris} feature is chosen, for robustness, to represent each object part, while for appearance, the region covariance~\cite{regionc} feature of the image patch around each keypoint is used. The image feature is chosen because of its flexibility to combine multiple channels of information, and also for its capability of handling scale changes in a certain range.
-For each object part, a trajectory is generated by tracking its corresponding Harris Corner by the KLT tracker~\cite{ij2}. To group the trajectories, two pairwise similarities are defined.
+The object parts in this method are in the form of keypoint descriptors. The Harris Corner~\citep{harris} feature is chosen, for robustness, to represent each object part, while for appearance, the region covariance~\citep{regionc} feature of the image patch around each keypoint is used. The image feature is chosen because of its flexibility to combine multiple channels of information, and also for its capability of handling scale changes in a certain range.
+For each object part, a trajectory is generated by tracking its corresponding Harris Corner by the KLT tracker~\citep{ij2}. To group the trajectories, two pairwise similarities are defined.
 
 Let $T_{{\bf{e}}_m}$ and $T_{{\bf{e}}_n}$ denote two trajectories corresponding to ${{\bf{e}}_m}$ and ${{\bf{e}}_n}$. The first similarity between two trajectories is defined as,
 
@@ -289,7 +289,7 @@ object part and a code is defined by the smallest similarity
 of the corresponding region covariance.
 \section{Detection}
 \label{det4}
-After forming the Hough image, the detection hypotheses are validated. Let ${\bf{h}}=\{ H \}$ be the points in the Hough space which are evaluated by $C({\bf{x}}_{H},l_{H})$ and have $C({\bf{x}}_{H},l_{H})>0$.  Inspired by~\cite{ac9}, the hypotheses are validated by an optimizing procedure. Let $O$ be the number of the points in ${\bf{h}}$. Let $u_i=1\mbox{ or } 0$ indicate $H_i$ being a true object center or not. The problem is:
+After forming the Hough image, the detection hypotheses are validated. Let ${\bf{h}}=\{ H \}$ be the points in the Hough space which are evaluated by $C({\bf{x}}_{H},l_{H})$ and have $C({\bf{x}}_{H},l_{H})>0$.  Inspired by~\citep{ac9}, the hypotheses are validated by an optimizing procedure. Let $O$ be the number of the points in ${\bf{h}}$. Let $u_i=1\mbox{ or } 0$ indicate $H_i$ being a true object center or not. The problem is:
 \[
 \arg \max\limits_{u_i} \prod\limits_{i = 1}^O { C^{u_i}({H_i})} \Longleftrightarrow\arg \max\limits_{u_i} \sum\limits_{i = 1}^O {{u_i}\ln (C({H_i})} )\:.
 \]
@@ -315,12 +315,12 @@ and by assuming one object part belongs to and only belongs to one hypothesis, t
 \]
 
 
-Following~\cite{ac9}, the optimal result for the problem is given by greedy maximization. As described in Algorithm \ref{alg:gm}, the largest local maximum of all the local maxima is chosen to be the center of a true object and then the object parts belonging to the chosen object center are excluded from the object part set. A new Hough image where new objects are found is formed using the remaining object parts. And this procedure ends when the object part set is empty or the confidence of the chosen object is lower than a threshold.
+Following~\citep{ac9}, the optimal result for the problem is given by greedy maximization. As described in Algorithm \ref{alg:gm}, the largest local maximum of all the local maxima is chosen to be the center of a true object and then the object parts belonging to the chosen object center are excluded from the object part set. A new Hough image where new objects are found is formed using the remaining object parts. And this procedure ends when the object part set is empty or the confidence of the chosen object is lower than a threshold.
 
-\begin{algorithm}[h]
+\begin{algorithm}[chapter]
 
-    \caption{Greedy Maximization}
-    \label{alg:gm}
+
+  
      Let $\varepsilon$ be the set of object parts, $C_{th}$ be the low confidence threshold to accept detection responses, and $\hat{\bf{h}}$ be the local maxima of $\bf{h}$
 
 
@@ -363,6 +363,9 @@ Following~\cite{ac9}, the optimal result for the problem is given by greedy maxi
     \RETURN $\{H_i\}$
 
     \end{algorithmic}
+    
+      \caption{Greedy Maximization}
+    \label{alg:gm}
 
 \end{algorithm}
 
@@ -386,7 +389,7 @@ Following~\cite{ac9}, the optimal result for the problem is given by greedy maxi
 
 \section{Experimental Results}
 \label{ex4}
-In experiments, improvement of the method is verified in terms of detection accuracy. The method is tested on the P-campus dataset with~\cite{ac9} as benchmark, and then tested on a dataset of several animals.
+In experiments, improvement of the method is verified in terms of detection accuracy. The method is tested on the P-campus dataset with~\citep{ac9} as benchmark, and then tested on a dataset of several animals.
 \subsection{ Campus-scene Detection }
 \begin{figure}
 \centering

@@ -5,7 +5,7 @@
 % Version 1.1 released 14/07/2010
 %-------------------------- identification ---------------------
 %\NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{CUEDthesisPSnPDF}[2010/07/14 v1.1 CUED thesis class]
+\ProvidesClass{Classes/CUEDthesisPSnPDF}[2010/07/14 v1.1 CUED thesis class]
 %-------------------------- initial code -----------------------
 \newif\ifCU@bookmode
 \CU@bookmodetrue
@@ -44,7 +44,7 @@
 \usepackage[english]{babel}
 \usepackage[usenames, dvipsnames]{color}
 \usepackage[perpage]{footmisc}
-\usepackage[square, sort, numbers, authoryear]{natbib}
+\usepackage[square,sort,numbers, authoryear]{natbib}
 \usepackage{ifthen}
 \usepackage{ifpdf}
 
@@ -52,7 +52,7 @@
 %Bibliography
 %uncomment next line to change bibliography name to references for Book document class
 \renewcommand{\bibname}{References}
-% note that this doesn't do much if you later define another bibliography style 
+% note that this doesn't do much if you later define another bibliography style
 
 
 % Nomenclature
@@ -76,13 +76,13 @@
 \ifpdf
 %-->
 %--> Google.com search "hyperref options"
-%--> 
+%-->
 %--> http://www.ai.mit.edu/lab/sysadmin/latex/documentation/latex/hyperref/manual.pdf
-%--> http://www.chemie.unibas.ch/~vogtp/LaTeX2PDFLaTeX.pdf 
+%--> http://www.chemie.unibas.ch/~vogtp/LaTeX2PDFLaTeX.pdf
 %--> http://www.uni-giessen.de/partosch/eurotex99/ oberdiek/print/sli4a4col.pdf
 %--> http://me.in-berlin.de/~miwie/tex-refs/html/latex-packages.html
 %-->
-    \usepackage[ pdftex, plainpages = false, pdfpagelabels, 
+    \usepackage[ pdftex, plainpages = false, pdfpagelabels,
                  pdfpagelayout = OneColumn, % display single page, advancing flips the page - Sasa Tomic
                  bookmarks,
                  bookmarksopen = true,
@@ -97,14 +97,14 @@
                  anchorcolor = green,
                  hyperindex = true,
                  hyperfigures
-                 ]{hyperref} 
+                 ]{hyperref}
     \usepackage[pdftex]{graphicx}
     \DeclareGraphicsExtensions{.png, .jpg, .pdf}
 
     \pdfcompresslevel=9
     \graphicspath{{ThesisFigs/PNG/}{ThesisFigs/PDF/}{ThesisFigs/}}
 \else
-    \usepackage[ dvips, 
+    \usepackage[ dvips,
                  bookmarks,
                  bookmarksopen = true,
                  bookmarksnumbered = true,
@@ -191,7 +191,7 @@
 % Defining the crest
 \def\crest#1{\gdef\@crest{#1}}
 
-% These macros define an environment for front matter that is always 
+% These macros define an environment for front matter that is always
 % single column even in a double-column document.
 
 \newenvironment{alwayssingle}{%
@@ -245,7 +245,7 @@
 
 % ACKNOWLEDGEMENTS
 %
-% The acknowledgements environment puts a large, bold, centered 
+% The acknowledgements environment puts a large, bold, centered
 % "Acknowledgements" label at the top of the page. The acknowledgements
 % themselves appear in a quote environment, i.e. tabbed in at both sides, and
 % on its own page.
@@ -261,8 +261,8 @@
 \begin{quote}}
 {\end{quote}\end{alwayssingle}}
 
-% The acknowledgementslong environment puts a large, bold, centered 
-% "Acknowledgements" label at the top of the page. The acknowledgement itself 
+% The acknowledgementslong environment puts a large, bold, centered
+% "Acknowledgements" label at the top of the page. The acknowledgement itself
 % does not appears in a quote environment so you can get more in.
 
 \newenvironment{acknowledgementslong}
@@ -332,4 +332,3 @@
   \renewcommand{\thepage}{\roman{page}}}
 {\newpage\renewcommand{\thepage}{\arabic{page}}}
 %{\newpage\renewcommand{\thepage}{\arabic{page}}\setcounter{page}{1}}
-

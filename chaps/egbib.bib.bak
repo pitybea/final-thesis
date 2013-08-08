@@ -83,12 +83,12 @@ Temporal Integration",
     abstract = {We consider tracking as a binary classification problem, where an ensemble of weak classifiers is trained online to distinguish between the object and the background. The ensemble of weak classifiers is combined into a strong classifier using AdaBoost. The strong classifier is then used to label pixels in the next frame as either belonging to the object or the background, giving a confidence map. The peak of the map and, hence, the new position of the object, is found using mean shift. Temporal coherence is maintained by updating the ensemble with new weak classifiers that are trained online during tracking. We show a realization of this method and demonstrate it on several video sequences},
     author = {Avidan, S.},
     booktitle = {PAMI},
-    doi = {10.1109/TPAMI.2007.35},
+
     journal = {PAMI},
     number = {2},
     pages = {261--271},
     title = {Ensemble Tracking},
-    url = {http://dx.doi.org/10.1109/TPAMI.2007.35},
+
     volume = {29},
     year = {2007}
 }
@@ -100,7 +100,7 @@ Temporal Integration",
     keywords = {detection, geometry, global-optimization, tracking},
     pages = {1--8},
     title = {Dynamic 3D Scene Analysis from a Moving Vehicle},
-    url = {http://dx.doi.org/10.1109/CVPR.2007.383146},
+
     year = {2007}
 }
 
@@ -147,7 +147,7 @@ volume={},
 number={},
 pages={778-783},
 keywords={driver information systems, object detection, stereo image processing, vehicles(axis,width,disparity) symmetry map, stereo concept, v-disparity approach, vehicle detection},
-doi={10.1109/ITSC.2008.4732668},
+
 ISSN={}, }
 
 @INPROCEEDINGS{my2,
@@ -160,7 +160,7 @@ volume={},
 number={},
 pages={791-796},
 keywords={feature extraction, image reconstruction, image segmentation, image sequences, motion estimation, object detection, pattern clustering, spatiotemporal phenomena, stereo image processing, tracking3D world space, automotive scene, cluster interpretation, feature selection, image reconstruction, image stereoscopic sequence, motion estimation, object segmentation, spatial information, temporal information},
-doi={10.1109/ITSC.2008.4732563},
+
 ISSN={}, }
 
 @inproceedings{my3,
@@ -181,7 +181,7 @@ volume={},
 number={},
 pages={524-529},
 keywords={Haar transforms, automated highways, computer vision, image classification, learning (artificial intelligence), object detection, road vehiclesHaar-like wavelet features, cascade Adaboost classifier training, intelligent vehicles, mean shift method, monocular vision, moving camera, pedestrian detection system, shapelet features},
-doi={10.1109/IVS.2008.4621295},
+
 ISSN={1931-0587}, }
 
 @INPROCEEDINGS{my5,
@@ -194,7 +194,7 @@ volume={},
 number={},
 pages={440-445},
 keywords={distance measurement, feature extraction, image motion analysis, random processes, traffic engineering computingcomplex urban environment, ego-motion, feature extraction, onboard driver assistance, photogrametric approach, random sample consensus, robust visual odometry, scale-invariant image feature, stereo-vision system, vehicle motion trajectory},
-doi={10.1109/IVS.2008.4621277},
+
 ISSN={1931-0587}, }
 
 @inproceedings{my6,
@@ -276,8 +276,41 @@ Segmentation",
     month = {April},
     title = {Detection and tracking of point features},
     url = {http://www.google.com/search?q=KLT+Detection+and+tracking+of+point},
+        institution = {IJCV},
     year = {1991}
 }
+
+
+
+@TECHREPORT{Tomasi91detectionand,
+    author = {Carlo Tomasi and Takeo Kanade},
+    title = {Detection and Tracking of Point Features},
+    institution = {International Journal of Computer Vision},
+    year = {1991}
+}
+
+
+
+Years of Citing Articles
+
+051015199419961998200020022004200620081
+
+
+Bookmark
+
+citeulike Connotea Bibsonomy Del.icio.us Digg Reddit
+ 	
+
+
+OpenURL
+
+
+Abstract
+
+The factorization method described in this series of reports requires an algorithm to track the motion of features in an image stream. Given the small inter-frame displacement made possible by the factorization approach, the best tracking method turns out to be the one proposed by Lucas and Kanade in 1981. The method defines the measure of match between fixed-size feature windows in the past and current frame as the sum of squared intensity differences over the windows. The displacement is then defined as the one that minimizes this sum. For small motions, a linearization of the image intensities leads to a Newton-Raphson style minimization. In this report, after rederiving the method in a physically intuitive way, we answer the crucial question of how to choose the feature windows that are best suited for tracking. Our selection criterion is based directly on the definition of the tracking algorithm, and expresses how well a feature can be tracked. As a result, the criterion is optima...
+
+
+Citations
 
 @inproceedings{harris,
         AUTHOR = "Harris, C. and Stephens, M.J.",
@@ -328,7 +361,7 @@ This is achieved by replying on integral images for image convolutions; by build
     posted-at = {2008-03-25 15:27:51},
     priority = {0},
     title = {Robust wide baseline stereo from maximally stable extremal regions},
-    url = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.7.2484},
+
     year = {2002}
 }
 @article{o15,
@@ -340,26 +373,21 @@ This is achieved by replying on integral images for image convolutions; by build
  year = {2004},
  issn = {0920-5691},
  pages = {63--86},
- doi = {http://dx.doi.org/10.1023/B:VISI.0000027790.02288.f2},
+
  }
 @article{o17,
     abstract = {The paper gives a snapshot of the state of the art in affine covariant region detectors, and compares their performance on a set of test images under varying imaging conditions. Six types of detectors are included: detectors based on affine normalization around Harris (Mikolajczyk and Schmid, 2002; Schaffalitzky and Zisserman, 2002) and Hessian points (Mikolajczyk and Schmid, 2002), a detector of `maximally stable extremal regions', proposed by Matas et al. (2002); an edge-based region detector (Tuytelaars and Van Gool, 1999) and a detector based on intensity extrema (Tuytelaars and Van Gool, 2000), and a detector of `salient regions', proposed by Kadir, Zisserman and Brady (2004). The performance is measured against changes in viewpoint, scale, illumination, defocus and image compression.},
     address = {Hingham, MA, USA},
     author = {Mikolajczyk, K. and Tuytelaars, T. and Schmid, C. and Zisserman, A. and Matas, J. and Schaffalitzky, F. and Kadir, T. and Van Gool, L.},
-    citeulike-article-id = {957702},
-    citeulike-linkout-0 = {http://portal.acm.org/citation.cfm?id=1117156.1117169},
-    citeulike-linkout-1 = {http://dx.doi.org/10.1007/s11263-005-3848-x},
-    doi = {10.1007/s11263-005-3848-x},
+
     issn = {0920-5691},
     journal = {IJCV},
     keywords = {interest-point-detector, photo2search, reading},
     number = {1-2},
     pages = {43--72},
-    posted-at = {2006-12-05 07:36:18},
-    priority = {5},
     publisher = {Kluwer Academic Publishers},
     title = {A Comparison of Affine Region Detectors},
-    url = {http://dx.doi.org/10.1007/s11263-005-3848-x},
+
     volume = {65},
     year = {2005}
 }
@@ -373,7 +401,7 @@ This is achieved by replying on integral images for image convolutions; by build
  year = {2003},
  issn = {1532-4435},
  pages = {993--1022},
- doi = {http://dx.doi.org/10.1162/jmlr.2003.3.4-5.993},
+
  publisher = {JMLR.org},
  }
  @article{dp,
@@ -383,9 +411,7 @@ This is achieved by replying on integral images for image convolutions; by build
         pages = {209-230},
         volume = 1,
         year = 1973,
-        biburl = {http://www.bibsonomy.org/bibtex/22d6ed2843953cacc5af5414220a79213/gregoryy},
-	keywords = {stat},
-    timestamp = {2009.04.07}, owner = {heinrich}}
+   }
 
 @article{ij08e,
         AUTHOR = "Sudderth, E.B. and Torralba, A. and Freeman, W.T. and Willsky, A.S.",
@@ -396,7 +422,7 @@ This is achieved by replying on integral images for image convolutions; by build
         NUMBER = "1-3",
         MONTH = "May",
         PAGES = "291-330",
-        BIBSOURCE = "http://www.visionbib.com/bibliography/describe481.html#TT40301"}
+   }
 @InProceedings{ij4,
   author       = {N. Dalal and B. Triggs},
   title        = {Histograms of Oriented Gradients for Human Detection},
@@ -404,7 +430,7 @@ This is achieved by replying on integral images for image convolutions; by build
   pages        = {886-893},
   month        = {June},
   year         = {2005},
-  editor       = {Cordelia Schmid and Stefano Soatto and Carlo Tomasi},
+
 }
 
 @inproceedings{ij5,
@@ -423,7 +449,7 @@ booktitle={CVPR},
 year={2009},
 pages={1279-1286},
 keywords={image colour analysis, image matching, image representation, image texture, pattern clusteringappearance-based keypoint clustering, colour representation, image matching, interest points detection, keypoint matching, texture representation},
-doi={10.1109/CVPRW.2009.5206514},
+
 ISSN={1063-6919}, }
 
 @INPROCEEDINGS{ij6,
@@ -445,12 +471,12 @@ Bayesian model",
 @incollection{ij8,
     abstract = {In this paper, we describe an unsupervised learning framework to segment a scene into semantic regions and to build semantic scene models from long-term observations of moving objects in the scene. First, we introduce two novel similarity measures for comparing trajectories in far-field visual surveillance. The measures simultaneously compare the spatial distribution of trajectories and other attributes, such as velocity and object size, along the trajectories. They also provide a comparison confidence measure which indicates how well the measured image-based similarity approximates true physical similarity. We also introduce novel clustering algorithms which use both similarity and comparison confidence. Based on the proposed similarity measures and clustering methods, a framework to learn semantic scene models by trajectory analysis is developed. Trajectories are first clustered into vehicles and pedestrians, and then further grouped based on spatial and velocity distributions. Different trajectory clusters represent different activities. The geometric and statistical models of structures in the scene, such as roads, walk paths, sources and sinks, are automatically learned from the trajectory clusters. Abnormal activities are detected using the semantic scene models. The system is robust to low-level tracking errors.},
     author = {Wang, X and Tieu, K. and Grimson, E.},
-    doi = {10.1007/11744078_9},
+
     BOOKTITLE = {ECCV},
     keywords = {trajectorymatching},
     pages = {110--123},
     title = {Learning Semantic Scene Models by Trajectory Analysis},
-    url = {http://dx.doi.org/10.1007/11744078_9},
+
     year = {2006}
 }
 
@@ -463,7 +489,7 @@ volume={},
 number={},
 pages={1-8},
 keywords={target trackinggame-theoretic multiple target tracking, joint motion estimation, visual observations},
-doi={10.1109/ICCV.2007.4408942},
+
 ISSN={1550-5499}, }
 
 @INPROCEEDINGS{ij10,
@@ -476,7 +502,7 @@ volume={},
 number={},
 pages={1-8},
 keywords={object detection, sensor fusion, trackingEOM, MAP, cost-flow network, explicit occlusion model, inter-object occlusions, maximum-a-posteriori data association problem, min-cost flow algorithm, multiple object tracking, public pedestrian datasets},
-doi={10.1109/CVPR.2008.4587584},
+
 ISSN={1063-6919}, }
 
 @inproceedings{ij11,
@@ -489,7 +515,7 @@ ISSN={1063-6919}, }
         description = {dblp},
     biburl = {http://www.bibsonomy.org/bibtex/2cc49d604c957fadf0adc00c65601139a/dblp},
     keywords = {dblp},
-    ee = {http://dx.doi.org/10.1007/978-3-540-88688-4_58}, isbn = {978-3-540-88685-3}}
+    }
 
 
 @inproceedings{ij12,
@@ -832,8 +858,6 @@ Understanding Multi-Object Traffic Scenes",
   number    = {2},
   year      = {2004},
   pages     = {137-154},
-  ee        = {http://dx.doi.org/10.1023/B:VISI.0000013087.49260.fb},
-  bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
 @article{ac29,
@@ -845,8 +869,6 @@ Understanding Multi-Object Traffic Scenes",
   number    = {3},
   year      = {2004},
   pages     = {151-177},
-  ee        = {http://dx.doi.org/10.1023/B:VISI.0000011202.85607.00},
-  bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
 
@@ -1060,7 +1082,7 @@ number = {10},
 issn = {1041-4347},
 year = {2010},
 pages = {1345-1359},
-doi = {http://doi.ieeecomputersociety.org/10.1109/TKDE.2009.191},
+
 publisher = {IEEE Computer Society},
 address = {Los Alamitos, CA, USA},
 }
@@ -1092,8 +1114,6 @@ address = {Los Alamitos, CA, USA},
  issn = {0162-8828},
  pages = {509--522},
  numpages = {14},
- url = {http://dx.doi.org/10.1109/34.993558},
- doi = {10.1109/34.993558},
  acmid = {628792},
  publisher = {IEEE Computer Society},
  address = {Washington, DC, USA},
@@ -1235,7 +1255,7 @@ address = {Washington, DC, USA}
 }
 @misc{ voc,
    author = " PASCAL",
-   title = {{Visual Object Classes Challenge 2012 }},
+   title = {{Visual Object Classes Challenge 2012}},
    howpublished = "\url{http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2012}",
    note = "[Online; accessed 22-May-2013]"
  }
@@ -1264,7 +1284,7 @@ address = {Washington, DC, USA}
   booktitle = {ICML},
   year      = {2012},
   ee        = {http://icml.cc/discuss/2012/73.html},
-  crossref  = {DBLP:conf/icml/2012},
+
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1316,25 +1336,26 @@ address = {Washington, DC, USA}
     year = {2005}
 }
 
-@article{spen,
 
-    day = {13},
-    doi = {10.1038/381607a0},
-    issn = {0028-0836},
-    journal = {Nature},
-    keywords = {computational-neuroscience, prototype-learning},
-    month = jun,
-    number = {6583},
-    pages = {607--609},
-    pmid = {8637596},
-    posted-at = {2009-11-10 05:24:54},
-    priority = {2},
-    publisher = {Nature Publishing Group},
-    title = {{Emergence of simple-cell receptive field properties by learning a sparse code for natural images.}},
-    url = {http://dx.doi.org/10.1038/381607a0},
-    volume = {381},
-    year = {1996}
+@article{spen,
+  added-at = {2010-02-27T01:05:18.000+0100},
+  author = {Olshausen, B.A. and Field, D.J.},
+  biburl = {http://www.bibsonomy.org/bibtex/2a6f3373495cd59b95d3120f7637d4a2f/tb2332},
+  interhash = {62f8f2a3d7411ecc0751ff870a07afc1},
+  intrahash = {a6f3373495cd59b95d3120f7637d4a2f},
+  journal = {Nature},
+  keywords = {imported},
+  month = {June},
+  owner = {thierry},
+  pages = {607-609},
+  timestamp = {2010-02-27T01:05:18.000+0100},
+  title = {Emergence of simple-cell receptive field properties by learning a
+	sparse code for natural images},
+  volume = 381,
+  year = 1996
 }
+
+
 
 
 @article{dpm1,
@@ -1360,7 +1381,7 @@ address = {Los Alamitos, CA, USA},
   year      = {2010},
   pages     = {2241-2248},
   ee        = {http://dx.doi.org/10.1109/CVPR.2010.5539906},
-  crossref  = {DBLP:conf/cvpr/2010},
+
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
@@ -1374,7 +1395,6 @@ address = {Los Alamitos, CA, USA},
 	title = {Sparselet Models for Efficient Multiclass Object Detection},
 	booktitle = {ECCV},
 	year = {2012},
-	month = {2012},
 	author = {Hyun Oh Song and Stefan Zickler and Tim Althoff and Ross Girshick and Mario Fritz and Christopher Geyer and Pedro Felzenszwalb and Trevor Darrell}
 }
 
@@ -1402,6 +1422,6 @@ address = {Los Alamitos, CA, USA},
   year      = {2011},
   pages     = {1052-1059},
   ee        = {http://dx.doi.org/10.1109/ICCVW.2011.6130367},
-  crossref  = {DBLP:conf/iccvw/2011},
+
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }

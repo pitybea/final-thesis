@@ -3,15 +3,15 @@
 
 \section{Introduction}
 
-Bag-of-features~\cite{bgf} schema can be considered as the watershed between traditional and modern detection methods. Instead of considering each target object as a collection of raw optical elements, i.e., pixels, the schema tries to consider each object as a set of semantic elements or so-called object parts which are usually some strong local image features. Then one visual object is said to be a target object if it possesses some certain local features of certain numbers, while does not contain other certain local features of certain numbers. While this is quite straightforward, the very precious information encoded in local features' relative positions is left over. Following some pioneering ideas~\cite{spmk,ac30}, this chapter proposes a detection method which combines spatial and visual information of local image features in a  way pursuing both efficiency and effectiveness.
+Bag-of-features~\citep{bgf} schema can be considered as the watershed between traditional and modern detection methods. Instead of considering each target object as a collection of raw optical elements, i.e., pixels, the schema tries to consider each object as a set of semantic elements or so-called object parts which are usually some strong local image features. Then one visual object is said to be a target object if it possesses some certain local features of certain numbers, while does not contain other certain local features of certain numbers. While this is quite straightforward, the very precious information encoded in local features' relative positions is left over. Following some pioneering ideas~\citep{spmk,ac30}, this chapter proposes a detection method which combines spatial and visual information of local image features in a  way pursuing both efficiency and effectiveness.
 
 The results of Chapter \ref{chp4} is promising on the two experimental datasets, however, the efficiency is not good due to the employment of Hough transform framework.
- Besides, inferring object status in a bottom-up manner fails to capture global information of each target object from the very beginning. And this is also why recently the detection results of Hough transform based methods need refinement by discriminative methods in order to be competitive. Still the way how to use spatial information of local features is very illuminate. 
- 
- Just as said in~\cite{ac27}, Hough transform based methods and sliding-window methods are the two sides of the same coin. The method proposed in this chapter calculates confidence of a target object class for each sub-window in an image. Instead of considering each object as a collection of visual patterns (appearance of local features), the method considers each object as a set of visual-spatial patterns. One object is considered as a set of points. Each point is a digital vector, with the last two dimensions the relative $x-$ and $y-$ coordinates to object center, and SIFT after principle component analysis as the remaining dimensions. The training procedure is about collecting all such visual-spatial points into a point set, which acts as a super template. During detection, each sub-image is considered as a point set, and it is matched against the super template. The confidence is then the match score.
- 
+ Besides, inferring object status in a bottom-up manner fails to capture global information of each target object from the very beginning. And this is also why recently the detection results of Hough transform based methods need refinement by discriminative methods in order to be competitive. Still the way how to use spatial information of local features is very illuminate.
+
+ Just as said in~\citep{ac27}, Hough transform based methods and sliding-window methods are the two sides of the same coin. The method proposed in this chapter calculates confidence of a target object class for each sub-window in an image. Instead of considering each object as a collection of visual patterns (appearance of local features), the method considers each object as a set of visual-spatial patterns. One object is considered as a set of points. Each point is a digital vector, with the last two dimensions the relative $x-$ and $y-$ coordinates to object center, and SIFT after principle component analysis as the remaining dimensions. The training procedure is about collecting all such visual-spatial points into a point set, which acts as a super template. During detection, each sub-image is considered as a point set, and it is matched against the super template. The confidence is then the match score.
+
  The key to this method is how to define a matric or match score for two point sets. Here pyramid matching procedure is employed, not only for efficiency, but also for combining visual and spatial information from local features in an effective manner. The visual-spatial space is divided from fine to coarse. Under a certain dividing parameter, points from the two matching point sets are considered as match if they fall into the same grid, and they are excluded from the respective point sets. The procedure continues till one point set is empty. Then the numbers of matched pairs under each dividing method is counted, and a weighted sum of all these numbers are considered as the match score for two point set, which will be referred to as Pyramid Match Score, or PMS for short. The weights under all dividing methods are learned during training, and also how to divide the visual-spatial space is of great importance.
- 
+
 Obviously, each object is considered as a whole during detection in this method.
 
 The proposed method also has several appealing properties, which include but not limited to:
@@ -27,29 +27,29 @@ This chapter is organized as follows. Section \ref{rw5} reviews most related wor
 \label{rw5}
 
 
-Detection methods still mainly follow the sliding-window schema or share similar structures with Hough transforms. While the focus of the later is to infer about object status by use each online feature as query against a well-trained codebook. These methods fail to consider target objects as a whole at the beginning. The problem of sliding-window is that it often ignores positional information when also following bag of features~\cite{bgf}. In the method of~\cite{spmk}, positional information is considered in the kernel function. Here a kernel function is usually used in classifiers, which are usually support vector machines, as introduced in~\cite{kmts}. The assumption behind~\cite{spmk} is that two images are considered as similar if they possess similar object parts at similar relative positions. Despite of the good theory, its being embedded in support vector machines as kernel function limits the efficiency of this method.
+Detection methods still mainly follow the sliding-window schema or share similar structures with Hough transforms. While the focus of the later is to infer about object status by use each online feature as query against a well-trained codebook. These methods fail to consider target objects as a whole at the beginning. The problem of sliding-window is that it often ignores positional information when also following bag of features~\citep{bgf}. In the method of~\citep{spmk}, positional information is considered in the kernel function. Here a kernel function is usually used in classifiers, which are usually support vector machines, as introduced in~\citep{kmts}. The assumption behind~\citep{spmk} is that two images are considered as similar if they possess similar object parts at similar relative positions. Despite of the good theory, its being embedded in support vector machines as kernel function limits the efficiency of this method.
 
 
-The Bag-of-features~\cite{bgf} schema successfully improves detection performance, while still there are information which are left behind in images. The positional information is not fully made use of, even the method of~\cite{kmts}. While~\cite{uspl} provides a method to model the relationship between object parts, there are two many parameters to estimate in their model, which requires large amount of training data for acceptable performance.
+The Bag-of-features~\citep{bgf} schema successfully improves detection performance, while still there are information which are left behind in images. The positional information is not fully made use of, even the method of~\citep{kmts}. While~\citep{ac3} provides a method to model the relationship between object parts, there are two many parameters to estimate in their model, which requires large amount of training data for acceptable performance.
 
-In the method proposed in~\cite{ac222}, each object is modeled as a graph, when matching each object with another, constrains are made not only between the two objects, but also between different features of the same object. The relationship between elements of the same object is important. However, the inefficiency of this method prevents it from directly being used for object detection, while its performance on matching the same object under different views is promising.
+In the method proposed in~\citep{ac222}, each object is modeled as a graph, when matching each object with another, constrains are made not only between the two objects, but also between different features of the same object. The relationship between elements of the same object is important. However, the inefficiency of this method prevents it from directly being used for object detection, while its performance on matching the same object under different views is promising.
 
-The method in~\cite{lbt1} instead of building some parametric or non-parametric model, directly maps the labels of similar images in the training images to the current image. In this manner, the descriptive ability of model can be left alone, which in return makes the method robust. However, this kind of methods heavily rely on the manually marked labels in the training dataset, while such labels are very expensive in human power and computation.
+The method in~\citep{lbt1} instead of building some parametric or non-parametric model, directly maps the labels of similar images in the training images to the current image. In this manner, the descriptive ability of model can be left alone, which in return makes the method robust. However, this kind of methods heavily rely on the manually marked labels in the training dataset, while such labels are very expensive in human power and computation.
 
-The method in~\cite{ac3} considers both appearance model of object parts, and the relative distance changes between object parts. While giving promising results, there are too many parameters in the model, and training is troublesome when limited training images are available.
+The method in~\citep{ac3} considers both appearance model of object parts, and the relative distance changes between object parts. While giving promising results, there are too many parameters in the model, and training is troublesome when limited training images are available.
 
-The successes of HOG~\cite{ij4} on pedestrians are also because of its ability to encode relative spatial and visual information from each divided cells. Still the flexibility is not enough, and this leads to deformable part model~\cite{ac30,ac31,dpm1,dpm2}, which will be referred as DPM for short, is currently employed by most state-of-the-art methods which consider  appearance information of object parts together with the relative positional information between object parts. A root template is used to detect object as a whole, and HOG feature is usually used. When an object is detected, all possible object parts are detected accordingly. Finally, the confidence is given by the confidence of the root object, the sum of confidence of the object parts, and the cost to deploy the object parts within the root object. Latent SVM is employed in the methods for optimization while using representation of complex information. Some methods motivated by DPM try to improve DPM by providing better solution searching strategies~\cite{dpm3}.  Two recent methods~\cite{spm,spltm} try to find sparse basis of object parts to reduce the number of parameters need estimating. For efficiency, the method in~\cite{408} replace the dot operator of DPM with start-of-the-art hashing method~\cite{lsh}. There also exists hierarchical extend of DPM~\cite{hdpm}, and multi-view extend of DPM~\cite{mvdpm}.
+The successes of HOG~\citep{ij4} on pedestrians are also because of its ability to encode relative spatial and visual information from each divided cells. Still the flexibility is not enough, and this leads to deformable part model~\citep{ac30,ac31,dpm1,dpm2}, which will be referred as DPM for short, is currently employed by most state-of-the-art methods which consider  appearance information of object parts together with the relative positional information between object parts. A root template is used to detect object as a whole, and HOG feature is usually used. When an object is detected, all possible object parts are detected accordingly. Finally, the confidence is given by the confidence of the root object, the sum of confidence of the object parts, and the cost to deploy the object parts within the root object. Latent SVM is employed in the methods for optimization while using representation of complex information. Some methods motivated by DPM try to improve DPM by providing better solution searching strategies~\citep{dpm3}.  Two recent methods~\citep{spm,spltm} try to find sparse basis of object parts to reduce the number of parameters need estimating. For efficiency, the method in~\citep{408} replace the dot operator of DPM with start-of-the-art hashing method~\citep{lsh}. There also exists hierarchical extension of DPM~\citep{hdpm}, and multi-view extension of DPM~\citep{mvdpm}.
 
 Advantages of DPM include that it only need to encode the object parts in positive training examples, and that the some of its invariants can give promising results in real time. Still DPM heavily rely of the latent SVM, which is trained in an  expectation¨Cmaximization manner stops it from adopting new training examples. While nowadays, training examples often come sequentially. A very flexible model, which will evolve with training examples is preferred. These evolvements include object part number evolving, evolving of the appearance models of object parts, and evolving of the relative positions of object parts.
 
 
 
-The pyramid match score method is most related to methods using~\cite{pmk} or~\cite{kmts} as kernel functions, methods employ Hough transforms, and also the methods proposing efficient solution space searching techniques~\cite{bab}. The method is also related to efforts trying to encode images~\cite{spen}.
+The pyramid match score method is most related to methods using~\citep{pmk} or~\citep{kmts} as kernel functions, methods employ Hough transforms, and also the methods proposing efficient solution space searching techniques~\citep{bab}. The method is also related to efforts trying to encode images~\citep{spen}.
 
 
+\section{Pyramid Match Score}
 
-
-
+\label{dt5}
 \subsection{Pyramid Matching}
 
 
@@ -68,7 +68,7 @@ $
 Here $m  \le n$, and $\pi$ maps each feature $u_i$ in $S_1$ to a unique feature ${{v_{\pi (i)}}}
 $ in $S_2$. There is a 2D example in Figure \ref{fig:pms1}
 
-The best matching exists, and can be found by simple brute-force enumeration. In special cases, the Hungarian algorithm~\cite{ha} is also applicable.
+The best matching exists, and can be found by simple brute-force enumeration. In special cases, the Hungarian algorithm~\citep{ha} is also applicable.
 
 \begin{figure}
 \centering
@@ -89,9 +89,9 @@ The best matching exists, and can be found by simple brute-force enumeration. In
 
 Sub-optimal solution can be found by heuristic methods. A very intuitionistic method is to find matched pairs of nearest distance, exclude corresponding points from both point sets, and repeat until no matched pair can be found.
 
-The Pyramid Matching method is straightforward. Divide the point space from fine to coarse, find pairs of points from different point sets in the same grid under the current dividing parameter, exclude the matched pairs, and continue this procedure until the smaller point set is empty. The Pyramid Matching method is very efficient, and its time complexity is bounded by $O(dmL)$~\cite{pmk}. Here $d$ is the number of dimensions in each point set, $m$ is size of the smaller point set, and $L$ is number of dividing methods. In the example of Figure \ref{fig:p2}, $L$ is 3.
+The Pyramid Matching method is straightforward. Divide the point space from fine to coarse, find pairs of points from different point sets in the same grid under the current dividing parameter, exclude the matched pairs, and continue this procedure until the smaller point set is empty. The Pyramid Matching method is very efficient, and its time complexity is bounded by $O(dmL)$~\citep{pmk}. Here $d$ is the number of dimensions in each point set, $m$ is size of the smaller point set, and $L$ is number of dividing methods. In the example of Figure \ref{fig:p2}, $L$ is 3.
 
-In~\cite{pmk}, pyramid matching helps to define kernel functions for SVMs. The meaning of pyramid matching is that, it changes how the way to define similarity between two objects. Originally two objects are considered as similar if they both contain certain number of certain object parts, while the idea of one-one match will only favor the objects parts which have corresponding counterparts. 
+In~\citep{pmk}, pyramid matching helps to define kernel functions for SVMs. The meaning of pyramid matching is that, it changes how the way to define similarity between two objects. Originally two objects are considered as similar if they both contain certain number of certain object parts, while the idea of one-one match will only favor the objects parts which have corresponding counterparts.
 
 Let $\gamma  = \{ {\bf{g}_1},{\bf{g}_2},...,{\bf{g}}_L\}$ be an ordered set, which contains all the dividing methods from fine to coarse. Let $N(S_1,S_2;{\bf{g}}_i)$ be the number of matched pairs of points under dividing method ${\bf{g}}_i$. Then the pyramid match score between $S_1$ and $S_2$ on $\gamma$ is defined by,
 
@@ -101,23 +101,42 @@ Let $\gamma  = \{ {\bf{g}_1},{\bf{g}_2},...,{\bf{g}}_L\}$ be an ordered set, whi
 \label{eq:pms1}
 \end{equation}
 
+To exactly follow the procedure as shown in Figure \ref{fig:p2}, the definition in \ref{eq:pms1} is rewritten as,
 
-Left behind is how to construct the dividing methods in $\gamma$ and how to define the corresponding weight ${\omega}_i$ for each ${\bf{g}}_i \in \gamma$. 
-And these are also the two factors which lead to differences to~\cite{pmk}.
+\begin{equation}
+{\rm P}(S_1,S_2;\gamma)=\frac{ \sum\limits^L_{i=1}{{\omega}_i\times N(S_1^{(i-1)},S_2^{(i-1)};{\bf{g}}_i) }}{m}
+.
+\label{eq:pms2}
+\end{equation}
+
+Here, $S_1^i$ and $S_1^i$ represent the point set after excluding the points which are found match after the $i$th round matching respectively from $S_1^{(i-1)}$ and $S_2^{(i-1)}$. Actually, $S_1^0=S_1$, and $S_2^0=S_2$.
+
+The procedure is  as follow, 1) given the original $S_1$ and $S_2$, find the point pairs which fall into the same grid in the space defined by ${\bf g}_1$, 2) exclude the matched points respectively from $S_1$ and $S_2$, will lead to $S_1^1$ and $S_2^1$, and 3) continue until $i=L$ or one point set is empty.
+
+Left behind is how to construct the dividing methods in $\gamma$ and how to define the corresponding weight ${\omega}_i$ for each ${\bf{g}}_i \in \gamma$.
+And these are also the two factors which distinguish the proposed method with~\citep{pmk}.
 
 
-\subsection{Pyramid Match Score for Detection}
+\subsection{Training and Detection}
 
-The Pyramid Match Score is a matric between two point sets. In~\cite{pmk}, image features are considered as points, while in the proposed method, each point encodes both appearance and location information of each local feature. 
+The Pyramid Match Score is a matric between two point sets. In~\citep{pmk}, image features are considered as points, while in the proposed method, each point encodes both appearance and location information of each local feature. Each visual-spatial point is $d-$dimensional, and, the first $(d-2)$ dimensions are SIFT after PCA, while the last 2 dimensions are relative $x-$ and $y-$ coordinates after considering scale and width-height ratio changes.
 
-Instead of following~\cite{pmk}, PMS does not server as kernel functions for SVMS. And, a procedure similar to Hough transform is employed. Each training image is also a point set, and the $+$ operator is well defined for two sets. From all the training images, we generate a point set as a super template, $S_{\bf{T}}$, following Algorithm \ref{alg:tm}. This is just a procedure to collect all point sets of training images into one point set.
-Here each $S_{I_i}$ in $\{S_{I_i}\}$ is the point set generated from the corresponding training image $I_i$.
+Let ${\bf{p}}$ be a visual-spatial point in the point set of a image, $I$, and  $F_{\bf{p}}$ be the image feature of ${\bf{p}}$, which is $(d-2)-$dimentional.
+Let $x_{\bf{p}}$ and $y_{\bf{p}}$ be the $x-$ and $y-$ coordinates of ${\bf{p}}$.  Let $w_I$ and $h_I$ be the width and height of $I$. Then
 
-\begin{algorithm}[h]
+\[
+{\bf{p}}=[F_{\bf{p}}^1,F_{\bf{p}}^2,...,F_{\bf{p}}^{d-2},\frac {x_{\bf{p}}} {w_I} , \frac {y_{\bf{p}}} {h_I}]\ .
+\]
 
-    \caption{Template Generation}
-    \label{alg:tm}
-     
+
+Instead of following~\citep{pmk}, PMS does not server as kernel functions for SVMs. And, a procedure similar to Hough transform is employed. Each training image is considered as a point set  From all the training images, we generate a point set as a super template, $S_{\bf{T}}$, following Algorithm \ref{alg:tm}. This is just a procedure to collect all points from point sets generated from training images into one point set.
+
+
+
+
+\begin{algorithm}[chapter]
+
+
 
 
 
@@ -125,36 +144,155 @@ Here each $S_{I_i}$ in $\{S_{I_i}\}$ is the point set generated from the corresp
 
 
        \STATE $S_{\bf{T}} \leftarrow \emptyset$
-        
-        \FOR{$S_{I_i} \in \{S_{I_i}\}$}
-        
-     \STATE  $S_{\bf{T}} \leftarrow S_{\bf{T}} + S_{I_i}$
-       
+
+        \FOR{$S_{I_{tr}} \in \{S_{I_{tr}}\}$}
+
+     \STATE  $S_{\bf{T}} \leftarrow S_{\bf{T}} + S_{I_{tr}}$
+
         \ENDFOR
 
-        
+
     \RETURN $S_{\bf{T}}$
 
     \end{algorithmic}
+    \caption{Template Generation}
+    \label{alg:tm}
+
 
 \end{algorithm}
 
-Here, $S_{\bf{T}}$ plays a role similar to a codebook as in methods based on Hough transform. Each point is $d-$dimensional, here, the first $d-2$ dimensions are SIFT after PCA, while the last 2 dimension are relative $x-$ and $y-$ coordinates after considering scale and width-height ratio changes. 
+In Algorithm \ref{alg:tm}, each $S_{I_{tr}}$ in $\{S_{I_{tr}}\}$ is the point set generated from the corresponding training image $I_{tr}$, and the $+$ operator is defined on two sets.
 
-For detection, a most popular pipeline is summarised, as in.
+Actually, $S_{\bf{T}}$ plays a role similar to a codebook as in methods based on Hough transform.
+
+
+
+For detection, a most popular pipeline is employed, as in Algorithm \ref{alg:dt}. All possible hypotheses are generated, given by $\{\eta \}$. Each hypothesis, $\eta$ is a rectangle in the image where target objects will be detected, and
+
+\[\eta=[x_{\eta},y_{\eta},w_{\eta},h_{\eta}].\] So each $\eta$ is defined by its starting $(x,y)$ coordinate, its width, and its height. To generate $\{\eta \}$, the sliding window schema is followed, and it works by enumerating all possible rectangles by certain steps of sub-windows' positions and sizes. In Algorithm \ref{alg:dt}, ${\Omega }$ is the set of final detection results, ${\rm P}_{th}$ is a threshold to accept hypotheses as detections, $I_{te}$ is a test image, and $S_{\eta}$ is the point set generated by local features contained in ${\eta}$.
+
+
+\begin{algorithm}[chapter]
+
+
+
+
+
+
+    \begin{algorithmic}[1]
+
+
+       \STATE ${\Omega }  \leftarrow \emptyset$, generate $\{\eta \}$ from $I_{te}$
+
+        \FOR{$ \eta \in \{\eta \}$}
+
+     \STATE  Calculate ${\rm P}(S_{\eta},S_{\bf{T}};\gamma)$
+
+        \ENDFOR
+
+
+    \STATE Sort $\{\eta \}$ by ${\rm P}(S_{\eta},S_{\bf{T}};\gamma)$ in descending order
+
+    \WHILE { ${\rm P}(S_{ \eta_1},S_{\bf{T}};\gamma) >= {\rm P}_{th}$ }
+     \STATE  ${\Omega }  \leftarrow  {\Omega } + \eta_1$
+     
+       \STATE  $\{ \eta \}  \leftarrow  \{ \eta \} - \eta_1$ 
+       
+       \FOR {$\eta \in \{\eta \}$}
+       \FOR {$\eta^{'} \in {\Omega } $}
+       \FOR {$\bf{p} \in S_{\eta} $}
+       
+       \IF {$({\bf{p}}^{(d-1)},{\bf{p}}^d)$ is inside $\eta^{'}$}
+       
+        \STATE  $S_{\eta} \leftarrow S_{\eta} - \bf{p} $
+     
+       \ENDIF
+         \ENDFOR 
+       \ENDFOR 
+       \STATE  Calculate ${\rm P}(S_{\eta},S_{\bf{T}};\gamma)$
+       \ENDFOR
+        \STATE Sort $\{\eta \}$ by ${\rm P}(S_{\eta},S_{\bf{T}};\gamma)$ in descending order
+    \ENDWHILE
+
+    \RETURN ${\Omega } $
+
+
+    \end{algorithmic}
+
+    \caption{Detection Procedure}
+    \label{alg:dt}
+
+\end{algorithm}
+
+
+
+
+
+
+\subsection{Dividing Visual-spatial Space}
+
+What is very important in Algorithm \ref{alg:dt} is how to define the set of dividing methods, $\gamma$. In the method of~\citep{pmk}, ${\bf g}_i$ means dividing each dimension of the point space into $2^i$ intervals. However, the space in~\citep{pmk} is a pure feature space, while the space here is a visual-spatial space. And also, in~\citep{pmk}, the two point sets both belong to objects, while here one point set belong to the super template.
+
+The space-dividing method proposed here divides the dimensions of visual feature and spatial coordinates at different grid sizes. Let
+\[{\bf g} = g(i,j),i,j \in N.\]
+Here $g(i,j)$ is a function which defines how to divide the visual-spatial space. And $i$ means each dimension belonging to visual channel is divided in to $2^i$ intervals, and $j$ means each dimension belonging to spatial channel is divided into $2^j$ intervals. Note, that for a point, $\bf p$, the first $(d-2)$ dimensions belong to visual channel, while the remaining 2 dimensions belong to spatial channel. For example, if $d=3$, then $g(2,3)$ will divide the whole space into $(2^i)^{(d-2)}\times (2^j)^2=256$ grids.
+
+In Figure \ref{fig:p3}, an example is given by considering visual information as one dimension, and spatial information the other dimension. Note, the total dimension of a point is actually $d$, while in the example it is 2.
+
+About $\gamma$, not only its members, but also the order of its members is important. In \ref{eq:pms1}, an assumption is made that , if $i<j$, ${\bf g}_i$ is finer than ${\bf g}_j$, which means if two points are decided as match under ${\bf g}_i$, they must be decided as match under ${\bf g}_j$. This is,
+
+\begin{equation} 
+i<j, G({\bf p}_{S_1};{\bf g}_i)=G({\bf p}_{S_2};{\bf g}_i)\mbox{     }\mbox{     }\Rightarrow \mbox{     }\mbox{     }G({\bf p}_{S_1};{\bf g}_i)=G({\bf p}_{S_2};{\bf g}_i)\ .
+\label{eq:pms3}
+\end{equation}
+
+
+Here, $G({\bf p};{\bf g})$ is a function to map {\bf p} into a particular grid, given dividing method ${\bf g}$. And $G({\bf p};{\bf g})$ on the $k$th dimension is defined by,
+\[
+G^k({\bf p};{g(i,j)})= 
+ \left\{ \begin{array}{*{20}{c}}
+    \lfloor { \frac{2^i \times ({\bf p}_{max}^k - {\bf p}^k) }{{\bf p}_{max}^k - {\bf p}_{min}^k} }  \rfloor    &\mbox{  if } k \le (d-2) \\
+    \lfloor { \frac{2^j \times ({\bf p}_{max}^k - {\bf p}^k) }{{\bf p}_{max}^k - {\bf p}_{min}^k} }  \rfloor  &\mbox{otherwise}
+\end{array} \right. \:.
+\]
+
+Here, ${\bf p}_{max}^k$ and ${\bf p}_{min}^k$ are the maximum and minimum values on the $k$th dimension, which are determined by training dataset.
+
+
+There is no such constrain which requires $\gamma$ is descending ordered by the fineness level in \ref{eq:pms2}. Thus, in the following paper, \ref{eq:pms2} will be used.
+In fact, when \ref{eq:pms3} is satisfied, \ref{eq:pms1} and \ref{eq:pms2} are the same.
 
 
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{pms3.eps}
-\caption[Visual-spatial space dividing.]{Methods to divide the visual-spatial space.}
+\caption[Visual-spatial space dividing.]{Sample method to divide the visual-spatial space. $x-$ and $y-$ coordinates represent visual and spatial information respectively. From left to right, the first line is $g(2,2)$, $g(1,2)$, and $g(0,2)$. The second line is $g(2,1)$, $g(1,1)$, and $g(0,1)$. And the third line is $g(2,0)$, $g(1,0)$, and $g(0,0)$. And $\gamma$ is defined as an ordered set of all the dividing methods with different parameters. Here, $\gamma=\{g(2,2),g(1,2),g(2,1),g(0,2),g(1,1),g(2,0),g(0,1),g(1,0),g(0,0)\}$.}
 \label{fig:p3}
 \end{figure}
 
-\section{Detection}
-\label{dt5}
+\subsection{Deciding Weights for Dividing Methods}
+After how the visual-spatial space is decided, the remaining task is, for each dividing method $\bf g$, defining a corresponding weight. 
+When talking about two points which are found in the same grid under ${\bf g}=g(i,j)$, there is an upper bound to their $L1$-distance, which is given by 
+\[D_{ub}=  {(d-2)\times \frac 1 {2^i} +2\times \frac 1 {2^j} } ,
+\]
+ if unit length is assumed for all $({\bf p}_{max}^k - {\bf p}_{min}^k ),k \in \{1,2,...,d\}$. Since the first $(d-2)$ dimensions of each grid under $g(i,j)$ possess length of $\frac 1 {2^i}$, while the last 2 dimensions possess length of  $\frac 1 {2^j}$.
+ 
+ 
 
-Sliding-window schema is employed to check with the defined Pyramid Match Score on all sub-images of the test image for detection decisions.
+Following~\citep{pmk}, for two point from different point sets, if they are in the same grid under $g(i,j)$, which means $G({\bf p}_{S_1};g(i,j))=G({\bf p}_{S_2};g(i,j))$, the visual difference between ${\bf p}_{S_1}$ and ${\bf p}_{S_2}$  is defined as $ \frac {(d-2)}{2^i}$, and the spatial difference is defined as, $ \frac 2 {2^j}$.
+A weight, $\omega$ , defined for a dividing method $g(i,j)$ shows the importance of two matched points, and measures how difficult it is to match under such dividing method.
+
+\begin{equation}
+\label{eq:pms4}
+\omega_{g(i,j)}=\sqrt{ ((d-2)\times{2^i})\times(2 \times {2^j})  }.
+\end{equation}
+
+As is seen in \ref{eq:pms4}, the finer one grid is in $g(i,j)$, the larger a weight will be assigned for it. The weight is the confidence that the point set belong to a target object based on a point has corresponding evidence from the super template under the current $\bf g$.
+
+Often Gaussian kernels are used to measure differences between two features or two positions in Hough transform based methods~\citep{lb1}.
+%, and here reflects the confidence the whole point set is a target object based on the current matched pair.
+
+
 
 \section{Experimental Results}
 \label{exp5}
@@ -178,7 +316,7 @@ Sliding-window schema is employed to check with the defined Pyramid Match Score 
 \includegraphics[scale=0.75]{test-5_good.jpg}
 
 
-\caption[Detection Results on UIUC cars]{Detection results on UIUC cars~\cite{cds}. Yellow color marks ground truths, while blue marks detections.}
+\caption[Detection results on UIUC cars]{Detection results on UIUC cars~\citep{cds}. Yellow color marks ground truths, while blue marks detections.}
 \label{fig:c5r}
 \end{figure}
 

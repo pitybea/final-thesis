@@ -72,7 +72,7 @@ trackers compete for the region that is in a conflict. In
 \cite{ij10}, the MAP corresponds to the max flow of a well designed
 graph. The method has the advantage of taking into consideration of
 missed detections on middle frames and the low time cost. In
-\cite{ij11}, the main idea is to firstly connect very faithful
+\cite{my7}, the main idea is to firstly connect very faithful
 detection response pairs, then solve the data association problem
 via low-time-complexity Hungarian algorithm, and refine the result
 in a EM manner at the last step. And the main concern of these work
@@ -391,12 +391,12 @@ The detection rate and false alarm rate is evaluated on 250 frames, as shown in 
 \begin{tabular}{lll}
      \hline
      \hline
-    total number &	113   \\
-    correctly labeled &	102   \\
-    miss detections &	11 &	  \\
-    false alarms &	21    \\
-    detection rate &	90\% &	  \\
-    false alarm rate &	19\% &	   \\
+    Total number &	113   \\
+    Correctly labeled &	102   \\
+    Miss detections &	11 &	  \\
+    False alarms &	21    \\
+    Detection rate &	90\% &	  \\
+    False alarm rate &	19\% &	   \\
    \hline
 \end{tabular}
 \caption{Detection rate and false alarm rate.}\label{ex1:tb2}
@@ -466,12 +466,12 @@ More detection results are shown in Figure \ref{fig:sixs}.
 \begin{tabular}{lll}
      \hline
      \hline
-    total number &	472  \\
-    correctly labeled &	468   \\
-    miss detections &	4 &	  \\
-    false alarms &	22    \\
-    detection rate &	99.2\% &	  \\
-    false alarm rate &	4.4\% &	   \\
+    Total number &	472  \\
+    Correctly labeled &	468   \\
+    Miss detections &	4 &	  \\
+    False alarms &	22    \\
+    Detection rate &	99.2\% &	  \\
+    False alarm rate &	4.4\% &	   \\
    \hline
 \end{tabular}
 \caption{Detection rate and false alarm rate.}\label{tb:tb2}

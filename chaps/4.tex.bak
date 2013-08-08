@@ -81,7 +81,7 @@ The remaining chapter is organized as follows. Section \ref{rw4} reviews related
 Two Hough transform methods consider the grouping of object parts~\cite{ac26,ac25}. The method in~\cite{ac26} deals with scale change. Instead of estimating the scale by local features trained from different scaled examples, the votes are considered as voting lines. By considering the difference of the voted centers, local features are firstly grouped and then vote more consistently for the object center. In~\cite{ac25}, the grouping of object parts, the correspondence between object parts and object, and the decisions on detection hypotheses are optimized in the same energy function. For this method, the problem is that the grouping results don't have meaning or correspond to and real entities.
 
 The work is also related to keypoint clustering methods. In \cite{mc}, SIFT~\cite{o12} is
-used as key point, color histogram as appearance feature, region covariance~\cite{ij6}
+used as key point, color histogram as appearance feature, region covariance~\cite{regionc}
 as texture feature, and $(x,y)$ coordinate as spatial feature. Then
 for one pair key points, a pairwise similarity is calculated based
 on the generated features. Each point is projected into a new space
@@ -315,12 +315,12 @@ and by assuming one object part belongs to and only belongs to one hypothesis, t
 \]
 
 
-Following~\cite{ac9}, the optimal result for the problem is given by greedy maximization. As described in Algorithm~\ref{alg:gm}, the largest local maximum of all the local maxima is chosen to be the center of a true object and then the object parts belonging to the chosen object center are excluded from the object part set. A new Hough image where new objects are found is formed using the remaining object parts. And this procedure ends when the object part set is empty or the confidence of the chosen object is lower than a threshold.
+Following~\cite{ac9}, the optimal result for the problem is given by greedy maximization. As described in Algorithm \ref{alg:gm}, the largest local maximum of all the local maxima is chosen to be the center of a true object and then the object parts belonging to the chosen object center are excluded from the object part set. A new Hough image where new objects are found is formed using the remaining object parts. And this procedure ends when the object part set is empty or the confidence of the chosen object is lower than a threshold.
 
-\begin{algorithm}[h]
+\begin{algorithm}[chapter]
 
-    \caption{Greedy Maximization}
-    \label{alg:gm}
+
+  
      Let $\varepsilon$ be the set of object parts, $C_{th}$ be the low confidence threshold to accept detection responses, and $\hat{\bf{h}}$ be the local maxima of $\bf{h}$
 
 
@@ -363,6 +363,9 @@ Following~\cite{ac9}, the optimal result for the problem is given by greedy maxi
     \RETURN $\{H_i\}$
 
     \end{algorithmic}
+    
+      \caption{Greedy Maximization}
+    \label{alg:gm}
 
 \end{algorithm}
 
