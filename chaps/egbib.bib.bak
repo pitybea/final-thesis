@@ -148,7 +148,7 @@ number={},
 pages={778-783},
 keywords={driver information systems, object detection, stereo image processing, vehicles(axis,width,disparity) symmetry map, stereo concept, v-disparity approach, vehicle detection},
 
-ISSN={}, }
+ }
 
 @INPROCEEDINGS{my2,
 title={Localization of objects in automotive scenes with spatial and temporal information},
@@ -161,7 +161,7 @@ number={},
 pages={791-796},
 keywords={feature extraction, image reconstruction, image segmentation, image sequences, motion estimation, object detection, pattern clustering, spatiotemporal phenomena, stereo image processing, tracking3D world space, automotive scene, cluster interpretation, feature selection, image reconstruction, image stereoscopic sequence, motion estimation, object segmentation, spatial information, temporal information},
 
-ISSN={}, }
+ }
 
 @inproceedings{my3,
         AUTHOR = "Brostow, G.J. and Shotton, J.D.J. and Fauqueur, J. and Cipolla, R.",
@@ -182,7 +182,7 @@ number={},
 pages={524-529},
 keywords={Haar transforms, automated highways, computer vision, image classification, learning (artificial intelligence), object detection, road vehiclesHaar-like wavelet features, cascade Adaboost classifier training, intelligent vehicles, mean shift method, monocular vision, moving camera, pedestrian detection system, shapelet features},
 
-ISSN={1931-0587}, }
+ }
 
 @INPROCEEDINGS{my5,
 title={Robust visual odometry for complex urban environments},
@@ -195,7 +195,7 @@ number={},
 pages={440-445},
 keywords={distance measurement, feature extraction, image motion analysis, random processes, traffic engineering computingcomplex urban environment, ego-motion, feature extraction, onboard driver assistance, photogrametric approach, random sample consensus, robust visual odometry, scale-invariant image feature, stereo-vision system, vehicle motion trajectory},
 
-ISSN={1931-0587}, }
+ }
 
 @inproceedings{my6,
         AUTHOR = "Agrawal, M. and Konolige, K.G. and Iocchi, L.",
@@ -275,42 +275,17 @@ Segmentation",
     keywords = {detection, feature, interest-point, klt, thesis, tracking},
     month = {April},
     title = {Detection and tracking of point features},
-    url = {http://www.google.com/search?q=KLT+Detection+and+tracking+of+point},
+
         institution = {IJCV},
     year = {1991}
 }
 
 
 
-@TECHREPORT{Tomasi91detectionand,
-    author = {Carlo Tomasi and Takeo Kanade},
-    title = {Detection and Tracking of Point Features},
-    institution = {International Journal of Computer Vision},
-    year = {1991}
-}
 
 
 
-Years of Citing Articles
 
-051015199419961998200020022004200620081
-
-
-Bookmark
-
-citeulike Connotea Bibsonomy Del.icio.us Digg Reddit
- 	
-
-
-OpenURL
-
-
-Abstract
-
-The factorization method described in this series of reports requires an algorithm to track the motion of features in an image stream. Given the small inter-frame displacement made possible by the factorization approach, the best tracking method turns out to be the one proposed by Lucas and Kanade in 1981. The method defines the measure of match between fixed-size feature windows in the past and current frame as the sum of squared intensity differences over the windows. The displacement is then defined as the one that minimizes this sum. For small motions, a linearization of the image intensities leads to a Newton-Raphson style minimization. In this report, after rederiving the method in a physically intuitive way, we answer the crucial question of how to choose the feature windows that are best suited for tracking. Our selection criterion is based directly on the definition of the tracking algorithm, and expresses how well a feature can be tracked. As a result, the criterion is optima...
-
-
-Citations
 
 @inproceedings{harris,
         AUTHOR = "Harris, C. and Stephens, M.J.",
@@ -354,12 +329,10 @@ This is achieved by replying on integral images for image convolutions; by build
     abstract = {Thewide-baseline stereo problem, i.e. the problem of establishing correspondences between a pair of images taken from different viewpoints is studied. A new set of image elements that are put into correspondence, the so called extremal regions, is introduced. Extremal regions possess highly desirable properties: the set is closed under 1. continuous (and thus projective) transformation of image coordinates and 2. monotonic transformation of image intensities. An efficient (near linear...},
     author = {Matas, J. and Chum, O. and Martin, U. and Pajdla, T.},
     booktitle = {BMVC},
-    citeulike-article-id = {1645289},
-    citeulike-linkout-0 = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.7.2484},
+
     keywords = {matas02},
     pages = {384--393},
-    posted-at = {2008-03-25 15:27:51},
-    priority = {0},
+
     title = {Robust wide baseline stereo from maximally stable extremal regions},
 
     year = {2002}
@@ -371,7 +344,7 @@ This is achieved by replying on integral images for image convolutions; by build
  volume = {60},
  number = {1},
  year = {2004},
- issn = {0920-5691},
+
  pages = {63--86},
 
  }
@@ -380,7 +353,7 @@ This is achieved by replying on integral images for image convolutions; by build
     address = {Hingham, MA, USA},
     author = {Mikolajczyk, K. and Tuytelaars, T. and Schmid, C. and Zisserman, A. and Matas, J. and Schaffalitzky, F. and Kadir, T. and Van Gool, L.},
 
-    issn = {0920-5691},
+
     journal = {IJCV},
     keywords = {interest-point-detector, photo2search, reading},
     number = {1-2},
@@ -399,7 +372,7 @@ This is achieved by replying on integral images for image convolutions; by build
  journal = {Journal of Machine Learning Research},
  volume = {3},
  year = {2003},
- issn = {1532-4435},
+
  pages = {993--1022},
 
  publisher = {JMLR.org},
@@ -428,7 +401,7 @@ This is achieved by replying on integral images for image convolutions; by build
   title        = {Histograms of Oriented Gradients for Human Detection},
   booktitle    = {CVPR},
   pages        = {886-893},
-  month        = {June},
+
   year         = {2005},
 
 }
@@ -450,7 +423,7 @@ year={2009},
 pages={1279-1286},
 keywords={image colour analysis, image matching, image representation, image texture, pattern clusteringappearance-based keypoint clustering, colour representation, image matching, interest points detection, keypoint matching, texture representation},
 
-ISSN={1063-6919}, }
+ }
 
 @INPROCEEDINGS{ij6,
     author = {O. Tuzel and F. Porikli and P. Meer},
@@ -490,7 +463,7 @@ number={},
 pages={1-8},
 keywords={target trackinggame-theoretic multiple target tracking, joint motion estimation, visual observations},
 
-ISSN={1550-5499}, }
+ }
 
 @INPROCEEDINGS{ij10,
 title={Global data association for multi-object tracking using network flows},
@@ -503,19 +476,9 @@ number={},
 pages={1-8},
 keywords={object detection, sensor fusion, trackingEOM, MAP, cost-flow network, explicit occlusion model, inter-object occlusions, maximum-a-posteriori data association problem, min-cost flow algorithm, multiple object tracking, public pedestrian datasets},
 
-ISSN={1063-6919}, }
+ }
 
-@inproceedings{ij11,
-        title = {Robust Object Tracking by Hierarchical Association of Detection Responses.},
-        author = {Chang Huang and Bo Wu and R. Nevatia},
-        booktitle = {ECCV},
-        pages = {788-801},
-        year = "2008",
-        url = {http://dblp.uni-trier.de/db/conf/eccv/eccv2008-2.html#HuangWN08},
-        description = {dblp},
-    biburl = {http://www.bibsonomy.org/bibtex/2cc49d604c957fadf0adc00c65601139a/dblp},
-    keywords = {dblp},
-    }
+
 
 
 @inproceedings{ij12,
@@ -531,7 +494,8 @@ ISSN={1063-6919}, }
         TITLE = "Categorization of Multiple Objects in a Scene without Semantic Segmentation",
         BOOKTITLE = "ACCV",
         YEAR = "2009",
-        BIBSOURCE = "http://www.visionbib.com/bibliography/compute58.html#TT3592"}
+        pages = {303--312},
+        }
 
 
 @inproceedings{ij14,
@@ -540,6 +504,7 @@ ISSN={1063-6919}, }
                D. Koller},
   title     = {Decomposing a Scene into Geometric and Semantically Consistent Regions},
   booktitle = {ICCV},
+    pages = {1-8},
   year      = {2009}
 }
 
@@ -673,14 +638,11 @@ pages = {83--97}
  number = {3},
  month = jun,
  year = {2008},
- issn = {1077-3142},
+
  pages = {346--359},
- numpages = {14},
- url = {http://dx.doi.org/10.1016/j.cviu.2007.09.014},
- doi = {10.1016/j.cviu.2007.09.014},
- acmid = {1370556},
+
  publisher = {Elsevier Science Inc.},
- address = {New York, NY, USA},
+
  keywords = {Camera calibration, Feature description, Interest points, Local features, Object recognition},
 }
 
@@ -880,9 +842,8 @@ Understanding Multi-Object Traffic Scenes",
                from Images},
   booktitle = {CVPR},
   year      = {2007},
-  ee        = {http://dx.doi.org/10.1109/CVPR.2007.383043},
+  pages = {1-8},
 
-  bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
 @inproceedings{ac31,
@@ -892,12 +853,21 @@ Understanding Multi-Object Traffic Scenes",
   title     = {A discriminatively trained, multiscale, deformable part
                model},
   booktitle = {CVPR},
+  pages = {1--8},
   year      = {2008},
-  ee        = {http://dx.doi.org/10.1109/CVPR.2008.4587597},
 
-  bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
+@inproceedings{stf,
+  author    = {Alexander Kl{\"a}ser and
+               Marcin Marszalek and
+               Cordelia Schmid},
+  title     = {A Spatio-Temporal Descriptor Based on 3D-Gradients},
+  booktitle = {BMVC},
+  year      = {2008},
+  pages     = {1-10},
+
+}
 
 @inproceedings{ac32,
   author    = {Subhransu Maji and
@@ -906,10 +876,9 @@ Understanding Multi-Object Traffic Scenes",
   title     = {Classification using intersection kernel support vector
                machines is efficient},
   booktitle = {CVPR},
+  pages = {1-8},
   year      = {2008},
-  ee        = {http://dx.doi.org/10.1109/CVPR.2008.4587630},
 
-  bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
 
@@ -935,7 +904,7 @@ Understanding Multi-Object Traffic Scenes",
 
 
         @inproceedings{xue,
-        AUTHOR = "Xue, L. and Ono, S. and Banno, A. and Oishi, T. and Ikeuchi, K.",
+        AUTHOR = "Ono, S. and  Xue, L.  and Banno, A. and Oishi, T. and Ikeuchi, K.",
         TITLE = "Global 3D Modeling and its Evaluation for Large-Scale Highway Tunnel using Laser Range Sensor",
         BOOKTITLE = "ITS World Congress",
         YEAR = "2012",
@@ -984,9 +953,7 @@ Understanding Multi-Object Traffic Scenes",
   booktitle = {ICISP},
   year      = {2010},
   pages     = {200-209},
-  ee        = {http://dx.doi.org/10.1007/978-3-642-13681-8_24},
 
-  bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
 @Article{bgf,
@@ -996,9 +963,9 @@ Understanding Multi-Object Traffic Scenes",
   number       = "3",
   volume       = "87",
   pages        = "316-336",
-  month        = "feb",
+  month        = "February",
   year         = "2010",
-  url          = "http://lear.inrialpes.fr/pubs/2010/JDS10a"
+
 }
 @article{bab,
   author    = {Christoph H. Lampert and
@@ -1011,19 +978,14 @@ Understanding Multi-Object Traffic Scenes",
   number    = {12},
   year      = {2009},
   pages     = {2129-2142},
-  ee        = {http://doi.ieeecomputersociety.org/10.1109/TPAMI.2009.144},
-  bibsource = {DBLP, http://dblp.uni-trier.de}
+
 }
 
 @article{hdp,
         AUTHOR = "Y. W. Teh and M. I. Jordan and M. J. Beal and D. M. Blei.",
         TITLE = "Hierarchical Dirichlet Process",
-
         journal = {Journal of the American Statistical Association},
-
         YEAR = "2006",
-
-
         PAGES = "1566-1581",
        }
 
@@ -1036,8 +998,7 @@ Understanding Multi-Object Traffic Scenes",
   number    = {1},
   year      = {2009},
   pages     = {1-127},
-  ee        = {http://dx.doi.org/10.1561/2200000006},
-  bibsource = {DBLP, http://dblp.uni-trier.de}
+
 }
 @ARTICLE{bpw,
     author = {Merkle, R. C.},
@@ -1060,7 +1021,7 @@ trees",
  author = {Rasmussen, Carl Edward and Williams, Christopher K. I.},
  title = {Gaussian Processes for Machine Learning (Adaptive Computation and Machine Learning)},
  year = {2005},
- isbn = {026218253X},
+
  publisher = {The MIT Press},
 }
 
@@ -1079,7 +1040,7 @@ title = {A Survey on Transfer Learning},
 journal ={IEEE Transactions on Knowledge and Data Engineering},
 volume = {22},
 number = {10},
-issn = {1041-4347},
+
 year = {2010},
 pages = {1345-1359},
 
@@ -1098,8 +1059,7 @@ address = {Los Alamitos, CA, USA},
   number    = {1},
   year      = {1996},
   pages     = {51-59},
-  ee        = {http://dx.doi.org/10.1016/0031-3203(95)00067-4},
-  bibsource = {DBLP, http://dblp.uni-trier.de}
+
 }
 
 @article{scontext,
@@ -1111,7 +1071,7 @@ address = {Los Alamitos, CA, USA},
  number = {4},
  month = apr,
  year = {2002},
- issn = {0162-8828},
+
  pages = {509--522},
  numpages = {14},
  acmid = {628792},
@@ -1125,7 +1085,7 @@ address = {Los Alamitos, CA, USA},
   title = {What is an object?},
   booktitle = {CVPR},
   year = {2010},
-  month = {June},
+    PAGES = {73-80},
   keywords = {}
 }
 
@@ -1133,20 +1093,23 @@ address = {Los Alamitos, CA, USA},
 title = {Fast, Accurate Detection of 100,000 Object Classes on a Single Machine},
 author  = {Thomas Dean and Mark Ruzon and Mark Segal and Jon Shlens and Sudheendra Vijayanarasimhan and Jay Yagnik},
 year  = 2013,
+
 booktitle = {CVPR},
-address = {Washington, DC, USA}
+
 }
 @inproceedings{
     spm,
     author = "Pirsiavash, Hamed and Ramanan, Deva",
     booktitle = "CVPR",
     year = "2012",
+      pages     = {3226-3233},
     title = "Steerable Part Models"
 }
 @InProceedings{ciod,
   author       = "Rahtu, E. and Kannala, J. and Blaschko, M.~B.",
   title        = "Learning a Category Independent Object Detection Cascade",
   booktitle    = "ICCV",
+    pages = {1052-1059},
   year         = "2011",
 }
 @InProceedings{r3d,
@@ -1177,8 +1140,7 @@ address = {Washington, DC, USA}
 
  pages = {2169--2178},
 
- publisher = {IEEE Computer Society},
- address = {Washington, DC, USA},
+
 }
 
 
@@ -1186,18 +1148,12 @@ address = {Washington, DC, USA}
  author = {Shawe-Taylor, John and Cristianini, Nello},
  title = {Kernel Methods for Pattern Analysis},
  year = {2004},
- isbn = {0521813972},
+
  publisher = {Cambridge University Press},
  address = {New York, NY, USA},
 }
 
-@INPROCEEDINGS{uspl,
-    author = {R. Fergus and P. Perona and A. Zisserman},
-    title = {Object class recognition by unsupervised scale-invariant learning},
-    booktitle = {CVPR},
-    year = {2003},
-    pages = {264--271}
-}
+
 
 
 @article{lbt1,
@@ -1209,12 +1165,9 @@ address = {Washington, DC, USA}
  number = {12},
  month = dec,
  year = {2011},
- issn = {0162-8828},
+
  pages = {2368--2382},
- numpages = {15},
- url = {http://dx.doi.org/10.1109/TPAMI.2011.131},
- doi = {10.1109/TPAMI.2011.131},
- acmid = {2068581},
+
  publisher = {IEEE Computer Society},
  address = {Washington, DC, USA},
  keywords = {Object recognition, scene parsing, label transfer, SIFT flow, Markov random fields.},
@@ -1238,7 +1191,7 @@ address = {Washington, DC, USA}
  number = {11},
  month = nov,
  year = {2004},
- issn = {0162-8828},
+
  pages = {1475--1490},
 
  publisher = {IEEE Computer Society},
@@ -1265,9 +1218,9 @@ address = {Washington, DC, USA}
   author    = {Eli Shechtman and Michal Irani},
   title     = {Matching Local Self-Similarities across Images and Videos},
   booktitle = {CVPR},
-  month     = {June},
+pages = {1-8},
   year      = {2007},
-  ee        = {www.wisdom.weizmann.ac.il/~vision/SelfSimilarities.html},
+
   }
 
   @inproceedings{dnnnn,
@@ -1283,9 +1236,7 @@ address = {Washington, DC, USA}
                learning},
   booktitle = {ICML},
   year      = {2012},
-  ee        = {http://icml.cc/discuss/2012/73.html},
 
-  bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
 @article{midf,
@@ -1299,8 +1250,7 @@ address = {Washington, DC, USA}
   volume    = {5},
   number    = {11},
   year      = {2009},
-  ee        = {http://dx.doi.org/10.1371/journal.pcbi.1000579},
-  bibsource = {DBLP, http://dblp.uni-trier.de}
+
 }
 
 @article{rbm,
@@ -1340,9 +1290,6 @@ address = {Washington, DC, USA}
 @article{spen,
   added-at = {2010-02-27T01:05:18.000+0100},
   author = {Olshausen, B.A. and Field, D.J.},
-  biburl = {http://www.bibsonomy.org/bibtex/2a6f3373495cd59b95d3120f7637d4a2f/tb2332},
-  interhash = {62f8f2a3d7411ecc0751ff870a07afc1},
-  intrahash = {a6f3373495cd59b95d3120f7637d4a2f},
   journal = {Nature},
   keywords = {imported},
   month = {June},
@@ -1364,11 +1311,10 @@ title = {Object Detection with Discriminatively Trained Part-Based Models},
 journal ={PAMI},
 volume = {32},
 number = {9},
-issn = {0162-8828},
+
 year = {2010},
 pages = {1627-1645},
-doi = {http://doi.ieeecomputersociety.org/10.1109/TPAMI.2009.167},
-publisher = {IEEE Computer Society},
+
 address = {Los Alamitos, CA, USA},
 }
 
@@ -1380,35 +1326,34 @@ address = {Los Alamitos, CA, USA},
   booktitle = {CVPR},
   year      = {2010},
   pages     = {2241-2248},
-  ee        = {http://dx.doi.org/10.1109/CVPR.2010.5539906},
 
-  bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
 @inproceedings{dpm3,
   Author    = {M. Pedersoli and A. Vedaldi and J. Gonz{\`a}lez},
   Title     = {A coarse-to-fine approach for fast deformable object detection},
   Booktitle = {CVPR},
+    pages     = {1353-1360},
   Year      = {2011}}
 
   @inproceedings {spltm,
 	title = {Sparselet Models for Efficient Multiclass Object Detection},
 	booktitle = {ECCV},
 	year = {2012},
+    pages = {716-723},
 	author = {Hyun Oh Song and Stefan Zickler and Tim Althoff and Ross Girshick and Mario Fritz and Christopher Geyer and Pedro Felzenszwalb and Trevor Darrell}
 }
 
-@article{hdpm,
+@inproceedings{hdpm,
 author = {Long (Leo) Zhu and Yuanhao Chen and Alan Yuille and William Freeman},
 title = {Latent hierarchical structural learning for object detection},
-journal ={CVPR},
-volume = {0},
-isbn = {978-1-4244-6984-0},
+Booktitle ={CVPR},
+
+
 year = {2010},
 pages = {1062-1069},
-doi = {http://doi.ieeecomputersociety.org/10.1109/CVPR.2010.5540096},
-publisher = {IEEE Computer Society},
-address = {Los Alamitos, CA, USA},
+
+
 }
 
 
@@ -1421,7 +1366,5 @@ address = {Los Alamitos, CA, USA},
   booktitle = {ICCV Workshops},
   year      = {2011},
   pages     = {1052-1059},
-  ee        = {http://dx.doi.org/10.1109/ICCVW.2011.6130367},
 
-  bibsource = {DBLP, http://dblp.uni-trier.de}
 }

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.6.16)  9 AUG 2013 14:32
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.6.16)  9 AUG 2013 20:28
 entering extended mode
 **thesis.tex
 (E:\final-thesis\thesis.tex
@@ -1953,14 +1953,7 @@ Chapter 5.
 
 
 
-] [67] [68]
-
-Package natbib Warning: Multiple citation on page 69: same authors and year
-(natbib)                without distinguishing extra letter,
-(natbib)                appears as question mark.
-
-Missing character: There is no ¨ in font ptmr7t!
-[69]
+] [67] [68] [69]
 Package epstopdf Info: Source file: <pms1.eps>
 (epstopdf)                    date: 2013-08-09 11:27:48
 (epstopdf)                    size: 625654 bytes
@@ -1969,30 +1962,31 @@ Package epstopdf Info: Source file: <pms1.eps>
 (epstopdf)                    size: 12248 bytes
 (epstopdf)             Command: <epstopdf --outfile=pms1-eps-converted-to.pdf p
 ms1.eps>
-(epstopdf)             \includegraphics on input line 75.
+(epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
- <pms1-eps-converted-to.pdf, id=1500, 479.7925pt x 169.63374pt>
+
+<pms1-eps-converted-to.pdf, id=1500, 479.7925pt x 169.63374pt>
 File: pms1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pms1-eps-converted-to.pdf>
-Package pdftex.def Info: pms1-eps-converted-to.pdf used on input line 75.
+Package pdftex.def Info: pms1-eps-converted-to.pdf used on input line 77.
 (pdftex.def)             Requested size: 412.56496pt x 145.86662pt.
 Package epstopdf Info: Source file: <pms2.eps>
-(epstopdf)                    date: 2013-08-09 11:27:48
-(epstopdf)                    size: 485618 bytes
+(epstopdf)                    date: 2013-08-09 19:39:56
+(epstopdf)                    size: 485518 bytes
 (epstopdf)             Output file: <pms2-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-09 11:27:48
-(epstopdf)                    size: 13833 bytes
+(epstopdf)                    date: 2013-08-09 19:40:17
+(epstopdf)                    size: 14100 bytes
 (epstopdf)             Command: <epstopdf --outfile=pms2-eps-converted-to.pdf p
 ms2.eps>
-(epstopdf)             \includegraphics on input line 82.
+(epstopdf)             \includegraphics on input line 84.
 Package epstopdf Info: Output file is already uptodate.
 
 <pms2-eps-converted-to.pdf, id=1501, 635.37375pt x 169.63374pt>
 File: pms2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pms2-eps-converted-to.pdf>
-Package pdftex.def Info: pms2-eps-converted-to.pdf used on input line 82.
+Package pdftex.def Info: pms2-eps-converted-to.pdf used on input line 84.
 (pdftex.def)             Requested size: 412.56496pt x 110.1519pt.
  [70] [71pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.5.1}) has been already used, duplicate ignored
@@ -2007,112 +2001,112 @@ l.95
                                                   \fi \fi 
 l.95 
       <E:/final-thesis/pms1-eps-converted-to.pdf> <E:/final-thesis/pms2-eps-con
-verted-to.pdf>] [72] [73] [74]
+verted-to.pdf>] [72] [73] [74] [75]
 Package epstopdf Info: Source file: <pms3.eps>
-(epstopdf)                    date: 2013-08-09 11:27:49
-(epstopdf)                    size: 29214849 bytes
+(epstopdf)                    date: 2013-08-09 19:47:54
+(epstopdf)                    size: 2066630 bytes
 (epstopdf)             Output file: <pms3-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-09 11:31:50
-(epstopdf)                    size: 89753 bytes
+(epstopdf)                    date: 2013-08-09 19:48:02
+(epstopdf)                    size: 95669 bytes
 (epstopdf)             Command: <epstopdf --outfile=pms3-eps-converted-to.pdf p
 ms3.eps>
-(epstopdf)             \includegraphics on input line 268.
+(epstopdf)             \includegraphics on input line 270.
 Package epstopdf Info: Output file is already uptodate.
 
-<pms3-eps-converted-to.pdf, id=1590, 649.42625pt x 521.95pt>
+<pms3-eps-converted-to.pdf, id=1597, 649.42625pt x 522.95375pt>
 File: pms3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pms3-eps-converted-to.pdf>
-Package pdftex.def Info: pms3-eps-converted-to.pdf used on input line 268.
-(pdftex.def)             Requested size: 412.56496pt x 331.58588pt.
- [75] [76pdfTeX warning (ext4): destination with the same identifier (name{figu
+Package pdftex.def Info: pms3-eps-converted-to.pdf used on input line 270.
+(pdftex.def)             Requested size: 412.56496pt x 332.22356pt.
+ [76] [77pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.5.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.273 \subsection
+l.275 \subsection
                  {Deciding Weights for Dividing Methods} <E:/final-thesis/pms3-
-eps-converted-to.pdf>] [77]
-<test-0_good.jpg, id=1619, 210.7875pt x 115.43124pt>
+eps-converted-to.pdf>] [78] [79]
+<test-0_good.jpg, id=1634, 210.7875pt x 115.43124pt>
 File: test-0_good.jpg Graphic file (type jpg)
  <use test-0_good.jpg>
-Package pdftex.def Info: test-0_good.jpg used on input line 316.
+Package pdftex.def Info: test-0_good.jpg used on input line 372.
 (pdftex.def)             Requested size: 158.09024pt x 86.57321pt.
 
-<test-10_good.jpg, id=1620, 200.75pt x 150.5625pt>
+<test-10_good.jpg, id=1635, 200.75pt x 150.5625pt>
 File: test-10_good.jpg Graphic file (type jpg)
  <use test-10_good.jpg>
-Package pdftex.def Info: test-10_good.jpg used on input line 317.
+Package pdftex.def Info: test-10_good.jpg used on input line 373.
 (pdftex.def)             Requested size: 150.56212pt x 112.92159pt.
 
-<test-14_good.jpg, id=1621, 180.675pt x 135.50626pt>
+<test-14_good.jpg, id=1636, 180.675pt x 135.50626pt>
 File: test-14_good.jpg Graphic file (type jpg)
  <use test-14_good.jpg>
-Package pdftex.def Info: test-14_good.jpg used on input line 318.
+Package pdftex.def Info: test-14_good.jpg used on input line 374.
 (pdftex.def)             Requested size: 135.5059pt x 101.62943pt.
 
-<test-16_good.jpg, id=1622, 207.77625pt x 116.435pt>
+<test-16_good.jpg, id=1637, 207.77625pt x 116.435pt>
 File: test-16_good.jpg Graphic file (type jpg)
  <use test-16_good.jpg>
-Package pdftex.def Info: test-16_good.jpg used on input line 319.
+Package pdftex.def Info: test-16_good.jpg used on input line 375.
 (pdftex.def)             Requested size: 155.83179pt x 87.32602pt.
 
-<test-20_good.jpg, id=1623, 170.6375pt x 98.3675pt>
+<test-20_good.jpg, id=1638, 170.6375pt x 98.3675pt>
 File: test-20_good.jpg Graphic file (type jpg)
  <use test-20_good.jpg>
-Package pdftex.def Info: test-20_good.jpg used on input line 320.
+Package pdftex.def Info: test-20_good.jpg used on input line 376.
 (pdftex.def)             Requested size: 127.9778pt x 73.77542pt.
 
-<test-21_good.jpg, id=1624, 190.7125pt x 101.37875pt>
+<test-21_good.jpg, id=1639, 190.7125pt x 101.37875pt>
 File: test-21_good.jpg Graphic file (type jpg)
  <use test-21_good.jpg>
-Package pdftex.def Info: test-21_good.jpg used on input line 321.
+Package pdftex.def Info: test-21_good.jpg used on input line 377.
 (pdftex.def)             Requested size: 143.03401pt x 76.03386pt.
 
-<test-22_good.jpg, id=1625, 235.88126pt x 134.5025pt>
+<test-22_good.jpg, id=1640, 235.88126pt x 134.5025pt>
 File: test-22_good.jpg Graphic file (type jpg)
  <use test-22_good.jpg>
-Package pdftex.def Info: test-22_good.jpg used on input line 322.
+Package pdftex.def Info: test-22_good.jpg used on input line 378.
 (pdftex.def)             Requested size: 176.9105pt x 100.8766pt.
 
-<test-24_good.jpg, id=1626, 194.7275pt x 125.46875pt>
+<test-24_good.jpg, id=1641, 194.7275pt x 125.46875pt>
 File: test-24_good.jpg Graphic file (type jpg)
  <use test-24_good.jpg>
-Package pdftex.def Info: test-24_good.jpg used on input line 323.
+Package pdftex.def Info: test-24_good.jpg used on input line 379.
 (pdftex.def)             Requested size: 146.04524pt x 94.10132pt.
 
-<test-29_good.jpg, id=1627, 183.68625pt x 123.46124pt>
+<test-29_good.jpg, id=1642, 183.68625pt x 123.46124pt>
 File: test-29_good.jpg Graphic file (type jpg)
  <use test-29_good.jpg>
-Package pdftex.def Info: test-29_good.jpg used on input line 324.
+Package pdftex.def Info: test-29_good.jpg used on input line 380.
 (pdftex.def)             Requested size: 137.76433pt x 92.59569pt.
 
-<test-2_good.jpg, id=1628, 175.65625pt x 90.3375pt>
+<test-2_good.jpg, id=1643, 175.65625pt x 90.3375pt>
 File: test-2_good.jpg Graphic file (type jpg)
  <use test-2_good.jpg>
-Package pdftex.def Info: test-2_good.jpg used on input line 325.
+Package pdftex.def Info: test-2_good.jpg used on input line 381.
 (pdftex.def)             Requested size: 131.74185pt x 67.75294pt.
 
-<test-31_good.jpg, id=1629, 132.495pt x 106.3975pt>
+<test-31_good.jpg, id=1644, 132.495pt x 106.3975pt>
 File: test-31_good.jpg Graphic file (type jpg)
  <use test-31_good.jpg>
-Package pdftex.def Info: test-31_good.jpg used on input line 326.
+Package pdftex.def Info: test-31_good.jpg used on input line 382.
 (pdftex.def)             Requested size: 99.37099pt x 79.79791pt.
 
-<test-3_good.jpg, id=1630, 229.85875pt x 112.42pt>
+<test-3_good.jpg, id=1645, 229.85875pt x 112.42pt>
 File: test-3_good.jpg Graphic file (type jpg)
  <use test-3_good.jpg>
-Package pdftex.def Info: test-3_good.jpg used on input line 327.
+Package pdftex.def Info: test-3_good.jpg used on input line 383.
 (pdftex.def)             Requested size: 172.39362pt x 84.31479pt.
 
-<test-5_good.jpg, id=1631, 142.5325pt x 83.31125pt>
+<test-5_good.jpg, id=1646, 142.5325pt x 83.31125pt>
 File: test-5_good.jpg Graphic file (type jpg)
  <use test-5_good.jpg>
-Package pdftex.def Info: test-5_good.jpg used on input line 328.
+Package pdftex.def Info: test-5_good.jpg used on input line 384.
 (pdftex.def)             Requested size: 106.8991pt x 62.48328pt.
 
 
-LaTeX Warning: Float too large for page by 22.01453pt on input line 333.
+LaTeX Warning: Float too large for page by 22.01453pt on input line 389.
 
 Package epstopdf Info: Source file: <pms.eps>
 (epstopdf)                    date: 2013-06-15 21:51:42
@@ -2122,36 +2116,36 @@ Package epstopdf Info: Source file: <pms.eps>
 (epstopdf)                    size: 32213 bytes
 (epstopdf)             Command: <epstopdf --outfile=pms-eps-converted-to.pdf pm
 s.eps>
-(epstopdf)             \includegraphics on input line 339.
+(epstopdf)             \includegraphics on input line 395.
 Package epstopdf Info: Output file is already uptodate.
-<pms-eps-converted-to.pdf, id=1637, 513.92pt x 387.4475pt>
+<pms-eps-converted-to.pdf, id=1652, 513.92pt x 387.4475pt>
 File: pms-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pms-eps-converted-to.pdf>
-Package pdftex.def Info: pms-eps-converted-to.pdf used on input line 339.
+Package pdftex.def Info: pms-eps-converted-to.pdf used on input line 395.
 (pdftex.def)             Requested size: 412.56496pt x 311.0403pt.
- [78] [79pdfTeX warning (ext4): destination with the same identifier (name{figu
+ [80] [81pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.5.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.348 \section
+l.404 \section
               {Chapter Conclusion} <E:/final-thesis/test-0_good.jpg> <E:/final-
 thesis/test-10_good.jpg> <E:/final-thesis/test-14_good.jpg> <E:/final-thesis/te
 st-16_good.jpg> <E:/final-thesis/test-20_good.jpg> <E:/final-thesis/test-21_goo
 d.jpg> <E:/final-thesis/test-22_good.jpg> <E:/final-thesis/test-24_good.jpg> <E
 :/final-thesis/test-29_good.jpg> <E:/final-thesis/test-2_good.jpg> <E:/final-th
 esis/test-31_good.jpg> <E:/final-thesis/test-3_good.jpg> <E:/final-thesis/test-
-5_good.jpg>] [80pdfTeX warning (ext4): destination with the same identifier (na
+5_good.jpg>] [82pdfTeX warning (ext4): destination with the same identifier (na
 me{figure.5.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.348 \section
+l.404 \section
               {Chapter Conclusion} <E:/final-thesis/pms-eps-converted-to.pdf>])
-[81] (E:\final-thesis\chaps/6.tex
+[83] (E:\final-thesis\chaps/6.tex
 Chapter 6.
-) [82
+) [84
 
 
 
@@ -2161,11 +2155,11 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 26.
 
 (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [83
+) [85
 
 
-] [84] [85] [86] [87] [88]
-[89] [90]) [91] (E:\final-thesis\chaps/thanks.tex) [92
+] [86] [87] [88] [89] [90]
+[91] [92]) [93] (E:\final-thesis\chaps/thanks.tex) [94
 
 
 ]
@@ -2188,19 +2182,19 @@ Package rerunfilecheck Info: Checksums for `thesis.out':
 (rerunfilecheck)             Before: 3FCDCB20BD748EED08322CE59E7BDCE3;15195
 (rerunfilecheck)             After:  08FC9E98151E1DF5B0748AE53C352295;4221.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 987B13C8A4256E2E4386C500CDB4A3E0;9495.
+(rerunfilecheck)             Checksum: 9138DE071B823E8452266AEDD9D1A20C;9495.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10201 strings out of 495354
- 138294 string characters out of 3183859
- 236001 words of memory out of 3000000
- 12620 multiletter control sequences out of 15000+200000
+ 10207 strings out of 495354
+ 138354 string characters out of 3183859
+ 234139 words of memory out of 3000000
+ 12622 multiletter control sequences out of 15000+200000
  35577 words of font info for 88 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 39i,22n,50p,1458b,828s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,22n,50p,1494b,828s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmbx12.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmb
 x6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/CTEX/MiKTeX
@@ -2215,9 +2209,9 @@ lic/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6
 onts/type1/urw/courier/ucrr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.
 pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (103 pages, 11705062 bytes).
+Output written on thesis.pdf (105 pages, 11706182 bytes).
 PDF statistics:
- 2067 PDF objects out of 2073 (max. 8388607)
- 384 named destinations out of 1000 (max. 500000)
+ 2083 PDF objects out of 2487 (max. 8388607)
+ 388 named destinations out of 1000 (max. 500000)
  992 words of extra memory for PDF output out of 10000 (max. 10000000)
 
