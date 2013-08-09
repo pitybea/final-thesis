@@ -12,7 +12,7 @@ The sliding-window methods consider all sub-images by using classifiers to decid
 The Hough transform based methods, represented by the ISM~\citep{lb1}, start by detection of object parts, and object hypotheses are given by summing up all the votes voted by the object parts.
 \end{comment}
 
-The reason why the method proposed in the previous chapter fails to work well in complex scenario, while performs well in detecting simple objects is that its model is too simple. Objects, especially pedestrians are actually structured, and different part will have different appearance.
+The reason why the method proposed in the Chapter \ref{chp3} fails to work well in complex scenario, while performs well in detecting simple objects is that its model is too simple. Objects, especially pedestrians are actually structured, and different part will have different appearance.
 
 Effective video-based detection methods are of great importance, and this chapter proposes a method to localize and label objects in complex scenarios.
 
@@ -117,7 +117,7 @@ every stage of interpretation. The interpretation policy is defined
 using a dynamic programming schema with considering the cost and the
 gained information of the operator.
 
-The work is also related to object detection methods by trajectories~\citep{my9,ac24}, methods weighting features~\citep{ij13}, methods dealing with codebook noise~\citep{ac19}, and methods which integrate temporal information~\citep{ac23}. Also the mechanisms of visual cortex also supports the proposed method~\citep{cfm}.
+The work is also related to object detection methods by trajectories~\citep{my9,ac24}, methods weighting features~\citep{ij13}, methods dealing with codebook noise~\citep{ac19}, methods proposing features combining temporal information~\citep{stf}, and methods which integrate temporal information~\citep{ac23}. Also the mechanisms of visual cortex also supports the proposed method~\citep{cfm}.
 
 
 \section{Application Background}
@@ -320,7 +320,7 @@ Following~\citep{ac9}, the optimal result for the problem is given by greedy max
 \begin{algorithm}[chapter]
 
 
-  
+
      Let $\varepsilon$ be the set of object parts, $C_{th}$ be the low confidence threshold to accept detection responses, and $\hat{\bf{h}}$ be the local maxima of $\bf{h}$
 
 
@@ -363,7 +363,7 @@ Following~\citep{ac9}, the optimal result for the problem is given by greedy max
     \RETURN $\{H_i\}$
 
     \end{algorithmic}
-    
+
       \caption{Greedy Maximization}
     \label{alg:gm}
 

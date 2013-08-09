@@ -11,7 +11,7 @@ Agarwal, S., Awan, A., \& Roth, D. (2004).
   et~al.}{2010}]{wiao}
 Alexe, B., Deselaers, T., \& Ferrari, V. (2010).
 \newblock What is an object?
-\newblock In {\em CVPR}.
+\newblock In {\em CVPR}, (pp.\ 73--80).
 
 \bibitem[\protect\citeauthoryear{Attias}{Attias}{2000}]{bgm}
 Attias, H. (2000).
@@ -137,7 +137,7 @@ Felzenszwalb, P.~F., Girshick, R.~B., \& McAllester, D.~A. (2010).
   Ramanan}{Felzenszwalb et~al.}{2008}]{ac31}
 Felzenszwalb, P.~F., McAllester, D.~A., \& Ramanan, D. (2008).
 \newblock A discriminatively trained, multiscale, deformable part model.
-\newblock In {\em CVPR}.
+\newblock In {\em CVPR}, (pp.\ 1--8).
 
 \bibitem[\protect\citeauthoryear{Fergus, Perona \& Zisserman}{Fergus
   et~al.}{2003}]{ac3}
@@ -155,7 +155,7 @@ Ferguson, T.~S. (1973).
 Ferrari, V., Jurie, F., \& Schmid, C. (2007).
 \newblock Accurate object detection with deformable shape models learnt from
   images.
-\newblock In {\em CVPR}.
+\newblock In {\em CVPR}, (pp.\ 1--8).
 
 \bibitem[\protect\citeauthoryear{Gall \& Lempitsky}{Gall \&
   Lempitsky}{2009}]{ac6}
@@ -174,7 +174,7 @@ Gionis, A., Indyk, P., \& Motwani, R. (1999).
 Gould, S., Fulton, R., \& Koller, D. (2009).
 \newblock Decomposing a scene into geometric and semantically consistent
   regions.
-\newblock In {\em ICCV}.
+\newblock In {\em ICCV}, (pp.\ 1--8).
 
 \bibitem[\protect\citeauthoryear{Grauman \& Darrell}{Grauman \&
   Darrell}{2005}]{pmk}
@@ -226,6 +226,12 @@ Kise, K. \& Kashiwagi, T. (2011).
 \newblock 1.5 million subspaces of a local feature space for 3d object
   recognition.
 \newblock In {\em ACPR}, (pp.\ 672--676).
+
+\bibitem[\protect\citeauthoryear{Kl{\"a}ser, Marszalek \& Schmid}{Kl{\"a}ser
+  et~al.}{2008}]{stf}
+Kl{\"a}ser, A., Marszalek, M., \& Schmid, C. (2008).
+\newblock A spatio-temporal descriptor based on 3d-gradients.
+\newblock In {\em BMVC}, (pp.\ 1--10).
 
 \bibitem[\protect\citeauthoryear{Kuhn}{Kuhn}{1955}]{ha}
 Kuhn, H.~W. (1955).
@@ -321,7 +327,7 @@ Lucas, B.~D. \& Kanade, T. (1981).
 Maji, S., Berg, A.~C., \& Malik, J. (2008).
 \newblock Classification using intersection kernel support vector machines is
   efficient.
-\newblock In {\em CVPR}.
+\newblock In {\em CVPR}, (pp.\ 1--8).
 
 \bibitem[\protect\citeauthoryear{Maji \& Malik}{Maji \& Malik}{2009}]{ac10}
 Maji, S. \& Malik, J. (2009).
@@ -424,7 +430,7 @@ PASCAL.
   et~al.}{2011}]{dpm3}
 Pedersoli, M., Vedaldi, A., \& Gonz{\`a}lez, J. (2011).
 \newblock A coarse-to-fine approach for fast deformable object detection.
-\newblock In {\em CVPR}.
+\newblock In {\em CVPR}, (pp.\ 1353--1360).
 
 \bibitem[\protect\citeauthoryear{Pinto, Doukhan, DiCarlo \& Cox}{Pinto
   et~al.}{2009}]{midf}
@@ -437,13 +443,13 @@ Pinto, N., Doukhan, D., DiCarlo, J.~J., \& Cox, D.~D. (2009).
   Ramanan}{2012}]{spm}
 Pirsiavash, H. \& Ramanan, D. (2012).
 \newblock Steerable part models.
-\newblock In {\em CVPR}.
+\newblock In {\em CVPR}, (pp.\ 3226--3233).
 
 \bibitem[\protect\citeauthoryear{Rahtu, Kannala \& Blaschko}{Rahtu
   et~al.}{2011}]{ciod}
 Rahtu, E., Kannala, J., \& Blaschko, M.~B. (2011).
 \newblock Learning a category independent object detection cascade.
-\newblock In {\em ICCV}.
+\newblock In {\em ICCV}, (pp.\ 1052--1059).
 
 \bibitem[\protect\citeauthoryear{Rasmussen \& Williams}{Rasmussen \&
   Williams}{2005}]{gprocess}
@@ -480,7 +486,7 @@ Shawe-Taylor, J. \& Cristianini, N. (2004).
   Irani}{2007}]{lss}
 Shechtman, E. \& Irani, M. (2007).
 \newblock Matching local self-similarities across images and videos.
-\newblock In {\em CVPR}.
+\newblock In {\em CVPR}, (pp.\ 1--8).
 
 \bibitem[\protect\citeauthoryear{Shotton, Fitzgibbon, Cook, Sharp, Finocchio,
   Moore, Kipman \& Blake}{Shotton et~al.}{2011}]{knct}
@@ -500,7 +506,7 @@ Sincich, L.~C. \& Horton, J.~C. (2005).
 Song, H.~O., Zickler, S., Althoff, T., Girshick, R., Fritz, M., Geyer, C.,
   Felzenszwalb, P., \& Darrell, T. (2012).
 \newblock Sparselet models for efficient multiclass object detection.
-\newblock In {\em ECCV}.
+\newblock In {\em ECCV}, (pp.\ 716--723).
 
 \bibitem[\protect\citeauthoryear{Stauffer \& Grimson}{Stauffer \&
   Grimson}{1999}]{ac33}
@@ -568,7 +574,7 @@ Wojek, C., Roth, S., Schindler, K., \& Schiele, B. (2010).
 Yang, L., Zheng, N., Chen, M., Yang, Y., \& Yang, J. (2009).
 \newblock Categorization of multiple objects in a scene without semantic
   segmentation.
-\newblock In {\em ACCV}.
+\newblock In {\em ACCV}, (pp.\ 303--312).
 
 \bibitem[\protect\citeauthoryear{Yang, Yu \& Wu}{Yang et~al.}{2007}]{ij9}
 Yang, M., Yu, T., \& Wu, Y. (2007).
