@@ -52,6 +52,7 @@ The pyramid match score method is most related to methods using~\citep{pmk} or~\
 \label{dt5}
 In this section, firstly the typical procedure of pyramid matching is reviewed, and how a match score between two point sets by using pyramid matching is defined. Then based on the defined matric, how from the training examples, a super template can be learnt and how the super template can be used for object detection in a test image is proposed. In the definition of the matching score, there are parameters very important, finally in this section, how these parameters are estimated is introduced in three sub-sections.
 
+In the content following in this chapter, all $i$s, $j$s and $k$s are local symbols.
 \subsection{Pyramid Matching}
 
 
@@ -241,15 +242,18 @@ Here $g(i,j)$ is a function which defines how to divide the visual-spatial space
 
 In Figure \ref{fig:p3}, an example is given by considering visual information as one dimension, and spatial information the other dimension. Note, the total dimension of a point is actually $d$, while in the example it is 2.
 
-About $\gamma$, not only its members, but also the order of its members is important. In \ref{eq:pms1}, an assumption is made that , if $i<j$, ${\bf g}_i$ is finer than ${\bf g}_j$, which means if two points are decided as match under ${\bf g}_i$, they must be decided as match under ${\bf g}_j$. This is,
+About $\gamma$, not only its members, but also the order of its members is important. For \ref{eq:pms1} to work, a requirement must be fulfilled, that if $i<j$, ${\bf g}_i$ is finer than ${\bf g}_j$, which means if two points are decided as match under ${\bf g}_i$, they must be decided as match under ${\bf g}_j$.  This is,
+ 
+
 
 \begin{equation}
 i<j, G({\bf p}_{S_1};{\bf g}_i)=G({\bf p}_{S_2};{\bf g}_i)\mbox{     }\mbox{     }\Rightarrow \mbox{     }\mbox{     }G({\bf p}_{S_1};{\bf g}_i)=G({\bf p}_{S_2};{\bf g}_i)\ .
 \label{eq:pms3}
 \end{equation}
 
+If ${\bf g}_i$ is finer than ${\bf g}_j$, it is also written as ${\bf g}_i>{\bf g}_j$.
 
-Here, $G({\bf p};{\bf g})$ is a function to map {\bf p} into a particular grid, given dividing method ${\bf g}$. And $G({\bf p};{\bf g})$ on the $k$th dimension is defined by,
+In \ref{eq:pms3}, $G({\bf p};{\bf g})$ is a function to map {\bf p} into a particular grid, given dividing method ${\bf g}$. And $G({\bf p};{\bf g})$ on the $k$th dimension is defined by,
 \[
 G^k({\bf p};{g(i,j)})=
  \left\{ \begin{array}{*{20}{c}}
@@ -261,16 +265,61 @@ G^k({\bf p};{g(i,j)})=
 Here, ${\bf p}_{max}^k$ and ${\bf p}_{min}^k$ are the maximum and minimum values on the $k$th dimension, which are determined by training dataset.
 
 
+
 There is no such constrain which requires $\gamma$ is descending ordered by the fineness level in \ref{eq:pms2}. Thus, in the following paper, \ref{eq:pms2} will be used.
 In fact, when \ref{eq:pms3} is satisfied, \ref{eq:pms1} and \ref{eq:pms2} are the same.
+
+Though \ref{eq:pms2} can be used to calculate a pyramid match score for two point sets, given any set, $\gamma$, still the dividing methods and the order of the dividing methods will affect performance. For a largest fineness level, $l_{max},l_{max}\in N$, $\gamma$ is defined in Algorithm \ref{alg:order}.
+
+\begin{algorithm}[chapter]
+
+
+
+
+
+    \begin{algorithmic}[1]
+
+
+       \STATE $\gamma \leftarrow \emptyset$, $r \leftarrow 2\times (l_{max}-1)$
+
+        \WHILE {$r \ge 0$}
+        \IF {$r \ge {l_{max}-1}$}
+        \STATE $i \leftarrow l_{max}-1$ 
+        \ELSE
+        \STATE $i \leftarrow r$
+        \ENDIF
+        \STATE $j \leftarrow r-i$
+        \WHILE {$i \le (l_{max}-1)$ \AND $i \ge 0$ \AND $j \le (l_{max}-1)$ \AND $j \ge 0$}
+        \STATE $\gamma \leftarrow \gamma + g(i,j)$, $i \leftarrow i-1$, $j \leftarrow r-i$
+        \ENDWHILE
+        \STATE $r \leftarrow r-1$
+        \ENDWHILE
+
+        
+
+
+    \RETURN $\gamma$
+
+    \end{algorithmic}
+    \caption{Set of Dividing Methods Generation}
+    \label{alg:order}
+
+
+\end{algorithm}
+
+
+
+The size of $\gamma$, $L=l_{max} \times l_{max}$. For two dividing methods ${\bf g}_i,i \in {1,2,...,L}$ and ${\bf g}_j,j \in {1,2,...,L}$, if ${\bf g}_i>{\bf g}_j$, then $i<j$, which means if one dividing method is finer than the other, it will appear earlier in the set of dividing methods. There are also dividing methods, of which the fineness level cannot be compared, i.e., $g(1,2)$ and $g(2,1)$ as shown in Figure \ref{fig:p3}.
 
 
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{pms3.eps}
-\caption[Visual-spatial space dividing.]{An example set of methods to divide the visual-spatial space. $x-$ and $y-$ coordinates represent visual and spatial information respectively. From left to right, the first line is $g(2,2)$, $g(1,2)$, and $g(0,2)$. The second line is $g(2,1)$, $g(1,1)$, and $g(0,1)$. And the third line is $g(2,0)$, $g(1,0)$, and $g(0,0)$. And $\gamma$ is defined as an ordered set of all the dividing methods with different parameters. Here, $\gamma=\{g(2,2),g(1,2),g(2,1),g(0,2),g(1,1),g(2,0),g(0,1),g(1,0),g(0,0)\}$.}
+\caption[Visual-spatial space dividing.]{An example set of methods to divide the visual-spatial space. $x-$ and $y-$ coordinates represent visual and spatial information respectively. From left to right, the first line is $g(2,2)$, $g(1,2)$, and $g(0,2)$. The second line is $g(2,1)$, $g(1,1)$, and $g(0,1)$. And the third line is $g(2,0)$, $g(1,0)$, and $g(0,0)$. And $\gamma$ is defined as an ordered set of all the dividing methods with different parameters, i.e., $\gamma=\{g(2,2),g(1,2),g(2,1),g(0,2),g(1,1),g(2,0),g(0,1),g(1,0),g(0,0)\}$.}
 \label{fig:p3}
 \end{figure}
+
+
 
 \subsection{Deciding Weights for Dividing Methods}
 After how to divide the visual-spatial space is decided, the remaining task is, for each dividing method $\bf g$, defining a corresponding weight.
@@ -293,6 +342,7 @@ As is seen in \ref{eq:pms4}, the finer one grid is in $g(i,j)$, the larger a wei
 
 \subsection{Learning Weights for Dividing Methods}
 Besides directly assigning weights to all the dividing methods in a deterministic way, a framework for learning weights is here proposed.
+
 Often Gaussian kernels are used to measure differences between two features or two positions in Hough transform based methods~\citep{lb1}. 
 For two visual-spatial points found match in the same grid under dividing method, $g(i,j)$,
 the visual difference  is  $ \frac {(d-2)}{2^i}$, and the spatial difference is  $ \frac 2 {2^j}$.
@@ -347,19 +397,21 @@ In \ref{eq:pms7}, after summing up along $i$, and $j$ at given $\gamma$ and $S_{
 The objective function is written as the gap between pyramid match scores of positive training images and negative training images under normalizing condition as,
 
 \[\begin{aligned}
-&\arg \max\limits_{a,b,c} \frac{ \dfrac {\sum {\rm PMS}(I_p;a,b,c)}  {|\{ I_p \}|} - \dfrac {\sum {\rm PMS}(I_n;a,b,c)}  {|\{ I_n \}|} }
+&\arg \max\limits_{a,b,c} \dfrac{ \dfrac {\sum {\rm PMS}(I_p;a,b,c)}  {|\{ I_p \}|} - \dfrac {\sum {\rm PMS}(I_n;a,b,c)}  {|\{ I_n \}|} }
 {\dfrac
 {{\sum {\rm PMS}(I_p;a,b,c)}+ {\sum {\rm PMS}(I_n;a,b,c) }}
 {|\{ I_p \}|+|\{ I_n \}|}
 }\\
 &\begin{aligned}
-    s.t.:\mbox{ }& a>0\\
+    s.t.:\mbox{ }& a>0;\\
     &b>0\;.
 \end{aligned}
 \end{aligned}
 \]
 
+After all positive and negative training examples are given, the objective function will only contain $a$, $b$, and $c$. For such a function, brute-force solutions will be feasible. 
 
+So far, in Algorithm \ref{alg:tm}, how the template can be generated is defined,  , so Algorithm \ref{alg:dt} can be used for detection.
 
 
 \section{Experimental Results}
