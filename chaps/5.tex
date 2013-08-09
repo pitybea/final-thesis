@@ -195,20 +195,20 @@ For detection, a most popular pipeline is employed, as in Algorithm \ref{alg:dt}
 
     \WHILE { ${\rm P}(S_{ \eta_1},S_{\bf{T}};\gamma) >= {\rm P}_{th}$ }
      \STATE  ${\Omega }  \leftarrow  {\Omega } + \eta_1$
-     
-       \STATE  $\{ \eta \}  \leftarrow  \{ \eta \} - \eta_1$ 
-       
+
+       \STATE  $\{ \eta \}  \leftarrow  \{ \eta \} - \eta_1$
+
        \FOR {$\eta \in \{\eta \}$}
        \FOR {$\eta^{'} \in {\Omega } $}
        \FOR {$\bf{p} \in S_{\eta} $}
-       
+
        \IF {$({\bf{p}}^{(d-1)},{\bf{p}}^d)$ is inside $\eta^{'}$}
-       
+
         \STATE  $S_{\eta} \leftarrow S_{\eta} - \bf{p} $
-     
+
        \ENDIF
-         \ENDFOR 
-       \ENDFOR 
+         \ENDFOR
+       \ENDFOR
        \STATE  Calculate ${\rm P}(S_{\eta},S_{\bf{T}};\gamma)$
        \ENDFOR
         \STATE Sort $\{\eta \}$ by ${\rm P}(S_{\eta},S_{\bf{T}};\gamma)$ in descending order
@@ -241,7 +241,7 @@ In Figure \ref{fig:p3}, an example is given by considering visual information as
 
 About $\gamma$, not only its members, but also the order of its members is important. In \ref{eq:pms1}, an assumption is made that , if $i<j$, ${\bf g}_i$ is finer than ${\bf g}_j$, which means if two points are decided as match under ${\bf g}_i$, they must be decided as match under ${\bf g}_j$. This is,
 
-\begin{equation} 
+\begin{equation}
 i<j, G({\bf p}_{S_1};{\bf g}_i)=G({\bf p}_{S_2};{\bf g}_i)\mbox{     }\mbox{     }\Rightarrow \mbox{     }\mbox{     }G({\bf p}_{S_1};{\bf g}_i)=G({\bf p}_{S_2};{\bf g}_i)\ .
 \label{eq:pms3}
 \end{equation}
@@ -249,7 +249,7 @@ i<j, G({\bf p}_{S_1};{\bf g}_i)=G({\bf p}_{S_2};{\bf g}_i)\mbox{     }\mbox{    
 
 Here, $G({\bf p};{\bf g})$ is a function to map {\bf p} into a particular grid, given dividing method ${\bf g}$. And $G({\bf p};{\bf g})$ on the $k$th dimension is defined by,
 \[
-G^k({\bf p};{g(i,j)})= 
+G^k({\bf p};{g(i,j)})=
  \left\{ \begin{array}{*{20}{c}}
     \lfloor { \frac{2^i \times ({\bf p}_{max}^k - {\bf p}^k) }{{\bf p}_{max}^k - {\bf p}_{min}^k} }  \rfloor    &\mbox{  if } k \le (d-2) \\
     \lfloor { \frac{2^j \times ({\bf p}_{max}^k - {\bf p}^k) }{{\bf p}_{max}^k - {\bf p}_{min}^k} }  \rfloor  &\mbox{otherwise}
@@ -271,13 +271,13 @@ In fact, when \ref{eq:pms3} is satisfied, \ref{eq:pms1} and \ref{eq:pms2} are th
 \end{figure}
 
 \subsection{Deciding Weights for Dividing Methods}
-After how the visual-spatial space is decided, the remaining task is, for each dividing method $\bf g$, defining a corresponding weight. 
-When talking about two points which are found in the same grid under ${\bf g}=g(i,j)$, there is an upper bound to their $L1$-distance, which is given by 
+After how the visual-spatial space is decided, the remaining task is, for each dividing method $\bf g$, defining a corresponding weight.
+When talking about two points which are found in the same grid under ${\bf g}=g(i,j)$, there is an upper bound to their $L1$-distance, which is given by
 \[D_{ub}=  {(d-2)\times \frac 1 {2^i} +2\times \frac 1 {2^j} } ,
 \]
  if unit length is assumed for all $({\bf p}_{max}^k - {\bf p}_{min}^k ),k \in \{1,2,...,d\}$. Since the first $(d-2)$ dimensions of each grid under $g(i,j)$ possess length of $\frac 1 {2^i}$, while the last 2 dimensions possess length of  $\frac 1 {2^j}$.
- 
- 
+
+
 
 Following~\citep{pmk}, for two point from different point sets, if they are in the same grid under $g(i,j)$, which means $G({\bf p}_{S_1};g(i,j))=G({\bf p}_{S_2};g(i,j))$, the visual difference between ${\bf p}_{S_1}$ and ${\bf p}_{S_2}$  is defined as $ \frac {(d-2)}{2^i}$, and the spatial difference is defined as, $ \frac 2 {2^j}$.
 A weight, $\omega$ , defined for a dividing method $g(i,j)$ shows the importance of two matched points, and measures how difficult it is to match under such dividing method.
@@ -289,9 +289,21 @@ A weight, $\omega$ , defined for a dividing method $g(i,j)$ shows the importance
 
 As is seen in \ref{eq:pms4}, the finer one grid is in $g(i,j)$, the larger a weight will be assigned for it. The weight is the confidence that the point set belong to a target object based on a point has corresponding evidence from the super template under the current $\bf g$.
 
-Often Gaussian kernels are used to measure differences between two features or two positions in Hough transform based methods~\citep{lb1}.
+\subsection{Learning Weights for Dividing Methods}
+Often Gaussian kernels are used to measure differences between two features or two positions in Hough transform based methods~\citep{lb1}. 
+For two visual-spatial points found match in the same grid under dividing method, $g(i,j)$,
+the visual difference between  is  $ \frac {(d-2)}{2^i}$, and the spatial difference is  $ \frac 2 {2^j}$.
+The difference between two points found match in the same grid is modeled using a 2D Gaussian kernel, as
+
+\begin{equation}
+\label{eq:pms5}
+\omega_{g(i,j)}=\frac 1 {2 \pi \sigma_1 \sigma_2 \sqrt{1-\rho^2} }\exp(- \frac 1 {1-\rho^2} ( \frac {(\frac {(d-2)}{2^i})^2} {{\sigma_1}^2}
++ \frac {(\frac {2}{2^j})^2} {{\sigma_2}^2}  - \frac {2 \rho \frac {(d-2)}{2^i}  \frac 2 {2^j}}{\sigma_1 \sigma_2} )). 
+\end{equation}
+
 %, and here reflects the confidence the whole point set is a target object based on the current matched pair.
 
+In \ref{eq:pms5}, $\rho$ is the correlation between visual and spatial channel, while $\sigma_1$ and $\sigma_2$ are standard deviations for visual and spatial channel.
 
 
 \section{Experimental Results}
