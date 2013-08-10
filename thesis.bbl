@@ -339,6 +339,13 @@ Maji, S. \& Malik, J. (2009).
 \newblock Object detection using a max-margin hough transform.
 \newblock In {\em CVPR}, (pp.\ 1038--1045).
 
+\bibitem[\protect\citeauthoryear{Martin, Fowlkes \& Malik}{Martin
+  et~al.}{2004}]{bdt}
+Martin, D.~R., Fowlkes, C.~C., \& Malik, J. (2004).
+\newblock Learning to detect natural image boundaries using local brightness,
+  color, and texture cues.
+\newblock {\em PAMI}, {\em 26\/}(5), 530--549.
+
 \bibitem[\protect\citeauthoryear{Matas, Chum, Martin \& Pajdla}{Matas
   et~al.}{2002}]{o14}
 Matas, J., Chum, O., Martin, U., \& Pajdla, T. (2002).

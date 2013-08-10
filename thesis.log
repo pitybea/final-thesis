@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.6.16)  10 AUG 2013 17:01
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.6.16)  10 AUG 2013 18:13
 entering extended mode
 **thesis.tex
 (E:\final-thesis\thesis.tex
@@ -2192,22 +2192,27 @@ Package pdftex.def Info: pvp-eps-converted-to.pdf used on input line 485.
 l.491 
        <E:/final-thesis/plmax-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <pnp.eps>
-(epstopdf)                    date: 2013-08-10 16:55:37
-(epstopdf)                    size: 5187410 bytes
+(epstopdf)                    date: 2013-08-10 18:13:01
+(epstopdf)                    size: 5039330 bytes
 (epstopdf)             Output file: <pnp-eps-converted-to.pdf>
 (epstopdf)                    date: 2013-08-10 16:55:50
 (epstopdf)                    size: 628701 bytes
 (epstopdf)             Command: <epstopdf --outfile=pnp-eps-converted-to.pdf pn
 p.eps>
 (epstopdf)             \includegraphics on input line 497.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=pnp-eps-converted-to.pdf pnp.eps)...executed (allo
+wed).
 
-<pnp-eps-converted-to.pdf, id=1760, 868.24374pt x 542.025pt>
+Package epstopdf Info: Result file: <pnp-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-08-10 18:13:14
+(epstopdf)                    size: 632268 bytes.
+
+<pnp-eps-converted-to.pdf, id=1760, 722.7pt x 542.025pt>
 File: pnp-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pnp-eps-converted-to.pdf>
 Package pdftex.def Info: pnp-eps-converted-to.pdf used on input line 497.
-(pdftex.def)             Requested size: 412.56496pt x 257.55551pt.
+(pdftex.def)             Requested size: 412.56496pt x 309.42061pt.
  [86pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 7}) has been already used, duplicate ignored
 
@@ -2239,14 +2244,14 @@ Package pdftex.def Info: dpm-eps-converted-to.pdf used on input line 509.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.515 
-       <E:/final-thesis/pnp-eps-converted-to.pdf>]) [88pdfTeX warning (ext4): d
-estination with the same identifier (name{figure.5.9}) has been already used, d
-uplicate ignored
+       <E:/final-thesis/pnp-eps-converted-to.pdf>] [88pdfTeX warning (ext4): de
+stination with the same identifier (name{figure.5.9}) has been already used, du
+plicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.83 \include{chaps/5}
-                       <E:/final-thesis/dpm-eps-converted-to.pdf>] [89]
+l.521 
+       <E:/final-thesis/dpm-eps-converted-to.pdf>]) [89]
 (E:\final-thesis\chaps/6.tex
 Chapter 6.
 ) [90
@@ -2283,19 +2288,19 @@ Package rerunfilecheck Warning: File `thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: A18B86AF0C0193649DBB4692A576D353;15758
-(rerunfilecheck)             After:  EF49887AC7F0C5279ED461508246B316;4424.
+(rerunfilecheck)             Before: 3A2AFD4B7C03914658B13D859F238C4D;15750
+(rerunfilecheck)             After:  3633A3CA05F172BEE790E619DED3B46D;4423.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 5DF9307C975E87AC60B15572E5D2CE29;9852.
+(rerunfilecheck)             Checksum: 6B151100FC1FCB9EA0AB77FDEE826F85;10044.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10272 strings out of 495354
- 139352 string characters out of 3183859
- 236666 words of memory out of 3000000
- 12654 multiletter control sequences out of 15000+200000
+ 10279 strings out of 495354
+ 139414 string characters out of 3183859
+ 236732 words of memory out of 3000000
+ 12660 multiletter control sequences out of 15000+200000
  35577 words of font info for 88 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  39i,22n,50p,1552b,828s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2313,9 +2318,9 @@ lic/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6
 onts/type1/urw/courier/ucrr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.
 pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (111 pages, 17013882 bytes).
+Output written on thesis.pdf (111 pages, 17020367 bytes).
 PDF statistics:
- 2220 PDF objects out of 2487 (max. 8388607)
- 417 named destinations out of 1000 (max. 500000)
+ 2238 PDF objects out of 2487 (max. 8388607)
+ 418 named destinations out of 1000 (max. 500000)
  1036 words of extra memory for PDF output out of 10000 (max. 10000000)
 
