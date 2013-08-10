@@ -20,6 +20,7 @@
 \usepackage{url}
 \usepackage{graphicx}
 \usepackage{epstopdf}
+
 \usepackage[section,subsection,subsubsection]{extraplaceins}
 \numberwithin{algorithm}{chapter}
 
@@ -84,7 +85,7 @@
 
 
 %-------------------
-\bibliographystyle{apalike}
+\bibliographystyle{newapa}
 \bibliography{chaps/egbib}
 \include{chaps/thanks}
 

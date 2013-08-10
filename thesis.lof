@@ -61,10 +61,13 @@
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Example Hough images}}{63}{figure.4.10}
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{64}{figure.4.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Best one-one match.}}{71}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Pyramid matching procedure.}}{71}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Visual-spatial space dividing.}}{78}{figure.5.3}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Best one-one match}}{71}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Pyramid matching procedure}}{71}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Visual-spatial space dividing}}{78}{figure.5.3}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Detection results on UIUC cars}}{83}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Result evaluation using different dimensions.}}{84}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Result evaluation using different largest fineness levels.}}{85}{figure.5.6}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Result evaluation using different dimensions}}{84}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Result evaluation using different largest fineness levels}}{85}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Result evaluation by using results from only visual or spatial information}}{86}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Result comparison with method using dividing methods of \citep {pmk}}}{87}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Result comparison with deformable part model~\citep {ac31}}}{88}{figure.5.9}
 \addvspace {10\p@ }

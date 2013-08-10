@@ -1,3 +1,5 @@
+\backcite {pmk}{{v}{(document)}{Doc-Start}}
+\backcite {ac31}{{v}{(document)}{Doc-Start}}
 \backcite {dod}{{1}{1}{chapter.1}}
 \backcite {ij4}{{1}{1}{chapter.1}}
 \backcite {ac31}{{1}{1}{chapter.1}}
@@ -224,6 +226,8 @@
 \backcite {lb1}{{79}{5.3.5}{subsection.5.3.5}}
 \backcite {cds}{{82}{5.4.1}{subsection.5.4.1}}
 \backcite {ac31}{{82}{5.4.1}{subsection.5.4.1}}
-\backcite {pmk}{{82}{5.4.1}{figure.5.5}}
-\backcite {lwz}{{82}{5.4.1}{figure.5.5}}
 \backcite {cds}{{83}{5.4}{figure.5.4}}
+\backcite {pmk}{{84}{5.4.1}{figure.5.5}}
+\backcite {lwz}{{84}{5.4.1}{figure.5.5}}
+\backcite {pmk}{{87}{5.4.1}{figure.5.8}}
+\backcite {ac31}{{88}{5.4.1}{figure.5.9}}

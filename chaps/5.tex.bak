@@ -76,14 +76,14 @@ The best matching exists, and can be found by simple brute-force enumeration. In
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{pms1.eps}
-\caption[Best one-one match.]{A best one-one match problem in 2D space. There are two points in the first point set, three in the second point set. The arrows show correspondence between the two point set.}
+\caption[Best one-one match]{A best one-one match problem in 2D space. There are two points in the first point set, three in the second point set. The arrows show correspondence between the two point set.}
 \label{fig:pms1}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{pms2.eps}
-\caption[Pyramid matching procedure.]{Pyramid matching procedure which takes the 2D one-one match problem in Figure \ref{fig:pms1} as an example. The pyramid matching method divides the 2D space from fine to coarse in the 2D space. Notice, the triangle points belong to point set one, and the circle points belong to point set two. In the left, each dimension is divided into 4, results in totally 16 grids, and no matched point pairs are found. In the middle, each dimension is divided into 2, results in totally 4 grids, and two pairs of points belonging to different point sets are found and excluded. In the right, since the matched points belonging to matched point pairs are excluded, then only one point from the second point set is left. So the number of pairs found under all dividing methods are, 0, 2, and 0. The pyramid match score is calculated as a weighted sum of these 0, 2, and 0. }
+\caption[Pyramid matching procedure]{Pyramid matching procedure which takes the 2D one-one match problem in Figure \ref{fig:pms1} as an example. The pyramid matching method divides the 2D space from fine to coarse in the 2D space. Notice, the triangle points belong to point set one, and the circle points belong to point set two. In the left, each dimension is divided into 4, results in totally 16 grids, and no matched point pairs are found. In the middle, each dimension is divided into 2, results in totally 4 grids, and two pairs of points belonging to different point sets are found and excluded. In the right, since the matched points belonging to matched point pairs are excluded, then only one point from the second point set is left. So the number of pairs found under all dividing methods are, 0, 2, and 0. The pyramid match score is calculated as a weighted sum of these 0, 2, and 0. }
 \label{fig:p2}
 \end{figure}
 
@@ -315,7 +315,7 @@ The size of $\gamma$, $L=l_{max} \times l_{max}$. For two dividing methods ${\bf
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{pms3.eps}
-\caption[Visual-spatial space dividing.]{An example set of methods to divide the visual-spatial space. $x-$ and $y-$ coordinates represent visual and spatial information respectively. From left to right, the first line is $g(2,2)$, $g(1,2)$, and $g(0,2)$. The second line is $g(2,1)$, $g(1,1)$, and $g(0,1)$. And the third line is $g(2,0)$, $g(1,0)$, and $g(0,0)$. And $\gamma$ is defined as an ordered set of all the dividing methods with different parameters, i.e., $\gamma=\{g(2,2),g(1,2),g(2,1),g(0,2),g(1,1),g(2,0),g(0,1),g(1,0),g(0,0)\}$.}
+\caption[Visual-spatial space dividing]{An example set of methods to divide the visual-spatial space. $x-$ and $y-$ coordinates represent visual and spatial information respectively. From left to right, the first line is $g(2,2)$, $g(1,2)$, and $g(0,2)$. The second line is $g(2,1)$, $g(1,1)$, and $g(0,1)$. And the third line is $g(2,0)$, $g(1,0)$, and $g(0,0)$. And $\gamma$ is defined as an ordered set of all the dividing methods with different parameters, i.e., $\gamma=\{g(2,2),g(1,2),g(2,1),g(0,2),g(1,1),g(2,0),g(0,1),g(1,0),g(0,0)\}$.}
 \label{fig:p3}
 \end{figure}
 
@@ -411,7 +411,7 @@ The objective function is written as the gap between pyramid match scores of pos
 
 After all positive and negative training examples are given, the objective function will only contain $a$, $b$, and $c$. For such a function, brute-force solutions will be feasible.
 
-So far, in Algorithm \ref{alg:tm}, how the template can be generated is defined,  , so Algorithm \ref{alg:dt} can be used for detection.
+Till now, Algorithm \ref{alg:tm} gives how $S_{\bf T}$ can be generated,  Algorithm \ref{alg:order}  gives how $\gamma$ is defined, how $\omega$ is estimated is given in \ref{eq:pms4} and \ref{eq:pms7} respectively,so Algorithm \ref{alg:dt} can be used for detection.
 
 
 \section{Experimental Results}
@@ -424,11 +424,12 @@ The key value of the method is the proposed matric between an object hypothesis 
 UIUC cars~\citep{cds} can be considered as one of the most famous datasets, and it has been used as benchmark in the area of detection.
 There are 1,050 training images, of which 550 are positive, and 500 are negative. There are 200 target objects in 167 test images without significant scale change. In the evaluation following, together with the 200 target objects, 669 negative rectangles from the test images are extracted from testing images for the evaluation.
 
-Performance of the method upon different parameters will be evaluated on the UIUC cars, and compared with DPM~\citep{ac31}.
+Performance of the method upon different parameters will be evaluated on the UIUC cars, and compared with DPM~\citep{ac31}. 
+In the experiments, \ref{eq:pms4} is used. So there are only two parameters left, which will lead to difference in performance, which are, the largest fineness level, $l_{max}$ and the dimension of SIFT after PCA, $(d-2)$.
 
 
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 
 \includegraphics[scale=0.75]{test-0_good.jpg}
@@ -450,20 +451,73 @@ Performance of the method upon different parameters will be evaluated on the UIU
 \label{fig:c5r}
 \end{figure}
 
-In Figure \ref{fig:c5r}, are some good results on UIUC cars. And new experiments will be added.
-\begin{figure}
+In Figure \ref{fig:c5r}, are some detection results on UIUC cars. 
+
+
+\begin{figure}[H]
 \centering
 
-\includegraphics[width=1\textwidth]{pms.eps}
+\includegraphics[width=1\textwidth]{pdim.eps}
 
 
-\caption[Result evaluation]{Results evaluation on UIUC cars with different implementation parameters.}
+\caption[Result evaluation using different dimensions]{Result evaluation on UIUC cars with different $(d-2)$s.}
 \label{fig:c52}
 \end{figure}
 
-In Figure \ref{fig:c52}, evaluations are given.
+In Figure \ref{fig:c52}, are the results get by using different $(d-2)$s. Precision-recall curves are generated directly by calculating pyramid match score. Obviously, when appearance information takes 10 dimensions, the performance is the best. The result is consistent with~\citep{pmk} and~\citep{lwz}.
 
+
+\begin{figure}[H]
+\centering
+
+\includegraphics[width=1\textwidth]{plmax.eps}
+
+
+\caption[Result evaluation using different largest fineness levels]{Result evaluation on UIUC cars with different $l_{max}$s.}
+\label{fig:c53}
+\end{figure}
+
+In Figure \ref{fig:c53}, detection performance by using different $l_{max}$s is given. Note, the best performance is given at $l_{max}=5$. The reasons are two-fold: 1) the weights are given by \ref{eq:pms4}, and favor larger fineness levels, and 2) both training examples and testing examples are of size $100 \times 40$, and $2^5=32$ is the best dividing parameter for positional information.
+
+\begin{figure}[H]
+\centering
+
+\includegraphics[width=1\textwidth]{pvp.eps}
+
+
+\caption[Result evaluation by using results from only visual or spatial information]{Result evaluation on UIUC cars by using visual, spatial, and visual $+$ spatial information.}
+\label{fig:c54}
+\end{figure}
+
+In Figure \ref{fig:c54}, are the evaluation of visual and spatial information. Actually spatial information alone is not able to distinguish positive and negative target objects at all. The performance of just using visual information is much worse than using visual-spatial information.
+
+\begin{figure}[H]
+\centering
+
+\includegraphics[width=1\textwidth]{pnp.eps}
+
+
+\caption[Result comparison with method using dividing methods of \citep{pmk}]{Result evaluation on UIUC cars by using $\gamma$ which is generated using Algorithm \ref{alg:order} with $l_{max}=5$ and $\gamma=\{g(4,4),g(3,3),g(2,2),g(1,1),g(0,0)\}$.}
+\label{fig:c55}
+\end{figure}
+How the visual-spatial space is divided is also critical to the performance of the method, and in Figure \ref{fig:c55}, results are evaluated by using the proposed space-dividing methods and \citep{pmk}.
+
+
+\begin{figure}[H]
+\centering
+
+\includegraphics[width=1\textwidth]{dpm.eps}
+
+
+\caption[Result comparison with deformable part model~\citep{ac31}]{Result evaluation on UIUC cars between PMS and DPM.}
+\label{fig:c56}
+\end{figure}
+
+In Figure \ref{fig:c56}, performance are evaluated between the proposed method, and a state-of-the-art method, DPM~\citep{ac31}. The proposed method performs no worse than DPM,
+While the training time between the two models are 1 minute vs 16 hours. In this experiment, the training time of the proposed method is 1,000 times faster. Also during the training of the proposed method, since \ref{eq:pms4} is used, only the positive training examples are used, while DPM uses both positive and negative training examples.
 \subsection{VOC 2007 Cars}
+
+
 
 \section{Discussion}
 \label{dis5}

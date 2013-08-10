@@ -833,7 +833,7 @@ Understanding Multi-Object Traffic Scenes",
   pages     = {151-177},
 }
 
-@inproceedings{conf/aaai/LiuWZ08,
+@inproceedings{lwz,
 
   author = {Liu, Yi and Wang, Xulei and Zha, Hongbin},
 
@@ -842,7 +842,7 @@ Understanding Multi-Object Traffic Scenes",
   pages = {652-658},
 
   title = {Dimension Amnesic Pyramid Match Kernel.},
- 
+
   year = 2008
 }
 
@@ -1101,6 +1101,19 @@ address = {Los Alamitos, CA, USA},
     PAGES = {73-80},
   keywords = {}
 }
+
+@article{bd,
+ author = {Martin, David R. and Fowlkes, Charless C. and Malik, Jitendra},
+ title = {Learning to Detect Natural Image Boundaries Using Local Brightness, Color, and Texture Cues},
+ journal = {PAMI},
+
+ volume = {26},
+ number = {5},
+
+ year = {2004},
+
+ pages = {530--549},
+ }
 
 @inproceedings{408,
 title = {Fast, Accurate Detection of 100,000 Object Classes on a Single Machine},
