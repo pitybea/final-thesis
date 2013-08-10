@@ -305,6 +305,11 @@ Liu, C., Yuen, J., \& Torralba, A. (2011).
 \newblock Nonparametric scene parsing via label transfer.
 \newblock {\em PAMI}, {\em 33\/}(12), 2368--2382.
 
+\bibitem[\protect\citeauthoryear{Liu, Wang \& Zha}{Liu et~al.}{2008}]{lwz}
+Liu, Y., Wang, X., \& Zha, H. (2008).
+\newblock Dimension amnesic pyramid match kernel.
+\newblock In {\em AAAI}, (pp.\ 652--658).
+
 \bibitem[\protect\citeauthoryear{L{\'o}pez-Sastre, Tuytelaars \&
   Savarese}{L{\'o}pez-Sastre et~al.}{2011}]{mvdpm}
 L{\'o}pez-Sastre, R.~J., Tuytelaars, T., \& Savarese, S. (2011).

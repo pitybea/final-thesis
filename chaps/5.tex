@@ -411,7 +411,7 @@ The objective function is written as the gap between pyramid match scores of pos
 
 After all positive and negative training examples are given, the objective function will only contain $a$, $b$, and $c$. For such a function, brute-force solutions will be feasible.
 
-So far, in Algorithm \ref{alg:tm}, how the template can be generated is defined,  , so Algorithm \ref{alg:dt} can be used for detection.
+Till now, Algorithm \ref{alg:tm} gives how $S_{\bf T}$ can be generated,  Algorithm \ref{alg:order}  gives how $\gamma$ is defined, how $\omega$ is estimated is given in \ref{eq:pms4} and \ref{eq:pms7} respectively,so Algorithm \ref{alg:dt} can be used for detection.
 
 
 \section{Experimental Results}
@@ -420,6 +420,14 @@ The key value of the method is the proposed matric between an object hypothesis 
 
 
 \subsection{UIUC Cars}
+
+UIUC cars~\citep{cds} can be considered as one of the most famous datasets, and it has been used as benchmark in the area of detection.
+There are 1,050 training images, of which 550 are positive, and 500 are negative. There are 200 target objects in 167 test images without significant scale change. In the evaluation following, together with the 200 target objects, 669 negative rectangles from the test images are extracted from testing images for the evaluation.
+
+Performance of the method upon different parameters will be evaluated on the UIUC cars, and compared with DPM~\citep{ac31}. 
+In the experiments, \ref{eq:pms4} is used. So there are only two parameters left, which will lead to difference in performance, which are, the largest fineness level, $l_{max}$ and the dimension of SIFT after PCA, $(d-2)$.
+
+
 
 \begin{figure}
 \centering
@@ -443,18 +451,35 @@ The key value of the method is the proposed matric between an object hypothesis 
 \label{fig:c5r}
 \end{figure}
 
-In Figure \ref{fig:c5r}, are some good results on UIUC cars. And new experiments will be added.
+In Figure \ref{fig:c5r}, are some detection results on UIUC cars. 
+
+
 \begin{figure}
 \centering
 
-\includegraphics[width=1\textwidth]{pms.eps}
+\includegraphics[width=1\textwidth]{pdim.eps}
 
 
-\caption[Result evaluation]{Results evaluation on UIUC cars with different implementation parameters.}
+\caption[Result evaluation using different dimensions.]{Results evaluation on UIUC cars with different $d-2$.}
 \label{fig:c52}
 \end{figure}
 
-In Figure \ref{fig:c52}, evaluations are given.
+In Figure \ref{fig:c52}, are the results get by using different $(d-2)$s. Precision-recall curves are generated directly by calculating pyramid match score. Obviously, when appearance information takes 10 dimensions, the performance is the best. The result is consistent with~\citep{pmk} and~\citep{lwz}.
+
+
+\begin{figure}
+\centering
+
+\includegraphics[width=1\textwidth]{plmax.eps}
+
+
+\caption[Result evaluation using different largest fineness levels.]{Results evaluation on UIUC cars with different $l_{max}$.}
+\label{fig:c53}
+\end{figure}
+
+In Figure \ref{fig:c52}, detection performance by using different $l_{max}$s is given. Note, the best performance is given at $l_{max}=5$. The reasons are two-fold: 1) the weights are given by \ref{eq:pms4}, and favor larger fineness levels, and 2) both training examples and testing examples are of size $100 \times 40$, and $2^5=32$ is the best dividing parameter for positional information.
+
+
 
 \subsection{VOC 2007 Cars}
 
