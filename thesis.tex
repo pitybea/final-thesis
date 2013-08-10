@@ -22,6 +22,8 @@
 \usepackage{epstopdf}
 \usepackage{float}
 \usepackage[section,subsection,subsubsection]{extraplaceins}
+\usepackage{minitoc}
+
 \numberwithin{algorithm}{chapter}
 
 
@@ -63,12 +65,12 @@
 \begin{document}
 
 
-\maketitle
-\maketitle
+
 
 
 
 \frontmatter
+\dominitoc
 \tableofcontents
 \listoffigures
 \listoftables
@@ -87,6 +89,7 @@
 %-------------------
 \bibliographystyle{newapa}
 \bibliography{chaps/egbib}
+
 \include{chaps/thanks}
 
 \end{document}
