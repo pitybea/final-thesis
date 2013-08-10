@@ -17,7 +17,7 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Keypoint detection comparison}}{27}{figure.3.5}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{27}{figure.3.5}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{27}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Positive and negative training examples.}}{28}{figure.3.6}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Positive and negative training examples}}{28}{figure.3.6}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Original data and detection results}}{29}{figure.3.7}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{29}{figure.3.7}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{29}{figure.3.7}
@@ -70,4 +70,5 @@
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Result evaluation by using results from only visual or spatial information}}{86}{figure.5.7}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Result comparison with method using dividing methods of \citep {pmk}}}{87}{figure.5.8}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Result comparison with deformable part model~\citep {ac31}}}{88}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Result comparison on VOC2007 cars}}{90}{figure.5.10}
 \addvspace {10\p@ }

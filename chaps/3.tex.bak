@@ -234,7 +234,7 @@ Let $u_{ij}=1 \mbox{ or } 0$ indicates $n_{\bf{g}}^j$ is linked to $T_{\bf{g}}^i
 \end{aligned}
 \end{aligned}
 \]
-Here, $P_{link}(n_{\bf{g}}^j|T_{\bf{g}}^i)$ is defined by the appearance difference, the scale difference, and the time gap between the last detection response contained in $T_{\bf{g}}^i$ and $n_{\bf{g}}^j$. While Hungarian algorithm~\citep{ha} gives near-optimal solution, we follow a very simple manner for the solution by finding the best matched pairs and excluding them until no matching pairs can be found.
+Here, $P_{link}(n_{\bf{g}}^j|T_{\bf{g}}^i)$ is defined by the appearance difference, the scale difference, and the time gap between the last detection response contained in $T_{\bf{g}}^i$ and $n_{\bf{g}}^j$. While Hungarian algorithm~\citep{ha} gives near-optimal solution, the method follows a very simple manner for the solution by finding the best matched pairs and excluding them until no matching pairs can be found.
 
 \subsection{Keypoint Cluster Verification by Motion}
 As shown in Figure \ref{fig:sixs}, the trajectories from keypoint clusters belonging to target objects are different from other objects'. In this step, the temporal information encoded in the trajectories are used to further verify the keypoint clusters. In the case of emergence telephone indicator detection, a linear model is used to fit each trajectory, and the significance of the fitting is the criteria for decisions.
@@ -305,7 +305,7 @@ The keypoints used to set intensity thresholds, together with some keypoints ran
 For keypoint clustering, the threshold to split the mst is set to 10, which is half the largest height of the emergency lights sensed by the camera.
 
 \begin{figure}
-\includegraphics[width=0.94\textwidth,bb=0 0 1367 651]{untitled.jpg}
+\includegraphics[width=1\textwidth,bb=0 0 1367 651]{untitled.jpg}
 \caption[Positive and negative training examples.]{Dimension reduction of intensity histograms manually marked as positive and negative, which have 2 dimensions by principle component analysis. Blue circles: positive, and red: negative.}
 \label{ex1:v}
 \end{figure}
@@ -525,7 +525,7 @@ The failure of this method in complex scene is the lacking of descriptive power 
 \begin{figure}
 \centering
 {
-  \includegraphics[width=0.8\textwidth]{kptkms.eps}
+  \includegraphics[width=1\textwidth]{kptkms.eps}
 }
 \caption[Evaluation of keypoint verification]{Evaluation of keypoint verification. Keypoint verification performance of $k$-means mixture models with different parameters. Here, $k$ is the main parameter, while the model of ensemble is a mixture of all other $k$-means methods.}
 \label{ord:one}
