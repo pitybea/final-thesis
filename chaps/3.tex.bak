@@ -58,27 +58,27 @@ This chapter is organized as follows: section \ref{rw} reviews related work, sec
 \section{Related Work}
 \label{rw}
 
-Most modern detection methods fall into two categories. Some~\cite{ij4,ac31,ac30,ac4,ac32,ac29,ac28,ac1} follow the sliding-window schema, and they detect objects by consider whether each of the sub-images contains an instance of the target object. Classifiers are usually employed by these methods. The other methods~\cite{ac9,ac2,ac3,ac22,lb1,ac5,ac10,ac21,ac18} infer object centers based on local image features in a bottom-up manner. The proposed method makes advantages of both frameworks. Following the bottom-up manner, keypoints are detected, verified, and clustered. After these steps, the keypoint clusters are considered as detection hypotheses. Then following the sliding-window schema, the keypoint clusters are verified by their appearance and temporal information using discriminative methods.
+Most modern detection methods fall into two categories. Some~\citep{ij4,ac31,ac30,ac4,ac32,ac29,ac28,ac1} follow the sliding-window schema, and they detect objects by consider whether each of the sub-images contains an instance of the target object. Classifiers are usually employed by these methods. The other methods~\citep{ac9,ac2,ac3,ac22,lb1,ac5,ac10,ac21,ac18} infer object centers based on local image features in a bottom-up manner. The proposed method makes advantages of both frameworks. Following the bottom-up manner, keypoints are detected, verified, and clustered. After these steps, the keypoint clusters are considered as detection hypotheses. Then following the sliding-window schema, the keypoint clusters are verified by their appearance and temporal information using discriminative methods.
 
-Previous methods~\cite{ac34} also consider the combination of the two frameworks. Detection hypotheses are gained using Hough transform and then verified by support vector machines in~\cite{ac10,ac25}. The methods in~\cite{ac6,ac7}, use randomized decision trees for both decisions whether local features belonging to foreground objects or not and decisions of their Hough votes. The method proposed in~\cite{ac27} describes both frameworks in the same manner. While giving state-of-the-art detection performance, they can't meet the requirement for efficiency as this method does.
+Previous methods~\citep{ac34} also consider the combination of the two frameworks. Detection hypotheses are gained using Hough transform and then verified by support vector machines in~\citep{ac10,ac25}. The methods in~\citep{ac6,ac7}, use randomized decision trees for both decisions whether local features belonging to foreground objects or not and decisions of their Hough votes. The method proposed in~\citep{ac27} describes both frameworks in the same manner. While giving state-of-the-art detection performance, they can't meet the requirement for efficiency as this method does.
 
 This work is also related to data association methods at time dimension. In tracking, the main attention is focused on solving a data
 association problem to explain conflicts in data as well as
 recovering from tracking failures within a low time cost. In
-\cite{ij9}, the joint likelihood maximization is represented by the
+\citep{ij9}, the joint likelihood maximization is represented by the
 Nash Equilibrium in a game. The main contribution is the time
 complexity of solving a game-theoretic problem is low and make
 trackers compete for the region that is in a conflict. In
-\cite{ij10}, the MAP corresponds to the max flow of a well designed
+\citep{ij10}, the MAP corresponds to the max flow of a well designed
 graph. The method has the advantage of taking into consideration of
 missed detections on middle frames and the low time cost. In
-\cite{my7}, the main idea is to firstly connect very faithful
+\citep{my7}, the main idea is to firstly connect very faithful
 detection response pairs, then solve the data association problem
 via low-time-complexity Hungarian algorithm, and refine the result
 in a EM manner at the last step. And the main concern of these work
 is solving the high time complexity in the data association problem.
 
- This work is also related to feature grouping methods~\cite{ac25}, methods detecting using trajectories~\cite{my9,ac24}, tracking methods~\cite{my7,my10}, and methods integrating appearance and temporal information~\cite{ac23}.
+ This work is also related to feature grouping methods~\citep{ac25}, methods detecting using trajectories~\citep{my9,ac24}, tracking methods~\citep{my7,my10}, and methods integrating appearance and temporal information~\citep{ac23}.
 
 
 \section{Application background}
@@ -86,15 +86,15 @@ is solving the high time complexity in the data association problem.
 
 When developing the method, potential application scenarios are within consideration. The method aims to perform detection in real time, and serve as an effective unit in positioning automobiles in tunnel environment.
 
-Positioning of automobiles acts an important role in autonomous driving, and it is also of great importance for driving assistance, vehicle navigation, etc. When GPS sensors function properly, it is usually easy for an automobile to estimate the position of  itself. While in tunnel environment, for most of the time, there is no GPS signals available. A new positioning system which functions properly in tunnel environment is very necessary~\cite{nig}.
+Positioning of automobiles acts an important role in autonomous driving, and it is also of great importance for driving assistance, vehicle navigation, etc. When GPS sensors function properly, it is usually easy for an automobile to estimate the position of  itself. While in tunnel environment, for most of the time, there is no GPS signals available. A new positioning system which functions properly in tunnel environment is very necessary~\citep{nig}.
 
-In most tunnels which appear on express ways in Japan, there are lots of signs which appear at equal intervals. Attention can be focused on the emergency telephone indicators, which appear every 200 meters in tunnels. The absolute coordinates of the emergency telephone indicators can be obtained by the method of~\cite{xue}. While travelling in tunnels, if the emergency telephone indicators can be sensed, and the distance from the automobile to the indicators can be estimated, then the absolute position of the automobile can be inferred. Detection methods i.e.~\cite{ac23} based on ordinary cameras fail due to darkness. In experiments infrared cameras, which are usually equipped by recent intelligent vehicles and  suitable in dark environment, are used.
+In most tunnels which appear on express ways in Japan, there are lots of signs which appear at equal intervals. Attention can be focused on the emergency telephone indicators, which appear every 200 meters in tunnels. The absolute coordinates of the emergency telephone indicators can be obtained by the method of~\citep{xue}. While travelling in tunnels, if the emergency telephone indicators can be sensed, and the distance from the automobile to the indicators can be estimated, then the absolute position of the automobile can be inferred. Detection methods i.e.~\citep{ac23} based on ordinary cameras fail due to darkness. In experiments infrared cameras, which are usually equipped by recent intelligent vehicles and  suitable in dark environment, are used.
 
  In tunnel environment, besides the target objects, a lot of noisy objects also appear, e.g. ordinary lights, other vehicles, and other vehicles' shadows. So to well distinguish target objects is of importance. And such kind of applications usually require real-time detections. And the proposed method successfully meet the requirements.
 
 \begin{comment}
-Especially, compared with the method proposed in~\cite{wang1}, this method employs a more effective classifying machine by setting biased weights for positive and negative training examples, and far over-perform the method.
-Inspired by a previous work~\cite{wang1}, the proposed method can be turned to a  approach to detecting emergency telephone indicators by using infrared cameras.
+Especially, compared with the method proposed in~\citep{wang1}, this method employs a more effective classifying machine by setting biased weights for positive and negative training examples, and far over-perform the method.
+Inspired by a previous work~\citep{wang1}, the proposed method can be turned to a  approach to detecting emergency telephone indicators by using infrared cameras.
 \end{comment}
 \section{Detection Pipeline}
 \label{pip}
@@ -104,7 +104,7 @@ step takes these keypoint clusters as input, verifies them by their appearance a
 information, and outputs the ones which pass verifications as detection results.
 
 \subsection{Keypoint Detection}
-In data collected using ordinary cameras, keypoints~\cite{o2,o12} invariant to rotations, affine changes, and illumination changes are preferable. In the case of using data collected by infrared cameras, keypoint detection intends to provide hypotheses for target objects, i.e. emergency telephone indicators. Thus intensity is of great importance. This method employs a simple yet useful method to detect keypoints. Firstly, points are uniformly sampled with width step $W$, and height step $H$. In this manner the magnitude of instances is reduced by  at lease one order. Then the points are considered as keypoints if they pass the test which verifies them by setting intensity thresholds .
+In data collected using ordinary cameras, keypoints~\citep{o2,o12} invariant to rotations, affine changes, and illumination changes are preferable. In the case of using data collected by infrared cameras, keypoint detection intends to provide hypotheses for target objects, i.e. emergency telephone indicators. Thus intensity is of great importance. This method employs a simple yet useful method to detect keypoints. Firstly, points are uniformly sampled with width step $W$, and height step $H$. In this manner the magnitude of instances is reduced by  at lease one order. Then the points are considered as keypoints if they pass the test which verifies them by setting intensity thresholds .
 
 Here Gaussian distribution is assumed for the intensities of the points.
 
@@ -162,7 +162,7 @@ Here, $Euclid(\cdot)$ calculates the Euclidean distance, and $Eu(\cdot)$ is a ev
 
 
 %del3
-For verification, the intensity histogram of each keypoint's surrounding sub-image is extracted. Then the Euclidean distance between the extracted intensity histogram and its nearest positive feature center is calculated. If this distance exceeds a threshold, $D^{th}_{A_{\bf{x}}}$, it is considered as negative, else it is considered as positive. Here, for simplicity, unlike~\cite{ac33}, the same threshold is used for all components of the mixture.
+For verification, the intensity histogram of each keypoint's surrounding sub-image is extracted. Then the Euclidean distance between the extracted intensity histogram and its nearest positive feature center is calculated. If this distance exceeds a threshold, $D^{th}_{A_{\bf{x}}}$, it is considered as negative, else it is considered as positive. Here, for simplicity, unlike~\citep{ac33}, the same threshold is used for all components of the mixture.
 
 \begin{figure}
 \centering
@@ -234,7 +234,7 @@ Let $u_{ij}=1 \mbox{ or } 0$ indicates $n_{\bf{g}}^j$ is linked to $T_{\bf{g}}^i
 \end{aligned}
 \end{aligned}
 \]
-Here, $P_{link}(n_{\bf{g}}^j|T_{\bf{g}}^i)$ is defined by the appearance difference, the scale difference, and the time gap between the last detection response contained in $T_{\bf{g}}^i$ and $n_{\bf{g}}^j$. While Hungarian algorithm~\cite{ha} gives near-optimal solution, we follow a very simple manner for the solution by finding the best matched pairs and excluding them until no matching pairs can be found.
+Here, $P_{link}(n_{\bf{g}}^j|T_{\bf{g}}^i)$ is defined by the appearance difference, the scale difference, and the time gap between the last detection response contained in $T_{\bf{g}}^i$ and $n_{\bf{g}}^j$. While Hungarian algorithm~\citep{ha} gives near-optimal solution, we follow a very simple manner for the solution by finding the best matched pairs and excluding them until no matching pairs can be found.
 
 \subsection{Keypoint Cluster Verification by Motion}
 As shown in Figure \ref{fig:sixs}, the trajectories from keypoint clusters belonging to target objects are different from other objects'. In this step, the temporal information encoded in the trajectories are used to further verify the keypoint clusters. In the case of emergence telephone indicator detection, a linear model is used to fit each trajectory, and the significance of the fitting is the criteria for decisions.
@@ -292,7 +292,7 @@ In this section, this method is tested on detection performance and efficiency. 
 \subfigure[]{
 \includegraphics[width=0.47\textwidth,bb=0 0 640 480]{Kptimg00469.jpg}
 \label{fig:sec:b}}
-\caption[Keypoint detection comparison]{Keypoint detection. In (a), keypoint detection method in~\cite{o12} is used, and in (b), the keypoints are detected using the proposed method. And the proposed keypoint detection is more suitable for detecting keypoints belonging to emergency telephone indicators.}
+\caption[Keypoint detection comparison]{Keypoint detection. In (a), keypoint detection method in~\citep{o12} is used, and in (b), the keypoints are detected using the proposed method. And the proposed keypoint detection is more suitable for detecting keypoints belonging to emergency telephone indicators.}
 \label{ex1:va}
 \end{figure}
 
@@ -477,9 +477,9 @@ More detection results are shown in Figure \ref{fig:sixs}.
 \caption{Detection rate and false alarm rate.}\label{tb:tb2}
 \end{table}
 
-The detection rate and false alarm rate of the first experiment~\cite{wang1} are 90\% and 19\%, while evaluated on a much smaller dataset. Here the results are better than the first experiment, because this sensed images are much clearer, and also because this more effective training of the Adaboost machine. And in the second experiment, the efficiency results in better computer.
+The detection rate and false alarm rate of the first experiment~\citep{wang1} are 90\% and 19\%, while evaluated on a much smaller dataset. Here the results are better than the first experiment, because the sensed images are much clearer, and also because this more effective training of the Adaboost machine. And in the second experiment, the efficiency has its root in better computer.
 
-The results on the trajectories of decisions are also evaluated. We one trajectory disappears, if its length is larger than 15, and over 80\% of the decisions it connects are positive, it is considered as positive. The method correctly detects all the 22 emergency telephone indicators with no false alarms. The detection rate is 100\%, and the false alarm rate is 0\%, as shown in Table \ref{tb:tb3}.
+The results on the trajectories of decisions are also evaluated. When one trajectory ends, if its length is larger than 15, and over 80\% of the decisions it connects are positive, it is considered as positive. The method correctly detects all the 22 emergency telephone indicators with no false alarms. The detection rate is 100\%, and the false alarm rate is 0\%, as shown in Table \ref{tb:tb3}.
 
 \begin{table}[h]
 \centering
@@ -514,7 +514,7 @@ The results on the trajectories of decisions are also evaluated. We one trajecto
 \caption[Keypoint verification]{Results of keypoint verification. Rectangles mark the manually marked ground-truth boxes. Pink points mark the points labeled as negative in keypoint verification step, others mark keypoints of the positive. }
 \label{ord:two}
 \end{figure}
-The method is extended at the first step to deal with data collected by ordinary cameras. The task is to detect pedestrians and bicycle riders. SURF~\cite{surf} is used as keypoint detector and descriptor.
+The method is extended at the first step to deal with data collected by ordinary cameras. The task is to detect pedestrians and bicycle riders. SURF~\citep{surf} is used as keypoint detector and descriptor.
 
 A new keypoint verification step is proposed. Keypoints from training examples are clustered using $k$-means as a mixture model. Gaussian distribution is assumed for each cluster, and the variances are also estimated, which will be used as criteria for keypoint verification. Different $k$s are used to generate the mixture model, and the performance is evaluated in Figure \ref{ord:one}.  An ensemble model is proposed, which never performs worst. All results of $k$-means with different parameters are summarised to produce the results of ensemble model.
 

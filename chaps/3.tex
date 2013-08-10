@@ -234,7 +234,7 @@ Let $u_{ij}=1 \mbox{ or } 0$ indicates $n_{\bf{g}}^j$ is linked to $T_{\bf{g}}^i
 \end{aligned}
 \end{aligned}
 \]
-Here, $P_{link}(n_{\bf{g}}^j|T_{\bf{g}}^i)$ is defined by the appearance difference, the scale difference, and the time gap between the last detection response contained in $T_{\bf{g}}^i$ and $n_{\bf{g}}^j$. While Hungarian algorithm~\citep{ha} gives near-optimal solution, we follow a very simple manner for the solution by finding the best matched pairs and excluding them until no matching pairs can be found.
+Here, $P_{link}(n_{\bf{g}}^j|T_{\bf{g}}^i)$ is defined by the appearance difference, the scale difference, and the time gap between the last detection response contained in $T_{\bf{g}}^i$ and $n_{\bf{g}}^j$. While Hungarian algorithm~\citep{ha} gives near-optimal solution, the method follows a very simple manner for the solution by finding the best matched pairs and excluding them until no matching pairs can be found.
 
 \subsection{Keypoint Cluster Verification by Motion}
 As shown in Figure \ref{fig:sixs}, the trajectories from keypoint clusters belonging to target objects are different from other objects'. In this step, the temporal information encoded in the trajectories are used to further verify the keypoint clusters. In the case of emergence telephone indicator detection, a linear model is used to fit each trajectory, and the significance of the fitting is the criteria for decisions.

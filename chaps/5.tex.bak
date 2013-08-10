@@ -52,7 +52,7 @@ The pyramid match score method is most related to methods using~\citep{pmk} or~\
 \label{dt5}
 In this section, firstly the typical procedure of pyramid matching is reviewed, and how a match score between two point sets by using pyramid matching is defined. Then based on the defined matric, how from the training examples, a super template can be learnt and how the super template can be used for object detection in a test image is proposed. In the definition of the matching score, there are parameters very important, finally in this section, how these parameters are estimated is introduced in three sub-sections.
 
-In the content following in this chapter, all $i$s, $j$s and $k$s are local symbols.
+In the remaining content of this chapter, all $i$s, $j$s and $k$s are local symbols.
 \subsection{Pyramid Matching}
 
 
@@ -243,7 +243,7 @@ Here $g(i,j)$ is a function which defines how to divide the visual-spatial space
 In Figure \ref{fig:p3}, an example is given by considering visual information as one dimension, and spatial information the other dimension. Note, the total dimension of a point is actually $d$, while in the example it is 2.
 
 About $\gamma$, not only its members, but also the order of its members is important. For \ref{eq:pms1} to work, a requirement must be fulfilled, that if $i<j$, ${\bf g}_i$ is finer than ${\bf g}_j$, which means if two points are decided as match under ${\bf g}_i$, they must be decided as match under ${\bf g}_j$.  This is,
- 
+
 
 
 \begin{equation}
@@ -269,19 +269,48 @@ Here, ${\bf p}_{max}^k$ and ${\bf p}_{min}^k$ are the maximum and minimum values
 There is no such constrain which requires $\gamma$ is descending ordered by the fineness level in \ref{eq:pms2}. Thus, in the following paper, \ref{eq:pms2} will be used.
 In fact, when \ref{eq:pms3} is satisfied, \ref{eq:pms1} and \ref{eq:pms2} are the same.
 
-Though \ref{eq:pm2} can be used to calculate a pyramid match score for two point sets, given any set, $\gamma$, still the dividing methods and the order of the dividing methods will affect performance. For a largest fineness level, $l_{max},l_{max}\in N$, $\gamma$ is defined as, 
-\begin{equation}
-\gamma=\{g(i,j)\},i \in \{1,2,...,l_{max}\},j \in \{1,2,...,l_{max}\}.
-\label{eq:pmd}
-\end{equation}
+Though \ref{eq:pms2} can be used to calculate a pyramid match score for two point sets, given any set, $\gamma$, still the dividing methods and the order of the dividing methods will affect performance. For a largest fineness level, $l_{max},l_{max}\in N$, $\gamma$ is defined in Algorithm \ref{alg:order}.
 
-The size of $\gamma$, $L=l_{max} \times l_{max}$. For two dividing methods ${\bf g}_i,i \in {1,2,...,L}$ and ${\bf g}_j,j \in {1,2,...,L}$, if ${\bf g}_i>{\bf g}_j$, $i<j$. Which means if one dividing method is finer than the other, it will appear earlier in the set of dividing methods.
+\begin{algorithm}[chapter]
 
-The problem is that, there are dividing methods, of which the fineness level cannot be compared, i.e., $g(1,2)$ and $g{2,1}$ as shown in Figure \ref{fig:p3}. And their order is randomly given.
 
-To summarize, the strategy is that, in $\gamma$, for two dividing methods, if one is finer than the other, the finer will be in front of the other, and if the fineness level cannot be compared, their order of exists will be randomly given. 
 
-For $l_{max}=3$, one example is, \[\gamma=\{g(2,2),g(1,2),g(2,1),g(0,2),g(1,1),g(2,0),g(0,1),g(1,0),g(0,0)\},\] another is, \[\gamma=\{g(2,2),g(2,1),g(1,2),g(2,0),g(1,1),g(0,2),g(1,0),g(0,1),g(0,0)\}.\]
+
+
+    \begin{algorithmic}[1]
+
+
+       \STATE $\gamma \leftarrow \emptyset$, $r \leftarrow 2\times (l_{max}-1)$
+
+        \WHILE {$r \ge 0$}
+        \IF {$r \ge {l_{max}-1}$}
+        \STATE $i \leftarrow l_{max}-1$
+        \ELSE
+        \STATE $i \leftarrow r$
+        \ENDIF
+        \STATE $j \leftarrow r-i$
+        \WHILE {$i \le (l_{max}-1)$ \AND $i \ge 0$ \AND $j \le (l_{max}-1)$ \AND $j \ge 0$}
+        \STATE $\gamma \leftarrow \gamma + g(i,j)$, $i \leftarrow i-1$, $j \leftarrow r-i$
+        \ENDWHILE
+        \STATE $r \leftarrow r-1$
+        \ENDWHILE
+
+
+
+
+    \RETURN $\gamma$
+
+    \end{algorithmic}
+    \caption{Set of Dividing Methods Generation}
+    \label{alg:order}
+
+
+\end{algorithm}
+
+
+
+The size of $\gamma$, $L=l_{max} \times l_{max}$. For two dividing methods ${\bf g}_i,i \in {1,2,...,L}$ and ${\bf g}_j,j \in {1,2,...,L}$, if ${\bf g}_i>{\bf g}_j$, then $i<j$, which means if one dividing method is finer than the other, it will appear earlier in the set of dividing methods. There are also dividing methods, of which the fineness level cannot be compared, i.e., $g(1,2)$ and $g(2,1)$ as shown in Figure \ref{fig:p3}.
+
 
 \begin{figure}
 \centering
@@ -314,7 +343,7 @@ As is seen in \ref{eq:pms4}, the finer one grid is in $g(i,j)$, the larger a wei
 \subsection{Learning Weights for Dividing Methods}
 Besides directly assigning weights to all the dividing methods in a deterministic way, a framework for learning weights is here proposed.
 
-Often Gaussian kernels are used to measure differences between two features or two positions in Hough transform based methods~\citep{lb1}. 
+Often Gaussian kernels are used to measure differences between two features or two positions in Hough transform based methods~\citep{lb1}.
 For two visual-spatial points found match in the same grid under dividing method, $g(i,j)$,
 the visual difference  is  $ \frac {(d-2)}{2^i}$, and the spatial difference is  $ \frac 2 {2^j}$.
 The total difference between two points found match in the same grid is modeled using a 2D Gaussian kernel, as
@@ -322,7 +351,7 @@ The total difference between two points found match in the same grid is modeled 
 \begin{equation}
 \label{eq:pms5}
 \omega_{g(i,j)}=\frac 1 {2 \pi \sigma_1 \sigma_2 \sqrt{1-\rho^2} }\exp(- \frac 1 {1-\rho^2} ( \frac {(\frac {(d-2)}{2^i})^2} {{\sigma_1}^2}
-+ \frac {(\frac {2}{2^j})^2} {{\sigma_2}^2}  - \frac {2 \rho \frac {(d-2)}{2^i}  \frac 2 {2^j}}{\sigma_1 \sigma_2} )). 
++ \frac {(\frac {2}{2^j})^2} {{\sigma_2}^2}  - \frac {2 \rho \frac {(d-2)}{2^i}  \frac 2 {2^j}}{\sigma_1 \sigma_2} )).
 \end{equation}
 
 %, and here reflects the confidence the whole point set is a target object based on the current matched pair.
@@ -352,7 +381,7 @@ In Algorithm \ref{alg:tm}, the weights are not needed, and the super template, $
 
 In \ref{eq:pms6}, to define weight for $g(i,j)$, besides $i$ and $j$, still there are four parameters, $t$, $a$, $b$, and $c$, need to be given. Here, $t$ is just a factor, it won't affect the results of Algorithm \ref{alg:dt}, which are the final detection results.
 
-Here, $a$, $b$, and $c$ have their meanings. When $a$ is larger, visual information will play a more important role, and when $b$ is larger, spatial information will play a more important role. What is more interesting is that, there is $c$, which will be responsible for modeling correlating visual-spatial information. 
+Here, $a$, $b$, and $c$ have their meanings. When $a$ is larger, visual information will play a more important role, and when $b$ is larger, spatial information will play a more important role. What is more interesting is that, there is $c$, which will be responsible for modeling correlating visual-spatial information.
 
 To estimate $a$, $b$, and $c$ for a particular $\gamma$, all positive training images, $\{I_p\}$, and negative training images, $\{I_n\}$, are used. For brevity, the pyramid match score against the super template, with defined $\gamma$, is rewritten according to \ref{eq:pms2},
 \begin{equation}
@@ -380,7 +409,7 @@ The objective function is written as the gap between pyramid match scores of pos
 \end{aligned}
 \]
 
-After all positive and negative training examples are given, the objective function will only contain $a$, $b$, and $c$. For such a function, brute-force solutions will be feasible. 
+After all positive and negative training examples are given, the objective function will only contain $a$, $b$, and $c$. For such a function, brute-force solutions will be feasible.
 
 So far, in Algorithm \ref{alg:tm}, how the template can be generated is defined,  , so Algorithm \ref{alg:dt} can be used for detection.
 
