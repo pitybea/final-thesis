@@ -33,35 +33,35 @@
 \contentsline {subsection}{\numberline {3.5.2}Second Experiment}{33}{subsection.3.5.2}
 \contentsline {section}{\numberline {3.6}Experimental results on data collected by ordinary cameras}{36}{section.3.6}
 \contentsline {section}{\numberline {3.7}Chapter Conclusion}{39}{section.3.7}
-\contentsline {chapter}{\numberline {4}Grouping of Object Parts by Motion for Detection}{40}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{40}{section.4.1}
-\contentsline {section}{\numberline {4.2}Related Work}{44}{section.4.2}
-\contentsline {section}{\numberline {4.3}Application Background}{46}{section.4.3}
-\contentsline {section}{\numberline {4.4}Common Fate Hough Transform}{46}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Common Fate Weights}{48}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Motion Grouping}{51}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Codebook}{52}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Detection}{53}{section.4.5}
-\contentsline {section}{\numberline {4.6}Experimental Results}{56}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1} Campus-scene Detection }{56}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Wild-scene Detection}{61}{subsection.4.6.2}
-\contentsline {section}{\numberline {4.7}Chapter Conclusion}{65}{section.4.7}
-\contentsline {chapter}{\numberline {5}Pyramid Match Score for Detection}{66}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{66}{section.5.1}
-\contentsline {section}{\numberline {5.2}Related Work}{68}{section.5.2}
-\contentsline {section}{\numberline {5.3}Pyramid Match Score}{70}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Pyramid Matching}{70}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Training and Detection}{73}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Dividing Visual-spatial Space}{76}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Deciding Weights for Dividing Methods}{79}{subsection.5.3.4}
-\contentsline {subsection}{\numberline {5.3.5}Learning Weights for Dividing Methods}{79}{subsection.5.3.5}
-\contentsline {section}{\numberline {5.4}Experimental Results}{81}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}UIUC Cars}{82}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}VOC2007 Cars}{88}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Discussion}{91}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Time Complexity}{91}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Usage of Visual and Spatial Information}{92}{subsection.5.5.2}
-\contentsline {section}{\numberline {5.6}Chapter Conclusion}{93}{section.5.6}
-\contentsline {chapter}{\numberline {6}Conclusion and outlook}{94}{chapter.6}
-\contentsline {chapter}{Bibliography}{95}{chapter*.8}
-\contentsline {chapter}{Acknowledgements}{104}{chapter*.9}
+\contentsline {chapter}{\numberline {4}Grouping of Object Parts by Motion for Detection}{41}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{41}{section.4.1}
+\contentsline {section}{\numberline {4.2}Related Work}{45}{section.4.2}
+\contentsline {section}{\numberline {4.3}Application Background}{47}{section.4.3}
+\contentsline {section}{\numberline {4.4}Common Fate Hough Transform}{47}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Common Fate Weights}{49}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Motion Grouping}{52}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Codebook}{53}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Detection}{54}{section.4.5}
+\contentsline {section}{\numberline {4.6}Experimental Results}{57}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1} Campus-scene Detection }{57}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Wild-scene Detection}{62}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}Chapter Conclusion}{66}{section.4.7}
+\contentsline {chapter}{\numberline {5}Pyramid Match Score for Detection}{67}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{67}{section.5.1}
+\contentsline {section}{\numberline {5.2}Related Work}{69}{section.5.2}
+\contentsline {section}{\numberline {5.3}Pyramid Match Score}{71}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Pyramid Matching}{71}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Training and Detection}{74}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Dividing Visual-spatial Space}{77}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Deciding Weights for Dividing Methods}{80}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}Learning Weights for Dividing Methods}{80}{subsection.5.3.5}
+\contentsline {section}{\numberline {5.4}Experimental Results}{82}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}UIUC Cars}{83}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}VOC2007 Cars}{89}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Discussion}{92}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Time Complexity}{92}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Usage of Visual and Spatial Information}{93}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Chapter Conclusion}{94}{section.5.6}
+\contentsline {chapter}{\numberline {6}Conclusion and outlook}{95}{chapter.6}
+\contentsline {chapter}{Bibliography}{97}{chapter*.8}
+\contentsline {chapter}{Acknowledgements}{107}{chapter*.9}

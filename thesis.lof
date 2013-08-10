@@ -36,45 +36,45 @@
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Keypoint verification}}{37}{figure.3.13}
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Evaluation of keypoint verification}}{38}{figure.3.14}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Grouping of Object Parts by Motion for Detection}{40}{chapter.4}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Merit of the proposed method}}{43}{figure.4.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{figure.4.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{figure.4.1}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{43}{figure.4.1}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{43}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Effect of the proposed weight}}{50}{figure.4.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{50}{figure.4.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{50}{figure.4.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{50}{figure.4.2}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{50}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Example Hough images}}{55}{figure.4.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{55}{figure.4.3}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{55}{figure.4.3}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{55}{figure.4.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{55}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Images for training}}{57}{figure.4.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{57}{figure.4.4}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{57}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Motion grouping results}}{57}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Inference procedure}}{58}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparisons with benchmark method}}{59}{figure.4.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{59}{figure.4.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{59}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Detection results}}{60}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Effect of the proposed weight assignment}}{62}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Example Hough images}}{63}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{64}{figure.4.11}
+\contentsline {xchapter}{Grouping of Object Parts by Motion for Detection}{41}{chapter.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Merit of the proposed method}}{44}{figure.4.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}{figure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}{figure.4.1}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{44}{figure.4.1}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{44}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Effect of the proposed weight}}{51}{figure.4.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{51}{figure.4.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{51}{figure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{51}{figure.4.2}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{51}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Example Hough images}}{56}{figure.4.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{56}{figure.4.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{56}{figure.4.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{56}{figure.4.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{56}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Images for training}}{58}{figure.4.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{58}{figure.4.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{58}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Motion grouping results}}{58}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Inference procedure}}{59}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparisons with benchmark method}}{60}{figure.4.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{60}{figure.4.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{60}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Detection results}}{61}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Effect of the proposed weight assignment}}{63}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Example Hough images}}{64}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{65}{figure.4.11}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Pyramid Match Score for Detection}{66}{chapter.5}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Best one-one match}}{71}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Pyramid matching procedure}}{71}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Visual-spatial space dividing}}{78}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Detection results on UIUC cars}}{83}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Result evaluation using different dimensions}}{84}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Result evaluation using different largest fineness levels}}{85}{figure.5.6}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Result evaluation by using results from only visual or spatial information}}{86}{figure.5.7}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Result comparison with method using dividing methods of \citep {pmk}}}{87}{figure.5.8}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Result comparison with deformable part model~\citep {ac31}}}{88}{figure.5.9}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Result comparison on VOC2007 cars}}{90}{figure.5.10}
+\contentsline {xchapter}{Pyramid Match Score for Detection}{67}{chapter.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Best one-one match}}{72}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Pyramid matching procedure}}{72}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Visual-spatial space dividing}}{79}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Detection results on UIUC cars}}{84}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Result evaluation using different dimensions}}{85}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Result evaluation using different largest fineness levels}}{86}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Result evaluation by using results from only visual or spatial information}}{87}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Result comparison with method using dividing methods of \citep {pmk}}}{88}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Result comparison with deformable part model~\citep {ac31}}}{89}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Result comparison on VOC2007 cars}}{91}{figure.5.10}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusion and outlook}{94}{chapter.6}
+\contentsline {xchapter}{Conclusion and outlook}{95}{chapter.6}
