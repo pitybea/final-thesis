@@ -1102,7 +1102,7 @@ address = {Los Alamitos, CA, USA},
   keywords = {}
 }
 
-@article{bd,
+@article{bdt,
  author = {Martin, David R. and Fowlkes, Charless C. and Malik, Jitendra},
  title = {Learning to Detect Natural Image Boundaries Using Local Brightness, Color, and Texture Cues},
  journal = {PAMI},

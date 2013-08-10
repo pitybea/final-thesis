@@ -362,7 +362,10 @@ To make \ref{eq:pms5} clear, it is rewritten as,
 
 \begin{equation}
 \label{eq:pms6}
-\omega_{g(i,j)}= t \exp(-a (\frac 1 {2^i})^2 - b (\frac 1 {2^j})^2 + c (\frac 1 {2^i}) (\frac 1 {2^j})).
+\begin{aligned}
+\omega_{g(i,j)}=& t \exp(-a (\frac 1 {2^i})^2 - b (\frac 1 {2^j})^2 + c (\frac 1 {2^i}) (\frac 1 {2^j}))\\
+                =& t \exp(-a (\frac 1 {2^i})^2) \exp(- b (\frac 1 {2^j})^2 )\exp ( c (\frac 1 {2^i}) (\frac 1 {2^j})).
+\end{aligned}
 \end{equation}
 
 Where,
@@ -374,7 +377,7 @@ Where,
 \end{aligned}
 \]
 
-In \ref{eq:pms6}, the larger, the visual difference, or the larger, the spatial difference, the smaller the corresponding weight. This is decided by the 2D Gaussian kernel, and also this is consistent with Hough transform based methods.
+In \ref{eq:pms6}, the larger, the visual difference, or the larger, the spatial difference, the smaller the corresponding weight. This is decided by the 2D Gaussian kernel, and also this is consistent and very similar with Hough transform based methods.
 
 In Algorithm \ref{alg:tm}, the weights are not needed, and the super template, $S_{\bf T}$, can be generated firstly. Then the performance of Algorithm \ref{alg:dt} will rely on the set of dividing method, $\gamma$, and each corresponding weight, $\omega$.
 
@@ -518,7 +521,7 @@ How the visual-spatial space is divided is also critical to the performance of t
 \end{figure}
 
 In Figure \ref{fig:c56}, performance are evaluated between the proposed method, and a state-of-the-art method, DPM~\citep{ac31}. The proposed method performs no worse than DPM,
-While the training time between the two models are 1 minute vs 16 hours. In this experiment, the training time of the proposed method is 1,000 times faster. Also during the training of the proposed method, since \ref{eq:pms4} is used, only the positive training examples are used, while DPM uses both positive and negative training examples.
+While the training time between the two models are 1 minute vs 16 hours. In this experiment, the training speed of the proposed method is 1,000 times faster. Also during the training of the proposed method, since \ref{eq:pms4} is used, only the positive training examples are used, while DPM uses both positive and negative training examples.
 \subsection{VOC2007 Cars}
 
 Detection methods just all need to be evaluated on the PASCAL (pattern analysis, statistical modeling, and computational learning) Visual Object Classes~\citep{voc}. And VOC2007 is favored by even current famous detection methods~\citep{408}, because the testing data are publicly available, and many detection results are already evaluated on the dataset. To evaluate a detection method, experiments can be carried on one or several classes on the dataset, and here experiments are carried on objects belonging to the car category.
@@ -533,19 +536,21 @@ What is different from the experiments on UIUC cars is that, $\omega$s are given
 
 \section{Discussion}
 \label{dis5}
-This time complexity of matching two point sets is $O(dml_{max}^2)$. Here, $d$ is the dimension of each visual-spatial point, $m$ is the size of the point from each hypothesis, and $l_{max}$ is the largest fineness level, which is usually 5. The match complexity of~\citep{pmk} is $O(dmL), L=l_{max}$. However, this is just the time complexity of matching between two point sets. To give the confidence of a hypothesis, the time complexity will be $O(dml_{max}^2)$, while for~\citep{pmk}, it is $O(dml_{max}n_{sup})$, where $n_{sup}$ is the number of support vectors in the used SVM, which is usually larger than 5. So, considering about the time complexity to give confidence for a hypothesis, the proposed method is no worse than~\citep{pmk}. Also $n_sup$ is related to the training dataset, while $l_max$ is less related. The case of ~\citep{spmk} is almost the same with~\citep{pmk}.
+\subsection{Time Complexity}
+This time complexity of matching two point sets is $O(dml_{max}^2)$. Here, $d$ is the dimension of each visual-spatial point, $m$ is the size of the point set of each object hypothesis, and $l_{max}$ is the largest fineness level, which is usually 5. The match complexity of~\citep{pmk} is $O(dmL), L=l_{max}$. However, this is just the time complexity of matching between two point sets. To give the confidence of a hypothesis, the time complexity of the proposed method is still $O(dml_{max}^2)$, while for~\citep{pmk}, it is $O(dml_{max}n_{sup})$, where $n_{sup}$ is the number of support vectors in the used SVM, which is usually larger than 5. So, considering about the time complexity to give confidence for a hypothesis, the proposed method is no worse than~\citep{pmk}. Also $n_{sup}$ is related to the training dataset, while $l_{max}$ is less related. The case of ~\citep{spmk} is almost the same with~\citep{pmk}.
 
-In theory, the time complexity of methods based on Hough transform based methods should be $O(dm{n_{tr}}^{\frac 1 {1+\varepsilon}})$, if the $k$NN framework is employed as in \ref{chp4}. Here $n_{tr}$ is the size of the codebook, which in the case of UIUC cars is about $50\times 500=25,000$. And, $\varepsilon \ll 1$ is a factor which affects the quality of the $k$NN. And compared to PMS, this is 1,000 times time-consuming. However, methods based on Hough transform usually does not consider about object detection in the sliding window manner, which makes such methods unable to well deal with scale changes.
+In theory, the time complexity of methods based on Hough transform based methods should be $O(dm{n_{tr}}^{\frac 1 {1+\varepsilon}})$, if the $k$NN framework is employed as in Chapter \ref{chp4}. Here $n_{tr}$ is the size of the codebook, which in the case of UIUC cars is about $50\times 500=25,000$. And, $\varepsilon \ll 1$ is a factor which affects the quality of the $k$NN. And compared to PMS, this is 1,000 times time-consuming. However, methods based on Hough transform usually does not consider about object detection in the sliding window manner, which makes such methods unable to well deal with scale changes.
 
 The time complexity of DPM should be an exponential function to the number of parts used. Tricks can be used to avoid such heavy calculation in exchange of performance. 
 
-Methods employ bag-of-features schema, and using linear SVM have the lowest time complexity, which is usually  $O(dmn_sup)$, while such methods are currently no longer the dominant. 
+Methods employing bag-of-features schema, and using linear SVM have the lowest time complexity, which is usually  $O(dmn_sup)$, while such methods are currently no longer the dominant.
 
-In summary, the proposed method is competitive in the aspect of time complexity, when considering about giving a reliable confidence to a hypothesis.
+In summary, the proposed method is competitive in the aspect of time complexity, when considering about giving a reliable confidence to an object hypothesis.
 
-Since there are two main information channels of the local features, the methods make full use of such information are robust and effective.
+\subsection{Usage of Visual and Spatial Information}
+Since there are two main information channels of the local features, the methods which make full use of such information should be robust and effective.
 
-Let's take Figure \ref{fig:p3} as reference. Bag-of-features schema consider similarity between objects in $g(2,0)$. Actually,~\citep{pmk} considers matched image features in $\{g(2,0),g(1,0),g(0,0)\}$, while~\citep{spmk} considers in a single fineness level of visual information, i.e., $\{g(1,2),g(1,1),g(1,0)\}$. Generally speaking, method based on Hough transform only consider about the features in larger fineness level of both visual and spatial information, i.e., $\{g(2,2),g(2,1),g(1,2)\}$. And methods based on Hough transform, when in a bottom-up manner, can not deploy the object parts in a way similar to DPM. For example, an object part will contribute to an object it does not belong.
+Let's take Figure \ref{fig:p3} as reference. Bag-of-features schema consider similarity between objects in $g(2,0)$. Actually,~\citep{pmk} considers matched image features in $\{g(2,0),g(1,0),g(0,0)\}$, while~\citep{spmk} considers in a single fineness level of visual information, i.e., $\{g(1,2),g(1,1),g(1,0)\}$. Generally speaking, method based on Hough transform only consider about the features in larger fineness level of both visual and spatial information, i.e., $\{g(2,2),g(2,1),g(1,2)\}$. And methods based on Hough transform, when in a bottom-up manner, can not deploy the object parts in a way similar to DPM. For example, an object part will contribute to an object it does not belong to.
 
 Together with DPM, PMS considers about visual and spatial information at all fineness levels, is able to model the correlation between visual and spatial information. However, the way is different. DPM picks several object part at a certain fineness level of visual information, and makes assumptions of their corresponding fineness level of spatial information. For example, DPM will use the most top-left grid of $g(2,1)$, and use the most top-right grid of $g(1,2)$. This grid-picking procedure is achieved by structure SVMs. In the case of PMS, the philosophy is different. Instead of finding some very representative features at certain locations, all features are used, the noisy features are averaged out, since a larger number, i.e., 50, of features are used, compared to DPM, which usually performs good with 6 local features.
 
@@ -555,5 +560,10 @@ To summarize, the way how the proposed method combines visual and spatial inform
 
 \section{Chapter Conclusion}
 \label{conc5}
+This chapter proposes a method to efficiently and effectively combine visual and spatial information of the local image features. Experiments show the method is comparable with state-of-the-art detection methods on benchmark datasets. What make the method different are: 1) pyramid matching between a codebook and an  object hypothesis, 2) the set of methods to dividing the visual-spatial space, and 3) the way to define or learn weights for corresponding dividing method.
 
-There will be several experiments to be summarized for this chapter, and also several experiments to be added.
+The underlying principle of PMS, which is defined by the order of dividing methods in Algorithm \ref{alg:order}, is that use the template to explain every visual-spatial point of an object hypothesis at the best visual-spatial level. 
+
+To the best of the author's knowledge, this is the first attempt of pyramid matching between a codebook and an object hypothesis.
+
+%There will be several experiments to be summarized for this chapter, and also several experiments to be added.
