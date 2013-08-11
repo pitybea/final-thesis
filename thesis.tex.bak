@@ -1,7 +1,7 @@
 %input macros (i.e. write your own macros file called MacroFile1.tex)
 %\include{Macros/MacroFile1}
 
-\documentclass[oneside,12pt]{Classes/CUEDthesisPSnPDF}
+\documentclass[twoside,12pt]{Classes/CUEDthesisPSnPDF}
 
 \usepackage{graphicx}
 \usepackage{times}
@@ -22,20 +22,42 @@
 \usepackage{epstopdf}
 \usepackage{float}
 \usepackage[section,subsection,subsubsection]{extraplaceins}
+\usepackage{minitoc}
 
-\titlecontents*{chapter}% <section-type>
-  [0pt]% <left>
-  {}% <above-code>
-  {\bfseries\chaptername\ \thecontentslabel\quad}% <numbered-entry-format>
-  {}% <numberless-entry-format>
-  {\bfseries\hfill\contentspage}% <filler-page-format>
 \numberwithin{algorithm}{chapter}
+\usepackage[subfigure]{tocloft}
 
+\newlength\tablelen
 
+\settowidth\tablelen{Table}
 
+\addtolength\cfttabnumwidth{\tablelen}
 
+\renewcommand\cfttabpresnum{Table }
 
+\newlength\chaplen
 
+\settowidth\chaplen{\bf {Chapter}}
+
+\addtolength\cftchapnumwidth{\chaplen}
+
+\renewcommand\cftchappresnum{\bf {Chapter} }
+
+\newlength\figlen
+
+\settowidth\figlen{\bf {Figure}}
+
+\addtolength\cftfignumwidth{\figlen}
+
+\renewcommand\cftfigpresnum{\bf {Figure} }
+
+\let\oldlistofalgorithms\listofalgorithms
+\renewcommand{\listofalgorithms}{%
+  \begingroup%
+  \let\oldnumberline\numberline%
+  \renewcommand{\numberline}{Algorithm \oldnumberline}%
+  \oldlistofalgorithms%
+  \endgroup}
 
 \title{Writing a PhD Thesis\\[1ex]
         in \LaTeXe}
@@ -70,17 +92,19 @@
 \begin{document}
 
 
-\maketitle
-\maketitle
 
 
 
-\frontmatter
+
 \tableofcontents
+\newpage
 \listoffigures
+\newpage
 \listoftables
+\newpage
 \listofalgorithms
 \addcontentsline{toc}{chapter}{List of algorithms}
+%\newpage
 %-------------------
 \mainmatter
 \include{chaps/1}
@@ -94,6 +118,7 @@
 %-------------------
 \bibliographystyle{newapa}
 \bibliography{chaps/egbib}
+
 \include{chaps/thanks}
 
 \end{document}

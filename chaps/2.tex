@@ -3,7 +3,7 @@
 
 \section{Vision in Humans and Computers}
 
-Everyday, new technologies emerge, make everyday life more convenient, and lead advances in human culture. Among these technologies, the emergence of text searching engines like google is a great milestone. Retrieving images~\citep{bisearch} or other multi-media data  in a way similar to retrieving text is even more attractive, especially for the popularity of smart phones nowadays. There are still technical obstacles for this beautiful outlook. To decide semantic meanings for images is one, and detection performance on images is another.
+Everyday, new technologies emerge, make everyday life more convenient, and lead advances in human culture. Among these technologies, the emergence of text searching engines like google is a great milestone. Retrieving images~\citep{bisearch} or other multi-media data  in a way similar to retrieving text is even more attractive, especially for the popularity of smart phones nowadays. There are still technical obstacles for this beautiful outlook. Deciding semantic labels for images is one, and detection of target objects from images is another.
 
 
 
@@ -39,7 +39,7 @@ The success of auditory speech recognition and the successful deployment in indu
 
 
 
-While the methods proposed in this thesis explore the information which can be further made use of, i.e., fusion of temporal and visual information, and the mutual information of different parts of the same object. The efforts here shall belong to decision procedure, and information fusion mechanism.
+While the methods proposed in this thesis explore the information which can be further made use of, i.e., fusion of temporal and visual information, and fusion of the visual and spatial information of different parts of the same object. The efforts here shall belong to decision procedure, and information fusion mechanism.
 
 \section{Artificial Intelligence}
 AI (Artificial Intelligence) includes a very wide range of topics, of which, computer vision is comparably difficult.
@@ -52,13 +52,13 @@ Together with lots of researchers in computer vision, the author of this thesis 
 
 
 Taking the problems of multi-class detection as example, routines of different types will be discussed. One routine is to explore detection of object from multiple classes at the same time. This kind of routine has been followed a lot by researchers, especially those encouraged by some recent competitions on visual tasks, e.g., VOC2012~\citep{voc}. Significant amount of engineering efforts are needed to win this kind of competitions. Another routine is that
-development of mechanisms of high abstraction level for single-class detection and mechanisms to separate objects from different classes. The problem with the first routine is that, methods will be so limited to the training dataset, and mechanisms at higher levels which are very valuable are not easy to explore. The author's approval towards competitions like VOC2012 is very limited.
+development of mechanisms of high abstraction level for single-class detection and mechanisms to separate objects from different classes. The problem with the first routine is that, methods will be so limited to the training dataset, and mechanisms at higher levels which are very valuable are not easy to explore. 
 
-Actually, perceptual mechanisms in humans are consistent with the above arguments. Recall how humans are capable detecting previously unseen objects, while they acquire knowledge of target objects through textual descriptions.
+Actually, perceptual mechanisms in humans are consistent with the above arguments. Recall how humans are capable of detecting previously unseen objects, while they acquire knowledge of target objects through textual descriptions.
 
 \section{Basics of Detection Methods}
 
-In the previous section, the possible reason why humans perform better in detection is discussed. The main limits of computers are of software. Based on this, researchers present new detection methods or new methods for supporting detection, which includes: 1) new image feature or new representative model, 2) new decision procedures, or 3) better searching techniques in solution space.
+In the previous section, the possible reason why humans perform better in detection is discussed. The main limits of computers are of software. Based on this, researchers present new detection methods or new methods for supporting detection, which includes: 1) new image features or new representative models, 2) new decision procedures, or 3) better searching techniques in solution space.
 \subsection{Image Features}
 Image features are very important. Simple image features include features in the form of keypoints, image patches, edges,  silhouette, shape~\citep{scontext}, or textures. There are also frameworks for combining multiple different image features or information from multiple channels~\citep{regionc,bgf,lbp,lss}, and these belong to image features at middle level~\citep{midf}. At a even higher level, image features can be  organized in patterns. For example, modeling human body as a stick model~\citep{stickb}.
 
@@ -73,7 +73,7 @@ Generally, robustness and computational efficiency are the two main pursues in p
 Discriminative and generative methods are the two main categories for decision making.
 Support vector machine, and boosting methods belong to discriminative methods. Gaussion processes~\citep{gprocess}, Dirichlet models~\citep{lda,dp,hdp}, and Bayesian graphical models~\citep{bgm} usually belong to generative methods. The difference between discriminative and generative models lay in how they use training examples to estimate parameters of the model, and how the model is used to make decisions.
 
-One very promising method for decision making is deep learning~\citep{dlearn}. This can be considered as a special form of neural network. One of its very attractive property is it can take raw data as input and output decision results, like, object label. It deals with extraction of image feature, feature selection, and decision based on features in a unified one under the same framework. Also it can share knowledge from other domain like~\citep{tlsurvey}.
+One very promising method for decision making is deep learning~\citep{dlearn}. This can be considered as a special form of neural network. One of its very attractive property is it can take raw data as input and output decision results, like, object label. It deals with extraction of image feature, feature selection, and decision based on features in a unified model under the same framework. Also it can share knowledge from other domain like~\citep{tlsurvey}.
 
 The core of machine learning methods is still the model. Training data are used to estimate  parameters of the model, and the model is then used to make decisions on the testing data. The model of deep learning is a multi-layer network. The later one layer is, usually it has less nodes, and the information it deals with is more abstract.
 
@@ -81,7 +81,7 @@ The earlier layers of deep-architecture networks act as feature extraction modul
 
 
 \subsection{Solution Space Explore}
-Besides proposing representative models and decision procedures, there are lots of work~\citep{408,spm,ciod} focusing on how the solution space from the decision making procedure can be explored. The methods following the sliding-window schema need to consider each differently scaled sub-image of a target image, to answer wether this sub-image contains an object of interest or not, this amount is extremely large, and even enumerate all the sub-windows is computationally infeasible.
+Besides proposing representative models and decision procedures, there are lots of work~\citep{408,spm,ciod} focusing on how the solution space from the decision making procedure can be explored. The methods following the sliding-window schema need to check each differently scaled sub-image of a target image, and answer wether this sub-image contains an object of interest or not. While the number of all sub-windowss is extremely large, and even enumerate all the sub-windows is computationally infeasible.
 
 Currently method of~\citep{ij15} and its variants~\citep{ac1} for sliding window search work very efficiently, and give best detection hypothesis in polynomial time in experiments. There are variants~\citep{ac27} which share the same strategy for methods based on Hough transforms. These methods employ branch-and-bound mechanisms during the search for the best detection hypothesis. While map-and-reduce is popular is distributed computations, the underline philosophy is very similar.
 
@@ -90,7 +90,7 @@ And when use this vector by support vector machine for decisions, it is simple l
 
 \section{Advances in Object Detection}
 
-Three methods will be proposed in the thesis, methods very related to each method will be further reviewed in the corresponding chapter. Here we review some recent advances in object detection.
+Three methods will be proposed in the thesis, and methods most related to each method will be further reviewed in the corresponding chapter. Here we review some recent advances in object detection.
 
 Detection is drawing a lot of attention~\citep{ij4,ac31,ac30,ac4,ac32,ac29,ac28,ac1,ac9,ac2,ac3,ac22,lb1,ac5,ac10,ac21,ac18}, and it will continue to. While some methods are unique and very heuristic.
 
@@ -98,9 +98,9 @@ Instead of proposing class-specific methods,~\citep{wiao} try to evaluate how li
 
 Bag of image features~\citep{bgf} is an important advance for object detection. Before the method, potential objects are described using feature extracted from raw pixels, while the method describes objects using object components. In the work following,~\citep{ij13} added a biased sampling component for describe each object. Instead of described by one group of features, the objects are described by several groups of features, and then decisions are made using multi-label multi-class classification.
 
-Some pioneer work also consider about recognizing objects in 3D space. The method proposed in~\citep{r3d}, tracks keypoints of the same object, and generate feature accordingly, which will include 3D information of the object, and feed this feature to decision step, which makes the results very appealing.
+Some pioneer work also consider about recognizing objects in 3D space. The method proposed in~\citep{r3d}, tracks keypoints of the same object, generate features which include 3D information of the object accordingly, and feed the features to decision step. And the results are very appealing.
 
-Also excellent performance of deep learning inspired new methods to reconsider about object detection. The discover of invariants and learning of a detector from unlabeled data are explored by~\citep{dnnnn}.
+Also excellent performance of deep learning inspires new methods to reconsider about object representation. The discover of invariants and learning of a detector from unlabeled data are explored by~\citep{dnnnn}.
 
 
 Still, one of the challenging subjects in object detection is rotation-aware detection. Lots of object detection methods ignore scale and rotation changes by using of scale- and rotation-invariant image features, i.e. SIFT.

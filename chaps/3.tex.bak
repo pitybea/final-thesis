@@ -306,7 +306,7 @@ For keypoint clustering, the threshold to split the mst is set to 10, which is h
 
 \begin{figure}
 \includegraphics[width=1\textwidth,bb=0 0 1367 651]{untitled.jpg}
-\caption[Positive and negative training examples.]{Dimension reduction of intensity histograms manually marked as positive and negative, which have 2 dimensions by principle component analysis. Blue circles: positive, and red: negative.}
+\caption[Positive and negative training examples]{Dimension reduction of intensity histograms manually marked as positive and negative, which have 2 dimensions by principle component analysis. Blue circles: positive, and red: negative.}
 \label{ex1:v}
 \end{figure}
 
@@ -399,7 +399,7 @@ The detection rate and false alarm rate is evaluated on 250 frames, as shown in 
     False alarm rate &	19\% &	   \\
    \hline
 \end{tabular}
-\caption{Detection rate and false alarm rate.}\label{ex1:tb2}
+\caption[Detection rate and false alarm rate]{Detection rate and false alarm rate.}\label{ex1:tb2}
 \end{table}
 
 \subsection{Second Experiment}
@@ -474,7 +474,7 @@ More detection results are shown in Figure \ref{fig:sixs}.
     False alarm rate &	4.4\% &	   \\
    \hline
 \end{tabular}
-\caption{Detection rate and false alarm rate.}\label{tb:tb2}
+\caption[Detection rate and false alarm rate]{Detection rate and false alarm rate.}\label{tb:tb2}
 \end{table}
 
 The detection rate and false alarm rate of the first experiment~\citep{wang1} are 90\% and 19\%, while evaluated on a much smaller dataset. Here the results are better than the first experiment, because the sensed images are much clearer, and also because this more effective training of the Adaboost machine. And in the second experiment, the efficiency has its root in better computer.

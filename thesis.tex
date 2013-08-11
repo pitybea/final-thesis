@@ -29,33 +29,33 @@
 
 \newlength\tablelen
 
-\settowidth\tablelen{Table}
+\settowidth\tablelen{\bf {Table}}
 
 \addtolength\cfttabnumwidth{\tablelen}
 
-\renewcommand\cfttabpresnum{Table }
+\renewcommand\cfttabpresnum{\bf {Table} }
 
 \newlength\chaplen
 
-\settowidth\chaplen{Chapter}
+\settowidth\chaplen{\bf {Chapter}}
 
 \addtolength\cftchapnumwidth{\chaplen}
 
-\renewcommand\cftchappresnum{Chapter } 
+\renewcommand\cftchappresnum{\bf {Chapter} }
 
 \newlength\figlen
 
-\settowidth\figlen{Figure}
+\settowidth\figlen{\bf {Figure}}
 
 \addtolength\cftfignumwidth{\figlen}
 
-\renewcommand\cftfigpresnum{Figure }
+\renewcommand\cftfigpresnum{\bf {Figure} }
 
 \let\oldlistofalgorithms\listofalgorithms
 \renewcommand{\listofalgorithms}{%
   \begingroup%
   \let\oldnumberline\numberline%
-  \renewcommand{\numberline}{Algorithm~\oldnumberline}%
+  \renewcommand{\numberline}{{\bf {Algorithm }}\oldnumberline}%
   \oldlistofalgorithms%
   \endgroup}
 
