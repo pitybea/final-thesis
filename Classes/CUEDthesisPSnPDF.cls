@@ -33,8 +33,7 @@
 %\renewcommand{\refname}{References}%
 \fi
 
-%\DeclareOption{book}{%
-%}%
+%\DeclareOption{book}{}%
 \usepackage{setspace}
 \usepackage{tocbibind}
 \usepackage{amssymb}
