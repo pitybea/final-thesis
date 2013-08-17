@@ -58,7 +58,7 @@ This chapter is organized as follows: section \ref{rw} reviews related work, sec
 \section{Related Work}
 \label{rw}
 
-Most modern detection methods fall into two categories. Some~\citep{ij4,ac31,ac30,ac4,ac32,ac29,ac28,ac1} follow the sliding-window schema, and they detect objects by consider whether each of the sub-images contains an instance of the target object. Classifiers are usually employed by these methods. The other methods~\citep{ac9,ac2,ac3,ac22,lb1,ac5,ac10,ac21,ac18} infer object centers based on local image features in a bottom-up manner. The proposed method makes advantages of both frameworks. Following the bottom-up manner, keypoints are detected, verified, and clustered. After these steps, the keypoint clusters are considered as detection hypotheses. Then following the sliding-window schema, the keypoint clusters are verified by their appearance and temporal information using discriminative methods.
+Most modern detection methods fall into two categories. Some~\citep{ij4,ac31,ac30,ac4,ac32,ac29,ac28,ac1} follow the sliding-window schema, and they detect objects by consider whether each of the sub-images contains an instance of the target object or. Discriminative classifiers are usually employed by these methods. The other methods~\citep{ac9,ac2,ac3,ac22,lb1,ac5,ac10,ac21,ac18} infer object centers based on local image features in a bottom-up manner. The proposed method makes advantages of both frameworks. Following the bottom-up manner, keypoints are detected, verified, and clustered. After these steps, the keypoint clusters are considered as detection hypotheses. Then following the sliding-window schema, the keypoint clusters are verified by their appearance and temporal information using discriminative methods.
 
 Previous methods~\citep{ac34} also consider the combination of the two frameworks. Detection hypotheses are gained using Hough transform and then verified by support vector machines in~\citep{ac10,ac25}. The methods in~\citep{ac6,ac7}, use randomized decision trees for both decisions whether local features belonging to foreground objects or not and decisions of their Hough votes. The method proposed in~\citep{ac27} describes both frameworks in the same manner. While giving state-of-the-art detection performance, they can't meet the requirement for efficiency as this method does.
 
@@ -66,16 +66,16 @@ This work is also related to data association methods at time dimension. In trac
 association problem to explain conflicts in data as well as
 recovering from tracking failures within a low time cost. In
 \citep{ij9}, the joint likelihood maximization is represented by the
-Nash Equilibrium in a game. The main contribution is the time
-complexity of solving a game-theoretic problem is low and make
-trackers compete for the region that is in a conflict. In
-\citep{ij10}, the MAP corresponds to the max flow of a well designed
-graph. The method has the advantage of taking into consideration of
-missed detections on middle frames and the low time cost. In
+Nash Equilibrium in a game. The main contribution is that the time
+complexity of solving a game-theoretic problem is low which makes
+trackers' competing regions in conflict efficient. In
+\citep{ij10}, the problem of maximum a posteriori is embedded to the max flow of a well designed
+graph. And it is able to recover
+missed detections on middle frames and works efficiently. In
 \citep{my7}, the main idea is to firstly connect very faithful
 detection response pairs, then solve the data association problem
-via low-time-complexity Hungarian algorithm, and refine the result
-in a EM manner at the last step. And the main concern of these work
+via low-time-complexity Hungarian algorithm, and refine the results
+in an expectation¨Cmaximization manner at the last step. And the main concern of these work
 is solving the high time complexity in the data association problem.
 
  This work is also related to feature grouping methods~\citep{ac25}, methods detecting using trajectories~\citep{my9,ac24}, tracking methods~\citep{my7,my10}, and methods integrating appearance and temporal information~\citep{ac23}.
@@ -270,7 +270,7 @@ Before proposing the decision step for detection, Table \ref{c3tb:tb1} summaries
 \subsection{Object Detection}
 For each keypoint cluster on the current frame, there exists label given by the Adaboost machine according to its appearance, and the significance of fitting its trajectory as a straight line.  For each keypoint cluster, it is considered as an target object if and only if its label given by the Adaboost machine is positive, its trajectory is longer than $l^{th}$, and the significance of fitting its trajectory into a straight line is larger than $r^{th}$.
 
-Each trajectory not only connects the detection responses, but also connects the decisions for each detection responses made by their appearance and motion patterns. The target objects and noisy objects actually appear in successive frames, and even if we make a wrong decision on one frame, we can expect to recover from this mistake based on the results on other frames. The final results is based on the trajectories of decisions. When one trajectory ends, if most of the decisions it connects are positive, then this trajectory is considered as positive.
+Each trajectory not only connects the detection responses, but also connects the decisions for each detection responses made by their appearance and motion patterns. The target objects and noisy objects actually appear in successive frames, and even if we make a wrong decision on one frame, we can expect to recover from this mistake based on the results on other frames. The final results is based on the trajectories of decisions. When one trajectory ends, if a majority,i.e. larger than 80\% , of the decisions it connects are positive, then this trajectory is considered as positive.
 
 
 
@@ -479,7 +479,7 @@ More detection results are shown in Figure \ref{fig:sixs}.
 
 The detection rate and false alarm rate of the first experiment~\citep{wang1} are 90\% and 19\%, while evaluated on a much smaller dataset. Here the results are better than the first experiment, because the sensed images are much clearer, and also because this more effective training of the Adaboost machine. And in the second experiment, the efficiency has its root in better computer.
 
-The results on the trajectories of decisions are also evaluated. When one trajectory ends, if its length is larger than 15, and over 80\% of the decisions it connects are positive, it is considered as positive. The method correctly detects all the 22 emergency telephone indicators with no false alarms. The detection rate is 100\%, and the false alarm rate is 0\%, as shown in Table \ref{tb:tb3}.
+The results on the trajectories of decisions are also evaluated. When one trajectory ends, if its length is larger than 15, and over 80\% of the last 15 decisions it connects are positive, it is considered as positive. The method correctly detects all the 22 emergency telephone indicators with no false alarms. The detection rate is 100\%, and the false alarm rate is 0\%, as shown in Table \ref{tb:tb3}.
 
 \begin{table}[h]
 \centering

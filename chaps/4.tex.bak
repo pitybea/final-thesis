@@ -80,6 +80,8 @@ The remaining chapter is organized as follows. Section \ref{rw4} reviews related
 
 Two Hough transform methods consider the grouping of object parts~\citep{ac26,ac25}. The method in~\citep{ac26} deals with scale change. Instead of estimating the scale by local features trained from different scaled examples, the votes are considered as voting lines. By considering the difference of the voted centers, local features are firstly grouped and then vote more consistently for the object center. In~\citep{ac25}, the grouping of object parts, the correspondence between object parts and object, and the decisions on detection hypotheses are optimized in the same energy function. For this method, the problem is that the grouping results don't have meaning or correspond to and real entities.
 
+The method is then very related to detection methods in video, especially those employ motion information. 
+
 The work is also related to keypoint clustering methods. In \citep{mc}, SIFT~\citep{o12} is
 used as key point, color histogram as appearance feature, region covariance~\citep{regionc}
 as texture feature, and $(x,y)$ coordinate as spatial feature. Then
@@ -101,7 +103,7 @@ among all pairwise point distances. The clustering procedure is made
 up by making pairwise decisions on whether to merge to smaller
 clusters in a Minimal Description Language manner.
 
-This work also share features with methods try to couple detection with other problem, and then solve them together.
+This work also have common points with methods try to couple detection with other problem, and then solve them together.
 In \citep{my7}, a very general \emph{Minimum Description Length}(MDL) framework for
 coupling tracking and detection is given. And \citep{ij10} re-detects
 detection responses missed in the detection procedure from tracking results. In
@@ -116,6 +118,8 @@ apply which imaging operator, to which portion of the image during
 every stage of interpretation. The interpretation policy is defined
 using a dynamic programming schema with considering the cost and the
 gained information of the operator.
+
+
 
 The work is also related to object detection methods by trajectories~\citep{my9,ac24}, methods weighting features~\citep{ij13}, methods dealing with codebook noise~\citep{ac19}, methods proposing features combining temporal information~\citep{stf}, and methods which integrate temporal information~\citep{ac23}. Also the mechanisms of visual cortex also supports the proposed method~\citep{cfm}.
 
@@ -457,13 +461,13 @@ To form the Hough image, 35 best matched codes are chosen from the codebook for 
 \centering
 \subfigure[]{
 \begin{minipage}[b]{0.47\textwidth}
-\includegraphics[width=0.97\textwidth]{prf.eps}
+\includegraphics[width=1\textwidth]{prf.eps}
 \end{minipage}
 \label{fig:pr:a}}
 \subfigure[]{
 \begin{minipage}[b]{0.47\textwidth}
-\includegraphics{cm2.eps}\\
-\includegraphics{cm1.eps}
+\includegraphics[width=1\textwidth]{cm2.eps}\\
+\includegraphics[width=1\textwidth]{cm1.eps}
 \end{minipage}
 \label{fig:pr:b}}
 \caption[Comparisons with benchmark method]{(a) Precision-recall curves (red: the proposed method, blue: the benchmark method). (b) Confusion matrices (upper: the proposed method, down: the benchmark method).}

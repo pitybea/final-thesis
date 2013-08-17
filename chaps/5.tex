@@ -416,7 +416,7 @@ The objective function is written as the gap between pyramid match scores of pos
 
 Note, about ${\rm PMS}(I_p;a,b,c)$, it is not ${\rm P}(S_{I_p},S_{\bf{T}};\gamma)$, but ${\rm P}(S_{I_p},S_{\bf{T}}-S_{I_p};\gamma)$.
 
-After all positive and negative training examples are given, the objective function will only contain $a$, $b$, and $c$. For such a function, brute-force solutions will be feasible.
+After all positive and negative training examples are given, the objective function will only contain $a$, $b$, and $c$. Thus for such a parameter estimating problem, brute-force solutions will be feasible, especially that $\exp({\bf \cdot})$ can be easily expanded.
 
 Till now, Algorithm \ref{alg:tm} gives how $S_{\bf T}$ can be generated,  Algorithm \ref{alg:order}  gives how $\gamma$ is defined, how $\omega$ is estimated is given in \ref{eq:pms4} and \ref{eq:pms7} respectively, so Algorithm \ref{alg:dt} can be used for detection.
 

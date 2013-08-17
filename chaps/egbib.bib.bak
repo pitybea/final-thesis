@@ -1393,3 +1393,29 @@ pages = {1062-1069},
   pages     = {1052-1059},
 
 }
+
+
+@inproceedings{vd1,
+
+  author = {Andriluka, Mykhaylo and Roth, Stefan and Schiele, Bernt},
+
+  booktitle = {CVPR},
+    pages={1-8},
+
+  title = {People-tracking-by-detection and people-detection-by-tracking.},
+
+  year = 2008
+}
+@article{vd2,
+ author = {Gavrila, D. M. and Munder, S.},
+ title = {Multi-cue Pedestrian Detection and Tracking from a Moving Vehicle},
+ journal = {IJCV},
+ issue_date = {June      2007},
+ volume = {73},
+ number = {1},
+ month = jun,
+ year = {2007},
+
+ pages = {41--59},
+
+}

@@ -13,6 +13,12 @@ Alexe, B., Deselaers, T., \& Ferrari, V. (2010).
 \newblock What is an object?
 \newblock In {\em CVPR}, (pp.\ 73--80).
 
+\bibitem[\protect\citeauthoryear{Andriluka, Roth \& Schiele}{Andriluka
+  et~al.}{2008}]{vd1}
+Andriluka, M., Roth, S., \& Schiele, B. (2008).
+\newblock People-tracking-by-detection and people-detection-by-tracking.
+\newblock In {\em CVPR}, (pp.\ 1--8).
+
 \bibitem[\protect\citeauthoryear{Attias}{Attias}{2000}]{bgm}
 Attias, H. (2000).
 \newblock A variational bayesian framework for graphical models.
@@ -64,11 +70,24 @@ Blei, D.~M., Ng, A.~Y., \& Jordan, M.~I. (2003).
 \newblock Latent dirichlet allocation.
 \newblock {\em Journal of Machine Learning Research}, {\em 3}, 993--1022.
 
+\bibitem[\protect\citeauthoryear{Bouwmans, El~Baf \& Vachon}{Bouwmans
+  et~al.}{2009}]{bs1}
+Bouwmans, T., El~Baf, F., \& Vachon, B. (2009).
+\newblock Statistical background modeling for foreground detection: A survey.
+\newblock In {\em HPRCV}, (pp.\ IV: 181--199).
+
 \bibitem[\protect\citeauthoryear{Brostow \& Cipolla}{Brostow \&
   Cipolla}{2006}]{my9}
 Brostow, G. \& Cipolla, R. (2006).
 \newblock Unsupervised bayesian detection of independent motion in crowds.
 \newblock In {\em CVPR}, (pp.\ I: 594--601).
+
+\bibitem[\protect\citeauthoryear{Brostow, Shotton, Fauqueur \& Cipolla}{Brostow
+  et~al.}{2008}]{my3}
+Brostow, G., Shotton, J., Fauqueur, J., \& Cipolla, R. (2008).
+\newblock Segmentation and recognition using structure from motion point
+  clouds.
+\newblock In {\em ECCV}, (pp.\ I: 44--57).
 
 \bibitem[\protect\citeauthoryear{Brox \& Malik}{Brox \& Malik}{2010}]{ac24}
 Brox, T. \& Malik, J. (2010).
@@ -82,6 +101,18 @@ Cadieu, C.~F., Hong, H., Yamins, D., Pinto, N., Majaj, N.~J., \& DiCarlo, J.~J.
 \newblock The neural representation benchmark and its evaluation on brain and
   machine.
 \newblock {\em CoRR}, {\em abs/1301.3530}.
+
+\bibitem[\protect\citeauthoryear{Chen, Mummert, Pillai, Hauptmann \&
+  Sukthankar}{Chen et~al.}{2010}]{mafea}
+Chen, M.-y., Mummert, L., Pillai, P., Hauptmann, A., \& Sukthankar, R. (2010).
+\newblock Controlling your tv with gestures.
+\newblock In {\em Multimedia information retrieval}, (pp.\ 405--408).
+
+\bibitem[\protect\citeauthoryear{Cutler \& Davis}{Cutler \& Davis}{1999}]{maaa}
+Cutler, R. \& Davis, L. (1999).
+\newblock Robust real-time periodic motion detection, analysis, and
+  applications.
+\newblock {\em PAMI}, {\em 22}, 781--796.
 
 \bibitem[\protect\citeauthoryear{Dalal \& Triggs}{Dalal \& Triggs}{2005}]{ij4}
 Dalal, N. \& Triggs, B. (2005).
@@ -163,6 +194,12 @@ Gall, J. \& Lempitsky, V. (2009).
 \newblock Class-specific hough forests for object detection.
 \newblock In {\em CVPR}, (pp.\ 1022--1029).
 
+\bibitem[\protect\citeauthoryear{Gavrila \& Munder}{Gavrila \&
+  Munder}{2007}]{vd2}
+Gavrila, D.~M. \& Munder, S. (2007).
+\newblock Multi-cue pedestrian detection and tracking from a moving vehicle.
+\newblock {\em IJCV}, {\em 73\/}(1), 41--59.
+
 \bibitem[\protect\citeauthoryear{Gionis, Indyk \& Motwani}{Gionis
   et~al.}{1999}]{lsh}
 Gionis, A., Indyk, P., \& Motwani, R. (1999).
@@ -175,6 +212,12 @@ Gould, S., Fulton, R., \& Koller, D. (2009).
 \newblock Decomposing a scene into geometric and semantically consistent
   regions.
 \newblock In {\em ICCV}, (pp.\ 1--8).
+
+\bibitem[\protect\citeauthoryear{Grabner, Leistner \& Bischof}{Grabner
+  et~al.}{2008}]{vd3}
+Grabner, H., Leistner, C., \& Bischof, H. (2008).
+\newblock Semi-supervised on-line boosting for robust tracking.
+\newblock In {\em ECCV}, (pp.\ 234--247).
 
 \bibitem[\protect\citeauthoryear{Grauman \& Darrell}{Grauman \&
   Darrell}{2005}]{pmk}
@@ -209,6 +252,12 @@ Isukapalli, R. \& Greiner, R. (2003).
   interpretation.
 \newblock In {\em IJCAI}, (pp.\ 1319--1325).
 
+\bibitem[\protect\citeauthoryear{Javed}{Javed}{2005}]{vd4}
+Javed, O. (2005).
+\newblock Online detection and classification of moving objects using
+  progressively improving detectors.
+\newblock In {\em CVPR}, (pp.\ 696--701).
+
 \bibitem[\protect\citeauthoryear{J\'egou, Douze \& Schmid}{J\'egou
   et~al.}{2010}]{bgf}
 J\'egou, H., Douze, M., \& Schmid, C. (2010).
@@ -219,6 +268,12 @@ J\'egou, H., Douze, M., \& Schmid, C. (2010).
 Jiang, H. \& Yu, S. (2009).
 \newblock Linear solution to scale and rotation invariant object matching.
 \newblock In {\em CVPR}, (pp.\ 2474--2481).
+
+\bibitem[\protect\citeauthoryear{Jones, Viola, Viola, Jones, Snow \&
+  Snow}{Jones et~al.}{2003}]{pvm}
+Jones, M., Viola, P., Viola, P., Jones, M.~J., Snow, D., \& Snow, D. (2003).
+\newblock Detecting pedestrians using patterns of motion and appearance.
+\newblock In {\em ICCV}, (pp.\ 734--741).
 
 \bibitem[\protect\citeauthoryear{Kise \& Kashiwagi}{Kise \&
   Kashiwagi}{2011}]{r3d}
@@ -298,6 +353,11 @@ Leibe, B., Schindler, K., \& Van~Gool, L. (2007).
 \newblock Coupled detection and trajectory estimation for multi-object
   tracking.
 \newblock In {\em ICCV}, (pp.\ 1--8).
+
+\bibitem[\protect\citeauthoryear{Levin}{Levin}{2003}]{vd5}
+Levin, A. (2003).
+\newblock Unsupervised improvement of visual detectors using co-training.
+\newblock In {\em ICCV}, (pp.\ 626--633).
 
 \bibitem[\protect\citeauthoryear{Liu, Yuen \& Torralba}{Liu
   et~al.}{2011}]{lbt1}
@@ -388,6 +448,12 @@ Mikolajczyk, K., Tuytelaars, T., Schmid, C., Zisserman, A., Matas, J.,
 Mohottala, S., Ono, S., Kagesawa, M., \& Ikeuchi, K. (2009).
 \newblock Fusion of a camera and a laser range sensor for vehicle recognition.
 \newblock In {\em OTCBVS}, (pp.\ 16--23).
+
+\bibitem[\protect\citeauthoryear{Nair \& Clark}{Nair \& Clark}{2004}]{vd6}
+Nair, V. \& Clark, J.~J. (2004).
+\newblock An unsupervised, online learning framework for moving object
+  detection.
+\newblock In {\em CVPR}, (pp.\ 317--325).
 
 \bibitem[\protect\citeauthoryear{Ohba \& Ikeuchi}{Ohba \& Ikeuchi}{1997}]{ac18}
 Ohba, K. \& Ikeuchi, K. (1997).
@@ -592,6 +658,11 @@ Yang, L., Zheng, N., Chen, M., Yang, Y., \& Yang, J. (2009).
 Yang, M., Yu, T., \& Wu, Y. (2007).
 \newblock Game-theoretic multiple target tracking.
 \newblock In {\em ICCV}, (pp.\ 1--8).
+
+\bibitem[\protect\citeauthoryear{Yang \& Shah}{Yang \& Shah}{2013}]{dldt}
+Yang, Yang~and, S.~G. \& Shah, M. (2013).
+\newblock Controlling your tv with gestures.
+\newblock In {\em CVPR}.
 
 \bibitem[\protect\citeauthoryear{Yarlagadda, Monroy \& Ommer}{Yarlagadda
   et~al.}{2010}]{ac25}
