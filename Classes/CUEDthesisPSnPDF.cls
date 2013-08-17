@@ -33,7 +33,8 @@
 %\renewcommand{\refname}{References}%
 \fi
 
-%\DeclareOption{book}{}%
+%\DeclareOption{book}{%
+%}%
 \usepackage{setspace}
 \usepackage{tocbibind}
 \usepackage{amssymb}
@@ -145,8 +146,8 @@
 \setlength{\hoffset}{0.00cm}
 \setlength{\voffset}{0.00cm}
 
-\setlength{\evensidemargin}{1.96cm}
-%\setlength{\oddsidemargin}{-0.54cm}
+\setlength{\evensidemargin}{-0.14cm}
+\setlength{\oddsidemargin}{1.1cm}
 \setlength{\topmargin}{1mm}
 \setlength{\headheight}{1.36cm}
 \setlength{\headsep}{1.00cm}

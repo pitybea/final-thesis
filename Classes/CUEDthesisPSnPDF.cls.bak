@@ -14,7 +14,7 @@
 \DeclareOption{book}{\CU@bookmodetrue}
 \ProcessOptions\relax%
 
-\ifCU@bookmode
+
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}%
 \ProcessOptions\relax%
 \ifx\pdfoutput\undefined%
@@ -22,20 +22,9 @@
 \else%
    \LoadClass[pdftex, a4paper]{book}%
 \fi%
-\else
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}%
-\ProcessOptions\relax%
-\ifx\pdfoutput\undefined%
-  \LoadClass[dvips, a4paper]{report}%
-\else%
-   \LoadClass[pdftex, a4paper]{report}%
-\fi%
-%\renewcommand{\refname}{References}%
-\fi
 
-\DeclareOption{book}
-%{%
-%}%
+
+%\DeclareOption{book}{}%
 \usepackage{setspace}
 \usepackage{tocbibind}
 \usepackage{amssymb}
