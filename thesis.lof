@@ -75,6 +75,7 @@
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Result evaluation by using results from only visual or spatial information}}{89}{figure.5.7}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Result comparison with method using dividing methods of \citep {pmk}}}{90}{figure.5.8}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Result comparison with deformable part model~\citep {ac31}}}{91}{figure.5.9}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Result comparison on VOC2007 cars}}{93}{figure.5.10}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Comparison between Pyramid Match Score and Hough transform}}{92}{figure.5.10}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Average numbers of matched pairs of positive and negative test examples}}{93}{figure.5.11}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Conclusion and outlook}{97}{chapter.6}

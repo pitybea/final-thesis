@@ -58,11 +58,10 @@
 \contentsline {subsection}{\numberline {5.3.5}Learning Weights for Dividing Methods}{82}{subsection.5.3.5}
 \contentsline {section}{\numberline {5.4}Experimental Results}{84}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}UIUC Cars}{85}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}VOC2007 Cars}{92}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Discussion}{94}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Time Complexity}{94}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Usage of Visual and Spatial Information}{95}{subsection.5.5.2}
-\contentsline {section}{\numberline {5.6}Chapter Conclusion}{96}{section.5.6}
+\contentsline {section}{\numberline {5.5}Discussion}{93}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Time Complexity}{93}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Usage of Visual and Spatial Information}{94}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Chapter Conclusion}{95}{section.5.6}
 \contentsline {chapter}{\numberline {6}Conclusion and outlook}{97}{chapter.6}
 \contentsline {chapter}{Bibliography}{99}{chapter*.8}
 \contentsline {chapter}{Acknowledgements}{109}{chapter*.9}

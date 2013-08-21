@@ -416,7 +416,7 @@ The objective function is written as the gap between pyramid match scores of pos
 
 Note, about ${\rm PMS}(I_p;a,b,c)$, it is not ${\rm P}(S_{I_p},S_{\bf{T}};\gamma)$, but ${\rm P}(S_{I_p},S_{\bf{T}}-S_{I_p};\gamma)$.
 
-After all positive and negative training examples are given, the objective function will only contain $a$, $b$, and $c$. For such a function, brute-force solutions will be feasible, especially that $\exp({\bf \cdot})$ can be easily expanded.
+After all positive and negative training examples are given, the objective function will only contain $a$, $b$, and $c$. Thus for such a parameter estimating problem, brute-force solutions will be feasible, especially that $\exp({\bf \cdot})$ can be easily expanded.
 
 Till now, Algorithm \ref{alg:tm} gives how $S_{\bf T}$ can be generated,  Algorithm \ref{alg:order}  gives how $\gamma$ is defined, how $\omega$ is estimated is given in \ref{eq:pms4} and \ref{eq:pms7} respectively, so Algorithm \ref{alg:dt} can be used for detection.
 
@@ -529,6 +529,21 @@ How the visual-spatial space is divided is also critical to the performance of t
 
 In Figure \ref{fig:c56}, performance are evaluated between the proposed method, and a state-of-the-art method, DPM~\citep{ac31}. The proposed method performs no worse than DPM,
 While the training time between the two models are 1 minute vs 16 hours. In this experiment, the training speed of the proposed method is 1,000 times faster. Also during the training of the proposed method, since \ref{eq:pms4} is used, only the positive training examples are used, while DPM uses both positive and negative training examples.
+
+\begin{figure}[!htbp]
+\centering
+
+\includegraphics[width=1\textwidth]{ancp.eps}
+
+
+\caption[Average numbers of matched pairs of positive and negative test examples]{Comparison of average matched numbers between positive and negative test examples under different visual-spatial space dividing parameters.}
+\label{fig:c57}
+\end{figure}
+\FloatBarrier
+
+In Figure \ref{fig:c57}, the average numbers of matched pairs of positive and negative test examples are shown. It is clear that under finer dividing methods, positive test examples possess larger average number of matched pairs, while under coarser dividing methods, negative test examples possess larger matched number of matched pairs.
+
+\begin{comment}
 \subsection{VOC2007 Cars}
 
 Detection methods just all need to be evaluated on the PASCAL (pattern analysis, statistical modeling, and computational learning) Visual Object Classes~\citep{voc}. And VOC2007 is favored by even current famous detection methods~\citep{408}, because the testing data are publicly available, and many detection results are already evaluated on the dataset. To evaluate a detection method, experiments can be carried on one or several classes on the dataset, and here experiments are carried on objects belonging to the car category.
@@ -541,7 +556,7 @@ What is different from the experiments on UIUC cars is that, $\omega$s are given
 \label{fig:c57}
 \end{figure}
 \FloatBarrier
-
+\end{comment}
 \section{Discussion}
 \label{dis5}
 \subsection{Time Complexity}
@@ -551,7 +566,7 @@ In theory, the time complexity of methods based on Hough transform based methods
 
 The time complexity of DPM should be an exponential function to the number of parts used. Tricks can be used to avoid such heavy calculation in exchange of performance.
 
-Methods employing bag-of-features schema, and using linear SVM have the lowest time complexity, which is usually  $O(dmn_sup)$, while such methods are currently no longer the dominant.
+Methods employing bag-of-features schema, and using linear SVM have the lowest time complexity, which is usually  $O(dmn_{sup})$, while such methods are currently no longer the dominant.
 
 In summary, the proposed method is competitive in the aspect of time complexity, when considering about giving a reliable confidence to an object hypothesis.
 
