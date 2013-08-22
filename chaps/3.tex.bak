@@ -1,4 +1,4 @@
-\chapter{Efficient Detection by Combining of Appearance and Temporal Information }
+\chapter{Efficient Detection in Thermal Images by Combining of Appearance and Temporal Information }
 \label{chp3}
 
 \section{Introduction}
@@ -8,11 +8,13 @@ The proposed detection method makes use of both
 appearance and motion information of the target objects. By well optimizing of the detecting pipeline, the
 method works in real time, and gives 100\% detection rate and 0\% false alarm rate in one experiment of data collected by infrared cameras.
 
-As always, detection performance and efficiency are the two important aspects of this method. Challenges come from the need to distinguish noisy objects as shown in Figure~\ref{fig:first} and the real-time requirement. In experiments, besides the target object a lot of noisy objects also exist. Some of the noisy objects cannot even by distinguished from the target objects by only appearance.  The clutter property of the sensed data makes the detection challenging. The proposed method meets this challenge by making use of both appearance and temporal information of the target objects. There are two main steps in the method.
+As always, detection performance and efficiency are the two important aspects of this method. Challenges come from the need to distinguish noisy objects as shown in Figure~\ref{fig:first} and the real-time requirement. In experiments, besides the target object a lot of noisy objects also exist. Some of the noisy objects cannot even by distinguished from the target objects by only appearance.  The clutter property of the sensed data makes the detection challenging. The proposed method meets this challenge by making use of both appearance and temporal information of the target objects. There are three main steps in the method.
 
 The first step deals with keypoints, and  it takes original data as input, and outputs keypoint clusters as detection hypotheses. In this step, keypoints are detected, verified and then clustered. To detect keypoints, all points on each frame are uniformly sampled and filtered with pre-set intensity thresholds.  Then the keypoints are verified by a simple keypoint appearance model   powered by \emph{k}-means. At the end of the first step, the keypoints are clustered based on the Euclidean distance.
 
-The second step takes the keypoint clusters as input, verifies them by appearance and temporal information, and outputs the ones pass verifications as detection results. In the second step, the keypoint clusters are labeled based on appearance by an adaboost machine, which is trained using intensity histograms of keypoint clusters from target objects and keypoint clusters from noisy objects. The keypoint clusters are also tracked by temporal association through frames. Motion information encoded in the trajectories are used to further verify the keypoint clusters. Finally, the keypoint clusters which pass both appearance and temporal verifications are decided as target objects.
+The second step takes the keypoint clusters as input, verifies them by appearance and temporal information, and outputs the ones pass verifications as detection results. In the second step, the keypoint clusters are labeled based on appearance by an adaboost machine, which is trained using intensity histograms of keypoint clusters from target objects and keypoint clusters from noisy objects. The keypoint clusters are also tracked by temporal association through frames. Motion information encoded in the trajectories are used to further verify the keypoint clusters. Finally, the keypoint clusters which pass both appearance and temporal verifications are decided as possible detection results.
+
+In the last step, the detection results from the second step vote along their belonging trajectories for the final results. Each trajectory connects the local detection results which are made according to local appearance an motion information. The last step summarises the decisions connected by the trajectories.
 
 This pipeline is designed also with consideration of the requirement for efficiency.  The method deals with the large amount information contained on one frame following a hierarchical manner. The later one step is, the more time-consuming it is  and the fewer instances it deals with. From an image containing $10^5$ pixels, $10^4$ points go through keypoint detection step of testing by intensity thresholds. Then in average, $10^3$ keypoints are detected, and verified, leaving about $10^2$ to be clustered. Afterwards, fewer than $10$ keypoint clusters are left, which are dealt with by the very time-consuming steps of generating image features and tracking.
 
@@ -98,10 +100,10 @@ Inspired by a previous work~\citep{wang1}, the proposed method can be turned to 
 \end{comment}
 \section{Detection Pipeline}
 \label{pip}
-The method can be considered as a two-step method. The first step deals with keypoints. It
+The method can be considered as a three-step method. The first step deals with keypoints. It
 takes original data as input, and outputs keypoint clusters as detection hypotheses. The second
 step takes these keypoint clusters as input, verifies them by their appearance and motion
-information, and outputs the ones which pass verifications as detection results.
+information, and outputs the ones which pass verifications as detection results. Results from the second step will vote along their belonging trajectories for the final results in step three.
 
 \subsection{Keypoint Detection}
 In data collected using ordinary cameras, keypoints~\citep{o2,o12} invariant to rotations, affine changes, and illumination changes are preferable. In the case of using data collected by infrared cameras, keypoint detection intends to provide hypotheses for target objects, i.e. emergency telephone indicators. Thus intensity is of great importance. This method employs a simple yet useful method to detect keypoints. Firstly, points are uniformly sampled with width step $W$, and height step $H$. In this manner the magnitude of instances is reduced by  at lease one order. Then the points are considered as keypoints if they pass the test which verifies them by setting intensity thresholds .
@@ -270,7 +272,10 @@ Before proposing the decision step for detection, Table \ref{c3tb:tb1} summaries
 \subsection{Object Detection}
 For each keypoint cluster on the current frame, there exists label given by the Adaboost machine according to its appearance, and the significance of fitting its trajectory as a straight line.  For each keypoint cluster, it is considered as an target object if and only if its label given by the Adaboost machine is positive, its trajectory is longer than $l^{th}$, and the significance of fitting its trajectory into a straight line is larger than $r^{th}$.
 
+\subsection{Voting along a Trajectory}
 Each trajectory not only connects the detection responses, but also connects the decisions for each detection responses made by their appearance and motion patterns. The target objects and noisy objects actually appear in successive frames, and even if we make a wrong decision on one frame, we can expect to recover from this mistake based on the results on other frames. The final results is based on the trajectories of decisions. When one trajectory ends, if a majority,i.e. larger than 80\% , of the decisions it connects are positive, then this trajectory is considered as positive.
+
+The procedure is as follows: 1) each detection result along a trajectory which encodes local appearance and motion patterns votes for whether the trajectory is positive or not, and 2) if the voting percentage is larger than a threshold, a final decision is made that the object is positive.
 
 
 
@@ -486,12 +491,12 @@ The results on the trajectories of decisions are also evaluated. When one trajec
 \begin{tabular}{lll}
      \hline
      \hline
-    total number & 22  \\
-    correctly labeled &	22   \\
-    miss detections &	0 &	  \\
-    false alarms &	0    \\
-    detection rate &	100\% &	  \\
-    false alarm rate &	0\% &	   \\
+   Total number & 22  \\
+    Correctly labeled &	22   \\
+    Miss detections &	0 &	  \\
+    False alarms &	0    \\
+    Detection rate &	100\% &	  \\
+    False alarm rate &	0\% &	   \\
    \hline
 \end{tabular}
 \caption[Final detection rate and false alarm rate]{Final detection rate and false alarm rate.}\label{tb:tb3}

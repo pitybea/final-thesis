@@ -1,4 +1,4 @@
-\chapter{Efficient Detection by Combining of Appearance and Temporal Information }
+\chapter{Efficient Thermal-image  Detection by Appearance and Motion Combination}
 \label{chp3}
 
 \section{Introduction}
@@ -273,7 +273,7 @@ Before proposing the decision step for detection, Table \ref{c3tb:tb1} summaries
 For each keypoint cluster on the current frame, there exists label given by the Adaboost machine according to its appearance, and the significance of fitting its trajectory as a straight line.  For each keypoint cluster, it is considered as an target object if and only if its label given by the Adaboost machine is positive, its trajectory is longer than $l^{th}$, and the significance of fitting its trajectory into a straight line is larger than $r^{th}$.
 
 \subsection{Voting along a Trajectory}
-Each trajectory not only connects the detection responses, but also connects the decisions for each detection responses made by their appearance and motion patterns. The target objects and noisy objects actually appear in successive frames, and even if we make a wrong decision on one frame, we can expect to recover from this mistake based on the results on other frames. The final results is based on the trajectories of decisions. When one trajectory ends, if a majority,i.e. larger than 80\% , of the decisions it connects are positive, then this trajectory is considered as positive. 
+Each trajectory not only connects the detection responses, but also connects the decisions for each detection responses made by their appearance and motion patterns. The target objects and noisy objects actually appear in successive frames, and even if we make a wrong decision on one frame, we can expect to recover from this mistake based on the results on other frames. The final results is based on the trajectories of decisions. When one trajectory ends, if a majority,i.e. larger than 80\% , of the decisions it connects are positive, then this trajectory is considered as positive.
 
 The procedure is as follows: 1) each detection result along a trajectory which encodes local appearance and motion patterns votes for whether the trajectory is positive or not, and 2) if the voting percentage is larger than a threshold, a final decision is made that the object is positive.
 
@@ -491,12 +491,12 @@ The results on the trajectories of decisions are also evaluated. When one trajec
 \begin{tabular}{lll}
      \hline
      \hline
-    total number & 22  \\
-    correctly labeled &	22   \\
-    miss detections &	0 &	  \\
-    false alarms &	0    \\
-    detection rate &	100\% &	  \\
-    false alarm rate &	0\% &	   \\
+   Total number & 22  \\
+    Correctly labeled &	22   \\
+    Miss detections &	0 &	  \\
+    False alarms &	0    \\
+    Detection rate &	100\% &	  \\
+    False alarm rate &	0\% &	   \\
    \hline
 \end{tabular}
 \caption[Final detection rate and false alarm rate]{Final detection rate and false alarm rate.}\label{tb:tb3}

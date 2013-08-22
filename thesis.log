@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.16)  21 AUG 2013 20:51
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.16)  22 AUG 2013 20:26
 entering extended mode
 **thesis.tex
 (F:\thesis\thesis.tex
@@ -908,11 +908,10 @@ Package pdftex.def Info: 17veriTrjimg00039.jpg used on input line 47.
 l.64 
       <F:/thesis/17Orgimg00039.jpg> <F:/thesis/17veriTrjimg00039.jpg>]
 Missing character: There is no ¨ in font ptmr7t!
-
+ [16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
-[17]
+ [17]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 139.
@@ -2600,8 +2599,8 @@ Package rerunfilecheck Warning: File `thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: C3D19FA4F8D27BFDB3C6611AC1DECA4B;16679
-(rerunfilecheck)             After:  E7FCA3B70A93EEEB8FD5CD23620433B8;4663.
+(rerunfilecheck)             Before: 25F34CC0F1AA0481368CE68C025202A7;16695
+(rerunfilecheck)             After:  A7A3C7AA610943567A34F903E143D991;4661.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: E03CE364B07602B6B0D5ABE428263E7A;11057.
 
@@ -2611,7 +2610,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  12071 strings out of 495354
  163365 string characters out of 3183859
- 280244 words of memory out of 3000000
+ 280291 words of memory out of 3000000
  14211 multiletter control sequences out of 15000+200000
  22713 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -2629,7 +2628,7 @@ ic/amsfonts/cm/cmsy6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb><C:/CTEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/CTEX/MiKTeX/fonts/typ
 e1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CT
 EX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (121 pages, 18208587 bytes).
+Output written on thesis.pdf (121 pages, 18208721 bytes).
 PDF statistics:
  2385 PDF objects out of 2487 (max. 8388607)
  436 named destinations out of 1000 (max. 500000)
