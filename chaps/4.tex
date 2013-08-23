@@ -454,7 +454,7 @@ In experiments, improvement of the method is verified in terms of detection accu
 
 For motion grouping, each keypoint is tracked through 10 frames before and through 10 frames after the current frame. The similarity of two 21-point trajectories is defined using only  the frames crossed by both trajectories. To set the two thresholds for motion grouping, $D_1$ and $D_2$ are  measured for keypoint pairs of different objects. $D^1_{th}$ is set that it is larger than only 10\% of the measured $D_1$s, and so is $D^2_{th}$. By doing so, keypoints belonging to different objects are not likely to be grouped together. So that in one motion group, the keypoints are very likely to belong to the same object, as shown in Figure \ref{fig:mgr}.
 
-To form the Hough image, 35 best matched codes are chosen from the codebook for each object part. In (\ref{eq3}), $d$ and $\sigma$ need to be given. The precision-recall curves are based on $\sigma$, while $d$ is set to be 10. Here $\sigma$ is the most important parameter.
+To form the Hough image, 35 best matched codes are chosen from the codebook for each object part. In \ref{eq3}, $d$ and $\sigma$ need to be given. The precision-recall curves are based on $\sigma$, while $d$ is set to be 10. Here $\sigma$ is the most important parameter.
 
 \textbf{Comparisons} For comparison, detection is done on the Hough images formed with and without motion grouping results. The same codebook and the same parameter settings are used for forming and searching over both Hough images. The votes of each object part are assigned uniform weights in the benchmark method, while weights defined in (\ref{eq4}) are assigned in the proposed method.
 \begin{figure}

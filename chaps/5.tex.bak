@@ -533,6 +533,18 @@ While the training time between the two models are 1 minute vs 16 hours. In this
 \begin{figure}[!htbp]
 \centering
 
+\includegraphics[width=1\textwidth]{hcom.eps}
+
+
+\caption[Comparison between Pyramid Match Score and Hough transform]{Compare the proposed method with different-speed Hough transforms.}
+\label{fig:c5i}
+\end{figure}
+\FloatBarrier
+
+
+\begin{figure}[!htbp]
+\centering
+
 \includegraphics[width=1\textwidth]{ancp.eps}
 
 
