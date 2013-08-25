@@ -1319,9 +1319,9 @@ pages = {1-8},
   journal = {Nature},
   keywords = {imported},
   month = {June},
-  owner = {thierry},
+
   pages = {607-609},
-  timestamp = {2010-02-27T01:05:18.000+0100},
+
   title = {Emergence of simple-cell receptive field properties by learning a
 	sparse code for natural images},
   volume = 381,
@@ -1413,9 +1413,93 @@ pages = {1062-1069},
  issue_date = {June      2007},
  volume = {73},
  number = {1},
- month = jun,
+
  year = {2007},
 
  pages = {41--59},
+
+}
+
+@inproceedings{vd3,
+ author = {Grabner, Helmut and Leistner, Christian and Bischof, Horst},
+ title = {Semi-supervised On-Line Boosting for Robust Tracking},
+ booktitle = {ECCV},
+
+ year = {2008},
+
+ pages = {234--247},
+
+}
+
+@INPROCEEDINGS{vd4,
+    author = {Omar Javed},
+    title = {Online detection and classification of moving objects using progressively improving detectors},
+    booktitle = { CVPR},
+    year = {2005},
+    pages = {696--701}
+}
+
+@INPROCEEDINGS{vd5,
+    author = {Anat Levin},
+    title = {Unsupervised Improvement of Visual Detectors using Co-Training},
+    booktitle = {ICCV},
+    year = {2003},
+    pages = {626--633}
+}
+
+@inproceedings{vd6,
+ author = {Nair, Vinod and Clark, James J.},
+ title = {An unsupervised, online learning framework for moving object detection},
+ booktitle = {CVPR},
+
+ year = {2004},
+
+ pages = {317--325},
+
+}
+
+@inproceedings{bs1,
+        AUTHOR = "Bouwmans, T. and El Baf, F. and Vachon, B.",
+        TITLE = "Statistical Background Modeling for Foreground Detection: A Survey",
+        BOOKTITLE = "HPRCV",
+        YEAR = "2009",
+        PAGES = "IV: 181-199",
+      }
+
+
+      @INPROCEEDINGS{pvm,
+    author = {Michael Jones and Paul Viola and Paul Viola and Michael J. Jones and Daniel Snow and Daniel Snow},
+    title = {Detecting Pedestrians Using Patterns of Motion and Appearance},
+    booktitle = {ICCV},
+    year = {2003},
+    pages = {734--741}
+}
+
+
+@inproceedings{mafea,
+ author = {Chen, Ming-yu and Mummert, Lily and Pillai, Padmanabhan and Hauptmann, Alexander and Sukthankar, Rahul},
+ title = {Controlling your TV with gestures},
+ booktitle = { Multimedia information retrieval},
+
+ year = {2010},
+ pages = {405--408},
+}
+
+@ARTICLE{maaa,
+    author = {Ross Cutler and Larry Davis},
+    title = {Robust Real-Time Periodic Motion Detection, Analysis, and Applications},
+    journal = {PAMI},
+    year = {1999},
+    volume = {22},
+    pages = {781--796}
+}
+
+
+@inproceedings{dldt,
+ author = {Yang, Yang and, Shu, Guang  and Shah, Mubarak },
+ title = {Semi-supervised Learning of Feature Hierarchies for Object Detection in a Video},
+ booktitle = {CVPR},
+
+ year = {2013},
 
 }

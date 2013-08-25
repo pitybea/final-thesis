@@ -8,12 +8,6 @@ A level-1 auxiliary file: chaps/6.aux
 The style file: newapa.bst
 A level-1 auxiliary file: chaps/thanks.aux
 Database file #1: chaps/egbib.bib
-Too many commas in name 1 of "Yang, Yang and, Shu, Guang and Shah, Mubarak" for entry dldt
-while executing---line 1385 of file newapa.bst
-Too many commas in name 1 of "Yang, Yang and, Shu, Guang and Shah, Mubarak" for entry dldt
-while executing---line 1385 of file newapa.bst
-Too many commas in name 1 of "Yang, Yang and, Shu, Guang and Shah, Mubarak" for entry dldt
-while executing---line 1385 of file newapa.bst
 Warning--empty year in bisearch
 You can't pop an empty literal stack for entry ha
 while executing---line 1459 of file newapa.bst
@@ -22,6 +16,4 @@ You can't pop an empty literal stack for entry hdp
 while executing---line 1459 of file newapa.bst
 Warning--empty year in dod
 Warning--empty year in siri
-Too many commas in name 1 of "Yang, Yang and, Shu, Guang and Shah, Mubarak" for entry dldt
-while executing---line 1459 of file newapa.bst
-(There were 6 error messages)
+(There were 2 error messages)

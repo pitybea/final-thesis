@@ -1,4 +1,4 @@
-\chapter{Pyramid Match Score for Detection}
+\chapter{Fast Voting by Pyramid Match}
 \label{chp5}
 
 \section{Introduction}
@@ -96,7 +96,7 @@ The Pyramid Matching method is straightforward. Divide the point space from fine
 
 In~\citep{pmk}, pyramid matching helps to define kernel functions for SVMs. The meaning of pyramid matching is that, it changes how the way to define similarity between two objects. Originally two objects are considered as similar if they both contain certain number of certain object parts, while the idea of one-one match will only favor the objects parts which have corresponding counterparts.
 
-Let $\gamma  = \{ {\bf{g}_1},{\bf{g}_2},...,{\bf{g}}_L\}$ be an ordered set, which contains all the dividing methods from fine to coarse. Let $N(S_1,S_2;{\bf{g}}_i)$ be the number of matched pairs of points under dividing method ${\bf{g}}_i$. Then the pyramid match score between $S_1$ and $S_2$ on $\gamma$ is defined by,
+Let $\gamma  = \{ {{\bf{g}}_1},{{\bf{g}}_2},...,{{\bf{g}}}_L\}$ be an ordered set, which contains all the dividing methods from fine to coarse. Let $N(S_1,S_2;{\bf{g}}_i)$ be the number of matched pairs of points under dividing method ${\bf{g}}_i$. Then the pyramid match score between $S_1$ and $S_2$ on $\gamma$ is defined by,
 
 \begin{equation}
 {\rm P}(S_1,S_2;\gamma)=\frac{{\omega}_1 \times N(S_1,S_2; {\bf{g}}_1) + \sum\limits^L_{i=2}{{\omega}_i\times( N(S_1,S_2;{\bf{g}}_i)-N(S_1,S_2;{\bf{g}}_{i-1}) ) }}{m}

@@ -4,7 +4,7 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Background and Related Work}{5}{chapter.2}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Efficient Thermal-image Detection by Appearance and Motion Combination}{13}{chapter.3}
+\contentsline {xchapter}{Voting by Local Visual-temporal Patterns for Efficient Thermal Feature Detection in Tunnels}{13}{chapter.3}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Target objects and detection results}}{15}{figure.3.1}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{15}{figure.3.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{15}{figure.3.1}
@@ -36,7 +36,7 @@
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Keypoint verification}}{37}{figure.3.13}
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Evaluation of keypoint verification}}{38}{figure.3.14}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Grouping of Object Parts by Motion for Detection}{41}{chapter.4}
+\contentsline {xchapter}{Object Detection by Common Fate Hough Voting}{41}{chapter.4}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Merit of the proposed method}}{44}{figure.4.1}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}{figure.4.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}{figure.4.1}
@@ -65,7 +65,7 @@
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Example Hough images}}{65}{figure.4.10}
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{66}{figure.4.11}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Pyramid Match Score for Detection}{69}{chapter.5}
+\contentsline {xchapter}{Fast Voting by Pyramid Match}{69}{chapter.5}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Best one-one match}}{74}{figure.5.1}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Pyramid matching procedure}}{74}{figure.5.2}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Visual-spatial space dividing}}{81}{figure.5.3}

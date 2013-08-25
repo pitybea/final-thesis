@@ -359,6 +359,11 @@ Levin, A. (2003).
 \newblock Unsupervised improvement of visual detectors using co-training.
 \newblock In {\em ICCV}, (pp.\ 626--633).
 
+\bibitem[\protect\citeauthoryear{Li}{Li}{2005}]{obof}
+Li, F.-f. (2005).
+\newblock A bayesian hierarchical model for learning natural scene categories.
+\newblock In {\em CVPR}, (pp.\ 524--531).
+
 \bibitem[\protect\citeauthoryear{Liu, Yuen \& Torralba}{Liu
   et~al.}{2011}]{lbt1}
 Liu, C., Yuen, J., \& Torralba, A. (2011).
@@ -447,6 +452,13 @@ Nair, V. \& Clark, J.~J. (2004).
 \newblock An unsupervised, online learning framework for moving object
   detection.
 \newblock In {\em CVPR}, (pp.\ 317--325).
+
+\bibitem[\protect\citeauthoryear{Noguchi \& Yanai}{Noguchi \&
+  Yanai}{2009}]{mtvvv}
+Noguchi, A. \& Yanai, K. (2009).
+\newblock Extracting spatio-temporal local features considering consecutiveness
+  of motions.
+\newblock In {\em ACCV}, (pp.\ 458--467).
 
 \bibitem[\protect\citeauthoryear{Ohba \& Ikeuchi}{Ohba \& Ikeuchi}{1997}]{ac18}
 Ohba, K. \& Ikeuchi, K. (1997).
@@ -652,9 +664,10 @@ Yang, M., Yu, T., \& Wu, Y. (2007).
 \newblock Game-theoretic multiple target tracking.
 \newblock In {\em ICCV}, (pp.\ 1--8).
 
-\bibitem[\protect\citeauthoryear{Yang \& Shah}{Yang \& Shah}{2013}]{dldt}
-Yang, Yang~and, S.~G. \& Shah, M. (2013).
-\newblock Controlling your tv with gestures.
+\bibitem[\protect\citeauthoryear{Yang, Shu \& Shah}{Yang et~al.}{2013}]{dldt}
+Yang, Y., Shu, G., \& Shah, M. (2013).
+\newblock Semi-supervised learning of feature hierarchies for object detection
+  in a video.
 \newblock In {\em CVPR}.
 
 \bibitem[\protect\citeauthoryear{Yarlagadda, Monroy \& Ommer}{Yarlagadda
