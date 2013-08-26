@@ -119,6 +119,12 @@ Dalal, N. \& Triggs, B. (2005).
 \newblock Histograms of oriented gradients for human detection.
 \newblock In {\em CVPR}, (pp.\ 886--893).
 
+\bibitem[\protect\citeauthoryear{Dalal, Triggs \& Schmid}{Dalal
+  et~al.}{2006}]{hogfl}
+Dalal, N., Triggs, B., \& Schmid, C. (2006).
+\newblock Human detection using oriented histograms of flow and appearance.
+\newblock In {\em ECCV}, (pp.\ 428--441).
+
 \bibitem[\protect\citeauthoryear{Davidson, Hautamaki \& Collin}{Davidson
   et~al.}{2008}]{nig}
 Davidson, P., Hautamaki, J., \& Collin, J. (2008).

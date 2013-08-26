@@ -1496,10 +1496,38 @@ pages = {1062-1069},
 
 
 @inproceedings{dldt,
- author = {Yang, Yang and, Shu, Guang  and Shah, Mubarak },
+ author = {Yang, Yang and Shu, Guang  and Shah, Mubarak },
  title = {Semi-supervised Learning of Feature Hierarchies for Object Detection in a Video},
  booktitle = {CVPR},
 
  year = {2013},
+
+}
+
+
+@inproceedings{mtvvv,
+
+  author = {Noguchi, Akitsugu and Yanai, Keiji},
+
+  booktitle = {ACCV},
+  year = {2009},
+  title = {Extracting Spatio-temporal Local Features Considering Consecutiveness of Motions},
+  pages = {458-467},
+}
+
+@INPROCEEDINGS{obof,
+    author = {Li, Fei-fei},
+    title = {A bayesian hierarchical model for learning natural scene categories},
+    booktitle = {CVPR},
+    year = {2005},
+    pages = {524--531}
+}
+
+
+@InProceedings{hogfl,
+  author       = "Navneet Dalal and Bill Triggs and Cordelia Schmid",
+  title        = "Human detection using oriented histograms of flow and appearance",
+  booktitle    = "ECCV",
+  year         = "2006",
 
 }
