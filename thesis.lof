@@ -55,27 +55,29 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Images for training}}{59}{figure.4.4}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{59}{figure.4.4}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{59}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Motion grouping results}}{59}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Inference procedure}}{60}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparisons with benchmark method}}{61}{figure.4.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{61}{figure.4.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{61}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Detection results}}{62}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Effect of the proposed weight assignment}}{64}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Example Hough images}}{65}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{66}{figure.4.11}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Motion grouping results}}{60}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Inference procedure}}{61}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparisons with benchmark method}}{62}{figure.4.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{62}{figure.4.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{62}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Detection results}}{64}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Effect of the proposed weight assignment}}{66}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Example Hough images}}{67}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{68}{figure.4.11}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Fast Voting by Pyramid Match}{69}{chapter.5}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Best one-one match}}{74}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Pyramid matching procedure}}{74}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Visual-spatial space dividing}}{81}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Detection results on UIUC cars}}{86}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Result evaluation using different dimensions}}{87}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Result evaluation using different largest fineness levels}}{88}{figure.5.6}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Result evaluation by using results from only visual or spatial information}}{89}{figure.5.7}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Result comparison with method using dividing methods of \citep {pmk}}}{90}{figure.5.8}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Result comparison with deformable part model~\citep {ac31}}}{91}{figure.5.9}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Comparison between Pyramid Match Score and Hough transform}}{92}{figure.5.10}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Average numbers of matched pairs of positive and negative test examples}}{93}{figure.5.11}
+\contentsline {xchapter}{Fast Voting by Pyramid Match}{71}{chapter.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Best one-one match}}{76}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Pyramid matching procedure}}{76}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Visual-spatial space dividing}}{83}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Detection results on UIUC cars}}{88}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Result evaluation using different dimensions}}{89}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Result evaluation using different largest fineness levels}}{90}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Result evaluation by using results from only visual or spatial information}}{91}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Result comparison with method using dividing methods of \citep {pmk}}}{92}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Result comparison with deformable part model~\citep {ac31}}}{93}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Comparison between Pyramid Match Score and Hough transform}}{94}{figure.5.10}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Average numbers of matched pairs of positive and negative test examples}}{95}{figure.5.11}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Detection results on P-campus dataset.}}{96}{figure.5.12}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Precision-Recall curves for the method, Hough transform, and common fate Hough transform.}}{97}{figure.5.13}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusion and outlook}{97}{chapter.6}
+\contentsline {xchapter}{Conclusion and outlook}{101}{chapter.6}

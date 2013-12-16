@@ -12,7 +12,7 @@ Most modern detection methods fall into two categories. Some~\citep{ij4,ac31,ac3
 
 For fusion of information from different channels. Voting systems are employed. Voting is benefited by the robustness of local information, and the informational property of global information.
 
- Most methods for detection mainly use either appearance information or motion information. And in the proposed methods, it will be addressed in the first two methods that when the information from these two channels are well combined, detection performance will be better.
+  Lots of methods for detection mainly use either appearance information or motion information. Following some previous work~\citep{pvm},  the first two methods will address that when the information from these two channels are well combined, detection performance will be better.
 
 
  The first method is developed mainly for real-time applications under limited computational power. This kind of scenarios include when using embedded sensors. This method can be considered as a three-step method. The first step deals with keypoints. It

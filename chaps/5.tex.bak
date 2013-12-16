@@ -3,7 +3,7 @@
 
 \section{Introduction}
 
-Bag-of-features~\citep{bgf} schema can be considered as the watershed between traditional and modern detection methods. Instead of considering each target object as a collection of raw optical elements, i.e., pixels, the schema tries to consider each object as a set of semantic elements or so-called object parts which are usually some strong local image features. Then one visual object is said to be a target object if it possesses some certain local features of certain numbers, while does not contain other certain local features of certain numbers. While this is quite straightforward, the very precious information encoded in local features' relative positions is left over. Following some pioneering ideas~\citep{spmk,ac30}, this chapter proposes a detection method which combines spatial and visual information of local image features in a  way pursuing both efficiency and effectiveness.
+Bag-of-features~\citep{obof,bgf} schema can be considered as the watershed between traditional and modern detection methods. Instead of considering each target object as a collection of raw optical elements, i.e., pixels, the schema tries to consider each object as a set of semantic elements or so-called object parts which are usually some strong local image features. Then one visual object is said to be a target object if it possesses some certain local features of certain numbers, while does not contain other certain local features of certain numbers. While this is quite straightforward, the very precious information encoded in local features' relative positions is left over. Following some pioneering ideas~\citep{spmk,ac30}, this chapter proposes a detection method which combines spatial and visual information of local image features in a  way pursuing both efficiency and effectiveness.
 
 The results of Chapter \ref{chp4} is promising on the two experimental datasets, however, the efficiency is not good due to the employment of Hough transform framework.
  Besides, inferring object status in a bottom-up manner fails to capture global information of each target object from the very beginning. And this is also why recently the detection results of Hough transform based methods need refinement by discriminative methods in order to be competitive. Still the way how to use spatial information of local features is very illuminate.
@@ -247,7 +247,7 @@ About $\gamma$, not only its members, but also the order of its members is impor
 
 
 \begin{equation}
-i<j, G({\bf p}_{S_1};{\bf g}_i)=G({\bf p}_{S_2};{\bf g}_i)\mbox{     }\mbox{     }\Rightarrow \mbox{     }\mbox{     }G({\bf p}_{S_1};{\bf g}_i)=G({\bf p}_{S_2};{\bf g}_i)\ .
+i<j, G({\bf p}_{S_1};{\bf g}_i)=G({\bf p}_{S_2};{\bf g}_i)\mbox{     }\mbox{     }\Rightarrow \mbox{     }\mbox{     }G({\bf p}_{S_1};{\bf g}_j)=G({\bf p}_{S_2};{\bf g}_j)\ .
 \label{eq:pms3}
 \end{equation}
 
@@ -554,6 +554,37 @@ While the training time between the two models are 1 minute vs 16 hours. In this
 \FloatBarrier
 
 In Figure \ref{fig:c57}, the average numbers of matched pairs of positive and negative test examples are shown. It is clear that under finer dividing methods, positive test examples possess larger average number of matched pairs, while under coarser dividing methods, negative test examples possess larger matched number of matched pairs.
+
+
+\subsection{P-campus}
+
+The method is also tested on a dataset of pedestrians~\citep{wang1}. For a fair comparison, both training images and test images are exactly same for method comparisons.
+In Fig. \ref{fig:pcam}, there are some detection results on the dataset.
+
+In Fig. \ref{fig:cmf}, there are the results of comparing the proposed method with ordinary Hough transform and common fate Hough transform~\citep{wang1}. It can be seen that, common fate Hough transform performs the best since the method employs motion information. The proposed method almost perform as well as the Hough transform on this dataset.
+
+The method detects at a frame rate of 8 FPS, while common fate Hough transform needs two minutes to deal with one frame. The method is as almost 1000 as fast as common fate Hough transform. Theoretically, the method is about 200 times faster. Since the size of codebook is 5000, and the proposed method needs 25 operations, while Hough transform needs 5000.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.23\textwidth,bb=0 0 720 576]{org36.jpg}
+\includegraphics[width=0.23\textwidth,bb=0 0 720 576]{org71.jpg}\\
+\includegraphics[width=0.23\textwidth,bb=0 0 720 576]{org261.jpg}
+\includegraphics[width=0.23\textwidth,bb=0 0 720 576]{org376.jpg}
+\caption{Detection results on P-campus dataset.}
+\label{fig:pcam}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+\centering
+
+\includegraphics[width=0.44\textwidth]{cmf.eps}
+
+
+\caption{Precision-Recall curves for the method, Hough transform, and common fate Hough transform.}
+\label{fig:cmf}
+\end{figure}
 
 \begin{comment}
 \subsection{VOC2007 Cars}
