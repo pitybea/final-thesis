@@ -16,24 +16,24 @@
 \contentsline {section}{\numberline {3.1}Introduction}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}Related Work}{15}{section.3.2}
 \contentsline {section}{\numberline {3.3}Application background}{17}{section.3.3}
-\contentsline {section}{\numberline {3.4}Detection Pipeline}{17}{section.3.4}
+\contentsline {section}{\numberline {3.4}Detection Pipeline}{18}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Keypoint Detection}{18}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Keypoint Verification}{19}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Keypoint Clustering}{21}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Keypoint Cluster Verification by Appearance}{21}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Keypoint Cluster Tracking}{24}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}Keypoint Cluster Verification by Motion}{25}{subsection.3.4.6}
-\contentsline {subsection}{\numberline {3.4.7}Pipeline Summary}{25}{subsection.3.4.7}
-\contentsline {subsection}{\numberline {3.4.8}Object Detection}{26}{subsection.3.4.8}
-\contentsline {subsection}{\numberline {3.4.9}Voting along a Trajectory}{26}{subsection.3.4.9}
-\contentsline {section}{\numberline {3.5}Experimental Results}{26}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}First Experiment}{27}{subsection.3.5.1}
-\contentsline {subsubsection}{Data}{27}{section*.5}
-\contentsline {subsubsection}{Implementation Settings}{27}{section*.6}
-\contentsline {subsubsection}{Detection Results}{33}{section*.7}
-\contentsline {subsection}{\numberline {3.5.2}Second Experiment}{33}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Experimental results on data collected by ordinary cameras}{36}{section.3.6}
-\contentsline {section}{\numberline {3.7}Chapter Conclusion}{39}{section.3.7}
+\contentsline {subsection}{\numberline {3.4.3}Keypoint Clustering}{22}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Keypoint Cluster Verification by Appearance}{22}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Keypoint Cluster Tracking}{25}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.6}Keypoint Cluster Verification by Motion}{26}{subsection.3.4.6}
+\contentsline {subsection}{\numberline {3.4.7}Pipeline Summary}{26}{subsection.3.4.7}
+\contentsline {subsection}{\numberline {3.4.8}Object Detection}{27}{subsection.3.4.8}
+\contentsline {subsection}{\numberline {3.4.9}Voting along a Trajectory}{27}{subsection.3.4.9}
+\contentsline {section}{\numberline {3.5}Experimental Results}{27}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Experiment One}{28}{subsection.3.5.1}
+\contentsline {subsubsection}{Data}{28}{section*.5}
+\contentsline {subsubsection}{Implementation Settings}{28}{section*.6}
+\contentsline {subsubsection}{Detection Results}{34}{section*.7}
+\contentsline {subsection}{\numberline {3.5.2}Experiment Two}{34}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Experimental results on data collected by ordinary cameras}{37}{section.3.6}
+\contentsline {section}{\numberline {3.7}Chapter Conclusion}{40}{section.3.7}
 \contentsline {chapter}{\numberline {4}Object Detection by Common Fate Hough Voting}{41}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{41}{section.4.1}
 \contentsline {section}{\numberline {4.2}Related Work}{45}{section.4.2}

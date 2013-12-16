@@ -1,14 +1,14 @@
-\chapter{Efficient Thermal-image  Detection by Appearance and Motion Combination}
+\chapter{Voting by Local Visual-temporal Patterns for Efficient Thermal Feature Detection in Tunnels}
 \label{chp3}
 
 \section{Introduction}
 
-From time to time, efficient detection methods under limited computational power are very applicable in various areas, such as driving assistance using embedded sensors. Here, a method pursuing efficiency and real-time detection is proposed.
+From time to time, efficient detection methods under limited computational power are important in various areas, such as driving assistance using embedded sensors. In this chapter, a method pursuing efficiency and real-time detection is proposed.
 The proposed detection method makes use of both
-appearance and motion information of the target objects. By well optimizing of the detecting pipeline, the
-method works in real time, and gives 100\% detection rate and 0\% false alarm rate in one experiment of data collected by infrared cameras.
+appearance and motion information of the target objects. By well optimizing the detecting pipeline, the
+method works in real time, and gives promising detection results in experiments  carried on data collected by infrared cameras.
 
-As always, detection performance and efficiency are the two important aspects of this method. Challenges come from the need to distinguish noisy objects as shown in Figure~\ref{fig:first} and the real-time requirement. In experiments, besides the target object a lot of noisy objects also exist. Some of the noisy objects cannot even by distinguished from the target objects by only appearance.  The clutter property of the sensed data makes the detection challenging. The proposed method meets this challenge by making use of both appearance and temporal information of the target objects. There are three main steps in the method.
+As always, detection performance and efficiency are the two important aspects of this method. Challenges come from the need to distinguish noisy objects as shown in Figure~\ref{fig:first} and the real-time requirement. In experiments, besides the target object a lot of noisy objects also exist. Some of the noisy objects cannot be even by distinguished from the target objects by only appearance.  The clutter property of the sensed data makes the detection challenging. The proposed method meets this challenge by making use of both appearance and temporal information of the target objects. There are three main steps in the method.
 
 The first step deals with keypoints, and  it takes original data as input, and outputs keypoint clusters as detection hypotheses. In this step, keypoints are detected, verified and then clustered. To detect keypoints, all points on each frame are uniformly sampled and filtered with pre-set intensity thresholds.  Then the keypoints are verified by a simple keypoint appearance model   powered by \emph{k}-means. At the end of the first step, the keypoints are clustered based on the Euclidean distance.
 
@@ -88,7 +88,9 @@ is solving the high time complexity in the data association problem.
 
 When developing the method, potential application scenarios are within consideration. The method aims to perform detection in real time, and serve as an effective unit in positioning automobiles in tunnel environment.
 
-Positioning of automobiles acts an important role in autonomous driving, and it is also of great importance for driving assistance, vehicle navigation, etc. When GPS sensors function properly, it is usually easy for an automobile to estimate the position of  itself. While in tunnel environment, for most of the time, there is no GPS signals available. A new positioning system which functions properly in tunnel environment is very necessary~\citep{nig}.
+
+
+Positioning of vehicles acts as a fundamental role in autonomous driving, and is also of great importance for driving assistance, vehicle navigation, etc. When GPS sensors function properly, the task is easy. While in a tunnel environment, there are no GPS signals available for most of the time. A new positioning system which functions properly in a tunnel environment is necessary~\citep{nig}. An object detection method which can be used for positioning systems in tunnels is here proposed.
 
 In most tunnels which appear on express ways in Japan, there are lots of signs which appear at equal intervals. Attention can be focused on the emergency telephone indicators, which appear every 200 meters in tunnels. The absolute coordinates of the emergency telephone indicators can be obtained by the method of~\citep{xue}. While travelling in tunnels, if the emergency telephone indicators can be sensed, and the distance from the automobile to the indicators can be estimated, then the absolute position of the automobile can be inferred. Detection methods i.e.~\citep{ac23} based on ordinary cameras fail due to darkness. In experiments infrared cameras, which are usually equipped by recent intelligent vehicles and  suitable in dark environment, are used.
 

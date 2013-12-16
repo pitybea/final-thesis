@@ -11,30 +11,30 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Keypoint detection}}{19}{figure.3.2}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{19}{figure.3.2}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{19}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Keypoint verification and clustering}}{20}{figure.3.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{20}{figure.3.3}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{20}{figure.3.3}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{20}{figure.3.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{20}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Keypoint cluster verification by appearance}}{23}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Keypoint detection comparison}}{28}{figure.3.5}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{28}{figure.3.5}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{28}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Positive and negative training examples}}{28}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Original data and detection results}}{29}{figure.3.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{29}{figure.3.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{29}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Keypoint verification and clustering}}{30}{figure.3.8}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{30}{figure.3.8}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{30}{figure.3.8}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{30}{figure.3.8}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{30}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Keypoint cluster verification by appearance}}{31}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Keypoint cluster tracking}}{31}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Detection results}}{32}{figure.3.11}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Detection results}}{35}{figure.3.12}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Keypoint verification}}{37}{figure.3.13}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Evaluation of keypoint verification}}{38}{figure.3.14}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Keypoint verification and clustering}}{21}{figure.3.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{21}{figure.3.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{21}{figure.3.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{21}{figure.3.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{21}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Keypoint cluster verification by appearance}}{24}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Keypoint detection comparison}}{29}{figure.3.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{29}{figure.3.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{29}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Positive and negative training examples}}{29}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Original data and detection results}}{30}{figure.3.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{30}{figure.3.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{30}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Keypoint verification and clustering}}{31}{figure.3.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{31}{figure.3.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{31}{figure.3.8}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{31}{figure.3.8}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{31}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Keypoint cluster verification by appearance}}{32}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Keypoint cluster tracking}}{32}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Detection results}}{33}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Detection results}}{36}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Keypoint verification}}{38}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Evaluation of keypoint verification}}{39}{figure.3.14}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Object Detection by Common Fate Hough Voting}{41}{chapter.4}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Merit of the proposed method}}{44}{figure.4.1}

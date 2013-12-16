@@ -12,11 +12,11 @@ The sliding-window methods consider all sub-images by using classifiers to decid
 The Hough transform based methods, represented by the ISM~\citep{lb1}, start by detection of object parts, and object hypotheses are given by summing up all the votes voted by the object parts.
 \end{comment}
 
-The reason why the method proposed in  Chapter \ref{chp3} fails to work well in complex scenario, while performs well in detecting simple objects is that its model is too simple. Objects, especially pedestrians are actually structured, and different part will have different appearance.
+The reason why the method proposed in  Chapter \ref{chp3} fails to work  in complex scenarios, while performs well in detecting simple objects, is that its model is simple. Pedestrians and bicycle riders are actually structured, and different parts of them  have different appearance models.
 
 Effective video-based detection methods are of great importance, and this chapter proposes a method to localize and label objects in complex scenarios.
 
-The method is able to detect pedestrians and bicycle riders in complex scene. The method is inspired by the common fate principle, which is a mechanism of visual perception in human beings, and which states  tokens moving or functioning in a similar manner tend to be  perceived
+The method is able to detect pedestrians and bicycle riders in complex scene. The method is inspired by the common fate principle, which is a mechanism of visual perception in human beings, and which states that tokens moving or functioning in a similar manner tend to be  perceived
 as one unit. This method embeds the principle in an Implicit Shape Model (ISM). In this method, keypoint-based
 object parts are firstly detected and then grouped by their motion patterns. Based on the grouping results, when the object parts vote for object centers and labels, each of the votes belonging to the same object part is assigned a weight according to its consistence with the votes of other object parts in the same motion group. Afterwards, the peaks which correspond to detection hypotheses on the Hough image formed by summing up all weighted votes become easier to find. Thus this method  performs better in both position and label estimations. Experiments show the effectiveness of this method in terms of detection accuracy.
 
