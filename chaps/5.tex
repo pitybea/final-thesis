@@ -563,7 +563,9 @@ In Fig. \ref{fig:pcam}, there are some detection results on the dataset.
 
 In Fig. \ref{fig:cmf}, there are the results of comparing the proposed method with ordinary Hough transform and common fate Hough transform~\citep{wang1}. It can be seen that, common fate Hough transform performs the best since the method employs motion information. The proposed method almost perform as well as the Hough transform on this dataset.
 
-The method detects at a frame rate of 8 FPS, while common fate Hough transform needs two minutes to deal with one frame. The method is as almost 1000 as fast as common fate Hough transform. Theoretically, the method is about 200 times faster. Since the size of codebook is 5000, and the proposed method needs 25 operations, while Hough transform needs 5000.
+
+
+The method detects at a frame rate of 8 frames per second with multi-thread accelerations, while common fate Hough transform needs two minutes to deal with one frame in its old implementation. For a very fair comparison, multi-thread accelerations are disabled for this method, and both \citep{ac9} and \citep{wang1} are re-implemented and re-compiled under the same settings. Then all three methods run on the same computer, and the time consumptions are reported in Table \ref{c5tb:tb1}. Obviously, the proposed method consumes the shortest time. There are more than 5,800 codes in the codebook, and the proposed method is more than 200 times faster than a method based on Hough transform to deal with one candidate sub-image in theory. When dealing with all candidate sub-images in one frame, it is only about 5 times faster. This is because that calculations for one sub-image can be cached and can be used for the decisions on its neighboring sub-images. For example, if two sub-images share the same image feature on the frame, and if best matched codes are found for this image feature, these codes can be used for decisions of both the sub-images.
 
 \begin{figure}
 \centering
@@ -586,6 +588,22 @@ The method detects at a frame rate of 8 FPS, while common fate Hough transform n
 \label{fig:cmf}
 \end{figure}
 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+     \hline
+     \hline
+                               & Total time (ms) & Average time (ms)   \\
+    \hline
+    Proposed method      &	363,678 & 4,603 \\
+    Hough transform      & 	1,986,583 & 25,146 \\
+    Common fate Hough transform       &	8,296,161 & 105,014\\
+   \hline
+\end{tabular}
+\caption[Comparisons of time consumptions]{Time consumptions of the proposed method, \citep{ac9}, and \citep{wang1}. Total time means the running time on all the 79 testing frames, and average time means average running time per frame.}\label{c5tb:tb1}
+\end{table}
+
 \begin{comment}
 \subsection{VOC2007 Cars}
 
@@ -603,7 +621,7 @@ What is different from the experiments on UIUC cars is that, $\omega$s are given
 \section{Discussion}
 \label{dis5}
 \subsection{Time Complexity}
-This time complexity of matching two point sets is $O(dml_{max}^2)$. Here, $d$ is the dimension of each visual-spatial point, $m$ is the size of the point set of each object hypothesis, and $l_{max}$ is the largest fineness level, which is usually 5. The match complexity of~\citep{pmk} is $O(dmL), L=l_{max}$. However, this is just the time complexity of matching between two point sets. To give the confidence of a hypothesis, the time complexity of the proposed method is still $O(dml_{max}^2)$, while for~\citep{pmk}, it is $O(dml_{max}n_{sup})$, where $n_{sup}$ is the number of support vectors in the used SVM, which is usually larger than 5. So, considering about the time complexity to give confidence for a hypothesis, the proposed method is no worse than~\citep{pmk}. Also $n_{sup}$ is related to the training dataset, while $l_{max}$ is less related. The case of ~\citep{spmk} is almost the same with~\citep{pmk}.
+The time complexity of find a sub-optimal best matching between two point sets is $O(dml_{max}^2)$ when pyramid matching is employed. Here, $d$ is the dimension of each visual-spatial point, $m$ is the size of the point set of each object hypothesis, and $l_{max}$ is the largest fineness level, which is usually 5. The match complexity of~\citep{pmk} is $O(dmL), L=l_{max}$. However, this is just the time complexity of matching between two point sets. To give the confidence of a hypothesis, the time complexity of the proposed method is still $O(dml_{max}^2)$, while for~\citep{pmk}, it is $O(dml_{max}n_{sup})$, where $n_{sup}$ is the number of support vectors in the used SVM, which is usually larger than 5. So, considering about the time complexity to give confidence for a hypothesis, the proposed method is no worse than~\citep{pmk}. Also $n_{sup}$ is related to the training dataset, while $l_{max}$ is less related. The case of ~\citep{spmk} is almost the same with~\citep{pmk}.
 
 In theory, the time complexity of methods based on Hough transform based methods should be $O(dm{n_{tr}}^{\frac 1 {1+\varepsilon}})$, if the $k$NN framework is employed as in Chapter \ref{chp4}. Here $n_{tr}$ is the size of the codebook, which in the case of UIUC cars is about $50\times 500=25,000$. And, $\varepsilon > 0$ is a factor which affects the quality of the $k$NN. And compared to PMS, this is 1,000 times time-consuming. However, methods based on Hough transform usually does not consider about object detection in the sliding window manner, which makes such methods unable to well deal with scale changes.
 
