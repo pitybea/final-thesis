@@ -3,17 +3,17 @@
 \contentsline {xchapter}{Introduction}{1}{chapter.1}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Background and Related Work}{5}{chapter.2}
-\contentsline {table}{\numberline {2.1}{\ignorespaces Power comparisons between computers and humans}}{6}{table.2.1}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Comparisons in visual capacities between computers and humans}}{6}{table.2.1}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Voting by Local Visual-temporal Patterns for Efficient Thermal Feature Detection in Tunnels}{13}{chapter.3}
-\contentsline {table}{\numberline {3.1}{\ignorespaces Pipeline summary}}{26}{table.3.1}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Detection rate and false alarm rate}}{34}{table.3.2}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Detection rate and false alarm rate}}{35}{table.3.3}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Final detection rate and false alarm rate}}{37}{table.3.4}
+\contentsline {xchapter}{Voting by Local Visual-temporal Patterns for Efficient Thermal Feature Detection in Tunnels}{15}{chapter.3}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Pipeline summary}}{28}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Detection rate and false alarm rate}}{36}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Detection rate and false alarm rate}}{39}{table.3.3}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Final detection rate and false alarm rate}}{39}{table.3.4}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Object Detection by Common Fate Hough Voting}{41}{chapter.4}
+\contentsline {xchapter}{Object Detection by Common Fate Hough Voting}{43}{chapter.4}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Fast Voting by Pyramid Match}{71}{chapter.5}
-\contentsline {table}{\numberline {5.1}{\ignorespaces Comparisons of time consumptions}}{98}{table.5.1}
+\contentsline {xchapter}{Fast Voting by Pyramid Match}{73}{chapter.5}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Comparisons of time consumptions}}{100}{table.5.1}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusion and outlook}{101}{chapter.6}
+\contentsline {xchapter}{Conclusion and outlook}{103}{chapter.6}

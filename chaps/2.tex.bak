@@ -1,12 +1,13 @@
 \chapter{Background and Related Work}
 \label{chp2}
 
+
+Every day, new technologies come into practice from labs, make daily life more convenient, and promote advances in human culture. Among these technologies, the emerging of text searching engines like google is a great milestone. Retrieving images~\citep{bisearch} or other multi-media data  in a way similar to retrieving text is even more attractive, especially for the popularity of smart phones nowadays. There are still technical obstacles for this beautiful outlook. Deciding semantic labels for images is one, and detection of target objects from images is another. The efforts in this thesis try to contribute to detecting target objects from images or image sequences.
+
+This chapter first discusses possible advantages in human beings, and how these advantages will activate new machine vision methods in Section \ref{ch2vh}. Then a few recent advances in artificial intelligence which have close relationship with machine vision are reviewed in Section \ref{ch2ai}. This chapter also reviews basics and advances in visual object detection in Section \ref{ch2p3} and \ref{ch2p4}, and finally summarises by giving why the efforts of the thesis are important in Section \ref{ch2p5}.
+
 \section{Vision in Humans and Computers}
-
-Everyday, new technologies emerge, make everyday life more convenient, and promote advances in human culture. Among these technologies, the emergence of text searching engines like google is a great milestone. Retrieving images~\citep{bisearch} or other multi-media data  in a way similar to retrieving text is even more attractive, especially for the popularity of smart phones nowadays. There are still technical obstacles for this beautiful outlook. Deciding semantic labels for images is one, and detection of target objects from images is another.
-
-
-
+\label{ch2vh}
 The computational power of humans is not any more competitive to computers, especially nowadays, when computational ability can be conveniently accessed from the cloud.
 Still when talking about the performance of visual recognition and detection under general situations, humans are champion. In computer vision area, besides bar scanners and optical character recognition, few detection methods are employed in real-world applications, except that face detection methods are employed in ordinary cameras.
 
@@ -35,13 +36,14 @@ When compared with humans, computers will win at almost every aspect of hardware
 
 Human babies are taken good care of, and trained to perform very simple visual tasks for months with large amount of examples, which makes the training quality very solid. The performance of new born babies also lead to considerations about to what degree are the visual abilities decided by genes. If the training procedure has taken as long as millions of years, are there possibilities for computers to win in future?
 
-The success of auditory speech recognition and the successful deployment in industry~\citep{siri} encourage vision researchers. Also new sensors advance recognition performance, such as Kinect, which can hopefully fill the gap of representative models' quality between computers and humans. Object recognition methods based on 2D images with 3D model~\citep{r3d} also makes it more possible for computers to share same representative models.  Computational power can be used to make up with the short slab of training. For example, training one model for relative small amount of time with thousands of computers~\citep{dnnnn} is feasible with parrel training. The recent deep learning~\citep{dlearn} methods try to fusion representative model with decision procedure to act more like what humans might do. These new achievements are expected to fill up the gap between humans and computers in aspects of representative model, decision procedure, and training quality.
+The success of auditory speech recognition and the successful deployment in industry~\citep{siri} encourage vision researchers. Also new sensors advance recognition performance, such as Kinect, which can hopefully fill the gap of representative models' quality between computers and humans. Object recognition methods based on 2D images with 3D model~\citep{r3d} also makes it more possible for computers to share same representative models.  Computational power can be used to make up with the short slab of training. For example, training one model for relative small amount of time with thousands of computers~\citep{dnnnn} is feasible with parallel training. The recent deep learning~\citep{dlearn} methods try to fusion representative model with decision procedure to act more like what humans might do. These new achievements are expected to fill up the gap between humans and computers in aspects of representative model, decision procedure, and training quality.
 
 
 
 While the methods proposed in this thesis explore the information which can be further made use of, i.e., fusion of temporal and visual information, and fusion of the visual and spatial information of different parts of the same object. The efforts here shall belong to decision procedure, and information fusion mechanism.
 
 \section{Artificial Intelligence}
+\label{ch2ai}
 AI (Artificial Intelligence) includes a very wide range of topics, of which, computer vision is comparably difficult.
 
 The author of this thesis is positive about that fact that computers can outperform humans in visual tasks for the reasons in the previous section. Then if we move towards the correct direction, one step forward will lead to one step nearer, and vice versa.
@@ -57,12 +59,12 @@ development of mechanisms of high abstraction level for single-class detection a
 Actually, perceptual mechanisms in humans are consistent with the above arguments. Recall how humans are capable of detecting previously unseen objects, while they acquire knowledge of target objects through textual descriptions.
 
 \section{Basics of Detection Methods}
-
-In the previous section, the possible reason why humans perform better in detection is discussed. The main limits of computers are of software. Based on this, researchers present new detection methods or new methods for supporting detection, which includes: 1) new image features or new representative models, 2) new decision procedures, or 3) better searching techniques in solution space.
+\label{ch2p3}
+In the previous section, the possible reason how humans perform better in detection is discussed. The main limits of computers are of software. Based on this, researchers present new detection methods or new methods for supporting detection, which includes: 1) new image features or new representative models, 2) new decision procedures, or 3) better searching techniques in solution space.
 \subsection{Image Features}
-Image features are very important. Simple image features include features in the form of keypoints, image patches, edges,  silhouette, shape~\citep{scontext}, or textures. There are also frameworks for combining multiple different image features or information from multiple channels~\citep{regionc,bgf,lbp,lss}, and these belong to image features at middle level~\citep{midf}. At a even higher level, image features can be  organized in patterns. For example, modeling human body as a stick model~\citep{stickb}.
+Image features are very important. Simple image features include features in the form of keypoints, image patches, edges,  silhouette, shape~\citep{scontext}, or textures. There are also frameworks for combining multiple different image features or information from multiple channels~\citep{regionc,bgf,lbp,lss}, and these belong to image features at middle level~\citep{midf}. At an even higher level, image features can be  organized in patterns. For example, modeling human body as a stick model~\citep{stickb}.
 
-The invariance under illumination, scale, and rotation are basic requirement for image features, while some keypoint features~\citep{ij2,o12,o14,o15,o2} fulfill this requirement. Image features which encode global positional information perform well in human detection, i.e., Histograms of Oriented
+The invariance under illumination, scale, and rotation are basic requirements for image features, while some keypoint features~\citep{ij2,o12,o14,o15,o2} fulfill this requirement. Image features which encode global positional information perform well in human detection, i.e., Histograms of Oriented
 Gradients~\citep{ij4}. Differentials at different orders can also be used as descriptive features~\citep{regionc}.
 
 
@@ -89,7 +91,7 @@ Take the testing process of linear support vector machine as an example. When a 
 And when using this vector by support vector machine for decisions, it is simple linear add-up of the decisions of each single feature. So decision score for each image feature can be calculated. Thus the upper-bound and low-bound for all sub-images contained in a certain rectangle can be estimated, which can be used to filter out lots of rectangles definitely do not contain the best solution. This filtering out is the core for efficiency.
 
 \section{Advances in Object Detection}
-
+\label{ch2p4}
 Three methods will be proposed in the thesis, and methods most related to each method will be further reviewed in the corresponding chapter. Here we review some recent advances in object detection.
 
 Detection is drawing a lot of attention~\citep{ij4,ac31,ac30,ac4,ac32,ac29,ac28,ac1,ac9,ac2,ac3,ac22,lb1,ac5,ac10,ac21,ac18}, and it will continue to. While some methods are unique and very heuristic.
@@ -116,4 +118,6 @@ Most rotation-aware methods follow~\citep{ac20}. This method firstly trains a ne
 in space; (b) a different appearance from their surroundings [23, 25]; (c) sometimes it is unique within the image
 and stands out as salient
 \end{comment}
+\section{Summary}
+\label{ch2p5}
 

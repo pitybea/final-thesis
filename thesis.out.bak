@@ -11,54 +11,55 @@
 \BOOKMARK [2][]{subsection.2.3.2}{2.3.2 Decision Procedure}{section.2.3}% 11
 \BOOKMARK [2][]{subsection.2.3.3}{2.3.3 Solution Space Explore}{section.2.3}% 12
 \BOOKMARK [1][]{section.2.4}{2.4 Advances in Object Detection}{chapter.2}% 13
-\BOOKMARK [0][]{chapter.3}{3 Voting by Local Visual-temporal Patterns for Efficient Thermal Feature Detection in Tunnels}{}% 14
-\BOOKMARK [1][]{section.3.1}{3.1 Introduction}{chapter.3}% 15
-\BOOKMARK [1][]{section.3.2}{3.2 Related Work}{chapter.3}% 16
-\BOOKMARK [1][]{section.3.3}{3.3 Application background}{chapter.3}% 17
-\BOOKMARK [1][]{section.3.4}{3.4 Detection Pipeline}{chapter.3}% 18
-\BOOKMARK [2][]{subsection.3.4.1}{3.4.1 Keypoint Detection}{section.3.4}% 19
-\BOOKMARK [2][]{subsection.3.4.2}{3.4.2 Keypoint Verification}{section.3.4}% 20
-\BOOKMARK [2][]{subsection.3.4.3}{3.4.3 Keypoint Clustering}{section.3.4}% 21
-\BOOKMARK [2][]{subsection.3.4.4}{3.4.4 Keypoint Cluster Verification by Appearance}{section.3.4}% 22
-\BOOKMARK [2][]{subsection.3.4.5}{3.4.5 Keypoint Cluster Tracking}{section.3.4}% 23
-\BOOKMARK [2][]{subsection.3.4.6}{3.4.6 Keypoint Cluster Verification by Motion}{section.3.4}% 24
-\BOOKMARK [2][]{subsection.3.4.7}{3.4.7 Pipeline Summary}{section.3.4}% 25
-\BOOKMARK [2][]{subsection.3.4.8}{3.4.8 Object Detection}{section.3.4}% 26
-\BOOKMARK [2][]{subsection.3.4.9}{3.4.9 Voting along a Trajectory}{section.3.4}% 27
-\BOOKMARK [1][]{section.3.5}{3.5 Experimental Results}{chapter.3}% 28
-\BOOKMARK [2][]{subsection.3.5.1}{3.5.1 Experiment One}{section.3.5}% 29
-\BOOKMARK [2][]{subsection.3.5.2}{3.5.2 Experiment Two}{section.3.5}% 30
-\BOOKMARK [1][]{section.3.6}{3.6 Experimental results on data collected by ordinary cameras}{chapter.3}% 31
-\BOOKMARK [1][]{section.3.7}{3.7 Chapter Conclusion}{chapter.3}% 32
-\BOOKMARK [0][]{chapter.4}{4 Object Detection by Common Fate Hough Voting}{}% 33
-\BOOKMARK [1][]{section.4.1}{4.1 Introduction}{chapter.4}% 34
-\BOOKMARK [1][]{section.4.2}{4.2 Related Work}{chapter.4}% 35
-\BOOKMARK [1][]{section.4.3}{4.3 Application Background}{chapter.4}% 36
-\BOOKMARK [1][]{section.4.4}{4.4 Common Fate Hough Transform}{chapter.4}% 37
-\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Common Fate Weights}{section.4.4}% 38
-\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 Motion Grouping}{section.4.4}% 39
-\BOOKMARK [2][]{subsection.4.4.3}{4.4.3 Codebook}{section.4.4}% 40
-\BOOKMARK [1][]{section.4.5}{4.5 Detection}{chapter.4}% 41
-\BOOKMARK [1][]{section.4.6}{4.6 Experimental Results}{chapter.4}% 42
-\BOOKMARK [2][]{subsection.4.6.1}{4.6.1 \040Campus-scene Detection }{section.4.6}% 43
-\BOOKMARK [2][]{subsection.4.6.2}{4.6.2 Wild-scene Detection}{section.4.6}% 44
-\BOOKMARK [1][]{section.4.7}{4.7 Chapter Conclusion}{chapter.4}% 45
-\BOOKMARK [0][]{chapter.5}{5 Fast Voting by Pyramid Match}{}% 46
-\BOOKMARK [1][]{section.5.1}{5.1 Introduction}{chapter.5}% 47
-\BOOKMARK [1][]{section.5.2}{5.2 Related Work}{chapter.5}% 48
-\BOOKMARK [1][]{section.5.3}{5.3 Pyramid Match Score}{chapter.5}% 49
-\BOOKMARK [2][]{subsection.5.3.1}{5.3.1 Pyramid Matching}{section.5.3}% 50
-\BOOKMARK [2][]{subsection.5.3.2}{5.3.2 Training and Detection}{section.5.3}% 51
-\BOOKMARK [2][]{subsection.5.3.3}{5.3.3 Dividing Visual-spatial Space}{section.5.3}% 52
-\BOOKMARK [2][]{subsection.5.3.4}{5.3.4 Deciding Weights for Dividing Methods}{section.5.3}% 53
-\BOOKMARK [2][]{subsection.5.3.5}{5.3.5 Learning Weights for Dividing Methods}{section.5.3}% 54
-\BOOKMARK [1][]{section.5.4}{5.4 Experimental Results}{chapter.5}% 55
-\BOOKMARK [2][]{subsection.5.4.1}{5.4.1 UIUC Cars}{section.5.4}% 56
-\BOOKMARK [2][]{subsection.5.4.2}{5.4.2 P-campus}{section.5.4}% 57
-\BOOKMARK [1][]{section.5.5}{5.5 Discussion}{chapter.5}% 58
-\BOOKMARK [2][]{subsection.5.5.1}{5.5.1 Time Complexity}{section.5.5}% 59
-\BOOKMARK [2][]{subsection.5.5.2}{5.5.2 Usage of Visual and Spatial Information}{section.5.5}% 60
-\BOOKMARK [1][]{section.5.6}{5.6 Chapter Conclusion}{chapter.5}% 61
-\BOOKMARK [0][]{chapter.6}{6 Conclusion and outlook}{}% 62
-\BOOKMARK [0][]{chapter*.8}{Bibliography}{}% 63
-\BOOKMARK [0][]{chapter*.9}{Acknowledgements}{}% 64
+\BOOKMARK [1][]{section.2.5}{2.5 Summary}{chapter.2}% 14
+\BOOKMARK [0][]{chapter.3}{3 Voting by Local Visual-temporal Patterns for Efficient Thermal Feature Detection in Tunnels}{}% 15
+\BOOKMARK [1][]{section.3.1}{3.1 Introduction}{chapter.3}% 16
+\BOOKMARK [1][]{section.3.2}{3.2 Related Work}{chapter.3}% 17
+\BOOKMARK [1][]{section.3.3}{3.3 Application background}{chapter.3}% 18
+\BOOKMARK [1][]{section.3.4}{3.4 Detection Pipeline}{chapter.3}% 19
+\BOOKMARK [2][]{subsection.3.4.1}{3.4.1 Keypoint Detection}{section.3.4}% 20
+\BOOKMARK [2][]{subsection.3.4.2}{3.4.2 Keypoint Verification}{section.3.4}% 21
+\BOOKMARK [2][]{subsection.3.4.3}{3.4.3 Keypoint Clustering}{section.3.4}% 22
+\BOOKMARK [2][]{subsection.3.4.4}{3.4.4 Keypoint Cluster Verification by Appearance}{section.3.4}% 23
+\BOOKMARK [2][]{subsection.3.4.5}{3.4.5 Keypoint Cluster Tracking}{section.3.4}% 24
+\BOOKMARK [2][]{subsection.3.4.6}{3.4.6 Keypoint Cluster Verification by Motion}{section.3.4}% 25
+\BOOKMARK [2][]{subsection.3.4.7}{3.4.7 Pipeline Summary}{section.3.4}% 26
+\BOOKMARK [2][]{subsection.3.4.8}{3.4.8 Object Detection}{section.3.4}% 27
+\BOOKMARK [2][]{subsection.3.4.9}{3.4.9 Voting along a Trajectory}{section.3.4}% 28
+\BOOKMARK [1][]{section.3.5}{3.5 Experimental Results}{chapter.3}% 29
+\BOOKMARK [2][]{subsection.3.5.1}{3.5.1 Experiment One}{section.3.5}% 30
+\BOOKMARK [2][]{subsection.3.5.2}{3.5.2 Experiment Two}{section.3.5}% 31
+\BOOKMARK [1][]{section.3.6}{3.6 Experimental results on data collected by ordinary cameras}{chapter.3}% 32
+\BOOKMARK [1][]{section.3.7}{3.7 Chapter Conclusion}{chapter.3}% 33
+\BOOKMARK [0][]{chapter.4}{4 Object Detection by Common Fate Hough Voting}{}% 34
+\BOOKMARK [1][]{section.4.1}{4.1 Introduction}{chapter.4}% 35
+\BOOKMARK [1][]{section.4.2}{4.2 Related Work}{chapter.4}% 36
+\BOOKMARK [1][]{section.4.3}{4.3 Application Background}{chapter.4}% 37
+\BOOKMARK [1][]{section.4.4}{4.4 Common Fate Hough Transform}{chapter.4}% 38
+\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Common Fate Weights}{section.4.4}% 39
+\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 Motion Grouping}{section.4.4}% 40
+\BOOKMARK [2][]{subsection.4.4.3}{4.4.3 Codebook}{section.4.4}% 41
+\BOOKMARK [1][]{section.4.5}{4.5 Detection}{chapter.4}% 42
+\BOOKMARK [1][]{section.4.6}{4.6 Experimental Results}{chapter.4}% 43
+\BOOKMARK [2][]{subsection.4.6.1}{4.6.1 \040Campus-scene Detection }{section.4.6}% 44
+\BOOKMARK [2][]{subsection.4.6.2}{4.6.2 Wild-scene Detection}{section.4.6}% 45
+\BOOKMARK [1][]{section.4.7}{4.7 Chapter Conclusion}{chapter.4}% 46
+\BOOKMARK [0][]{chapter.5}{5 Fast Voting by Pyramid Match}{}% 47
+\BOOKMARK [1][]{section.5.1}{5.1 Introduction}{chapter.5}% 48
+\BOOKMARK [1][]{section.5.2}{5.2 Related Work}{chapter.5}% 49
+\BOOKMARK [1][]{section.5.3}{5.3 Pyramid Match Score}{chapter.5}% 50
+\BOOKMARK [2][]{subsection.5.3.1}{5.3.1 Pyramid Matching}{section.5.3}% 51
+\BOOKMARK [2][]{subsection.5.3.2}{5.3.2 Training and Detection}{section.5.3}% 52
+\BOOKMARK [2][]{subsection.5.3.3}{5.3.3 Dividing Visual-spatial Space}{section.5.3}% 53
+\BOOKMARK [2][]{subsection.5.3.4}{5.3.4 Deciding Weights for Dividing Methods}{section.5.3}% 54
+\BOOKMARK [2][]{subsection.5.3.5}{5.3.5 Learning Weights for Dividing Methods}{section.5.3}% 55
+\BOOKMARK [1][]{section.5.4}{5.4 Experimental Results}{chapter.5}% 56
+\BOOKMARK [2][]{subsection.5.4.1}{5.4.1 UIUC Cars}{section.5.4}% 57
+\BOOKMARK [2][]{subsection.5.4.2}{5.4.2 P-campus}{section.5.4}% 58
+\BOOKMARK [1][]{section.5.5}{5.5 Discussion}{chapter.5}% 59
+\BOOKMARK [2][]{subsection.5.5.1}{5.5.1 Time Complexity}{section.5.5}% 60
+\BOOKMARK [2][]{subsection.5.5.2}{5.5.2 Usage of Visual and Spatial Information}{section.5.5}% 61
+\BOOKMARK [1][]{section.5.6}{5.6 Chapter Conclusion}{chapter.5}% 62
+\BOOKMARK [0][]{chapter.6}{6 Conclusion and outlook}{}% 63
+\BOOKMARK [0][]{chapter*.11}{Bibliography}{}% 64
+\BOOKMARK [0][]{chapter*.12}{Acknowledgements}{}% 65

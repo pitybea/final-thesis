@@ -71,7 +71,7 @@ Due to the combination of motion analysis results and the Hough transform framew
 \end{itemize}
 
 
-The remaining chapter is organized as follows. Section \ref{rw4} reviews related work, and section \ref{ab4} gives potential application background. Section \ref{pip4}  gives formalism of the common fate Hough transform. Section \ref{det4} describes inference on the formed Hough images. Section \ref{ex4} gives experimental results, and section \ref{sum4} summarises.
+The remaining chapter is organized as follows. Section \ref{rw4} reviews related work. Section \ref{ab4} gives potential application background. Section \ref{pip4}  gives formalism of the common fate Hough transform. Section \ref{det4} describes inference on the formed Hough images. Section \ref{ex4} gives experimental results. Section \ref{sum4} summarises.
 
 \section{Related Work}
 \label{rw4}
@@ -103,7 +103,7 @@ among all pairwise point distances. The clustering procedure is all about   maki
 clusters or not in a Minimal Description Language manner.
 
 This work is also related methods that try to couple detection with other problem, and then solve them together.
-In \citep{my7}, a very general \emph{Minimum Description Length}(MDL) framework for
+In \citep{my7}, a very general \emph{Minimum Description Length}    (MDL) framework for
 coupling tracking and detection is given. And \citep{ij10} re-detects
 detection responses missed in the detection procedure from tracking results. In
 \citep{ij14}, region semantic label associated with geometry
@@ -191,7 +191,7 @@ Towards this end, the relationship between the votes of $\bf{e}_m$ and the votes
 \[
 S({V_{{{\bf{e}}_n}}} \to {V_{{{\bf{e}}_m}}})  =  B({\bf{x}}_{V_{{{\bf{e}}_m}}},l_{V_{{{\bf{e}}_m}}};{V_{{{\bf{e}}_n}}})\:,n \ne m\:.
 \]
-Here $B({\bf{x}}_{V_{{{\bf{e}}_m}}},l_{V_{{{\bf{e}}_m}}};{V_{{{\bf{e}}_n}}})$ is defined in (\ref{eq2}). This measures the coherence of the two votes from different object parts.
+Here $B({\bf{x}}_{V_{{{\bf{e}}_m}}},l_{V_{{{\bf{e}}_m}}};{V_{{{\bf{e}}_n}}})$ is defined in \ref{eq2}. This measures the coherence of the two votes from different object parts.
 
 Then, the support from ${{\bf{e}}_n}$ to ${V_{{{\bf{e}}_m}}}$ is defined  based on ${{\bf{e}}_n}$, and the confidence that $V_{{{\bf{e}}_m}}$'s voted center is correct, as,
 
@@ -485,9 +485,9 @@ and proves the effectiveness of the proposed method.
 
 For motion grouping, each keypoint is tracked through 10 frames before, and 10 frames after the current frame. The similarity of two 21-point trajectories is defined using only   the frames in which both trajectories exist. To set the two thresholds for motion grouping, $D_1$ and $D_2$ are  measured for keypoint pairs of different objects. $D^1_{th}$ is set so that it is larger than only 10\% of the measured $D_1$s, and so is $D^2_{th}$. By doing this, keypoints belonging to different objects are not likely to be grouped together. So that in one motion group, the keypoints are very likely to belong to the same object, as shown in Figure \ref{fig:mgr}.
 
-In order to form the Hough image, 35 best matched codes are chosen from the codebook for each object part. In (\ref{eq3}), $d$ and $\sigma$ need to be given. The precision-recall curves are based on $\sigma$, while $d$ is set to 10. Here $\sigma$ is the most important parameter.
+In order to form the Hough image, 35 best matched codes are chosen from the codebook for each object part. In \ref{eq3}, $d$ and $\sigma$ need to be given. The precision-recall curves are based on $\sigma$, while $d$ is set to 10. Here $\sigma$ is the most important parameter.
 
-\textbf{Comparisons} For comparison, detection is done on the Hough images formed with and without motion grouping results. The same codebook and the same parameter settings are used for forming and searching over both Hough images. The votes of each object part are assigned uniform weights in the benchmark method, while weights defined in (\ref{eq4}) are assigned in the proposed method.
+\textbf{Comparisons} For comparison, detection is done on the Hough images formed with and without motion grouping results. The same codebook and the same parameter settings are used for forming and searching over both Hough images. The votes of each object part are assigned uniform weights in the benchmark method, while weights defined in \ref{eq4} are assigned in the proposed method.
 \begin{figure}
 \centering
 \subfigure[]{
