@@ -10,10 +10,10 @@ method works in real time, and gives promising detection results in experiments 
 
 As always, detection performance and efficiency are the two important aspects of this method.
 In a tunnel environment, in addition to the target objects, a lot of noisy objects also appear, e.g. ordinary lights, other vehicles, and other vehicles' shadows. And some of the noisy objects cannot even be distinguished from the target objects by appearance , as shown in Figure \ref{fig:first}. The clutter property of the sensed data makes the detection challenging.
-The proposed method meets this challenge by making use of both appearance and temporal information of the target objects. 
-There are three main steps in the method. 
+The proposed method meets this challenge by making use of both appearance and temporal information of the target objects.
+There are three main steps in the method.
 
-The first step deals with keypoints. It takes original data as input, and outputs keypoint clusters as detection hypotheses. In this step, keypoints are detected, verified and then clustered. To detect keypoints, all points on each frame are uniformly sampled and filtered with pre-set intensity thresholds.  Then the keypoints are verified by a simple keypoint appearance model   built by \emph{k}-means. At the end of the first step, the keypoints are clustered based on the Euclidean distance. 
+The first step deals with keypoints. It takes original data as input, and outputs keypoint clusters as detection hypotheses. In this step, keypoints are detected, verified and then clustered. To detect keypoints, all points on each frame are uniformly sampled and filtered with pre-set intensity thresholds.  Then the keypoints are verified by a simple keypoint appearance model   built by \emph{k}-means. At the end of the first step, the keypoints are clustered based on the Euclidean distance.
 
 The second step takes the keypoint clusters as input, verifies them by appearance and temporal information, and outputs the keypoints which pass verification, as detection results. In the second step, the keypoint clusters are labeled based on appearance by an Adaboost machine, which is trained using intensity histograms of keypoint clusters from target objects and keypoint clusters from noisy objects. The keypoint clusters are also tracked by temporal association through frames. Motion information encoded in the trajectories are used to further verify the keypoint clusters. At the end of this step, the keypoint clustered are labeled as positive or negative according to whether they pass both appearance and motion verifications or not.
 
@@ -93,7 +93,7 @@ missed detections on middle frames and works efficiently. In
 \citep{my7}, the main idea is to firstly connect very faithful
 detection response pairs, then solve the data association problem
 via low-time-complexity Hungarian algorithm, and refine the results
-in an expectation-maximization manner in latter steps. And the most important concern of these methods
+in an expectation-maximization manner in later steps. And the most important concern of these methods
 is finding efficient solutions in   data association problems.
 
 This work is also related to feature grouping methods~\citep{ac25}, detecting methods using trajectories~\citep{my9,ac24}, tracking methods~\citep{my7,my10}, and methods integrating appearance and temporal information~\citep{ac23}.
@@ -113,13 +113,13 @@ This method is part of an automated driving system in a NEDO project, "Developme
 The automated driving system is vehicle-oriented, and an express way is the main application scenario. No specific facilities are assumed to exist on road sides, while instead, the experimental vehicles are equipped with  sensors and vehicle-to-vehicle communication systems. There are a few sensors used for positioning. For example, sensors used to extract white road lines to estimate the lateral position in the lane, GPS sensors, dead reckoning systems, and stereo far-infrared camera systems intended for obstacle detection. On the street, GPS sensors can be used for positioning. While positioning in tunnels is difficult since GPS signals are not available and no specific equipment on road sides is assumed. For positioning in tunnels, GPS sensors are used to record the position of  tunnel entrances, and dead reckoning systems are used to infer position by continuously sensing the vehicles' speed and direction. However, errors of dead reckoning systems will accumulate. Thus, the proposed method uses far-infrared cameras installed on the vehicles to detect signs in the tunnels, which contain position information, and will be used to eliminate the accumulated errors.
 
 In most tunnels   on the expressways in Japan, there are many signs appearing at equal intervals. The method focuses on the emergency telephone indicators, which appear every 200 meters in tunnels. The absolute coordinates of the emergency telephone indicators can be obtained by the method of~\citep{xue}.  If the emergency telephone indicators can be sensed while traveling in tunnels, and the distance from the vehicle to the indicators can be estimated,  then this information  can be used to eliminate accumulated errors of dead reckoning systems.
-Detection methods, e.g.~\citep{ac23}, based on ordinary cameras fail due to darkness. Here the method uses far-infrared cameras,  which are suitable in dark environments and are already installed on our experimental vehicles. 
+Detection methods, e.g.~\citep{ac23}, based on ordinary cameras fail due to darkness. Here the method uses far-infrared cameras,  which are suitable in dark environments and are already installed on our experimental vehicles.
 
  In tunnel environment, besides the target objects, a lot of noisy objects also appear, e.g. ordinary lights, other vehicles, and other vehicles' shadows. So to well distinguish target objects is of importance. And such kind of applications usually require real-time detections. And the proposed method successfully meet the requirements.
 
 \begin{comment}
 Especially, compared with the method proposed in~\citep{wang1}, this method employs a more effective classifying machine by setting biased weights for positive and negative training examples, and far over-perform the method.
-Inspired by a previous work~\citep{wang1}, the proposed method can be turned to a  approach to detecting emergency telephone indicators by using infrared cameras.
+Inspired by a previous work~\citep{wang1}, the proposed method can be turned to an  approach to detecting emergency telephone indicators by using infrared cameras.
 \end{comment}
 \section{Detection Pipeline}
 \label{pip}
@@ -218,7 +218,7 @@ To cluster the keypoints, a minimum spanning tree (mst) is built using the pairw
 \subsection{Keypoint Cluster Verification by Appearance}
 
 
-For each keypoint cluster, the smallest bounding rectangle is considered a detection hypothesis, as shown in Figure \ref{fig:thir:c} and Figure \ref{fig:thir:d}. 
+For each keypoint cluster, the smallest bounding rectangle is considered a detection hypothesis, as shown in Figure \ref{fig:thir:c} and Figure \ref{fig:thir:d}.
 
 In the case of emergency telephone indicator detection, there are three main sources of noise: ordinary lights, other vehicles, and other vehicles' shadows. The global appearance of ordinary lights is different from that of the emergency telephone indicators'. As ordinary lights get further from the infrared camera, the intensities of their corresponding sub-images in the collected data gets lower. At a certain distance, the intensities of the ordinary lights are almost the same as the intensities of the emergency telephone indicators'. For ordinary lights of which the intensities are higher than the intensities of emergency telephone indicators', the transition regions from the lights to tunnel walls will have similar intensities as the emergency telephone indicators'.
 This indicates that although locally the emergency telephone indicators share the same appearance with ordinary lights, globally they can still be distinguished by appearance. As for other vehicles and their shadows, their intensity range is very close to the intensity range of the emergency telephone indicators', and they can hardly be distinguished by appearance alone.
@@ -264,7 +264,7 @@ Here, $P_{link}(n_{\bf{g}}^j|T_{\bf{g}}^i)$ is defined by the appearance differe
 
 \subsection{Keypoint Cluster Verification by Motion}
 
-As shown in Figure \ref{fig:sixs}, the trajectories from keypoint clusters belonging to emergency telephone indicators are different from other objects' trajectories. In this step, the temporal information encoded in the trajectories is used to further verify the keypoint clusters. A linear model is used to fit each trajectory, and the Pearson Correlation Coefficient(PCC) of the fitting is the criteria for the decision. 
+As shown in Figure \ref{fig:sixs}, the trajectories from keypoint clusters belonging to emergency telephone indicators are different from other objects' trajectories. In this step, the temporal information encoded in the trajectories is used to further verify the keypoint clusters. A linear model is used to fit each trajectory, and the Pearson Correlation Coefficient(PCC) of the fitting is the criteria for the decision.
 
 Let $(x^i_{\bf{g}},y^i_{\bf{g}})$ denote the coordinate of the $i$th element belonging to a trajectory. The linear assumption is that $y^i_{\bf{g}}=a_0+a_1{x^i_{\bf{g}}}$. The PCC of the fitting is defined as,
 
@@ -333,12 +333,12 @@ In this section, this method is tested based on detection performance and effici
 
 To set intensity thresholds for keypoint detection, a Gaussian distribution is assumed for the intensities of points belonging to target objects. Following the $3\sigma$ principle, $I^{th1}_{\bf{x}}$ is set to 160 and $I^{th2}_{\bf{x}}$ to 190. Width step $W$ set to 3, and $H$ set to 4. Keypoints in the marked rectangle are sampled from the frames of the training tour, are used to estimate $I^{th1}_{\bf{x}}$  and $I^{th2}_{\bf{x}}$.   In Figure \ref{ex1:va}, we also compare the keypoint detection results with the results using SIFT.
 
-  
+
   The approximate sub-images of the emergency telephone indicators are manually marked, and used for training the mixture model of keypoint verification. The detected keypoints falling into the sub-image are marked as positive, all other points are marked negative. Note that this model and the training method may not be very accurate, since more accurate marking requires more manual effort.
-  
+
   Also, future steps can filter out the false alarms produced by this step.  About 30,000 intensity histograms of the positive keypoints are sampled, and about 3,000,000 of the negative. When using of $k$-means for clustering the positive intensity histograms, $k$ is set to 40, and $k$ set to 400 for negative. By using these $k$ values,  both feature sets are over-segmented. The threshold to verify keypoints $D^{th}_{A_{\bf{x}}}$ is set to 0.14 for the normalized histograms.
 
- 
+
 
 
 For keypoint clustering, the threshold to split the mst is set to 10, which is half the largest height of the emergency lights sensed by the camera.
@@ -448,7 +448,7 @@ The detection rate and false alarm rate is evaluated on 250 frames, as shown in 
 
 
 
-\textbf{Data} The results of the first experiment is not satisfactory, and then the second experiment is carried out. A better far infrared camera is used, and also the zoom of the camera is adjusted for better images. Then with the new camera mounted on top, the experimental vehicle took several tours of the Awagatake tunnel. About 7,000 frames are collected for each tour. The frame size is $640\times 480$, the intensity range is [0,255], and the frame rate is 30 frames per second of the camera, also of the data collection program which is provided by the camera maker.
+\textbf{Data} The results of the first experiment is not satisfactory, and then the second experiment is carried out. A better far infrared camera is used, and the zoom of the camera is adjusted for better images. Then with the new camera mounted on top, the experimental vehicle took several tours of the Awagatake tunnel. About 7,000 frames are collected for each tour. The frame size is $640\times 480$, the intensity range is [0,255], and the frame rate is 30 frames per second of the camera, also of the data collection program which is provided by the camera maker.
 
 \textbf{Implementation Settings} Being the same with experiment one, all models are trained using data from one tour, and evaluated on data on another tour.
 
@@ -525,7 +525,7 @@ More detection results are shown in Figure \ref{fig:sixs}.
 
 
 
-The detection rate and false alarm rate of the first experiment~\citep{wang1} are 90\% and 19\%, while evaluated on a much smaller dataset. Here the results are better than   experiment one, because the sensed images are much clearer, and also because this more effective training of the Adaboost machine. 
+The detection rate and false alarm rate of the first experiment~\citep{wang1} are 90\% and 19\%, while evaluated on a much smaller dataset. Here the results are better than   experiment one, because the sensed images are much clearer, and because this more effective training of the Adaboost machine.
 
 The results on the trajectories of decisions are also evaluated. When one trajectory ends, if its length is larger than 15, and over 80\% of the last 15 decisions it connects are positive, it is considered as positive. The method correctly detects all the 22 emergency telephone indicators with no false alarms. The detection rate is 100\%, and the false alarm rate is 0\%, as shown in Table \ref{tb:tb3}.
 
