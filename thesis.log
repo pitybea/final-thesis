@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.6.16)  8 JAN 2014 14:46
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.16)  8 JAN 2014 18:02
 entering extended mode
 **thesis.tex
-(E:\final-thesis\thesis.tex
+(F:\thesis\thesis.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(E:\final-thesis\Classes/CUEDthesisPSnPDF.cls
+(F:\thesis\Classes/CUEDthesisPSnPDF.cls
 Document Class: Classes/CUEDthesisPSnPDF 2010/07/14 v1.1 CUED thesis class
 (C:\CTEX\MiKTeX\tex\latex\base\book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
@@ -455,8 +455,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 452.
 ))
 \@float@every@table=\toks26
-
-(E:\final-thesis\extraplaceins.sty
+ (F:\thesis\extraplaceins.sty
 
 LaTeX Warning: You have requested package `extraplaceins',
                but the package provides `placeins'.
@@ -484,7 +483,7 @@ Package minitoc Info: I0003
 \mtc@hstrutbox=\box34
 Package minitoc Info: I0002
 (minitoc)             Autoconfiguration of extensions.
- (E:\final-thesis\thesis.mtc0)
+ (F:\thesis\thesis.mtc0)
 Package minitoc Info: I0012
 (minitoc)             Long extensions (Unix-like) will be used.
 Package minitoc Info: I0031
@@ -565,16 +564,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
 \chaplen=\skip114
 \figlen=\skip115
-
-(E:\final-thesis\StyleFiles/watermark.sty
+ (F:\thesis\StyleFiles/watermark.sty
 
 LaTeX Warning: You have requested package `StyleFiles/watermark',
                but the package provides `watermark'.
 
 Package: watermark 2002/01/29 v1.00 Watermarks (NCC)
-) (E:\final-thesis\thesis.aux (E:\final-thesis\chaps/1.aux)
-(E:\final-thesis\chaps/2.aux) (E:\final-thesis\chaps/3.aux)
-(E:\final-thesis\chaps/4.aux
+) (F:\thesis\thesis.aux (F:\thesis\chaps/1.aux) (F:\thesis\chaps/2.aux)
+(F:\thesis\chaps/3.aux) (F:\thesis\chaps/4.aux
 
 LaTeX Warning: Label `eq1' multiply defined.
 
@@ -614,23 +611,21 @@ LaTeX Warning: Label `sub@fig:compa:c' multiply defined.
 
 LaTeX Warning: Label `fig:compa' multiply defined.
 
-) (E:\final-thesis\chaps/5.aux) (E:\final-thesis\chaps/6.aux)
-(E:\final-thesis\chaps/thanks.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-
+) (F:\thesis\chaps/5.aux) (F:\thesis\chaps/6.aux) (F:\thesis\chaps/thanks.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
 (C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count133
@@ -646,8 +641,8 @@ LaTeX Font Info:    ... okay on input line 77.
 \everyMPtoPDFconversion=\toks30
 )
 \AtBeginShipoutBox=\box38
-Package backref Info: ** backref set up for natbib ** on input line 77.
-Package hyperref Info: Link coloring ON on input line 77.
+Package backref Info: ** backref set up for natbib ** on input line 79.
+Package hyperref Info: Link coloring ON on input line 79.
  (C:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
@@ -656,11 +651,10 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count139
 )
-LaTeX Info: Redefining \ref on input line 77.
-LaTeX Info: Redefining \pageref on input line 77.
-LaTeX Info: Redefining \nameref on input line 77.
-
-(E:\final-thesis\thesis.out) (E:\final-thesis\thesis.out)
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
+ (F:\thesis\thesis.out) (F:\thesis\thesis.out)
 \@outlinefile=\write6
 \c@minilofdepth=\count140
 \c@minilotdepth=\count141
@@ -701,8 +695,8 @@ Package minitoc(hints) Warning: W0023
 (minitoc(hints))                of loading the ``hyperref'' package.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
-(E:\final-thesis\thesis.toc
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 85.
+(F:\thesis\thesis.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
  (C:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
@@ -726,7 +720,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [4
 
-] (E:\final-thesis\thesis.lof [5]
+] (F:\thesis\thesis.lof [5]
 Overfull \hbox (7.05753pt too wide) in paragraph at lines 76--76
  [][] []\OT1/ptm/m/n/12 Result com-par-i-son with method us-ing di-vid-ing meth
 -ods of [[][][]Grau- 
@@ -734,7 +728,7 @@ Overfull \hbox (7.05753pt too wide) in paragraph at lines 76--76
 
 )
 \tf@lof=\write8
- [6] (E:\final-thesis\thesis.lot)
+ [6] (F:\thesis\thesis.lot)
 \tf@lot=\write9
  [7
 
@@ -745,7 +739,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [8
 
-] (E:\final-thesis\thesis.loa)
+] (F:\thesis\thesis.loa)
 \tf@loa=\write10
  [9
 
@@ -756,7 +750,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [10
 
-] (E:\final-thesis\chaps/1.tex
+] (F:\thesis\chaps/1.tex
 Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
@@ -784,8 +778,8 @@ l.26
 e.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.101 \include{chaps/1}
-                        [4] (E:\final-thesis\chaps/2.tex
+l.103 \include{chaps/1}
+                        [4] (F:\thesis\chaps/2.tex
 Chapter 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
@@ -830,7 +824,7 @@ l.81
 <to be read again> 
                    \relax 
 l.91 
-      [10] [11] [12]) [13] (E:\final-thesis\chaps/3.tex
+      [10] [11] [12]) [13] (F:\thesis\chaps/3.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -841,7 +835,11 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 ]
 Chapter 3.
-[15] [16]
+
+Underfull \vbox (badness 1496) has occurred while \output is active []
+
+ [15]
+[16]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 51.
@@ -868,8 +866,7 @@ Package pdftex.def Info: 17veriTrjimg00039.jpg used on input line 54.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.73 
-      <E:/final-thesis/17Orgimg00039.jpg> <E:/final-thesis/17veriTrjimg00039.jp
-g>]
+      <F:/thesis/17Orgimg00039.jpg> <F:/thesis/17veriTrjimg00039.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18]
@@ -899,7 +896,7 @@ Package pdftex.def Info: 8Kptimg00028.jpg used on input line 167.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.180 
-       <E:/final-thesis/17Kptimg00039.jpg> <E:/final-thesis/8Kptimg00028.jpg>]
+       <F:/thesis/17Kptimg00039.jpg> <F:/thesis/8Kptimg00028.jpg>]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 195.
@@ -946,9 +943,9 @@ e.3.3}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.209 \subsection
-                 {Keypoint Clustering} <E:/final-thesis/17VeriKptimg00039.jpg> 
-<E:/final-thesis/8VeriKptimg00028.jpg> <E:/final-thesis/17Rgsimgwl00039.jpg> <E
-:/final-thesis/8Rgsimgwl00028.jpg>] [24]
+                 {Keypoint Clustering} <F:/thesis/17VeriKptimg00039.jpg> <F:/th
+esis/8VeriKptimg00028.jpg> <F:/thesis/17Rgsimgwl00039.jpg> <F:/thesis/8Rgsimgwl
+00028.jpg>] [24]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 229.
@@ -975,8 +972,8 @@ Package pdftex.def Info: 8Rgsimg00028.jpg used on input line 230.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.236 \subsection
-                 {Keypoint Cluster Tracking} <E:/final-thesis/17Rgsimg00039.jpg
-> <E:/final-thesis/8Rgsimg00028.jpg>]
+                 {Keypoint Cluster Tracking} <F:/thesis/17Rgsimg00039.jpg> <F:/
+thesis/8Rgsimg00028.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27
@@ -1025,8 +1022,8 @@ l.355
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.355 
-       <E:/final-thesis/siftimg00469.jpg> <E:/final-thesis/Kptimg00469.jpg> <E:
-/final-thesis/untitled.jpg>]
+       <F:/thesis/siftimg00469.jpg> <F:/thesis/Kptimg00469.jpg> <F:/thesis/unti
+tled.jpg>]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 365.
@@ -1176,18 +1173,18 @@ Package pdftex.def Info: veriRegTrjimg01080.jpg used on input line 420.
                                                   \fi \fi 
 l.426 \subsubsection
                     {Detection Results} On a laptop with Intel Core2 Duo 2.8...
- <E:/final-thesis/Orgimg00634.jpg> <E:/final-thesis/veriRegTrjimg00634.jpg>]
-[33pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8
-}) has been already used, duplicate ignored
+ <F:/thesis/Orgimg00634.jpg> <F:/thesis/veriRegTrjimg00634.jpg>] [33pdfTeX warn
+ing (ext4): destination with the same identifier (name{figure.3.8}) has been al
+ready used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.426 \subsubsection
                     {Detection Results} On a laptop with Intel Core2 Duo 2.8...
- <E:/final-thesis/VeriKptimg00469.jpg> <E:/final-thesis/VeriKptimg01080.jpg> <E
-:/final-thesis/Rgsimg00469.jpg> <E:/final-thesis/Rgsimg01080.jpg>] [34pdfTeX wa
-rning (ext4): destination with the same identifier (name{figure.3.9}) has been 
-already used, duplicate ignored
+ <F:/thesis/VeriKptimg00469.jpg> <F:/thesis/VeriKptimg01080.jpg> <F:/thesis/Rgs
+img00469.jpg> <F:/thesis/Rgsimg01080.jpg>] [34pdfTeX warning (ext4): destinatio
+n with the same identifier (name{figure.3.9}) has been already used, duplicate 
+ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1200,17 +1197,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.10})
                                                   \fi \fi 
 l.426 \subsubsection
                     {Detection Results} On a laptop with Intel Core2 Duo 2.8...
- <E:/final-thesis/VeriRgsimg00634.jpg> <E:/final-thesis/VeriRgsimg01075.jpg> <E
-:/final-thesis/Trjimg00469.jpg> <E:/final-thesis/Trjimg01080.jpg>] [35pdfTeX wa
-rning (ext4): destination with the same identifier (name{figure.3.11}) has been
- already used, duplicate ignored
+ <F:/thesis/VeriRgsimg00634.jpg> <F:/thesis/VeriRgsimg01075.jpg> <F:/thesis/Trj
+img00469.jpg> <F:/thesis/Trjimg01080.jpg>] [35pdfTeX warning (ext4): destinatio
+n with the same identifier (name{figure.3.11}) has been already used, duplicate
+ ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.426 \subsubsection
                     {Detection Results} On a laptop with Intel Core2 Duo 2.8...
- <E:/final-thesis/veriRegTrjimg00626.jpg> <E:/final-thesis/veriRegTrjimg01072.j
-pg> <E:/final-thesis/veriRegTrjimg01080.jpg>] [36
+ <F:/thesis/veriRegTrjimg00626.jpg> <F:/thesis/veriRegTrjimg01072.jpg> <F:/thes
+is/veriRegTrjimg01080.jpg>] [36
 
 ]
 
@@ -1306,11 +1303,10 @@ e.3.12}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.500 \subsubsection
-                    {Detection Results} <E:/final-thesis/8veriTrjimg00028.jpg> 
-<E:/final-thesis/19veriTrjimg00041.jpg> <E:/final-thesis/3veriTrjimg00023.jpg> 
-<E:/final-thesis/04veriTrjimg00039.jpg> <E:/final-thesis/02veriTrjimg00046.jpg>
- <E:/final-thesis/00veriTrjimg00032.jpg> <E:/final-thesis/06veriTrjimg00032.jpg
->]
+                    {Detection Results} <F:/thesis/8veriTrjimg00028.jpg> <F:/th
+esis/19veriTrjimg00041.jpg> <F:/thesis/3veriTrjimg00023.jpg> <F:/thesis/04veriT
+rjimg00039.jpg> <F:/thesis/02veriTrjimg00046.jpg> <F:/thesis/00veriTrjimg00032.
+jpg> <F:/thesis/06veriTrjimg00032.jpg>]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 555.
@@ -1339,10 +1335,10 @@ Underfull \vbox (badness 3701) has occurred while \output is active []
 
  [39]
 Package epstopdf Info: Source file: <kptkms.eps>
-(epstopdf)                    date: 2013-06-15 21:51:42
+(epstopdf)                    date: 2013-06-12 13:35:08
 (epstopdf)                    size: 1029718 bytes
 (epstopdf)             Output file: <kptkms-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-06-15 21:51:42
+(epstopdf)                    date: 2013-06-12 14:35:31
 (epstopdf)                    size: 42772 bytes
 (epstopdf)             Command: <epstopdf --outfile=kptkms-eps-converted-to.pdf
  kptkms.eps>
@@ -1361,15 +1357,15 @@ Package pdftex.def Info: kptkms-eps-converted-to.pdf used on input line 575.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.581 \section
-              {Chapter Conclusion} <E:/final-thesis/frame92_af.jpg>] [41pdfTeX 
-warning (ext4): destination with the same identifier (name{figure.3.14}) has be
-en already used, duplicate ignored
+              {Chapter Conclusion} <F:/thesis/frame92_af.jpg>] [41pdfTeX warnin
+g (ext4): destination with the same identifier (name{figure.3.14}) has been alr
+eady used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.581 \section
-              {Chapter Conclusion} <E:/final-thesis/kptkms-eps-converted-to.pdf
->]) [42] (E:\final-thesis\chaps/4.tex
+              {Chapter Conclusion} <F:/thesis/kptkms-eps-converted-to.pdf>])
+[42] (F:\thesis\chaps/4.tex
 Chapter 4.
 
 Overfull \hbox (1.65553pt too wide) in paragraph at lines 17--18
@@ -1445,8 +1441,8 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
                                                   \fi \fi 
 l.70 \item {
             The framework used to combine grouping results of object parts i...
- <E:/final-thesis/PEssR.jpg> <E:/final-thesis/a56.jpg> <E:/final-thesis/Untitle
-d-6.jpg> <E:/final-thesis/Untitled-4.jpg>]
+ <F:/thesis/PEssR.jpg> <F:/thesis/a56.jpg> <F:/thesis/Untitled-6.jpg> <F:/thesi
+s/Untitled-4.jpg>]
 Overfull \hbox (1.77917pt too wide) in paragraph at lines 84--85
 \OT1/ptm/m/n/12 es-pe-cially those em-ploy mo-tion in-for-ma-tion [[][][]An-dri
 luka et al.[][], [][]2008[][]; [][][]Gavrila & Munder[][],
@@ -1513,9 +1509,8 @@ re.4.2}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.263 \subsection
-                 {Motion Grouping} <E:/final-thesis/voteimg00056.jpg> <E:/final
--thesis/selectVimg00056_9.jpg> <E:/final-thesis/selectedvotesimg00056.jpg>]
-[55] [56]
+                 {Motion Grouping} <F:/thesis/voteimg00056.jpg> <F:/thesis/sele
+ctVimg00056_9.jpg> <F:/thesis/selectedvotesimg00056.jpg>] [55] [56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [57]
@@ -1564,7 +1559,7 @@ re.4.3}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.413 \section
-              {Experimental Results} <E:/final-thesis/Untitled-5.jpg>]
+              {Experimental Results} <F:/thesis/Untitled-5.jpg>]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 424.
@@ -1760,30 +1755,29 @@ Package pdftex.def Info: inf8.jpg used on input line 480.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.489 
-       <E:/final-thesis/samples.jpg> <E:/final-thesis/dst6.jpg> <E:/final-thesi
-s/dst3.jpg> <E:/final-thesis/dst5.jpg> <E:/final-thesis/dst2.jpg> <E:/final-the
-sis/dst4.jpg> <E:/final-thesis/dst1.jpg>] [62pdfTeX warning (ext4): destination
- with the same identifier (name{figure.4.5}) has been already used, duplicate i
-gnored
+       <F:/thesis/samples.jpg> <F:/thesis/dst6.jpg> <F:/thesis/dst3.jpg> <F:/th
+esis/dst5.jpg> <F:/thesis/dst2.jpg> <F:/thesis/dst4.jpg> <F:/thesis/dst1.jpg>]
+[62pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.489 
-       <E:/final-thesis/a16.jpg> <E:/final-thesis/a26.jpg> <E:/final-thesis/a71
-.jpg> <E:/final-thesis/a116.jpg>] [63pdfTeX warning (ext4): destination with th
-e same identifier (name{figure.4.6}) has been already used, duplicate ignored
+       <F:/thesis/a16.jpg> <F:/thesis/a26.jpg> <F:/thesis/a71.jpg> <F:/thesis/a
+116.jpg>] [63pdfTeX warning (ext4): destination with the same identifier (name{
+figure.4.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.489 
-       <E:/final-thesis/inf1.jpg> <E:/final-thesis/inf2.jpg> <E:/final-thesis/i
-nf3.jpg> <E:/final-thesis/inf4.jpg> <E:/final-thesis/inf5.jpg> <E:/final-thesis
-/inf6.jpg> <E:/final-thesis/inf7.jpg> <E:/final-thesis/inf8.jpg>]
+       <F:/thesis/inf1.jpg> <F:/thesis/inf2.jpg> <F:/thesis/inf3.jpg> <F:/thesi
+s/inf4.jpg> <F:/thesis/inf5.jpg> <F:/thesis/inf6.jpg> <F:/thesis/inf7.jpg> <F:/
+thesis/inf8.jpg>]
 Package epstopdf Info: Source file: <prf.eps>
-(epstopdf)                    date: 2013-05-28 18:36:47
+(epstopdf)                    date: 2013-05-29 14:40:55
 (epstopdf)                    size: 853778 bytes
 (epstopdf)             Output file: <prf-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-06-15 21:51:42
+(epstopdf)                    date: 2013-06-12 14:52:27
 (epstopdf)                    size: 21592 bytes
 (epstopdf)             Command: <epstopdf --outfile=prf-eps-converted-to.pdf pr
 f.eps>
@@ -1797,10 +1791,10 @@ File: prf-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: prf-eps-converted-to.pdf used on input line 497.
 (pdftex.def)             Requested size: 193.90602pt x 173.0583pt.
 Package epstopdf Info: Source file: <cm2.eps>
-(epstopdf)                    date: 2013-05-28 18:36:47
+(epstopdf)                    date: 2013-05-29 14:40:55
 (epstopdf)                    size: 507470 bytes
 (epstopdf)             Output file: <cm2-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-06-15 21:51:42
+(epstopdf)                    date: 2013-06-12 14:54:02
 (epstopdf)                    size: 19220 bytes
 (epstopdf)             Command: <epstopdf --outfile=cm2-eps-converted-to.pdf cm
 2.eps>
@@ -1814,10 +1808,10 @@ File: cm2-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: cm2-eps-converted-to.pdf used on input line 503.
 (pdftex.def)             Requested size: 193.90602pt x 96.09607pt.
 Package epstopdf Info: Source file: <cm1.eps>
-(epstopdf)                    date: 2013-05-28 18:36:47
+(epstopdf)                    date: 2013-05-29 14:40:55
 (epstopdf)                    size: 500642 bytes
 (epstopdf)             Output file: <cm1-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-06-15 21:51:42
+(epstopdf)                    date: 2013-06-13 07:28:07
 (epstopdf)                    size: 19478 bytes
 (epstopdf)             Command: <epstopdf --outfile=cm1-eps-converted-to.pdf cm
 1.eps>
@@ -1920,18 +1914,17 @@ LaTeX Warning: Float too large for page by 20.73349pt on input line 534.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.534 \end{figure*}
-                    <E:/final-thesis/prf-eps-converted-to.pdf> <E:/final-thesis
-/cm2-eps-converted-to.pdf> <E:/final-thesis/cm1-eps-converted-to.pdf>] [65]
-[66pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8
-}) has been already used, duplicate ignored
+                    <F:/thesis/prf-eps-converted-to.pdf> <F:/thesis/cm2-eps-con
+verted-to.pdf> <F:/thesis/cm1-eps-converted-to.pdf>] [65] [66pdfTeX warning (ex
+t4): destination with the same identifier (name{figure.4.8}) has been already u
+sed, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.536 \subsection
-                 {Wild-scene Detection} <E:/final-thesis/016.jpg> <E:/final-the
-sis/026.jpg> <E:/final-thesis/071.jpg> <E:/final-thesis/116.jpg> <E:/final-thes
-is/166.jpg> <E:/final-thesis/251.jpg> <E:/final-thesis/326.jpg> <E:/final-thesi
-s/366.jpg>]
+                 {Wild-scene Detection} <F:/thesis/016.jpg> <F:/thesis/026.jpg>
+ <F:/thesis/071.jpg> <F:/thesis/116.jpg> <F:/thesis/166.jpg> <F:/thesis/251.jpg
+> <F:/thesis/326.jpg> <F:/thesis/366.jpg>]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 540.
@@ -2101,27 +2094,25 @@ re.4.9}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.597 \section
-              {Chapter Conclusion} <E:/final-thesis/amotionimg00296.jpg> <E:/fi
-nal-thesis/amotionimg01836.jpg> <E:/final-thesis/selectVimg00296_0.jpg> <E:/fin
-al-thesis/selectVimg01836_0.jpg> <E:/final-thesis/selectVimg00296_19.jpg> <E:/f
-inal-thesis/selectVimg01836_19.jpg>] [69pdfTeX warning (ext4): destination with
- the same identifier (name{figure.4.10}) has been already used, duplicate ignor
-ed
+              {Chapter Conclusion} <F:/thesis/amotionimg00296.jpg> <F:/thesis/a
+motionimg01836.jpg> <F:/thesis/selectVimg00296_0.jpg> <F:/thesis/selectVimg0183
+6_0.jpg> <F:/thesis/selectVimg00296_19.jpg> <F:/thesis/selectVimg01836_19.jpg>]
+[69pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.597 \section
-              {Chapter Conclusion} <E:/final-thesis/PER1.jpg> <E:/final-thesis/
-PER2.jpg> <E:/final-thesis/1.jpg> <E:/final-thesis/3.jpg> <E:/final-thesis/2.jp
-g> <E:/final-thesis/4.jpg>] [70pdfTeX warning (ext4): destination with the same
- identifier (name{figure.4.11}) has been already used, duplicate ignored
+              {Chapter Conclusion} <F:/thesis/PER1.jpg> <F:/thesis/PER2.jpg> <F
+:/thesis/1.jpg> <F:/thesis/3.jpg> <F:/thesis/2.jpg> <F:/thesis/4.jpg>] [70pdfTe
+X warning (ext4): destination with the same identifier (name{figure.4.11}) has 
+been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.597 \section
-              {Chapter Conclusion} <E:/final-thesis/leo1.jpg> <E:/final-thesis/
-leo2.jpg> <E:/final-thesis/leo3.jpg> <E:/final-thesis/ti1.jpg>]) [71]
-(E:\final-thesis\chaps/5.tex
+              {Chapter Conclusion} <F:/thesis/leo1.jpg> <F:/thesis/leo2.jpg> <F
+:/thesis/leo3.jpg> <F:/thesis/ti1.jpg>]) [71] (F:\thesis\chaps/5.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -2132,15 +2123,19 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 ]
 Chapter 5.
-[73] [74] [75]
+
+Underfull \vbox (badness 1502) has occurred while \output is active []
+
+ [73]
+[74] [75]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [76]
 Package epstopdf Info: Source file: <pms1.eps>
-(epstopdf)                    date: 2013-08-09 11:27:48
+(epstopdf)                    date: 2013-08-07 17:20:24
 (epstopdf)                    size: 625654 bytes
 (epstopdf)             Output file: <pms1-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-09 11:27:48
+(epstopdf)                    date: 2013-08-07 17:20:39
 (epstopdf)                    size: 12248 bytes
 (epstopdf)             Command: <epstopdf --outfile=pms1-eps-converted-to.pdf p
 ms1.eps>
@@ -2154,10 +2149,10 @@ File: pms1-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: pms1-eps-converted-to.pdf used on input line 78.
 (pdftex.def)             Requested size: 412.56496pt x 145.86662pt.
 Package epstopdf Info: Source file: <pms2.eps>
-(epstopdf)                    date: 2013-08-09 19:39:56
+(epstopdf)                    date: 2013-08-11 19:02:14
 (epstopdf)                    size: 485518 bytes
 (epstopdf)             Output file: <pms2-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-09 19:40:17
+(epstopdf)                    date: 2013-08-11 19:02:14
 (epstopdf)                    size: 14100 bytes
 (epstopdf)             Command: <epstopdf --outfile=pms2-eps-converted-to.pdf p
 ms2.eps>
@@ -2184,17 +2179,16 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.97 I
       n~\citep{pmk}, pyramid matching helps to define kernel functions for S...
- <E:/final-thesis/pms1-eps-converted-to.pdf> <E:/final-thesis/pms2-eps-converte
-d-to.pdf>]
+ <F:/thesis/pms1-eps-converted-to.pdf> <F:/thesis/pms2-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [79]
 [80] [81] [82]
 Package epstopdf Info: Source file: <pms3.eps>
-(epstopdf)                    date: 2013-08-09 19:47:54
+(epstopdf)                    date: 2013-08-11 19:02:14
 (epstopdf)                    size: 2066630 bytes
 (epstopdf)             Output file: <pms3-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-12-30 13:00:25
+(epstopdf)                    date: 2013-12-16 21:55:08
 (epstopdf)                    size: 95669 bytes
 (epstopdf)             Command: <epstopdf --outfile=pms3-eps-converted-to.pdf p
 ms3.eps>
@@ -2212,8 +2206,8 @@ re.5.3}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.324 \subsection
-                 {Deciding Weights for Dividing Methods} <E:/final-thesis/pms3-
-eps-converted-to.pdf>] [85] [86]
+                 {Deciding Weights for Dividing Methods} <F:/thesis/pms3-eps-co
+nverted-to.pdf>] [85] [86]
 Overfull \hbox (3.30913pt too wide) detected at line 396
 [] []
  []
@@ -2301,10 +2295,10 @@ Package pdftex.def Info: test-5_good.jpg used on input line 454.
 LaTeX Warning: Float too large for page by 22.01453pt on input line 459.
 
 Package epstopdf Info: Source file: <pdim.eps>
-(epstopdf)                    date: 2013-08-10 14:49:20
+(epstopdf)                    date: 2013-08-11 19:02:13
 (epstopdf)                    size: 12240810 bytes
 (epstopdf)             Output file: <pdim-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-12-30 13:00:25
+(epstopdf)                    date: 2013-12-16 21:55:08
 (epstopdf)                    size: 1752005 bytes
 (epstopdf)             Command: <epstopdf --outfile=pdim-eps-converted-to.pdf p
 dim.eps>
@@ -2322,24 +2316,23 @@ re.5.4}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.473 \FloatBarrier
-                    <E:/final-thesis/test-0_good.jpg> <E:/final-thesis/test-10_
-good.jpg> <E:/final-thesis/test-14_good.jpg> <E:/final-thesis/test-16_good.jpg>
- <E:/final-thesis/test-20_good.jpg> <E:/final-thesis/test-21_good.jpg> <E:/fina
-l-thesis/test-22_good.jpg> <E:/final-thesis/test-24_good.jpg> <E:/final-thesis/
-test-29_good.jpg> <E:/final-thesis/test-2_good.jpg> <E:/final-thesis/test-31_go
-od.jpg> <E:/final-thesis/test-3_good.jpg> <E:/final-thesis/test-5_good.jpg>]
+                    <F:/thesis/test-0_good.jpg> <F:/thesis/test-10_good.jpg> <F
+:/thesis/test-14_good.jpg> <F:/thesis/test-16_good.jpg> <F:/thesis/test-20_good
+.jpg> <F:/thesis/test-21_good.jpg> <F:/thesis/test-22_good.jpg> <F:/thesis/test
+-24_good.jpg> <F:/thesis/test-29_good.jpg> <F:/thesis/test-2_good.jpg> <F:/thes
+is/test-31_good.jpg> <F:/thesis/test-3_good.jpg> <F:/thesis/test-5_good.jpg>]
 [90pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.473 \FloatBarrier
-                    <E:/final-thesis/pdim-eps-converted-to.pdf>]
+                    <F:/thesis/pdim-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <plmax.eps>
-(epstopdf)                    date: 2013-08-10 16:08:53
+(epstopdf)                    date: 2013-08-11 19:02:14
 (epstopdf)                    size: 11806554 bytes
 (epstopdf)             Output file: <plmax-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-10 16:09:22
+(epstopdf)                    date: 2013-08-12 19:19:50
 (epstopdf)                    size: 1811897 bytes
 (epstopdf)             Command: <epstopdf --outfile=plmax-eps-converted-to.pdf 
 plmax.eps>
@@ -2353,10 +2346,10 @@ File: plmax-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: plmax-eps-converted-to.pdf used on input line 481.
 (pdftex.def)             Requested size: 412.56496pt x 304.7661pt.
 Package epstopdf Info: Source file: <pvp.eps>
-(epstopdf)                    date: 2013-08-10 15:57:52
+(epstopdf)                    date: 2013-08-11 19:02:14
 (epstopdf)                    size: 4317178 bytes
 (epstopdf)             Output file: <pvp-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-10 15:58:20
+(epstopdf)                    date: 2013-08-11 19:02:14
 (epstopdf)                    size: 498782 bytes
 (epstopdf)             Command: <epstopdf --outfile=pvp-eps-converted-to.pdf pv
 p.eps>
@@ -2375,19 +2368,19 @@ Package pdftex.def Info: pvp-eps-converted-to.pdf used on input line 494.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.500 \FloatBarrier
-                    <E:/final-thesis/plmax-eps-converted-to.pdf>] [92pdfTeX war
-ning (ext4): destination with the same identifier (name{figure.5.7}) has been a
-lready used, duplicate ignored
+                    <F:/thesis/plmax-eps-converted-to.pdf>] [92pdfTeX warning (
+ext4): destination with the same identifier (name{figure.5.7}) has been already
+ used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.500 \FloatBarrier
-                    <E:/final-thesis/pvp-eps-converted-to.pdf>]
+                    <F:/thesis/pvp-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <pnp.eps>
-(epstopdf)                    date: 2013-08-10 18:13:01
+(epstopdf)                    date: 2013-08-11 19:02:14
 (epstopdf)                    size: 5039330 bytes
 (epstopdf)             Output file: <pnp-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-10 18:13:14
+(epstopdf)                    date: 2013-08-11 19:02:14
 (epstopdf)                    size: 632268 bytes
 (epstopdf)             Command: <epstopdf --outfile=pnp-eps-converted-to.pdf pn
 p.eps>
@@ -2401,10 +2394,10 @@ File: pnp-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: pnp-eps-converted-to.pdf used on input line 507.
 (pdftex.def)             Requested size: 412.56496pt x 309.42061pt.
 Package epstopdf Info: Source file: <dpm.eps>
-(epstopdf)                    date: 2013-08-10 16:54:34
+(epstopdf)                    date: 2013-08-11 19:02:13
 (epstopdf)                    size: 5058210 bytes
 (epstopdf)             Output file: <dpm-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-12-30 13:00:25
+(epstopdf)                    date: 2013-12-16 21:55:07
 (epstopdf)                    size: 670947 bytes
 (epstopdf)             Command: <epstopdf --outfile=dpm-eps-converted-to.pdf dp
 m.eps>
@@ -2423,19 +2416,19 @@ Package pdftex.def Info: dpm-eps-converted-to.pdf used on input line 521.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.527 \FloatBarrier
-                    <E:/final-thesis/pnp-eps-converted-to.pdf>] [94pdfTeX warni
-ng (ext4): destination with the same identifier (name{figure.5.9}) has been alr
-eady used, duplicate ignored
+                    <F:/thesis/pnp-eps-converted-to.pdf>] [94pdfTeX warning (ex
+t4): destination with the same identifier (name{figure.5.9}) has been already u
+sed, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.527 \FloatBarrier
-                    <E:/final-thesis/dpm-eps-converted-to.pdf>]
+                    <F:/thesis/dpm-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <hcom.eps>
-(epstopdf)                    date: 2013-12-30 13:00:25
+(epstopdf)                    date: 2013-12-16 21:55:08
 (epstopdf)                    size: 8943362 bytes
 (epstopdf)             Output file: <hcom-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-12-30 13:00:25
+(epstopdf)                    date: 2014-01-08 17:56:07
 (epstopdf)                    size: 1250110 bytes
 (epstopdf)             Command: <epstopdf --outfile=hcom-eps-converted-to.pdf h
 com.eps>
@@ -2449,10 +2442,10 @@ File: hcom-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: hcom-eps-converted-to.pdf used on input line 536.
 (pdftex.def)             Requested size: 412.56496pt x 305.18605pt.
 Package epstopdf Info: Source file: <ancp.eps>
-(epstopdf)                    date: 2013-08-22 22:20:31
+(epstopdf)                    date: 2013-08-20 12:36:26
 (epstopdf)                    size: 925246 bytes
 (epstopdf)             Output file: <ancp-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-22 22:20:31
+(epstopdf)                    date: 2013-08-20 12:43:37
 (epstopdf)                    size: 21355 bytes
 (epstopdf)             Command: <epstopdf --outfile=ancp-eps-converted-to.pdf a
 ncp.eps>
@@ -2471,14 +2464,14 @@ Package pdftex.def Info: ancp-eps-converted-to.pdf used on input line 548.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.554 \FloatBarrier
-                    <E:/final-thesis/hcom-eps-converted-to.pdf>] [96pdfTeX warn
-ing (ext4): destination with the same identifier (name{figure.5.11}) has been a
-lready used, duplicate ignored
+                    <F:/thesis/hcom-eps-converted-to.pdf>] [96pdfTeX warning (e
+xt4): destination with the same identifier (name{figure.5.11}) has been already
+ used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.569 
-       <E:/final-thesis/ancp-eps-converted-to.pdf>]
+       <F:/thesis/ancp-eps-converted-to.pdf>]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 572.
@@ -2519,10 +2512,10 @@ File: org376.jpg Graphic file (type jpg)
 Package pdftex.def Info: org376.jpg used on input line 575.
 (pdftex.def)             Requested size: 193.90602pt x 155.12642pt.
 Package epstopdf Info: Source file: <cmf.eps>
-(epstopdf)                    date: 2013-12-30 13:00:25
+(epstopdf)                    date: 2013-12-16 21:55:07
 (epstopdf)                    size: 1237378 bytes
 (epstopdf)             Output file: <cmf-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-12-30 13:00:25
+(epstopdf)                    date: 2013-12-16 21:55:07
 (epstopdf)                    size: 29176 bytes
 (epstopdf)             Command: <epstopdf --outfile=cmf-eps-converted-to.pdf cm
 f.eps>
@@ -2548,16 +2541,15 @@ Underfull \vbox (badness 1097) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.608 
-       <E:/final-thesis/org36.jpg> <E:/final-thesis/org71.jpg> <E:/final-thesis
-/org261.jpg> <E:/final-thesis/org376.jpg>] [98pdfTeX warning (ext4): destinatio
-n with the same identifier (name{figure.5.13}) has been already used, duplicate
- ignored
+       <F:/thesis/org36.jpg> <F:/thesis/org71.jpg> <F:/thesis/org261.jpg> <F:/t
+hesis/org376.jpg>] [98pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.5.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.608 
-       <E:/final-thesis/cmf-eps-converted-to.pdf>] [99] [100]) [101]
-(E:\final-thesis\chaps/6.tex
+       <F:/thesis/cmf-eps-converted-to.pdf>] [99] [100]) [101]
+(F:\thesis\chaps/6.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -2568,7 +2560,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 ]
 Chapter 6.
-[103]) [104] (E:\final-thesis\thesis.bbl (E:\final-thesis\thesis.brf)
+[103]) [104] (F:\thesis\thesis.bbl (F:\thesis\thesis.brf)
 \tf@brf=\write11
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 32.
 
@@ -2584,7 +2576,7 @@ Underfull \hbox (badness 5696) in paragraph at lines 653--653
 . wikipedia . org / wiki / Siri _$
  []
 
-[113]) [114] (E:\final-thesis\chaps/thanks.tex
+[113]) [114] (F:\thesis\chaps/thanks.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -2607,20 +2599,19 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the thesis.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
 [117
 
 
 \FN@pp@footnotehinttrue 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
- (E:\final-thesis\thesis.aux (E:\final-thesis\chaps/1.aux)
-(E:\final-thesis\chaps/2.aux) (E:\final-thesis\chaps/3.aux)
-(E:\final-thesis\chaps/4.aux) (E:\final-thesis\chaps/5.aux)
-(E:\final-thesis\chaps/6.aux) (E:\final-thesis\chaps/thanks.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
+ (F:\thesis\thesis.aux (F:\thesis\chaps/1.aux) (F:\thesis\chaps/2.aux)
+(F:\thesis\chaps/3.aux) (F:\thesis\chaps/4.aux) (F:\thesis\chaps/5.aux)
+(F:\thesis\chaps/6.aux) (F:\thesis\chaps/thanks.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
 
 
 Package rerunfilecheck Warning: File `thesis.out' has changed.
@@ -2638,8 +2629,8 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  12155 strings out of 495354
- 164872 string characters out of 3183859
- 281901 words of memory out of 3000000
+ 164416 string characters out of 3183859
+ 281965 words of memory out of 3000000
  14273 multiletter control sequences out of 15000+200000
  22713 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -2657,7 +2648,7 @@ ic/amsfonts/cm/cmsy6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb><C:/CTEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/CTEX/MiKTeX/fonts/typ
 e1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CT
 EX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (127 pages, 18842093 bytes).
+Output written on thesis.pdf (127 pages, 18842777 bytes).
 PDF statistics:
  2490 PDF objects out of 2984 (max. 8388607)
  453 named destinations out of 1000 (max. 500000)
