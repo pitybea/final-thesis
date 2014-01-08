@@ -8,12 +8,8 @@ A level-1 auxiliary file: chaps/6.aux
 The style file: newapa.bst
 A level-1 auxiliary file: chaps/thanks.aux
 Database file #1: chaps/egbib.bib
-Warning--empty year in bisearch
 You can't pop an empty literal stack for entry ha
 while executing---line 1459 of file newapa.bst
-Warning--empty year in voc
 You can't pop an empty literal stack for entry hdp
 while executing---line 1459 of file newapa.bst
-Warning--empty year in dod
-Warning--empty year in siri
 (There were 2 error messages)

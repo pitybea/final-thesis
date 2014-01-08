@@ -10,16 +10,17 @@ The results of Chapter \ref{chp4} is promising on the two experimental datasets,
 
  Just as said in~\citep{ac27}, Hough transform based methods and sliding-window methods are the two sides of the same coin. The method proposed in this chapter calculates confidence of a target object class for each sub-window in an image. Instead of considering each object as a collection of visual patterns (appearance of local features), the method considers each object as a set of visual-spatial patterns. One object is considered as a set of points. Each point is a digital vector, with the last two dimensions the relative $x-$ and $y-$ coordinates to object center, and SIFT after principal component analysis as the remaining dimensions. The training procedure is about collecting all such visual-spatial points into a point set, which acts as a super template. During detection, each sub-image is considered as a point set, and it is matched against the super template. The confidence is then the match score.
 
- The key to this method is how to define a matric or match score for two point sets. Here pyramid matching procedure is employed, not only for efficiency, but also for combining visual and spatial information from local features in an effective manner. The visual-spatial space is divided from fine to coarse. Under a certain dividing parameter, points from the two matching point sets are considered as match if they fall into the same grid, and they are excluded from the respective point sets. The procedure continues till one point set is empty. Then the numbers of matched pairs under each dividing method is counted, and a weighted sum of all these numbers are considered as the match score for two point set, which will be referred to as Pyramid Match Score, or PMS for short. The weights under all dividing methods are learned during training, and how to divide the visual-spatial space is of great importance.
+ The key to this method is how to define a match score for two point sets. Here pyramid matching procedure is employed, not only for efficiency, but also for combining visual and spatial information from local features in an effective manner. The visual-spatial space is divided from fine to coarse. Under a certain dividing parameter, points from the two matching point sets are considered as match if they fall into the same grid, and they are excluded from the respective point sets. The procedure continues till one point set is empty. Then the numbers of matched pairs under each dividing method is counted, and a weighted sum of all these numbers are considered as the match score for two point set, which will be referred to as Pyramid Match Score, or PMS for short. The weights under all dividing methods are learned during training, and how to divide the visual-spatial space is of great importance.
 
 Obviously, each object is considered as a whole during detection in this method.
 
 The proposed method also has several appealing properties, which include but not limited to:
 \begin{itemize}
 \item {Feasibility of sequential/batch training, which will lead to easy deployment in distributed system.}
-\item {Space complexity of the model is $O(1)$. Since the capacity of the point set acting as the super template is finite, and the size of the model is limited by the capacity.}
-\item {Detection time complexity not related to the size of training examples.}
+\item {Time complexity of detection not related to the size of training examples.}
 \end{itemize}
+
+
 
 This chapter is organized as follows. Section \ref{rw5} reviews most related work. Section \ref{dt5} propose the training and detecting procedure. Section \ref{exp5} gives experimental results. Section \ref{dis5} compares time complexities between the proposed method with other methods, discusses about the insights of the method, and explains why the proposed method is effective. Section \ref{conc5} concludes this chapter.
 
@@ -43,8 +44,7 @@ The successes of HOG~\citep{ij4} on pedestrians benefit from its capability to e
 Advantages of DPM include that it only need to encode the object parts in positive training examples, and that  some of its invariants can give promising results in real time. Still DPM heavily rely of the latent SVM, which is trained in an  expectation-maximization manner, and this stops it from adopting new training examples. While nowadays, training examples often come sequentially. A very flexible model, which will evolve with training examples is preferred. These evolutions include evolving of object part number, evolving of the appearance models of object parts, and evolving of the relative positions of object parts.
 
 
-
-The pyramid match score method is most related to methods using~\citep{pmk} or~\citep{kmts} as kernel functions, methods employ Hough transforms, and the methods proposing efficient solution space searching techniques~\citep{bab}. The method is also related to efforts trying to encode images~\citep{spen}.
+The pyramid match score method is most related to methods using~\citep{pmk} or~\citep{kmts} as kernel functions, methods employ Hough transforms, and the methods proposing efficient solution space searching techniques~\citep{bab}. The method is also related to efforts trying to encode images~\citep{spen} and methods combining sliding window with Hough transform~\citep{ac18}.
 
 
 \section{Pyramid Match Score}
@@ -104,7 +104,7 @@ Let $\gamma  = \{ {{\bf{g}}_1},{{\bf{g}}_2},...,{{\bf{g}}}_L\}$ be an ordered se
 \label{eq:pms1}
 \end{equation}
 
-To exactly follow the procedure as shown in Figure \ref{fig:p2}, the definition in \ref{eq:pms1} is rewritten as,
+To exactly follow the procedure as shown in Figure \ref{fig:p2}, the definition in (\ref{eq:pms1}) is rewritten as,
 
 \begin{equation}
 {\rm P}(S_1,S_2;\gamma)=\frac{ \sum\limits^L_{i=1}{{\omega}_i\times N(S_1^{(i-1)},S_2^{(i-1)};{\bf{g}}_i) }}{m}
@@ -242,7 +242,7 @@ Here $g(i,j)$ is a function which defines how to divide the visual-spatial space
 
 In Figure \ref{fig:p3}, an example is given by considering visual information as one dimension, and spatial information as the other dimension. Note, the total dimension of a point is actually $d$, while in the example it is 2.
 
-About $\gamma$, not only its members, but also the order of its members is important. For \ref{eq:pms1} to work, a requirement must be fulfilled, that if $i<j$, ${\bf g}_i$ is finer than ${\bf g}_j$, which means if two points are decided as match under ${\bf g}_i$, they must be decided as match under ${\bf g}_j$.  This is,
+About $\gamma$, not only its members, but also the order of its members is important. For (\ref{eq:pms1}) to work, a requirement must be fulfilled, that if $i<j$, ${\bf g}_i$ is finer than ${\bf g}_j$, which means if two points are decided as match under ${\bf g}_i$, they must be decided as match under ${\bf g}_j$.  This is,
 
 
 
@@ -253,7 +253,7 @@ i<j, G({\bf p}_{S_1};{\bf g}_i)=G({\bf p}_{S_2};{\bf g}_i)\mbox{     }\mbox{    
 
 If ${\bf g}_i$ is finer than ${\bf g}_j$, it is also written as ${\bf g}_i>{\bf g}_j$.
 
-In \ref{eq:pms3}, $G({\bf p};{\bf g})$ is a function to map {\bf p} into a particular grid, given dividing method ${\bf g}$. And $G({\bf p};{\bf g})$ on the $k$th dimension is defined by,
+In (\ref{eq:pms3}), $G({\bf p};{\bf g})$ is a function to map {\bf p} into a particular grid, given dividing method ${\bf g}$. And $G({\bf p};{\bf g})$ on the $k$th dimension is defined by,
 \[
 G^k({\bf p};{g(i,j)})=
  \left\{ \begin{array}{*{20}{c}}
@@ -266,10 +266,10 @@ Here, ${\bf p}_{max}^k$ and ${\bf p}_{min}^k$ are the maximum and minimum values
 
 
 
-There is no such constrain which requires $\gamma$ is descending ordered by the fineness level in \ref{eq:pms2}. Thus, in the following paper, \ref{eq:pms2} will be used.
-In fact, when \ref{eq:pms3} is satisfied, \ref{eq:pms1} and \ref{eq:pms2} are the same.
+There is no such constrain which requires $\gamma$ is descending ordered by the fineness level in (\ref{eq:pms2}). Thus, in the following paper, (\ref{eq:pms2}) will be used.
+In fact, when (\ref{eq:pms3}) is satisfied, (\ref{eq:pms1}) and (\ref{eq:pms2}) are the same.
 
-Though \ref{eq:pms2} can be used to calculate a pyramid match score for two point sets, given any set, $\gamma$, still the dividing methods and the order of the dividing methods will affect performance. For a largest fineness level, $l_{max},l_{max}\in N$, $\gamma$ is defined in Algorithm \ref{alg:order}.
+Though (\ref{eq:pms2}) can be used to calculate a pyramid match score for two point sets, given any set, $\gamma$, still the dividing methods and the order of the dividing methods will affect performance. For a largest fineness level, $l_{max},l_{max}\in N$, $\gamma$ is defined in Algorithm \ref{alg:order}.
 
 \begin{algorithm}[chapter]
 
@@ -301,7 +301,7 @@ Though \ref{eq:pms2} can be used to calculate a pyramid match score for two poin
     \RETURN $\gamma$
 
     \end{algorithmic}
-    \caption{Set of Dividing Methods Generation}
+    \caption{Generation of Dividing Method Set}
     \label{alg:order}
 
 
@@ -338,10 +338,10 @@ A weight, $\omega$, defined for a dividing method $g(i,j)$ shows the importance 
 \omega_{g(i,j)}=\sqrt{ ((d-2)\times{2^i})\times(2 \times {2^j})  }.
 \end{equation}
 
-As is seen in \ref{eq:pms4}, the finer one grid is in $g(i,j)$, the larger a weight will be assigned for it. The weight is the confidence that the point set belong to a target object based on a point has corresponding evidence from the super template under the current $\bf g$.
+As is seen in (\ref{eq:pms4}), the finer one grid is in $g(i,j)$, the larger a weight will be assigned for it. The weight is the confidence that the point set belong to a target object based on a point has corresponding evidence from the super template under the current $\bf g$.
 
 \subsection{Learning Weights for Dividing Methods}
-Besides directly assigning weights to all the dividing methods in a deterministic way, as in \ref{eq:pms4}, a framework for learning weights is here proposed.
+Besides directly assigning weights to all the dividing methods in a deterministic way, as in (\ref{eq:pms4}), a framework for learning weights is here proposed.
 
 Often Gaussian kernels are used to measure differences between two features or two positions in Hough transform based methods following~\citep{lb1}.
 For two visual-spatial points found match in the same grid under dividing method, $g(i,j)$,
@@ -356,9 +356,9 @@ The total difference between two points found match in the same grid is modeled 
 
 %, and here reflects the confidence the whole point set is a target object based on the current matched pair.
 
-In \ref{eq:pms5}, $\rho$ is the correlation between visual and spatial channel, while $\sigma_1$ and $\sigma_2$ are standard deviations for visual and spatial channel.
+In (\ref{eq:pms5}), $\rho$ is the correlation between visual and spatial channel, while $\sigma_1$ and $\sigma_2$ are standard deviations for visual and spatial channel.
 
-To make \ref{eq:pms5} clear, it is rewritten as,
+To make (\ref{eq:pms5}) clear, it is rewritten as,
 
 \begin{equation}
 \label{eq:pms6}
@@ -377,16 +377,16 @@ Where,
 \end{aligned}
 \]
 
-In \ref{eq:pms6}, the larger, the visual difference, or the larger, the spatial difference, the smaller the corresponding weight. This is decided by the 2D Gaussian kernel, and also this is consistent and very similar with Hough transform based methods.
+In (\ref{eq:pms6}), the larger, the visual difference, or the larger, the spatial difference, the smaller the corresponding weight. This is decided by the 2D Gaussian kernel, and also this is consistent and very similar with Hough transform based methods.
 
 In Algorithm \ref{alg:tm}, the weights are not needed, and the super template, $S_{\bf T}$, can be generated firstly. Then the performance of Algorithm \ref{alg:dt} will rely on the set of dividing method, $\gamma$, and each corresponding weight, $\omega$.
 
 
-In \ref{eq:pms6}, to define the weight for $g(i,j)$, besides $i$ and $j$, still there are four parameters, $t$, $a$, $b$, and $c$, need to be given. Here, $t$ is just a factor, it won't affect the results of Algorithm \ref{alg:dt}, which are the final detection results.
+In (\ref{eq:pms6}), to define the weight for $g(i,j)$, besides $i$ and $j$, still there are four parameters, $t$, $a$, $b$, and $c$, need to be given. Here, $t$ is just a factor, it won't affect the results of Algorithm \ref{alg:dt}, which are the final detection results.
 
 Here, $a$, $b$, and $c$ have their meanings. When $a$ is larger, visual information will play a more important role, and when $b$ is larger, spatial information will play a more important role. What is more interesting is that, there is $c$, which will be responsible for modeling correlating visual-spatial information.
 
-To estimate $a$, $b$, and $c$ for a particular $\gamma$, all positive training images, $\{I_p\}$, and negative training images, $\{I_n\}$, are used. For brevity, the pyramid match score against the super template, with defined $\gamma$, is rewritten according to \ref{eq:pms2},
+To estimate $a$, $b$, and $c$ for a particular $\gamma$, all positive training images, $\{I_p\}$, and negative training images, $\{I_n\}$, are used. For brevity, the pyramid match score against the super template, with defined $\gamma$, is rewritten according to (\ref{eq:pms2}),
 \begin{equation}
 \begin{aligned}
 {\rm P}(S_{I},S_{\bf{T}};\gamma)&=\frac{ \sum\limits_{i,j}{{\omega}_{g(i,j)}\times N(S_I^{(i-1)},S_{\bf T}^{(i-1)}; g(i,j)) }}{m}\\
@@ -395,7 +395,7 @@ To estimate $a$, $b$, and $c$ for a particular $\gamma$, all positive training i
 \label{eq:pms7}
 \end{equation}
 
-In \ref{eq:pms7}, after summing up along $i$, and $j$ at given $\gamma$ and $S_{\bf T}$, it will be a function which changes according to $I$, $a$, $b$, and $c$. It is rewritten as ${\rm PMS}(I;a,b,c)$ for  brevity.
+In (\ref{eq:pms7}), after summing up along $i$, and $j$ at given $\gamma$ and $S_{\bf T}$, it will be a function which changes according to $I$, $a$, $b$, and $c$. It is rewritten as ${\rm PMS}(I;a,b,c)$ for  brevity.
 
 
 
@@ -418,7 +418,7 @@ Note, about ${\rm PMS}(I_p;a,b,c)$, it is not ${\rm P}(S_{I_p},S_{\bf{T}};\gamma
 
 After all positive and negative training examples are given, the objective function will only contain $a$, $b$, and $c$. Thus for such a parameter estimating problem, brute-force solutions will be feasible, especially that $\exp({\bf \cdot})$ can be easily expanded.
 
-Till now, Algorithm \ref{alg:tm} gives how $S_{\bf T}$ can be generated,  Algorithm \ref{alg:order}  gives how $\gamma$ is defined, how $\omega$ is estimated is given in \ref{eq:pms4} and \ref{eq:pms7} respectively, so Algorithm \ref{alg:dt} can be used for detection.
+Till now, Algorithm \ref{alg:tm} gives how $S_{\bf T}$ can be generated,  Algorithm \ref{alg:order}  gives how $\gamma$ is defined, how $\omega$ is estimated is given in (\ref{eq:pms4}) and (\ref{eq:pms7}) respectively, so Algorithm \ref{alg:dt} can be used for detection.
 
 
 \section{Experimental Results}
@@ -432,7 +432,7 @@ UIUC cars~\citep{cds} can be considered as one of the most famous datasets, and 
 There are 1,050 training images, of which 550 are positive, and 500 are negative. There are 200 target objects in 167 test images without significant scale changes. In the evaluation following, together with the 200 target objects, 669 negative rectangles from the test images are extracted from testing images for the evaluation.
 
 Performance of the method upon different parameters will be evaluated on the UIUC cars, and compared with DPM~\citep{ac31}.
-In the experiments, \ref{eq:pms4} is used. So there are only two parameters left, which will lead to difference in performance, which are, the largest fineness level, $l_{max}$ and the dimension of SIFT after PCA, $(d-2)$.
+In the experiments, (\ref{eq:pms4}) is used. So there are only two parameters left, which will lead to difference in performance, which are, the largest fineness level, $l_{max}$ and the dimension of SIFT after PCA, $(d-2)$.
 
 
 
@@ -486,7 +486,7 @@ In Figure \ref{fig:c52}, are the results given by using different $(d-2)$s. Prec
 \end{figure}
 \FloatBarrier
 
-In Figure \ref{fig:c53}, detection performance by using different $l_{max}$s is given. Note, the best performance is given at $l_{max}=5$. The reasons are two-fold: 1) the weights are given by \ref{eq:pms4}, and favor larger fineness levels, and 2) both training examples and testing examples are of size $100 \times 40$, and $2^5=32$ is the best dividing parameter for positional information.
+In Figure \ref{fig:c53}, detection performance by using different $l_{max}$s is given. Note, the best performance is given at $l_{max}=5$. The reasons are two-fold: 1) the weights are given by (\ref{eq:pms4}), and favor larger fineness levels, and 2) both training examples and testing examples are of size $100 \times 40$, and $2^5=32$ is the best dividing parameter for positional information.
 
 \begin{figure}[!htbp]
 \centering
@@ -528,7 +528,7 @@ How the visual-spatial space is divided is also critical to the performance of t
 
 
 In Figure \ref{fig:c56}, performance are evaluated between the proposed method, and a state-of-the-art method, DPM~\citep{ac31}. The proposed method performs no worse than DPM,
-While the training time between the two models are 1 minute vs 16 hours. In this experiment, the training speed of the proposed method is 1,000 times faster. Also during the training of the proposed method, since \ref{eq:pms4} is used, only the positive training examples are used, while DPM uses both positive and negative training examples.
+While the training time between the two models are 1 minute vs 16 hours. In this experiment, the training speed of the proposed method is 1,000 times faster. Also during the training of the proposed method, since (\ref{eq:pms4}) is used, only the positive training examples are used, while DPM uses both positive and negative training examples.
 
 \begin{figure}[!htbp]
 \centering
@@ -609,7 +609,7 @@ The method detects at a frame rate of 8 frames per second with multi-thread acce
 
 Detection methods just all need to be evaluated on the PASCAL (pattern analysis, statistical modeling, and computational learning) Visual Object Classes~\citep{voc}. And VOC2007 is favored by even current famous detection methods~\citep{408}, because the testing data are publicly available, and many detection results are already evaluated on the dataset. To evaluate a detection method, experiments can be carried on one or several classes on the dataset, and here experiments are carried on objects belonging to the car category.
 
-What is different from the experiments on UIUC cars is that, $\omega$s are given by \ref{eq:pms5} instead of \ref{eq:pms4}. Also image features are not given by SIFT detectors, but by given by average sampling along edges from~\citep{bdt}. Also by setting threshold by the confidence from~\citep{bdt} of whether one  pixel is an edge point, that there are about 50 keypoints in all hypothesis rectangles are guaranteed.
+What is different from the experiments on UIUC cars is that, $\omega$s are given by (\ref{eq:pms5}) instead of (\ref{eq:pms4}). Also image features are not given by SIFT detectors, but by given by average sampling along edges from~\citep{bdt}. Also by setting threshold by the confidence from~\citep{bdt} of whether one  pixel is an edge point, that there are about 50 keypoints in all hypothesis rectangles are guaranteed.
 
 \begin{figure}[!htbp]
 \includegraphics[width=1.7\textwidth,bb=0 0 961 720]{v07car.png}
@@ -638,7 +638,7 @@ Let's take Figure \ref{fig:p3} as reference. Bag-of-features schema consider sim
 
 Together with DPM, PMS considers about visual and spatial information at all fineness levels, and is able to model the correlation between visual and spatial information. However, the way is different. DPM picks several object part at a certain fineness level of visual information, and makes assumptions of their corresponding fineness level of spatial information. For example, DPM will use the most top-left grid of $g(2,1)$, and use the most top-right grid of $g(1,2)$. This grid-picking procedure is achieved by structure SVMs. In the case of PMS, the philosophy is different. Instead of finding some very representative features at certain locations, all features are used, the noisy features are averaged out, since a larger number, i.e., 50, of features are used, compared to DPM, which usually performs good with 6 local features.
 
-Another advantage of PMS is that the number of parameters which need estimating is very small. While, $d=10$ is an easy conclusion. Other parameters, $l_{max}$, $a$, $b$, and $c$ are all super parameters, which actually contain abundant information. What is attractive is that even using \ref{eq:pms4} to directly assign weights, the performance on UIUC cars is still promising. These results are consistent with~\citep{pmk}.
+Another advantage of PMS is that the number of parameters which need estimating is very small. While, $d=10$ is an easy conclusion. Other parameters, $l_{max}$, $a$, $b$, and $c$ are all super parameters, which actually contain abundant information. What is attractive is that even using (\ref{eq:pms4}) to directly assign weights, the performance on UIUC cars is still promising. These results are consistent with~\citep{pmk}.
 
 To summarize, the way how the proposed method combines visual and spatial information of local features is theoretically promising.
 

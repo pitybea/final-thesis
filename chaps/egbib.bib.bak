@@ -940,7 +940,7 @@ Understanding Multi-Object Traffic Scenes",
         YEAR = "2008",
         BIBSOURCE = ""}
 
- @misc{ bisearch,
+ @online{ bisearch,
    author = "Baidu",
    title = {{baidu image search}},
    howpublished = "\url{http://stu.baidu.com}",
@@ -1529,5 +1529,5 @@ pages = {1062-1069},
   title        = "Human detection using oriented histograms of flow and appearance",
   booktitle    = "ECCV",
   year         = "2006",
-
+      pages     = {428-441},
 }

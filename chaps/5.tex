@@ -10,16 +10,17 @@ The results of Chapter \ref{chp4} is promising on the two experimental datasets,
 
  Just as said in~\citep{ac27}, Hough transform based methods and sliding-window methods are the two sides of the same coin. The method proposed in this chapter calculates confidence of a target object class for each sub-window in an image. Instead of considering each object as a collection of visual patterns (appearance of local features), the method considers each object as a set of visual-spatial patterns. One object is considered as a set of points. Each point is a digital vector, with the last two dimensions the relative $x-$ and $y-$ coordinates to object center, and SIFT after principal component analysis as the remaining dimensions. The training procedure is about collecting all such visual-spatial points into a point set, which acts as a super template. During detection, each sub-image is considered as a point set, and it is matched against the super template. The confidence is then the match score.
 
- The key to this method is how to define a matric or match score for two point sets. Here pyramid matching procedure is employed, not only for efficiency, but also for combining visual and spatial information from local features in an effective manner. The visual-spatial space is divided from fine to coarse. Under a certain dividing parameter, points from the two matching point sets are considered as match if they fall into the same grid, and they are excluded from the respective point sets. The procedure continues till one point set is empty. Then the numbers of matched pairs under each dividing method is counted, and a weighted sum of all these numbers are considered as the match score for two point set, which will be referred to as Pyramid Match Score, or PMS for short. The weights under all dividing methods are learned during training, and how to divide the visual-spatial space is of great importance.
+ The key to this method is how to define a match score for two point sets. Here pyramid matching procedure is employed, not only for efficiency, but also for combining visual and spatial information from local features in an effective manner. The visual-spatial space is divided from fine to coarse. Under a certain dividing parameter, points from the two matching point sets are considered as match if they fall into the same grid, and they are excluded from the respective point sets. The procedure continues till one point set is empty. Then the numbers of matched pairs under each dividing method is counted, and a weighted sum of all these numbers are considered as the match score for two point set, which will be referred to as Pyramid Match Score, or PMS for short. The weights under all dividing methods are learned during training, and how to divide the visual-spatial space is of great importance.
 
 Obviously, each object is considered as a whole during detection in this method.
 
 The proposed method also has several appealing properties, which include but not limited to:
 \begin{itemize}
 \item {Feasibility of sequential/batch training, which will lead to easy deployment in distributed system.}
-\item {Space complexity of the model is $O(1)$. Since the capacity of the point set acting as the super template is finite, and the size of the model is limited by the capacity.}
-\item {Detection time complexity not related to the size of training examples.}
+\item {Time complexity of detection not related to the size of training examples.}
 \end{itemize}
+
+
 
 This chapter is organized as follows. Section \ref{rw5} reviews most related work. Section \ref{dt5} propose the training and detecting procedure. Section \ref{exp5} gives experimental results. Section \ref{dis5} compares time complexities between the proposed method with other methods, discusses about the insights of the method, and explains why the proposed method is effective. Section \ref{conc5} concludes this chapter.
 
@@ -43,8 +44,7 @@ The successes of HOG~\citep{ij4} on pedestrians benefit from its capability to e
 Advantages of DPM include that it only need to encode the object parts in positive training examples, and that  some of its invariants can give promising results in real time. Still DPM heavily rely of the latent SVM, which is trained in an  expectation-maximization manner, and this stops it from adopting new training examples. While nowadays, training examples often come sequentially. A very flexible model, which will evolve with training examples is preferred. These evolutions include evolving of object part number, evolving of the appearance models of object parts, and evolving of the relative positions of object parts.
 
 
-
-The pyramid match score method is most related to methods using~\citep{pmk} or~\citep{kmts} as kernel functions, methods employ Hough transforms, and the methods proposing efficient solution space searching techniques~\citep{bab}. The method is also related to efforts trying to encode images~\citep{spen}.
+The pyramid match score method is most related to methods using~\citep{pmk} or~\citep{kmts} as kernel functions, methods employ Hough transforms, and the methods proposing efficient solution space searching techniques~\citep{bab}. The method is also related to efforts trying to encode images~\citep{spen} and methods combining sliding window with Hough transform~\citep{ac18}.
 
 
 \section{Pyramid Match Score}
@@ -603,6 +603,8 @@ The method detects at a frame rate of 8 frames per second with multi-thread acce
 \end{tabular}
 \caption[Comparisons of time consumptions]{Time consumptions of the proposed method, \citep{ac9}, and \citep{wang1}. Total time means the running time on all the 79 testing frames, and average time means average running time per frame.}\label{c5tb:tb1}
 \end{table}
+
+The training time of the three methods are also compared. Both Hough transform and common fate Hough transform spend 483 ms for training, while pyramid match score spend 978 ms for training. All methods spend less than one second for training.
 
 \begin{comment}
 \subsection{VOC2007 Cars}

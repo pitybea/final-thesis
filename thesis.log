@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.6.16)  6 JAN 2014 20:51
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.6.16)  8 JAN 2014 14:46
 entering extended mode
 **thesis.tex
 (E:\final-thesis\thesis.tex
@@ -2133,7 +2133,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 ]
 Chapter 5.
 [73] [74] [75]
-Underfull \vbox (badness 1688) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [76]
 Package epstopdf Info: Source file: <pms1.eps>
@@ -2147,7 +2147,7 @@ ms1.eps>
 (epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
 
-<pms1-eps-converted-to.pdf, id=1649, 479.7925pt x 169.63374pt>
+<pms1-eps-converted-to.pdf, id=1652, 479.7925pt x 169.63374pt>
 File: pms1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pms1-eps-converted-to.pdf>
@@ -2164,7 +2164,7 @@ ms2.eps>
 (epstopdf)             \includegraphics on input line 85.
 Package epstopdf Info: Output file is already uptodate.
 
-<pms2-eps-converted-to.pdf, id=1650, 635.37375pt x 169.63374pt>
+<pms2-eps-converted-to.pdf, id=1653, 635.37375pt x 169.63374pt>
 File: pms2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pms2-eps-converted-to.pdf>
@@ -2175,21 +2175,21 @@ re.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.96 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.5
-.2}) has been already used, duplicate ignored
+l.97 I
+      n~\citep{pmk}, pyramid matching helps to define kernel functions for S...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.96 
-      <E:/final-thesis/pms1-eps-converted-to.pdf> <E:/final-thesis/pms2-eps-con
-verted-to.pdf>] [79] [80]
+l.97 I
+      n~\citep{pmk}, pyramid matching helps to define kernel functions for S...
+ <E:/final-thesis/pms1-eps-converted-to.pdf> <E:/final-thesis/pms2-eps-converte
+d-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [82]
+ [79]
+[80] [81] [82]
 Package epstopdf Info: Source file: <pms3.eps>
 (epstopdf)                    date: 2013-08-09 19:47:54
 (epstopdf)                    size: 2066630 bytes
@@ -2200,8 +2200,7 @@ Package epstopdf Info: Source file: <pms3.eps>
 ms3.eps>
 (epstopdf)             \includegraphics on input line 317.
 Package epstopdf Info: Output file is already uptodate.
-
-<pms3-eps-converted-to.pdf, id=1748, 649.42625pt x 522.95375pt>
+ <pms3-eps-converted-to.pdf, id=1750, 649.42625pt x 522.95375pt>
 File: pms3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pms3-eps-converted-to.pdf>
@@ -2219,79 +2218,79 @@ Overfull \hbox (3.30913pt too wide) detected at line 396
 [] []
  []
 
-[87] <test-0_good.jpg, id=1816, 210.7875pt x 115.43124pt>
+[87] <test-0_good.jpg, id=1818, 210.7875pt x 115.43124pt>
 File: test-0_good.jpg Graphic file (type jpg)
 
 <use test-0_good.jpg>
 Package pdftex.def Info: test-0_good.jpg used on input line 442.
 (pdftex.def)             Requested size: 158.09024pt x 86.57321pt.
- <test-10_good.jpg, id=1817, 200.75pt x 150.5625pt>
+ <test-10_good.jpg, id=1819, 200.75pt x 150.5625pt>
 File: test-10_good.jpg Graphic file (type jpg)
 
 <use test-10_good.jpg>
 Package pdftex.def Info: test-10_good.jpg used on input line 443.
 (pdftex.def)             Requested size: 150.56212pt x 112.92159pt.
- <test-14_good.jpg, id=1818, 180.675pt x 135.50626pt>
+ <test-14_good.jpg, id=1820, 180.675pt x 135.50626pt>
 File: test-14_good.jpg Graphic file (type jpg)
 
 <use test-14_good.jpg>
 Package pdftex.def Info: test-14_good.jpg used on input line 444.
 (pdftex.def)             Requested size: 135.5059pt x 101.62943pt.
- <test-16_good.jpg, id=1819, 207.77625pt x 116.435pt>
+ <test-16_good.jpg, id=1821, 207.77625pt x 116.435pt>
 File: test-16_good.jpg Graphic file (type jpg)
 
 <use test-16_good.jpg>
 Package pdftex.def Info: test-16_good.jpg used on input line 445.
 (pdftex.def)             Requested size: 155.83179pt x 87.32602pt.
- <test-20_good.jpg, id=1820, 170.6375pt x 98.3675pt>
+ <test-20_good.jpg, id=1822, 170.6375pt x 98.3675pt>
 File: test-20_good.jpg Graphic file (type jpg)
 
 <use test-20_good.jpg>
 Package pdftex.def Info: test-20_good.jpg used on input line 446.
 (pdftex.def)             Requested size: 127.9778pt x 73.77542pt.
- <test-21_good.jpg, id=1821, 190.7125pt x 101.37875pt>
+ <test-21_good.jpg, id=1823, 190.7125pt x 101.37875pt>
 File: test-21_good.jpg Graphic file (type jpg)
 
 <use test-21_good.jpg>
 Package pdftex.def Info: test-21_good.jpg used on input line 447.
 (pdftex.def)             Requested size: 143.03401pt x 76.03386pt.
- <test-22_good.jpg, id=1822, 235.88126pt x 134.5025pt>
+ <test-22_good.jpg, id=1824, 235.88126pt x 134.5025pt>
 File: test-22_good.jpg Graphic file (type jpg)
 
 <use test-22_good.jpg>
 Package pdftex.def Info: test-22_good.jpg used on input line 448.
 (pdftex.def)             Requested size: 176.9105pt x 100.8766pt.
- <test-24_good.jpg, id=1823, 194.7275pt x 125.46875pt>
+ <test-24_good.jpg, id=1825, 194.7275pt x 125.46875pt>
 File: test-24_good.jpg Graphic file (type jpg)
 
 <use test-24_good.jpg>
 Package pdftex.def Info: test-24_good.jpg used on input line 449.
 (pdftex.def)             Requested size: 146.04524pt x 94.10132pt.
- <test-29_good.jpg, id=1824, 183.68625pt x 123.46124pt>
+ <test-29_good.jpg, id=1826, 183.68625pt x 123.46124pt>
 File: test-29_good.jpg Graphic file (type jpg)
 
 <use test-29_good.jpg>
 Package pdftex.def Info: test-29_good.jpg used on input line 450.
 (pdftex.def)             Requested size: 137.76433pt x 92.59569pt.
- <test-2_good.jpg, id=1825, 175.65625pt x 90.3375pt>
+ <test-2_good.jpg, id=1827, 175.65625pt x 90.3375pt>
 File: test-2_good.jpg Graphic file (type jpg)
 
 <use test-2_good.jpg>
 Package pdftex.def Info: test-2_good.jpg used on input line 451.
 (pdftex.def)             Requested size: 131.74185pt x 67.75294pt.
- <test-31_good.jpg, id=1826, 132.495pt x 106.3975pt>
+ <test-31_good.jpg, id=1828, 132.495pt x 106.3975pt>
 File: test-31_good.jpg Graphic file (type jpg)
 
 <use test-31_good.jpg>
 Package pdftex.def Info: test-31_good.jpg used on input line 452.
 (pdftex.def)             Requested size: 99.37099pt x 79.79791pt.
- <test-3_good.jpg, id=1827, 229.85875pt x 112.42pt>
+ <test-3_good.jpg, id=1829, 229.85875pt x 112.42pt>
 File: test-3_good.jpg Graphic file (type jpg)
 
 <use test-3_good.jpg>
 Package pdftex.def Info: test-3_good.jpg used on input line 453.
 (pdftex.def)             Requested size: 172.39362pt x 84.31479pt.
- <test-5_good.jpg, id=1828, 142.5325pt x 83.31125pt>
+ <test-5_good.jpg, id=1830, 142.5325pt x 83.31125pt>
 File: test-5_good.jpg Graphic file (type jpg)
 
 <use test-5_good.jpg>
@@ -2311,7 +2310,7 @@ Package epstopdf Info: Source file: <pdim.eps>
 dim.eps>
 (epstopdf)             \includegraphics on input line 467.
 Package epstopdf Info: Output file is already uptodate.
-<pdim-eps-converted-to.pdf, id=1834, 722.7pt x 542.025pt>
+<pdim-eps-converted-to.pdf, id=1836, 722.7pt x 542.025pt>
 File: pdim-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pdim-eps-converted-to.pdf>
@@ -2347,7 +2346,7 @@ plmax.eps>
 (epstopdf)             \includegraphics on input line 481.
 Package epstopdf Info: Output file is already uptodate.
 
-<plmax-eps-converted-to.pdf, id=1858, 710.655pt x 524.96124pt>
+<plmax-eps-converted-to.pdf, id=1860, 710.655pt x 524.96124pt>
 File: plmax-eps-converted-to.pdf Graphic file (type pdf)
 
 <use plmax-eps-converted-to.pdf>
@@ -2364,7 +2363,7 @@ p.eps>
 (epstopdf)             \includegraphics on input line 494.
 Package epstopdf Info: Output file is already uptodate.
 
-<pvp-eps-converted-to.pdf, id=1861, 722.7pt x 542.025pt>
+<pvp-eps-converted-to.pdf, id=1863, 722.7pt x 542.025pt>
 File: pvp-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pvp-eps-converted-to.pdf>
@@ -2395,7 +2394,7 @@ p.eps>
 (epstopdf)             \includegraphics on input line 507.
 Package epstopdf Info: Output file is already uptodate.
 
-<pnp-eps-converted-to.pdf, id=1884, 722.7pt x 542.025pt>
+<pnp-eps-converted-to.pdf, id=1886, 722.7pt x 542.025pt>
 File: pnp-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pnp-eps-converted-to.pdf>
@@ -2412,7 +2411,7 @@ m.eps>
 (epstopdf)             \includegraphics on input line 521.
 Package epstopdf Info: Output file is already uptodate.
 
-<dpm-eps-converted-to.pdf, id=1890, 673.51625pt x 519.9425pt>
+<dpm-eps-converted-to.pdf, id=1892, 673.51625pt x 519.9425pt>
 File: dpm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dpm-eps-converted-to.pdf>
@@ -2443,7 +2442,7 @@ com.eps>
 (epstopdf)             \includegraphics on input line 536.
 Package epstopdf Info: Output file is already uptodate.
 
-<hcom-eps-converted-to.pdf, id=1914, 732.7375pt x 542.025pt>
+<hcom-eps-converted-to.pdf, id=1916, 732.7375pt x 542.025pt>
 File: hcom-eps-converted-to.pdf Graphic file (type pdf)
 
 <use hcom-eps-converted-to.pdf>
@@ -2460,7 +2459,7 @@ ncp.eps>
 (epstopdf)             \includegraphics on input line 548.
 Package epstopdf Info: Output file is already uptodate.
 
-<ancp-eps-converted-to.pdf, id=1915, 744.7825pt x 408.52625pt>
+<ancp-eps-converted-to.pdf, id=1917, 744.7825pt x 408.52625pt>
 File: ancp-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ancp-eps-converted-to.pdf>
@@ -2484,7 +2483,7 @@ l.569
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 572.
 
-<org36.jpg, id=1948, 722.7pt x 578.16pt>
+<org36.jpg, id=1950, 722.7pt x 578.16pt>
 File: org36.jpg Graphic file (type jpg)
  <use org36.jpg>
 Package pdftex.def Info: org36.jpg used on input line 572.
@@ -2494,7 +2493,7 @@ Package pdftex.def Info: org36.jpg used on input line 572.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 573.
 
-<org71.jpg, id=1949, 722.7pt x 578.16pt>
+<org71.jpg, id=1951, 722.7pt x 578.16pt>
 File: org71.jpg Graphic file (type jpg)
  <use org71.jpg>
 Package pdftex.def Info: org71.jpg used on input line 573.
@@ -2504,7 +2503,7 @@ Package pdftex.def Info: org71.jpg used on input line 573.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 574.
 
-<org261.jpg, id=1950, 722.7pt x 578.16pt>
+<org261.jpg, id=1952, 722.7pt x 578.16pt>
 File: org261.jpg Graphic file (type jpg)
  <use org261.jpg>
 Package pdftex.def Info: org261.jpg used on input line 574.
@@ -2514,7 +2513,7 @@ Package pdftex.def Info: org261.jpg used on input line 574.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 575.
 
-<org376.jpg, id=1951, 722.7pt x 578.16pt>
+<org376.jpg, id=1953, 722.7pt x 578.16pt>
 File: org376.jpg Graphic file (type jpg)
  <use org376.jpg>
 Package pdftex.def Info: org376.jpg used on input line 575.
@@ -2530,7 +2529,7 @@ f.eps>
 (epstopdf)             \includegraphics on input line 584.
 Package epstopdf Info: Output file is already uptodate.
 
-<cmf-eps-converted-to.pdf, id=1952, 756.8275pt x 553.06625pt>
+<cmf-eps-converted-to.pdf, id=1954, 756.8275pt x 553.06625pt>
 File: cmf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cmf-eps-converted-to.pdf>
@@ -2540,22 +2539,25 @@ Package pdftex.def Info: cmf-eps-converted-to.pdf used on input line 584.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[97pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
-2}) has been already used, duplicate ignored
+
+Underfull \vbox (badness 1097) has occurred while \output is active []
+
+ [97pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.621 \section
-              {Discussion} <E:/final-thesis/org36.jpg> <E:/final-thesis/org71.j
-pg> <E:/final-thesis/org261.jpg> <E:/final-thesis/org376.jpg>] [98pdfTeX warnin
-g (ext4): destination with the same identifier (name{figure.5.13}) has been alr
-eady used, duplicate ignored
+l.608 
+       <E:/final-thesis/org36.jpg> <E:/final-thesis/org71.jpg> <E:/final-thesis
+/org261.jpg> <E:/final-thesis/org376.jpg>] [98pdfTeX warning (ext4): destinatio
+n with the same identifier (name{figure.5.13}) has been already used, duplicate
+ ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.621 \section
-              {Discussion} <E:/final-thesis/cmf-eps-converted-to.pdf>] [99]
-[100]) [101] (E:\final-thesis\chaps/6.tex
+l.608 
+       <E:/final-thesis/cmf-eps-converted-to.pdf>] [99] [100]) [101]
+(E:\final-thesis\chaps/6.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -2576,7 +2578,13 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 
 
 ] [106] [107] [108] [109]
-[110] [111] [112] [113]) [114] (E:\final-thesis\chaps/thanks.tex
+[110] [111] [112]
+Underfull \hbox (badness 5696) in paragraph at lines 653--653
+[]\OT1/ptm/m/n/12 Wikipedia (2012).  Siri.  [][]$\OT1/pcr/m/n/12 http : / / en 
+. wikipedia . org / wiki / Siri _$
+ []
+
+[113]) [114] (E:\final-thesis\chaps/thanks.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -2623,7 +2631,7 @@ Package rerunfilecheck Info: Checksums for `thesis.out':
 (rerunfilecheck)             Before: 218156CBF5168DD7126C983393337BFA;17094
 (rerunfilecheck)             After:  8CC3CBC76637E0DA8C80750C7ED51ED0;4803.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: FC359CB31B2ED128A1DA696E167DC94E;11339.
+(rerunfilecheck)             Checksum: A6E1902A45851F90D5C0E1E61AE149D8;11381.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2631,7 +2639,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  12155 strings out of 495354
  164872 string characters out of 3183859
- 281887 words of memory out of 3000000
+ 281901 words of memory out of 3000000
  14273 multiletter control sequences out of 15000+200000
  22713 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -2649,9 +2657,9 @@ ic/amsfonts/cm/cmsy6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb><C:/CTEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/CTEX/MiKTeX/fonts/typ
 e1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CT
 EX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (127 pages, 18840774 bytes).
+Output written on thesis.pdf (127 pages, 18842093 bytes).
 PDF statistics:
- 2484 PDF objects out of 2487 (max. 8388607)
+ 2490 PDF objects out of 2984 (max. 8388607)
  453 named destinations out of 1000 (max. 500000)
  1106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

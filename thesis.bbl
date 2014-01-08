@@ -24,8 +24,8 @@ Attias, H. (2000).
 \newblock A variational bayesian framework for graphical models.
 \newblock In {\em NISP}, (pp.\ 209--215). MIT Press.
 
-\bibitem[\protect\citeauthoryear{Baidu}{Baidu}{}]{bisearch}
-Baidu.
+\bibitem[\protect\citeauthoryear{Baidu}{Baidu}{2013}]{bisearch}
+Baidu (2013).
 \newblock {baidu image search}.
 \newblock \url{http://stu.baidu.com}.
 \newblock [Online; accessed 22-May-2013].
@@ -509,8 +509,8 @@ Pan, S.~J. \& Yang, Q. (2010).
 \newblock {\em IEEE Transactions on Knowledge and Data Engineering}, {\em
   22\/}(10), 1345--1359.
 
-\bibitem[\protect\citeauthoryear{PASCAL}{PASCAL}{}]{voc}
-PASCAL.
+\bibitem[\protect\citeauthoryear{PASCAL}{PASCAL}{2012}]{voc}
+PASCAL (2012).
 \newblock {Visual Object Classes Challenge 2012}.
 \newblock \url{http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2012}.
 \newblock [Online; accessed 22-May-2013].
@@ -639,14 +639,14 @@ Wertheimer, M. (1938).
 \newblock In Ellis, W.~B. (Ed.), {\em A Sourcebook of Gestalt Psychology},
   (pp.\ 71--88). Harcourt, Brace.
 
-\bibitem[\protect\citeauthoryear{Wikipedia}{Wikipedia}{a}]{dod}
-Wikipedia.
+\bibitem[\protect\citeauthoryear{Wikipedia}{Wikipedia}{2008}]{dod}
+Wikipedia (2008).
 \newblock {Object Detection}.
 \newblock \url{http://en.wikipedia.org/wiki/Object_detection}.
 \newblock [Online; accessed 22-May-2013].
 
-\bibitem[\protect\citeauthoryear{Wikipedia}{Wikipedia}{b}]{siri}
-Wikipedia.
+\bibitem[\protect\citeauthoryear{Wikipedia}{Wikipedia}{2012}]{siri}
+Wikipedia (2012).
 \newblock {Siri}.
 \newblock \url{http://en.wikipedia.org/wiki/Siri_(software)}.
 \newblock [Online; accessed 22-May-2013].
