@@ -541,6 +541,7 @@ While the training time between the two models are 1 minute vs 16 hours. In this
 \end{figure}
 \FloatBarrier
 
+In Figure \ref{fig:c5i}, performance are evaluated among the proposed method and variants of Hough transform methods. By taking into consideration of the size of the codebook, the original Hough transform method is 1,000 (the indexes in \ref{fig:c5i} mean the times of time consumptions of the variants) time-consuming than the proposed method in giving the confidence of one sub-window's being a target object. Naive $k$-means method is employed to accelerate the original Hough transform method during training by condensing the size of the codebook. The original Hough transform method performs better than the proposed method. When the time consumptions are the same, the proposed method performs much better. And the proposed method performs better than the variant which is 4 times time-consuming.
 
 \begin{figure}[!htbp]
 \centering
@@ -553,7 +554,7 @@ While the training time between the two models are 1 minute vs 16 hours. In this
 \end{figure}
 \FloatBarrier
 
-In Figure \ref{fig:c57}, the average numbers of matched pairs of positive and negative test examples are shown. It is clear that under finer dividing methods, positive test examples possess larger average number of matched pairs, while under coarser dividing methods, negative test examples possess larger matched number of matched pairs.
+In Figure \ref{fig:c57}, the average numbers of matched pairs of positive and negative test examples are shown. It is clear that under finer dividing methods, positive test examples possess larger average numbers of matched pairs, while under coarser dividing methods, negative test examples possess larger matched numbers of matched pairs.
 
 
 \subsection{P-campus}

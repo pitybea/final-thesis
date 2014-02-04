@@ -541,6 +541,7 @@ While the training time between the two models are 1 minute vs 16 hours. In this
 \end{figure}
 \FloatBarrier
 
+In Figure \ref{fig:c5i}, performance are evaluated among the proposed method and variants of Hough transform methods. By taking into consideration of the size of the codebook, the original Hough transform method is 1,000 (the indexes in \ref{fig:c5i} mean the times of time consumptions of the variants) time-consuming than the proposed method in giving the confidence of one sub-window's being a target object. Naive $k$-means method is employed to accelerate the original Hough transform method during training by condensing the size of the codebook. The original Hough transform method performs better than the proposed method. When the time consumptions are the same, the proposed method performs much better. And the proposed method performs better than the variant which is 4 times time-consuming.
 
 \begin{figure}[!htbp]
 \centering
@@ -603,6 +604,8 @@ The method detects at a frame rate of 8 frames per second with multi-thread acce
 \end{tabular}
 \caption[Comparisons of time consumptions]{Time consumptions of the proposed method, \citep{ac9}, and \citep{wang1}. Total time means the running time on all the 79 testing frames, and average time means average running time per frame.}\label{c5tb:tb1}
 \end{table}
+
+The training time of the three methods are also compared. Both Hough transform and common fate Hough transform spend 483 ms for training, while pyramid match score spend 978 ms for training. All methods spend less than one second for training.
 
 \begin{comment}
 \subsection{VOC2007 Cars}

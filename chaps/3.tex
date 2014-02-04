@@ -1,4 +1,4 @@
-\chapter{Voting by Local Visual-temporal Patterns for Efficient Thermal Feature Detection in Tunnels}
+\chapter{Efficient Voting along Time Axis}
 \label{chp3}
 
 \section{Introduction}
@@ -29,7 +29,7 @@ The advantage of this method is its ability to give promising detection results 
 
 
 
-This chapter is organized as follows. Section \ref{rw} reviews related work. Section \ref{ab} introduces application background. Section \ref{pip} proposes a pipeline for the method. Section \ref{exp} gives experimental results. Section \ref{ord} gives results by extending the method for data collected by ordinary cameras. Section \ref{conc} concludes.
+This chapter is organized as follows. Section \ref{rw} reviews related work. Section \ref{ab} introduces application background. Section \ref{pip} proposes a pipeline for the method. Section \ref{exp} gives experimental results for data collected by infrared cameras and gives results by extending the method for data collected by ordinary cameras. Section \ref{conc} concludes.
 
 
 
@@ -100,7 +100,7 @@ This work is also related to feature grouping methods~\citep{ac25}, detecting me
 
 
 
-\section{Application background}
+\section{Application Background}
 \label{ab}
 
 When developing the method, potential application scenarios are within consideration. The method aims to perform detection in real time, and serve as an effective unit in positioning automobiles in tunnel environment.
@@ -311,7 +311,7 @@ The procedure is as follows: 1) each detection result along a trajectory which e
 \label{exp}
 In this section, this method is tested based on detection performance and efficiency. Two experiments  and their results are reported in this section.
 
-\subsection{Experiment One}
+\subsection{Dataset One}
 
 \subsubsection{Data} To collect data, infrared cameras are mounted on top of the experimental vehicle, and then we take several tours of the Awagatake tunnel. In the first experiment,  Approximately 4,000 frames are collected for each tour. The frame size is $640\times 480$, the intensity range is [0,255], and the frame rate is 30 frames per second of the camera, and 15 frames per second of the collection program.
 
@@ -443,7 +443,7 @@ The detection rate and false alarm rate is evaluated on 250 frames, as shown in 
 \caption[Detection rate and false alarm rate]{Detection rate and false alarm rate.}\label{ex1:tb2}
 \end{table}
 
-\subsection{Experiment Two}
+\subsection{Dataset Two}
 
 
 
@@ -544,8 +544,8 @@ The results on the trajectories of decisions are also evaluated. When one trajec
 \caption[Final detection rate and false alarm rate]{Final detection rate and false alarm rate.}\label{tb:tb3}
 \end{table}
 
-\section{Experimental results on data collected by ordinary cameras}
-\label{ord}
+\subsection{P-campus}
+
 
 
 

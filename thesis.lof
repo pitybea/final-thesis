@@ -4,7 +4,7 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Background and Related Work}{5}{chapter.2}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Voting by Local Visual-temporal Patterns for Efficient Thermal Feature Detection in Tunnels}{15}{chapter.3}
+\contentsline {xchapter}{Efficient Voting along Time Axis}{15}{chapter.3}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Target objects and detection results}}{17}{figure.3.1}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{17}{figure.3.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{17}{figure.3.1}
@@ -36,7 +36,7 @@
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Keypoint verification}}{40}{figure.3.13}
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Evaluation of keypoint verification}}{41}{figure.3.14}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Object Detection by Common Fate Hough Voting}{43}{chapter.4}
+\contentsline {xchapter}{Common Fate Hough Voting}{43}{chapter.4}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Merit of the proposed method}}{46}{figure.4.1}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{46}{figure.4.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{46}{figure.4.1}
@@ -77,7 +77,7 @@
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Result comparison with deformable part model~\citep {ac31}}}{96}{figure.5.9}
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Comparison between Pyramid Match Score and Hough transform}}{97}{figure.5.10}
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Average numbers of matched pairs of positive and negative test examples}}{98}{figure.5.11}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Detection results on P-campus dataset.}}{99}{figure.5.12}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Precision-Recall curves for the method, Hough transform, and common fate Hough transform.}}{100}{figure.5.13}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Detection results on P-campus dataset.}}{100}{figure.5.12}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Precision-Recall curves for the method, Hough transform, and common fate Hough transform.}}{101}{figure.5.13}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusion and outlook}{105}{chapter.6}
+\contentsline {xchapter}{Conclusion and Outlook}{105}{chapter.6}
