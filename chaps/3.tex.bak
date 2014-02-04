@@ -574,7 +574,7 @@ The failure of this method in complex scene is the lacking of descriptive power 
 {
   \includegraphics[width=1\textwidth]{kptkms.eps}
 }
-\caption[Evaluation of keypoint verification]{Evaluation of keypoint verification. Keypoint verification performance of $k$-means mixture models with different parameters. Here, $k$ is the main parameter, while the model of ensemble is a mixture of all other $k$-means methods.}
+\caption[Evaluation of keypoint verification]{Evaluation of keypoint verification. Keypoint verification performance of $k$-means mixture models with different parameters. Here, $k$ is the main parameter, while the model of ensemble uses all mixture models.}
 \label{ord:one}
 \end{figure}
 

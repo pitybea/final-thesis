@@ -71,6 +71,12 @@
 \makeatother
 
 
+\hypersetup{
+  colorlinks,
+  citecolor=Violet,
+  linkcolor=Blue,
+  urlcolor=Blue}
+
 \usepackage{StyleFiles/watermark}
 
 % Comment out the next line to get single spacing
@@ -81,7 +87,7 @@
 
 
 
-
+\pagenumbering{roman}
 \tableofcontents
 \cleardoublepage
 \listoffigures
@@ -100,13 +106,13 @@
 %\newpage
 %-------------------
 \mainmatter
+\pagenumbering{arabic}
 \include{chaps/1}
 \include{chaps/2}
 \include{chaps/3}
 \include{chaps/4}
 \include{chaps/5}
 \include{chaps/6}
-\include{chaps/ext}
 
 %-------------------
 \bibliographystyle{newapa}
