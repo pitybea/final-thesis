@@ -5,79 +5,82 @@
 \contentsline {xchapter}{Background and Related Work}{5}{chapter.2}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Efficient Voting along Time Axis}{15}{chapter.3}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Target objects and detection results}}{17}{figure.3.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{17}{figure.3.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{17}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Keypoint detection}}{21}{figure.3.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{21}{figure.3.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{21}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Keypoint verification and clustering}}{23}{figure.3.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{23}{figure.3.3}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{23}{figure.3.3}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{23}{figure.3.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{23}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Keypoint cluster verification by appearance}}{26}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Keypoint detection comparison}}{31}{figure.3.5}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{31}{figure.3.5}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{31}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Positive and negative training examples}}{31}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Original data and detection results}}{32}{figure.3.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{32}{figure.3.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{32}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Keypoint verification and clustering}}{33}{figure.3.8}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{33}{figure.3.8}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{33}{figure.3.8}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{33}{figure.3.8}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{33}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Keypoint cluster verification by appearance}}{34}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Keypoint cluster tracking}}{34}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Detection results}}{35}{figure.3.11}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Detection results}}{38}{figure.3.12}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Keypoint verification}}{40}{figure.3.13}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Evaluation of keypoint verification}}{41}{figure.3.14}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Candidate object localization}}{19}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Candidate object verification}}{20}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Voting along time axis}}{21}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Target objects and detection results}}{22}{figure.3.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{22}{figure.3.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{22}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Keypoint detection}}{24}{figure.3.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{24}{figure.3.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{24}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Keypoint verification and clustering}}{26}{figure.3.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{26}{figure.3.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{26}{figure.3.6}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{26}{figure.3.6}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{26}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Keypoint cluster verification by appearance}}{29}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Keypoint detection comparison}}{34}{figure.3.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{34}{figure.3.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{34}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Positive and negative training examples}}{34}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Original data and detection results}}{35}{figure.3.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{35}{figure.3.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{35}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Keypoint verification and clustering}}{36}{figure.3.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{36}{figure.3.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{36}{figure.3.11}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{36}{figure.3.11}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{36}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Keypoint cluster verification by appearance}}{37}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Keypoint cluster tracking}}{37}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Detection results}}{38}{figure.3.14}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Detection results}}{41}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Keypoint verification}}{43}{figure.3.16}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Evaluation of keypoint verification}}{44}{figure.3.17}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Common Fate Hough Voting}{43}{chapter.4}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Merit of the proposed method}}{46}{figure.4.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{46}{figure.4.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{46}{figure.4.1}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{46}{figure.4.1}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{46}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Effect of the proposed weight}}{54}{figure.4.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{54}{figure.4.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{54}{figure.4.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{54}{figure.4.2}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{54}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Example Hough images}}{59}{figure.4.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{59}{figure.4.3}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{59}{figure.4.3}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{59}{figure.4.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{59}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Images for training}}{61}{figure.4.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{61}{figure.4.4}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{61}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Motion grouping results}}{62}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Inference procedure}}{63}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparisons with benchmark method}}{66}{figure.4.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{66}{figure.4.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{66}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Detection results}}{67}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Effect of the proposed weight assignment}}{69}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Example Hough images}}{70}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{72}{figure.4.11}
+\contentsline {xchapter}{Common Fate Hough Voting}{47}{chapter.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Merit of the proposed method}}{50}{figure.4.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{50}{figure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{50}{figure.4.1}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{50}{figure.4.1}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{50}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Effect of the proposed weight}}{58}{figure.4.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{58}{figure.4.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{58}{figure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{58}{figure.4.2}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{58}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Example Hough images}}{63}{figure.4.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{63}{figure.4.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{63}{figure.4.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{63}{figure.4.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{63}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Images for training}}{65}{figure.4.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{65}{figure.4.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{65}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Motion grouping results}}{66}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Inference procedure}}{67}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparisons with benchmark method}}{70}{figure.4.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{70}{figure.4.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{70}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Detection results}}{71}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Effect of the proposed weight assignment}}{73}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Example Hough images}}{74}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{76}{figure.4.11}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Fast Voting by Pyramid Match}{75}{chapter.5}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Best one-one match}}{80}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Pyramid matching procedure}}{80}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Visual-spatial space dividing}}{86}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Detection results on UIUC cars}}{91}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Result evaluation using different dimensions}}{92}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Result evaluation using different largest fineness levels}}{93}{figure.5.6}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Result evaluation by using results from only visual or spatial information}}{94}{figure.5.7}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Result comparison with method using dividing methods of \citep {pmk}}}{95}{figure.5.8}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Result comparison with deformable part model~\citep {ac31}}}{96}{figure.5.9}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Comparison between Pyramid Match Score and Hough transform}}{97}{figure.5.10}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Average numbers of matched pairs of positive and negative test examples}}{98}{figure.5.11}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Detection results on P-campus dataset.}}{100}{figure.5.12}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Precision-Recall curves for the method, Hough transform, and common fate Hough transform.}}{101}{figure.5.13}
+\contentsline {xchapter}{Fast Voting by Pyramid Match}{79}{chapter.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Best one-one match}}{84}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Pyramid matching procedure}}{84}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Visual-spatial space dividing}}{90}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Detection results on UIUC cars}}{95}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Result evaluation using different dimensions}}{96}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Result evaluation using different largest fineness levels}}{97}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Result evaluation by using results from only visual or spatial information}}{98}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Result comparison with method using dividing methods of \citep {pmk}}}{99}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Result comparison with deformable part model~\citep {ac31}}}{100}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Comparison between Pyramid Match Score and Hough transform}}{101}{figure.5.10}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Average numbers of matched pairs of positive and negative test examples}}{102}{figure.5.11}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Detection results on P-campus dataset.}}{104}{figure.5.12}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Precision-Recall curves for the method, Hough transform, and common fate Hough transform.}}{105}{figure.5.13}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusion and Outlook}{105}{chapter.6}
+\contentsline {xchapter}{Conclusion and Outlook}{109}{chapter.6}

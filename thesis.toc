@@ -16,63 +16,68 @@
 \contentsline {chapter}{\numberline {3}Efficient Voting along Time Axis}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{15}{section.3.1}
 \contentsline {section}{\numberline {3.2}Related Work}{17}{section.3.2}
-\contentsline {section}{\numberline {3.3}Application Background}{18}{section.3.3}
-\contentsline {section}{\numberline {3.4}Detection Pipeline}{20}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Keypoint Detection}{20}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Keypoint Verification}{21}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Keypoint Clustering}{24}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Keypoint Cluster Verification by Appearance}{24}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Keypoint Cluster Tracking}{27}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}Keypoint Cluster Verification by Motion}{28}{subsection.3.4.6}
-\contentsline {subsection}{\numberline {3.4.7}Pipeline Summary}{28}{subsection.3.4.7}
-\contentsline {subsection}{\numberline {3.4.8}Object Detection}{29}{subsection.3.4.8}
-\contentsline {subsection}{\numberline {3.4.9}Voting along a Trajectory}{29}{subsection.3.4.9}
-\contentsline {section}{\numberline {3.5}Experimental Results}{29}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Dataset One}{30}{subsection.3.5.1}
-\contentsline {subsubsection}{Data}{30}{section*.5}
-\contentsline {subsubsection}{Implementation Settings}{30}{section*.6}
-\contentsline {subsubsection}{Detection Results}{36}{section*.7}
-\contentsline {subsection}{\numberline {3.5.2}Dataset Two}{36}{subsection.3.5.2}
-\contentsline {subsubsection}{Data}{36}{section*.8}
-\contentsline {subsubsection}{Implementation Settings}{36}{section*.9}
-\contentsline {subsubsection}{Detection Results}{39}{section*.10}
-\contentsline {subsection}{\numberline {3.5.3}P-campus}{39}{subsection.3.5.3}
-\contentsline {section}{\numberline {3.6}Chapter Conclusion}{42}{section.3.6}
-\contentsline {chapter}{\numberline {4}Common Fate Hough Voting}{43}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{43}{section.4.1}
-\contentsline {section}{\numberline {4.2}Related Work}{47}{section.4.2}
-\contentsline {section}{\numberline {4.3}Application Background}{50}{section.4.3}
-\contentsline {section}{\numberline {4.4}Common Fate Hough Transform}{50}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Common Fate Weights}{52}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Motion Grouping}{55}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Codebook}{56}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Detection}{57}{section.4.5}
-\contentsline {section}{\numberline {4.6}Experimental Results}{60}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1} P-campus }{60}{subsection.4.6.1}
-\contentsline {subsubsection}{Dataset}{61}{section*.11}
-\contentsline {subsubsection}{Implementation Settings}{61}{section*.12}
-\contentsline {subsubsection}{Comparisons}{65}{section*.13}
-\contentsline {subsection}{\numberline {4.6.2}Wild-scene}{68}{subsection.4.6.2}
-\contentsline {subsubsection}{Dataset}{71}{section*.14}
-\contentsline {subsubsection}{Implementation settings}{71}{section*.15}
-\contentsline {subsubsection}{Comparisons}{71}{section*.16}
-\contentsline {section}{\numberline {4.7}Chapter Conclusion}{73}{section.4.7}
-\contentsline {chapter}{\numberline {5}Fast Voting by Pyramid Match}{75}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{75}{section.5.1}
-\contentsline {section}{\numberline {5.2}Related Work}{77}{section.5.2}
-\contentsline {section}{\numberline {5.3}Pyramid Match Score}{79}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Pyramid Matching}{79}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Training and Detection}{82}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Dividing Visual-spatial Space}{83}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Deciding Weights for Dividing Methods}{87}{subsection.5.3.4}
-\contentsline {subsection}{\numberline {5.3.5}Learning Weights for Dividing Methods}{87}{subsection.5.3.5}
-\contentsline {section}{\numberline {5.4}Experimental Results}{89}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}UIUC Cars}{90}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}P-campus}{98}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Discussion}{102}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Time Complexity}{102}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Usage of Visual and Spatial Information}{103}{subsection.5.5.2}
-\contentsline {section}{\numberline {5.6}Chapter Conclusion}{104}{section.5.6}
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{105}{chapter.6}
-\contentsline {chapter}{Bibliography}{107}{chapter*.17}
-\contentsline {chapter}{Acknowledgements}{117}{chapter*.18}
+\contentsline {section}{\numberline {3.3}Method Outline}{18}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Candidate Object Localization}{18}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Candidate Object Verification}{19}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Voting along Time Axis}{20}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Implementation on Data Collected by Infrared Cameras in Tunnels}{21}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Candidate Object Localization}{23}{subsection.3.4.1}
+\contentsline {subsubsection}{Keypoint Detection}{23}{section*.5}
+\contentsline {subsubsection}{Keypoint Verification}{24}{section*.6}
+\contentsline {subsubsection}{Keypoint Clustering}{27}{section*.7}
+\contentsline {subsection}{\numberline {3.4.2}Candidate Object Verification}{27}{subsection.3.4.2}
+\contentsline {subsubsection}{Keypoint Cluster Verification by Appearance}{27}{section*.8}
+\contentsline {subsubsection}{Keypoint Cluster Tracking}{30}{section*.9}
+\contentsline {subsubsection}{Keypoint Cluster Verification by Motion}{31}{section*.10}
+\contentsline {subsubsection}{Object Labels}{31}{section*.11}
+\contentsline {subsection}{\numberline {3.4.3}Voting along Time Axis}{31}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Pipeline Summary}{32}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Experimental Results}{32}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Dataset One}{33}{subsection.3.5.1}
+\contentsline {subsubsection}{Data}{33}{section*.12}
+\contentsline {subsubsection}{Implementation Settings}{33}{section*.13}
+\contentsline {subsubsection}{Detection Results}{39}{section*.14}
+\contentsline {subsection}{\numberline {3.5.2}Dataset Two}{39}{subsection.3.5.2}
+\contentsline {subsubsection}{Data}{39}{section*.15}
+\contentsline {subsubsection}{Implementation Settings}{39}{section*.16}
+\contentsline {subsubsection}{Detection Results}{42}{section*.17}
+\contentsline {subsection}{\numberline {3.5.3}P-campus}{42}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}Chapter Conclusion}{45}{section.3.6}
+\contentsline {chapter}{\numberline {4}Common Fate Hough Voting}{47}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{47}{section.4.1}
+\contentsline {section}{\numberline {4.2}Related Work}{51}{section.4.2}
+\contentsline {section}{\numberline {4.3}Application Background}{54}{section.4.3}
+\contentsline {section}{\numberline {4.4}Common Fate Hough Transform}{54}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Common Fate Weights}{56}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Motion Grouping}{59}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Codebook}{60}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Detection}{61}{section.4.5}
+\contentsline {section}{\numberline {4.6}Experimental Results}{64}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1} P-campus }{64}{subsection.4.6.1}
+\contentsline {subsubsection}{Dataset}{65}{section*.18}
+\contentsline {subsubsection}{Implementation Settings}{65}{section*.19}
+\contentsline {subsubsection}{Comparisons}{69}{section*.20}
+\contentsline {subsection}{\numberline {4.6.2}Wild-scene}{72}{subsection.4.6.2}
+\contentsline {subsubsection}{Dataset}{75}{section*.21}
+\contentsline {subsubsection}{Implementation settings}{75}{section*.22}
+\contentsline {subsubsection}{Comparisons}{75}{section*.23}
+\contentsline {section}{\numberline {4.7}Chapter Conclusion}{77}{section.4.7}
+\contentsline {chapter}{\numberline {5}Fast Voting by Pyramid Match}{79}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{79}{section.5.1}
+\contentsline {section}{\numberline {5.2}Related Work}{81}{section.5.2}
+\contentsline {section}{\numberline {5.3}Pyramid Match Score}{83}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Pyramid Matching}{83}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Training and Detection}{86}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Dividing Visual-spatial Space}{87}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Deciding Weights for Dividing Methods}{91}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}Learning Weights for Dividing Methods}{91}{subsection.5.3.5}
+\contentsline {section}{\numberline {5.4}Experimental Results}{93}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}UIUC Cars}{94}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}P-campus}{102}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Discussion}{106}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Time Complexity}{106}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Usage of Visual and Spatial Information}{107}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Chapter Conclusion}{108}{section.5.6}
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{109}{chapter.6}
+\contentsline {chapter}{Bibliography}{111}{chapter*.24}
+\contentsline {chapter}{Acknowledgements}{121}{chapter*.25}

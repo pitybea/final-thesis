@@ -6,10 +6,10 @@
 From time to time, efficient detection methods under limited computational power are important in various areas, such as driving assistance using embedded sensors. In this chapter, a method pursuing efficiency and real-time detection is proposed.
 The proposed detection method makes use of both
 appearance and motion information of the target objects. By well optimizing the detecting pipeline, the
-method works in real time, and gives promising detection results in experiments  carried on data collected by infrared cameras.
+method works in real time, and gives promising detection results in experiments.
 
 As always, detection performance and efficiency are the two important aspects of this method.
-In a tunnel environment, in addition to the target objects, a lot of noisy objects also appear, e.g. ordinary lights, other vehicles, and other vehicles' shadows. And some of the noisy objects cannot even be distinguished from the target objects by appearance , as shown in Figure \ref{fig:first}. The clutter property of the sensed data makes the detection challenging.
+The clutter property of the sensed data makes the detection challenging. In extreme cases, target objects cannot be distinguished from noisy objects by appearance.
 The proposed method meets this challenge by making use of both appearance and temporal information of the target objects.
 There are three main steps in the method.
 
@@ -29,37 +29,7 @@ The advantage of this method is its ability to give promising detection results 
 
 
 
-This chapter is organized as follows. Section \ref{rw} reviews related work. Section \ref{ab} introduces application background. Section \ref{pip} proposes a pipeline for the method. Section \ref{exp} gives experimental results for data collected by infrared cameras and gives results by extending the method for data collected by ordinary cameras. Section \ref{conc} concludes.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\begin{figure}
-\centering
-\subfigure[]{
-\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{17Orgimg00039.jpg}
-\label{fig:first:a}}
-\subfigure[]{
-\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{17veriTrjimg00039.jpg}
-\label{fig:first:b}}
-\caption[Target objects and detection results]{Original data and detection results. In (a), the red arrow points to the target object: emergency telephone indicator, and the green arrows point to noisy objects. In (b), red rectangles mark detection hypotheses labeled as positive using appearance information, and green rectangles mark negative ones. Yellow trajectories mark detection hypotheses labeled as positive using temporal information, and white trajectories mark negative ones.
-}
-\label{fig:first}
-\end{figure}
-
-
-
-
+This chapter is organized as follows. Section \ref{rw} reviews related work. Section \ref{ab} introduces the steps of the method. Section \ref{pip} introduces an implementation of the method on data collected by infrared cameras in tunnels. Section \ref{exp} gives experimental results for data collected by infrared cameras and gives results by extending the method for data collected by ordinary cameras. Section \ref{conc} concludes.
 
 
 
@@ -100,11 +70,66 @@ This work is also related to feature grouping methods~\citep{ac25}, detecting me
 
 
 
-\section{Application Background}
+\section{Method Outline}
 \label{ab}
+The  method is a three-step method. The first step of candidate object localization deals with keypoints. It
+takes original data as input, and outputs keypoint clusters as detection hypotheses. The second
+step of candidate object verification takes these keypoint clusters as input, verifies them by their appearance and motion
+information, and labels them as positive or negative. In the third step of voting along time axis, keypoint clusters connected by the same trajectory will vote for whether the trajectory is positive or negative when the trajectory ends, and this gives the final detection results.
 
-When developing the method, potential application scenarios are within consideration. The method aims to perform detection in real time, and serve as an effective unit in positioning automobiles in tunnel environment.
+\subsection{Candidate Object Localization}
+There are a huge amount of information contained in even one from of a video collected by cameras. In time-critical tasks, not all pixels in each frame are processed, instead keypoints can be detected, and verified. The appearance of keypoints belong to local features. Still the number of keypoints is large, and association of keypoints along time dimension is not feasible during to the constrain of time consumptions. Clustering the keypoints on the frame is feasible and will indicate the locations of target objects. Thus in this step, keypoints are detected from the input images, verified using appearance model, and then clustered to indicate candidate object locations.
 
+\begin{figure}
+\centering
+{
+  \includegraphics[width=1\textwidth]{add1.eps}
+}
+\caption[Candidate object localization]{Keypoint detection, verification, and clustering. On the left, keypoints represented in yellow are detected on images. In the middle, yellow represents the keypoints pass verifications, while purple represents the keypoints fail to pass verifications. On the right, the keypoints which pass verifications are clustered, and blue rectangles represent candidate objects.}
+\label{ord:add1}
+\end{figure}
+\subsection{Candidate Object Verification}
+The number of candidate objects in the form of keypoint clusters is smaller compared with the number of keypoints. Expensive global appearance feature is feasible, and expensive association along time axis is also feasible. By assuming certain motion patterns of the target objects, the trajectories can also be used to verify candidate objects. Thus in this step, candidate objects are verified by appearance and motion.
+
+\begin{figure}
+\centering
+{
+  \includegraphics[width=1\textwidth]{add2.eps}
+}
+\caption[Candidate object verification]{Candidate object verification by appearance and motion. On the left, blue rectangles represent the candidate objects given by the previous steps. In the middle, the blue rectangle represents that the candidate object is decided as positive by appearance, and purple rectangle represents negative by appearance. On the right, yellow circle represents that the candidate object is decided as positive by motion, and white circle represents negative by motion. }
+\label{ord:add2}
+\end{figure}
+\subsection{Voting along Time Axis}
+Trajectories not only connects the candidate objects, but also connects the local decisions made according to appearance and motion. To refine the results, when each trajectory ends, voting is employed. 
+
+
+\begin{figure}
+\centering
+{
+  \includegraphics[width=1\textwidth]{add3.eps}
+}
+\caption[Voting along time axis]{Voting along time axis. Local decisions vote along trajectories for positive and negative. In the example, there are 3 positive votes and 1 negative votes.}
+\label{ord:add3}
+\end{figure}
+
+\section{Implementation on Data Collected by Infrared Cameras in Tunnels}
+\label{pip}
+
+The method is implemented to detect emergency telephone indicators in tunnels. The implementation aims to perform detection in real time, and serve as an effective unit in positioning automobiles in tunnel environment. In a tunnel environment, in addition to emergency telephone indicators, a lot of noisy objects also appear, e.g. ordinary lights, other vehicles, and other vehicles' shadows. And some of the noisy objects cannot even be distinguished from the target objects by appearance , as shown in Figure \ref{fig:first}.
+
+
+\begin{figure}
+\centering
+\subfigure[]{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{17Orgimg00039.jpg}
+\label{fig:first:a}}
+\subfigure[]{
+\includegraphics[width=0.47\textwidth,bb=0 0 640 480]{17veriTrjimg00039.jpg}
+\label{fig:first:b}}
+\caption[Target objects and detection results]{Original data and detection results. In (a), the red arrow points to the target object: emergency telephone indicator, and the green arrows point to noisy objects. In (b), red rectangles mark detection hypotheses labeled as positive using appearance information, and green rectangles mark negative ones. Yellow trajectories mark detection hypotheses labeled as positive using temporal information, and white trajectories mark negative ones.
+}
+\label{fig:first}
+\end{figure}
 
 Positioning of vehicles acts as a fundamental role in autonomous driving, and is also of great importance for driving assistance, vehicle navigation, etc. When GPS sensors function properly, the task is easy. While in a tunnel environment, there are no GPS signals available for most of the time. A new positioning system which functions properly in a tunnel environment is necessary~\citep{nig}. An object detection method which can be used for positioning systems in tunnels is here proposed.
 
@@ -120,14 +145,11 @@ Detection methods, e.g.~\citep{ac23}, based on ordinary cameras fail due to dark
 Especially, compared with the method proposed in~\citep{wang1}, this method employs a more effective classifying machine by setting biased weights for positive and negative training examples, and far over-perform the method.
 Inspired by a previous work~\citep{wang1}, the proposed method can be turned to an  approach to detecting emergency telephone indicators by using infrared cameras.
 \end{comment}
-\section{Detection Pipeline}
-\label{pip}
-The method can be considered as a three-step method. The first step deals with keypoints. It
-takes original data as input, and outputs keypoint clusters as detection hypotheses. The second
-step takes these keypoint clusters as input, verifies them by their appearance and motion
-information, and labels them as positive or negative. In the third step, keypoint clusters connected by the same trajectory will vote for whether the trajectory is positive or negative when the trajectory ends, and this gives the final detection results of emergence telephone indicators.
 
-\subsection{Keypoint Detection}
+
+
+\subsection{Candidate Object Localization}
+\subsubsection{Keypoint Detection}
 
 In data collected using ordinary cameras, keypoints~\citep{o2,o12} invariant to rotations, affine changes, and illumination changes are preferable. In this case, keypoint detection is intended to provide hypotheses for emergency telephone indicators. Thus intensity is of great importance. This method employs a simple yet useful method to detect keypoints. Firstly, points are uniformly sampled for an offset of 6 in width, and 7 in height (the length of an emergency telephone indicator is larger than its width). In this manner the magnitude of instances is reduced by nearly two orders. Then points that pass the test, which verifies them by setting intensity thresholds, are considered as keypoints.
 
@@ -170,7 +192,7 @@ Points for which the intensities fall in the pre-set thresholds, are detected as
 \end{figure}
 
 
-\subsection{Keypoint Verification}
+\subsubsection{Keypoint Verification}
 
 
 As shown in Figure \ref{fig:secc:b}, the detected keypoints don't just belong to emergency telephone indicators, but also belong to the background. For training purposes, keypoints belonging to emergency telephone indicators are considered  positive, all others are negative.
@@ -206,15 +228,15 @@ For verification, the intensity histogram of each keypoint's surrounding sub-ima
 \label{fig:thirr}
 \end{figure}
 
-\subsection{Keypoint Clustering}
+\subsubsection{Keypoint Clustering}
 
 After the keypoint verification step, on some frames the result is pretty good, while on other frames appearance of the keypoints is not enough to decide whether the keypoints belong to the emergency telephone indicators. Here generation of keypoint trajectories is not feasible, since nearby keypoints are similar in appearance and  the time complexity of associating such a large number of keypoints along the time dimension is high. So the keypoints are clustered, then data association in time dimension only is needed to deal with a small number of keypoint clusters.
 
 To cluster the keypoints, a minimum spanning tree (mst) is built using the pairwise Euclidean distance between two keypoints. Then the mst is split by cutting edges larger than a threshold. This results in a grouping  of the keypoints, denoted by, $\gamma=\{\bf{g}\}$.
 
+\subsection{Candidate Object Verification}
 
-
-\subsection{Keypoint Cluster Verification by Appearance}
+\subsubsection{Keypoint Cluster Verification by Appearance}
 
 
 For each keypoint cluster, the smallest bounding rectangle is considered a detection hypothesis, as shown in Figure \ref{fig:thirr:c} and Figure \ref{fig:thirr:d}.
@@ -233,7 +255,7 @@ In this step, to emphasize the Adaboost machine's performance on the positive tr
 \end{figure}
 
 %test2
-\subsection{Keypoint Cluster Tracking}
+\subsubsection{Keypoint Cluster Tracking}
 
 Not all noisy detection hypotheses can be excluded by using appearance, as shown in Figure \ref{fig:fiff}. To distinguish keypoint clusters belonging to other vehicles and their shadows, the keypoint clusters are tracked through frames to generate trajectories.
 
@@ -261,7 +283,7 @@ Let $u_{ij}=1 \mbox{ or } 0$ indicate if $n_{\bf{g}}^j$ is linked to $T_{\bf{g}}
 \]
 Here, $P_{link}(n_{\bf{g}}^j|T_{\bf{g}}^i)$ is defined by the appearance difference, the scale difference, and the time gap between the last detection response contained in $T_{\bf{g}}^i$ and $n_{\bf{g}}^j$. While the Hungarian algorithm~\citep{ha} gives a near-optimal solution, we follow a very simple manner for the solution by finding the best matched pairs and excluding them until no matching pairs can be found.
 
-\subsection{Keypoint Cluster Verification by Motion}
+\subsubsection{Keypoint Cluster Verification by Motion}
 
 As shown in Figure \ref{fig:sixs}, the trajectories from keypoint clusters belonging to emergency telephone indicators are different from other objects' trajectories. In this step, the temporal information encoded in the trajectories is used to further verify the keypoint clusters. A linear model is used to fit each trajectory, and the Pearson Correlation Coefficient(PCC) of the fitting is the criteria for the decision.
 
@@ -272,6 +294,21 @@ r =| \frac{{\sum\limits_i {\left( {{x^i_{\bf{g}}} -  {\bar x_{\bf{g}}}} \right)\
 \label{eq4}
 \end{equation}
 Where $r$ is used to decide if the trajectories of the keypoint clusters belong to emergency telephone indicators or not.
+
+
+
+\subsubsection{Object Labels}
+
+For each keypoint cluster on the current frame, there exists a label given by the Adaboost machine according to its appearance, and the likelihood of fitting its trajectory to a straight line.  For each keypoint cluster, it is considered an emergency telephone indicator if and only if its label which is given by the Adaboost machine is positive, its trajectory is longer than $l^{th}$, and the likelihood of fitting its trajectory to a straight line is larger than $r^{th}$.
+
+
+\subsection{Voting along Time Axis}
+
+Each trajectory not only connects the detection responses, but also connects the decisions for detection responses made by their appearance and motion patterns. The target objects and noisy objects actually appear in successive frames, and even if we make a wrong decision on one frame, we can expect to recover from this mistake based on the results of other frames. The final results are based on the trajectories of decisions. When one trajectory ends, if more than 80\% of the decisions it connects are positive, then this trajectory is considered positive.
+
+
+The procedure is as follows: 1) each detection result along a trajectory which encodes local appearance and motion patterns votes for whether the trajectory is positive or not, and 2) if the voting percentage is larger than a threshold, a final decision is made that the object is positive.
+
 \subsection{Pipeline Summary}
 \begin{table}[h]
 \centering
@@ -290,22 +327,7 @@ Where $r$ is used to decide if the trajectories of the keypoint clusters belong 
 \end{tabular}
 \caption[Pipeline summary]{Summary of all steps in the pipeline. Here, KC is short for keypoint cluster.}\label{c3tb:tb1}
 \end{table}
-Before proposing the decision step for detection, Table \ref{c3tb:tb1} summaries the steps in the pipeline based on whether the step employs appearance or motion information, whether the step uses online or offline information, and whether the method is discriminative or generative. Generally speaking, methods that employ motion information and discriminative methods are employed at later steps. This is because the computational cost is high for motion information, and discriminative methods need more information to guarantee performance. Online information are also mainly used in later steps, this is because without information provided by model trained offline, there are no instances to generate online information. Also the computational cost of online information is higher on the fly.
-
-
-\subsection{Object Detection}
-
-For each keypoint cluster on the current frame, there exists a label given by the Adaboost machine according to its appearance, and the likelihood of fitting its trajectory to a straight line.  For each keypoint cluster, it is considered an emergency telephone indicator if and only if its label - given by the Adaboost machine - is positive, its trajectory is longer than $l^{th}$, and the likelihood of fitting its trajectory to a straight line is larger than $r^{th}$.
-
-
-\subsection{Voting along a Trajectory}
-
-Each trajectory not only connects the detection responses, but also connects the decisions for detection responses made by their appearance and motion patterns. The target objects and noisy objects actually appear in successive frames, and even if we make a wrong decision on one frame, we can expect to recover from this mistake based on the results of other frames. The final results are based on the trajectories of decisions. When one trajectory ends, if more than 80\% of the decisions it connects are positive, then this trajectory is considered positive.
-
-
-The procedure is as follows: 1) each detection result along a trajectory which encodes local appearance and motion patterns votes for whether the trajectory is positive or not, and 2) if the voting percentage is larger than a threshold, a final decision is made that the object is positive.
-
-
+Table \ref{c3tb:tb1} summaries the steps in the pipeline based on whether the step employs appearance or motion information, whether the step uses online or offline information, and whether the method is discriminative or generative. Generally speaking, methods that employ motion information and discriminative methods are employed at later steps. This is because the computational cost is high for motion information, and discriminative methods need more information to guarantee performance. Online information are also mainly used in later steps, this is because without information provided by model trained offline, there are no instances to generate online information. Also the computational cost of online information is higher since all calculations are on the fly.
 
 \section{Experimental Results}
 \label{exp}
