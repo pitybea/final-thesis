@@ -9,8 +9,8 @@
 \contentsline {section}{\numberline {2.2}Artificial Intelligence}{7}{section.2.2}
 \contentsline {section}{\numberline {2.3}Basics of Detection Methods}{8}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Image Features}{9}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Decision making Procedure}{9}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Solution Space Explore}{10}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.2}Decision Making Procedure}{9}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Solution Space Exploring}{10}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Advances in Object Detection}{11}{section.2.4}
 \contentsline {section}{\numberline {2.5}Chapter Conclusion}{12}{section.2.5}
 \contentsline {chapter}{\numberline {3}Efficient Voting along Time Axis}{15}{chapter.3}

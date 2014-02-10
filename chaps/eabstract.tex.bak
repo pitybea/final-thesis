@@ -1,6 +1,4 @@
 \begin{eabstract}
-
-
 Object detection is a fundamental perceptual skill in human, and plays an important role in machine vision area. Effective object detection methods can help with video surveillance, driving assistance, etc. Researchers improve performance of detection methods mainly by proposing better representative models, better classifiers, or more efficient methods for  solution space exploring.
 
 In this work, the performance of detection methods is improved from an aspect of combining information from different channels. The work explores information fusion in novel ways. And the efforts are two-fold: 1) utilizing of motion information by combining it with appearance information, and 2) combining visual and spatial information encoded among the local image features of the same object. Three detection methods are proposed accordingly, and the most important component is a voting system in each of the methods.
@@ -8,7 +6,7 @@ In this work, the performance of detection methods is improved from an aspect of
 The first detection method is developed for real-time applications. In a hierarchical way, this method makes time-consuming steps in its pipeline deal with fewer instances. It
 combines motion information with appearance information very efficiently, and gets the final results from the voting of local appearance-motion patterns along the temporal dimension.  This method gives promising detection results in real time.
 
-Since the performance of the first method in complex scene is not promising, the second method is proposed. This method extends the Implicit Shape Model, which is a voting system of local appearance information, to incorporate motion information, and outperforms the state-of-the-art method on two datasets. This method also performs well in distinguishing near objects and similar different-class objects.
+Since the performance of the first method in complex scenes is not promising, the second method is proposed. This method extends the Implicit Shape Model, which is a voting system of local appearance information, to incorporate motion information, and outperforms the state-of-the-art method on two datasets. This method also performs well in distinguishing near objects and similar different-class objects.
 
 
 To improve the efficiency of the voting system in the second method, the third method is proposed, which is Pyramid Match Score for detection. The method does pyramid matching during training and detection for efficiency, and makes full use of the visual and spatial  information encoded among the image features of the same object, which improves detection performance.

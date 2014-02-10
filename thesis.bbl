@@ -603,6 +603,12 @@ Stauffer, C. \& Grimson, W. E.~L. (1999).
 \newblock Adaptive background mixture models for real-time tracking.
 \newblock In {\em CVPR}, (pp.\ 2246--2252).
 
+\bibitem[\protect\citeauthoryear{Szegedy, Toshev \& Erhan}{Szegedy
+  et~al.}{2013}]{dnnobd}
+Szegedy, C., Toshev, A., \& Erhan, D. (2013).
+\newblock Deep neural networks for object detection.
+\newblock In {\em NIPS}, (pp.\ 2553--2561).
+
 \bibitem[\protect\citeauthoryear{Teh, Jordan, Beal \& Blei.}{Teh
   et~al.}{2006}]{hdp}
 Teh, Y.~W., Jordan, M.~I., Beal, M.~J., \& Blei., D.~M. (2006).

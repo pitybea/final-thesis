@@ -940,14 +940,16 @@ Understanding Multi-Object Traffic Scenes",
         YEAR = "2008",
         BIBSOURCE = ""}
 
- @online{ bisearch,
+ @misc{ bisearch,
    author = "Baidu",
+   year="2013",
    title = {{baidu image search}},
    howpublished = "\url{http://stu.baidu.com}",
    note = "[Online; accessed 22-May-2013]"
  }
  @misc{ dod,
    author = "Wikipedia",
+   year="2008",
    title = {{Object Detection}},
    howpublished = "\url{http://en.wikipedia.org/wiki/Object_detection}",
    note = "[Online; accessed 22-May-2013]"
@@ -955,6 +957,7 @@ Understanding Multi-Object Traffic Scenes",
   @misc{ siri,
    author = "Wikipedia",
    title = {{Siri}},
+   year="2012",
    howpublished = "\url{http://en.wikipedia.org/wiki/Siri_(software)}",
    note = "[Online; accessed 22-May-2013]"
 
@@ -1234,6 +1237,7 @@ booktitle = {CVPR},
 }
 @misc{ voc,
    author = " PASCAL",
+   year="2012",
    title = {{Visual Object Classes Challenge 2012}},
    howpublished = "\url{http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2012}",
    note = "[Online; accessed 22-May-2013]"
