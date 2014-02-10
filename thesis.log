@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.16)  10 FEB 2014 13:55
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.16)  10 FEB 2014 14:46
 entering extended mode
 **thesis.tex
 (F:\thesis\thesis.tex
@@ -781,11 +781,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [8]
 [9] [10] [11] [12]
 Package epstopdf Info: Source file: <contri.eps>
-(epstopdf)                    date: 2014-02-05 22:24:50
-(epstopdf)                    size: 1575822 bytes
+(epstopdf)                    date: 2014-02-10 14:02:16
+(epstopdf)                    size: 1600690 bytes
 (epstopdf)             Output file: <contri-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-02-05 22:29:27
-(epstopdf)                    size: 42068 bytes
+(epstopdf)                    date: 2014-02-10 14:02:36
+(epstopdf)                    size: 43569 bytes
 (epstopdf)             Command: <epstopdf --outfile=contri-eps-converted-to.pdf
  contri.eps>
 (epstopdf)             \includegraphics on input line 139.
@@ -2694,7 +2694,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  12230 strings out of 495354
  165559 string characters out of 3183859
- 280753 words of memory out of 3000000
+ 280757 words of memory out of 3000000
  14308 multiletter control sequences out of 15000+200000
  22713 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -2712,7 +2712,7 @@ ic/amsfonts/cm/cmsy6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb><C:/CTEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/CTEX/MiKTeX/fonts/typ
 e1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CT
 EX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (135 pages, 18916036 bytes).
+Output written on thesis.pdf (135 pages, 18917784 bytes).
 PDF statistics:
  2694 PDF objects out of 2984 (max. 8388607)
  489 named destinations out of 1000 (max. 500000)
