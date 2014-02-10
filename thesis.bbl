@@ -108,6 +108,11 @@ Chen, M.-y., Mummert, L., Pillai, P., Hauptmann, A., \& Sukthankar, R. (2010).
 \newblock Controlling your tv with gestures.
 \newblock In {\em Multimedia information retrieval}, (pp.\ 405--408).
 
+\bibitem[\protect\citeauthoryear{Chen, Shrivastava \& Gupta}{Chen
+  et~al.}{2013}]{Chen_2013_ICCV}
+Chen, X., Shrivastava, A., \& Gupta, A. (2013).
+\newblock Neil: Extracting visual knowledge from web data.
+
 \bibitem[\protect\citeauthoryear{Cutler \& Davis}{Cutler \& Davis}{1999}]{maaa}
 Cutler, R. \& Davis, L. (1999).
 \newblock Robust real-time periodic motion detection, analysis, and
@@ -319,6 +324,13 @@ Lazebnik, S., Schmid, C., \& Ponce, J. (2006).
 \newblock Beyond bags of features: Spatial pyramid matching for recognizing
   natural scene categories.
 \newblock In {\em CVPR}, (pp.\ 2169--2178).
+
+\bibitem[\protect\citeauthoryear{Le, Monga, Devin, Corrado, Chen, Ranzato, Dean
+  \& Ng}{Le et~al.}{2011}]{catbrain}
+Le, Q.~V., Monga, R., Devin, M., Corrado, G., Chen, K., Ranzato, M., Dean, J.,
+  \& Ng, A.~Y. (2011).
+\newblock Building high-level features using large scale unsupervised learning.
+\newblock {\em CoRR}, {\em abs/1112.6209}.
 
 \bibitem[\protect\citeauthoryear{Le, Ranzato, Monga, Devin, Corrado, Chen, Dean
   \& Ng}{Le et~al.}{2012}]{dnnnn}

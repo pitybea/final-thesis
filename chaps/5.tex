@@ -528,7 +528,7 @@ How the visual-spatial space is divided is also critical to the performance of t
 
 
 In Figure \ref{fig:c56}, performance are evaluated between the proposed method, and a state-of-the-art method, DPM~\citep{ac31}. The proposed method performs no worse than DPM,
-While the training time between the two models are 1 minute vs 16 hours. In this experiment, the training speed of the proposed method is 1,000 times faster. Also during the training of the proposed method, since (\ref{eq:pms4}) is used, only the positive training examples are used, while DPM uses both positive and negative training examples.
+while the training time between the two models are 1 minute vs 16 hours. In this experiment, the training speed of the proposed method is 1,000 times faster. Also during the training of the proposed method, since (\ref{eq:pms4}) is used, only the positive training examples are used, while DPM uses both positive and negative training examples.
 
 \begin{figure}[!htbp]
 \centering
@@ -541,7 +541,7 @@ While the training time between the two models are 1 minute vs 16 hours. In this
 \end{figure}
 \FloatBarrier
 
-In Figure \ref{fig:c5i}, performance are evaluated among the proposed method and variants of Hough transform methods. By taking into consideration of the size of the codebook, the original Hough transform method is 1,000 (the indexes in \ref{fig:c5i} mean the times of time consumptions of the variants) time-consuming than the proposed method in giving the confidence of one sub-window's being a target object. Naive $k$-means method is employed to accelerate the original Hough transform method during training by condensing the size of the codebook. The original Hough transform method performs better than the proposed method. When the time consumptions are the same, the proposed method performs much better. And the proposed method performs better than the variant which is 4 times time-consuming.
+In Figure \ref{fig:c5i}, performance are evaluated among the proposed method and variants of Hough transform methods. By taking into consideration of the size of the codebook, the original Hough transform method is 1,000 (the indexes in Figure \ref{fig:c5i} mean the times of time consumptions of the variants) time-consuming than the proposed method in giving the confidence of one sub-window's being a target object. Naive $k$-means method is employed to accelerate the original Hough transform method during training by condensing the size of the codebook. The original Hough transform method performs better than the proposed method. When the time consumptions are the same, the proposed method performs much better. And the proposed method performs better than the variant which is 4 times time-consuming.
 
 \begin{figure}[!htbp]
 \centering
@@ -560,9 +560,9 @@ In Figure \ref{fig:c57}, the average numbers of matched pairs of positive and ne
 \subsection{P-campus}
 
 The method is also tested on a dataset of pedestrians~\citep{wang1}. For a fair comparison, both training images and test images are exactly same for method comparisons.
-In Fig. \ref{fig:pcam}, there are some detection results on the dataset.
+In Figure \ref{fig:pcam}, there are some detection results on the dataset.
 
-In Fig. \ref{fig:cmf}, there are the results of comparing the proposed method with ordinary Hough transform and common fate Hough transform~\citep{wang1}. It can be seen that, common fate Hough transform performs the best since the method employs motion information. The proposed method almost perform as well as the Hough transform on this dataset.
+In Figure \ref{fig:cmf}, there are the results of comparing the proposed method with ordinary Hough transform and common fate Hough transform~\citep{wang1}. It can be seen that, common fate Hough transform performs the best since the method employs motion information. The proposed method almost perform as well as the Hough transform on this dataset.
 
 
 

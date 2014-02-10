@@ -79,6 +79,16 @@ Temporal Integration",
 
 }
 
+@inproceedings{dnnobd,
+title = {Deep Neural Networks for Object Detection},
+author = {Szegedy, Christian and Toshev, Alexander and Erhan, Dumitru},
+ booktitle = {NIPS},
+pages = {2553--2561},
+year = {2013},
+
+}
+
+
 @article{bb4,
     abstract = {We consider tracking as a binary classification problem, where an ensemble of weak classifiers is trained online to distinguish between the object and the background. The ensemble of weak classifiers is combined into a strong classifier using AdaBoost. The strong classifier is then used to label pixels in the next frame as either belonging to the object or the background, giving a confidence map. The peak of the map and, hence, the new position of the object, is found using mean shift. Temporal coherence is maintained by updating the ensemble with new weak classifiers that are trained online during tracking. We show a realization of this method and demonstrate it on several video sequences},
     author = {Avidan, S.},
@@ -1534,4 +1544,12 @@ pages = {1062-1069},
   booktitle    = "ECCV",
   year         = "2006",
       pages     = {428-441},
+}
+
+
+@InProceedings{Chen_2013_ICCV,
+author = {Xinlei Chen and Abhinav Shrivastava and Abhinav Gupta},
+title = {NEIL: Extracting Visual Knowledge from Web Data},
+journal = {ICCV},
+year = {2013}
 }

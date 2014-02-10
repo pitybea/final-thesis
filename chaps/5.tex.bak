@@ -528,7 +528,7 @@ How the visual-spatial space is divided is also critical to the performance of t
 
 
 In Figure \ref{fig:c56}, performance are evaluated between the proposed method, and a state-of-the-art method, DPM~\citep{ac31}. The proposed method performs no worse than DPM,
-While the training time between the two models are 1 minute vs 16 hours. In this experiment, the training speed of the proposed method is 1,000 times faster. Also during the training of the proposed method, since (\ref{eq:pms4}) is used, only the positive training examples are used, while DPM uses both positive and negative training examples.
+while the training time between the two models are 1 minute vs 16 hours. In this experiment, the training speed of the proposed method is 1,000 times faster. Also during the training of the proposed method, since (\ref{eq:pms4}) is used, only the positive training examples are used, while DPM uses both positive and negative training examples.
 
 \begin{figure}[!htbp]
 \centering
@@ -554,7 +554,7 @@ In Figure \ref{fig:c5i}, performance are evaluated among the proposed method and
 \end{figure}
 \FloatBarrier
 
-In Figure \ref{fig:c57}, the average numbers of matched pairs of positive and negative test examples are shown. It is clear that under finer dividing methods, positive test examples possess larger average number of matched pairs, while under coarser dividing methods, negative test examples possess larger matched number of matched pairs.
+In Figure \ref{fig:c57}, the average numbers of matched pairs of positive and negative test examples are shown. It is clear that under finer dividing methods, positive test examples possess larger average numbers of matched pairs, while under coarser dividing methods, negative test examples possess larger matched numbers of matched pairs.
 
 
 \subsection{P-campus}

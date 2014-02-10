@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.16)  5 FEB 2014 23:26
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.16)  10 FEB 2014 13:55
 entering extended mode
 **thesis.tex
 (F:\thesis\thesis.tex
@@ -2630,20 +2630,25 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 
 ] [112] [113] [114] [115]
 [116] [117] [118] [119]
-Underfull \hbox (badness 5696) in paragraph at lines 659--659
+Underfull \hbox (badness 5696) in paragraph at lines 671--671
 []\OT1/ptm/m/n/12 Wikipedia (2012).  Siri.  [][]$\OT1/pcr/m/n/12 http : / / en 
 . wikipedia . org / wiki / Siri _$
  []
 
-) [120] (F:\thesis\chaps/thanks.tex
+[120]) [121] (F:\thesis\chaps/thanks.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[121
+[122
 
 
-] [122])
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[123] [124])
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the thesis.maf file.
@@ -2659,7 +2664,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                in the thesis.log file.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
-[123
+[125
 
 
 \FN@pp@footnotehinttrue 
@@ -2681,16 +2686,16 @@ Package rerunfilecheck Info: Checksums for `thesis.out':
 (rerunfilecheck)             Before: A21775A3F690F7A6DDDBCAAB93B30BC0;15657
 (rerunfilecheck)             After:  18D85DC04C329B529754324F304309CC;4537.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 08E5CFC98AEB563AC3749AE03EFE4AF3;12192.
+(rerunfilecheck)             Checksum: 8110C3BFBDAD5AF892838BE061F7C570;12284.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12214 strings out of 495354
- 165307 string characters out of 3183859
- 281615 words of memory out of 3000000
- 14296 multiletter control sequences out of 15000+200000
+ 12230 strings out of 495354
+ 165559 string characters out of 3183859
+ 280753 words of memory out of 3000000
+ 14308 multiletter control sequences out of 15000+200000
  22713 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  39i,22n,45p,1961b,828s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2707,9 +2712,9 @@ ic/amsfonts/cm/cmsy6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb><C:/CTEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/CTEX/MiKTeX/fonts/typ
 e1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CT
 EX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (133 pages, 18912030 bytes).
+Output written on thesis.pdf (135 pages, 18916036 bytes).
 PDF statistics:
- 2674 PDF objects out of 2984 (max. 8388607)
- 485 named destinations out of 1000 (max. 500000)
+ 2694 PDF objects out of 2984 (max. 8388607)
+ 489 named destinations out of 1000 (max. 500000)
  1110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
