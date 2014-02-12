@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.16)  12 FEB 2014 13:42
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.16)  12 FEB 2014 14:45
 entering extended mode
 **thesis.tex
 (F:\thesis\thesis.tex
@@ -1623,88 +1623,84 @@ re.4.3}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.413 \section
               {Experimental Results} <F:/thesis/Untitled-5.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 424.
+(pdftex.def)                using `viewport' instead on input line 441.
 
-<samples.jpg, id=1535, 165.61874pt x 125.46875pt>
+<samples.jpg, id=1557, 165.61874pt x 125.46875pt>
 File: samples.jpg Graphic file (type jpg)
  <use samples.jpg>
-Package pdftex.def Info: samples.jpg used on input line 424.
+Package pdftex.def Info: samples.jpg used on input line 441.
 (pdftex.def)             Requested size: 165.02345pt x 125.02458pt.
 
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 437.
+(pdftex.def)                using `viewport' instead on input line 454.
 
-<dst6.jpg, id=1536, 149.55875pt x 149.55875pt>
+<dst6.jpg, id=1558, 149.55875pt x 149.55875pt>
 File: dst6.jpg Graphic file (type jpg)
  <use dst6.jpg>
-Package pdftex.def Info: dst6.jpg used on input line 437.
+Package pdftex.def Info: dst6.jpg used on input line 454.
 (pdftex.def)             Requested size: 49.50754pt x 49.50755pt.
 
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 437.
+(pdftex.def)                using `viewport' instead on input line 454.
 
-<dst3.jpg, id=1537, 149.55875pt x 149.55875pt>
+<dst3.jpg, id=1559, 149.55875pt x 149.55875pt>
 File: dst3.jpg Graphic file (type jpg)
  <use dst3.jpg>
-Package pdftex.def Info: dst3.jpg used on input line 437.
+Package pdftex.def Info: dst3.jpg used on input line 454.
 (pdftex.def)             Requested size: 49.50754pt x 49.50755pt.
 
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 437.
+(pdftex.def)                using `viewport' instead on input line 454.
 
-<dst5.jpg, id=1538, 149.55875pt x 149.55875pt>
+<dst5.jpg, id=1560, 149.55875pt x 149.55875pt>
 File: dst5.jpg Graphic file (type jpg)
  <use dst5.jpg>
-Package pdftex.def Info: dst5.jpg used on input line 437.
+Package pdftex.def Info: dst5.jpg used on input line 454.
 (pdftex.def)             Requested size: 49.50754pt x 49.50755pt.
 
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 437.
+(pdftex.def)                using `viewport' instead on input line 454.
 
-<dst2.jpg, id=1539, 149.55875pt x 149.55875pt>
+<dst2.jpg, id=1561, 149.55875pt x 149.55875pt>
 File: dst2.jpg Graphic file (type jpg)
  <use dst2.jpg>
-Package pdftex.def Info: dst2.jpg used on input line 437.
+Package pdftex.def Info: dst2.jpg used on input line 454.
 (pdftex.def)             Requested size: 49.50754pt x 49.50755pt.
 
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 437.
+(pdftex.def)                using `viewport' instead on input line 454.
 
-<dst4.jpg, id=1540, 149.55875pt x 149.55875pt>
+<dst4.jpg, id=1562, 149.55875pt x 149.55875pt>
 File: dst4.jpg Graphic file (type jpg)
  <use dst4.jpg>
-Package pdftex.def Info: dst4.jpg used on input line 437.
+Package pdftex.def Info: dst4.jpg used on input line 454.
 (pdftex.def)             Requested size: 49.50754pt x 49.50755pt.
 
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 437.
+(pdftex.def)                using `viewport' instead on input line 454.
 
-<dst1.jpg, id=1541, 149.55875pt x 149.55875pt>
+<dst1.jpg, id=1563, 149.55875pt x 149.55875pt>
 File: dst1.jpg Graphic file (type jpg)
  <use dst1.jpg>
-Package pdftex.def Info: dst1.jpg used on input line 437.
+Package pdftex.def Info: dst1.jpg used on input line 454.
 (pdftex.def)             Requested size: 49.50754pt x 49.50755pt.
- [64] [65pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.4.4}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.456 
-       <F:/thesis/samples.jpg> <F:/thesis/dst6.jpg> <F:/thesis/dst3.jpg> <F:/th
-esis/dst5.jpg> <F:/thesis/dst2.jpg> <F:/thesis/dst4.jpg> <F:/thesis/dst1.jpg>]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 460.
 
-<a16.jpg, id=1571, 722.7pt x 578.16pt>
+<a16.jpg, id=1564, 722.7pt x 578.16pt>
 File: a16.jpg Graphic file (type jpg)
  <use a16.jpg>
 Package pdftex.def Info: a16.jpg used on input line 460.
@@ -1714,7 +1710,7 @@ Package pdftex.def Info: a16.jpg used on input line 460.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 461.
 
-<a26.jpg, id=1572, 722.7pt x 578.16pt>
+<a26.jpg, id=1565, 722.7pt x 578.16pt>
 File: a26.jpg Graphic file (type jpg)
  <use a26.jpg>
 Package pdftex.def Info: a26.jpg used on input line 461.
@@ -1724,7 +1720,7 @@ Package pdftex.def Info: a26.jpg used on input line 461.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 462.
 
-<a71.jpg, id=1573, 722.7pt x 578.16pt>
+<a71.jpg, id=1566, 722.7pt x 578.16pt>
 File: a71.jpg Graphic file (type jpg)
  <use a71.jpg>
 Package pdftex.def Info: a71.jpg used on input line 462.
@@ -1734,7 +1730,7 @@ Package pdftex.def Info: a71.jpg used on input line 462.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 463.
 
-<a116.jpg, id=1574, 722.7pt x 578.16pt>
+<a116.jpg, id=1567, 722.7pt x 578.16pt>
 File: a116.jpg Graphic file (type jpg)
  <use a116.jpg>
 Package pdftex.def Info: a116.jpg used on input line 463.
@@ -1744,7 +1740,7 @@ Package pdftex.def Info: a116.jpg used on input line 463.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 471.
 
-<inf1.jpg, id=1575, 762.85pt x 587.19376pt>
+<inf1.jpg, id=1568, 762.85pt x 587.19376pt>
 File: inf1.jpg Graphic file (type jpg)
  <use inf1.jpg>
 Package pdftex.def Info: inf1.jpg used on input line 471.
@@ -1754,7 +1750,7 @@ Package pdftex.def Info: inf1.jpg used on input line 471.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 472.
 
-<inf2.jpg, id=1576, 762.85pt x 587.19376pt>
+<inf2.jpg, id=1569, 762.85pt x 587.19376pt>
 File: inf2.jpg Graphic file (type jpg)
  <use inf2.jpg>
 Package pdftex.def Info: inf2.jpg used on input line 472.
@@ -1764,7 +1760,7 @@ Package pdftex.def Info: inf2.jpg used on input line 472.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 474.
 
-<inf3.jpg, id=1577, 762.85pt x 587.19376pt>
+<inf3.jpg, id=1570, 762.85pt x 587.19376pt>
 File: inf3.jpg Graphic file (type jpg)
  <use inf3.jpg>
 Package pdftex.def Info: inf3.jpg used on input line 474.
@@ -1774,7 +1770,7 @@ Package pdftex.def Info: inf3.jpg used on input line 474.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 475.
 
-<inf4.jpg, id=1578, 762.85pt x 587.19376pt>
+<inf4.jpg, id=1571, 762.85pt x 587.19376pt>
 File: inf4.jpg Graphic file (type jpg)
  <use inf4.jpg>
 Package pdftex.def Info: inf4.jpg used on input line 475.
@@ -1784,7 +1780,7 @@ Package pdftex.def Info: inf4.jpg used on input line 475.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 477.
 
-<inf5.jpg, id=1579, 762.85pt x 587.19376pt>
+<inf5.jpg, id=1572, 762.85pt x 587.19376pt>
 File: inf5.jpg Graphic file (type jpg)
  <use inf5.jpg>
 Package pdftex.def Info: inf5.jpg used on input line 477.
@@ -1794,7 +1790,7 @@ Package pdftex.def Info: inf5.jpg used on input line 477.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 478.
 
-<inf6.jpg, id=1580, 762.85pt x 587.19376pt>
+<inf6.jpg, id=1573, 762.85pt x 587.19376pt>
 File: inf6.jpg Graphic file (type jpg)
  <use inf6.jpg>
 Package pdftex.def Info: inf6.jpg used on input line 478.
@@ -1804,7 +1800,7 @@ Package pdftex.def Info: inf6.jpg used on input line 478.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 480.
 
-<inf7.jpg, id=1581, 762.85pt x 587.19376pt>
+<inf7.jpg, id=1574, 762.85pt x 587.19376pt>
 File: inf7.jpg Graphic file (type jpg)
  <use inf7.jpg>
 Package pdftex.def Info: inf7.jpg used on input line 480.
@@ -1814,28 +1810,38 @@ Package pdftex.def Info: inf7.jpg used on input line 480.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 481.
 
-<inf8.jpg, id=1582, 762.85pt x 587.19376pt>
+<inf8.jpg, id=1575, 762.85pt x 587.19376pt>
 File: inf8.jpg Graphic file (type jpg)
  <use inf8.jpg>
 Package pdftex.def Info: inf8.jpg used on input line 481.
 (pdftex.def)             Requested size: 165.02345pt x 127.024pt.
- [66pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
-5}) has been already used, duplicate ignored
+
+Underfull \vbox (badness 2035) has occurred while \output is active []
+
+ [65pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.491 \subsubsection
-                    {Comparisons} <F:/thesis/a16.jpg> <F:/thesis/a26.jpg> <F:/t
-hesis/a71.jpg> <F:/thesis/a116.jpg>] [67pdfTeX warning (ext4): destination with
- the same identifier (name{figure.4.6}) has been already used, duplicate ignore
-d
+l.488 
+       <F:/thesis/samples.jpg> <F:/thesis/dst6.jpg> <F:/thesis/dst3.jpg> <F:/th
+esis/dst5.jpg> <F:/thesis/dst2.jpg> <F:/thesis/dst4.jpg> <F:/thesis/dst1.jpg>]
+[66pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.491 \subsubsection
-                    {Comparisons} <F:/thesis/inf1.jpg> <F:/thesis/inf2.jpg> <F:
-/thesis/inf3.jpg> <F:/thesis/inf4.jpg> <F:/thesis/inf5.jpg> <F:/thesis/inf6.jpg
-> <F:/thesis/inf7.jpg> <F:/thesis/inf8.jpg>] [68]
+l.488 
+       <F:/thesis/a16.jpg> <F:/thesis/a26.jpg> <F:/thesis/a71.jpg> <F:/thesis/a
+116.jpg>] [67pdfTeX warning (ext4): destination with the same identifier (name{
+figure.4.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.488 
+       <F:/thesis/inf1.jpg> <F:/thesis/inf2.jpg> <F:/thesis/inf3.jpg> <F:/thesi
+s/inf4.jpg> <F:/thesis/inf5.jpg> <F:/thesis/inf6.jpg> <F:/thesis/inf7.jpg> <F:/
+thesis/inf8.jpg>]
 Package epstopdf Info: Source file: <prf.eps>
 (epstopdf)                    date: 2013-05-29 14:40:55
 (epstopdf)                    size: 853778 bytes
@@ -1847,7 +1853,7 @@ f.eps>
 (epstopdf)             \includegraphics on input line 500.
 Package epstopdf Info: Output file is already uptodate.
 
-<prf-eps-converted-to.pdf, id=1598, 466.74374pt x 416.55624pt>
+<prf-eps-converted-to.pdf, id=1594, 466.74374pt x 416.55624pt>
 File: prf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use prf-eps-converted-to.pdf>
@@ -1864,7 +1870,7 @@ Package epstopdf Info: Source file: <cm2.eps>
 (epstopdf)             \includegraphics on input line 506.
 Package epstopdf Info: Output file is already uptodate.
 
-<cm2-eps-converted-to.pdf, id=1599, 226.8475pt x 112.42pt>
+<cm2-eps-converted-to.pdf, id=1595, 226.8475pt x 112.42pt>
 File: cm2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cm2-eps-converted-to.pdf>
@@ -1881,7 +1887,7 @@ Package epstopdf Info: Source file: <cm1.eps>
 (epstopdf)             \includegraphics on input line 506.
 Package epstopdf Info: Output file is already uptodate.
 
-<cm1-eps-converted-to.pdf, id=1600, 226.8475pt x 112.42pt>
+<cm1-eps-converted-to.pdf, id=1596, 226.8475pt x 112.42pt>
 File: cm1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cm1-eps-converted-to.pdf>
@@ -1892,7 +1898,7 @@ Package pdftex.def Info: cm1-eps-converted-to.pdf used on input line 506.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 527.
 
-<016.jpg, id=1606, 722.7pt x 578.16pt>
+<016.jpg, id=1602, 722.7pt x 578.16pt>
 File: 016.jpg Graphic file (type jpg)
  <use 016.jpg>
 Package pdftex.def Info: 016.jpg used on input line 527.
@@ -1902,7 +1908,7 @@ Package pdftex.def Info: 016.jpg used on input line 527.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 528.
 
-<026.jpg, id=1607, 722.7pt x 578.16pt>
+<026.jpg, id=1603, 722.7pt x 578.16pt>
 File: 026.jpg Graphic file (type jpg)
  <use 026.jpg>
 Package pdftex.def Info: 026.jpg used on input line 528.
@@ -1912,7 +1918,7 @@ Package pdftex.def Info: 026.jpg used on input line 528.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 529.
 
-<071.jpg, id=1608, 722.7pt x 578.16pt>
+<071.jpg, id=1604, 722.7pt x 578.16pt>
 File: 071.jpg Graphic file (type jpg)
  <use 071.jpg>
 Package pdftex.def Info: 071.jpg used on input line 529.
@@ -1922,7 +1928,7 @@ Package pdftex.def Info: 071.jpg used on input line 529.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 530.
 
-<116.jpg, id=1609, 722.7pt x 578.16pt>
+<116.jpg, id=1605, 722.7pt x 578.16pt>
 File: 116.jpg Graphic file (type jpg)
  <use 116.jpg>
 Package pdftex.def Info: 116.jpg used on input line 530.
@@ -1932,7 +1938,7 @@ Package pdftex.def Info: 116.jpg used on input line 530.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 531.
 
-<166.jpg, id=1610, 722.7pt x 578.16pt>
+<166.jpg, id=1606, 722.7pt x 578.16pt>
 File: 166.jpg Graphic file (type jpg)
  <use 166.jpg>
 Package pdftex.def Info: 166.jpg used on input line 531.
@@ -1942,7 +1948,7 @@ Package pdftex.def Info: 166.jpg used on input line 531.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 532.
 
-<251.jpg, id=1611, 722.7pt x 578.16pt>
+<251.jpg, id=1607, 722.7pt x 578.16pt>
 File: 251.jpg Graphic file (type jpg)
  <use 251.jpg>
 Package pdftex.def Info: 251.jpg used on input line 532.
@@ -1952,7 +1958,7 @@ Package pdftex.def Info: 251.jpg used on input line 532.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 533.
 
-<326.jpg, id=1612, 722.7pt x 578.16pt>
+<326.jpg, id=1608, 722.7pt x 578.16pt>
 File: 326.jpg Graphic file (type jpg)
  <use 326.jpg>
 Package pdftex.def Info: 326.jpg used on input line 533.
@@ -1962,7 +1968,7 @@ Package pdftex.def Info: 326.jpg used on input line 533.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 534.
 
-<366.jpg, id=1613, 722.7pt x 578.16pt>
+<366.jpg, id=1609, 722.7pt x 578.16pt>
 File: 366.jpg Graphic file (type jpg)
  <use 366.jpg>
 Package pdftex.def Info: 366.jpg used on input line 534.
@@ -1971,14 +1977,14 @@ Package pdftex.def Info: 366.jpg used on input line 534.
 
 LaTeX Warning: Float too large for page by 20.73349pt on input line 537.
 
-[69] [70pdfTeX warning (ext4): destination with the same identifier (name{figur
+[68] [69pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.4.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.539 \subsection
                  {Wild-scene} <F:/thesis/prf-eps-converted-to.pdf> <F:/thesis/c
-m2-eps-converted-to.pdf> <F:/thesis/cm1-eps-converted-to.pdf>] [71pdfTeX warnin
+m2-eps-converted-to.pdf> <F:/thesis/cm1-eps-converted-to.pdf>] [70pdfTeX warnin
 g (ext4): destination with the same identifier (name{figure.4.8}) has been alre
 ady used, duplicate ignored
 
@@ -1992,7 +1998,7 @@ is/326.jpg> <F:/thesis/366.jpg>]
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 559.
 
-<amotionimg00296.jpg, id=1657, 642.4pt x 481.8pt>
+<amotionimg00296.jpg, id=1653, 642.4pt x 481.8pt>
 File: amotionimg00296.jpg Graphic file (type jpg)
  <use amotionimg00296.jpg>
 Package pdftex.def Info: amotionimg00296.jpg used on input line 559.
@@ -2002,7 +2008,7 @@ Package pdftex.def Info: amotionimg00296.jpg used on input line 559.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 560.
 
-<amotionimg01836.jpg, id=1658, 642.4pt x 481.8pt>
+<amotionimg01836.jpg, id=1654, 642.4pt x 481.8pt>
 File: amotionimg01836.jpg Graphic file (type jpg)
  <use amotionimg01836.jpg>
 Package pdftex.def Info: amotionimg01836.jpg used on input line 560.
@@ -2012,7 +2018,7 @@ Package pdftex.def Info: amotionimg01836.jpg used on input line 560.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 562.
 
-<selectVimg00296_0.jpg, id=1659, 642.4pt x 481.8pt>
+<selectVimg00296_0.jpg, id=1655, 642.4pt x 481.8pt>
 File: selectVimg00296_0.jpg Graphic file (type jpg)
 
 <use selectVimg00296_0.jpg>
@@ -2023,7 +2029,7 @@ Package pdftex.def Info: selectVimg00296_0.jpg used on input line 562.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 563.
 
-<selectVimg01836_0.jpg, id=1660, 642.4pt x 481.8pt>
+<selectVimg01836_0.jpg, id=1656, 642.4pt x 481.8pt>
 File: selectVimg01836_0.jpg Graphic file (type jpg)
 
 <use selectVimg01836_0.jpg>
@@ -2034,7 +2040,7 @@ Package pdftex.def Info: selectVimg01836_0.jpg used on input line 563.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 565.
 
-<selectVimg00296_19.jpg, id=1661, 642.4pt x 481.8pt>
+<selectVimg00296_19.jpg, id=1657, 642.4pt x 481.8pt>
 File: selectVimg00296_19.jpg Graphic file (type jpg)
 
 <use selectVimg00296_19.jpg>
@@ -2045,7 +2051,7 @@ Package pdftex.def Info: selectVimg00296_19.jpg used on input line 565.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 566.
 
-<selectVimg01836_19.jpg, id=1662, 642.4pt x 481.8pt>
+<selectVimg01836_19.jpg, id=1658, 642.4pt x 481.8pt>
 File: selectVimg01836_19.jpg Graphic file (type jpg)
 
 <use selectVimg01836_19.jpg>
@@ -2056,7 +2062,7 @@ Package pdftex.def Info: selectVimg01836_19.jpg used on input line 566.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 576.
 
-<PER1.jpg, id=1663, 642.4pt x 481.8pt>
+<PER1.jpg, id=1659, 642.4pt x 481.8pt>
 File: PER1.jpg Graphic file (type jpg)
  <use PER1.jpg>
 Package pdftex.def Info: PER1.jpg used on input line 576.
@@ -2066,7 +2072,7 @@ Package pdftex.def Info: PER1.jpg used on input line 576.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 577.
 
-<PER2.jpg, id=1664, 642.4pt x 481.8pt>
+<PER2.jpg, id=1660, 642.4pt x 481.8pt>
 File: PER2.jpg Graphic file (type jpg)
  <use PER2.jpg>
 Package pdftex.def Info: PER2.jpg used on input line 577.
@@ -2076,7 +2082,7 @@ Package pdftex.def Info: PER2.jpg used on input line 577.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 579.
 
-<1.jpg, id=1665, 642.4pt x 481.8pt>
+<1.jpg, id=1661, 642.4pt x 481.8pt>
 File: 1.jpg Graphic file (type jpg)
  <use 1.jpg>
 Package pdftex.def Info: 1.jpg used on input line 579.
@@ -2086,7 +2092,7 @@ Package pdftex.def Info: 1.jpg used on input line 579.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 580.
 
-<3.jpg, id=1666, 642.4pt x 481.8pt>
+<3.jpg, id=1662, 642.4pt x 481.8pt>
 File: 3.jpg Graphic file (type jpg)
  <use 3.jpg>
 Package pdftex.def Info: 3.jpg used on input line 580.
@@ -2096,7 +2102,7 @@ Package pdftex.def Info: 3.jpg used on input line 580.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 582.
 
-<2.jpg, id=1667, 642.4pt x 481.8pt>
+<2.jpg, id=1663, 642.4pt x 481.8pt>
 File: 2.jpg Graphic file (type jpg)
  <use 2.jpg>
 Package pdftex.def Info: 2.jpg used on input line 582.
@@ -2106,7 +2112,7 @@ Package pdftex.def Info: 2.jpg used on input line 582.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 583.
 
-<4.jpg, id=1668, 642.4pt x 481.8pt>
+<4.jpg, id=1664, 642.4pt x 481.8pt>
 File: 4.jpg Graphic file (type jpg)
  <use 4.jpg>
 Package pdftex.def Info: 4.jpg used on input line 583.
@@ -2116,7 +2122,7 @@ Package pdftex.def Info: 4.jpg used on input line 583.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 593.
 
-<leo1.jpg, id=1669, 642.4pt x 481.8pt>
+<leo1.jpg, id=1665, 642.4pt x 481.8pt>
 File: leo1.jpg Graphic file (type jpg)
  <use leo1.jpg>
 Package pdftex.def Info: leo1.jpg used on input line 593.
@@ -2126,7 +2132,7 @@ Package pdftex.def Info: leo1.jpg used on input line 593.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 594.
 
-<leo2.jpg, id=1670, 642.4pt x 481.8pt>
+<leo2.jpg, id=1666, 642.4pt x 481.8pt>
 File: leo2.jpg Graphic file (type jpg)
  <use leo2.jpg>
 Package pdftex.def Info: leo2.jpg used on input line 594.
@@ -2136,7 +2142,7 @@ Package pdftex.def Info: leo2.jpg used on input line 594.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 596.
 
-<leo3.jpg, id=1671, 642.4pt x 481.8pt>
+<leo3.jpg, id=1667, 642.4pt x 481.8pt>
 File: leo3.jpg Graphic file (type jpg)
  <use leo3.jpg>
 Package pdftex.def Info: leo3.jpg used on input line 596.
@@ -2146,14 +2152,14 @@ Package pdftex.def Info: leo3.jpg used on input line 596.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 597.
 
-<ti1.jpg, id=1672, 642.4pt x 481.8pt>
+<ti1.jpg, id=1668, 642.4pt x 481.8pt>
 File: ti1.jpg Graphic file (type jpg)
  <use ti1.jpg>
 Package pdftex.def Info: ti1.jpg used on input line 597.
 (pdftex.def)             Requested size: 193.90602pt x 145.43102pt.
- [72
+ [71
 
-] [73pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+] [72pdfTeX warning (ext4): destination with the same identifier (name{figure.4
 .9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2162,14 +2168,14 @@ l.602 \section
               {Chapter Conclusion} <F:/thesis/amotionimg00296.jpg> <F:/thesis/a
 motionimg01836.jpg> <F:/thesis/selectVimg00296_0.jpg> <F:/thesis/selectVimg0183
 6_0.jpg> <F:/thesis/selectVimg00296_19.jpg> <F:/thesis/selectVimg01836_19.jpg>]
-[74pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+[73pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
 0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.602 \section
               {Chapter Conclusion} <F:/thesis/PER1.jpg> <F:/thesis/PER2.jpg> <F
-:/thesis/1.jpg> <F:/thesis/3.jpg> <F:/thesis/2.jpg> <F:/thesis/4.jpg>] [75pdfTe
+:/thesis/1.jpg> <F:/thesis/3.jpg> <F:/thesis/2.jpg> <F:/thesis/4.jpg>] [74pdfTe
 X warning (ext4): destination with the same identifier (name{figure.4.11}) has 
 been already used, duplicate ignored
 
@@ -2177,13 +2183,22 @@ been already used, duplicate ignored
                                                   \fi \fi 
 l.602 \section
               {Chapter Conclusion} <F:/thesis/leo1.jpg> <F:/thesis/leo2.jpg> <F
-:/thesis/leo3.jpg> <F:/thesis/ti1.jpg>]) [76] (F:\thesis\chaps/5.tex
+:/thesis/leo3.jpg> <F:/thesis/ti1.jpg>]) [75] (F:\thesis\chaps/5.tex
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[76
+
+
+
+]
 Chapter 5.
-[77
 
+Underfull \vbox (badness 1502) has occurred while \output is active []
 
-
-] [78] [79]
+ [77]
+[78] [79]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [80]
@@ -2704,7 +2719,7 @@ ic/amsfonts/cm/cmsy6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb><C:/CTEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/CTEX/MiKTeX/fonts/typ
 e1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CT
 EX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (133 pages, 18916602 bytes).
+Output written on thesis.pdf (133 pages, 18916476 bytes).
 PDF statistics:
  2686 PDF objects out of 2984 (max. 8388607)
  487 named destinations out of 1000 (max. 500000)

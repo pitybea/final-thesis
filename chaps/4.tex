@@ -414,6 +414,23 @@ Following~\citep{ac9}, the optimal result for the problem is given by greedy max
 \label{ex4}
 In experiments, advantage of the method is verified in terms of detection accuracy. The method is tested on the P-campus dataset with~\citep{ac9} as a benchmark, and then tested on a dataset of several animals.
 \subsection{ P-campus }
+
+
+\subsubsection{Dataset}
+
+The P-campus dataset contains two primary classes of foreground objects: pedestrians and bicycle riders. The frame size is 720$\times$576. Among all the 401 continuous frames, 633 different-class ground truth bounding boxes are annotated on 79 frames. In this dataset, pedestrians and bicycle riders have in common the upper human body, and pedestrians appear in front, back, and side views.
+
+\subsubsection{Implementation Settings}
+
+
+For training, 52  bicycle riders and 171  pedestrians are randomly selected from the marked ground truths. Harris corners are detected on these randomly selected training images, examples are given in Figure \ref{fig:train:a}. For appearance, six region covariances are generated for each keypoint using the 9$\times$9 image patch around it as shown in Figure \ref{fig:train:b}. The appearance, the offset to the image (object) center, and the label of the training image are encoded into a code, and the code is inserted into a codebook. The final codebook contains 5502 codes. Testing data is formed by the 79 frames, on which the ground truth bounding boxes are marked. Harris corners are detected, and region covariances are generated in the same manner as for the training images. For each Harris corner on one testing image, the corresponding region covariances are matched against the codebook for the most similar codes. Some of the training examples will
+appear in the test sequences. The
+emphasis of this experiment is  to verify the proposed
+framework's ability of combining motion information. Both
+the proposed method and the benchmark method use the same
+training and testing images, so the comparison is fair
+and proves the effectiveness of the proposed method.
+
 \begin{figure}
 \centering
 \subfigure[]{
@@ -438,23 +455,6 @@ In experiments, advantage of the method is verified in terms of detection accura
 \caption[Images for training]{(a) Training images. Note some keypoints fall on the background. (b) The manner how a 9$\times$9 image patch is used to generate six region covariances, and red rectangles indicate the pixels used for each covariance.}
 \label{fig:train}
 \end{figure}
-
-\subsubsection{Dataset}
-
-The P-campus dataset contains two primary classes of foreground objects: pedestrians and bicycle riders. The frame size is 720$\times$576. Among all the 401 continuous frames, 633 different-class ground truth bounding boxes are annotated on 79 frames. In this dataset, pedestrians and bicycle riders have in common the upper human body, and pedestrians appear in front, back, and side views.
-
-\subsubsection{Implementation Settings}
-
-
-For training, 52  bicycle riders and 171  pedestrians are randomly selected from the marked ground truths. Harris corners are detected on these randomly selected training images, examples are given in Figure \ref{fig:train:a}. For appearance, six region covariances are generated for each keypoint using the 9$\times$9 image patch around it as shown in Figure \ref{fig:train:b}. The appearance, the offset to the image (object) center, and the label of the training image are encoded into a code, and the code is inserted into a codebook. The final codebook contains 5502 codes. Testing data is formed by the 79 frames, on which the ground truth bounding boxes are marked. Harris corners are detected, and region covariances are generated in the same manner as for the training images. For each Harris corner on one testing image, the corresponding region covariances are matched against the codebook for the most similar codes. Some of the training examples will
-appear in the test sequences. The
-emphasis of this experiment is  to verify the proposed
-framework's ability of combining motion information. Both
-the proposed method and the benchmark method use the same
-training and testing images, so the comparison is fair
-and proves the effectiveness of the proposed method.
-
-
 \begin{figure}
 \centering
 \includegraphics[width=0.47\textwidth,bb=0 0 720 576]{a16.jpg}

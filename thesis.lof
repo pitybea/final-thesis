@@ -61,13 +61,13 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{65}{figure.4.4}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Motion grouping results}}{66}{figure.4.5}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Inference procedure}}{67}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparisons with benchmark method}}{70}{figure.4.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{70}{figure.4.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{70}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Detection results}}{71}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Effect of the proposed weight assignment}}{73}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Example Hough images}}{74}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{75}{figure.4.11}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparisons with benchmark method}}{69}{figure.4.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{69}{figure.4.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{69}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Detection results}}{70}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Effect of the proposed weight assignment}}{72}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Example Hough images}}{73}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{74}{figure.4.11}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Fast Voting by Pyramid Match}{77}{chapter.5}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Best one-one match}}{82}{figure.5.1}
