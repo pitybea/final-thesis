@@ -67,21 +67,21 @@
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Detection results}}{71}{figure.4.8}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Effect of the proposed weight assignment}}{73}{figure.4.9}
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Example Hough images}}{74}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{76}{figure.4.11}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Detection results}}{75}{figure.4.11}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Fast Voting by Pyramid Match}{79}{chapter.5}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Best one-one match}}{84}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Pyramid matching procedure}}{84}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Visual-spatial space dividing}}{90}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Detection results on UIUC cars}}{95}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Result evaluation using different dimensions}}{96}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Result evaluation using different largest fineness levels}}{97}{figure.5.6}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Result evaluation by using results from only visual or spatial information}}{98}{figure.5.7}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Result comparison with method using dividing methods of \citep {pmk}}}{99}{figure.5.8}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Result comparison with deformable part model~\citep {ac31}}}{100}{figure.5.9}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Comparison between Pyramid Match Score and Hough transform}}{101}{figure.5.10}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Average numbers of matched pairs of positive and negative test examples}}{102}{figure.5.11}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Detection results on P-campus dataset.}}{104}{figure.5.12}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Precision-Recall curves for the method, Hough transform, and common fate Hough transform.}}{105}{figure.5.13}
+\contentsline {xchapter}{Fast Voting by Pyramid Match}{77}{chapter.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Best one-one match}}{82}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Pyramid matching procedure}}{82}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Visual-spatial space dividing}}{88}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Detection results on UIUC cars}}{93}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Result evaluation using different dimensions}}{94}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Result evaluation using different largest fineness levels}}{95}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Result evaluation by using results from only visual or spatial information}}{96}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Result comparison with method using dividing methods of \citep {pmk}}}{97}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Result comparison with deformable part model~\citep {ac31}}}{98}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Comparison between Pyramid Match Score and Hough transform}}{99}{figure.5.10}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Average numbers of matched pairs of positive and negative test examples}}{100}{figure.5.11}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Detection results on P-campus dataset.}}{102}{figure.5.12}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Precision-Recall curves for the method, Hough transform, and common fate Hough transform.}}{103}{figure.5.13}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusion and Outlook}{109}{chapter.6}
+\contentsline {xchapter}{Conclusion and Outlook}{107}{chapter.6}

@@ -488,7 +488,7 @@ For motion grouping, each keypoint is tracked through 10 frames before, and 10 f
 
 In order to form the Hough image, 35 best matched codes are chosen from the codebook for each object part. In (\ref{eq3}), $d$ and $\sigma$ need to be given. The precision-recall curves are based on $\sigma$, while $d$ is set to 10. Here $\sigma$ is the most important parameter.
 
-\subsubsection{Comparisons} 
+\subsubsection{Comparisons}
 
 For comparison, detection is done on the Hough images formed with and without motion grouping results. The same codebook and the same parameter settings are used for forming and searching over both Hough images. The votes of each object part are assigned uniform weights in the benchmark method, while weights defined in (\ref{eq4}) are assigned in the proposed method.
 \begin{figure}
@@ -538,6 +538,22 @@ The confusion matrices are given in Figure~\ref{fig:pr:b}. For clarity, the prop
 
 \subsection{Wild-scene}
 
+\subsubsection{Dataset}
+ In order to show that our method can be used for general purposes, we test our method on complicated scenes, especially, complicated background.  Even in these cases, our method works well, which shows robustness of our method. A mini dataset is built upon leopards and tigers of the family Felidae. Note especially that the image feature used by this method belongs to the type texture, and texture from different  positions of the leopards are almost the same. The dataset contains 6 video clips of 9 leopards and 4 tigers. The frame size is 640$\times$480. Both of the animals are in the side view.
+
+
+\subsubsection{Implementation settings}
+
+ Most implementation settings are the same as the settings used for campus object detection. For training, 5 leopards and 2 tigers are used. The size of the image patch around each keypoint is 27$\times$27.
+
+
+
+
+
+
+\subsubsection{Comparisons}
+In Figure \ref{fig:bcMP}, the motion grouping results, and how the voted centers are affected, are given. Since parts from different positions of the leopard are very similar, the true center of a leopard is difficult to find using the voted centers of the object parts. In Figure \ref{fig:BcHi}, example Hough images are given to show the merit of the proposed prior by the ability to detect leopards. In Figure \ref{fig:bgdr}, the detection results are given. The proposed method successfully localizes and labels all the leopards and tigers, while the benchmark method miss-detects three leopards.
+
 \begin{figure}
 \centering
 \includegraphics[width=0.47\textwidth,bb=0 0 640 480]{amotionimg00296.jpg}
@@ -570,21 +586,7 @@ The confusion matrices are given in Figure~\ref{fig:pr:b}. For clarity, the prop
 \caption[Example Hough images]{Example Hough images. On the top are the original images. In the middle are the Hough images formed by votes with uniform priors. On the bottom are the Hough images formed by votes with the proposed weights. Red indicates leopards, and blue indicates tigers. Note for the two leopards, there is no peak corresponding to the right one on the benchmark Hough image. For the three leopards, there is also no peak corresponding to the leopard in behind on the benchmark Hough image.}
 \label{fig:BcHi}
 \end{figure}
-\subsubsection{Dataset}
- In order to show that our method can be used for general purposes, we test our method on complicated scenes, especially, complicated background.  Even in these cases, our method works well, which shows robustness of our method. A mini dataset is built upon leopards and tigers of the family Felidae. Note especially that the image feature used by this method belongs to the type texture, and texture from different  positions of the leopards are almost the same. The dataset contains 6 video clips of 9 leopards and 4 tigers. The frame size is 640$\times$480. Both of the animals are in the side view.
 
-
-\subsubsection{Implementation settings}
-
- Most implementation settings are the same as the settings used for campus object detection. For training, 5 leopards and 2 tigers are used. The size of the image patch around each keypoint is 27$\times$27.
-
-
-
-
-
-
-\subsubsection{Comparisons}
-In Figure \ref{fig:bcMP}, the motion grouping results, and how the voted centers are affected, are given. Since parts from different positions of the leopard are very similar, the true center of a leopard is difficult to find using the voted centers of the object parts. In Figure \ref{fig:BcHi}, example Hough images are given to show the merit of the proposed prior by the ability to detect leopards. In Figure \ref{fig:bgdr}, the detection results are given. The proposed method successfully localizes and labels all the leopards and tigers, while the benchmark method miss-detects three leopards.
 
 \begin{figure}
 \centering

@@ -58,26 +58,26 @@
 \contentsline {subsubsection}{Implementation Settings}{65}{section*.19}
 \contentsline {subsubsection}{Comparisons}{69}{section*.20}
 \contentsline {subsection}{\numberline {4.6.2}Wild-scene}{72}{subsection.4.6.2}
-\contentsline {subsubsection}{Dataset}{75}{section*.21}
-\contentsline {subsubsection}{Implementation settings}{75}{section*.22}
-\contentsline {subsubsection}{Comparisons}{75}{section*.23}
-\contentsline {section}{\numberline {4.7}Chapter Conclusion}{77}{section.4.7}
-\contentsline {chapter}{\numberline {5}Fast Voting by Pyramid Match}{79}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{79}{section.5.1}
-\contentsline {section}{\numberline {5.2}Related Work}{81}{section.5.2}
-\contentsline {section}{\numberline {5.3}Pyramid Match Score}{83}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Pyramid Matching}{83}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Training and Detection}{86}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Dividing Visual-spatial Space}{87}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Deciding Weights for Dividing Methods}{91}{subsection.5.3.4}
-\contentsline {subsection}{\numberline {5.3.5}Learning Weights for Dividing Methods}{91}{subsection.5.3.5}
-\contentsline {section}{\numberline {5.4}Experimental Results}{93}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}UIUC Cars}{94}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}P-campus}{102}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Discussion}{106}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Time Complexity}{106}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Usage of Visual and Spatial Information}{107}{subsection.5.5.2}
-\contentsline {section}{\numberline {5.6}Chapter Conclusion}{108}{section.5.6}
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{109}{chapter.6}
-\contentsline {chapter}{Bibliography}{111}{chapter*.24}
-\contentsline {chapter}{Acknowledgements}{123}{chapter*.25}
+\contentsline {subsubsection}{Dataset}{72}{section*.21}
+\contentsline {subsubsection}{Implementation settings}{72}{section*.22}
+\contentsline {subsubsection}{Comparisons}{72}{section*.23}
+\contentsline {section}{\numberline {4.7}Chapter Conclusion}{76}{section.4.7}
+\contentsline {chapter}{\numberline {5}Fast Voting by Pyramid Match}{77}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{77}{section.5.1}
+\contentsline {section}{\numberline {5.2}Related Work}{79}{section.5.2}
+\contentsline {section}{\numberline {5.3}Pyramid Match Score}{81}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Pyramid Matching}{81}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Training and Detection}{84}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Dividing Visual-spatial Space}{85}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Deciding Weights for Dividing Methods}{89}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}Learning Weights for Dividing Methods}{89}{subsection.5.3.5}
+\contentsline {section}{\numberline {5.4}Experimental Results}{91}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}UIUC Cars}{92}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}P-campus}{100}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Discussion}{104}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Time Complexity}{104}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Usage of Visual and Spatial Information}{105}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Chapter Conclusion}{106}{section.5.6}
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{107}{chapter.6}
+\contentsline {chapter}{Bibliography}{109}{chapter*.24}
+\contentsline {chapter}{Acknowledgements}{121}{chapter*.25}

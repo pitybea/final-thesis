@@ -1,4 +1,4 @@
-\chapter{Object Detection by Common Fate Hough Voting}
+\chapter{Common Fate Hough Voting}
 \label{chp4}
 \section{Introduction}
 % no \IEEEPARstart
@@ -413,7 +413,7 @@ Following~\citep{ac9}, the optimal result for the problem is given by greedy max
 \section{Experimental Results}
 \label{ex4}
 In experiments, advantage of the method is verified in terms of detection accuracy. The method is tested on the P-campus dataset with~\citep{ac9} as a benchmark, and then tested on a dataset of several animals.
-\subsection{ Campus-scene Detection }
+\subsection{ P-campus }
 \begin{figure}
 \centering
 \subfigure[]{
@@ -439,11 +439,11 @@ In experiments, advantage of the method is verified in terms of detection accura
 \label{fig:train}
 \end{figure}
 
-\textbf{Dataset}
+\subsubsection{Dataset}
 
 The P-campus dataset contains two primary classes of foreground objects: pedestrians and bicycle riders. The frame size is 720$\times$576. Among all the 401 continuous frames, 633 different-class ground truth bounding boxes are annotated on 79 frames. In this dataset, pedestrians and bicycle riders have in common the upper human body, and pedestrians appear in front, back, and side views.
 
-\textbf{Implementation Settings}
+\subsubsection{Implementation Settings}
 
 
 For training, 52  bicycle riders and 171  pedestrians are randomly selected from the marked ground truths. Harris corners are detected on these randomly selected training images, examples are given in Figure \ref{fig:train:a}. For appearance, six region covariances are generated for each keypoint using the 9$\times$9 image patch around it as shown in Figure \ref{fig:train:b}. The appearance, the offset to the image (object) center, and the label of the training image are encoded into a code, and the code is inserted into a codebook. The final codebook contains 5502 codes. Testing data is formed by the 79 frames, on which the ground truth bounding boxes are marked. Harris corners are detected, and region covariances are generated in the same manner as for the training images. For each Harris corner on one testing image, the corresponding region covariances are matched against the codebook for the most similar codes. Some of the training examples will
@@ -488,7 +488,9 @@ For motion grouping, each keypoint is tracked through 10 frames before, and 10 f
 
 In order to form the Hough image, 35 best matched codes are chosen from the codebook for each object part. In (\ref{eq3}), $d$ and $\sigma$ need to be given. The precision-recall curves are based on $\sigma$, while $d$ is set to 10. Here $\sigma$ is the most important parameter.
 
-\textbf{Comparisons} For comparison, detection is done on the Hough images formed with and without motion grouping results. The same codebook and the same parameter settings are used for forming and searching over both Hough images. The votes of each object part are assigned uniform weights in the benchmark method, while weights defined in (\ref{eq4}) are assigned in the proposed method.
+\subsubsection{Comparisons} 
+
+For comparison, detection is done on the Hough images formed with and without motion grouping results. The same codebook and the same parameter settings are used for forming and searching over both Hough images. The votes of each object part are assigned uniform weights in the benchmark method, while weights defined in (\ref{eq4}) are assigned in the proposed method.
 \begin{figure}
 \centering
 \subfigure[]{
@@ -534,7 +536,7 @@ The confusion matrices are given in Figure~\ref{fig:pr:b}. For clarity, the prop
 \label{fig:result}
 \end{figure*}
 
-\subsection{Wild-scene Detection}
+\subsection{Wild-scene}
 
 \begin{figure}
 \centering
@@ -568,11 +570,11 @@ The confusion matrices are given in Figure~\ref{fig:pr:b}. For clarity, the prop
 \caption[Example Hough images]{Example Hough images. On the top are the original images. In the middle are the Hough images formed by votes with uniform priors. On the bottom are the Hough images formed by votes with the proposed weights. Red indicates leopards, and blue indicates tigers. Note for the two leopards, there is no peak corresponding to the right one on the benchmark Hough image. For the three leopards, there is also no peak corresponding to the leopard in behind on the benchmark Hough image.}
 \label{fig:BcHi}
 \end{figure}
-\textbf{Dataset}
+\subsubsection{Dataset}
  In order to show that our method can be used for general purposes, we test our method on complicated scenes, especially, complicated background.  Even in these cases, our method works well, which shows robustness of our method. A mini dataset is built upon leopards and tigers of the family Felidae. Note especially that the image feature used by this method belongs to the type texture, and texture from different  positions of the leopards are almost the same. The dataset contains 6 video clips of 9 leopards and 4 tigers. The frame size is 640$\times$480. Both of the animals are in the side view.
 
 
-\textbf{Implementation settings}
+\subsubsection{Implementation settings}
 
  Most implementation settings are the same as the settings used for campus object detection. For training, 5 leopards and 2 tigers are used. The size of the image patch around each keypoint is 27$\times$27.
 
@@ -581,7 +583,7 @@ The confusion matrices are given in Figure~\ref{fig:pr:b}. For clarity, the prop
 
 
 
-\textbf{Comparisons}
+\subsubsection{Comparisons}
 In Figure \ref{fig:bcMP}, the motion grouping results, and how the voted centers are affected, are given. Since parts from different positions of the leopard are very similar, the true center of a leopard is difficult to find using the voted centers of the object parts. In Figure \ref{fig:BcHi}, example Hough images are given to show the merit of the proposed prior by the ability to detect leopards. In Figure \ref{fig:bgdr}, the detection results are given. The proposed method successfully localizes and labels all the leopards and tigers, while the benchmark method miss-detects three leopards.
 
 \begin{figure}
